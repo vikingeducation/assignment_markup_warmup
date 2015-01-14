@@ -1,30 +1,41 @@
+// Reset, mixins and variables
+
 @import 'reset';
 
-@mixin borders {
-  border: $standard_border;
+@mixin borders-and-margins {
+  border: $standard-border;
   box-sizing: border-box;
+  margin: 5px;
 }
 
-$standard_border: 2px black solid;
+$standard-border: 2px black solid;
+
+
+
+
+// NAV BAR
 
 nav {
-  background-color: #FFE599;
   position: fixed;
+  z-index: 1;
+
+  box-sizing: border-box;
   width: 100%;
   height: 45px;
-  line-height: 45px;
-  border-bottom: $standard_border;
-  box-sizing: border-box;
+  background-color: #FFE599;
+
+  border-bottom: $standard-border;
   margin-bottom: 5px;
-  font-weight: bold;
-  font-size: 1.2em;
-  z-index: 1;
+
   h1 {
     margin-left: 1em;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 45px;
   }
 }
 
-#active_page {
+#active-page {
   @media (max-width: 990px) {
     width: 100%;
     margin: 0
@@ -38,14 +49,13 @@ aside {
     display:none;
   }
   width: 240px;
-  margin-top: 50px;
+  margin-top: 50px; // I feel like I should be able to remove this?
   float: left;
   .advertisement {
-    background-color: #D5A6BD;
-    @include borders;
-    height: 400px;
+    @include borders-and-margins;
     width: 230px;
-    margin: 5px;
+    height: 400px;
+    background-color: #D5A6BD;
     position: relative;
     img {
       position: absolute;
@@ -72,12 +82,11 @@ header {
     border-radius: 0;
     margin: 0 0 5px;
     border: 0;
-    border-bottom: $standard_border;
+    border-bottom: $standard-border;
   }
-  @include borders;
+  @include borders-and-margins;
   background-color: #B6D7A8;
   text-align: center;
-  margin: 5px;
   border-radius: 15px;
   padding: 10px;
   h1 {
@@ -92,10 +101,9 @@ header {
 
 
 article {
-  @include borders;
+  @include borders-and-margins;
   background-color: #A2C4C9;
   width: 230px;
-  margin: 5px;
   float: left;
   padding: 10px;
   h1 {
@@ -127,9 +135,9 @@ footer {
     border-radius: 0;
     margin: 5px 0 0;
     border: 0;
-    border-top: $standard_border
+    border-top: $standard-border
   }
-  @include borders;
+  @include borders-and-margins;
   background-color: #9FC5F8;
   border-radius: 15px;
   width: 710px;
@@ -138,5 +146,4 @@ footer {
     font-size: 0.9em;
   }
   float: left;
-  margin: 5px;
 }
