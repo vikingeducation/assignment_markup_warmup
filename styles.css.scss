@@ -1,19 +1,101 @@
+@import 'reset';
+
+@mixin borders {
+  border: $standard_border;
+  box-sizing: border-box;
+}
+
+$standard_border: 2px black solid;
+
 nav {
   background-color: #FFE599;
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: $standard_border;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  h1 {
+    margin-left: 15px;
+  }
+}
+
+#active_page {
+  width: 960px;
+  margin: 0px auto;
 }
 
 aside {
-  background-color: #D5A6BD;
+  width: 240px;
+  margin-top: 50px;
+  float: left;
+  .advertisement {
+    background-color: #D5A6BD;
+    @include borders;
+    height: 400px;
+    width: 230px;
+    margin: 5px;
+    position: relative;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%)
+    }
+  }
+}
+
+main {
+  width: 720px;
+  float: left;
+  margin-top: 50px;
 }
 
 header {
+  @include borders;
   background-color: #B6D7A8;
+  text-align: center;
+  margin: 5px;
+  border-radius: 15px;
+  padding: 10px;
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.6em;
+    font-style: italic;
+  }
 }
 
 article {
+  @include borders;
   background-color: #A2C4C9;
+  width: 230px;
+  margin: 5px;
+  float: left;
+  padding: 10px;
+  h1 {
+    text-align: center;
+    font-size: 1.2em;
+  }
+  h2 {
+    text-align: center;
+  }
+  h3 {
+
+  }
 }
 
 footer {
+  @include borders;
   background-color: #9FC5F8;
+  position: fixed;
+  bottom: 0;
+  border-radius: 15px;
+  width: 720px;
+  padding: 5px 15px;
+  p {
+    font-size: 0.9em;
+  }
 }
