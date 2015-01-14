@@ -53,9 +53,12 @@ nav {
   line-height: 45px;
   border-bottom: 2px black solid;
   box-sizing: border-box;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1.2em;
+  z-index: 1; }
   nav h1 {
-    margin-left: 15px; }
+    margin-left: 1em; }
 
 #active_page {
   width: 960px;
@@ -111,16 +114,21 @@ article {
     font-size: 1.2em; }
   article h2 {
     text-align: center; }
+  article h3 {
+    font-weight: bold;
+    margin-top: 0.5em; }
+  article p {
+    margin-top: 0.5em; }
 
 footer {
   border: 2px black solid;
   box-sizing: border-box;
   background-color: #9FC5F8;
-  position: fixed;
-  bottom: 0;
   border-radius: 15px;
-  width: 720px;
-  padding: 5px 15px; }
+  width: 710px;
+  padding: 5px 15px;
+  float: left;
+  margin: 5px; }
   footer p {
     font-size: 0.9em; }
 
