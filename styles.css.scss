@@ -25,11 +25,18 @@ nav {
 }
 
 #active_page {
+  @media (max-width: 990px) {
+    width: 100%;
+    margin: 0
+  }
   width: 960px;
   margin: 0px auto;
 }
 
 aside {
+  @media (max-width: 990px) {
+    display:none;
+  }
   width: 240px;
   margin-top: 50px;
   float: left;
@@ -50,12 +57,23 @@ aside {
 }
 
 main {
+  @media (max-width: 990px) {
+    margin-top: 45px;
+    width: 100%;
+  }
   width: 720px;
   float: left;
   margin-top: 50px;
 }
 
 header {
+  @media (max-width: 990px) {
+    width: 100%;
+    border-radius: 0;
+    margin: 0 0 5px;
+    border: 0;
+    border-bottom: $standard_border;
+  }
   @include borders;
   background-color: #B6D7A8;
   text-align: center;
@@ -70,6 +88,8 @@ header {
     font-style: italic;
   }
 }
+
+
 
 article {
   @include borders;
@@ -94,7 +114,21 @@ article {
   }
 }
 
+@media (max-width: 990px) {
+    .wide {
+      width: 470px;
+      margin: 5px;
+    }
+  }
+
 footer {
+  @media (max-width: 990px) {
+    width: 100%;
+    border-radius: 0;
+    margin: 5px 0 0;
+    border: 0;
+    border-top: $standard_border
+  }
   @include borders;
   background-color: #9FC5F8;
   border-radius: 15px;
