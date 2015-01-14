@@ -1,0 +1,56 @@
+$border-stack: 2px solid black;
+
+nav{
+	text-align: center;
+	background-color: yellow;
+	border: $border-stack;
+}
+
+section{
+	// margin-left: 1px;
+}
+.top-header{
+	text-align: center;
+	background-color: green;
+	border-radius: 25px;
+}
+
+.row{
+	text-align: center;
+	border-radius: 25px;
+}
+
+aside{
+	border: $border-stack;
+	// margin-top: 10px;
+	// margin-left: 0px;
+	background-color: red;
+	vertical-align: center;
+	horizontal-align: center;
+	height: 600px;
+	text-align: center;
+}
+
+.sidebar{
+	padding: 0;
+	aside{
+		margin: 1%;
+	}
+}
+
+.content{
+	padding: 0;
+	margin: 0;
+}
+article{
+	background-color: turquoise;
+	header{
+		background-color: none;
+		border-radius: 0;
+	}
+}
+
+footer{
+	margin: 2%;
+	background-color: lightblue;
+}
