@@ -117,7 +117,12 @@ nav {
       width: 100%;
     }
     .post {
-      width: 30%;
+      width: 45%;
+    }
+    .post:last-child {
+      .width: 190%;
+      clear: both;
+      margin-top: 10px;
     }
   }
 }

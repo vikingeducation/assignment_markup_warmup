@@ -84,6 +84,10 @@ nav {
     .main .header {
       width: 100%; }
     .main .post {
-      width: 30%; } }
+      width: 45%; }
+    .main .post:last-child {
+      .width: 190%;
+      clear: both;
+      margin-top: 10px; } }
 
 /*# sourceMappingURL=styles.css.map */
