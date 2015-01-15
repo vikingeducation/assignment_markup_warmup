@@ -1,3 +1,20 @@
+@media screen and (max-width: 990px) {
+  .advertisement{
+    display: none;
+    visibility: hidden;
+  }
+  .main {
+  width: 100%;
+    .header{
+      width: 100%;
+    }
+    .post {
+      width: 25%;
+    }
+  }
+}
+
+
 *{
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -5,16 +22,23 @@
 nav {
   background-color: orange;
   padding: 1px;
+  position: fixed;
+  top: 0;
+  width:100%;
   h1{
   margin: 10px 10px;
   }
 }
+
+
+
 
 .advertisement {
   float:left;
   display: inline-block;
   width: 15%;
   margin: 25px 10px;
+  margin-top: 50px;
   padding: 80px 25px;
   background-color: red;
   height: 750px;
@@ -37,6 +61,7 @@ nav {
   float: right;
   display: inline-block;
   width: 75%;
+  margin-top: 50px;
 }
 
 
@@ -50,11 +75,13 @@ nav {
   width:100%;
   text-align: center;
   margin: 10px 0 5px 0;
+  font-weight: 400;
   }
   h2{
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-weight: 400;
   }
 }
 
@@ -69,12 +96,15 @@ nav {
   h1{
   font-size: 300%;
   margin: 10px 10px;
+  font-weight: 400;
   }
   .title{
   margin: 0 10px;
+  font-weight: 400;
   }
   .post-content{
   margin: 10px 20px;
+  font-weight: 400;
   }
 }
 

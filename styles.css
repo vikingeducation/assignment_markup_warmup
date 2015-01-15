@@ -1,9 +1,23 @@
+@media screen and (max-width: 990px) {
+  .advertisement {
+    display: none;
+    visibility: hidden; }
+
+  .main {
+    width: 100%; }
+    .main .header {
+      width: 100%; }
+    .main .post {
+      width: 25%; } }
 * {
   font-family: Helvetica, Arial, sans-serif; }
 
 nav {
   background-color: orange;
-  padding: 1px; }
+  padding: 1px;
+  position: fixed;
+  top: 0;
+  width: 100%; }
   nav h1 {
     margin: 10px 10px; }
 
@@ -12,6 +26,7 @@ nav {
   display: inline-block;
   width: 15%;
   margin: 25px 10px;
+  margin-top: 50px;
   padding: 80px 25px;
   background-color: red;
   height: 750px; }
@@ -25,7 +40,8 @@ nav {
 .main {
   float: right;
   display: inline-block;
-  width: 75%; }
+  width: 75%;
+  margin-top: 50px; }
 
 .header {
   width: 75%;
@@ -34,11 +50,13 @@ nav {
   .header h1 {
     width: 100%;
     text-align: center;
-    margin: 10px 0 5px 0; }
+    margin: 10px 0 5px 0;
+    font-weight: 400; }
   .header h2 {
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-weight: 400; }
 
 .post {
   float: left;
@@ -48,11 +66,14 @@ nav {
   display: inline-block; }
   .post h1 {
     font-size: 300%;
-    margin: 10px 10px; }
+    margin: 10px 10px;
+    font-weight: 400; }
   .post .title {
-    margin: 0 10px; }
+    margin: 0 10px;
+    font-weight: 400; }
   .post .post-content {
-    margin: 10px 20px; }
+    margin: 10px 20px;
+    font-weight: 400; }
 
 .footer {
   display: inline-block;
