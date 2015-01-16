@@ -1,0 +1,175 @@
+// RESET, MIXINS AND VARIABLES
+
+@import 'reset';
+
+@mixin borders-and-margins {
+  border: $standard-border;
+  box-sizing: border-box;
+  margin: 5px;
+}
+
+$standard-border: 2px black solid;
+$nav-bar-height: 45px;
+
+
+
+// NAV BAR
+
+body {
+  @media (max-width: 990px) {
+    padding-top: $nav-bar-height;
+  }
+  padding-top: $nav-bar-height + 5px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  box-sizing: border-box;
+  width: 100%;
+  height: $nav-bar-height;
+  background-color: #FFE599;
+
+  border-bottom: $standard-border;
+
+  h1 {
+    margin-left: 1em;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 45px;
+  }
+}
+
+
+
+// DEFINING ACTIVE PAGE
+
+#active-page {
+  @media (max-width: 990px) {
+    width: 100%;
+    margin: 0
+  }
+  width: 960px;
+  margin: 0px auto;
+}
+
+
+
+// AD SECTION ASIDE
+
+aside {
+  @media (max-width: 990px) {
+    display:none;
+  }
+  width: 240px;
+  float: left;
+  .advertisement {
+    @include borders-and-margins;
+    width: 230px;
+    height: 400px;
+    background-color: #D5A6BD;
+    position: relative;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%)
+    }
+  }
+}
+
+
+
+// MAIN
+
+main {
+  @media (max-width: 990px) {
+    width: 100%;
+  }
+  width: 720px;
+  float: left;
+}
+
+
+
+// HEADER
+
+header {
+  @media (max-width: 990px) {
+    width: 100%;
+    border-radius: 0;
+    margin: 0 0 5px;
+    border: 0;
+    border-bottom: $standard-border;
+  }
+  @include borders-and-margins;
+  background-color: #B6D7A8;
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px;
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.6em;
+    font-style: italic;
+  }
+}
+
+
+
+// ARTICLES
+
+article {
+  @include borders-and-margins;
+  background-color: #A2C4C9;
+  width: 230px;
+  float: left;
+  padding: 10px;
+  h1 {
+    text-align: center;
+    font-size: 1.2em;
+  }
+  h2 {
+    text-align: center;
+  }
+  h3 {
+    font-weight: bold;
+    margin-top: 0.5em;
+  }
+  p {
+    margin-top: 0.5em;
+  }
+}
+
+@media (max-width: 990px) {
+    .wide {
+      width: 470px;
+      margin: 5px;
+    }
+  }
+
+
+
+// FOOTER
+
+footer {
+  @media (max-width: 990px) {
+    width: 100%;
+    border-radius: 0;
+    margin: 5px 0 0;
+    border: 0;
+    border-top: $standard-border
+  }
+  @include borders-and-margins;
+  background-color: #9FC5F8;
+  border-radius: 15px;
+  width: 710px;
+  padding: 5px 15px;
+  p {
+    font-size: 0.9em;
+  }
+  float: left;
+}
