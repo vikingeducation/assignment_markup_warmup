@@ -1,4 +1,4 @@
-// Reset, mixins and variables
+// RESET, MIXINS AND VARIABLES
 
 @import 'reset';
 
@@ -9,23 +9,30 @@
 }
 
 $standard-border: 2px black solid;
-
+$nav-bar-height: 45px;
 
 
 
 // NAV BAR
 
+body {
+  @media (max-width: 990px) {
+    padding-top: $nav-bar-height;
+  }
+  padding-top: $nav-bar-height + 5px;
+}
+
 nav {
   position: fixed;
+  top: 0;
   z-index: 1;
 
   box-sizing: border-box;
   width: 100%;
-  height: 45px;
+  height: $nav-bar-height;
   background-color: #FFE599;
 
   border-bottom: $standard-border;
-  margin-bottom: 5px;
 
   h1 {
     margin-left: 1em;
@@ -34,6 +41,10 @@ nav {
     line-height: 45px;
   }
 }
+
+
+
+// DEFINING ACTIVE PAGE
 
 #active-page {
   @media (max-width: 990px) {
@@ -44,12 +55,15 @@ nav {
   margin: 0px auto;
 }
 
+
+
+// AD SECTION ASIDE
+
 aside {
   @media (max-width: 990px) {
     display:none;
   }
   width: 240px;
-  margin-top: 50px; // I feel like I should be able to remove this?
   float: left;
   .advertisement {
     @include borders-and-margins;
@@ -66,15 +80,21 @@ aside {
   }
 }
 
+
+
+// MAIN
+
 main {
   @media (max-width: 990px) {
-    margin-top: 45px;
     width: 100%;
   }
   width: 720px;
   float: left;
-  margin-top: 50px;
 }
+
+
+
+// HEADER
 
 header {
   @media (max-width: 990px) {
@@ -99,6 +119,8 @@ header {
 }
 
 
+
+// ARTICLES
 
 article {
   @include borders-and-margins;
@@ -128,6 +150,10 @@ article {
       margin: 5px;
     }
   }
+
+
+
+// FOOTER
 
 footer {
   @media (max-width: 990px) {
