@@ -67,4 +67,33 @@ main {
   display: inline-block;
   width: 79%; }
 
+@media (max-width: 990px) {
+  aside {
+    display: none;
+    visibility: hidden; }
+
+  main {
+    width: 100%; }
+
+  .title, footer {
+    border-radius: 0;
+    margin: 0;
+    border: 0;
+    border-bottom: 2px black solid; }
+
+  footer {
+    border-radius: 0;
+    margin: 0;
+    border: 0;
+    border-top: 2px black solid; }
+
+  .article-one {
+    width: 44%; }
+
+  .article-two {
+    width: 44%; }
+
+  .article-three {
+    width: 95%; } }
+
 /*# sourceMappingURL=styles.css.map */
