@@ -1,5 +1,7 @@
-.title {
-  font-family: 'Open Sans';
+$font: 'Open Sans';
+
+.titlebar {
+  font-family: $font;
   border: solid black;
   border-width: 2px 2px 2px 2px;
   border-radius: 30px 30px 30px 30px;
@@ -11,8 +13,16 @@
   }
 }
 
+.disclaimer {
+  @extend .titlebar;
+  background-color: blue;
+  clear: both;
+  text-align: left;
+  padding-left: 10px;
+}
+
 #top-bar {
-  font-family: 'Open Sans';
+  font-family: $font;
   position: fixed;
   top: 0;
   left: 0;
@@ -26,7 +36,7 @@
 }
 
 article {
-  font-family: 'Open Sans';
+  font-family: $font;
   border: solid black;
   border-width: 2px 2px 2px 2px;
   background-color: cadetblue;
@@ -48,15 +58,7 @@ article {
   }
 }
 
-footer {
-  @extend .title;
-  background-color: blue;
-  clear: both;
-  text-align: left;
-  padding-left: 10px;
-}
-
-aside {
+.ilyadvert {
   float: left;
   width: 15%;
   margin: 25px 10px;
@@ -81,30 +83,30 @@ main {
 }
 
 @media (max-width: 990px) {
-  aside {
+  .ilyadvert {
     display: none;
     visibility: hidden;
   }
   main {
     width: 100%;
   }
-  .title {
+  .titlebar {
+    width: 100%;
     border-radius: 0;
-    margin: 0;
-    border: 0;
+    margin-top: 20px;
     border-bottom: 2px black solid;
   }
-  footer {
+  .disclaimer {
     border-radius: 0;
     margin: 0;
-    border: 0;
     border-top: 2px black solid;
+    width: 100%;
   }
   .article-one {
-    width: 44%;
+    width: 44.9%;
   }
   .article-two {
-    width: 44%;
+    width: 44.9%;
   }
   .article-three {
     width: 95%;

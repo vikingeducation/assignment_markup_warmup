@@ -1,16 +1,22 @@
-.title, footer {
-  font-family: 'Open Sans';
+.titlebar, .disclaimer {
+  font-family: "Open Sans";
   border: solid black;
   border-width: 2px 2px 2px 2px;
   border-radius: 30px 30px 30px 30px;
   text-align: center;
   background-color: aquamarine;
   margin-top: 50px; }
-  .title h3, footer h3 {
+  .titlebar h3, .disclaimer h3 {
     font-style: italic; }
 
+.disclaimer {
+  background-color: blue;
+  clear: both;
+  text-align: left;
+  padding-left: 10px; }
+
 #top-bar {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   position: fixed;
   top: 0;
   left: 0;
@@ -23,7 +29,7 @@
   padding: 5px 5px 5px 5px; }
 
 article {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   border: solid black;
   border-width: 2px 2px 2px 2px;
   background-color: cadetblue;
@@ -40,13 +46,7 @@ article {
     article .article-title h2 {
       margin-top: -25px; }
 
-footer {
-  background-color: blue;
-  clear: both;
-  text-align: left;
-  padding-left: 10px; }
-
-aside {
+.ilyadvert {
   float: left;
   width: 15%;
   margin: 25px 10px;
@@ -68,30 +68,30 @@ main {
   width: 79%; }
 
 @media (max-width: 990px) {
-  aside {
+  .ilyadvert {
     display: none;
     visibility: hidden; }
 
   main {
     width: 100%; }
 
-  .title, footer {
+  .titlebar, .disclaimer {
+    width: 100%;
     border-radius: 0;
-    margin: 0;
-    border: 0;
+    margin-top: 20px;
     border-bottom: 2px black solid; }
 
-  footer {
+  .disclaimer {
     border-radius: 0;
     margin: 0;
-    border: 0;
-    border-top: 2px black solid; }
+    border-top: 2px black solid;
+    width: 100%; }
 
   .article-one {
-    width: 44%; }
+    width: 44.9%; }
 
   .article-two {
-    width: 44%; }
+    width: 44.9%; }
 
   .article-three {
     width: 95%; } }
