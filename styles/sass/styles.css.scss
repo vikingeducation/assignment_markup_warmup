@@ -1,0 +1,39 @@
+/* CSS Reset */
+@import 'includes/reset.css.scss';
+
+/* --------------------
+	Page Header 
+----------------------- */ 
+.main-header {
+	background-color: khaki;
+	box-sizing: border-box;
+	border-bottom: 2px solid black;
+	height: 50px;
+	line-height: 50px;
+	padding: 0px 20px;
+
+	h1{
+		font-weight: bold;
+	}
+}
+
+/* --------------------
+	Aside Sidebar
+----------------------- */ 
+.sidebar{
+	float: left;
+	background-color: LightPink;
+	width: 20%;
+	img{
+		display: block;
+		margin: 0px auto;
+	}
+}
+
+/* --------------------
+	Main Body
+----------------------- */ 
+main.main-body{
+	float: left;
+	width: 80%;
+}
