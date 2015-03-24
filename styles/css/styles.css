@@ -57,14 +57,28 @@ table {
 .top-margin {
   margin-top: 20px !important; }
 
+.small-float-right, section article.small-float-right {
+  /* Small Screens*/ }
+  @media (max-width: 990px) {
+    .small-float-right, section article.small-float-right {
+      float: right;
+      margin: 0 2% 0 0; } }
+
 /* --------------------
 	Page Wrapper 
 ----------------------- */
 section.wrapper, section.wrapper-fullwidth {
   display: block;
-  width: 90%;
   height: 100%;
-  margin: 0px auto; }
+  margin: 0px auto;
+  /* Big Screens */
+  /* Small Screens*/ }
+  @media (min-width: 990px) {
+    section.wrapper, section.wrapper-fullwidth {
+      width: 90%; } }
+  @media (max-width: 990px) {
+    section.wrapper, section.wrapper-fullwidth {
+      width: 100%; } }
 
 section.wrapper-fullwidth {
   width: 100%; }
@@ -85,13 +99,15 @@ section.wrapper-fullwidth {
 	Aside Sidebar
 ----------------------- */
 .sidebar {
+  position: relative;
   float: left;
   width: 20%;
   height: 500px;
   background-color: LightPink;
   margin-top: 20px;
   border: 2px solid black;
-  overflow: hidden; }
+  overflow: hidden;
+  /* Small Screens */ }
   @media (max-width: 990px) {
     .sidebar {
       display: none; } }
@@ -99,6 +115,13 @@ section.wrapper-fullwidth {
     text-align: center;
     padding: 50px 0 50px 0; }
   .sidebar img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* I thought this was a pretty elegant solution to 
+    vertically centering an image w/ 
+    CSS3: http://www.w3.org/Style/Examples/007/center.en.html#vertical */
+    transform: translate(-50%, -50%);
     display: block;
     margin: 0px auto;
     padding: 0px;
@@ -109,21 +132,38 @@ section.wrapper-fullwidth {
 	Main Body
 ----------------------- */
 .main-body {
-  float: left;
-  width: 70%;
-  padding: 0 20px;
   margin-top: 20px;
+  /* Big Screens */
+  /* Small Screens*/
   /* --------------------
   	Main Body Articles
   ----------------------- */
   /* Makes sure the third box doesn't get margin as well */ }
+  @media (min-width: 990px) {
+    .main-body {
+      float: left;
+      padding: 0 20px;
+      width: 80%; } }
+  @media (max-width: 990px) {
+    .main-body {
+      float: none;
+      padding: 0px;
+      width: 100%; } }
   .main-body article {
     float: left;
-    width: 32%;
     background-color: SteelBlue;
     border: 2px solid black;
-    margin-right: 2%;
-    padding: 10px; }
+    padding: 10px;
+    /* Big Screens */
+    /* Small Screens*/ }
+    @media (min-width: 990px) {
+      .main-body article {
+        width: 32%;
+        margin-right: 2%; } }
+    @media (max-width: 990px) {
+      .main-body article {
+        width: 47%;
+        margin: 0 0 0 2%; } }
     .main-body article header {
       text-align: center;
       padding-bottom: 20px; }
@@ -135,7 +175,12 @@ section.wrapper-fullwidth {
     .main-body article h3, .main-body article p {
       padding-bottom: 10px; }
   .main-body article:last-child {
-    margin-right: 0px; }
+    margin-right: 0px;
+    /* Small Screens*/ }
+    @media (max-width: 990px) {
+      .main-body article:last-child {
+        width: 96%;
+        margin-top: 20px; } }
 
 .main-header {
   background-color: LightGreen;
@@ -177,12 +222,21 @@ section.wrapper-fullwidth {
 footer {
   float: left;
   width: 100%;
-  height: 50px;
   background-color: DodgerBlue;
   border: 2px solid black;
-  margin-bottom: 50px;
   line-height: 46px;
   padding: 0 15px;
-  border-radius: 20px; }
+  /* Big Screens */
+  /* Small Screens*/ }
+  @media (min-width: 990px) {
+    footer {
+      border-radius: 20px;
+      margin-bottom: 50px;
+      height: 50px; } }
+  @media (max-width: 990px) {
+    footer {
+      border-radius: 0px;
+      margin-bottom: 0px;
+      height: 100px; } }
 
 /*# sourceMappingURL=styles.css.map */
