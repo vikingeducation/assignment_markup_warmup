@@ -1,0 +1,243 @@
+/* CSS Reset */
+@import 'includes/reset.css.scss';
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+
+/* --------------------
+	Global
+----------------------- */
+*{
+	box-sizing: border-box;
+	font-family: Raleway !important;
+}
+
+.top-margin{
+	margin-top: 20px !important;
+}
+
+.small-float-right, section article.small-float-right {
+	/* Small Screens*/
+	@media (max-width: 990px){
+		float: right;
+		margin: 0 2% 0 0;
+	}
+}
+
+/* --------------------
+	Page Wrapper 
+----------------------- */
+section.wrapper{
+	display: block;
+	height: 100%;
+	margin: 0px auto;
+
+	/* Big Screens */
+	@media (min-width: 990px){
+		width: 90%;
+	}
+
+	/* Small Screens*/
+	@media (max-width: 990px){
+		width: 100%;
+	}
+}
+
+section.wrapper-fullwidth{
+	@extend section.wrapper;
+	width: 100%;
+}
+
+/* --------------------
+	Topbar
+----------------------- */ 
+.topbar {
+	background-color: khaki;
+	border-bottom: 2px solid black;
+	height: 50px;
+	line-height: 50px;
+	padding: 0px 20px;
+
+	h1{
+		font-weight: bold;
+	}
+}
+
+/* --------------------
+	Aside Sidebar
+----------------------- */ 
+.sidebar{
+	position: relative;
+	float: left;
+	width: 20%;
+	height: 500px;
+	background-color: LightPink;
+	margin-top: 20px;
+	border: 2px solid black;
+	overflow: hidden;
+
+	/* Small Screens */
+	@media (max-width: 990px){
+		display: none;
+	}
+
+	p{
+		text-align: center;
+		padding: 50px 0 50px 0;
+	}
+	img{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		/* I thought this was a pretty elegant solution to 
+		vertically centering an image w/ 
+		CSS3: http://www.w3.org/Style/Examples/007/center.en.html#vertical */
+		
+		transform: translate(-50%, -50%);
+		display: block;
+		margin: 0px auto;
+		padding: 0px;
+		width: 200px;
+		height: 200px;
+	}
+}
+
+/* --------------------
+	Main Body
+----------------------- */ 
+.main-body{
+	margin-top: 20px;
+
+	/* Big Screens */
+	@media (min-width: 990px){
+		float: left;
+		padding: 0 20px;
+		width: 80%;
+	}
+
+	/* Small Screens*/
+	@media (max-width: 990px){
+		float: none;
+		padding: 0px;
+		width: 100%;
+	}
+
+	/* --------------------
+		Main Body Articles
+	----------------------- */ 
+	article{
+		float: left;
+		background-color: SteelBlue;
+		border: 2px solid black;
+		padding: 10px;
+
+		/* Big Screens */
+		@media (min-width: 990px){
+			width: 32%;
+			margin-right: 2%;
+		}
+
+		/* Small Screens*/
+		@media (max-width: 990px){
+			width: 47%;
+			margin: 0 0 0 2%;
+		}
+		header{
+			text-align: center;
+			padding-bottom: 20px;
+			h2{
+				font-size: 24px;
+				font-weight: bold;
+			}
+		}
+		h3{
+			font-weight: bold;
+		}
+		h3,p{
+			padding-bottom: 10px;
+		}
+
+	}
+
+	/* Makes sure the third box doesn't get margin as well */
+	article:last-child{
+		margin-right: 0px;
+
+		/* Small Screens*/
+		@media (max-width: 990px){
+			width: 96%;
+			margin-top: 20px;
+		}
+
+	}
+}
+
+.main-header{
+	background-color: LightGreen;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	padding: 35px 0;
+	border-radius: 20px;
+	border: 2px solid black;
+	@media (max-width: 990px){
+		display: none;
+	}
+	h2{
+		font-weight: bold;
+		font-size: 20px;
+	}
+	h3{
+		font-style: italic;
+	}
+}
+
+.main-header-sm {
+	background-color: LightGreen;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	border-bottom: 2px solid black;
+	padding: 25px 0;
+
+	@media (min-width: 990px){
+		display: none;
+	}
+
+	h2{
+		font-weight: bold;
+		font-size: 20px;
+		padding-bottom: 10px;
+	}
+	h3{
+		font-style: italic;
+	}
+}
+
+/* --------------------
+	Footer
+----------------------- */ 
+footer{
+	float: left;
+	width: 100%;
+	background-color: DodgerBlue;
+	border: 2px solid black;
+	line-height: 46px;
+	padding: 0 15px;
+	
+
+	/* Big Screens */
+	@media (min-width: 990px){
+		border-radius: 20px;
+		margin-bottom: 50px;
+		height: 50px;
+	}
+
+	/* Small Screens*/
+	@media (max-width: 990px){
+		border-radius: 0px;
+		margin-bottom: 0px;
+		height: 100px;
+	}
+}
+
+
