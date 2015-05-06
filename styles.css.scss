@@ -1,9 +1,104 @@
 @import 'reset';
 
+$nav-background-color: #ffe599;
+$article-background-color: #a2c4c9;
+$aside-background-color: #d4a5bc;
+$header-background-color: #b6d7a8;
+$footer-background-color: #9fc5f8;
 
-body {
-  color: red;
-  li {
-    color: white;
-  }
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5em;
+  }
+
+h2 {
+  font-size: 1.7em;
+  margin: 5px;
+  }
+
+h3 {
+  font-size: 1.8em;
+  }
+
+h4 {
+  font-size: 1.3em;
+  margin: 20px 0 10px 0;
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  padding: 15px 20px;
+  background: $nav-background-color;
+  z-index: 10;
+
+  }
+
+.container {
+  position: relative;
+  top: 60px; /*space for nav*/
+  max-width: 990px;
+  border: 2px solid red;
+  margin: 0 auto;
+
+  aside {
+
+    float: left;
+    width: 23%;
+    min-height: 500px;
+    background: $aside-background-color;
+    }
+  }
+
+main {
+  float: right;
+  width: 75%;
+  min-height: 500px;
+
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 7px;
+    background: $header-background-color;
+    width: 100%;
+    @include border-radius(15px);
+    }
+  article {
+    margin: 0 0 20px 2% ;
+    padding: 20px;
+    float: left;
+    width: 32%;
+    background: $article-background-color;
+    &:first-of-type {
+      margin-left: 0;
+      }
+    h2 {
+      margin-bottom: 10px;
+      }
+    }
+
+  footer {
+    clear: both;
+    background: $footer-background-color;
+    width: 100%;
+    padding: 10px;
+    @include border-radius(15px);
+    }
+}
+
+.post-subtitle {
+  text-align: center;
+  }
