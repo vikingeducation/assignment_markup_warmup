@@ -135,6 +135,15 @@ main {
       article:first-of-type {
         margin-left: 1.5%;
         }
+      header {
+        @include border-radius(0);
+        }
+      footer {
+        @include border-radius(0);
+        }
       }
+
+
+
 }
   

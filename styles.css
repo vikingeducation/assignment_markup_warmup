@@ -147,6 +147,16 @@ main {
       width: 97%;
       margin: 1% 1.5%; }
     main article:first-of-type {
-      margin-left: 1.5%; } }
+      margin-left: 1.5%; }
+    main header {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0; }
+    main footer {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
