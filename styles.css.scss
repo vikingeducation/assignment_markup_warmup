@@ -22,12 +22,12 @@ h1 {
   }
 
 h2 {
-  font-size: 1.7em;
-  margin: 5px;
+  font-size: 1.4em;
   }
 
 h3 {
-  font-size: 1.8em;
+  font-size: 1.1em;
+  margin-bottom: 10px;
   }
 
 h4 {
@@ -41,25 +41,31 @@ nav {
   top: 0;
   width: 100%;
   height: 50px;
-  padding: 15px 20px;
   background: $nav-background-color;
   z-index: 10;
-
+  h2 {
+    height: 50px;
+    line-height: 50px;
+    white-space: nowrap;
+    margin-left: 30px;
+    }
   }
 
 .container {
   position: relative;
   top: 60px; /*space for nav*/
   max-width: 990px;
-  border: 2px solid red;
   margin: 0 auto;
 
   aside {
-
+    position: relative;
     float: left;
     width: 23%;
     min-height: 500px;
     background: $aside-background-color;
+    }
+  img {
+    width: 100%;
     }
   }
 
@@ -71,7 +77,7 @@ main {
   header {
     text-align: center;
     margin-bottom: 20px;
-    padding: 7px;
+    padding: 20px;
     background: $header-background-color;
     width: 100%;
     @include border-radius(15px);
@@ -86,7 +92,7 @@ main {
       margin-left: 0;
       }
     h2 {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       }
     }
 
@@ -100,5 +106,12 @@ main {
 }
 
 .post-subtitle {
+  text-align: center;
+  }
+.vertical-center {
+  padding: 5%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   text-align: center;
   }

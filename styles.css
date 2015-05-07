@@ -52,11 +52,11 @@ h1 {
   font-size: 2.5em; }
 
 h2 {
-  font-size: 1.7em;
-  margin: 5px; }
+  font-size: 1.4em; }
 
 h3 {
-  font-size: 1.8em; }
+  font-size: 1.1em;
+  margin-bottom: 10px; }
 
 h4 {
   font-size: 1.3em;
@@ -67,22 +67,28 @@ nav {
   top: 0;
   width: 100%;
   height: 50px;
-  padding: 15px 20px;
   background: #ffe599;
   z-index: 10; }
+  nav h2 {
+    height: 50px;
+    line-height: 50px;
+    white-space: nowrap;
+    margin-left: 30px; }
 
 .container {
   position: relative;
   top: 60px;
   /*space for nav*/
   max-width: 990px;
-  border: 2px solid red;
   margin: 0 auto; }
   .container aside {
+    position: relative;
     float: left;
     width: 23%;
     min-height: 500px;
     background: #d4a5bc; }
+  .container img {
+    width: 100%; }
 
 main {
   float: right;
@@ -91,7 +97,7 @@ main {
   main header {
     text-align: center;
     margin-bottom: 20px;
-    padding: 7px;
+    padding: 20px;
     background: #b6d7a8;
     width: 100%;
     -webkit-border-radius: 15px;
@@ -107,7 +113,7 @@ main {
     main article:first-of-type {
       margin-left: 0; }
     main article h2 {
-      margin-bottom: 10px; }
+      margin-bottom: 15px; }
   main footer {
     clear: both;
     background: #9fc5f8;
@@ -119,6 +125,13 @@ main {
     border-radius: 15px; }
 
 .post-subtitle {
+  text-align: center; }
+
+.vertical-center {
+  padding: 5%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
