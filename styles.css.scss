@@ -61,7 +61,7 @@ nav {
     position: relative;
     float: left;
     width: 23%;
-    min-height: 500px;
+    height: 500px;
     background: $aside-background-color;
     }
   img {
@@ -102,7 +102,9 @@ main {
     width: 100%;
     padding: 10px;
     @include border-radius(15px);
+    margin-bottom: 50px;
     }
+
 }
 
 .post-subtitle {
@@ -115,3 +117,24 @@ main {
   transform: translateY(-50%);
   text-align: center;
   }
+
+@media (max-width: 989px) {
+
+    aside {
+      display: none;
+      }
+    main {
+      width: 100%;
+      article {
+        width: 47.5%;
+      }
+      article:last-of-type {
+        width: 97%;
+        margin: 1% 1.5%;
+        }
+      article:first-of-type {
+        margin-left: 1.5%;
+        }
+      }
+}
+  
