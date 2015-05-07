@@ -1,0 +1,156 @@
+/*Resets */
+@import 'reset';
+* {
+  box-sizing: border-box;
+}
+
+
+
+/*Variables and mixins*/
+$nav-background-color: #ffe599;
+$article-background-color: #a2c4c9;
+$aside-background-color: #d4a5bc;
+$header-background-color: #b6d7a8;
+$footer-background-color: #9fc5f8;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+
+
+/*Main CSS Rules*/
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 1.3em;
+  margin: 20px 0 10px 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background: $nav-background-color;
+  z-index: 10;
+  h2 {
+    height: 50px;
+    line-height: 50px;
+    white-space: nowrap;
+    margin-left: 30px;
+  }
+}
+
+.container {
+  position: relative;
+  top: 60px; /*space for nav*/
+  max-width: 990px;
+  margin: 0 auto;
+
+  aside {
+    position: relative;
+    float: left;
+    width: 23%;
+    height: 500px;
+    background: $aside-background-color;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+main {
+  float: right;
+  width: 75%;
+  min-height: 500px;
+
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: $header-background-color;
+    width: 100%;
+    @include border-radius(15px);
+  }
+  article {
+    margin: 0 0 20px 2% ;
+    padding: 20px;
+    float: left;
+    width: 32%;
+    background: $article-background-color;
+    &:first-of-type {
+      margin-left: 0;
+    }
+    h2 {
+      margin-bottom: 15px;
+    }
+  }
+
+  footer {
+    clear: both;
+    background: $footer-background-color;
+    width: 100%;
+    padding: 10px;
+    @include border-radius(15px);
+    margin-bottom: 50px;
+  }
+
+}
+
+.post-subtitle {
+  text-align: center;
+}
+.vertical-center {
+  padding: 5%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+
+
+
+/*Responsive functionality*/
+@media (max-width: 989px) {
+
+  aside {
+    display: none;
+  }
+  main {
+    width: 100%;
+    article {
+      width: 47.5%;
+  }
+    article:last-of-type {
+      width: 97%;
+      margin: 0 1.5% 2.5%;
+    }
+    article:first-of-type {
+      margin-left: 1.5%;
+    }
+    header {
+      @include border-radius(0);
+    }
+    footer {
+      @include border-radius(0);
+    }
+  }
+}
+  
