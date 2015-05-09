@@ -24,6 +24,10 @@ body {
     padding-left: 1em;
     position: fixed;
     clear: both;
+
+    @media (max-width: 990px) {
+      padding-left: 0.5em;
+    }
   }
 
 // Use empty div to push content below fixed navbar
@@ -41,6 +45,11 @@ body {
   .page-container {
     width: 990px;
     margin: 10px auto 0 auto;
+
+    @media (max-width: 990px) {
+      width: 100%;
+      margin-top: 0;
+    }
   }
 
 
@@ -60,6 +69,10 @@ body {
     .ad-container {
       height: 224px;
       margin: (476px-192px-32px)/2 0;
+    }
+
+    @media (max-width: 990px) {
+      display: none;
     }
   }
 
@@ -82,14 +95,48 @@ body {
       float: left;
 
       h1 {
-      font-size: 24px;
-      font-weight: bold;
+        font-size: 24px;
+        font-weight: bold;
       }
 
       p {
         font-style: italic;
       }
+
+      @media (max-width: 990px) {
+        width: 100%;
+        margin-left: 0;
+        border-top: 0; //removed b/c it overlaps with nav border
+        border-radius: 0;
+      }
     }
+
+
+
+
+//  Separate articles into 2 rows
+//  ...custom styling for narrow widths
+
+    @media (max-width: 990px) {
+      .first-2-articles {
+        width: 100%;
+        float: left;
+        article {
+          width: calc((100% - 30px)/2);
+        }
+      }
+      .third-article {
+        width: 100%;
+        float: left;
+        article {
+          width: calc(100% - 20px);
+        }
+      }
+    }
+
+// **************************************
+
+
 
 
 //  Individual Article styling
@@ -117,6 +164,16 @@ body {
         }
 
       }
+
+
+// For narrow format, make article width responsive
+
+      @media (max-width: 990px) {
+        width: 45%;
+      }
+
+// **************************************
+
 
       .article-text {
         line-height: 1.2em;
@@ -150,5 +207,10 @@ body {
     padding: 6px 12px;
     clear: both;
     float: right;
+
+    @media (max-width: 990px) {
+      width: 100%;
+      border-radius: 0;
+    }
   }
 }
