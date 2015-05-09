@@ -1,14 +1,23 @@
-body header {
-  background-color: #FFE599; }
+body nav {
+  background-color: #FFE599;
+  position: fixed;
+  width: 100%; }
 body main header {
-  background-color: #B6D7A8; }
+  background-color: #B6D7A8;
+  width: 740px; }
 body main article {
-  background-color: #A2C4C9; }
+  background-color: #A2C4C9;
+  width: 240px;
+  float: left; }
   body main article header {
     background-color: #A2C4C9; }
 body aside {
-  background-color: #D5A6BD; }
+  background-color: #D5A6BD;
+  width: 240px;
+  float: left; }
 body footer {
-  background-color: #A2C4C9; }
+  background-color: #A2C4C9;
+  width: 740px;
+  clear: both; }
 
 /*# sourceMappingURL=styles.css.map */

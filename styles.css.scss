@@ -1,27 +1,40 @@
 body {
-  header {
+  nav {
     background-color: #FFE599;
+    position: fixed;
+    width: 100%;
   }
 
   main {
     header {
       background-color: #B6D7A8;
+      width: 740px;
     }
 
     article {
       background-color: #A2C4C9;
+      width: 240px;
+      float: left;
 
       header {
         background-color: #A2C4C9;
+      }
+
+      div {
+
       }
     }
   }
 
   aside {
     background-color: #D5A6BD;
+    width: 240px;
+    float: left;
   }
 
   footer {
     background-color: #A2C4C9;
+    width: 740px;
+    clear: both;
   }
 }
