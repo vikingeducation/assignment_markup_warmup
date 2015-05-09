@@ -1,7 +1,11 @@
 body nav {
   background-color: #FFE599;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  height: 36px;
+  clear: both; }
+body .nav-spacer {
+  height: 36px; }
 body main header {
   background-color: #B6D7A8;
   width: 740px; }
@@ -18,6 +22,7 @@ body aside {
 body footer {
   background-color: #A2C4C9;
   width: 740px;
-  clear: both; }
+  clear: both;
+  float: right; }
 
 /*# sourceMappingURL=styles.css.map */
