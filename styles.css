@@ -1,3 +1,14 @@
-
+body header {
+  background-color: #FFE599; }
+body main header {
+  background-color: #B6D7A8; }
+body main article {
+  background-color: #A2C4C9; }
+  body main article header {
+    background-color: #A2C4C9; }
+body aside {
+  background-color: #D5A6BD; }
+body footer {
+  background-color: #A2C4C9; }
 
 /*# sourceMappingURL=styles.css.map */
