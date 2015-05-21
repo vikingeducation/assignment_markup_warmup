@@ -1,0 +1,178 @@
+
+$header-color: #FFE599;
+$main-header-color:#B6D7A8;
+$ad-color:#D5A6BD;
+$article-color: #A2C4C9;
+$footer-color:#9FC5F8;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box-styles {
+
+}
+
+body {
+  font-family: "Open Sans", HelveticaNeue-Light, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+h1, h2 {
+    font-weight: bold;
+  }
+#top-header { 
+
+ position: fixed;
+ width: 100%;
+
+  h1 {
+    margin-top: 0;
+    background: $header-color;
+    font-size: 18px;
+    line-height: 50px;
+    padding-left: 20px;
+    border-bottom: 2px solid black;
+  }  
+}
+
+aside {
+  background-color:$ad-color;
+  float: left;
+  margin: 60px 10px 0 10px;
+  width: 200px;
+  height: 400px;
+  border: 2px solid black;
+  
+  h1 {
+    padding-top: 50%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  img {
+    margin: 0px 25px 25px  ;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+  }
+}
+
+.wide-box-style{
+  @include border-radius(10px); 
+  width: 70%; 
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+
+#main-header{
+  @extend .wide-box-style;
+
+  background-color:$main-header-color;  
+  height: 60px;
+  margin-top: 60px;
+  margin-bottom: 10px;    
+  display: inline-block;
+  text-align: center;
+
+    h1 {
+      font-size: 18px;
+      margin: 5px;
+    }
+    h2 {
+      margin: 0;
+      font: 16px italic;
+      font-family: cursive;
+    }
+}
+
+
+
+article {
+  background-color: $article-color;
+  width: 20%;
+  
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+  border: 2px solid black;
+  padding: 10px;
+  header {
+    text-align: center;
+  }
+  time {
+    font-size: 12px;
+  }
+  h1{
+    font-size: 16px;
+    text-align:  center;
+    margin: 5px 0 5px 0;
+  }
+  h2 {
+    font-size: 14px;
+    margin: 10px 0 5px 0;
+  }
+  p {
+    font-size: 12px;
+    margin-top: 5px;
+  } 
+}
+
+footer {
+  @extend .wide-box-style; 
+  background-color: $footer-color;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 225px;
+  font-size: 12px;
+
+  clear: both;
+  }
+
+@media screen and (max-width: 990px) {
+
+.narrow-box-style{
+  @include border-radius(0px);
+  width: 100%; 
+  border-left: 0;
+  border-right: 0;
+}
+
+#top-header h1{
+  margin-bottom: 0;
+}
+
+#main-header { 
+  @extend .narrow-box-style;
+  margin-top: 50px;
+  margin-bottom: 10px;  
+}
+
+aside {
+  float: none;
+  display: none;
+}
+
+article {
+  width: 43%;
+  margin-left: 2%;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+article:last-child {
+  width: 90%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+footer {
+  @extend .narrow-box-style;
+  margin-left: 0;
+  border-top: 2px solid black;  
+}
+}
