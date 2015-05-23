@@ -1,3 +1,54 @@
+@import url(reset.css);
+*, *:before, *:after {
+  box-sizing: border-box; }
 
+body {
+  font-family: "Open Sans", helvetica, sans-serif;
+  font-size: 14px; }
+
+h1 {
+  font-size: 24px; }
+
+h2 {
+  font-size: 22px; }
+
+.top-bar {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 2px solid #000;
+  margin-bottom: 10px; }
+
+.large-wrapper {
+  width: 990px;
+  margin: 0 auto; }
+
+.container {
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px; }
+
+aside, article, main {
+  display: inline-block; }
+
+aside {
+  float: left;
+  width: 25%; }
+  aside .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px; }
+  aside img {
+    width: 200px; }
+  aside .ad-container {
+    text-align: center; }
+
+article {
+  width: 33%;
+  vertical-align: top; }
+
+main {
+  width: 75%; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,70 @@
+@import "reset.css";
+
+$font-stack: "Open Sans", helvetica, sans-serif;
+$font-size: 14px;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: $font-stack;
+	font-size: $font-size;
+}
+
+h1 {
+	font-size: $font-size + 10;
+}
+
+h2 {
+	font-size: $font-size + 8;
+}
+
+.top-bar {
+	width: 100%;
+	padding: 10px;
+	border-bottom: 2px solid #000;
+	margin-bottom: 10px;
+}
+
+.large-wrapper {
+	width: 990px;
+	margin: 0 auto;
+}
+
+.container {
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+aside, article, main {
+	display: inline-block;
+}
+
+aside {
+	float: left;
+  width: 25%;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+  img {
+    width: 200px;
+  }
+  .ad-container {
+    text-align: center;
+  }
+}
+
+article {
+	width: 33%;
+  vertical-align: top;
+}
+
+main {
+	width: 75%;
+}
