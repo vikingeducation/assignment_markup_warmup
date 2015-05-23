@@ -36,8 +36,42 @@ h3 {
 	width: 100%;
 	padding: 10px;
 	border-bottom: 2px solid #000;
-	margin-bottom: 10px;
   background: #FFAA63;
+}
+
+.container {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #000;
+}
+
+@media screen and (max-width: 990px) { 
+
+aside {
+  display: none;
+}
+
+.main-heading .container {
+  margin: 0;
+  border: 0;
+  border-bottom: 2px solid #000;
+}
+
+main {
+  width: 100%;
+}
+
+main article:nth-child(-n+3) {
+  display: inline-block;
+  width: 50%;
+}
+
+}
+
+@media screen and (min-width: 990px) { 
+
+.top-bar {
+  margin-bottom: 10px;
 }
 
 .large-wrapper {
@@ -46,10 +80,7 @@ h3 {
 }
 
 .container {
-  border: 2px solid #000;
   border-radius: 10px;
-  margin: 10px;
-  padding: 10px;
 }
 
 aside, article, main {
@@ -74,8 +105,17 @@ aside {
   }
 }
 
+main {
+  width: 75%;
+}
+
 article {
-	width: 33%;
+  width: 33%;
+}
+
+}
+
+article {
   vertical-align: top;
   .container {
     background: #FFCB63;
@@ -94,9 +134,7 @@ article {
   }
 }
 
-main {
-	width: 75%;
-}
+
 
 .main-heading {
   .container {
