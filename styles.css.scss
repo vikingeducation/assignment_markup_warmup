@@ -1,5 +1,13 @@
 @import "reset.css";
 
+/* 
+bright orange - FF7400
+orange - FFAA63
+yellow orange - FFCB63
+blue - 5777C0
+teal - 46B2B2
+*/
+
 $font-stack: "Open Sans", helvetica, sans-serif;
 $font-size: 14px;
 
@@ -13,11 +21,15 @@ body {
 }
 
 h1 {
-	font-size: $font-size + 10;
+	font-size: $font-size + 14;
 }
 
 h2 {
 	font-size: $font-size + 8;
+}
+
+h3 {
+  font-size: $font-size + 4;
 }
 
 .top-bar {
@@ -25,6 +37,7 @@ h2 {
 	padding: 10px;
 	border-bottom: 2px solid #000;
 	margin-bottom: 10px;
+  background: #FFAA63;
 }
 
 .large-wrapper {
@@ -51,6 +64,7 @@ aside {
     justify-content: center;
     align-items: center;
     height: 500px;
+    background: #5777C0;
   }
   img {
     width: 200px;
@@ -63,8 +77,35 @@ aside {
 article {
 	width: 33%;
   vertical-align: top;
+  .container {
+    background: #FFCB63;
+  }
+  h3, time {
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  h4 {
+    font-weight: 700;
+    padding-top: 15px;
+  }
+  p {
+    padding-top: 10px;
+  }
 }
 
 main {
 	width: 75%;
+}
+
+.main-heading {
+  .container {
+    background: #FF7400;
+  }
+}
+
+footer {
+  .container {
+    background: #FFAA63;
+  }
 }

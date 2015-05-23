@@ -1,4 +1,11 @@
 @import url(reset.css);
+/* 
+bright orange - FF7400
+orange - FFAA63
+yellow orange - FFCB63
+blue - 5777C0
+teal - 46B2B2
+*/
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -7,16 +14,20 @@ body {
   font-size: 14px; }
 
 h1 {
-  font-size: 24px; }
+  font-size: 28px; }
 
 h2 {
   font-size: 22px; }
+
+h3 {
+  font-size: 18px; }
 
 .top-bar {
   width: 100%;
   padding: 10px;
   border-bottom: 2px solid #000;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  background: #FFAA63; }
 
 .large-wrapper {
   width: 990px;
@@ -38,7 +49,8 @@ aside {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px; }
+    height: 500px;
+    background: #5777C0; }
   aside img {
     width: 200px; }
   aside .ad-container {
@@ -47,8 +59,25 @@ aside {
 article {
   width: 33%;
   vertical-align: top; }
+  article .container {
+    background: #FFCB63; }
+  article h3, article time {
+    display: block;
+    text-align: center;
+    padding-bottom: 5px; }
+  article h4 {
+    font-weight: 700;
+    padding-top: 15px; }
+  article p {
+    padding-top: 10px; }
 
 main {
   width: 75%; }
+
+.main-heading .container {
+  background: #FF7400; }
+
+footer .container {
+  background: #FFAA63; }
 
 /*# sourceMappingURL=styles.css.map */
