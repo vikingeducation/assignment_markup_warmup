@@ -1,11 +1,4 @@
 @import url(reset.css);
-/* 
-bright orange - FF7400
-orange - FFAA63
-yellow orange - FFCB63
-blue - 5777C0
-teal - 46B2B2
-*/
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -14,7 +7,7 @@ body {
   font-size: 14px; }
 
 h1 {
-  font-size: 28px; }
+  font-size: 26px; }
 
 h2 {
   font-size: 22px; }
@@ -22,27 +15,52 @@ h2 {
 h3 {
   font-size: 18px; }
 
+h4 {
+  font-weight: 700; }
+
 .top-bar {
   position: fixed;
+  z-index: 10;
   width: 100%;
   height: 40px;
-  z-index: 100;
   line-height: 40px;
   padding-left: 20px;
   border-bottom: 2px solid #000;
   background: #FFAA63; }
+
+.main-container {
+  position: relative;
+  top: 50px; }
 
 .container {
   margin: 10px;
   padding: 10px;
   border: 2px solid #000; }
 
-.large-wrapper {
-  position: relative;
-  top: 50px; }
+article {
+  vertical-align: top; }
+  article .container {
+    background: #FFCB63; }
+  article h3, article time {
+    display: block;
+    text-align: center;
+    padding-bottom: 5px; }
+  article h4 {
+    padding-top: 15px; }
+  article p {
+    padding-top: 10px; }
+
+.main-heading .container {
+  background: #FF7400;
+  text-align: center; }
+.main-heading h2 {
+  font-style: italic; }
+
+footer .container {
+  background: #FFAA63; }
 
 @media screen and (max-width: 990px) {
-  .large-wrapper {
+  .main-container {
     top: 40px; }
 
   aside {
@@ -58,9 +76,14 @@ h3 {
 
   main article:nth-child(-n+3) {
     display: inline-block;
-    width: 50%; } }
+    width: 50%; }
+
+  footer .container {
+    margin: 0;
+    border: 0;
+    border-top: 2px solid #000; } }
 @media screen and (min-width: 990px) {
-  .large-wrapper {
+  .main-container {
     width: 990px;
     margin: 0 auto; }
 
@@ -80,7 +103,9 @@ h3 {
       height: 500px;
       background: #5777C0; }
     aside img {
-      width: 200px; }
+      width: 200px;
+      margin-top: 5px;
+      border: 1px solid #ddd; }
     aside .ad-container {
       text-align: center; }
 
@@ -89,25 +114,5 @@ h3 {
 
   article {
     width: 33%; } }
-article {
-  vertical-align: top; }
-  article .container {
-    background: #FFCB63; }
-  article h3, article time {
-    display: block;
-    text-align: center;
-    padding-bottom: 5px; }
-  article h4 {
-    font-weight: 700;
-    padding-top: 15px; }
-  article p {
-    padding-top: 10px; }
-
-.main-heading .container {
-  background: #FF7400;
-  text-align: center; }
-
-footer .container {
-  background: #FFAA63; }
 
 /*# sourceMappingURL=styles.css.map */

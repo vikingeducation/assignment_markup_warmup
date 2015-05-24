@@ -1,19 +1,13 @@
 @import "reset.css";
 
-/* 
-bright orange - FF7400
-orange - FFAA63
-yellow orange - FFCB63
-blue - 5777C0
-teal - 46B2B2
-*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
 $font-stack: "Open Sans", helvetica, sans-serif;
 $font-size: 14px;
 
-*, *:before, *:after {
-  box-sizing: border-box;
-}
+// All screens 
 
 body {
 	font-family: $font-stack;
@@ -21,7 +15,7 @@ body {
 }
 
 h1 {
-	font-size: $font-size + 14;
+	font-size: $font-size + 12;
 }
 
 h2 {
@@ -32,15 +26,30 @@ h3 {
   font-size: $font-size + 4;
 }
 
+h4 {
+  font-weight: 700;
+}
+
+// Fix top-bar to stop and increase index, 
+// other content scrolls behind it.
+
 .top-bar {
   position: fixed;
+  z-index: 10;
 	width: 100%;
 	height: 40px;
-  z-index: 100;
   line-height: 40px;
   padding-left: 20px;
 	border-bottom: 2px solid #000;
   background: #FFAA63;
+}
+
+// Main container pushed down 50px so its not 
+// hidden behind top-bar.
+
+.main-container {
+  position: relative;
+  top: 50px;
 }
 
 .container {
@@ -49,43 +58,89 @@ h3 {
   border: 2px solid #000;
 }
 
-.large-wrapper {
-  position: relative;
-  top: 50px;
+article {
+  vertical-align: top;
+  .container {
+    background: #FFCB63;
+  }
+  h3, time {
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  h4 {
+    padding-top: 15px;
+  }
+  p {
+    padding-top: 10px;
+  }
 }
+
+.main-heading {
+  .container {
+    background: #FF7400;
+    text-align: center;
+  }
+  h2 {
+    font-style: italic;
+  }
+}
+
+footer {
+  .container {
+    background: #FFAA63;
+  }
+}
+
+// End All screens
+
+
+// Narrow screen
 
 @media screen and (max-width: 990px) { 
 
-.large-wrapper {
-  top: 40px;
+  .main-container {
+    top: 40px;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .main-heading .container {
+    margin: 0;
+    border: 0;
+    border-bottom: 2px solid #000;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  // Nth-child used to make first two articles
+  // appear side by side, third full line below.
+
+  main article:nth-child(-n+3) {
+    display: inline-block;
+    width: 50%;
+  }
+
+  footer .container {
+    margin: 0;
+    border: 0;
+    border-top: 2px solid #000;
+  }
+
 }
 
-aside {
-  display: none;
-}
+// End Narrow screen
 
-.main-heading .container {
-  margin: 0;
-  border: 0;
-  border-bottom: 2px solid #000;
-}
 
-main {
-  width: 100%;
-}
-
-main article:nth-child(-n+3) {
-  display: inline-block;
-  width: 50%;
-}
-
-}
-
-// Wide Screen styles
+// Wide Screen
 
 @media screen and (min-width: 990px) { 
 
-.large-wrapper {
+.main-container {
 	width: 990px;
 	margin: 0 auto ;
 }
@@ -110,6 +165,8 @@ aside {
   }
   img {
     width: 200px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
   }
   .ad-container {
     text-align: center;
@@ -126,38 +183,4 @@ article {
 
 }
 
-// End Wide Screen styles
-
-article {
-  vertical-align: top;
-  .container {
-    background: #FFCB63;
-  }
-  h3, time {
-    display: block;
-    text-align: center;
-    padding-bottom: 5px;
-  }
-  h4 {
-    font-weight: 700;
-    padding-top: 15px;
-  }
-  p {
-    padding-top: 10px;
-  }
-}
-
-
-
-.main-heading {
-  .container {
-    background: #FF7400;
-    text-align: center;
-  }
-}
-
-footer {
-  .container {
-    background: #FFAA63;
-  }
-}
+// End Wide Screen
