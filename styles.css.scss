@@ -5,9 +5,9 @@ $header-bg-color: #B6D7A8;
 $post-bg-color: #A2C4C9;
 $ad-bg-color: #D5A6BD;
 $footer-bg-color: #9FC5F8;
-$blog-width: 100% / 5 * 3;
-$ad-width: 180px;
-$post-width: 220px;
+$blog-width: 100% / 5 * 4;
+$post-width: 25%;
+$ad-width: $post-width;
 $ad-height: 500px;
 
 @mixin border-radius($radius) {
@@ -15,6 +15,15 @@ $ad-height: 500px;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
          -border-radius: $radius;
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 body{
@@ -32,22 +41,30 @@ header, article, aside, footer {
 }
 
 .page-container {
-  width: 990px;
-  margin: 0 5px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .ad-container {
   width: $ad-width;
 }
 
+#ad img{
+  width: 100px;
+  height: 200px;
+}
+
 aside {
   background-color: $ad-bg-color;
   height: $ad-height;
   text-align: center;
+  div{
+    @include vertical-align
+  }
 }
 
 .blog {
-  width: 900px;
+  width: $blog-width;
   margin-left: $ad-width;
 }
 
@@ -69,10 +86,14 @@ header {
   @include border-radius(8px);
   background-color: $header-bg-color;
   height: 60px;
- /* width: $post-width * 3 + 20px; */
+  width: 90%;
   text-align: center;
   vertical-align: middle;
   display: block;
+}
+
+.post-container{
+  margin: 0 auto;
 }
 
 article {

@@ -58,20 +58,31 @@ header, article, aside, footer {
   padding: 2em; }
 
 .page-container {
-  width: 990px;
-  margin: 0 5px; }
+  width: 90%;
+  margin: 0 auto; }
 
 .ad-container {
-  width: 180px; }
+  width: 25%; }
+
+#ad img {
+  width: 100px;
+  height: 200px; }
 
 aside {
   background-color: #D5A6BD;
   height: 500px;
   text-align: center; }
+  aside div {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
 
 .blog {
-  width: 900px;
-  margin-left: 180px; }
+  width: 80%;
+  margin-left: 25%; }
 
 .title-bar-container {
   background-color: #FFE599;
@@ -92,14 +103,17 @@ header {
   -border-radius: 8px;
   background-color: #B6D7A8;
   height: 60px;
-  /* width: $post-width * 3 + 20px; */
+  width: 90%;
   text-align: center;
   vertical-align: middle;
   display: block; }
 
+.post-container {
+  margin: 0 auto; }
+
 article {
   background-color: #A2C4C9;
-  width: 220px;
+  width: 25%;
   display: float; }
 
 footer {
