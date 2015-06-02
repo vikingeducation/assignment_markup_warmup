@@ -58,22 +58,20 @@ header, article, aside, footer {
   padding: 2em; }
 
 .page-container {
-  width: 950px;
+  width: 990px;
   margin: 0 5px; }
 
 .ad-container {
-  display: float;
-  width: 200px; }
+  width: 180px; }
 
 aside {
   background-color: #D5A6BD;
-  height: 100px;
-  text-align: center;
-  width: 100px; }
+  height: 500px;
+  text-align: center; }
 
 .blog {
   width: 900px;
-  margin-left: 210px; }
+  margin-left: 180px; }
 
 .title-bar-container {
   background-color: #FFE599;
@@ -81,7 +79,11 @@ aside {
   height: 30px;
   border-bottom: 2px solid black;
   line-height: 30px;
-  padding-left: 10px; }
+  padding-left: 10px;
+  margin-bottom: 5px; }
+
+.title {
+  display: block; }
 
 header {
   -webkit-border-radius: 8px;
@@ -90,15 +92,15 @@ header {
   -border-radius: 8px;
   background-color: #B6D7A8;
   height: 60px;
+  /* width: $post-width * 3 + 20px; */
   text-align: center;
   vertical-align: middle;
   display: block; }
 
 article {
   background-color: #A2C4C9;
-  width: 300px;
-  display: float;
-  clear: right; }
+  width: 220px;
+  display: float; }
 
 footer {
   background-color: #9FC5F8;

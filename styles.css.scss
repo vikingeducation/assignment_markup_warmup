@@ -6,7 +6,9 @@ $post-bg-color: #A2C4C9;
 $ad-bg-color: #D5A6BD;
 $footer-bg-color: #9FC5F8;
 $blog-width: 100% / 5 * 3;
-$ad-width: 200px;
+$ad-width: 180px;
+$post-width: 220px;
+$ad-height: 500px;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -30,25 +32,23 @@ header, article, aside, footer {
 }
 
 .page-container {
-  width: 950px;
+  width: 990px;
   margin: 0 5px;
 }
 
 .ad-container {
-  display: float;
   width: $ad-width;
 }
 
 aside {
   background-color: $ad-bg-color;
-  height: 100px;
+  height: $ad-height;
   text-align: center;
-  width:100px;
 }
 
 .blog {
   width: 900px;
-  margin-left: $ad-width + 10px;
+  margin-left: $ad-width;
 }
 
 .title-bar-container {
@@ -58,14 +58,18 @@ aside {
   border-bottom: 2px solid black;
   line-height: 30px;
   padding-left: 10px;
+  margin-bottom: 5px;
 }
 
-
+.title{
+  display: block;
+}
 
 header {
   @include border-radius(8px);
   background-color: $header-bg-color;
   height: 60px;
+ /* width: $post-width * 3 + 20px; */
   text-align: center;
   vertical-align: middle;
   display: block;
@@ -73,9 +77,8 @@ header {
 
 article {
   background-color: $post-bg-color;
-  width: 300px;
+  width: $post-width;
   display: float;
-  clear: right;
 }
 
 footer {
