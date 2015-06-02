@@ -51,6 +51,8 @@ body {
   font-size: 14px; }
 
 header, article, aside, footer {
+  display: float;
+  float: left;
   margin: 5px;
   border: 2px solid black;
   padding: 2em; }
@@ -61,7 +63,6 @@ header, article, aside, footer {
 
 .ad-container {
   display: float;
-  float: left;
   width: 200px; }
 
 aside {
@@ -72,9 +73,7 @@ aside {
 
 .blog {
   width: 900px;
-  margin-left: 210px;
-  display: float;
-  float: left; }
+  margin-left: 210px; }
 
 .title-bar-container {
   background-color: #FFE599;
@@ -84,10 +83,6 @@ aside {
   line-height: 30px;
   padding-left: 10px; }
 
-/*
-.title {
-  display: float;
-} */
 header {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -97,18 +92,15 @@ header {
   height: 60px;
   text-align: center;
   vertical-align: middle;
-  display: float;
-  float: left; }
+  display: block; }
 
 article {
   background-color: #A2C4C9;
   width: 300px;
   display: float;
-  float: left; }
+  clear: right; }
 
 footer {
-  display: float;
-  float: left;
   background-color: #9FC5F8;
   clear: both; }
 

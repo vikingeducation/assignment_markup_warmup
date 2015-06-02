@@ -22,6 +22,8 @@ body{
 }
 
 header, article, aside, footer {
+  display: float;
+  float: left;
   margin: 5px;
   border: 2px solid black;
   padding: 2em;
@@ -34,7 +36,6 @@ header, article, aside, footer {
 
 .ad-container {
   display: float;
-  float: left;
   width: $ad-width;
 }
 
@@ -48,8 +49,6 @@ aside {
 .blog {
   width: 900px;
   margin-left: $ad-width + 10px;
-  display: float;
-  float: left;
 }
 
 .title-bar-container {
@@ -60,10 +59,8 @@ aside {
   line-height: 30px;
   padding-left: 10px;
 }
-/*
-.title {
-  display: float;
-} */
+
+
 
 header {
   @include border-radius(8px);
@@ -71,20 +68,17 @@ header {
   height: 60px;
   text-align: center;
   vertical-align: middle;
-  display: float;
-  float: left;
+  display: block;
 }
 
 article {
   background-color: $post-bg-color;
   width: 300px;
   display: float;
-  float: left;
+  clear: right;
 }
 
 footer {
-  display: float;
-  float: left;
   background-color: $footer-bg-color;
   clear: both;
 }
