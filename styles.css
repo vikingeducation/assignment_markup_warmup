@@ -1,0 +1,115 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: "Comic Sans", sans-serif, Arial;
+  font-color: black;
+  font-size: 14px; }
+
+header, article, aside, footer {
+  margin: 5px;
+  border: 2px solid black;
+  padding: 2em; }
+
+.page-container {
+  width: 950px;
+  margin: 0 5px; }
+
+.ad-container {
+  display: float;
+  float: left;
+  width: 200px; }
+
+aside {
+  background-color: #D5A6BD;
+  height: 100px;
+  text-align: center;
+  width: 100px; }
+
+.blog {
+  width: 900px;
+  margin-left: 210px;
+  display: float;
+  float: left; }
+
+.title-bar-container {
+  background-color: #FFE599;
+  text-align: left;
+  height: 30px;
+  border-bottom: 2px solid black;
+  line-height: 30px;
+  padding-left: 10px; }
+
+/*
+.title {
+  display: float;
+} */
+header {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -border-radius: 8px;
+  background-color: #B6D7A8;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  display: float;
+  float: left; }
+
+article {
+  background-color: #A2C4C9;
+  width: 300px;
+  display: float;
+  float: left; }
+
+footer {
+  display: float;
+  float: left;
+  background-color: #9FC5F8;
+  clear: both; }
+
+/*# sourceMappingURL=styles.css.map */

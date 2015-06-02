@@ -1,0 +1,91 @@
+@import 'reset';
+
+$title-bar-bg-color: #FFE599;
+$header-bg-color: #B6D7A8;
+$post-bg-color: #A2C4C9;
+$ad-bg-color: #D5A6BD;
+$footer-bg-color: #9FC5F8;
+$blog-width: 100% / 5 * 3;
+$ad-width: 200px;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+         -border-radius: $radius;
+}
+
+body{
+  font-family: "Comic Sans", sans-serif, Arial;
+  font-color: black;
+  font-size: 14px;
+}
+
+header, article, aside, footer {
+  margin: 5px;
+  border: 2px solid black;
+  padding: 2em;
+}
+
+.page-container {
+  width: 950px;
+  margin: 0 5px;
+}
+
+.ad-container {
+  display: float;
+  float: left;
+  width: $ad-width;
+}
+
+aside {
+  background-color: $ad-bg-color;
+  height: 100px;
+  text-align: center;
+  width:100px;
+}
+
+.blog {
+  width: 900px;
+  margin-left: $ad-width + 10px;
+  display: float;
+  float: left;
+}
+
+.title-bar-container {
+  background-color: $title-bar-bg-color;
+  text-align: left;
+  height: 30px;
+  border-bottom: 2px solid black;
+  line-height: 30px;
+  padding-left: 10px;
+}
+/*
+.title {
+  display: float;
+} */
+
+header {
+  @include border-radius(8px);
+  background-color: $header-bg-color;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  display: float;
+  float: left;
+}
+
+article {
+  background-color: $post-bg-color;
+  width: 300px;
+  display: float;
+  float: left;
+}
+
+footer {
+  display: float;
+  float: left;
+  background-color: $footer-bg-color;
+  clear: both;
+}
+
