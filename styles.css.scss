@@ -9,6 +9,7 @@ $blog-width: 100% / 5 * 4;
 $ad-width: 180px;
 $post-width: 25%;
 $ad-height: 500px;
+$font-size: 14px;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -33,9 +34,9 @@ $ad-height: 500px;
 }
 
 body{
-  font-family: "Comic Sans", sans-serif, Arial;
+  font-family: 'Open Sans', HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
   font-color: black;
-  font-size: 14px;
+  font-size: $font-size;
 }
 
 header, article, aside, footer {
@@ -49,6 +50,26 @@ header, article, aside, footer {
 h1, h2, h3, .author, .date {
   text-align: center;
   font-weight: bold;
+}
+
+h1, h2 {
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: ($font-size + 10px);
+}
+
+h2 {
+  font-size: $font-size + 6px;
+}
+
+h3 {
+  font-size: $font-size + 2px;
+}
+
+p{
+  line-height: 1.5em;
 }
 
 .page-container {
@@ -90,6 +111,7 @@ aside {
   margin-bottom: 5px;
   h2{
     text-align: left;
+    font-weight: normal;
   }
 }
 
@@ -98,7 +120,7 @@ aside {
 }
 
 header {
-  @include border-radius(8px);
+  @include border-radius(15px);
   background-color: $header-bg-color;
   height: 60px;
   width: 90%;
@@ -126,9 +148,13 @@ article {
   }
 }
 
+.date {
+  font-size: $font-size + 2px;
+}
+
 footer {
   background-color: $footer-bg-color;
   clear: both;
-  @include border-radius(8px);
+  @include border-radius(30px);
 }
 
