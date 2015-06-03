@@ -46,6 +46,11 @@ header, article, aside, footer {
   padding: 2em;
 }
 
+h1, h2, h3, .author, .date {
+  text-align: center;
+  font-weight: bold;
+}
+
 .page-container {
   width: 80%;
   margin: 0 auto;
@@ -78,15 +83,17 @@ aside {
 
 .title-bar-container {
   background-color: $title-bar-bg-color;
-  text-align: left;
   height: 30px;
   border-bottom: 2px solid black;
   line-height: 30px;
   padding-left: 10px;
   margin-bottom: 5px;
+  h2{
+    text-align: left;
+  }
 }
 
-.title{
+.title-container {
   display: block;
 }
 
@@ -95,9 +102,14 @@ header {
   background-color: $header-bg-color;
   height: 60px;
   width: 90%;
-  text-align: center;
-  vertical-align: middle;
-  display: block;
+    div{
+      @include vertical-align;
+    }
+}
+
+.author {
+  font-style: italic;
+  font-weight: normal;
 }
 
 .post-container{
@@ -108,10 +120,15 @@ article {
   background-color: $post-bg-color;
   width: $post-width;
   display: float;
+  section h3 {
+    padding: 2em 0;
+    text-align: left;
+  }
 }
 
 footer {
   background-color: $footer-bg-color;
   clear: both;
+  @include border-radius(8px);
 }
 

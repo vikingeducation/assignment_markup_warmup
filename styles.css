@@ -57,6 +57,10 @@ header, article, aside, footer {
   border: 2px solid black;
   padding: 2em; }
 
+h1, h2, h3, .author, .date {
+  text-align: center;
+  font-weight: bold; }
+
 .page-container {
   width: 80%;
   margin: 0 auto; }
@@ -88,14 +92,15 @@ aside {
 
 .title-bar-container {
   background-color: #FFE599;
-  text-align: left;
   height: 30px;
   border-bottom: 2px solid black;
   line-height: 30px;
   padding-left: 10px;
   margin-bottom: 5px; }
+  .title-bar-container h2 {
+    text-align: left; }
 
-.title {
+.title-container {
   display: block; }
 
 header {
@@ -105,10 +110,18 @@ header {
   -border-radius: 8px;
   background-color: #B6D7A8;
   height: 60px;
-  width: 90%;
-  text-align: center;
-  vertical-align: middle;
-  display: block; }
+  width: 90%; }
+  header div {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+.author {
+  font-style: italic;
+  font-weight: normal; }
 
 .post-container {
   margin: 0 auto; }
@@ -117,9 +130,16 @@ article {
   background-color: #A2C4C9;
   width: 25%;
   display: float; }
+  article section h3 {
+    padding: 2em 0;
+    text-align: left; }
 
 footer {
   background-color: #9FC5F8;
-  clear: both; }
+  clear: both;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -border-radius: 8px; }
 
 /*# sourceMappingURL=styles.css.map */
