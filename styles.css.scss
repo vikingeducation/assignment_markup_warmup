@@ -6,8 +6,8 @@ $post-bg-color: #A2C4C9;
 $ad-bg-color: #D5A6BD;
 $footer-bg-color: #9FC5F8;
 $blog-width: 100% / 5 * 4;
+$ad-width: 180px;
 $post-width: 25%;
-$ad-width: $post-width;
 $ad-height: 500px;
 
 @mixin border-radius($radius) {
@@ -26,6 +26,12 @@ $ad-height: 500px;
           transform: translateY(-50%);
 }
 
+%vertical-align {
+  position: relative;
+  top: 50%;
+  margin-top:-50%;
+}
+
 body{
   font-family: "Comic Sans", sans-serif, Arial;
   font-color: black;
@@ -41,7 +47,7 @@ header, article, aside, footer {
 }
 
 .page-container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -51,15 +57,17 @@ header, article, aside, footer {
 
 #ad img{
   width: 100px;
-  height: 200px;
+  height: 100px;
 }
 
 aside {
   background-color: $ad-bg-color;
   height: $ad-height;
   text-align: center;
+  /* position: relative; */
   div{
-    @include vertical-align
+    /* @extend %vertical-align; */
+    @include vertical-align;
   }
 }
 
