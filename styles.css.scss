@@ -1,0 +1,223 @@
+@import 'reset';
+
+$title-bar-bg-color: #FFE599;
+$header-bg-color: #B6D7A8;
+$post-bg-color: #A2C4C9;
+$ad-bg-color: #D5A6BD;
+$footer-bg-color: #9FC5F8;
+$blog-width: 100% / 5 * 4;
+$ad-width: 180px;
+$post-width: 25%;
+$ad-height: 500px;
+$font-size: 14px;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+         -border-radius: $radius;
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body{
+  font-family: 'Open Sans', HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-color: black;
+  font-size: $font-size;
+}
+
+
+
+/* styling is based on desktop view */
+
+header, article, aside, footer {
+  display: float;
+  float: left;
+  margin: 5px;
+  border: 2px solid black;
+  padding: 2em;
+}
+
+h1, h2, h3, .author, .date {
+  text-align: center;
+  font-weight: bold;
+}
+
+h1, h2 {
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: ($font-size + 10px);
+}
+
+h2 {
+  font-size: $font-size + 6px;
+}
+
+h3 {
+  font-size: $font-size + 2px;
+}
+
+p{
+  line-height: 1.5em;
+}
+
+.page-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ad-container {
+  width: $ad-width;
+}
+
+#ad img{
+  width: 100px;
+  height: 100px;
+}
+
+aside {
+  background-color: $ad-bg-color;
+  height: $ad-height;
+  text-align: center;
+  div{
+    @include vertical-align;
+  }
+}
+
+.blog {
+  width: $blog-width;
+  margin-left: $ad-width;
+}
+
+.title-bar-container {
+  background-color: $title-bar-bg-color;
+  height: 30px;
+  border-bottom: 2px solid black;
+  line-height: 30px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  h2{
+    text-align: left;
+    font-weight: normal;
+  }
+}
+
+.title-container {
+  display: block;
+}
+
+
+header {
+  background-color: $header-bg-color;
+  height: 60px;
+  width: 90%; /* header width is odd (cannot clear floats without effecting layout) */
+    div{
+      @include vertical-align;
+    }
+}
+
+.author {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.post-container{
+  margin: 0 auto;
+}
+
+article {
+  background-color: $post-bg-color;
+  width: $post-width;
+  display: float;
+  section h3 {
+    padding: 2em 0;
+    text-align: left;
+  }
+}
+
+time {
+  font-size: $font-size + 2px;
+}
+
+footer {
+  background-color: $footer-bg-color;
+  clear: both;
+}
+
+
+/* desktop screen size specific styling
+  pulled out element that is not used in small screen*/
+/*------------------------------*/
+
+@media screen and (min-width: 900px) {
+  header{
+    @include border-radius(15px);
+  }
+  footer{
+    @include border-radius(30px);
+  }
+}
+
+/* small screen size modification of desktop size */
+/*------------------------------*/
+
+@media screen and (max-width: 899px) {
+
+/* removing ad and expanding blog to entire page */
+
+  .ad-container {
+    display: none;
+  }
+
+  .page-container, .blog, .post-container{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+/* removing unnecessary border and margin of & near header and footer*/
+  .title-bar-container{
+    margin: 0;
+  }
+
+  header, footer {
+    display: block;
+    border: none;
+    margin: 0;
+  }
+
+/* header width problem also exists in desktop view */
+
+  header {
+    border-bottom: 2px solid black;
+    width: 95%;
+  }
+
+  footer {
+    border-top: 2px solid black;
+  }
+
+  /* resizing posts */
+
+  article {
+    width: ($post-width * 2 - 10%);
+  }
+
+/* clearfix application is a better for multiple posts */
+
+
+ /* .expand{
+    width: 92%;
+  } */
+
+}
+
