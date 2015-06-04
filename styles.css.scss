@@ -27,17 +27,15 @@ $font-size: 14px;
           transform: translateY(-50%);
 }
 
-%vertical-align {
-  position: relative;
-  top: 50%;
-  margin-top:-50%;
-}
-
 body{
   font-family: 'Open Sans', HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
   font-color: black;
   font-size: $font-size;
 }
+
+
+
+/* styling is based on desktop view */
 
 header, article, aside, footer {
   display: float;
@@ -90,9 +88,7 @@ aside {
   background-color: $ad-bg-color;
   height: $ad-height;
   text-align: center;
-  /* position: relative; */
   div{
-    /* @extend %vertical-align; */
     @include vertical-align;
   }
 }
@@ -119,11 +115,11 @@ aside {
   display: block;
 }
 
+
 header {
-  @include border-radius(15px);
   background-color: $header-bg-color;
   height: 60px;
-  width: 90%;
+  width: 90%; /* header width is odd (cannot clear floats without effecting layout) */
     div{
       @include vertical-align;
     }
@@ -148,13 +144,80 @@ article {
   }
 }
 
-.date {
+time {
   font-size: $font-size + 2px;
 }
 
 footer {
   background-color: $footer-bg-color;
   clear: both;
-  @include border-radius(30px);
+}
+
+
+/* desktop screen size specific styling
+  pulled out element that is not used in small screen*/
+/*------------------------------*/
+
+@media screen and (min-width: 900px) {
+  header{
+    @include border-radius(15px);
+  }
+  footer{
+    @include border-radius(30px);
+  }
+}
+
+/* small screen size modification of desktop size */
+/*------------------------------*/
+
+@media screen and (max-width: 899px) {
+
+/* removing ad and expanding blog to entire page */
+
+  .ad-container {
+    display: none;
+  }
+
+  .page-container, .blog, .post-container{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+/* removing unnecessary border and margin of & near header and footer*/
+  .title-bar-container{
+    margin: 0;
+  }
+
+  header, footer {
+    display: block;
+    border: none;
+    margin: 0;
+  }
+
+/* header width problem also exists in desktop view */
+
+  header {
+    border-bottom: 2px solid black;
+    width: 95%;
+  }
+
+  footer {
+    border-top: 2px solid black;
+  }
+
+  /* resizing posts */
+
+  article {
+    width: ($post-width * 2 - 10%);
+  }
+
+/* clearfix application is a better for multiple posts */
+
+
+ /* .expand{
+    width: 92%;
+  } */
+
 }
 
