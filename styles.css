@@ -1,0 +1,152 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*My  Base Styles*/
+h2 {
+  font-size: 150%;
+  padding: 20px;
+  vertical-align: middle; }
+
+h3 {
+  font-size: 125%;
+  vertical-align: middle; }
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 81px;
+  /* box-sizing: border-box; */ }
+
+.nav {
+  background-color: #FFE599;
+  width: 100%;
+  height: 64px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  border: 1px solid; }
+
+.left {
+  background-color: #D5A6BD;
+  width: 197px;
+  padding-top: 95px;
+  padding-left: 10px;
+  height: 300px;
+  padding-right: 10px;
+  float: left;
+  border: 1px solid;
+  text-align: center; }
+
+div.ad-image {
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 150px; }
+
+img.ad-image {
+  height: 150px;
+  width: 150px; }
+
+.right {
+  float: left;
+  width: 73%;
+  margin-left: 20px;
+  /* padding: 15px; */
+  box-sizing: border-box; }
+
+.header {
+  background-color: #B6D7A8;
+  width: 100%;
+  height: 75px;
+  float: inherit;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid;
+  padding: 16px;
+  box-sizing: border-box; }
+
+header.article-header {
+  text-align: center;
+  padding: 15px; }
+
+article {
+  background-color: #A2C4C9;
+  width: 31%;
+  box-sizing: border-box;
+  margin: 5px;
+  float: inherit;
+  min-width: 200px;
+  padding: 25px;
+  border: 1px solid; }
+
+.footer {
+  background-color: #9FC5F8;
+  width: 100%;
+  height: 75px;
+  float: inherit;
+  box-sizing: border-box;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid; }
+
+@media (max-width: 992px) {
+  .left {
+    display: none; }
+
+  .right {
+    width: 100%;
+    margin-left: 0; }
+
+  article {
+    width: 48%; } }
+@media (max-width: 600px) {
+  article {
+    width: 100%; } }
+
+/*# sourceMappingURL=styles.css.map */
