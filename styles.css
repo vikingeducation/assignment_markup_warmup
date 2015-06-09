@@ -1,4 +1,4 @@
-nav {
+  nav {
   background-color: #FFE599;
   height: 50px;
   margin-bottom: 10px; }
@@ -10,19 +10,19 @@ nav {
     transform: translateY(-50%);
     font-weight: bold; }
 
-.container {
-  margin: 0 auto 0;
-  max-width: 85%;
-  min-height: 900px; }
+  .container {
+    margin: 0 auto 0;
+    max-width: 85%;
+    min-height: 900px; }
 
-aside {
-  text-align: center;
-  background-color: #D5A6BD;
-  display: inline-block;
-  float: left;
-  margin: auto;
-  height: 600px;
-  width: 15%; }
+  aside {
+    text-align: center;
+    background-color: #D5A6BD;
+    display: inline-block;
+    float: left;
+    margin: auto;
+    height: 600px;
+    width: 15%; }
   aside img {
     position: relative;
     margin-top: 1em;
@@ -38,20 +38,21 @@ aside {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
 
-main {
-  float: left;
-  margin-left: 1.5%;
-  margin-right: auto;
-  display: inline-block;
-  width: 83.5%; }
+  main {
+    float: left;
+    margin-left: 1.5%;
+    margin-right: auto;
+    display: inline-block;
+    width: 83.5%; }
   main #art-div {
     display: flex;
     justify-content: space-between; }
 
-header {
-  background-color: #B6D7A8;
-  text-align: center;
-  height: 10%; }
+  header {
+    background-color: #B6D7A8;
+    text-align: center;
+    height: 10%; }
+
   header h1 {
     font-weight: bold;
     position: relative;
@@ -59,6 +60,7 @@ header {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
+
   header h3 {
     position: relative;
     top: 50%;
@@ -66,15 +68,15 @@ header {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
 
-article {
-  background-color: #A2C4C9;
-  padding: 8px;
-  max-width: 29%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  float: left; }
+  article {
+    background-color: #A2C4C9;
+    padding: 8px;
+    max-width: 29%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left; }
 
-footer {
-  height: 6%;
-  clear: both;
-  background-color: #9FC5F8; }
+  footer {
+    height: 6%;
+    clear: both;
+    background-color: #9FC5F8; }
