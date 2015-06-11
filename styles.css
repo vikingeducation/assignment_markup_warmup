@@ -1,0 +1,42 @@
+body {
+  font-family: Helvetica, Sans-Serif; }
+
+nav {
+  background-color: #444;
+  padding: 10px;
+  position: fixed;
+  width: 100%; }
+  nav h1 {
+    font-size: 30px;
+    color: #fff;
+    margin-left: 30px; }
+
+aside {
+  height: 600px;
+  vertical-align: middle;
+  background-color: #f5f6f7;
+  border: 2px solid #aaa;
+  display: inline-block; }
+  aside p {
+    text-align: center; }
+
+header {
+  display: inline-block;
+  border: 2px solid #444;
+  border-radius: 5px;
+  text-align: middle; }
+
+main {
+  display: inline-block; }
+  main article {
+    display: inline-block; }
+    main article header h1 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold; }
+    main article header h2 {
+      text-align: center;
+      font-size: 20px;
+      color: #777; }
+
+/*# sourceMappingURL=styles.css.map */
