@@ -34,6 +34,7 @@ nav {
     font-size: 30px;
     color: #fff;
     margin-left: 30px;
+    text-align: left;
   }
 }
 
@@ -78,14 +79,9 @@ main {
     }
   }
 
-.article-container {
-  width: 100%;
-  text-align: center;
-  vertical-align: top;
-}
-
   article {
     display: inline-block;
+    vertical-align: top;
     width: 250px;
     background-color: #aac2ff;
     border: 3px solid #5a72af;
@@ -94,8 +90,8 @@ main {
   p {
     line-height: 22px;
   }
-  article:nthchild(2), article:nthchild(3) {
-    margin-left: 15px;
+  article:nth-child(3), article:nth-child(4) {
+    margin-left: 10px;
   }
 }
 
@@ -113,4 +109,30 @@ footer {
   margin-top: 15px;
   border-radius: 15px;
   border: 3px solid #49af4f;
+}
+
+@media screen and (max-width: 990px) {
+  main header, footer {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    border-radius: 0px;
+    width: 100%;
+  }
+
+  aside {
+    display: none;
+  }
+
+  main {
+    article {
+      width: 45%
+    }
+
+    article:nth-child(4){
+      margin: 10px 0;
+      width: 100%
+    }
+  }
+
 }
