@@ -79,37 +79,38 @@ main {
     line-height: 22px; }
   main article:not(:first-of-type) {
     margin-left: 1%; }
+  main footer {
+    clear: both;
+    text-align: right;
+    background-color: #89ff8f;
+    font-size: 16px;
+    color: #333;
+    margin-top: 15px;
+    border-radius: 15px;
+    border: 3px solid #49af4f;
+    padding: 15px 0; }
+  main p {
+    margin-right: 5%; }
 
 .post {
   padding: 10px; }
 
-footer {
-  clear: both;
-  text-align: right;
-  background-color: #89ff8f;
-  font-size: 16px;
-  color: #333;
-  padding: 20px;
-  margin-top: 15px;
-  border-radius: 15px;
-  border: 3px solid #49af4f; }
-
 @media screen and (max-width: 990px) {
-  main header, footer {
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
-    border-radius: 0px;
-    width: 100%; }
-
   aside {
     display: none; }
 
   main {
     width: 98%;
     margin: 10px auto; }
+    main header, main footer {
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      -ms-border-radius: 0px;
+      border-radius: 0px;
+      width: 100%; }
     main article {
-      width: 47%;
+      width: 47%; }
+    main article:first-of-type {
       margin-right: 1%; }
     main article:last-of-type {
       margin: 10px 0;
