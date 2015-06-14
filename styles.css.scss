@@ -1,19 +1,57 @@
 nav {
 	background-color: #FFE599;
-}
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	display: table;
+	border-spacing: 35px 0px;
+	border-bottom: 2px solid black;
 
-header {
-	background-color: #B6D7A8;
+	.p {
+		display: table-cell;
+		vertical-align: middle;
+	}
 }
 
 article {
+	padding: 10px;
+	margin-top: 15px;
 	background-color: #A2C4C9;
-}
-
-article header {
-	background-color: #A2C4C9;
+	border: 1px solid black;
 }
 
 footer {
+	margin-top: 15px;
 	background-color: #9FC5F8;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+aside {
+	margin-top: 80px;
+	float: left;
+}
+
+header {
+	h1, h3, p {
+		text-align: center;
+	}
+}
+
+.main-container {
+	float: left;
+	max-width: 990px;
+	margin-top: 65px;
+}
+
+.main-header {
+	background-color: #B6D7A8;
+	border-radius: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px;
 }
