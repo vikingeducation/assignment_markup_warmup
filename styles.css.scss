@@ -5,7 +5,7 @@ p {
 body {
 	margin-left: auto;
 	margin-right: auto;
-	width: 90%;
+	width: 100%;
 }
 
 nav {
@@ -37,9 +37,34 @@ footer {
 	float: left;
 	margin-top: 15px;
 	background-color: #9FC5F8;
-	border: 1px solid black;
-	border-radius: 10px;
 	padding: 10px;
+}
+
+@media (screen and min-width:1025px){
+	footer, .main-header{
+		max-width: 990px;
+		border: 1px solid black;
+		border-radius: 10px;
+	}
+
+	.main-header {
+		margin-top:5px;
+	}
+}
+
+@media (screen and max-width:1024px){
+	footer{
+		width: 100%;
+		border-top: 1px solid black;
+		left: 0;
+	}
+
+	.main-header {
+		width: 100%;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		left: 0;
+	}
 }
 
 aside {
@@ -78,10 +103,23 @@ header {
 	}
 }
 
+@media (screen and min-width: 1025px){
+	.main-container{
+		max-width: 990px;
+	}
+}
+
+@media (screen and max-width: 1024px){
+	.main-container{
+		max-width:100%;
+		width:100%;
+	}
+}
+
+
 .main-container {
 	float: left;
-	max-width: 990px;
-	margin-top: 65px;
+	margin-top: 40px;
 
 	article {
 		width: 45%;
@@ -113,8 +151,5 @@ header {
 
 .main-header {
 	background-color: #B6D7A8;
-	border-radius: 10px;
-	border: 1px solid black;
-	border-radius: 10px;
 	padding: 10px;
 }
