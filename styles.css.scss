@@ -8,8 +8,6 @@ body {
 	width: 90%;
 }
 
-
-
 nav {
 	background-color: #FFE599;
 	position: fixed;
@@ -86,10 +84,30 @@ header {
 	margin-top: 65px;
 
 	article {
-		width: 29%;
+		width: 45%;
 		float: left;
 		margin-left:1%;
 		margin-right:1%;
+	}
+
+	article:nth-of-type(3){
+		width: 95%;
+	}
+
+	@media (screen and min-width: 1025px){
+		article {
+			width: 29%;
+			float: left;
+			margin-left:1%;
+			margin-right:1%;
+		}
+
+		article:nth-of-type(3){
+			width: 29%;
+			float: left;
+			margin-left:1%;
+			margin-right:1%;
+		}
 	}
 }
 
