@@ -28,16 +28,17 @@ aside {
   border: 2px solid #000;
   background-color: #DF01A5;
   margin: 0 10px 0 0;
-  text-align: center; }
+  text-align: center;
+  font-family: Comic, Arial; }
   aside img {
     height: 100px;
     width: 80px;
-    border: 2px solid #000;
+    border: 2px solid #000; }
+  aside #center-image {
+    max-height: 150px;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
-    margin-left: auto;
-    margin-right: auto; }
+    transform: translateY(-50%); }
 
 main {
   float: left;
@@ -55,7 +56,9 @@ main {
     main header h1 {
       font-size: 20px;
       line-height: 25px;
-      font-family: Comic, Arial; }
+      font-family: Comic, Arial;
+      padding: 15px 0 5px 0;
+      font-weight: bold; }
     main header p {
       font-size: 16px;
       font-style: italic;
@@ -68,40 +71,56 @@ main {
     margin: 10px 0 10px 0;
     background-color: #088A85;
     padding: 0 10px 0 10px;
+    max-height: 375px;
+    overflow: hidden;
     /* Need to adjust line height bet h5 and p */ }
     main article h4 {
       font-size: 16px;
       font-family: Comic, Arial;
       font-weight: bold;
-      line-height: 17px;
-      text-align: center; }
-    main article h4 p {
-      /* Q: How does this reduce the line height between h4 and p? */
-      font-weight: normal;
-      line-height: 5px; }
+      line-height: 20px;
+      text-align: center;
+      padding: 10px 0 4px 0; }
+    main article .article-date {
+      text-align: center;
+      margin: 0 0 10px 0; }
     main article h5 {
       font-size: 13px;
       font-family: Comic, Arial;
-      font-weight: bold; }
+      font-weight: bold;
+      margin: 0; }
     main article p {
       font-size: 13px;
-      font-family: Comic, Arial; }
-  main article:nth-child(2) {
-    height: 400px; }
+      font-family: Comic, Arial;
+      margin: 10px 0 20px 0; }
   main article:nth-child(3) {
-    height: 250px;
     margin: 10px; }
-  main article:nth-child(4) {
-    height: 340px; }
   main footer {
     height: 60px;
     width: 750px;
     border: 2px solid #000;
     border-radius: 15px;
     background-color: #58D3F7;
-    clear: both; }
+    clear: both;
+    text-align: center; }
     main footer p {
       font-family: Comic, Arial;
-      font-size: 12px; }
+      font-size: 12px;
+      margin-top: 12px; }
+
+/* Media Queries Section for smaller screens */
+@media (max-width: 989px) {
+  p {
+    color: white; }
+
+  section {
+    width: 100%; }
+    section article {
+      width: 100%; }
+      section article:nth-child(3) {
+        margin: 0px; }
+
+  aside {
+    display: none; } }
 
 /*# sourceMappingURL=styles.css.map */

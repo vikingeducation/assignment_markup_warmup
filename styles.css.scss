@@ -33,15 +33,19 @@ aside {
 	background-color: #DF01A5;
 	margin: 0 10px 0 0;
 	text-align:center;
+	font-family: Comic, Arial;
+
 	img {
 		height:100px;
 		width: 80px;
 		border: 2px solid #000;
+	}
+
+	#center-image {
+		max-height: 150px;
 		position: relative;
   		top: 50%;
   		transform: translateY(-50%);
-  		margin-left: auto;
-  		margin-right: auto;
 	}
 
 }
@@ -62,6 +66,8 @@ main {
 			font-size: 20px;
 			line-height: 25px;
 			font-family: Comic, Arial;
+			padding: 15px 0 5px 0;
+			font-weight: bold;
 		}
 		/* Need to adjust line height between h1 and p */
 		p{
@@ -79,42 +85,49 @@ main {
 		margin: 10px 0 10px 0;
 		background-color: #088A85;
 		padding: 0 10px 0 10px;
+		max-height: 375px;
+		overflow: hidden;
 
 		h4 {
 			font-size: 16px;
 			font-family: Comic, Arial;
 			font-weight: bold;
-			line-height: 17px;
+			line-height: 20px;
 			text-align: center;
+			padding: 10px 0 4px 0;
 		}
 
-		h4 p {     					/* Q: How does this reduce the line height between h4 and p? */
-			font-weight: normal;
-			line-height: 5px;
+		.article-date {
+			text-align: center;
+			margin: 0 0 10px 0;
 		}
 
 		h5{
 			font-size: 13px;
 			font-family: Comic, Arial;
 			font-weight: bold;
+			margin: 0;
 		}
 		/* Need to adjust line height bet h5 and p */
 		p{
 			font-size: 13px;
 			font-family: Comic, Arial;
+			margin: 10px 0 20px 0;
 		}
-	}
 
-	article:nth-child(2) {
-		height: 400px;
+
+
 	}
+	// article:nth-child(2) {
+	// 	height: 400px;
+	// }
 	article:nth-child(3) {
-		height: 250px;
+	// 	height: 250px;
 		margin: 10px;
 	}
-	article:nth-child(4) {
-		height: 340px;
-	}
+	// article:nth-child(4) {
+	// 	height: 340px;
+	// }
 
 	footer {
 		height: 60px;
@@ -123,12 +136,32 @@ main {
 		border-radius: 15px;
 		background-color: #58D3F7;
 		clear: both;
-		
+		text-align: center;
+
 		p{
 			font-family: Comic, Arial;
 			font-size: 12px;
+			margin-top: 12px;
+		}
+	}
+}
+
+/* Media Queries Section for smaller screens */
+@media (max-width: 989px) {
+	p{
+		color:white;
+	}
+	section {
+		width: 100%;
+		article {
+			width: 100%;
+			&:nth-child(3) {
+				margin: 0px;
+			}
 		}
 	}
 
-
+	aside {
+		display: none;
+	}
 }
