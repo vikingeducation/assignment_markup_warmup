@@ -1,0 +1,107 @@
+/* Go outside in */
+nav {
+  height: 40px;
+  width: 1000px;
+  background: #F2F5A9;
+  border: 2px solid #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0 0 50px 0;
+  vertical-align: middle;
+  /* How do I vertically center my text? */
+  padding: 0 0 0 10px; }
+  nav h3 {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Comic, Arial; }
+
+.spacer {
+  height: 50px; }
+
+aside {
+  float: left;
+  position: relative;
+  /* Allows me to position things within this element */
+  height: 300px;
+  width: 200px;
+  border: 2px solid #000;
+  background-color: #DF01A5;
+  margin: 0 10px 0 0;
+  text-align: center; }
+  aside img {
+    height: 100px;
+    width: 80px;
+    border: 2px solid #000;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto; }
+
+main {
+  float: left;
+  height: 600px;
+  width: 780px; }
+  main header {
+    height: 80px;
+    width: 750px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    background-color: #BCF5A9;
+    text-align: center;
+    vertical-align: middle;
+    /* Need to adjust line height between h1 and p */ }
+    main header h1 {
+      font-size: 20px;
+      line-height: 25px;
+      font-family: Comic, Arial; }
+    main header p {
+      font-size: 16px;
+      font-style: italic;
+      line-height: 18px;
+      font-family: Comic, Arial; }
+  main article {
+    float: left;
+    width: 220px;
+    border: 2px solid #000;
+    margin: 10px 0 10px 0;
+    background-color: #088A85;
+    padding: 0 10px 0 10px;
+    /* Need to adjust line height bet h5 and p */ }
+    main article h4 {
+      font-size: 16px;
+      font-family: Comic, Arial;
+      font-weight: bold;
+      line-height: 17px;
+      text-align: center; }
+    main article h4 p {
+      /* Q: How does this reduce the line height between h4 and p? */
+      font-weight: normal;
+      line-height: 5px; }
+    main article h5 {
+      font-size: 13px;
+      font-family: Comic, Arial;
+      font-weight: bold; }
+    main article p {
+      font-size: 13px;
+      font-family: Comic, Arial; }
+  main article:nth-child(2) {
+    height: 400px; }
+  main article:nth-child(3) {
+    height: 250px;
+    margin: 10px; }
+  main article:nth-child(4) {
+    height: 340px; }
+  main footer {
+    height: 60px;
+    width: 750px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    background-color: #58D3F7;
+    clear: both; }
+    main footer p {
+      font-family: Comic, Arial;
+      font-size: 12px; }
+
+/*# sourceMappingURL=styles.css.map */
