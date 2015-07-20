@@ -42,6 +42,10 @@ table {
   border-spacing: 0;
 }
 
+// Breakpoint variable
+
+$break: 990px;
+
 // Body
 
 body {
@@ -204,4 +208,46 @@ footer {
   margin-top: 20px;
   padding: 10px 15px;
   line-height: 18px;
+}
+
+// Media Query for width < 990px
+
+@media (max-width: $break) {
+
+  .container {
+    width: 990px;
+  }
+
+  .vertical-ad {
+    display: none;
+  }
+
+  .container2 {
+    width: 100%;
+  }
+
+  .page-title {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .post-left,
+  .post-center,
+  .post-right {
+    width: 48%;
+  }
+
+  .post-center {
+    margin: 15px 5px 0 5px;
+  }
+
+  footer {
+    width: 100%;
+    border-radius: 0;
+  }
 }
