@@ -214,6 +214,11 @@ footer {
 
 @media (max-width: $break) {
 
+  header {
+    width: 800px;
+    margin: 0 auto;
+  }
+
   .container {
     width: 800px;
   }
@@ -223,24 +228,24 @@ footer {
   }
 
   .container2 {
-    width: 100%;
+    width: 800px;
     margin: 0;
   }
 
   .page-title {
-    width: 100%;
+    width: 800px;
     border-radius: 0;
     margin-top: 0;
     margin-left: 0;
   }
 
   .content {
-    width: 100%;
+    width: 800px;
   }
 
   .post-left,
   .post-center {
-    width: 45%;
+    width: 48%;
   }
 
   .post-center {
@@ -249,12 +254,27 @@ footer {
   }
 
   .post-right {
-    width: 100%;
+    width: 800px;
   }
 
   footer {
-    width: 100%;
+    width: 800px;
     border-radius: 0;
     float: none;
+  }
+
+  header,
+  .container,
+  .vertical-ad,
+  .container2,
+  .page-title,
+  .content,
+  .post-left,
+  .post-center,
+  .post-right,
+  footer {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   }
 }
