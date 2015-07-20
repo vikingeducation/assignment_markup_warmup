@@ -224,6 +224,7 @@ footer {
 
   .container2 {
     width: 100%;
+    margin: 0;
   }
 
   .page-title {
@@ -238,13 +239,16 @@ footer {
   }
 
   .post-left,
-  .post-center,
-  .post-right {
-    width: 48%;
+  .post-center {
+    width: 42%;
   }
 
   .post-center {
-    margin: 15px 0 0 18px;
+    float: right;
+  }
+
+  .post-right {
+    width: 100%;
   }
 
   footer {
