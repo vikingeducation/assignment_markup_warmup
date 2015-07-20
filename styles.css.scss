@@ -240,11 +240,12 @@ footer {
 
   .post-left,
   .post-center {
-    width: 42%;
+    width: 45%;
   }
 
   .post-center {
     float: right;
+    margin: 15px 0 0 0;
   }
 
   .post-right {
@@ -254,5 +255,6 @@ footer {
   footer {
     width: 100%;
     border-radius: 0;
+    float: both;
   }
 }
