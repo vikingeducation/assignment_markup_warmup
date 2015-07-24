@@ -1,0 +1,33 @@
+// posts
+
+// --------------------
+// posts
+// --------------------
+
+.posts {
+	width: $width * 0.75;
+	margin-left: $width * 0.25;
+}
+
+@media only screen and (max-width: $width) {
+	.posts {
+		max-width: 100%;
+		margin-left: 0;
+	}
+}
+
+// --------------------
+// post
+// --------------------
+
+.post {
+	float: left;
+	max-width: ($width * 0.75) * 0.3;
+}
+
+@media only screen and (max-width: $width) {
+	.post {
+		max-width: 100%;
+		float: none;
+	}
+}

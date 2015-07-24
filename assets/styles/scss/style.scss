@@ -1,0 +1,48 @@
+/* style */
+
+@import '../reset/reset';
+@import '../reset/normalize';
+
+@import '_settings';
+@import '_mixins';
+
+@import '_nav';
+@import '_header';
+@import '_posts';
+@import '_ad';
+@import '_footer';
+
+// --------------------
+// top level elements
+// --------------------
+
+.wrap,
+main,
+nav,
+header,
+.post,
+section,
+footer {
+	@include container;
+}
+
+.wrap {
+	max-width: $width;
+}
+
+.title,
+.ad {
+	margin-top: 96px;
+}
+
+.ad,
+.posts {
+	float: left;
+}
+
+@media only screen and (max-width: $width) {
+	.ad,
+	.posts {
+		float: none;
+	}
+}
