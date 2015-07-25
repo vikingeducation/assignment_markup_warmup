@@ -1,0 +1,35 @@
+// base
+
+// --------------------
+// top level elements
+// --------------------
+
+.wrap,
+nav,
+main,
+.posts,
+.title,
+section,
+footer {
+	@include container;
+}
+
+main {
+	position: relative;
+}
+
+.wrap {
+	max-width: $width;
+}
+
+.title,
+.ad {
+	margin-top: 96px;
+}
+
+@media only screen and (max-width: $width) {
+	.ad,
+	.posts {
+		float: none;
+	}
+}

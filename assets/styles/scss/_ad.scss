@@ -1,26 +1,48 @@
 // ad
 
 .ad {
-	width: $width * 0.25;
-	margin-left: -$width;
+	width: $width * 0.20;
+	height: 518px;
+	position: absolute;
+	left: $width * 0.025;
+	background: $ad;
 
-	.image {
-		width: 75%;
+	.table {
+		display: table;
+		height: 100%;
 	}
+	.center-y {
+		vertical-align: middle;
+	}
+	h1 {
+		font-size: 1em;
+		text-align: center;
+	}
+	.image {
+		@include container;
+		max-width: 80%;
+	}
+	.center-y,
+	h1,
 	.image img {
-		max-width: 100%;
+		display: table-cell;
+		text-align: center;
+		width: 100%;
 	}
 }
 
 @media only screen and (max-width: $width) {
 	.ad {
-		max-width: 100%;
+		position: static;
+		width: 100%;
+		height: 396px;
 		margin-left: 0;
+		margin-top: 0;
 
-		.image {
-			width: 75%;
+		.table {
+			@include center-block;
 		}
-		.image img {
+		.image {
 			max-width: 256px;
 		}
 	}

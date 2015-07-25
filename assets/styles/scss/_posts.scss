@@ -5,13 +5,16 @@
 // --------------------
 
 .posts {
+	position: absolute;
 	width: $width * 0.75;
-	margin-left: $width * 0.25;
+	top: 0;
+	right: 0;
 }
 
 @media only screen and (max-width: $width) {
 	.posts {
-		max-width: 100%;
+		position: static;
+		width: 100%;
 		margin-left: 0;
 	}
 }
@@ -23,11 +26,54 @@
 .post {
 	float: left;
 	max-width: ($width * 0.75) * 0.3;
+	margin-top: ($width * 0.75) * 0.025;
+	padding: ($width * 0.75) * 0.0125;
+	background: $post;
+
+	h1 {
+		font-size: 24px;
+	}
+	header p {
+		font-size: 14px;
+	}
+	h1,
+	header p {
+		text-align: center;
+	}
+	section {
+		margin-top: 32px;
+	}
+}
+.post:nth-of-type(3n-1) {
+	margin-left: ($width * 0.75) * 0.0125;
+}
+.post:nth-of-type(3n+0) {
+	float: right;
+}
+.post:nth-of-type(4n+0) {
+	clear: both;
 }
 
 @media only screen and (max-width: $width) {
+	.post:nth-of-type(3n-1) {
+		margin-left: 0;
+	}
+	.post:nth-of-type(3n+0) {
+		float: left;
+	}
+	.post:nth-of-type(4n+0) {
+		clear: none;
+	}
+
 	.post {
+		max-width: 46%;
+		margin: 1%;
+		padding: 1%;
+	}
+	.post:nth-of-type(odd) {
+		clear: both;
+	}
+	.post:nth-of-type(odd):last-of-type {
 		max-width: 100%;
-		float: none;
 	}
 }

@@ -1,2 +1,20 @@
 // header
 
+.title {
+	background: $header;
+	padding: 8px;
+	text-align: center;
+	border-radius: 8px;
+
+	h1 {
+		margin-top: 4px;
+		margin-bottom: 4px;
+	}
+}
+
+@media only screen and (max-width: $width) {
+	.title {
+		border-radius: 0;
+		margin-top: 64px;
+	}
+}
