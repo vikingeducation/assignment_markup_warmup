@@ -1,0 +1,22 @@
+// footer
+
+footer {
+	position: absolute;
+	bottom: -64px;
+	right: 0;
+	padding: 16px;
+	width: $width * 0.75;
+	border-radius: 8px;
+	background: $footer;
+	text-align: center;
+}
+
+@media only screen and (max-width: $width) {
+	footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		border-radius: 0;		
+	}
+}

@@ -1,0 +1,60 @@
+// mixins
+
+// --------------------
+// clearfix
+// --------------------
+
+@mixin clearfix() {
+	&:before,
+	&:after {
+		display: table;
+		content: "";
+	}
+	&:after {
+		clear: both;
+	}
+}
+.clearfix {
+	@include clearfix;
+}
+
+// --------------------
+// box
+// --------------------
+
+@mixin box() {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.box {
+	@include box;
+}
+
+// --------------------
+// center block
+// --------------------
+
+@mixin center-block() {
+	margin-left: auto;
+	margin-right: auto;
+}
+.center-block {
+	@include center-block;
+}
+
+// --------------------
+// container
+// --------------------
+
+@mixin container() {
+	@include box;
+	@include clearfix;
+	@include center-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container {
+	@include container;
+}
