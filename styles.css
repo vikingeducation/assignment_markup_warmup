@@ -1,3 +1,7 @@
+body {
+  width: 990px;
+  margin: 0 auto; }
+
 nav {
   position: fixed;
   top: 0;
@@ -11,18 +15,32 @@ nav {
     margin: 15px 0 0 0;
     text-indent: 15px; }
 
-.body-header {
-  margin: 60px 0 0 0;
-  background: #B6D7A8; }
-
 .ad {
+  margin: 70px 0 0 0;
+  float: left;
+  width: 210px;
   height: 400px;
   background: #D5A6BD; }
 
+main {
+  margin: 70px 0 0 10px;
+  display: inline-block;
+  width: 630px; }
+
+.main-header {
+  height: 50px;
+  background: #B6D7A8; }
+
 article {
-  background: #A2C4C9; }
+  margin: 10px 0 0 0;
+  background: #A2C4C9;
+  width: 210px;
+  float: left; }
 
 footer {
+  margin: 10px 0 0 0;
+  width: 630px;
+  display: inline-block;
   background: #9FC5F8; }
 
 /*# sourceMappingURL=styles.css.map */

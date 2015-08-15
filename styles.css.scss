@@ -1,4 +1,11 @@
 $nav-height: 60px;
+$space: 10px;
+$col-width: 210px;
+
+body {
+  width: 990px;
+  margin: 0 auto;
+}
 
 nav {
   position: fixed;
@@ -15,20 +22,35 @@ nav {
   }
 }
 
-.body-header {
-  margin: $nav-height 0 0 0;
-  background: #B6D7A8;
-}
-
 .ad {
+  margin: ($nav-height + $space) 0 0 0;
+  float: left;
+  width: $col-width;
   height: 400px;
   background: #D5A6BD;
 }
 
+main {
+  margin: ($nav-height + $space) 0 0 $space;
+  display: inline-block;
+  width: $col-width * 3;
+}
+
+.main-header {
+  height: 50px;
+  background: #B6D7A8;
+}
+
 article {
+  margin: $space 0 0 0;
   background: #A2C4C9;
+  width: $col-width;
+  float: left;
 }
 
 footer {
+  margin: $space 0 0 0;
+  width: $col-width * 3;
+  display: inline-block;
   background: #9FC5F8;
 }
