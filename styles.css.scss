@@ -1,5 +1,5 @@
 $nav-height: 60px;
-$space: 10px;
+$space: 9px;
 $col-width: 240px;
 $max-width: 990px;
 
@@ -29,6 +29,7 @@ nav {
   width: $col-width;
   height: 400px;
   background: #D5A6BD;
+  border: 1px solid #aaa;
 }
 
 main {
@@ -38,8 +39,22 @@ main {
 }
 
 .main-header {
-  height: 50px;
+  height: 100px;
   background: #B6D7A8;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0 0 0;
+  }
+  h2 {
+    font-size: 22px;
+    font-style: italic;
+    text-align: center;
+    padding: 10px 0 0 0;
+  }
 }
 
 article {
