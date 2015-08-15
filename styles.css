@@ -84,6 +84,9 @@ footer {
   width: 738px;
   display: inline-block;
   border: 1px solid #aaa;
+  border-radius: 10px;
   background: #9FC5F8; }
+  footer p {
+    margin: 5px; }
 
 /*# sourceMappingURL=styles.css.map */

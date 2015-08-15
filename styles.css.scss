@@ -110,5 +110,9 @@ footer {
   width: $col-width * 3 + $max-space * 2 - 2 ;
   display: inline-block;
   border: 1px solid #aaa;
+  border-radius: 10px;
   background: #9FC5F8;
+  p {
+    margin: 5px;
+  }
 }
