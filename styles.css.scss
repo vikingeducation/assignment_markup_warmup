@@ -1,5 +1,5 @@
 $nav-height: 60px;
-$space: 9px;
+$max-space: 10px;
 $col-width: 240px;
 $max-width: 990px;
 
@@ -24,7 +24,7 @@ nav {
 }
 
 .ad {
-  margin: ($nav-height + $space) 0 0 0;
+  margin: ($nav-height + $max-space) 0 0 0;
   float: left;
   width: $col-width;
   height: 400px;
@@ -45,9 +45,9 @@ nav {
 }
 
 main {
-  margin: ($nav-height + $space) 0 0 $space;
+  margin: ($nav-height + $max-space) 0 0 $max-space;
   display: inline-block;
-  width: $col-width * 3 + $space * 2;
+  width: $col-width * 3 + $max-space * 2 - 2;
 }
 
 .main-header {
@@ -70,20 +70,45 @@ main {
 }
 
 article {
-  margin: $space 0 0 0;
+  margin: $max-space 0 0 0;
   background: #A2C4C9;
-  width: $col-width;
+  width: $col-width - 3;
   float: left;
+  border: 1px solid #aaa;
+  header {
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+      text-align: center;
+      margin: $max-space;
+    }
+    p {
+      font-size: 18px;
+      text-align: center;
+      margin: $max-space;
+    }
+  }
+  div {
+    h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: $max-space;
+    }
+    p {
+      margin: $max-space;
+    }
+  }
 }
 
 .recent-article {
   @extend article;
-  margin: $space 0 0 $space;
+  margin: $max-space 0 0 $max-space;
 }
 
 footer {
-  margin: $space 0 0 0;
-  width: $col-width * 3 + $space * 2;
+  margin: $max-space 0 0 0;
+  width: $col-width * 3 + $max-space * 2 - 2 ;
   display: inline-block;
+  border: 1px solid #aaa;
   background: #9FC5F8;
 }
