@@ -1,12 +1,27 @@
+$nav-height: 60px;
+
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  height: $nav-height;
+  width: 100%;
   background: #FFE599;
+  header h1 {
+    font-size: 20px;
+    margin: 15px 0 0 0;
+    text-indent: 15px;
+  }
 }
 
-.header {
+.body-header {
+  margin: $nav-height 0 0 0;
   background: #B6D7A8;
 }
 
 .ad {
+  height: 400px;
   background: #D5A6BD;
 }
 
