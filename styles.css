@@ -1,92 +1,230 @@
-body {
-  width: 990px;
-  margin: 0 auto; }
+/*Wide Screen styling >= 990px*/
+@media (min-width: 990px) {
+  body {
+    width: 990px;
+    margin: 0 auto; }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  height: 60px;
-  width: 100%;
-  background: #FFE599; }
-  nav header h1 {
-    font-size: 22px;
-    margin: 15px 0 0 0;
-    text-indent: 15px; }
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 60px;
+    width: 100%;
+    background: #FFE599; }
+    nav header h1 {
+      font-size: 22px;
+      margin: 15px 0 0 0;
+      text-indent: 15px; }
 
-.ad {
-  margin: 70px 0 0 0;
-  float: left;
-  width: 240px;
-  height: 400px;
-  background: #D5A6BD;
-  border: 1px solid #aaa; }
-  .ad h1 {
-    margin: 60px 0 20px 0;
-    text-align: center;
-    font-size: 20px; }
+  .ad {
+    margin: 70px 0 0 0;
+    float: left;
+    width: 240px;
+    height: 400px;
+    background: #D5A6BD;
+    border: 1px solid #aaa; }
+    .ad h1 {
+      margin: 60px 0 20px 0;
+      text-align: center;
+      font-size: 20px; }
 
-.ad-box {
-  height: 200px;
-  width: 200px;
-  background: #fff;
-  margin: 0 auto; }
+  .ad-box {
+    height: 200px;
+    width: 200px;
+    background: #fff;
+    margin: 0 auto; }
 
-main {
-  margin: 70px 0 0 10px;
-  display: inline-block;
-  width: 738px; }
+  main {
+    margin: 70px 0 0 10px;
+    display: inline-block;
+    width: 738px; }
 
-.main-header {
-  height: 100px;
-  background: #B6D7A8;
-  border-radius: 10px;
-  border: 1px solid #aaa; }
-  .main-header h1 {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    padding: 20px 0 0 0; }
-  .main-header h2 {
-    font-size: 22px;
-    font-style: italic;
-    text-align: center;
-    padding: 10px 0 0 0; }
+  .main-header {
+    height: 100px;
+    background: #B6D7A8;
+    border-radius: 10px;
+    border: 1px solid #aaa; }
+    .main-header h1 {
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px 0 0 0; }
+    .main-header h2 {
+      font-size: 22px;
+      font-style: italic;
+      text-align: center;
+      padding: 10px 0 0 0; }
 
-article, .recent-article {
-  margin: 10px 0 0 0;
-  background: #A2C4C9;
-  width: 237px;
-  float: left;
-  border: 1px solid #aaa; }
-  article header h1, .recent-article header h1 {
-    font-size: 26px;
-    font-weight: bold;
-    text-align: center;
-    margin: 10px; }
-  article header p, .recent-article header p {
-    font-size: 18px;
-    text-align: center;
-    margin: 10px; }
-  article div h2, .recent-article div h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px; }
-  article div p, .recent-article div p {
-    margin: 10px; }
+  .recent-post {
+    margin: 10px 0 0 0;
+    background: #A2C4C9;
+    width: 237px;
+    float: left;
+    border: 1px solid #aaa; }
+    .recent-post header h1 {
+      font-size: 26px;
+      font-weight: bold;
+      text-align: center;
+      margin: 10px; }
+    .recent-post header p {
+      font-size: 18px;
+      text-align: center;
+      margin: 10px; }
+    .recent-post div h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px; }
+    .recent-post div p {
+      margin: 10px; }
 
-.recent-article {
-  margin: 10px 0 0 10px; }
+  .old-post {
+    background: #A2C4C9;
+    width: 237px;
+    float: left;
+    border: 1px solid #aaa;
+    margin: 10px 0 0 10px; }
+    .old-post header h1 {
+      font-size: 26px;
+      font-weight: bold;
+      text-align: center;
+      margin: 10px; }
+    .old-post header p {
+      font-size: 18px;
+      text-align: center;
+      margin: 10px; }
+    .old-post div h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px; }
+    .old-post div p {
+      margin: 10px; }
 
-footer {
-  margin: 10px 0 0 0;
-  width: 738px;
-  display: inline-block;
-  border: 1px solid #aaa;
-  border-radius: 10px;
-  background: #9FC5F8; }
-  footer p {
-    margin: 5px; }
+  footer {
+    margin: 10px 0 0 0;
+    width: 738px;
+    display: inline-block;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    background: #9FC5F8; }
+    footer p {
+      margin: 5px; } }
+/*Narrow Screen styling < 990px*/
+@media not all and (min-width: 990px) {
+  body {
+    margin: 0 auto; }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 60px;
+    width: 100%;
+    background: #FFE599; }
+    nav header h1 {
+      font-size: 22px;
+      margin: 15px 0 0 0;
+      text-indent: 15px; }
+
+  .ad {
+    display: none; }
+
+  .ad-box {
+    display: none; }
+
+  main {
+    margin: 60px 0 0 0;
+    display: block;
+    width: 100%; }
+
+  .main-header {
+    height: 100px;
+    background: #B6D7A8;
+    border-bottom: 1px solid #aaa;
+    border-top: 1px solid #aaa; }
+    .main-header h1 {
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px 0 0 0; }
+    .main-header h2 {
+      font-size: 22px;
+      font-style: italic;
+      text-align: center;
+      padding: 10px 0 0 0; }
+
+  .first-post {
+    margin: 10px;
+    background: #A2C4C9;
+    float: left;
+    border: 1px solid #aaa; }
+    .first-post header h1 {
+      font-size: 26px;
+      font-weight: bold;
+      text-align: center;
+      margin: 10px; }
+    .first-post header p {
+      font-size: 18px;
+      text-align: center;
+      margin: 10px; }
+    .first-post div h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px; }
+    .first-post div p {
+      margin: 10px; }
+
+  .old-post {
+    margin: 10px;
+    background: #A2C4C9;
+    float: left;
+    border: 1px solid #aaa; }
+    .old-post header h1 {
+      font-size: 26px;
+      font-weight: bold;
+      text-align: center;
+      margin: 10px; }
+    .old-post header p {
+      font-size: 18px;
+      text-align: center;
+      margin: 10px; }
+    .old-post div h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px; }
+    .old-post div p {
+      margin: 10px; }
+
+  .recent-post {
+    margin: 10px;
+    background: #A2C4C9;
+    float: left;
+    border: 1px solid #aaa;
+    width: 46%; }
+    .recent-post header h1 {
+      font-size: 26px;
+      font-weight: bold;
+      text-align: center;
+      margin: 10px; }
+    .recent-post header p {
+      font-size: 18px;
+      text-align: center;
+      margin: 10px; }
+    .recent-post div h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px; }
+    .recent-post div p {
+      margin: 10px; }
+
+  footer {
+    margin: 10px 0 0 0;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #aaa;
+    background: #9FC5F8; }
+    footer p {
+      margin: 5px; } }
 
 /*# sourceMappingURL=styles.css.map */
