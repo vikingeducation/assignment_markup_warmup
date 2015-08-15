@@ -1,9 +1,10 @@
 $nav-height: 60px;
 $space: 10px;
-$col-width: 210px;
+$col-width: 240px;
+$max-width: 990px;
 
 body {
-  width: 990px;
+  width: $max-width;
   margin: 0 auto;
 }
 
@@ -33,7 +34,7 @@ nav {
 main {
   margin: ($nav-height + $space) 0 0 $space;
   display: inline-block;
-  width: $col-width * 3;
+  width: $col-width * 3 + $space * 2;
 }
 
 .main-header {
@@ -48,9 +49,14 @@ article {
   float: left;
 }
 
+.recent-article {
+  @extend article;
+  margin: $space 0 0 $space;
+}
+
 footer {
   margin: $space 0 0 0;
-  width: $col-width * 3;
+  width: $col-width * 3 + $space * 2;
   display: inline-block;
   background: #9FC5F8;
 }

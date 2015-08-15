@@ -18,28 +18,31 @@ nav {
 .ad {
   margin: 70px 0 0 0;
   float: left;
-  width: 210px;
+  width: 240px;
   height: 400px;
   background: #D5A6BD; }
 
 main {
   margin: 70px 0 0 10px;
   display: inline-block;
-  width: 630px; }
+  width: 740px; }
 
 .main-header {
   height: 50px;
   background: #B6D7A8; }
 
-article {
+article, .recent-article {
   margin: 10px 0 0 0;
   background: #A2C4C9;
-  width: 210px;
+  width: 240px;
   float: left; }
+
+.recent-article {
+  margin: 10px 0 0 10px; }
 
 footer {
   margin: 10px 0 0 0;
-  width: 630px;
+  width: 740px;
   display: inline-block;
   background: #9FC5F8; }
 
