@@ -28,9 +28,15 @@ $zen-gutter-width: 10px;
 	@include zen-clear();
 	@include zen-grid-item(2, 2);
 	background-color: #ff33CC;
-	min-height: 500px;
+	height: 500px;
 	margin-right: -31%;
 	margin-left: 8%;
+	p {
+		position: relative;
+		top: 20%;
+		height: 500px;
+	text-align: center;
+	}
 }
 
 .article-left {
