@@ -1,0 +1,235 @@
+/* Set up a mix-in (method) to avoid writing lots of prefixes */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+
+
+/*
+ * Basic font sizing and weights
+ */
+
+/* Set a variable for base font size to avoid hard-coding*/
+$base-font-size: 18px;
+
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: $base-font-size;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-weight: normal;
+  font-style: italic;
+  margin-top: 0.6em;
+}
+
+h3 {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.1em;
+  text-align: center;
+  margin-top: 0.6em;
+}
+
+h5 {
+  margin-bottom: 0.6em;
+}
+
+
+
+
+/*
+ * Nav styling
+ */
+nav {
+  background-color: #ffe599;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid black;
+  padding: 20px;
+
+  h1 {
+    font-size: 1em;
+  }
+}
+
+
+
+
+/*
+ * Main container
+ */
+main {
+  margin-top: 80px;
+  padding: 0 5% 20px;
+
+  .content {
+    float: left;
+    max-width: 75%;
+
+
+
+
+    /*
+     * Blog post articles
+     */
+    article {
+      background-color: #a2c4c9;
+      border: 2px solid black;
+      padding: 20px;
+      margin-right: 2%;
+      float: left;
+      width: 25%;
+      max-height: 550px;
+
+      h4 {
+        font-weight: normal;
+      }
+
+      .inner {
+        overflow: hidden;
+        max-height: 550px;
+
+        section {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    // Remove margin from last blog post to prevent unnecessary wrapping
+    article:last-of-type {
+      margin: 0;
+    }
+
+
+
+
+    /*
+     * Copyright footer
+     */
+    footer {
+      padding-top: 20px;
+      clear: both;
+
+      .inner {
+        box-sizing: border-box;
+        background-color: #9fc5f8;
+        border: 2px solid black;
+        padding: 10px;
+        @include border-radius(20px);
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+
+
+/*
+ * Header style - outside of previous to use the inheritance and prevent
+ * all other headers from being styled this way.
+ */
+section > header {
+  box-sizing: border-box;
+  background-color: #b6d7a8;
+  border: 2px solid black;
+  padding: 20px;
+  @include border-radius(20px);
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+
+
+/*
+ * Advertisement box styling
+ */
+.advertisement {
+  background-color: #d5a6bd;
+  border: 2px solid black;
+  padding: 20px;
+  margin-right: 20px;
+  float: left;
+  width: 15%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  // Ad itself - represented by a white box with black outline
+  .ad {
+    background-color: white;
+    width: 90%;
+    height: 100px;
+    border: 2px solid black;
+    margin: 5%;
+  }
+}
+
+
+
+
+/******************************
+ * SMALLER SCREEN WIDTH styling
+ ******************************/
+@media (max-width: 990px) {
+  // Hide advertisement
+  .advertisement {
+    display: none;
+  }
+
+  main {
+    margin-top: 62px;
+    padding: 0;
+
+    header, .content footer .inner {
+      width: 100%;
+      @include border-radius(0);
+    }
+
+    .content {
+      max-width: 100%;
+
+
+
+
+      /*
+       * Blog post articles
+       */
+      article {
+        width: 40%;
+        margin: 20px 2%;
+      }
+
+      // Remove margin from last blog post to prevent unnecessary wrapping
+      article:last-of-type {
+        width: 88%;
+        margin: 20px 2%;
+      }
+    }
+  }
+}
