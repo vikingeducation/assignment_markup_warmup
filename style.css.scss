@@ -6,8 +6,16 @@
           border-radius: $radius;
 }
 
+
+
+
+/*
+ * Basic font sizing and weights
+ */
+
 /* Set a variable for base font size to avoid hard-coding*/
 $base-font-size: 18px;
+
 
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -44,6 +52,12 @@ h5 {
   margin-bottom: 0.6em;
 }
 
+
+
+
+/*
+ * Nav styling
+ */
 nav {
   background-color: #ffe599;
   position: fixed;
@@ -58,6 +72,12 @@ nav {
   }
 }
 
+
+
+
+/*
+ * Main container
+ */
 main {
   margin-top: 80px;
   padding: 0 5% 20px;
@@ -66,6 +86,12 @@ main {
     float: left;
     max-width: 75%;
 
+
+
+
+    /*
+     * Blog post articles
+     */
     article {
       background-color: #a2c4c9;
       border: 2px solid black;
@@ -89,10 +115,17 @@ main {
       }
     }
 
+    // Remove margin from last blog post to prevent unnecessary wrapping
     article:last-of-type {
       margin: 0;
     }
 
+
+
+
+    /*
+     * Copyright footer
+     */
     footer {
       padding-top: 20px;
       clear: both;
@@ -109,6 +142,13 @@ main {
   }
 }
 
+
+
+
+/*
+ * Header style - outside of previous to use the inheritance and prevent
+ * all other headers from being styled this way.
+ */
 section > header {
   box-sizing: border-box;
   background-color: #b6d7a8;
@@ -120,6 +160,12 @@ section > header {
   text-align: center;
 }
 
+
+
+
+/*
+ * Advertisement box styling
+ */
 .advertisement {
   background-color: #d5a6bd;
   border: 2px solid black;
@@ -134,6 +180,7 @@ section > header {
   text-align: center;
   align-items: center;
 
+  // Ad itself - represented by a white box with black outline
   .ad {
     background-color: white;
     width: 90%;

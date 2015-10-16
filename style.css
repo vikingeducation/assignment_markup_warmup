@@ -1,4 +1,7 @@
 /* Set up a mix-in (method) to avoid writing lots of prefixes */
+/*
+ * Basic font sizing and weights
+ */
 /* Set a variable for base font size to avoid hard-coding*/
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -28,6 +31,9 @@ h4 {
 h5 {
   margin-bottom: 0.6em; }
 
+/*
+ * Nav styling
+ */
 nav {
   background-color: #ffe599;
   position: fixed;
@@ -39,12 +45,21 @@ nav {
   nav h1 {
     font-size: 1em; }
 
+/*
+ * Main container
+ */
 main {
   margin-top: 80px;
   padding: 0 5% 20px; }
   main .content {
     float: left;
-    max-width: 75%; }
+    max-width: 75%;
+    /*
+     * Blog post articles
+     */
+    /*
+     * Copyright footer
+     */ }
     main .content article {
       background-color: #a2c4c9;
       border: 2px solid black;
@@ -76,6 +91,10 @@ main {
         border-radius: 20px;
         width: 100%; }
 
+/*
+ * Header style - outside of previous to use the inheritance and prevent
+ * all other headers from being styled this way.
+ */
 section > header {
   box-sizing: border-box;
   background-color: #b6d7a8;
@@ -89,6 +108,9 @@ section > header {
   margin-bottom: 20px;
   text-align: center; }
 
+/*
+ * Advertisement box styling
+ */
 .advertisement {
   background-color: #d5a6bd;
   border: 2px solid black;
