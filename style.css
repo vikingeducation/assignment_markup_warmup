@@ -136,6 +136,27 @@ section > header {
  ******************************/
 @media (max-width: 990px) {
   .advertisement {
-    display: none; } }
+    display: none; }
+
+  main {
+    margin-top: 62px;
+    padding: 0; }
+    main header, main .content footer .inner {
+      width: 100%;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0; }
+    main .content {
+      max-width: 100%;
+      /*
+       * Blog post articles
+       */ }
+      main .content article {
+        width: 40%;
+        margin: 20px 2%; }
+      main .content article:last-of-type {
+        width: 88%;
+        margin: 20px 2%; } }
 
 /*# sourceMappingURL=style.css.map */

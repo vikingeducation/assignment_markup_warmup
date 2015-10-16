@@ -202,5 +202,34 @@ section > header {
     display: none;
   }
 
+  main {
+    margin-top: 62px;
+    padding: 0;
 
+    header, .content footer .inner {
+      width: 100%;
+      @include border-radius(0);
+    }
+
+    .content {
+      max-width: 100%;
+
+
+
+
+      /*
+       * Blog post articles
+       */
+      article {
+        width: 40%;
+        margin: 20px 2%;
+      }
+
+      // Remove margin from last blog post to prevent unnecessary wrapping
+      article:last-of-type {
+        width: 88%;
+        margin: 20px 2%;
+      }
+    }
+  }
 }
