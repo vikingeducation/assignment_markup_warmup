@@ -131,4 +131,11 @@ section > header {
     border: 2px solid black;
     margin: 5%; }
 
+/******************************
+ * SMALLER SCREEN WIDTH styling
+ ******************************/
+@media (max-width: 990px) {
+  .advertisement {
+    display: none; } }
+
 /*# sourceMappingURL=style.css.map */

@@ -189,3 +189,18 @@ section > header {
     margin: 5%;
   }
 }
+
+
+
+
+/******************************
+ * SMALLER SCREEN WIDTH styling
+ ******************************/
+@media (max-width: 990px) {
+  // Hide advertisement
+  .advertisement {
+    display: none;
+  }
+
+
+}
