@@ -18,6 +18,32 @@ h1, h2, h3, h4, h5 {
   font-weight: bold;
 }
 
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-weight: normal;
+  font-style: italic;
+  margin-top: 0.6em;
+}
+
+h3 {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.1em;
+  text-align: center;
+  margin-top: 0.6em;
+}
+
+h5 {
+  margin-bottom: 0.6em;
+}
+
 nav {
   background-color: #ffe599;
   position: fixed;
@@ -26,6 +52,10 @@ nav {
   width: 100%;
   border: 2px solid black;
   padding: 20px;
+
+  h1 {
+    font-size: 1em;
+  }
 }
 
 main {
@@ -45,9 +75,17 @@ main {
       width: 26%;
       max-height: 550px;
 
+      h4 {
+        font-weight: normal;
+      }
+
       .inner {
         overflow: hidden;
         max-height: 550px;
+
+        section {
+          margin-top: 20px;
+        }
       }
     }
 
@@ -79,6 +117,7 @@ section > header {
   @include border-radius(20px);
   width: 100%;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .advertisement {
