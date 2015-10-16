@@ -14,29 +14,50 @@ nav {
   padding: 20px; }
 
 main {
-  margin-top: 90px; }
+  margin-top: 80px;
+  padding: 0 8% 20px; }
+  main .content {
+    float: left;
+    max-width: 740px; }
+    main .content article {
+      background-color: #a2c4c9;
+      border: 2px solid black;
+      padding: 20px;
+      margin-right: 20px;
+      float: left;
+      width: 182px;
+      max-height: 550px; }
+      main .content article .inner {
+        overflow: hidden;
+        max-height: 550px; }
+    main .content footer {
+      padding-top: 20px;
+      clear: both; }
+      main .content footer .inner {
+        box-sizing: border-box;
+        background-color: #9fc5f8;
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 20px;
+        width: 100%; }
 
-main > header {
+section > header {
+  box-sizing: border-box;
   background-color: #b6d7a8;
   border: 2px solid black;
   padding: 20px;
-  border-radius: 20px; }
-
-article {
-  background-color: #a2c4c9;
-  border: 2px solid black;
-  padding: 20px; }
-
-footer {
-  background-color: #9fc5f8;
-  border: 2px solid black;
-  padding: 10px;
-  border-radius: 20px; }
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 20px; }
 
 .advertisement {
   background-color: #d5a6bd;
   border: 2px solid black;
-  padding: 20px; }
+  padding: 20px;
+  margin-right: 20px;
+  float: left;
+  width: 20%;
+  height: 600px; }
   .advertisement .ad {
     background-color: white; }
 
