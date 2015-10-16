@@ -1,5 +1,8 @@
+/* Set up a mix-in (method) to avoid writing lots of prefixes */
+/* Set a variable for base font size to avoid hard-coding*/
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px; }
 
 h1, h2, h3, h4, h5 {
   font-weight: bold; }
@@ -15,21 +18,23 @@ nav {
 
 main {
   margin-top: 80px;
-  padding: 0 8% 20px; }
+  padding: 0 5% 20px; }
   main .content {
     float: left;
-    max-width: 740px; }
+    max-width: 75%; }
     main .content article {
       background-color: #a2c4c9;
       border: 2px solid black;
       padding: 20px;
-      margin-right: 20px;
+      margin-right: 3%;
       float: left;
-      width: 182px;
+      width: 26%;
       max-height: 550px; }
       main .content article .inner {
         overflow: hidden;
         max-height: 550px; }
+    main .content article:last-of-type {
+      margin: 0; }
     main .content footer {
       padding-top: 20px;
       clear: both; }
@@ -38,6 +43,9 @@ main {
         background-color: #9fc5f8;
         border: 2px solid black;
         padding: 10px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
         border-radius: 20px;
         width: 100%; }
 
@@ -46,6 +54,9 @@ section > header {
   background-color: #b6d7a8;
   border: 2px solid black;
   padding: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
   border-radius: 20px;
   width: 100%;
   margin-bottom: 20px; }
@@ -56,7 +67,7 @@ section > header {
   padding: 20px;
   margin-right: 20px;
   float: left;
-  width: 20%;
+  width: 15%;
   height: 600px; }
   .advertisement .ad {
     background-color: white; }
