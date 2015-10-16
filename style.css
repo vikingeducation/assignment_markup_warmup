@@ -17,16 +17,26 @@ main {
   margin-top: 90px; }
 
 main > header {
-  background-color: #b6d7a8; }
+  background-color: #b6d7a8;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 20px; }
 
 article {
-  background-color: #a2c4c9; }
+  background-color: #a2c4c9;
+  border: 2px solid black;
+  padding: 20px; }
 
 footer {
-  background-color: #9fc5f8; }
+  background-color: #9fc5f8;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 20px; }
 
 .advertisement {
-  background-color: #d5a6bd; }
+  background-color: #d5a6bd;
+  border: 2px solid black;
+  padding: 20px; }
   .advertisement .ad {
     background-color: white; }
 
