@@ -1,4 +1,18 @@
-body {
-  color: red; }
+nav {
+  background-color: #ffe599; }
+
+body > header {
+  background-color: #b6d7a8; }
+
+article {
+  background-color: #a2c4c9; }
+
+footer {
+  background-color: #9fc5f8; }
+
+.advertisement {
+  background-color: #d5a6bd; }
+  .advertisement .ad {
+    background-color: white; }
 
 /*# sourceMappingURL=style.css.map */
