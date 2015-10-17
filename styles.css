@@ -1,0 +1,144 @@
+@import url("normalize.css");
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+* {
+  font-family: 'Cabin', arial, sans-serif;
+  box-sizing: border-box; }
+
+/*************************
+Selected by element type
+*************************/
+body {
+  margin: 0; }
+
+nav, header, footer, article {
+  border: 3px solid black; }
+
+header, footer {
+  border-radius: 10px; }
+
+header {
+  background-color: #B6D7A8;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 10px 0 10px; }
+
+footer {
+  background-color: #9FC5F8;
+  padding: 10px;
+  margin: 10px; }
+
+h1 {
+  font-size: 18px;
+  font-style: bold;
+  font-variant: bold; }
+
+h2 {
+  font-size: 17px;
+  font-style: bold;
+  font-variant: bold; }
+
+h3 {
+  font-size: 16px;
+  font-style: bold;
+  font-variant: bold; }
+
+p {
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal; }
+
+/****************
+Selected by class
+****************/
+.top-bar {
+  width: 100%;
+  background-color: #FFE599;
+  padding: 10px; }
+
+.ad-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 235px;
+  height: 480px;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 10px -4px 10px 10px;
+  background-color: #D5A6BD;
+  text-align: center;
+  position: relative; }
+
+.ad {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.ad-content {
+  background-color: white;
+  border: 1px solid black;
+  margin: 10px auto;
+  width: 196px;
+  height: 128px; }
+
+.ad-box, .ad-content {
+  border: 3px solid black; }
+
+.main-box {
+  width: 990px;
+  display: block;
+  margin: 0 auto; }
+
+.content-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 735px;
+  margin: 0 -4 0 0; }
+
+.blog-posts {
+  margin: 0 0;
+  padding: 0 0; }
+
+.post {
+  background-color: #A2C4C9;
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  padding: 10px;
+  margin: 10px -4px 0 10px;
+  width: calc(33% - 10px); }
+
+.post-title {
+  text-align: center; }
+
+.post-time {
+  text-align: center; }
+
+/*******
+At-Rules
+*******/
+@media screen and (max-width: 990px) {
+  header, footer {
+    width: 100%;
+    border-radius: 0;
+    margin: 0; }
+
+  .main-box {
+    width: 100%; }
+
+  .ad-box {
+    display: none; }
+
+  .content-box {
+    width: 100%; }
+
+  .blog-posts {
+    margin: 10px 10px;
+    width: calc(100% - 20px); }
+
+  #post1, #post2 {
+    width: calc(50% - 10px); }
+
+  #post3 {
+    width: calc(100% - 20px); } }
+
+/*# sourceMappingURL=styles.css.map */
