@@ -2,8 +2,8 @@
 
 $main-width: 990px;
 $default-margin: 10px;
-$ad-width: ($main-width - 2*$default-margin) * 0.25;
-$content-width: 3 * $ad-width - 2*$default-margin;
+$ad-width: ($main-width - 5*$default-margin) * 0.25;
+$content-width: 3*$ad-width + 3*$default-margin;
 
 * {
 	font-family: helvetica, arial, sans-serif;
@@ -21,18 +21,26 @@ $content-width: 3 * $ad-width - 2*$default-margin;
 	vertical-align:top;
 	background-color:#D5A6BD;
 	padding:$default-margin;
-	margin: $default-margin 6px $default-margin $default-margin;
+	margin: $default-margin -4px $default-margin $default-margin;
 	border:1px solid black;
 	width: $ad-width;
 	height: 480px;
 	text-align:center;
+	position: relative;
 }
 
 .ad {
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+ 	transform: translate(-50%, -50%);
+}
+
+.ad-content {
 	background-color:white;
 	border:1px solid black;
 	margin: $default-margin auto;
-	width: 128px;
+	width: 196px;
 	height: 128px;
 }
 
@@ -46,6 +54,7 @@ $content-width: 3 * $ad-width - 2*$default-margin;
 	display:inline-block;
 	vertical-align:top;
 	width:$content-width;
+	margin: 0 -4 0 0;
 }
 
 .blog-posts {
@@ -74,49 +83,49 @@ $content-width: 3 * $ad-width - 2*$default-margin;
 	text-align:center;
 }
 
-nav, header, footer, article {
-	border:2px solid black;
-	border-radius:5px;
+body {
+	margin:0;
+}
+
+.ad-box, .ad-content, nav, header, footer, article {
+	border:3px solid black;
+}
+
+header, footer {
+	border-radius:10px;
+	padding:$default-margin;
+	margin:$default-margin;
 }
 
 header {
 	background-color:#B6D7A8;
-	padding:$default-margin;
-	margin:$default-margin;
 	text-align:center;
 }
 
 footer {
 	background-color:#9FC5F8;
-	padding:$default-margin;
-	margin:$default-margin;
-}
-
-article {
-
 }
 
 h1 {
-	font-size: 24px;
-	line-height: 25px;
+	font-size: 18px;
 	font-style: bold;
 	font-variant: bold;
 }
 
 h2 {
-	font-size: 22px;
+	font-size: 17px;
 	font-style: bold;
 	font-variant: bold;
 }
 
 h3 {
-	font-size: 20px;
+	font-size: 16px;
 	font-style: bold;
 	font-variant: bold;
 }
 
 p {
-	font-size: 16px;
+	font-size: 14px;
 	font-style: normal;
 	font-variant: normal;
 }

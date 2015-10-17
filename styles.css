@@ -13,17 +13,24 @@
   vertical-align: top;
   background-color: #D5A6BD;
   padding: 10px;
-  margin: 10px 6px 10px 10px;
+  margin: 10px -4px 10px 10px;
   border: 1px solid black;
-  width: 242.5px;
+  width: 235px;
   height: 480px;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
 
 .ad {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.ad-content {
   background-color: white;
   border: 1px solid black;
   margin: 10px auto;
-  width: 128px;
+  width: 196px;
   height: 128px; }
 
 .main-box {
@@ -34,7 +41,8 @@
 .content-box {
   display: inline-block;
   vertical-align: top;
-  width: 707.5px; }
+  width: 735px;
+  margin: 0 -4 0 0; }
 
 .blog-posts {
   -moz-column-count: 3;
@@ -58,39 +66,41 @@
 .post-time {
   text-align: center; }
 
-nav, header, footer, article {
-  border: 2px solid black;
-  border-radius: 5px; }
+body {
+  margin: 0; }
 
-header {
-  background-color: #B6D7A8;
-  padding: 10px;
-  margin: 10px;
-  text-align: center; }
+.ad-box, .ad-content, nav, header, footer, article {
+  border: 3px solid black; }
 
-footer {
-  background-color: #9FC5F8;
+header, footer {
+  border-radius: 10px;
   padding: 10px;
   margin: 10px; }
 
+header {
+  background-color: #B6D7A8;
+  text-align: center; }
+
+footer {
+  background-color: #9FC5F8; }
+
 h1 {
-  font-size: 24px;
-  line-height: 25px;
+  font-size: 18px;
   font-style: bold;
   font-variant: bold; }
 
 h2 {
-  font-size: 22px;
+  font-size: 17px;
   font-style: bold;
   font-variant: bold; }
 
 h3 {
-  font-size: 20px;
+  font-size: 16px;
   font-style: bold;
   font-variant: bold; }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-variant: normal; }
 
