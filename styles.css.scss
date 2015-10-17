@@ -1,95 +1,37 @@
 @import url("normalize.css");
 @import url(https://fonts.googleapis.com/css?family=Cabin);
 
+//SASS Variables
 $main-width: 990px;
 $default-margin: 10px;
 $ad-width: ($main-width - 5*$default-margin) * 0.25;
 $content-width: 3*$ad-width + 3*$default-margin;
 
+//All elements
 * {
+  //The default font
   font-family: 'Cabin', arial, sans-serif;
+
+  //Size boxes by border box
   box-sizing:border-box;
 }
 
-.top-bar {
-  width:100%;
-  background-color:#FFE599;
-  padding:$default-margin;
-}
-
-.ad-box {
-  display:inline-block;
-  vertical-align:top;
-  background-color:#D5A6BD;
-  padding:$default-margin;
-  margin: $default-margin -4px $default-margin $default-margin;
-  border:1px solid black;
-  width: $ad-width;
-  height: 480px;
-  text-align:center;
-  position: relative;
-}
-
-.ad {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.ad-content {
-  background-color:white;
-  border:1px solid black;
-  margin: $default-margin auto;
-  width: 196px;
-  height: 128px;
-}
-
-.main-box {
-  width:$main-width;
-  display:block;
-  margin:0 auto;
-}
-
-.content-box {
-  display:inline-block;
-  vertical-align:top;
-  width:$content-width;
-  margin: 0 -4 0 0;
-}
-
-.blog-posts {
-  margin: 0 0;
-  padding: 0 0;
-}
-
-.post {
-  background-color:#A2C4C9;
-  display: inline-block;
-  vertical-align:top;
-  width:auto;
-  padding:$default-margin;
-  margin:$default-margin -4px 0 $default-margin;
-  width:calc(33% - 10px);
-}
-
-.post-title {
-  text-align:center;
-}
-
-.post-time {
-  text-align:center;
-}
+/*************************
+Selected by element type
+*************************/
 
 body {
+  //zero out body margins
   margin:0;
 }
 
-.ad-box, .ad-content, nav, header, footer, article {
+nav, header, footer, article {
+  //put borders around these elements
   border:3px solid black;
 }
 
 header, footer {
+  //put rounded corners around these elements
   border-radius:10px;
 }
 
@@ -130,34 +72,142 @@ p {
   font-variant: normal;
 }
 
-@media screen and (max-width: 990px) {
-  .blog-posts {
-    margin:$default-margin $default-margin;
-    width:calc(100% - 20px);
-  }
+/****************
+Selected by class
+****************/
 
-  .ad-box {
-    display:none;
-  }
+//the navigation bar at the very top
+.top-bar {
+  width:100%;
+  background-color:#FFE599;
+  padding:$default-margin;
+}
 
-  .main-box {
-    width:100%;
-  }
+//box to hold the ads
+.ad-box {
+  display:inline-block;
+  vertical-align:top;
 
-  .content-box {
-    width:100%;
-  }
+  width: $ad-width;
+  height: 480px;
 
+  padding:$default-margin;
+  border:1px solid black;
+  margin: $default-margin -4px $default-margin $default-margin;
+
+  background-color:#D5A6BD;
+
+  text-align:center;
+
+  position: relative;
+}
+
+//the ad container, including the text title
+.ad {
+  //centers the ad vertically and horizontally
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//the actual contents of the ad
+.ad-content {
+  background-color:white;
+  border:1px solid black;
+  margin: $default-margin auto;
+  width: 196px;
+  height: 128px;
+}
+
+//give borders to some classes
+.ad-box, .ad-content {
+  border:3px solid black;
+}
+
+//Container which holds everything but the top nav bar
+.main-box {
+  width:$main-width;
+  display:block;
+  margin:0 auto;
+}
+
+//Container which holds all blog content (no ads)
+.content-box {
+  display:inline-block;
+  vertical-align:top;
+  width:$content-width;
+  margin: 0 -4 0 0;
+}
+
+//Container for the blog posts themselves (no header/footer)
+.blog-posts {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+//Individual blog posts
+.post {
+  background-color:#A2C4C9;
+  display: inline-block;
+  vertical-align:top;
+  width:auto;
+  padding:$default-margin;
+  margin:$default-margin -4px 0 $default-margin;
+  width:calc(33% - 10px);
+}
+
+//The post title
+.post-title {
+  text-align:center;
+}
+
+//The time the post was written
+.post-time {
+  text-align:center;
+}
+
+/*******
+At-Rules
+*******/
+
+//Change format if screen width is less than the main width
+@media screen and (max-width: $main-width) {
+  //header and footer now take up entire width of the screen
+  //lose the rounded corners
   header, footer {
     width:100%;
     border-radius:0;
     margin:0;
   }
 
+  //main box expands to fill the screen
+  .main-box {
+    width:100%;
+  }
+
+  //hide the ad box in narrow mode
+  .ad-box {
+    display:none;
+  }
+
+  //content box takes up width of main box
+  .content-box {
+    width:100%;
+  }
+
+  //blog posts fill the content box
+  .blog-posts {
+    margin:$default-margin $default-margin;
+    width:calc(100% - 20px);
+  }
+
+  //first two posts split the first row
   #post1, #post2 {
     width:calc(50% - 10px);
   }
 
+  //third post fills the last row
   #post3 {
     width:calc(100% - 20px);
   }
