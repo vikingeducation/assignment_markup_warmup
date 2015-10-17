@@ -1,6 +1,7 @@
 @import url("normalize.css");
+@import url(https://fonts.googleapis.com/css?family=Cabin);
 * {
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'Cabin', arial, sans-serif;
   box-sizing: border-box; }
 
 .top-bar {
@@ -45,20 +46,17 @@
   margin: 0 -4 0 0; }
 
 .blog-posts {
-  -moz-column-count: 3;
-  -webkit-column-count: 3;
-  column-count: 3;
-  -moz-column-gap: 10px;
-  -webkit-column-gap: 10px;
-  column-gap: 10px;
-  margin: 10px; }
+  margin: 0 0;
+  padding: 0 0; }
 
 .post {
   background-color: #A2C4C9;
   display: inline-block;
+  vertical-align: top;
   width: auto;
   padding: 10px;
-  vertical-align: top; }
+  margin: 10px -4px 0 10px;
+  width: calc(33% - 10px); }
 
 .post-title {
   text-align: center; }
@@ -73,16 +71,18 @@ body {
   border: 3px solid black; }
 
 header, footer {
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px; }
+  border-radius: 10px; }
 
 header {
   background-color: #B6D7A8;
-  text-align: center; }
+  text-align: center;
+  padding: 10px;
+  margin: 10px 10px 0 10px; }
 
 footer {
-  background-color: #9FC5F8; }
+  background-color: #9FC5F8;
+  padding: 10px;
+  margin: 10px; }
 
 h1 {
   font-size: 18px;
@@ -103,5 +103,30 @@ p {
   font-size: 14px;
   font-style: normal;
   font-variant: normal; }
+
+@media screen and (max-width: 990px) {
+  .blog-posts {
+    margin: 10px 10px;
+    width: calc(100% - 20px); }
+
+  .ad-box {
+    display: none; }
+
+  .main-box {
+    width: 100%; }
+
+  .content-box {
+    width: 100%; }
+
+  header, footer {
+    width: 100%;
+    border-radius: 0;
+    margin: 0; }
+
+  #post1, #post2 {
+    width: calc(50% - 10px); }
+
+  #post3 {
+    width: calc(100% - 20px); } }
 
 /*# sourceMappingURL=styles.css.map */
