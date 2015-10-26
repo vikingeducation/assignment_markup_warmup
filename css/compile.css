@@ -53,7 +53,7 @@ html {
   box-sizing: inherit; }
 
 #top-header {
-  font-family: helvetica;
+  font-family: "Helvetica Nevue", helvetica, sans-serif, serif;
   font-size: 24px;
   line-height: 36px;
   background-color: #FFCC66;
@@ -65,16 +65,16 @@ html {
   text-align: center; }
 
 aside {
-  width: 35%;
+  width: 20%;
   background-color: #E0A3C2;
   display: inline-block;
   border: 3px solid;
   margin: 5px;
   text-align: center; }
   aside .advert {
-    margin: 100px auto;
-    font-family: helvetica;
+    font-family: "Helvetica Nevue", helvetica, sans-serif, serif;
     font-size: 24px;
+    margin: 100px auto;
     display: inline-block; }
   aside .cat {
     width: 200px;
@@ -86,7 +86,8 @@ aside {
       height: auto; }
 
 main {
-  font-family: Helveitca Nevue, helvetica, sans-serif;
+  font-family: "Helvetica Nevue", helvetica, sans-serif, serif;
+  font-size: 18px;
   width: 60%;
   display: inline-block;
   vertical-align: top; }
@@ -125,7 +126,8 @@ article {
     font-weight: bold; }
 
 footer {
-  font-family: helvetica;
+  font-family: "Helvetica Nevue", helvetica, sans-serif, serif;
+  font-size: 18px;
   background-color: #5C8AE6;
   border-radius: 20px;
   border: 3px solid;

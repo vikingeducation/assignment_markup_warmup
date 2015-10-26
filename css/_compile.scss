@@ -1,9 +1,13 @@
 @import 'reset';
 @import 'box-sizing';
 
+@mixin font($size: 24px) {
+	font-family: "Helvetica Nevue", helvetica, sans-serif, serif;
+	font-size: $size;
+} 
+
 #top-header {
-	font-family: helvetica;
-	font-size: 24px;
+	@include font;
 	line-height: 36px;
 	background-color: #FFCC66;
 	border-bottom: 3px solid;
@@ -16,7 +20,7 @@
 }
 
 aside {
-	width: 35%;
+	width: 20%;
 	background-color: #E0A3C2;
 	display: inline-block;
 	border: 3px solid;
@@ -24,9 +28,8 @@ aside {
 	text-align: center;
 
 	.advert {
+		@include font;
 		margin: 100px auto;
-		font-family: helvetica;
-		font-size: 24px;
 		display: inline-block
 	}
 
@@ -44,7 +47,7 @@ aside {
 
 }
 main {
-	font-family: Helveitca Nevue, helvetica, sans-serif;
+	@include font(18px);
 	width: 60%;
 	display: inline-block;
 	vertical-align: top;
@@ -99,7 +102,7 @@ article {
 }
 
 footer {
-	font-family: helvetica;
+	@include font(18px);
 	background-color: #5C8AE6;
 	border-radius: 20px;
 	border: 3px solid;
