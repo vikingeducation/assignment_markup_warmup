@@ -1,37 +1,155 @@
-/*
-Error: Invalid CSS after "@import ": expected file to import (string or url()), was "reset;"
-        on line 1 of _compile.scss
-
-1: @import reset;
-
-Backtrace:
-_compile.scss:1
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:1161:in `expected'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:1097:in `expected'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:1077:in `expr!'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:367:in `block in import_directive'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:366:in `loop'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:366:in `import_directive'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:218:in `special_directive'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:193:in `directive'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:656:in `block_child'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:646:in `block_contents'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:117:in `stylesheet'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:42:in `parse'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/engine.rb:403:in `_to_tree'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/engine.rb:295:in `render_with_sourcemap'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:412:in `run'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/gems/sass-3.4.19/bin/sass:13:in `<top (required)>'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/bin/sass:23:in `load'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/bin/sass:23:in `<main>'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
-/home/frenchtoasts/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"@import \": expected file to import (string or url()), was \"reset;\"\A         on line 1 of _compile.scss\A \A 1: @import reset;"; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+#top-header {
+  font-family: "Helvetica Nevue", helvetica, sans-serif, serif;
+  font-size: 24px;
+  line-height: 36px;
+  background-color: #FFCC66;
+  border-bottom: 3px solid;
+  border-top: 3px solid; }
+
+.container {
+  margin: 0 auto;
+  text-align: center; }
+
+aside {
+  width: 20%;
+  background-color: #E0A3C2;
+  display: inline-block;
+  border: 3px solid;
+  margin: 5px;
+  text-align: center; }
+  aside .advert {
+    font-family: "Helvetica Nevue", helvetica, sans-serif, serif;
+    font-size: 18px;
+    margin: 100px auto;
+    display: inline-block; }
+  aside .cat {
+    width: 85%;
+    height: 35%;
+    border: 4px solid;
+    margin: 20px auto;
+    object-fit: fill; }
+    aside .cat img {
+      height: auto;
+      width: 100%; }
+
+main {
+  font-family: "Helvetica Nevue", helvetica, sans-serif, serif;
+  font-size: 18px;
+  width: 60%;
+  display: inline-block;
+  vertical-align: top; }
+  main h1 {
+    font-weight: bold;
+    font-size: 30px; }
+  main h2 {
+    font-size: 18px;
+    font-family: sans-serif; }
+  main #main-header {
+    text-align: center;
+    background-color: #80CC80;
+    border: 3px solid;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 20px 0; }
+    main #main-header h3 {
+      font-size: 18px;
+      font-style: italic;
+      padding-top: 10px; }
+
+article {
+  width: 31%;
+  background-color: #72ABBF;
+  border: 3px solid;
+  margin: 5px;
+  vertical-align: top;
+  text-align: left;
+  display: inline-block; }
+  article h1, article .date {
+    padding-top: 10px;
+    text-align: center; }
+  article h2, article p {
+    padding: 5px 5px; }
+  article h2 {
+    font-weight: bold; }
+
+footer {
+  font-family: "Helvetica Nevue", helvetica, sans-serif, serif;
+  font-size: 17px;
+  background-color: #5C8AE6;
+  border-radius: 20px;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  padding: 10px 20px;
+  margin: 5px 0; }
+
+@media all and (max-width: 990px) {
+  aside {
+    display: none; }
+
+  main {
+    width: auto; }
+
+  .row-1-3, .row-2-3 {
+    width: 48%; }
+
+  .row-3-3 {
+    width: auto; }
+
+  footer {
+    border-radius: 0; } }
+
+/*# sourceMappingURL=compile.css.map */
