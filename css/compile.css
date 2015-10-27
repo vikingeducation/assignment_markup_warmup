@@ -73,17 +73,18 @@ aside {
   text-align: center; }
   aside .advert {
     font-family: "Helvetica Nevue", helvetica, sans-serif, serif;
-    font-size: 24px;
+    font-size: 18px;
     margin: 100px auto;
     display: inline-block; }
   aside .cat {
-    width: 200px;
-    height: 170px;
+    width: 85%;
+    height: 35%;
     border: 4px solid;
-    margin: 20px auto; }
+    margin: 20px auto;
+    object-fit: fill; }
     aside .cat img {
-      width: 100%;
-      height: auto; }
+      height: auto;
+      width: 100%; }
 
 main {
   font-family: "Helvetica Nevue", helvetica, sans-serif, serif;
@@ -127,11 +128,13 @@ article {
 
 footer {
   font-family: "Helvetica Nevue", helvetica, sans-serif, serif;
-  font-size: 18px;
+  font-size: 17px;
   background-color: #5C8AE6;
   border-radius: 20px;
-  border: 3px solid;
-  padding: 5px 20px; }
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  padding: 10px 20px;
+  margin: 5px 0; }
 
 @media all and (max-width: 990px) {
   aside {
