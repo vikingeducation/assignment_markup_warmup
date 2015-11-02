@@ -12,6 +12,13 @@ $site-header-background-color: #fc9;
 $site-header-height: 40px;
 $time-color: #666;
 
+
+
+
+/*
+ * Mixin for vertical aligning stuff.
+ *
+ */
 @mixin vertical-align($position: relative) {
   position: $position;
   top: 50%;
@@ -28,6 +35,13 @@ body {
   padding: 0;
 }
 
+
+
+
+/*
+ * Site header (nav bar) css.
+ *
+ */
 .site-header {
   background-color: $site-header-background-color;
   border-bottom: $border;
@@ -41,6 +55,13 @@ body {
   }
 }
 
+
+
+
+/*
+ * Container for everything but the nav bar.
+ *
+ */
 .everything-except-site-header {
   position: relative;
 
@@ -95,6 +116,13 @@ aside {
     }
   }
 
+
+
+
+/*
+ * Container for blog posts.
+ *
+ */
   main {
     margin: 10px 10px;
     padding-bottom: 100px;

@@ -1,3 +1,7 @@
+/*
+ * Mixin for vertical aligning stuff.
+ *
+ */
 html,
 body {
   font-family: helvetica, arial, sans-serif;
@@ -5,6 +9,10 @@ body {
   margin: 0;
   padding: 0; }
 
+/*
+ * Site header (nav bar) css.
+ *
+ */
 .site-header {
   background-color: #fc9;
   border-bottom: 1px solid #333;
@@ -19,6 +27,10 @@ body {
     font-size: 23px;
     font-weight: bold; }
 
+/*
+ * Container for everything but the nav bar.
+ *
+ */
 .everything-except-site-header {
   position: relative; }
   .everything-except-site-header footer {
@@ -39,7 +51,11 @@ aside {
 
 .title-content-container {
   min-height: 100%;
-  display: block; }
+  display: block;
+  /*
+   * Container for blog posts.
+   *
+   */ }
   .title-content-container .page-header {
     background-color: #cc9;
     border: 1px solid #333;
