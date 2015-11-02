@@ -1,0 +1,106 @@
+html,
+body {
+  font-family: helvetica, arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.site-header {
+  background-color: #fc9;
+  border-bottom: 1px solid #333;
+  height: 40px; }
+  .site-header h1 {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #333;
+    font-size: 23px;
+    font-weight: bold; }
+
+.everything-except-site-header {
+  position: relative; }
+  .everything-except-site-header footer {
+    background-color: #9cf;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 10px; }
+    .everything-except-site-header footer p {
+      color: #555;
+      font-size: 12px; }
+
+aside {
+  display: none; }
+
+.title-content-container {
+  min-height: 100%;
+  display: block; }
+  .title-content-container .page-header {
+    background-color: #cc9;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    display: block;
+    height: 70px;
+    text-align: center; }
+    .title-content-container .page-header section {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      .title-content-container .page-header section h1 {
+        color: #333;
+        font-size: 23px;
+        font-weight: bold;
+        margin-bottom: 8px; }
+      .title-content-container .page-header section p {
+        color: #666;
+        font-size: 15px;
+        font-style: italic; }
+  .title-content-container main {
+    margin: 10px 10px;
+    padding-bottom: 100px; }
+    .title-content-container main article {
+      background-color: #9cc;
+      border: 1px solid #333;
+      box-sizing: border-box;
+      padding: 15px;
+      display: inline-block; }
+      .title-content-container main article header {
+        text-align: center; }
+        .title-content-container main article header h1 {
+          color: #333;
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 3px; }
+        .title-content-container main article header time {
+          color: #666;
+          font-size: 14px; }
+      .title-content-container main article .post-body h2 {
+        color: #222;
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: 10px; }
+      .title-content-container main article .post-body p {
+        font-size: 14px;
+        margin-top: 10px; }
+
+.article-one {
+  margin-bottom: 10px;
+  margin-right: 6px;
+  vertical-align: top;
+  width: calc(100%/2 - 5px); }
+
+.article-two {
+  vertical-align: top;
+  width: calc(100%/2 - 6px); }
+
+.article-three {
+  display: block; }
+
+/*# sourceMappingURL=style_small.css.map */
