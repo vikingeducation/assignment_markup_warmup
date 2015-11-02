@@ -1,25 +1,49 @@
+html,
 body {
   font-family: helvetica, arial, sans-serif;
-  margin: 0px;
-  padding: 0px; }
-
-html, body {
-  height: 100%; }
+  height: 100%;
+  margin: 0;
+  padding: 0; }
 
 .site-header {
   background-color: #fc9;
-  border-bottom: 1px solid #333; }
+  border-bottom: 1px solid #333;
+  height: 40px; }
   .site-header h1 {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     color: #333;
     font-size: 23px;
-    font-weight: bold;
-    padding: 10px; }
+    font-weight: bold; }
 
 .everything-except-site-header {
-  margin: 10px auto 0px;
+  margin: 10px auto 0;
   position: relative;
   width: 990px;
-  min-height: 100%; }
+  height: 100%; }
+  .everything-except-site-header footer {
+    background-color: #9cf;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    width: 670px; }
+    .everything-except-site-header footer p {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      color: #555;
+      font-size: 12px; }
 
 aside {
   background-color: #c9c;
@@ -48,6 +72,7 @@ aside {
 
 .title-content-container {
   float: right;
+  min-height: 100%;
   position: relative;
   width: 670px; }
   .title-content-container .page-header {
@@ -75,7 +100,8 @@ aside {
         font-size: 15px;
         font-style: italic; }
   .title-content-container main {
-    margin: 10px 0; }
+    margin: 10px 0;
+    padding-bottom: 60px; }
     .title-content-container main article {
       background-color: #9cc;
       border: 1px solid #333;
@@ -105,26 +131,5 @@ aside {
       .title-content-container main article .post-body p {
         font-size: 14px;
         margin-top: 10px; }
-
-footer {
-  background-color: #9cf;
-  border: 1px solid #333;
-  border-radius: 10px;
-  box-sizing: border-box;
-  display: inline-block;
-  height: 60px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  text-align: center;
-  width: 670px; }
-  footer p {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    color: #555;
-    font-size: 12px; }
 
 /*# sourceMappingURL=style.css.map */
