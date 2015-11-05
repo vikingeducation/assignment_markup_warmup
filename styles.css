@@ -1,0 +1,88 @@
+body {
+  color: #222;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+body > header {
+  border: 2px solid black;
+  padding: 10px;
+  top: 0;
+  width: 100%;
+  background-color: yellow;
+  margin-bottom: 10px; }
+
+.content {
+  width: 80%;
+  margin: 0 auto; }
+
+main {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 80%;
+  float: left; }
+
+aside {
+  box-sizing: border-box;
+  float: left;
+  width: 20%;
+  height: 500px;
+  background-color: red;
+  border: 2px solid black; }
+  aside div {
+    text-align: center;
+    position: relative;
+    top: 120px; }
+    aside div #ad {
+      position: relative;
+      top: 0px;
+      margin: 0 auto;
+      height: 150px;
+      width: 150px;
+      background: white; }
+
+main > header {
+  border: 2px solid black;
+  margin: 0 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: lightgreen; }
+
+.col-3 {
+  float: left;
+  width: 33.333%;
+  padding: 0 10px;
+  box-sizing: border-box; }
+
+.articles {
+  display: block; }
+
+article {
+  border: 2px solid black;
+  padding: 10px;
+  background-color: green; }
+  article header {
+    text-align: center; }
+    article header h2 {
+      font-style: normal;
+      margin-bottom: 5px; }
+    article header h3 {
+      font-weight: normal; }
+  article .body h2 {
+    font-size: 1em;
+    margin: 10px 0; }
+
+footer {
+  border: 2px solid black;
+  box-sizing: border-box;
+  position: relative;
+  top: 20px;
+  clear: both;
+  margin-top: 20px;
+  padding: 20px;
+  margin: 10px;
+  background-color: lightblue; }
+
+/*# sourceMappingURL=styles.css.map */
