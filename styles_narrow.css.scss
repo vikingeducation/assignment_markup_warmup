@@ -6,7 +6,6 @@ $article-color: #a2c4c9;
 $aside-color: #d5a6bd;
 $footer-color: #a2c4c9;
 $container-height: 900px;
-$container-width: 990px;
 $font-stack: Helvetica, sans-serif;
 $border-stack: 1px solid #000;
 
@@ -39,9 +38,7 @@ body {
   .container {
     @include box-sizing;
     float: center;
-    margin: 0 auto;
     max-height: $container-height;
-    max-width: $container-width;
     position: relative;
     top: 52px;
 
@@ -49,13 +46,12 @@ body {
       background: $main-color;
       border: $border-stack;
       border-radius: 5px;
-      left: 25%;
       margin-bottom: 20px;
       padding: 10px;
       position: relative;
       text-align: center;
-      top: 50px;
-      width: 75%;
+      top: 30px;
+      width: 100%;
 
       h2 {
         font-size: 18px;
@@ -72,8 +68,8 @@ body {
       background: $aside-color;
       border: $border-stack;
       border-radius: 5px;
-      bottom: 355px;
-      display: inline-block;
+      bottom: 322px;
+      display: none;
       height: 600px;
       margin: 0 2.5%;
       padding: 10px;
@@ -98,11 +94,11 @@ body {
       border-radius: 5px;
       box-sizing: border-box;
       display: inline-block;
-      margin: 0 1%;
+      margin: 1%;
       padding: 15px 10px;
       position: relative;
       top: 50px;
-      width: 23.5%;
+      width: 48%;
 
       header {
         font-size: 24px;
@@ -124,29 +120,27 @@ body {
       }
     }
 
-    .short {
-      top: -250px;
-      position: relative;
-    }
-
-    .first {
-      margin-left: 0;
+    .second {
+      position: absolute;
+      top: 166px;
     }
 
     .third {
-      margin-right: 0;
+      margin: 0 auto;
+      left: 1%;
+      position: relative;
+      width: 98%;
     }
 
     footer {
       background: $footer-color;
       border: $border-stack;
-      border-radius: 5px;
-      bottom: 100px;
       float: right;
       margin-top: 10px;
       padding: 10px;
       position: relative;
-      width: 75%;
+      top: 120px;
+      width: 100%;
     }
   }
 }

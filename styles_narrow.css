@@ -58,9 +58,7 @@ body {
       font-size: 32px; }
   body .container {
     float: center;
-    margin: 0 auto;
     max-height: 900px;
-    max-width: 990px;
     position: relative;
     top: 52px; }
     body .container *,
@@ -73,13 +71,12 @@ body {
       background: #b6d7a8;
       border: 1px solid #000;
       border-radius: 5px;
-      left: 25%;
       margin-bottom: 20px;
       padding: 10px;
       position: relative;
       text-align: center;
-      top: 50px;
-      width: 75%; }
+      top: 30px;
+      width: 100%; }
       body .container main h2 {
         font-size: 18px;
         padding: 10px; }
@@ -90,8 +87,8 @@ body {
       background: #d5a6bd;
       border: 1px solid #000;
       border-radius: 5px;
-      bottom: 355px;
-      display: inline-block;
+      bottom: 322px;
+      display: none;
       height: 600px;
       margin: 0 2.5%;
       padding: 10px;
@@ -110,11 +107,11 @@ body {
       border-radius: 5px;
       box-sizing: border-box;
       display: inline-block;
-      margin: 0 1%;
+      margin: 1%;
       padding: 15px 10px;
       position: relative;
       top: 50px;
-      width: 23.5%; }
+      width: 48%; }
       body .container article header {
         font-size: 24px;
         text-align: center; }
@@ -126,22 +123,22 @@ body {
         font-weight: 700; }
       body .container article p {
         padding: 5px 0; }
-    body .container .short {
-      top: -250px;
-      position: relative; }
-    body .container .first {
-      margin-left: 0; }
+    body .container .second {
+      position: absolute;
+      top: 166px; }
     body .container .third {
-      margin-right: 0; }
+      margin: 0 auto;
+      left: 1%;
+      position: relative;
+      width: 98%; }
     body .container footer {
       background: #a2c4c9;
       border: 1px solid #000;
-      border-radius: 5px;
-      bottom: 100px;
       float: right;
       margin-top: 10px;
       padding: 10px;
       position: relative;
-      width: 75%; }
+      top: 120px;
+      width: 100%; }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles_narrow.css.map */
