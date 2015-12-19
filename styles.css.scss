@@ -56,6 +56,12 @@ main {
 	float: right;
 	vertical-align: top;
 	header {
+		@media #{$smaller-screen} {
+			border-radius: 0;
+			position: relative;
+			margin: 0;
+			border: 1px solid black;
+		}
 		background-color: #B6D7A8;
 		text-align: center;
 		color: #000;
