@@ -1,3 +1,5 @@
+$smaller-screen: "screen and (max-width: 990px)";
+
 body {
 	margin: 0;
 	font-family: 'Droid Sans', sans-serif;
@@ -13,6 +15,9 @@ nav {
 }
 
 aside {
+	@media #{$smaller-screen} {
+		display: none;
+	}
 	margin-left: 10%;
 	margin-top: 10px;
 	width: 20%;
@@ -37,6 +42,15 @@ aside {
 }
 
 main {
+	@media #{$smaller-screen} {
+		width: 100%;
+		margin: 0 auto;
+		article:nth-child(3) {
+			display: block;
+			margin: 5px auto;
+			width: 95%;
+		}
+	}
 	margin-right: 10%;
 	width: 60%;
 	float: right;
@@ -50,24 +64,32 @@ main {
 		margin: 10px;
 	}
 	article {
-	border: 2px solid #000;
-	width: 230px;
-	padding: 5px;
-	margin: 10px;
-	display: inline-block;
-	background-color: #A2C4C9;
-	vertical-align: top;
-		h1 {
-			text-align: center;
+		@media #{$smaller-screen} {
+			margin: 10px;
+			width: 50vh;
 		}
+		border: 2px solid #000;
+		width: 230px;
+		padding: 5px;
+		margin: 10px;
+		display: inline-block;
+		background-color: #A2C4C9;
+		vertical-align: top;
+			h1 {
+				text-align: center;
+			}
 	}
 
 	footer {
-	background-color: #9FC5F8;
-	color: #000;
-	border-radius: 10px;
-	padding: 5px;
-	display: block;
+		@media #{$smaller-screen} {
+			width: 100%;
+			border-radius: 0;
+		}
+		background-color: #9FC5F8;
+		color: #000;
+		border-radius: 10px;
+		padding: 5px;
+		display: block;
 	}
 }
 

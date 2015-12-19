@@ -19,6 +19,9 @@ aside {
   text-align: center;
   position: relative;
   height: 60%; }
+  @media screen and (max-width: 990px) {
+    aside {
+      display: none; } }
   aside h3 {
     color: #000;
     position: relative;
@@ -33,6 +36,14 @@ main {
   width: 60%;
   float: right;
   vertical-align: top; }
+  @media screen and (max-width: 990px) {
+    main {
+      width: 100%;
+      margin: 0 auto; }
+      main article:nth-child(3) {
+        display: block;
+        margin: 5px auto;
+        width: 95%; } }
   main header {
     background-color: #B6D7A8;
     text-align: center;
@@ -48,6 +59,10 @@ main {
     display: inline-block;
     background-color: #A2C4C9;
     vertical-align: top; }
+    @media screen and (max-width: 990px) {
+      main article {
+        margin: 10px;
+        width: 50vh; } }
     main article h1 {
       text-align: center; }
   main footer {
@@ -56,5 +71,9 @@ main {
     border-radius: 10px;
     padding: 5px;
     display: block; }
+    @media screen and (max-width: 990px) {
+      main footer {
+        width: 100%;
+        border-radius: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
