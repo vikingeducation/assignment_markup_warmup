@@ -1,0 +1,16 @@
+@import 'reset.css';
+
+body {
+  font-family: sans-serif;
+}
+
+.top-bar {
+  height: 50px;
+  background-color: yellow;
+  border-radius: 10px;
+  margin: 20px;
+    h1 {
+      font-size: 24px;
+      padding: 15px;
+    }
+}
