@@ -5,6 +5,12 @@ body {
 	font-family: 'Droid Sans', sans-serif;
 }
 
+
+
+
+/* 
+ * Styling for the fixed top navbar
+ */
 nav {
 	@media #{$smaller-screen} {
 		height: 50px;
@@ -20,6 +26,12 @@ nav {
 	}
 }
 
+
+
+
+/* 
+ * Styling for the leftside ad area
+ */
 aside {
 	@media #{$smaller-screen} {
 		display: none;
@@ -47,6 +59,12 @@ aside {
 	}
 }
 
+
+
+
+/* 
+ * Styling for the main article section
+ */
 main {
 	@media #{$smaller-screen} {
 		width: 100%;
