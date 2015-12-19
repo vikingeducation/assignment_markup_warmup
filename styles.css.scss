@@ -1,6 +1,71 @@
-div.something {
-  font-size: 15px;
-  h1 {
-    color: blue;
-  }
+body {
+	margin: 0;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+nav {
+	padding: 10px 20px;
+	background-color: #FFE599;
+	a {
+		text-decoration: none;
+		color: #000;
+	}
+}
+
+aside {
+	margin-left: 10%;
+	margin-top: 10px;
+	width: 20%;
+	padding: 30px 0;
+	display: inline-block;
+	background-color: #D5A6BD;
+	text-align: center;
+	position: relative;
+	height: 50%;
+	line-height: 100%;
+
+	h3 {
+		color: #000;
+		vertical-align: middle;
+		line-height: normal;
+	}
+
+	img {
+		height: 100px;
+		width: 150px;
+
+	}
+}
+
+main {
+	margin-right: 10%;
+	width: 60%;
+	float: right;
+	vertical-align: top;
+	header {
+		background-color: #B6D7A8;
+		text-align: center;
+		color: #000;
+		border-radius: 3.5%;
+		padding: 10px 0;
+		margin: 10px;
+	}
+	article {
+	border: 2px solid #CCFFFF;
+	width: 250px;
+	margin: 5px;
+	display: inline-block;
+	background-color: #A2C4C9;
+	vertical-align: top;
+		h1 {
+			text-align: center;
+		}
+	}
+}
+
+footer {
+	background-color: #9FC5F8;
+	color: #000;
+	border-radius: 10%;
+	display: block;
 }
