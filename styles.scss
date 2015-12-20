@@ -1,4 +1,5 @@
 @import 'reset.css';
+$mobile: 1090px;
 
 body {
   font-family: sans-serif;
@@ -10,16 +11,28 @@ header {
   border: 2px solid black;
   margin-bottom: 10px;
   width: 100%;
+  position: fixed;
     h1 {
       font-size: 24px;
       padding: 12px 0 10px 0;
     }
-}
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 0px;
+      h1 {
+        font-size: 18px;
+      }
+  }
+} 
 
 .main-content {
   width: 70%;
   margin: 0 auto;
   float: left;
+  margin-top: 60px;
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+    margin-top: 50px;
+  }
 }
 
 .title-box {
@@ -40,16 +53,26 @@ header {
       font-style: italic;
       padding-top: 10px;
     }
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+    border: none;
+    border-radius: 0px;
+    height: 75px;
+    line-height: 0.8;
+      h1 {
+        font-size: 24px;
+      }
+  }
 }
 
 aside {
   float: left;
-  position: relative;
   height: 500px;
   width: 225px;
   border: 2px solid black;
   margin-left: calc(10%);
   margin-right: 10px;
+  margin-top: 60px;
   background-color: #f9f;
     h2 {
       font-size: 16px;
@@ -58,13 +81,15 @@ aside {
       padding-bottom: 10px;
     }
     .ad-box {
+      top: 50%;
       height: 150px;
       width: 150px;
       border: 2px solid black;
       margin: 0 auto;
-      position: relative;
-      padding-top: 20px;
     }
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .left-article, .middle-article, .right-article {
@@ -92,6 +117,29 @@ aside {
     p {
       padding: 0 5px 10px 5px;
     }
+  @media screen and (max-width: $mobile) {
+    h3, h4, h5, p {
+      font-size: calc(75%);
+      }
+  }
+}
+
+.left-article {
+  @media screen and (max-width: $mobile) {
+    width: 43%;
+  }
+}
+
+.middle-article {
+  @media screen and (max-width: $mobile) {
+    width: 43%;
+  }
+}
+
+.right-article {
+  @media screen and (max-width: $mobile) {
+    width: 90%;
+  }
 }
 
 footer {
@@ -103,4 +151,9 @@ footer {
   font-size: 17px;
   padding: 20px;
   background-color: #b8b8f2;
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0px;
+  }
 }
