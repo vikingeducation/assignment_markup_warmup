@@ -12,10 +12,16 @@ nav {
 }
 
 main {
-  display: flex;
-  padding: 40px 0;
   margin: 0 auto;
-  max-width: 990px;
+  @media (max-width: 989px) {
+    width: 100%;
+    padding: 20px 0;
+  }
+  @media (min-width: 990px){
+    display: flex;
+    max-width: 990px;
+    padding: 40px 0;
+  }
 }
 
 aside {
@@ -24,6 +30,9 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media(max-width: 989px) {
+    display: none;
+  }
   .advertising {
     height: 300px; 
     text-align: center;
@@ -31,25 +40,41 @@ aside {
   }
 }
 
-section {
-  header {
-    background-color: #b6d7a8;
+header {
+  background-color: #b6d7a8;
+  padding: 10px;
+  border: 1px solid #000;
+  @media (min-width: 990px) {
     border-radius: 25px;
-    padding: 10px;
     margin: 10px;
-    border: 1px solid #000;
   }
 }
+
+@media(max-width: 989px) {
+  article:nth-of-type(3n) {
+    width: unset;
+  }
+}
+
 article {
   display: inline-table;
-  width: 30%;
   background-color: #A2C4C9;
   padding: 10px;
+  @media (min-width: 990px) {
+    width: calc(33% - 21px);
+  }
+  @media(max-width: 989px) {
+    width: calc(50% - 42px);
+    margin: 10px;
+  }
 }
 
 footer {
   background-color: #9FC5F8;
-  border-radius: 25px;
   border: 1px solid #000;
   padding: 0 10px;
+  @media (min-width: 990px) {
+    border-radius: 25px;
+    margin: 10px 0;
+  }
 }
