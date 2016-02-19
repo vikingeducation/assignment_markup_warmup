@@ -1,0 +1,22 @@
+body {
+  max-width: 960px; }
+
+nav {
+  background: #d9c426;
+  position: fixed;
+  width: 100%;
+  padding: 15px 0; }
+
+aside {
+  background: #d94426; }
+
+header {
+  background: #66cc6f; }
+
+article {
+  background: #79c4d2; }
+
+footer {
+  background: #998cd9; }
+
+/*# sourceMappingURL=style.css.map */
