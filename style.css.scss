@@ -13,6 +13,7 @@
 
 body {
 	font-family: helvetica;
+	color: #121212;
 }
 
 
@@ -179,6 +180,14 @@ nav {
 
 		p {
 			line-height: 1.5;
+		}
+
+
+		.time {
+			text-align: center;
+			color: #222;
+			margin-top: -7px;
+			font-size: 12px;
 		}
 	}
 

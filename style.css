@@ -5,7 +5,8 @@
   box-sizing: border-box; }
 
 body {
-  font-family: helvetica; }
+  font-family: helvetica;
+  color: #121212; }
 
 .container {
   max-width: 960px;
@@ -104,6 +105,11 @@ nav {
     text-align: center; }
   .articles-container article p {
     line-height: 1.5; }
+  .articles-container article .time {
+    text-align: center;
+    color: #222;
+    margin-top: -7px;
+    font-size: 12px; }
 .articles-container article:hover {
   background: #c9e3e8;
   box-shadow: 0 0 20px 2px #777;
