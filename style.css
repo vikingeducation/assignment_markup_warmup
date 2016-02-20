@@ -1,22 +1,88 @@
-body {
-  max-width: 960px; }
+* {
+  box-sizing: border-box; }
+
+.container {
+  max-width: 960px;
+  margin: 70px auto;
+  font-family: helvetica; }
 
 nav {
   background: #d9c426;
   position: fixed;
+  top: 0;
   width: 100%;
   padding: 15px 0; }
+  nav h2 {
+    font-size: 20px;
+    padding-left: 30px; }
 
-aside {
-  background: #d94426; }
+.left {
+  float: left;
+  width: 24%; }
+  .left aside {
+    position: relative;
+    background: #d94426;
+    height: 500px;
+    border-top-left-radius: 25px; }
+    .left aside h3 {
+      text-align: center;
+      font-size: 16px;
+      padding: 10px 0; }
+    .left aside #ad {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+  .left .img {
+    width: 80%;
+    height: 200px;
+    background: #733326;
+    margin: 0 auto; }
 
-header {
-  background: #66cc6f; }
-
-article {
-  background: #79c4d2; }
-
-footer {
-  background: #998cd9; }
+.right {
+  float: right;
+  width: 75%; }
+  .right header {
+    background: #66cc6f;
+    margin-bottom: 10px;
+    text-align: center;
+    border-top-right-radius: 25px; }
+    .right header h1 {
+      font-size: 28px;
+      padding: 15px 0; }
+    .right header h3 {
+      font-size: 16px;
+      padding-bottom: 15px; }
+  .right .articles-container article {
+    background: #79c4d2;
+    width: 32.5%;
+    padding: 20px 15px;
+    margin-bottom: 10px; }
+    .right .articles-container article h2 {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px 0; }
+    .right .articles-container article h3 {
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px 0; }
+    .right .articles-container article p {
+      font-size: 14px;
+      line-height: 1.5; }
+  .right .articles-container article:first-child {
+    float: left; }
+  .right .articles-container .third-articles {
+    float: right; }
+  .right .articles-container .second-articles {
+    margin: 0 auto; }
+  .right footer {
+    clear: both;
+    background: #998cd9;
+    height: 70px;
+    border-bottom-right-radius: 25px; }
+    .right footer p {
+      padding: 10px 15px;
+      font-size: 14px;
+      text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
