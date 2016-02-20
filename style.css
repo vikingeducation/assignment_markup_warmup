@@ -96,7 +96,7 @@ nav {
   margin-bottom: 10px;
   padding: 15px;
   vertical-align: top;
-  transition: 0.5s; }
+  transition: box-shadow 0.5s, background 0.5s; }
   .articles-container article h2,
   .articles-container article h3 {
     font-weight: bold;
@@ -113,7 +113,7 @@ nav {
 .articles-container article:hover {
   background: #c9e3e8;
   box-shadow: 0 0 20px 2px #777;
-  transition: 0.5s; }
+  transition: box-shadow 0.5s, background 0.5s; }
 .articles-container .first-articles {
   margin: 10px 0.5% 10px 0; }
 .articles-container .second-articles {
