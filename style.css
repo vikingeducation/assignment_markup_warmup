@@ -24,14 +24,11 @@ h3 {
 p {
   font-size: 14px; }
 
-.center {
-  text-alingn: center; }
-
 /*
 		Navigation Style
 */
 nav {
-  background: #d9c426;
+  background: #e8ca7d;
   position: fixed;
   top: 0;
   width: 100%;
@@ -49,7 +46,7 @@ nav {
   width: 24%; }
   .left aside {
     position: relative;
-    background: #d94426;
+    background: #d9998c;
     height: 500px;
     border-top-left-radius: 25px; }
     .left aside h3 {
@@ -72,7 +69,7 @@ nav {
   float: right;
   width: 75%; }
   .right header {
-    background: #66cc6f;
+    background: #8cd993;
     margin-bottom: 10px;
     text-align: center;
     border-top-right-radius: 25px; }
@@ -92,12 +89,13 @@ nav {
 		Articles Section Style
 */
 .articles-container article {
-  background: #79c4d2;
+  background: #a6d0d9;
   display: inline-block;
   width: 32%;
   margin-bottom: 10px;
   padding: 15px;
-  vertical-align: top; }
+  vertical-align: top;
+  transition: 0.5s; }
   .articles-container article h2,
   .articles-container article h3 {
     font-weight: bold;
@@ -106,6 +104,10 @@ nav {
     text-align: center; }
   .articles-container article p {
     line-height: 1.5; }
+.articles-container article:hover {
+  background: #c9e3e8;
+  box-shadow: 0 0 20px 2px #777;
+  transition: 0.5s; }
 .articles-container .first-articles {
   margin: 10px 0.5% 10px 0; }
 .articles-container .second-articles {
