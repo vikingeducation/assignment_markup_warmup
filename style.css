@@ -1,3 +1,6 @@
+/*
+		Global Style
+*/
 * {
   box-sizing: border-box; }
 
@@ -6,19 +9,41 @@ body {
 
 .container {
   max-width: 960px;
-  margin: 70px auto; }
+  margin: 70px auto;
+  border-radius: 25px; }
 
+/*
+		Font Style
+*/
+h2 {
+  font-size: 20px; }
+
+h3 {
+  font-size: 16px; }
+
+p {
+  font-size: 14px; }
+
+.center {
+  text-alingn: center; }
+
+/*
+		Navigation Style
+*/
 nav {
   background: #d9c426;
   position: fixed;
   top: 0;
   width: 100%;
   line-height: 60px;
-  height: 60px; }
+  height: 60px;
+  z-index: 1; }
   nav h2 {
-    font-size: 20px;
     padding-left: 30px; }
 
+/*
+		Left Column Style
+*/
 .left {
   float: left;
   width: 24%; }
@@ -29,18 +54,20 @@ nav {
     border-top-left-radius: 25px; }
     .left aside h3 {
       text-align: center;
-      font-size: 16px;
       padding: 10px 0; }
-    .left aside #ad {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%); }
+  .left #ad {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
   .left .img {
     width: 80%;
     height: 200px;
     background: #733326;
     margin: 0 auto; }
 
+/*
+		Right Column Style
+*/
 .right {
   float: right;
   width: 75%; }
@@ -53,16 +80,17 @@ nav {
       font-size: 28px;
       padding: 15px 0; }
     .right header h3 {
-      font-size: 16px;
       padding-bottom: 15px; }
   .right footer {
     background: #998cd9;
     border-bottom-right-radius: 25px; }
     .right footer p {
       padding: 10px 15px;
-      font-size: 14px;
       text-align: center; }
 
+/*
+		Articles Section Style
+*/
 .articles-container article {
   background: #79c4d2;
   display: inline-block;
@@ -70,17 +98,13 @@ nav {
   margin-bottom: 10px;
   padding: 15px;
   vertical-align: top; }
-  .articles-container article h2 {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px 0; }
+  .articles-container article h2,
   .articles-container article h3 {
-    font-size: 16px;
     font-weight: bold;
     padding: 10px 0; }
+  .articles-container article h2 {
+    text-align: center; }
   .articles-container article p {
-    font-size: 14px;
     line-height: 1.5; }
 .articles-container .first-articles {
   margin: 10px 0.5% 10px 0; }
@@ -89,13 +113,16 @@ nav {
 .articles-container .third-articles {
   margin: 10px 0 10px 0.5%; }
 
+/*
+	CSS for width < 990 px	Responsive
+*/
 @media (max-width: 990px) {
-  .left {
-    display: none; }
-
   .container {
     max-width: 100%;
     margin: 60px 0; }
+
+  .left {
+    display: none; }
 
   .right {
     width: 100%; }
