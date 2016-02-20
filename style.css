@@ -1,10 +1,12 @@
 * {
   box-sizing: border-box; }
 
+body {
+  font-family: helvetica; }
+
 .container {
   max-width: 960px;
-  margin: 70px auto;
-  font-family: helvetica; }
+  margin: 70px auto; }
 
 nav {
   background: #d9c426;
