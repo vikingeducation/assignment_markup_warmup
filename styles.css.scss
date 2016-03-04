@@ -17,9 +17,10 @@ $brand: #333;
 
 
 .title {
-  margin: 50px auto;
+  margin: 50px 0px;
   text-align:center;
-  width: 50%;
+  width: 100%;
+  max-width:760px;
   @include border-radius(5px);
   background-color:#B2DCF9;
 }
@@ -72,6 +73,10 @@ $brand: #333;
   text-align: center;
 }
 
+.content {
+  margin: 0px 0px 0px 240px;
+}
+
 article {
   position: relative;
   width: 220px;
@@ -79,6 +84,7 @@ article {
   border: solid black 1px;
   display: inline-block;
   vertical-align: text-top;
+  margin:5px 5px;
 }
 
 
@@ -86,12 +92,12 @@ article {
 footer {
   align: center;
   height: 30px;
-  width: 350px;
+  width: 90%;
+  max-width: 710px;
   color: white;
   padding: 0px 25px;
   @include border-radius(10px);
   background-color: $brand;
-  margin: 0px 0px 0px 240px;
 
   p {
     @include vert-center;
@@ -107,15 +113,20 @@ footer {
   body{
   margin: 0;
   }
+  .content{
+  margin: 0;
+  }
 
   footer {
   width: 100%;
+  max-width: 100%;
   @include border-radius(0px);
   margin:48px 0px;
 
   }
   .title{
-  width: 120%;
+  width: 100%;
+  max-width: 100%;
   @include border-radius(0px);
   margin:48px 0px;
   }
