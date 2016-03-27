@@ -14,7 +14,7 @@ body .wrapper {
 aside {
   margin-top: 20px;
   float: left;
-  width: 350px;
+  width: calc((920px/4)*1.5);
   height: 550px;
   display: table; }
   aside div.ad {
@@ -25,12 +25,12 @@ aside {
 
 .blog {
   float: right;
-  width: 990px; }
+  width: calc((920px/4)*3); }
   .blog header {
     text-align: center; }
   .blog article {
     display: inline-block;
-    width: calc(981px/3);
+    width: 227px;
     vertical-align: top; }
 
 /*# sourceMappingURL=styles.css.map */
