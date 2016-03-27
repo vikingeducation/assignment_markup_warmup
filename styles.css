@@ -45,10 +45,13 @@ aside {
     float: none;
     margin: 0;
     width: 100%; }
-    .blog article {
-      margin: 0;
+    .blog article:nth-of-type(-n+2) {
+      margin-left: 20px;
+      margin-right: 20px;
       width: 43.5%; }
     .blog article:nth-of-type(3) {
-      width: 100%; } }
+      margin-left: 20px;
+      margin-right: 20px;
+      width: 92%; } }
 
 /*# sourceMappingURL=styles.css.map */
