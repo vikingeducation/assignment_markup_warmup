@@ -44,6 +44,10 @@ aside {
     display: inline-block;
     width: 32.8%;
     vertical-align: top; }
+    .blog article .blog-header {
+      text-align: center; }
+    .blog article .blog-post {
+      padding: 10px; }
 
 @media screen and (max-width: 989px) {
   aside {

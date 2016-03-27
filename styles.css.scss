@@ -60,6 +60,14 @@ aside {
 		display: inline-block;
 		width: 32.8%;
 		vertical-align: top;
+
+		.blog-header {
+			text-align: center;
+		}
+
+		.blog-post {
+			padding: 10px;
+		}
 	}
 }
 
