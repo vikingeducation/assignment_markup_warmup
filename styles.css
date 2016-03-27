@@ -55,10 +55,10 @@ aside {
 
   .blog {
     float: none;
-    margin: 0;
     width: 100%; }
     .blog header,
     .blog footer {
+      margin-top: 30px;
       border-radius: 0; }
     .blog article:nth-of-type(-n+2) {
       margin-left: 20px;
