@@ -11,6 +11,7 @@ nav {
 }
 
 body {
+	font-family: 'Lato', sans-serif;
 	margin: 0;
 
 	.wrapper {
@@ -39,11 +40,22 @@ aside {
 	float: right;
 	width: 55%;
 
+	header,
+	footer {
+		border-radius: 20px;
+	}
+
 	header {
 		text-align: center;
+		background-color: #00e6ac;
+	}
+
+	footer {
+		background-color: #1aa3ff;
 	}
 
 	article {
+		background-color: #008040;
 		margin-bottom: 20px;
 		display: inline-block;
 		width: 32.8%;
@@ -60,6 +72,11 @@ aside {
 		float: none;
 		margin: 0;
 		width: 100%;
+
+		header,
+		footer {
+			border-radius: 0;
+		}
 
 		article:nth-of-type(-n+2) {
 			margin-left: 20px;
