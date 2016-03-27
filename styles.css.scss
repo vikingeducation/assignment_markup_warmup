@@ -58,11 +58,16 @@ aside {
 
 	.blog {
 		float: none;
+		margin: 0;
 		width: 100%;
 
 		article {
-			margin: 20px 30px 10px 30px;
-			width: 40%;
+			margin: 0;
+			width: 43.5%;
+		}
+
+		article:nth-of-type(3) {
+			width: 100%;
 		}
 	}
 }
