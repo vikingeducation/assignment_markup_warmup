@@ -36,4 +36,15 @@ aside {
     width: 227px;
     vertical-align: top; }
 
+@media screen and (max-width: 989px) {
+  aside {
+    display: none; }
+
+  .blog {
+    float: none;
+    width: 100%; }
+    .blog article {
+      margin: 20px 30px 10px 30px;
+      width: 40%; } }
+
 /*# sourceMappingURL=styles.css.map */
