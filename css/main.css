@@ -10,4 +10,26 @@
   padding: 0 0 5px 5px;
   border-bottom: 2px solid #333; }
 
+@media (min-width: 900px) {
+  main {
+    position: relative;
+    top: 50px;
+    margin: 25px 100px; }
+
+  aside {
+    float: left;
+    height: 500px;
+    width: 225px;
+    background-color: #ad3cdb;
+    border: 2px solid #333;
+    position: relative; }
+    aside div.ad-sidebar {
+      text-align: center;
+      transform: translateY(40%); }
+
+  footer {
+    position: relative;
+    top: 50px;
+    margin: 0 100px; } }
+
 /*# sourceMappingURL=main.css.map */
