@@ -13,7 +13,6 @@
 
 .title-bar {
   background-color: #79c829;
-  border-radius: 10px;
   border: 2px solid #333;
   h1, p {
     text-align: center;
@@ -52,6 +51,7 @@ footer {
   .title-bar {
     float: left;
     width: 900px;
+    border-radius: 10px;
   }
   .article-container {
     float: left;
@@ -76,5 +76,33 @@ footer {
 @media (max-width: 899px) {
   aside {
     display: none;
+  }
+  .title-bar {
+    margin: 0;
+    position: relative;
+    top: 48px;
+    width: 100%;
+  }
+  .article-container {
+    position: relative;
+    top: 50px;
+  }
+  footer {
+    position: relative;
+    top: 50px;
+    clear: both;
+  }
+  article#post-1 {
+    width: 300px;
+    float: left;
+    margin: 0 10px 25px 0;
+  }
+  article#post-2 {
+    float: left;
+    width: 300px;
+  }
+  article#post-3 {
+    clear: both;
+    margin-bottom: 25px;
   }
 }
