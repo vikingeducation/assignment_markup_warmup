@@ -28,21 +28,24 @@
       text-align: center;
       transform: translateY(40%); }
 
-  header {
-    position: relative;
-    left: 250px;
+  .title-bar {
+    float: left;
     background-color: #79c829;
     border-radius: 10px;
     border: 2px solid #333;
-    width: 80%; }
-    header h1, header p {
+    width: 900px; }
+    .title-bar h1, .title-bar p {
       text-align: center; }
 
-  .article-container .post {
-    float: left;
-    background-color: #3b81d2;
-    border: 2px solid #333;
-    width: 225px; }
+  .article-container {
+    float: left; }
+    .article-container article {
+      float: left;
+      background-color: #3b81d2;
+      border: 2px solid #333;
+      width: 225px;
+      padding: 0 10px;
+      margin: 10px; }
 
   footer {
     clear: left;
