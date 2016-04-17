@@ -47,3 +47,83 @@ table {
   border-spacing: 0;
 }
 
+// Variables
+
+$margin-page: 10%;
+$margin-elements: 10px;
+$padding-elements: 10px;
+
+
+// CSS Styling
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+}
+
+
+header {
+  background: #ffe599;
+  height: 40px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+
+  h1 {
+    font-size: 1.75em;
+    line-height: 40px;
+    padding-left: 20px;
+  }
+}
+
+#ad {
+  background: #d5a6bd;
+  width: 230px;
+  height: 350px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: $margin-page;
+  margin-top: $margin-elements;
+
+  img {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+main {
+  width: 750px;
+  display: inline-block;
+  margin-right: $margin-page;
+  margin-top: $margin-elements;
+  margin-left: $margin-elements;
+}
+
+#title {
+  background: #b6d7a8;
+  padding: $padding-elements;
+  border-radius: 15px;
+}
+
+article {
+  background: #9fc1c6;
+  width: ((750px - $margin-elements * 2) / 3);
+  display: inline-block;
+  vertical-align: top;
+  margin-top: $margin-elements;
+  margin-right: $margin-elements;
+  padding: $padding-elements;
+}
+
+main article:last-of-type {
+  margin-right: 0px;
+}
+
+footer {
+  margin-top: $margin-elements;
+  background: #9fc5f8;
+  padding: $padding-elements;
+  border-radius: 15px;
+}
