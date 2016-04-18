@@ -52,6 +52,7 @@ table {
 $margin-page: 10%;
 $margin-elements: 10px;
 $padding-elements: 10px;
+$nav-height: 40px;
 
 
 // CSS Styling
@@ -65,11 +66,14 @@ html {
 }
 
 
-header {
+nav {
   background: #ffe599;
-  height: 40px;
+  height: $nav-height;
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 
   h1 {
     font-size: 1.75em;
@@ -86,7 +90,7 @@ header {
   position: relative;
   vertical-align: top;
   margin-left: $margin-page;
-  margin-top: $margin-elements;
+  margin-top: $margin-elements + $nav-height;
 
   div {
     position: absolute;
@@ -111,11 +115,11 @@ main {
   width: 750px;
   display: inline-block;
   margin-right: $margin-page;
-  margin-top: $margin-elements;
+  margin-top: $margin-elements + $nav-height;
   margin-left: $margin-elements;
 }
 
-#title {
+header {
   background: #b6d7a8;
   padding: $padding-elements;
   border-radius: 15px;
