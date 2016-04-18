@@ -45,11 +45,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-* {
-  box-sizing: border-box; }
-
 html {
   background-color: #fff; }
+
+body * {
+  box-sizing: border-box; }
 
 nav {
   background: #ffe599;
@@ -57,7 +57,9 @@ nav {
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
   position: fixed;
-  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 9999; }
   nav h1 {
     font-size: 1.75em;
@@ -70,9 +72,7 @@ nav {
   height: 350px;
   display: inline-block;
   position: relative;
-  vertical-align: top;
-  margin-left: 10%;
-  margin-top: 50px; }
+  vertical-align: top; }
   #ad div {
     position: absolute;
     top: 50%;
@@ -87,10 +87,14 @@ nav {
       width: 200px; }
 
 main {
+  width: 990px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px; }
+
+.content {
   width: 750px;
   display: inline-block;
-  margin-right: 10%;
-  margin-top: 50px;
   margin-left: 10px; }
 
 header {
@@ -131,5 +135,32 @@ footer {
   background: #9fc5f8;
   padding: 10px;
   border-radius: 15px; }
+
+@media (max-width: 990px) {
+  #ad {
+    display: none;
+    width: 0; }
+
+  main {
+    width: 96%; }
+
+  .content {
+    width: 100%;
+    margin-left: 0; }
+
+  article {
+    width: 49%;
+    margin-right: 0; }
+
+  article:first-of-type {
+    margin-right: 2%; }
+
+  article:last-of-type {
+    width: 100%; }
+
+  header,
+  footer {
+    border-radius: 0;
+    width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -48,8 +48,6 @@ table {
 }
 
 // Variables
-
-$margin-page: 10%;
 $margin-elements: 10px;
 $padding-elements: 10px;
 $nav-height: 40px;
@@ -57,14 +55,13 @@ $nav-height: 40px;
 
 // CSS Styling
 
-* {
-  box-sizing: border-box;
-}
-
 html {
   background-color: #fff;
 }
 
+body * {
+  box-sizing: border-box;
+}
 
 nav {
   background: #ffe599;
@@ -72,7 +69,9 @@ nav {
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
   position: fixed;
-  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 9999;
 
   h1 {
@@ -89,8 +88,6 @@ nav {
   display: inline-block;
   position: relative;
   vertical-align: top;
-  margin-left: $margin-page;
-  margin-top: $margin-elements + $nav-height;
 
   div {
     position: absolute;
@@ -112,10 +109,15 @@ nav {
 }
 
 main {
+  width: 990px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: $margin-elements + $nav-height; 
+}
+
+.content {
   width: 750px;
   display: inline-block;
-  margin-right: $margin-page;
-  margin-top: $margin-elements + $nav-height;
   margin-left: $margin-elements;
 }
 
@@ -170,4 +172,41 @@ footer {
   background: #9fc5f8;
   padding: $padding-elements;
   border-radius: 15px;
+}
+
+// For narrow widths
+
+@media (max-width: 990px) {
+  #ad {
+    display: none;
+    width: 0;
+  }
+
+  main {
+    width: 96%;
+  }
+
+  .content {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  article {
+    width: 49%;
+    margin-right: 0;
+  }
+
+  article:first-of-type {
+    margin-right: 2%;
+  }
+
+  article:last-of-type {
+    width: 100%;
+  }
+
+  header,
+  footer {
+    border-radius: 0;
+    width: 100%
+  }
 }
