@@ -66,12 +66,22 @@ header {
   width: 230px;
   height: 350px;
   display: inline-block;
+  position: relative;
   vertical-align: top;
   margin-left: 10%;
   margin-top: 10px; }
-  #ad img {
-    height: 200px;
-    width: 200px; }
+  #ad div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #ad div p {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.1em; }
+    #ad div img {
+      height: 200px;
+      width: 200px; }
 
 main {
   width: 750px;
@@ -83,7 +93,14 @@ main {
 #title {
   background: #b6d7a8;
   padding: 10px;
-  border-radius: 15px; }
+  border-radius: 15px;
+  text-align: center; }
+  #title h1 {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 2px; }
+  #title h2 {
+    font-size: 1.1em; }
 
 article {
   background: #9fc1c6;
@@ -93,6 +110,15 @@ article {
   margin-top: 10px;
   margin-right: 10px;
   padding: 10px; }
+  article h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center; }
+  article p:first-of-type {
+    text-align: center; }
+  article h4 {
+    font-weight: bold;
+    padding: 12px 0 8px 0; }
 
 main article:last-of-type {
   margin-right: 0px; }

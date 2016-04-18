@@ -83,13 +83,27 @@ header {
   width: 230px;
   height: 350px;
   display: inline-block;
+  position: relative;
   vertical-align: top;
   margin-left: $margin-page;
   margin-top: $margin-elements;
 
-  img {
-    height: 200px;
-    width: 200px;
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    p {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    img {
+      height: 200px;
+      width: 200px;
+    }
   }
 }
 
@@ -105,6 +119,17 @@ main {
   background: #b6d7a8;
   padding: $padding-elements;
   border-radius: 15px;
+  text-align: center;
+
+  h1 {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 2px;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
 }
 
 article {
@@ -115,6 +140,21 @@ article {
   margin-top: $margin-elements;
   margin-right: $margin-elements;
   padding: $padding-elements;
+
+  h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  p:first-of-type {
+    text-align: center;
+  }
+
+  h4 {
+    font-weight: bold;
+    padding: 12px 0 8px 0;
+  }
 }
 
 main article:last-of-type {
