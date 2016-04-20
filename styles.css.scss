@@ -163,7 +163,7 @@ article {
   }
 }
 
-main article:last-of-type {
+article:last-of-type {
   margin-right: 0px;
 }
 
@@ -179,30 +179,32 @@ footer {
 @media (max-width: 990px) {
   #ad {
     display: none;
-    width: 0;
   }
 
   main {
-    width: 96%;
+    width: 100%;
+    margin-top: $nav-height;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .content {
     width: 100%;
     margin-left: 0;
-  }
-
-  article {
-    width: 49%;
     margin-right: 0;
+
+    article {
+      width: 48%;
+      margin-right: 1%;
+      margin-left: 1%;
+    }
+
+    article:last-of-type {
+      width: 98%;
+    }
   }
 
-  article:first-of-type {
-    margin-right: 2%;
-  }
 
-  article:last-of-type {
-    width: 100%;
-  }
 
   header,
   footer {
