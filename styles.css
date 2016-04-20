@@ -88,9 +88,7 @@ nav {
 
 main {
   width: 990px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px; }
+  margin: 50px auto 0 auto; }
 
 .content {
   width: 750px;
@@ -142,9 +140,7 @@ footer {
 
   main {
     width: 100%;
-    margin-top: 40px;
-    margin-left: 0;
-    margin-right: 0; }
+    margin: 40px 0 0 0; }
 
   .content {
     width: 100%;

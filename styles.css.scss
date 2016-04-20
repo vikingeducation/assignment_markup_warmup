@@ -110,9 +110,7 @@ nav {
 
 main {
   width: 990px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: $margin-elements + $nav-height; 
+  margin: ($margin-elements + $nav-height) auto 0 auto;
 }
 
 .content {
@@ -183,9 +181,7 @@ footer {
 
   main {
     width: 100%;
-    margin-top: $nav-height;
-    margin-left: 0;
-    margin-right: 0;
+    margin: $nav-height 0 0 0;
   }
 
   .content {
