@@ -1,0 +1,92 @@
+@media screen and (max-width: 990px) {
+  body main #ad {
+    display: none; }
+
+  body main #content {
+    display: inline-block;
+    width: 100%;
+    float: top;
+    vertical-align: top; }
+
+  body main .blog-post {
+    width: 40%; }
+
+  body main .third {
+    width: 86%; } }
+main {
+  font-family: Helvetica;
+  text-align: center;
+  color: #333;
+  margin: 0 auto; }
+  main .container {
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto; }
+  main #nav {
+    display: block;
+    background-color: #ffffc7;
+    height: 50px;
+    width: 100%;
+    margin: 0 0 10px -10px;
+    font-size: 20px;
+    line-height: 70px;
+    position: fixed;
+    top: 0;
+    padding-left: 10px;
+    text-align: left;
+    font-style: italic;
+    font-weight: bold; }
+  main #ad {
+    background-color: #ffb2b2;
+    height: 400px;
+    width: 15%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: middle;
+    line-height: 30px;
+    margin: 60px 20px 10px 0;
+    padding: 5px; }
+    main #ad p {
+      color: #fff;
+      margin: 75px auto 75px auto;
+      text-align: center; }
+    main #ad img {
+      width: 90%;
+      border-radius: 10px; }
+  main #content {
+    display: inline-block;
+    width: 70%;
+    margin: 60px auto 10px auto;
+    background-color: #EEE; }
+  main #title {
+    background-color: #9CBA7F;
+    height: 100px;
+    width: 90%;
+    margin: 10px auto 10px auto;
+    font-size: 32px;
+    line-height: 100px;
+    font-weight: bold; }
+  main .blog-post {
+    background-color: #ADD8E6;
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    margin: 10px 10px 10px 10px;
+    color: #333;
+    padding: 10px; }
+    main .blog-post h2 {
+      font-size: 24px; }
+    main .blog-post h3 {
+      font-size: 20px; }
+    main .blog-post p {
+      font-size: 14px; }
+  main #footer {
+    background-color: #388E8E;
+    height: 50px;
+    width: 90%;
+    margin: 10px auto 10px auto;
+    font-size: 12px;
+    line-height: 50px; }
+
+/*# sourceMappingURL=styles.css.map */
