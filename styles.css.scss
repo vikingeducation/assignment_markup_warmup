@@ -1,5 +1,26 @@
 $navbar_height: 50px;
 
+@media screen and (max-width: 990px) {
+  body main #ad {
+    display: none;
+  }
+
+  body main #content {
+    display: inline-block;
+    width:100%;
+    float: top;
+    vertical-align: top;
+  }
+
+  body main .blog-post {
+    width: 40%;
+  }
+
+  body main .third {
+    width: 86%;
+  }
+}
+
 main {
   font-family: Helvetica;
   text-align: center;
@@ -15,7 +36,7 @@ main {
   }
 
   #nav {
-    list-style-type: none;
+    
     display: block;
     background-color: #ffffc7;
     height: $navbar_height;
@@ -40,6 +61,7 @@ main {
     text-align: middle;
     line-height: 30px;
     margin: $navbar_height+10px 20px 10px 0;
+    padding: 5px;
   
     p {
       color: #fff;
@@ -48,16 +70,14 @@ main {
     }
 
     img {
-      width: 80%;
+      width: 90%;
       border-radius: 10px;
     }
   }
 
-
   #content {
     display: inline-block;
     width: 70%;
-
     margin: $navbar_height+10px auto 10px auto;
     background-color: #EEE
   }
@@ -69,14 +89,7 @@ main {
     margin: 10px auto 10px auto;
     font-size: 32px;
     line-height: 100px;
-    font-weight: bold;
-    
-  }
-
-  #blog_posts {
-    display: inline-block;
-    background-color: #555;
-    vertical-align: text-top;
+    font-weight: bold;  
   }
 
   .blog-post {
@@ -92,9 +105,11 @@ main {
     h2 {
       font-size: 24px;
     }
+
     h3 {
       font-size: 20px;
     }
+
     p {
       font-size: 14px;
     }

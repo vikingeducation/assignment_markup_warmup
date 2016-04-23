@@ -1,3 +1,18 @@
+@media screen and (max-width: 990px) {
+  body main #ad {
+    display: none; }
+
+  body main #content {
+    display: inline-block;
+    width: 100%;
+    float: top;
+    vertical-align: top; }
+
+  body main .blog-post {
+    width: 40%; }
+
+  body main .third {
+    width: 86%; } }
 main {
   font-family: Helvetica;
   text-align: center;
@@ -9,7 +24,6 @@ main {
     border-radius: 10px;
     margin: 0 auto; }
   main #nav {
-    list-style-type: none;
     display: block;
     background-color: #ffffc7;
     height: 50px;
@@ -31,13 +45,14 @@ main {
     vertical-align: top;
     text-align: middle;
     line-height: 30px;
-    margin: 60px 20px 10px 0; }
+    margin: 60px 20px 10px 0;
+    padding: 5px; }
     main #ad p {
       color: #fff;
       margin: 75px auto 75px auto;
       text-align: center; }
     main #ad img {
-      width: 80%;
+      width: 90%;
       border-radius: 10px; }
   main #content {
     display: inline-block;
@@ -52,10 +67,6 @@ main {
     font-size: 32px;
     line-height: 100px;
     font-weight: bold; }
-  main #blog_posts {
-    display: inline-block;
-    background-color: #555;
-    vertical-align: text-top; }
   main .blog-post {
     background-color: #ADD8E6;
     display: inline-block;
