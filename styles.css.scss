@@ -1,24 +1,87 @@
-header{
-  background-color: #FE9;
+h1{
+  font-size: 25px;
 }
 
-aside{
-  background-color: #DAB;
+#page-header{
+  background-color: #FE9;
+  width: 100%;
+  position: fixed;
+  height: 40px;
+  border: 2px solid black;
+  top: 0;
+  h1{
+    margin: 10px 10px;
+    font-size: 20px;
+  }
 }
 
 main{
-  header{
+  width: 990px;
+  margin: 70px auto;
+
+  #main-header{
     background-color: #BDA;
+    display: inline-block;
+    width: 730px;
+    height: 100px;
+    top: 0;
+    float: right;
+    border: 2px solid black;
+    border-radius: 25px;
+      h1, h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      h1{
+        font-weight: bold;
+      }
+      h2{
+        font-style: italic;
+      }
+  }
+
+  aside{
+  background-color: #DAB;
+  width: 230px;
+  border: 2px solid black;
+  height: 400px;
+  display: inline-block;
+  float: left;
+    header{
+      background-color: inherit;
+      width: inherit;
+    }
+}
+
+  #article-container{
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
   }
 
   article{
+    display: inline-block;
+    width: 230px;
+    margin-left: 10px;
+    border: 2px solid black;
+    vertical-align: top;
+    background-color: #ACC;
     header{
       background-color: inherit;
+      width: inherit;
     }
-    background-color: #ACC;
+   
   }
 }
 
 footer{
   background-color: #ACC;
+  display: inline-block;
+  width: 730px;
+  height: 100px;
+  float: right;
+  border: 2px solid black;
+  border-radius: 25px;
 }
