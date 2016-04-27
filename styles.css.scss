@@ -1,5 +1,11 @@
 h1{
-  font-size: 25px;
+  font-size: 30px;
+}
+h2{
+  font-size: 20px;
+}
+h3{
+  font-size: 15px
 }
 
 #page-header{
@@ -9,9 +15,8 @@ h1{
   height: 40px;
   border: 2px solid black;
   top: 0;
-  h1{
+  h2{
     margin: 10px 10px;
-    font-size: 20px;
   }
 }
 
@@ -49,10 +54,18 @@ main{
   height: 400px;
   display: inline-block;
   float: left;
-    header{
-      background-color: inherit;
-      width: inherit;
+  #ad-content{
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 50%;
+    img{
+      margin-top: 10%;
+      width: 80%;
+      height: 30%;
     }
+  }
 }
 
   #article-container{
@@ -69,8 +82,27 @@ main{
     vertical-align: top;
     background-color: #ACC;
     header{
+      margin-top: 15px;
       background-color: inherit;
       width: inherit;
+      h2{
+        font-weight: bold;
+        text-align: center;
+      }
+      h3{
+        font-weight: bold;
+        margin: 0 0 10px 20px;
+      }
+      .pubdate{
+        text-align: center;
+        font-weight: normal;
+        margin: 10px auto;
+      }
+      
+    }
+
+    p{
+      margin: 0 0 20px 20px;
     }
    
   }
@@ -80,8 +112,11 @@ footer{
   background-color: #ACC;
   display: inline-block;
   width: 730px;
-  height: 100px;
   float: right;
   border: 2px solid black;
   border-radius: 25px;
+  margin-top: 20px;
+  p{
+    margin: 10px 0 0 10px;
+  }
 }

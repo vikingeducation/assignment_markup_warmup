@@ -1,5 +1,11 @@
 h1 {
-  font-size: 25px; }
+  font-size: 30px; }
+
+h2 {
+  font-size: 20px; }
+
+h3 {
+  font-size: 15px; }
 
 #page-header {
   background-color: #FE9;
@@ -8,9 +14,8 @@ h1 {
   height: 40px;
   border: 2px solid black;
   top: 0; }
-  #page-header h1 {
-    margin: 10px 10px;
-    font-size: 20px; }
+  #page-header h2 {
+    margin: 10px 10px; }
 
 main {
   width: 990px;
@@ -40,9 +45,16 @@ main {
     height: 400px;
     display: inline-block;
     float: left; }
-    main aside header {
-      background-color: inherit;
-      width: inherit; }
+    main aside #ad-content {
+      width: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      margin-top: 50%; }
+      main aside #ad-content img {
+        margin-top: 10%;
+        width: 80%;
+        height: 30%; }
   main #article-container {
     display: inline-block;
     float: right;
@@ -55,16 +67,31 @@ main {
     vertical-align: top;
     background-color: #ACC; }
     main article header {
+      margin-top: 15px;
       background-color: inherit;
       width: inherit; }
+      main article header h2 {
+        font-weight: bold;
+        text-align: center; }
+      main article header h3 {
+        font-weight: bold;
+        margin: 0 0 10px 20px; }
+      main article header .pubdate {
+        text-align: center;
+        font-weight: normal;
+        margin: 10px auto; }
+    main article p {
+      margin: 0 0 20px 20px; }
 
 footer {
   background-color: #ACC;
   display: inline-block;
   width: 730px;
-  height: 100px;
   float: right;
   border: 2px solid black;
-  border-radius: 25px; }
+  border-radius: 25px;
+  margin-top: 20px; }
+  footer p {
+    margin: 10px 0 0 10px; }
 
 /*# sourceMappingURL=styles.css.map */
