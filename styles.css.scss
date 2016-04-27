@@ -1,0 +1,24 @@
+header{
+  background-color: #FE9;
+}
+
+aside{
+  background-color: #DAB;
+}
+
+main{
+  header{
+    background-color: #BDA;
+  }
+
+  article{
+    header{
+      background-color: inherit;
+    }
+    background-color: #ACC;
+  }
+}
+
+footer{
+  background-color: #ACC;
+}

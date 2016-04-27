@@ -1,3 +1,17 @@
+header {
+  background-color: #FE9; }
 
+aside {
+  background-color: #DAB; }
+
+main header {
+  background-color: #BDA; }
+main article {
+  background-color: #ACC; }
+  main article header {
+    background-color: inherit; }
+
+footer {
+  background-color: #ACC; }
 
 /*# sourceMappingURL=styles.css.map */
