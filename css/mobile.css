@@ -1,0 +1,86 @@
+h1 {
+  font-size: 30px; }
+
+h2 {
+  font-size: 20px; }
+
+h3 {
+  font-size: 15px; }
+
+#page-header {
+  background-color: #FE9;
+  width: 100%;
+  position: fixed;
+  height: 40px;
+  border: 2px solid black;
+  top: 0; }
+  #page-header h2 {
+    margin: 10px 10px; }
+
+main {
+  width: 100%;
+  margin: 44px auto; }
+  main #main-header {
+    background-color: #BDA;
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    border: 2px solid black; }
+    main #main-header h1, main #main-header h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px; }
+    main #main-header h1 {
+      font-weight: bold; }
+    main #main-header h2 {
+      font-style: italic; }
+  main aside {
+    display: none; }
+  main #article-container {
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px; }
+  main article {
+    display: inline-block;
+    width: 47%;
+    margin-left: 10px;
+    border: 2px solid black;
+    vertical-align: top;
+    background-color: #ACC; }
+    main article header {
+      margin-top: 15px;
+      background-color: inherit;
+      width: 100%; }
+      main article header h2 {
+        font-weight: bold;
+        text-align: center; }
+      main article header h3 {
+        font-weight: bold;
+        margin: 0 0 10px 20px; }
+      main article header .pubdate {
+        text-align: center;
+        font-weight: normal;
+        margin: 10px auto; }
+    main article p {
+      margin: 0 0 20px 20px; }
+  main #another-posty-post {
+    float: right;
+    margin-right: 10px; }
+  main #posty-post {
+    height: 20%;
+    width: 100%;
+    margin-top: 20px; }
+
+footer {
+  background-color: #ACC;
+  display: inline-block;
+  width: 100%;
+  border: 2px solid black;
+  margin-top: 20px;
+  height: 10%; }
+  footer p {
+    margin: 10px 0 0 10px; }
+
+/*# sourceMappingURL=small-styles.css.map */
