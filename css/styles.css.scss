@@ -1,3 +1,4 @@
+/* Default header sizes */
 h1{
   font-size: 30px;
 }
@@ -8,6 +9,7 @@ h3{
   font-size: 15px
 }
 
+/* Page header is fixed to top */
 #page-header{
   background-color: #FE9;
   width: 100%;
@@ -20,6 +22,7 @@ h3{
   }
 }
 
+/* main content */
 main{
   width: 990px;
   margin: 70px auto;
@@ -47,6 +50,7 @@ main{
       }
   }
 
+  /* advertisement */
   aside{
   background-color: #DAB;
   width: 230px;
