@@ -1,4 +1,39 @@
-div, p, section, header, main {
+div, p, header, section, main {
 	border: 1px solid black;
 }
 
+aside,
+section {
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+aside {
+	width: 25%;
+	height: 100%;
+}
+
+section {
+	width: 75%;
+}
+
+.banner {
+	background-color: #ffe599;
+	height: 40px;
+}
+
+.ad-wrapper {
+	background-color: #d5a6bd;
+}
+
+.blog-title-wrapper {
+	background-color: #b6d7a8;
+}
+
+.post-content {
+	background-color: #a2c4c9;
+}
+
+.disclaimer {
+	background-color: #9fc5f8;
+}
