@@ -30,12 +30,18 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.wrapper-border, .content-wrapper .vertical-ad, .blog-content-wrapper .title-header {
+  border: 2px solid black; }
+
+.flex-container, #site-header, .content-wrapper, .content-wrapper .vertical-ad, .blog-content-wrapper .title-header, .blog-content-wrapper .title-header h1 {
+  display: flex;
+  flex-wrap: wrap; }
+
 #site-header {
   width: 100%;
   height: 65px;
   background: #FFE599;
   border-bottom: 2px solid black;
-  display: flex;
   align-items: center; }
   #site-header h1 {
     font-size: 24px;
@@ -48,16 +54,31 @@ table {
   border: 1px dashed black;
   margin: 0 auto;
   padding: 15px 0;
-  display: flex;
-  flex-wrap: wrap; }
+  justify-content: space-around;
+  font-family: Helvetica, sans-serif; }
   .content-wrapper .vertical-ad {
-    background: #D5A6BD;
-    border: 2px solid black;
     width: 20%;
-    display: flex;
+    background: #D5A6BD;
     justify-content: center;
     align-items: center; }
     .content-wrapper .vertical-ad img {
       width: 90%; }
+
+.blog-content-wrapper {
+  width: 75%; }
+  .blog-content-wrapper .title-header {
+    background: #B6D7A8;
+    border-radius: 10px;
+    padding: .75em;
+    justify-content: center; }
+    .blog-content-wrapper .title-header h1 {
+      justify-content: center;
+      font-size: 36px;
+      font-weight: bold;
+      width: 100%;
+      margin-bottom: .25em; }
+    .blog-content-wrapper .title-header h4 {
+      font-size: 24px;
+      font-style: italic; }
 
 /*# sourceMappingURL=styles.css.map */

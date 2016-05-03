@@ -3,12 +3,21 @@
 
 $font-stack: Helvetica, sans-serif;
 
+.wrapper-border {
+	border: 2px solid black;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 #site-header {
+	@extend .flex-container;
 	width: 100%;
 	height: 65px;
 	background: #FFE599;
 	border-bottom: 2px solid black;
-	display: flex;
 	align-items: center;
 
 	h1 {
@@ -19,19 +28,20 @@ $font-stack: Helvetica, sans-serif;
 }
 
 .content-wrapper {
+	@extend .flex-container;
 	width: 100%;
 	max-width: 960px;
 	border: 1px dashed black;
 	margin: 0 auto;
 	padding: 15px 0;
-	display: flex;
-	flex-wrap: wrap;
+	justify-content: space-around;
+	font-family: $font-stack;
 
 	.vertical-ad {
-		background: #D5A6BD;
-		border: 2px solid black;
+		@extend .wrapper-border;
+		@extend .flex-container;
 		width: 20%;
-		display: flex;
+		background: #D5A6BD;
 		justify-content: center;
 		align-items: center;
 
@@ -39,6 +49,32 @@ $font-stack: Helvetica, sans-serif;
 			width: 90%;
 		}
 	}
-
 }
 
+.blog-content-wrapper {
+	width: 75%;
+
+	.title-header {
+		@extend .wrapper-border;
+		@extend .flex-container;
+		background: #B6D7A8;
+		border-radius: 10px;
+		padding: .75em;
+		justify-content: center;
+
+		h1 {
+			@extend .flex-container;
+			justify-content: center;
+			font-size: 36px;
+			font-weight: bold;
+			width: 100%;
+			margin-bottom: .25em;
+		}
+
+		h4 {
+			font-size: 24px;
+			font-style: italic;
+		}
+
+	}
+}
