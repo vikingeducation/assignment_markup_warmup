@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Helvetica", "arial", sans-serif;
+}
+
+
+
 .wrapper {
   width: 990px;
   margin: 10px auto;
@@ -13,10 +19,12 @@
   width: 100%;
   height: 40px;
   background-color: #FFE599;
-  p {
-    display: inline-block;
-    width: 80px;
-  }
+  border: 1px solid black;
+}
+
+.header-blog p {
+  padding: 13px 0 0 10px;
+  font-weight: bold;
 }
 
 
@@ -51,23 +59,34 @@
   display:          flex;
   width:             75%;
   float: right;
-
-
 }
 
+
+
+h4 {
+  line-height: 35px;
+}
+
+.blog-post {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 15px;
+}
 
 
 .title-header {
   width:  75%;
-  height: 50px;
+  height: 65px;
   background-color: #B6D7A8;
   text-align: center;
   float:right;
-  padding: 8px 0 0 0;
-  border-radius: 4px;
+  padding: 17px 0 0 0;
+  border-radius: 12px;
   border: 1px solid black; 
-  margin-left: 5px;
+  margin: 0 0 10px 5px;
+
 }
+
 
 .posts {
   float: left;
@@ -87,14 +106,12 @@
 
 header {
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 header time {
   font-size: 80%;
 }
-
-
 
 
 .disclaimer {
