@@ -106,15 +106,21 @@ main {
 .post-tile {
 	@extend .wrapper-border;
 	@extend .flex-container;
+	justify-content: center;
 	width: 32%;
 	background: #A2C4C9;
-	padding: 5px;
+	padding: 10px;
 
 	header {
+		width: 100%;
 		@extend .flex-container;
+		flex-wrap: wrap;
 		justify-content: center;
 
 		h1 {
+			@extend .flex-container;
+			justify-content: center;
+			width: 100%;
 			font-size: 20px;
 			font-weight: bold;
 			margin: .25em 0;
@@ -128,7 +134,7 @@ main {
 	}
 
 	.post-content {
-		width: 90%;
+		width: 100%;
 		margin: .5em 0 .25em 0;
 
 		h2 {
@@ -153,4 +159,58 @@ main {
 	background: #9FC5F8;
 	padding: 10px;
 	font-size: 14px;
+}
+
+
+@media screen and (max-width: 989px) {
+
+	#site-header {
+		width: 100%;
+	}
+
+	.content-wrapper {
+
+		padding-top: 0;
+
+		.vertical-ad {
+			display: none;
+		}
+
+	}
+
+	.blog-content-wrapper {
+		width: 100%;
+
+		.title-header {
+			border-radius: 0;
+			border-top: 0;
+			border-left: 0;
+			border-right: 0;
+		}
+
+	}
+
+	main {
+
+		.post-tile {
+
+		}
+
+		.post-tile:nth-child(-n+2) {
+			width: 45%;
+		}
+
+		.post-tile:nth-child(3) {
+			width: 95%;
+			margin-top: 10px;
+		}
+
+	}
+
+	.copyright-footer {
+		border-radius: 0;
+		border-left: 0;
+		border-right: 0;
+	}
+
 }
