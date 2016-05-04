@@ -12,6 +12,10 @@ $font-stack: Helvetica, sans-serif;
 	flex-wrap: wrap;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 html, body {
 	min-height: 100vh;
 }
@@ -33,11 +37,12 @@ html, body {
 
 .content-wrapper {
 	@extend .flex-container;
+	justify-content: space-around;
+	align-items: flex-start;
 	width: 100%;
 	max-width: 960px;
 	margin: 0 auto;
 	padding: 15px 0;
-	justify-content: space-around;
 	font-family: $font-stack;
 
 	.vertical-ad {
@@ -47,6 +52,7 @@ html, body {
 		justify-content: center;
 		align-items: center;
 		width: 22.5%;
+		height: 550px;
 		background: #D5A6BD;
 
 		p {
@@ -68,10 +74,9 @@ html, body {
 	.title-header {
 		@extend .wrapper-border;
 		@extend .flex-container;
-		background: #B6D7A8;
 		border-radius: 10px;
+		background: #B6D7A8;
 		padding: .75em;
-		margin-bottom: 15px;
 		justify-content: center;
 
 		h1 {
@@ -95,6 +100,7 @@ main {
 	@extend .flex-container;
 	justify-content: space-around;
 	align-items: flex-start;
+	margin: 15px 0;
 }
 
 .post-tile {
@@ -102,7 +108,6 @@ main {
 	@extend .flex-container;
 	width: 32%;
 	background: #A2C4C9;
-	box-sizing: border-box;
 	padding: 5px;
 
 	header {
@@ -139,4 +144,13 @@ main {
 
 	}
 
+}
+
+.copyright-footer {
+	@extend .wrapper-border;
+	border-radius: 20px;
+	width: 100%;
+	background: #9FC5F8;
+	padding: 10px;
+	font-size: 14px;
 }

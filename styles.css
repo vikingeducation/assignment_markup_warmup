@@ -30,12 +30,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.wrapper-border, .content-wrapper .vertical-ad, .blog-content-wrapper .title-header, .post-tile {
+.wrapper-border, .content-wrapper .vertical-ad, .blog-content-wrapper .title-header, .post-tile, .copyright-footer {
   border: 2px solid black; }
 
 .flex-container, #site-header, .content-wrapper, .content-wrapper .vertical-ad, .blog-content-wrapper .title-header, .blog-content-wrapper .title-header h1, main, .post-tile, .post-tile header {
   display: flex;
   flex-wrap: wrap; }
+
+* {
+  box-sizing: border-box; }
 
 html, body {
   min-height: 100vh; }
@@ -52,17 +55,19 @@ html, body {
     margin-left: 50px; }
 
 .content-wrapper {
+  justify-content: space-around;
+  align-items: flex-start;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
   padding: 15px 0;
-  justify-content: space-around;
   font-family: Helvetica, sans-serif; }
   .content-wrapper .vertical-ad {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 22.5%;
+    height: 550px;
     background: #D5A6BD; }
     .content-wrapper .vertical-ad p {
       width: 90%;
@@ -75,10 +80,9 @@ html, body {
 .blog-content-wrapper {
   width: 75%; }
   .blog-content-wrapper .title-header {
-    background: #B6D7A8;
     border-radius: 10px;
+    background: #B6D7A8;
     padding: .75em;
-    margin-bottom: 15px;
     justify-content: center; }
     .blog-content-wrapper .title-header h1 {
       justify-content: center;
@@ -92,12 +96,12 @@ html, body {
 
 main {
   justify-content: space-around;
-  align-items: flex-start; }
+  align-items: flex-start;
+  margin: 15px 0; }
 
 .post-tile {
   width: 32%;
   background: #A2C4C9;
-  box-sizing: border-box;
   padding: 5px; }
   .post-tile header {
     justify-content: center; }
@@ -118,5 +122,12 @@ main {
     .post-tile .post-content p {
       line-height: 1.25em;
       margin-bottom: 1em; }
+
+.copyright-footer {
+  border-radius: 20px;
+  width: 100%;
+  background: #9FC5F8;
+  padding: 10px;
+  font-size: 14px; }
 
 /*# sourceMappingURL=styles.css.map */
