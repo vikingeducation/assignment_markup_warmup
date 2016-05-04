@@ -54,16 +54,18 @@ h4 {
   line-height: 21px;
   margin-bottom: 15px; }
 
-.title-header {
-  width: 75%;
+.post-header {
   height: 65px;
-  background-color: #B6D7A8;
-  text-align: center;
-  float: right;
   padding: 17px 0 0 0;
-  border-radius: 12px;
+  width: 75%;
+  float: right;
   border: 1px solid black;
+  border-radius: 12px;
   margin: 0 0 10px 5px; }
+
+.header {
+  background-color: #B6D7A8;
+  text-align: center; }
 
 .posts {
   float: left;
@@ -86,10 +88,13 @@ header time {
   font-size: 80%; }
 
 .disclaimer {
-  width: 100%;
-  height: 40px;
+  height: 60px;
   background-color: #9FC5F8;
-  position: relative;
-  display: block; }
+  padding: 12px;
+  margin-top: 15px; }
+
+footer p {
+  font-size: 12px;
+  line-height: 18px; }
 
 /*# sourceMappingURL=styles.css.map */
