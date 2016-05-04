@@ -30,10 +30,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.wrapper-border, .content-wrapper .vertical-ad, .blog-content-wrapper .title-header {
+.wrapper-border, .content-wrapper .vertical-ad, .blog-content-wrapper .title-header, .post-tile {
   border: 2px solid black; }
 
-.flex-container, #site-header, .content-wrapper, .content-wrapper .vertical-ad, .blog-content-wrapper .title-header, .blog-content-wrapper .title-header h1 {
+.flex-container, #site-header, .content-wrapper, .content-wrapper .vertical-ad, .blog-content-wrapper .title-header, .blog-content-wrapper .title-header h1, main, .post-tile, .post-tile header {
   display: flex;
   flex-wrap: wrap; }
 
@@ -51,16 +51,21 @@ table {
 .content-wrapper {
   width: 100%;
   max-width: 960px;
-  border: 1px dashed black;
   margin: 0 auto;
   padding: 15px 0;
   justify-content: space-around;
   font-family: Helvetica, sans-serif; }
   .content-wrapper .vertical-ad {
-    width: 20%;
-    background: #D5A6BD;
+    flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    width: 22.5%;
+    background: #D5A6BD; }
+    .content-wrapper .vertical-ad p {
+      width: 90%;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px; }
     .content-wrapper .vertical-ad img {
       width: 90%; }
 
@@ -70,6 +75,7 @@ table {
     background: #B6D7A8;
     border-radius: 10px;
     padding: .75em;
+    margin-bottom: 15px;
     justify-content: center; }
     .blog-content-wrapper .title-header h1 {
       justify-content: center;
@@ -77,8 +83,33 @@ table {
       font-weight: bold;
       width: 100%;
       margin-bottom: .25em; }
-    .blog-content-wrapper .title-header h4 {
+    .blog-content-wrapper .title-header h3 {
       font-size: 24px;
       font-style: italic; }
+
+main {
+  justify-content: space-around; }
+
+.post-tile {
+  width: 32%;
+  background: #A2C4C9;
+  box-sizing: border-box;
+  padding: 5px; }
+  .post-tile header {
+    justify-content: center; }
+    .post-tile header h1 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: .25em 0; }
+    .post-tile header h4 {
+      font-size: 16px;
+      margin: .25em 0; }
+  .post-tile .post-content {
+    width: 90%;
+    margin: 1em 0 1.25em 0; }
+    .post-tile .post-content h2 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: .75em; }
 
 /*# sourceMappingURL=styles.css.map */

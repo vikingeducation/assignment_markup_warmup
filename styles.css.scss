@@ -31,7 +31,6 @@ $font-stack: Helvetica, sans-serif;
 	@extend .flex-container;
 	width: 100%;
 	max-width: 960px;
-	border: 1px dashed black;
 	margin: 0 auto;
 	padding: 15px 0;
 	justify-content: space-around;
@@ -40,10 +39,18 @@ $font-stack: Helvetica, sans-serif;
 	.vertical-ad {
 		@extend .wrapper-border;
 		@extend .flex-container;
-		width: 20%;
-		background: #D5A6BD;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		width: 22.5%;
+		background: #D5A6BD;
+
+		p {
+			width: 90%;
+			text-align: center;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
 
 		img {
 			width: 90%;
@@ -60,6 +67,7 @@ $font-stack: Helvetica, sans-serif;
 		background: #B6D7A8;
 		border-radius: 10px;
 		padding: .75em;
+		margin-bottom: 15px;
 		justify-content: center;
 
 		h1 {
@@ -71,10 +79,54 @@ $font-stack: Helvetica, sans-serif;
 			margin-bottom: .25em;
 		}
 
-		h4 {
+		h3 {
 			font-size: 24px;
 			font-style: italic;
 		}
 
 	}
+}
+
+main {
+	@extend .flex-container;
+	justify-content: space-around;
+}
+
+.post-tile {
+	@extend .wrapper-border;
+	@extend .flex-container;
+	width: 32%;
+	background: #A2C4C9;
+	box-sizing: border-box;
+	padding: 5px;
+
+	header {
+		@extend .flex-container;
+		justify-content: center;
+
+		h1 {
+			font-size: 20px;
+			font-weight: bold;
+			margin: .25em 0;
+		}
+
+		h4 {
+			font-size: 16px;
+			margin: .25em 0;
+		}
+
+	}
+
+	.post-content {
+		width: 90%;
+		margin: 1em 0 1.25em 0;
+
+		h2 {
+			font-size: 16px;
+			font-weight: bold;
+			margin-bottom: .75em;
+		}
+
+	}
+
 }
