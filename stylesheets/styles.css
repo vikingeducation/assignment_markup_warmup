@@ -5,13 +5,25 @@
     visibility: hidden; }
 
   .flex-container {
-    width: 100%; }
+    width: 100%;
+    -webkit-align-items: top;
+    align-items: top;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-content: flex-end;
+    align-content: flex-end; }
 
   .wrapper {
     margin-top: 40px;
     width: 100%; }
 
   .post-header {
+    width: 100%;
+    margin: 0 auto; }
+
+  .posts-by-user {
     width: 100%;
     margin: 0 auto; } }
 @media screen and (min-width: 990px) {
@@ -26,7 +38,11 @@
 
   .wrapper {
     width: 990px;
-    margin: 50px auto; } }
+    margin: 50px auto; }
+
+  .posts {
+    width: 200px;
+    margin: auto; } }
 * {
   box-sizing: border-box; }
 
@@ -90,7 +106,7 @@ h4 {
 
 .posts {
   float: left;
-  width: 30%;
+  width: 300px;
   margin: 5px auto; }
 
 .posts-by-user {
