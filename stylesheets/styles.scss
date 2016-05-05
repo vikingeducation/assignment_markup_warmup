@@ -1,9 +1,22 @@
 @import "reset.css";
 
+$shadow-blog : 3px 2px 3px black;
+$font-stack  : "Helvetic", "Arial", sans-serif;
+$black-border: 1px solid black;
+
 .main-blog-page {
-  font-family: "Helvetica", "arial", sans-serif;
+  font-family: $font-stack;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
+
+/**** MEDIA QUERIES ****/
 
 @media screen and (max-width: 990px) {
     
@@ -28,19 +41,12 @@
   .wrapper {
     margin-top:40px;
     width: 100%;
-
   }
 
   .post-header {
- 
     width: 100%;
     margin: 0 auto;
-
   }
-
-
-
-
 
 }
 
@@ -68,12 +74,7 @@
 
 }
 
-* {
-  box-sizing: border-box;
-}
-
-
-
+/**** MAIN PAGE CONTENT ****/
 
 .header-blog {
   width: 100%;
@@ -84,11 +85,66 @@
   top: 0;
 }
 
+.post-header {
+  height: 70px;
+  padding: 22px 0 0 0;
+  float:right;
+  border: $black-border; 
+  background-color: #B6D7A8;
+  text-align: center;
+  box-shadow: $shadow-blog;
+
+}
+
+.flex-container {
+  display:  -webkit-flex;
+  display:     -moz-flex;
+  display:          flex;
+
+}
+
 .header-blog p {
   padding: 13px 0 0 10px;
   font-weight: bold;
 }
 
+h4 {
+  line-height: 35px;
+}
+
+.posts {
+  float: left;
+  width: 300px;
+  margin: 5px auto;
+
+}
+
+.posts-by-user {
+  background-color: #A2C4C9;
+  border: $black-border;
+  margin: 5px;
+  padding: 6px;
+  box-shadow: $shadow-blog;
+
+}
+
+.blog-post {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 15px;
+}
+
+
+header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+header time {
+  font-size: 80%;
+}
+
+/**** ASIDE ADVERTISEMENT ****/
 
 .ad-container {
     position:relative;
@@ -102,7 +158,7 @@
     height: 400px;
     width: 200px;
     margin-top: 6px;
-    border: 1px solid black;
+    border: $black-border;
     float: right;
 }
 
@@ -116,65 +172,7 @@
   width: 35%;
 }
 
-
-.flex-container {
-  display:  -webkit-flex;
-  display:     -moz-flex;
-  display:          flex;
-
-}
-
-
-
-h4 {
-  line-height: 35px;
-}
-
-.blog-post {
-  font-size: 14px;
-  line-height: 21px;
-  margin-bottom: 15px;
-}
-
-
-
-.post-header {
-  height: 70px;
-  padding: 22px 0 0 0;
-  float:right;
-  border: 1px solid black; 
-  background-color: #B6D7A8;
-  text-align: center;
-}
-
-
-
-.posts {
-  float: left;
-  width: 300px;
-  margin: 5px auto;
-}
-
-.posts-by-user {
-  background-color: #A2C4C9;
-  border: 1px solid black;
-  margin: 5px;
-  padding: 6px;
-}
-
-.clear {
-  clear: both;
-}
-
-header {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-header time {
-  font-size: 80%;
-}
-
+/**** FOOTER ****/
 
 .disclaimer {
   background-color: #9FC5F8;

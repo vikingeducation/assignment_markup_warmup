@@ -1,7 +1,14 @@
 @import url(reset.css);
 .main-blog-page {
-  font-family: "Helvetica", "arial", sans-serif; }
+  font-family: "Helvetic", "Arial", sans-serif; }
 
+* {
+  box-sizing: border-box; }
+
+.clear {
+  clear: both; }
+
+/**** MEDIA QUERIES ****/
 @media screen and (max-width: 990px) {
   [class^="ad"] {
     position: absolute;
@@ -41,9 +48,7 @@
 
   .posts {
     width: 200px; } }
-* {
-  box-sizing: border-box; }
-
+/**** MAIN PAGE CONTENT ****/
 .header-blog {
   width: 100%;
   height: 40px;
@@ -52,10 +57,52 @@
   position: fixed;
   top: 0; }
 
+.post-header {
+  height: 70px;
+  padding: 22px 0 0 0;
+  float: right;
+  border: 1px solid black;
+  background-color: #B6D7A8;
+  text-align: center;
+  box-shadow: 3px 2px 3px black; }
+
+.flex-container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex; }
+
 .header-blog p {
   padding: 13px 0 0 10px;
   font-weight: bold; }
 
+h4 {
+  line-height: 35px; }
+
+.posts {
+  float: left;
+  width: 300px;
+  margin: 5px auto; }
+
+.posts-by-user {
+  background-color: #A2C4C9;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 6px;
+  box-shadow: 3px 2px 3px black; }
+
+.blog-post {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 15px; }
+
+header {
+  text-align: center;
+  margin-bottom: 10px; }
+
+header time {
+  font-size: 80%; }
+
+/**** ASIDE ADVERTISEMENT ****/
 .ad-container {
   position: relative;
   top: -555px;
@@ -79,48 +126,7 @@
 .ad-image {
   width: 35%; }
 
-.flex-container {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex; }
-
-h4 {
-  line-height: 35px; }
-
-.blog-post {
-  font-size: 14px;
-  line-height: 21px;
-  margin-bottom: 15px; }
-
-.post-header {
-  height: 70px;
-  padding: 22px 0 0 0;
-  float: right;
-  border: 1px solid black;
-  background-color: #B6D7A8;
-  text-align: center; }
-
-.posts {
-  float: left;
-  width: 300px;
-  margin: 5px auto; }
-
-.posts-by-user {
-  background-color: #A2C4C9;
-  border: 1px solid black;
-  margin: 5px;
-  padding: 6px; }
-
-.clear {
-  clear: both; }
-
-header {
-  text-align: center;
-  margin-bottom: 10px; }
-
-header time {
-  font-size: 80%; }
-
+/**** FOOTER ****/
 .disclaimer {
   background-color: #9FC5F8;
   padding: 12px;
