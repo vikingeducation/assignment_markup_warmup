@@ -2,19 +2,15 @@
 
 @media screen and (max-width: 990px) {
     
-    .wrapper {
-      width: 100%;
-      position: relative;
-      float: left;
-    }
-    
+  [class^="ad"] {
+    position: absolute;
+    visibility: hidden;
+  }
 
-
-    [class^="ad"] {
-      position: absolute;
-      clear: both;
-      margin-top: 1000px;
-    }
+  .flex-container {
+    background: blue;
+    clear: both;
+  }
 
 }
 
@@ -49,6 +45,7 @@ body {
 
 
 .ad-container {
+    position:absolute;
     background: #d5a6bd;
     display: flex;              
     flex-direction: column;     
