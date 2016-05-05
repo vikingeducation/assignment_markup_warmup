@@ -5,14 +5,16 @@
     .wrapper {
       width: 100%;
       position: relative;
-      right: 25%;
+      float: left;
     }
     
-    .advertisement {
-      visibility: hidden;
+
+
+    [class^="ad"] {
+      position: absolute;
+      clear: both;
+      margin-top: 1000px;
     }
-
-
 
 }
 
@@ -46,14 +48,14 @@ body {
 }
 
 
-.advertisement {
+.ad-container {
     background: #d5a6bd;
     display: flex;              
     flex-direction: column;     
     justify-content: center;    
     align-items: center;        
     height: 300px;
-    width: 23%;
+    width: 200px;
     margin-top: 6px;
     border: 1px solid black;
     float: left;
