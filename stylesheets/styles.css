@@ -1,4 +1,7 @@
 @import url(reset.css);
+.main-blog-page {
+  font-family: "Helvetica", "arial", sans-serif; }
+
 @media screen and (max-width: 990px) {
   [class^="ad"] {
     position: absolute;
@@ -21,10 +24,6 @@
 
   .post-header {
     width: 100%;
-    margin: 0 auto; }
-
-  .posts-by-user {
-    width: 100%;
     margin: 0 auto; } }
 @media screen and (min-width: 990px) {
   .flex-container {
@@ -41,13 +40,9 @@
     margin: 50px auto; }
 
   .posts {
-    width: 200px;
-    margin: auto; } }
+    width: 200px; } }
 * {
   box-sizing: border-box; }
-
-body {
-  font-family: "Helvetica", "arial", sans-serif; }
 
 .header-blog {
   width: 100%;
@@ -97,8 +92,8 @@ h4 {
   margin-bottom: 15px; }
 
 .post-header {
-  height: 65px;
-  padding: 17px 0 0 0;
+  height: 70px;
+  padding: 22px 0 0 0;
   float: right;
   border: 1px solid black;
   background-color: #B6D7A8;
@@ -112,6 +107,7 @@ h4 {
 .posts-by-user {
   background-color: #A2C4C9;
   border: 1px solid black;
+  margin: 5px;
   padding: 6px; }
 
 .clear {
@@ -125,13 +121,13 @@ header time {
   font-size: 80%; }
 
 .disclaimer {
-  height: 60px;
   background-color: #9FC5F8;
   padding: 12px;
   margin-top: 15px; }
 
 footer p {
   font-size: 12px;
-  line-height: 18px; }
+  line-height: 18px;
+  text-align: left; }
 
 /*# sourceMappingURL=styles.css.map */
