@@ -7,8 +7,13 @@
   .flex-container {
     width: 100%; }
 
+  .wrapper {
+    margin-top: 40px;
+    width: 100%; }
+
   .post-header {
-    width: 100%; } }
+    width: 100%;
+    margin: 0 auto; } }
 @media screen and (min-width: 990px) {
   .flex-container {
     width: 75%;
@@ -17,16 +22,16 @@
   .post-header {
     width: 75%;
     border-radius: 12px;
-    margin: 0 0 10px 5px; } }
+    margin: 0 0 10px 5px; }
+
+  .wrapper {
+    width: 990px;
+    margin: 50px auto; } }
 * {
   box-sizing: border-box; }
 
 body {
   font-family: "Helvetica", "arial", sans-serif; }
-
-.wrapper {
-  width: 990px;
-  margin: 50px auto; }
 
 .header-blog {
   width: 100%;

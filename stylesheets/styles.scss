@@ -11,9 +11,17 @@
     width: 100%;
   }
 
+
+  .wrapper {
+    margin-top:40px;
+    width: 100%;
+
+  }
+
   .post-header {
  
     width: 100%;
+    margin: 0 auto;
 
   }
 
@@ -34,7 +42,10 @@
     margin: 0 0 10px 5px;
   }
 
-
+.wrapper {
+  width: 990px;
+  margin: 50px auto;
+}
 
 
 }
@@ -49,10 +60,7 @@ body {
 
 
 
-.wrapper {
-  width: 990px;
-  margin: 50px auto;
-}
+
 
 .header-blog {
   width: 100%;
