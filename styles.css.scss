@@ -36,6 +36,9 @@ aside{
   }
 }
 
+
+
+
 .main-section {
   margin-left: 340px;
   margin-top: 10px;
@@ -89,6 +92,8 @@ article {
     }
   }
 }
+
+
 footer{
   background-color: #9BC7F7;
   border: 3px solid black;
@@ -99,3 +104,41 @@ footer{
     font-size: 14px;
   }
 }
+
+
+@media (max-width: 990px){
+  
+  aside{
+    display: none;
+  }
+
+  .main-section{
+    margin: 0px;
+    .section-title{
+      width: 100%;
+      border-radius: 0px;
+      border: none;
+      border-bottom: 3px solid black;
+    }
+    article {
+      margin: 10px 0 10px 10px;
+      width: calc(50% - 20px)
+
+    }
+  }
+
+  .full-width-small-screen{
+    article{
+      width: calc(100% - 24px);
+      margin: 10px;
+    }
+  }
+
+  footer{
+    width: calc(100% - 24px);
+    border-radius: 0px;
+    border: none;
+    border-top: 3px solid black;
+  }
+}
+
