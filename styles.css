@@ -34,7 +34,7 @@ aside {
   margin-left: 340px;
   margin-top: 10px; }
   .main-section .section-title {
-    width: 730px;
+    width: 598px;
     border: 3px solid black;
     background-color: #B4D8A8;
     border-radius: 10px;
@@ -50,7 +50,7 @@ aside {
       padding: 10px; }
 
 article {
-  width: 229px;
+  width: 185px;
   display: inline-block;
   border: 3px solid black;
   margin: 10px 10px 10px 0;
@@ -73,11 +73,14 @@ article {
     font-size: 14px;
     margin: 10px; }
 
+.full-width-small-screen {
+  display: inline-block; }
+
 footer {
   background-color: #9BC7F7;
   border: 3px solid black;
   border-radius: 20px;
-  width: 706px;
+  width: 574px;
   padding: 6px 12px; }
   footer p {
     font-size: 14px; }
@@ -105,6 +108,7 @@ footer {
     width: calc(100% - 24px);
     border-radius: 0px;
     border: none;
-    border-top: 3px solid black; } }
+    border-top: 3px solid black;
+    margin-bottom: 5px; } }
 
 /*# sourceMappingURL=styles.css.map */
