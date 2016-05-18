@@ -1,0 +1,114 @@
+/* Basic Setup */
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: Helvetica, serif;
+  font-size: 12px; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.25em; }
+
+/* Nav */
+nav {
+  width: 100%;
+  background-color: gold;
+  padding: 10px;
+  border: 1px solid black; }
+
+/* Main */
+.main {
+  padding: 10px 150px 0px 150px; }
+  .main .ad {
+    float: left;
+    width: 22%;
+    height: 550px;
+    padding: 150px 20px 80px 20px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: IndianRed;
+    border-radius: 5px; }
+    .main .ad .empty {
+      width: 95%;
+      height: 150px;
+      background-color: white;
+      margin: 0 auto;
+      margin-top: 15px; }
+  .main .content {
+    float: right;
+    width: 75%; }
+    .main .content .title {
+      text-align: center;
+      background-color: seagreen;
+      padding: 15px;
+      border: 1px solid black;
+      margin-bottom: 15px;
+      border-radius: 8px; }
+      .main .content .title h2 {
+        font-style: italic;
+        margin-top: 8px; }
+    .main .content article {
+      float: left;
+      width: 32%;
+      margin-right: 10px;
+      margin-bottom: 30px;
+      line-height: 1.5;
+      border: 1px solid black;
+      background-color: steelblue;
+      max-height: 420px;
+      overflow: scroll;
+      padding: 10px; }
+      .main .content article h2, .main .content article h3 {
+        text-align: center;
+        margin-bottom: 8px; }
+      .main .content article h2, .main .content article p.sub-title {
+        font-weight: bold; }
+      .main .content article p {
+        margin-bottom: 8px; }
+    .main .content footer {
+      clear: both;
+      text-align: center;
+      border-radius: 10px;
+      border: 1px solid black;
+      background-color: skyblue;
+      padding: 10px; }
+
+@media screen and (max-width: 1300px) {
+  html {
+    font-size: 11.5px; }
+
+  nav {
+    padding-left: 8px; }
+
+  .main .content article {
+    width: 46%;
+    margin-left: 8px; } }
+@media screen and (max-width: 990px) {
+  html {
+    font-size: 11px; }
+
+  nav {
+    padding-left: 5px; }
+
+  .main {
+    padding: 0; }
+    .main .ad {
+      display: none; }
+    .main .content {
+      width: 100%; }
+      .main .content .title {
+        border-radius: 0; }
+      .main .content article {
+        width: 46%;
+        margin-left: 5px; }
+      .main .content article:nth-child(4) {
+        clear: both;
+        width: 95%;
+        margin-left: 10px; }
+      .main .content footer {
+        border-radius: 0; } }
+
+/*# sourceMappingURL=style.css.map */
