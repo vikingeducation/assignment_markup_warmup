@@ -1,4 +1,83 @@
-body {
-  background-color: red; }
+/*header, aside, article, section, footer, div {
+  border: 1px solid #ddd;
+}
+*/
+/* Set a variable to avoid hard-coding*/
+/*Nav*/
+nav {
+  width: 100%;
+  height: 40px;
+  background-color: #FFE599;
+  border-bottom: 1px solid; }
+  nav h1 {
+    font-family: comic, sans-serif;
+    font-weight: bold;
+    line-height: 40px;
+    padding-left: 20px; }
+
+/*Aside*/
+aside {
+  display: none;
+  visibility: hidden; }
+
+/*content*/
+section.content {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  font-family: comic, sans-serif; }
+  section.content header {
+    height: 60px;
+    background-color: #B6D7A8;
+    text-align: center;
+    border: 1px solid; }
+    section.content header h1 {
+      font-size: 24px;
+      padding: 5px 0; }
+    section.content header p {
+      font-size: 14px; }
+  section.content article {
+    display: inline-block;
+    width: 47%;
+    background-color: #A2C4C9;
+    border: 1px solid;
+    margin-top: 10px;
+    margin-left: 10px; }
+  section.content article.left {
+    margin-right: 10px;
+    float: left; }
+  section.content article.center {
+    float: left;
+    margin-right: 10px; }
+  section.content article.right {
+    clear: both;
+    float: left;
+    display: block;
+    width: calc(96% + 10px); }
+  section.content h1 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center; }
+  section.content p {
+    text-align: center;
+    font-size: 14px; }
+  section.content article section {
+    margin-left: 5px;
+    padding-bottom: 10px; }
+  section.content article section h1 {
+    font-size: 16px;
+    text-align: left; }
+  section.content article section p {
+    text-align: left; }
+
+/*footer*/
+footer {
+  background-color: #9FC5F8;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid; }
 
 /*# sourceMappingURL=styles_narrow.css.map */
