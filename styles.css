@@ -1,0 +1,106 @@
+/*header, aside, article, section, footer, div {
+  border: 1px solid #ddd;
+}
+*/
+/* Set a variable to avoid hard-coding*/
+/*Nav*/
+nav {
+  width: 100%;
+  height: 40px;
+  background-color: #FFE599;
+  border-bottom: 1px solid; }
+  nav h1 {
+    font-family: comic, sans-serif;
+    font-weight: bold;
+    line-height: 40px;
+    padding-left: 20px; }
+
+/*Main*/
+main {
+  width: 960px;
+  margin-left: 120px; }
+
+/*Aside*/
+aside {
+  width: 200px;
+  height: 400px;
+  display: inline-block;
+  float: left;
+  margin: 10px;
+  background-color: #D5A6BD;
+  position: relative;
+  border: 1px solid; }
+  aside .ad-content {
+    font-family: comic, sans-serif;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center; }
+    aside .ad-content h1 {
+      font-weight: bold; }
+    aside .ad-content img {
+      width: 140px;
+      height: 200px; }
+
+/*content*/
+section.content {
+  display: inline-block;
+  position: relative;
+  width: 730px;
+  margin-bottom: 10px;
+  font-family: comic, sans-serif; }
+  section.content header {
+    height: 60px;
+    margin: 10px 10px;
+    background-color: #B6D7A8;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid; }
+    section.content header h1 {
+      font-size: 24px;
+      padding: 5px 0; }
+    section.content header p {
+      font-size: 14px; }
+  section.content article {
+    display: inline-block;
+    width: 228px;
+    background-color: #A2C4C9;
+    border: 1px solid; }
+  section.content article.left {
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left; }
+  section.content article.right {
+    float: right;
+    margin-right: 10px; }
+  section.content article.center {
+    float: left;
+    margin-right: 10px; }
+  section.content h1 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center; }
+  section.content p {
+    text-align: center;
+    font-size: 14px; }
+  section.content article section {
+    margin-left: 5px;
+    padding-bottom: 10px; }
+  section.content article section h1 {
+    font-size: 16px;
+    text-align: left; }
+  section.content article section p {
+    text-align: left; }
+
+/*footer*/
+footer {
+  background-color: #9FC5F8;
+  height: 50px;
+  width: 720px;
+  margin: 20px 0 0 220px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid; }
+
+/*# sourceMappingURL=styles.css.map */
