@@ -1,0 +1,41 @@
+$yellow: #FFE599;
+$red: #D5A6BD;
+$light-green: #B6D7A8;
+
+.wrapper{
+	width: 990px;
+	margin: 0 auto;
+}
+
+.nav-bar{
+	width: 100%;
+	height: 45px;
+	background-color: $yellow;
+}
+
+.ad-space{
+	background-color: $red;
+	width: calc((100% / 4) - 10px);
+	height: 550px;
+	float: left;
+	margin: 20px 5px;
+}
+
+.main-container{
+	width: calc(3 * (100% / 4) - 10px);
+	float: left;
+	margin: 20px 5px;
+
+	.user-title{
+		height: 75px;
+		background-color: $light-green;
+		border-radius: 20px;
+	}
+}
+
+
+
+
+
+
+
