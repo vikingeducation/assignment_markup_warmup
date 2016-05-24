@@ -2,6 +2,7 @@ $yellow: #FFE599;
 $red: #D5A6BD;
 $light-green: #B6D7A8;
 $dark-green: #A2C4C9;
+$blue: #9FC5F8;
 
 .wrapper{
 	width: 990px;
@@ -10,7 +11,7 @@ $dark-green: #A2C4C9;
 
 .nav-bar{
 	width: 100%;
-	height: 45px;
+	height: 60px;
 	background-color: $yellow;
 	position: fixed;
 	top: 0;
@@ -22,27 +23,37 @@ $dark-green: #A2C4C9;
 	width: calc((100% / 4) - 10px);
 	height: 550px;
 	float: left;
-	margin: 70px 5px;
+	margin: 70px 5px 0 5px;
 }
 
 .main-container{
 	width: calc(3 * (100% / 4) - 10px);
 	float: left;
-	margin: 70px 5px;
+	margin: 70px 5px 0 5px;
+}
 
-	.user-title{
-		height: 75px;
-		background-color: $light-green;
-		border-radius: 20px;
-	}
-	.user-article{
-		margin: 10px 5px;
-		width: calc((100% / 3) - 10px);
-		height: 550px;
-		background-color: $dark-green;
-		display: inline-block;
-		float: right;
-	}
+.user-title{
+	height: 75px;
+	background-color: $light-green;
+	border-radius: 20px;
+}
+
+.user-article{
+	margin: 10px 5px;
+	width: calc((100% / 3) - 10px);
+	height: 550px;
+	background-color: $dark-green;
+	display: inline-block;
+	float: right;
+}
+
+.copyright{
+	height: 75px;
+	width: calc(3 * (100% / 4) - 10px);
+	background-color: $blue;
+	float: right;
+	margin: 0 5px 10px 0;
+	border-radius: 20px;
 }
 
 
