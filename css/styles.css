@@ -22,5 +22,12 @@
     height: 75px;
     background-color: #B6D7A8;
     border-radius: 20px; }
+  .main-container .user-article {
+    margin: 10px 5px;
+    width: calc((100% / 3) - 10px);
+    height: 550px;
+    background-color: #A2C4C9;
+    display: inline-block;
+    float: right; }
 
 /*# sourceMappingURL=styles.css.map */

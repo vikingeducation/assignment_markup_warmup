@@ -1,6 +1,7 @@
 $yellow: #FFE599;
 $red: #D5A6BD;
 $light-green: #B6D7A8;
+$dark-green: #A2C4C9;
 
 .wrapper{
 	width: 990px;
@@ -30,6 +31,14 @@ $light-green: #B6D7A8;
 		height: 75px;
 		background-color: $light-green;
 		border-radius: 20px;
+	}
+	.user-article{
+		margin: 10px 5px;
+		width: calc((100% / 3) - 10px);
+		height: 550px;
+		background-color: $dark-green;
+		display: inline-block;
+		float: right;
 	}
 }
 
