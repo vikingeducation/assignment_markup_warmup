@@ -33,6 +33,10 @@ a{
 	color: #000;
 }
 
+.strong-points{
+	font-weight: 500;
+}
+
 .no-select{
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -62,14 +66,14 @@ a{
 .ad-space{
 	background-color: $red;
 	width: calc((100% / 4) - 10px);
-	height: 550px;
+	height: 450px;
 	float: left;
 	margin: 70px 5px 0 5px;
 	text-align: center;
 }
 
 .ad-space-element{
-	margin: 165px 0;
+	margin: 115px 0;
 
 	h4{
 		padding: 0 33px;
@@ -104,17 +108,27 @@ a{
 	h3{
 		font-style: italic;
 	}
-
-
 }
 
 .user-article{
 	margin: 10px 5px;
-	width: calc((100% / 3) - 10px);
-	height: 550px;
+	width: calc((100% / 3) - 40px);
 	background-color: $dark-green;
 	display: inline-block;
-	float: right;
+	float: left;
+	padding: 15px;
+	header h2{
+		font-weight: 500;
+		text-align: center;
+	}
+	header h4{
+		text-align: center;
+		padding: 5px 0 10px 0;
+		font-style: italic;
+	}
+	section p {
+		padding: 5px 0;
+	}
 }
 
 .copyright{
