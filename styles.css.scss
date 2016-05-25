@@ -1,18 +1,18 @@
+$main-color: #8EABAF;
+
 nav 
 {
-	width: 100%;
+	width: auto;
 	background-color: #FFE599;
 	border: 1px solid black;
 	padding-left: 10px;
-	position: fixed;
-
 }
 section 
 {
-	margin-top: 10px;
 	max-width: 990px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 10px;
 
 }
 header
@@ -42,7 +42,7 @@ article
 {
 	width: 24%;
 	border: 2px solid black;
-	background-color: #8EABAF;					
+	background-color: $main-color;					
 	float: right;
 	margin: 2px;
 	margin-top: 20px;
@@ -57,4 +57,19 @@ article
 {
 	text-align: center;
 }
-	
+footer
+{	
+	width: 79%;
+	border: 2px solid black;
+	float: right;
+	clear: both;
+	border-radius: 30px;
+	margin-top: 10px;
+	background-color: $main-color;
+	p 
+	{
+
+	margin: 20px;
+	text-align: center;
+	}
+}
