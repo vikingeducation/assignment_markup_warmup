@@ -1,61 +1,5 @@
 $main-color: #8EABAF;
 
-@media only screen and (max-width: 959px) 
-{
-	body
-	{
-		width: 100%;
-	}
-	 .sidebar 
- 	{
- 		display: none;
- 
-    }
-    .header 
-    {
-    	width: 100%;
-    	border-radius: 0;
-    	margin: 0;
-    }
-    #wrapper
-    {
-    	margin: 0 auto;
-    	width: 100%;
-    	border: 1px solid red;
-    }
-	.post
-	{
-		margin: auto; 
-		padding: 2px;
-		margin-top: 10px;
-	}
-    .first-post
-    {
-     	width: 47%;
-    	float: right;
-
-    }
-    .second-post
-    {
-    	float: left;
-    	width: 47%;
-    }
-    .last-post {
-    	width: auto;
-    	clear: both;
-    }
-    .container
-    {
-    	width: 100%;
-    	padding-top: 50px;
-    }
-
-	.footer 
-	{
-	width: 100%;
-
-	}
-}
 body {
 	width: 100%;
 	overflow-x: hidden;
@@ -97,19 +41,27 @@ aside
 	border: 2px solid black;
 	width: 19%;
 	background-color: #D7A5C0;
-	height: 300px;
+	height: 500px;
+	text-align: center;
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 }
+#wrapper
+    {
+    	float: right;
+    	width: 70%;
+    	margin-top: 10px;
+    }
 article 
 {
-	width: 24%;
+	width: 30%;
 	border: 2px solid black;
-	background-color: $main-color;					
-	float: right;
-	margin: 2px;
-	margin-top: 20px;
+	background-color: $main-color;
+	display: inline-block;					
 	padding: 5px;
+	vertical-align: top;
 
 }
 .post-title
@@ -139,9 +91,65 @@ footer
 .advert 
 {
 	background-color: white;
-	width: 80%;
+	width: 90%;
 	height: 40%;
-	margin: 0;
-	margin-left: auto;
-	margin-right: auto;
+	text-align: center;
+}
+/* Media Query for screens < 960px */
+@media only screen and (max-width: 959px) 
+{
+	body
+	{
+		width: 100%;
+	}
+	 .sidebar 
+ 	{
+ 		display: none;
+ 
+    }
+    .header 
+    {
+    	width: 100%;
+    	border-radius: 0;
+    	margin: 0;
+    }
+   #wrapper
+    {
+    	margin: 0 auto;
+    	width: 100%;
+    	float: none;
+    }
+   	.post
+	{
+		margin: auto; 
+		padding: 2px;
+		margin-top: 10px;
+	}
+    .first-post
+    {
+     	width: 47%;
+    	float: left;
+
+    }
+    .second-post
+    {
+    	float: right;
+    	width: 47%;
+    }
+    .last-post {
+    	width: auto;
+    	clear: both;
+
+    }
+    .container
+    {
+    	width: 100%;
+    	padding-top: 50px;
+    }
+
+	.footer 
+	{
+	width: 100%;
+
+	}
 }
