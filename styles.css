@@ -1,3 +1,43 @@
+@media only screen and (max-width: 959px) {
+  body {
+    width: 100%; }
+
+  .sidebar {
+    display: none; }
+
+  .header {
+    width: 100%;
+    border-radius: 0;
+    margin: 0; }
+
+  #wrapper {
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid red; }
+
+  .post {
+    margin: auto;
+    padding: 2px;
+    margin-top: 10px; }
+
+  .first-post {
+    width: 47%;
+    float: right; }
+
+  .second-post {
+    float: left;
+    width: 47%; }
+
+  .last-post {
+    width: auto;
+    clear: both; }
+
+  .container {
+    width: 100%;
+    padding-top: 50px; }
+
+  .footer {
+    width: 100%; } }
 body {
   width: 100%;
   overflow-x: hidden;
