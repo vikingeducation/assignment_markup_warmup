@@ -81,6 +81,7 @@ body{
 .top-bar{
   background-color: #cc0;
   position: fixed;
+  z-index: 2;
   width:100%;
   top:0px;
   padding:20px;
@@ -219,11 +220,12 @@ Media Query
   border-radius: initial;
   }
   article{
-  width: 45%;
-  margin: 10px;
+  width: 49%;
   }
-  article:last-of-type:nth-child(even){
-  width: 100%
+  .article-row, article:last-of-type:nth-child(odd){
+  width: 95%;
+  display: block;
+  margin: 10px auto;
   }
   footer{
   border-radius:initial;
