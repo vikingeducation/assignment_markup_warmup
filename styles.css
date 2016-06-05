@@ -1,0 +1,21 @@
+header {
+  background-color: #cc0;
+}
+
+nav {
+  background-color: #c69;
+}
+
+main > header {
+  background-color: #9c6;
+}
+
+article {
+  background-color: #099;
+}
+
+footer {
+  background-color: #39f;
+}
+
+/*# sourceMappingURL=styles.css.map */
