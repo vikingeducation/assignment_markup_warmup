@@ -47,6 +47,17 @@ table {
 
 /*
   ========================================
+  Border sizing
+  ========================================
+*/
+*{
+  -webkit-box-sizing: border-box;
+      -moz-box-sizing:border-box;
+          box-sizing: border-box;
+}
+
+/*
+  ========================================
   Container
   ========================================
 */
@@ -144,16 +155,17 @@ main>header{
   ========================================
 */
 
-article:not(:last-child){
-  margin-right:10px;
+article:last-of-type{
+  margin-right:0;
 }
 
 article{
   background-color: #099;
   display: inline-block;
-  width:200px;
+  width:250px;
   border: 1px solid black;
   padding:20px;
+  margin-right: 10px;
   h1{
   text-align: center;
   font-weight:bold;
@@ -194,14 +206,24 @@ Media Query
 @media (max-width:990px){
   .container{
   width: 100%;
-  margin-top:58px;
+  margin:58px 0;
   }
   nav{
   display:none;
   }
+  main{
+  width: 100%;
+  }
   main>header{
   margin: 0;
   border-radius: initial;
+  }
+  article{
+  width: 45%;
+  margin: 10px;
+  }
+  article:last-of-type:nth-child(even){
+  width: 100%
   }
   footer{
   border-radius:initial;
