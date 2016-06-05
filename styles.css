@@ -220,10 +220,15 @@ Media Query
   }
 
   article {
-    width: 49%;
+    margin: 10px;
+    width: 45%;
   }
 
-  .article-row, article:last-of-type:nth-child(odd) {
+  article:first-of-type {
+    margin-left: 2.5%;
+  }
+
+  .article-row, article:last-of-type:nth-child(even) {
     width: 95%;
     display: block;
     margin: 10px auto;
