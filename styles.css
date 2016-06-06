@@ -73,7 +73,7 @@ body {
 
 .box {
   border-radius: 5px;
-  padding: 1%; }
+  padding: 1.5%; }
 
 .centred {
   text-align: center;
@@ -135,10 +135,18 @@ p {
   width: 23.5%;
   background-color: beige;
   height: 500px;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   .ad-bar img {
     width: 90%;
     border-radius: 50%; }
+
+.vert-centred {
+  height: 170px;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  margin: -85px 0 0 0; }
 
 /*
   ==========================
