@@ -50,8 +50,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-* {
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
 
 /*
   ==========================
@@ -72,6 +79,9 @@ body {
   float: left; }
 
 .box {
+  padding: 1.5%; }
+
+.rounded-box {
   border-radius: 5px;
   padding: 1.5%; }
 
@@ -136,10 +146,12 @@ p {
   background-color: beige;
   height: 500px;
   text-align: center;
-  position: relative; }
+  position: relative;
+  z-index: -1; }
   .ad-bar img {
     width: 90%;
-    border-radius: 50%; }
+    border-radius: 50%;
+    border: 2px solid #666; }
 
 .vert-centred {
   height: 170px;
@@ -179,5 +191,38 @@ p {
   display: inline-block;
   background-color: silver;
   margin: 0 1%; }
+
+/*
+  ==========================
+  Narrow Screen
+  ==========================
+*/
+@media only screen and (max-width: 990px) {
+  .content,
+  .container {
+    width: 100%; }
+
+  .container {
+    margin-top: 3em; }
+
+  .box {
+    width: 47%;
+    margin: 1.5%; }
+
+  .rounded-box {
+    border-radius: 0;
+    width: 100%;
+    margin: 0; }
+
+  .intro {
+    margin-top: 0; }
+
+  .ad-bar {
+    display: none; }
+
+  article:nth-of-type(3) {
+    width: 97%;
+    clear: both;
+    margin: 1% 1.5%; } }
 
 /*# sourceMappingURL=styles.css.map */
