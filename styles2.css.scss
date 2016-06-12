@@ -1,0 +1,133 @@
+#navigation 
+{
+  position: relative;
+  background-color: #FFF380;  
+  width: 99.8%;
+  height: 6%;
+  left: 0;
+  top: 0;
+  border-style: solid;
+  border-width: 1px;
+}
+
+header 
+{
+  background-color: #8BB381;
+  width: 99.8%;
+  line-height: 1.5;
+
+  text-align: center; 
+  border-style: solid;
+  border-width: 1px;
+}
+
+body 
+{
+  height: 6%;
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+article
+{
+  background-color: #78C7C7;
+  text-align: center;
+  border-style: solid;
+  border-width: 1.5px;
+  margin: 5px;  
+}
+
+footer
+{
+   background-color: #ADDFFF;
+   font-size: 12px;
+   left: 0;
+   position: fixed;
+   bottom: 1px;
+   height: 12%;
+   width: 99.8%;
+   border-style: solid;
+   border-width: 1.5px;
+}
+
+h1
+{
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+h2
+{
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+h3
+{
+  font-size: 12px;
+  font-style: italic;
+}
+
+h4
+{
+  margin: 0;
+}
+
+h5
+{
+  text-align: left;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+p
+{
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  font-size: 1.5vw;
+}
+
+.container
+{
+  margin: 1.5%;
+}
+
+.wrapper
+{
+  margin: 1vw;
+  padding-bottom: 5px;
+}
+
+.ad
+{
+  display: none;
+}
+
+.main-right
+{
+  position: relative;
+  width: 100%;
+}
+
+.column-left
+{
+  float: left;
+  width: calc(100%/2);  
+}
+
+.column-center
+{
+  display: inline-block;
+  width: calc(100%/2);
+}
+
+.column-right
+{
+  
+  float: left;
+  width: 100%;
+  margin-bottom: 15%;
+}
+
