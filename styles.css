@@ -1,0 +1,41 @@
+header {
+  margin-top: 0;
+  background-color: #FFE599;
+  height: 40px;
+  width: 100%;
+  border-bottom: 2px solid black; }
+  header h1 {
+    padding: 6px 12px;
+    font-size: 1.3em; }
+
+.container {
+  margin: 10px 15%; }
+
+aside {
+  display: inline-block;
+  float: left;
+  height: 400px;
+  width: 20%;
+  background-color: #d5a6bd; }
+
+.main {
+  display: inline-block; }
+
+.title {
+  width: 79%;
+  height: 100px;
+  float: right;
+  background-color: #b6d7a8; }
+
+.article-container {
+  width: 22%;
+  clear: right;
+  background-color: #a2c4c9;
+  float: left;
+  margin: 10px 0 0 10px;
+  padding: 10px; }
+
+footer {
+  background-color: #9FC5F8; }
+
+/*# sourceMappingURL=styles.css.map */
