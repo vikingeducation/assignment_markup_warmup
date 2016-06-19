@@ -3,39 +3,62 @@ header {
   background-color: #FFE599;
   height: 40px;
   width: 100%;
+  border-top: 2px solid black;
   border-bottom: 2px solid black; }
   header h1 {
-    padding: 6px 12px;
+    padding: 8px 12px;
     font-size: 1.3em; }
 
 .container {
   margin: 10px 15%; }
 
 aside {
-  display: inline-block;
+  border: 2px solid black;
+  display: inline-flex;
+  align-items: center;
   float: left;
   height: 400px;
   width: 20%;
-  background-color: #d5a6bd; }
-
-.main {
-  display: inline-block; }
+  background-color: #d5a6bd;
+  box-sizing: border-box;
+  text-align: center; }
+  aside p {
+    margin: 0 10px; }
+  aside img {
+    margin: 10px 10px;
+    width: 80%; }
 
 .title {
+  border: 2px solid black;
   width: 79%;
   height: 100px;
   float: right;
-  background-color: #b6d7a8; }
+  background-color: #b6d7a8;
+  border-radius: 20px;
+  text-align: center; }
+  .title h1 {
+    font-size: 2em;
+    margin-top: 20px; }
+  .title h3 {
+    margin-top: 15px;
+    font-style: italic;
+    font-size: 1.1em; }
 
 .article-container {
-  width: 22%;
+  border: 2px solid black;
+  width: 22.5%;
   clear: right;
   background-color: #a2c4c9;
   float: left;
-  margin: 10px 0 0 10px;
+  margin: 10px 0 10px 10px;
   padding: 10px; }
 
 footer {
-  background-color: #9FC5F8; }
+  border: 2px solid black;
+  @inherit : .title;
+  clear: left;
+  background-color: #9FC5F8;
+  width: 80%;
+  margin: 10px 3% 3px 21%; }
 
 /*# sourceMappingURL=styles.css.map */
