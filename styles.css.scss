@@ -8,6 +8,8 @@ header.main {
 	width: 100%;
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
+	position: fixed;
+	top: -5;
 
 	h1 {
 		padding: 10px 12px;
@@ -17,7 +19,8 @@ header.main {
 }
 
 .container {
-	margin: 10px $margin-left;
+	max-width: 990px;
+	margin: 50px auto 10px auto;
 }
 
 aside {
