@@ -31,7 +31,7 @@ footer {
 
 article p {
   border: 1px solid;
-  width: 300px;
+  //width: 300px;
   height: 500px;
   padding: 10px;
   background-color: #87A0A8;
@@ -49,4 +49,8 @@ article p:last-child {
   height: 350px;
   padding-left: 8px;
   margin-left: 30px;
+}
+
+.post {
+  display: inline-block;
 }
