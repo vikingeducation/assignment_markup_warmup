@@ -1,4 +1,77 @@
 * {
   box-sizing: border-box; }
 
+body {
+  font-family: 'helvetica', 'sans-serif'; }
+
+.pusher {
+  height: 50px;
+  margin-bottom: 15px; }
+
+#navbar {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  background: #cc7722;
+  padding: 0 20px;
+  border-bottom: 1px solid #A5590F; }
+  #navbar h1 {
+    color: #FFD77A;
+    line-height: 50px;
+    font-size: 20px; }
+
+main {
+  width: 990px;
+  margin: 0 auto;
+  display: flex; }
+  main #ad-container {
+    background: #FFBC7A;
+    display: flex;
+    align-items: center;
+    height: 600px;
+    width: 500px;
+    text-align: center; }
+    main #ad-container .ad p {
+      color: #091955; }
+    main #ad-container .ad img {
+      width: 175px;
+      margin: 10px 0; }
+  main #posts-container {
+    margin-left: 14px; }
+    main #posts-container #posts-header {
+      background: #5F70AF;
+      text-align: center;
+      margin-bottom: 14px;
+      padding: 20px 0; }
+      main #posts-container #posts-header h2 {
+        font-size: 28px;
+        margin-bottom: 14px; }
+      main #posts-container #posts-header h3 {
+        font-style: italic; }
+    main #posts-container #posts-list {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between; }
+      main #posts-container #posts-list article {
+        background: #4F91A0;
+        width: 244px;
+        padding: 15px;
+        margin-bottom: 14px; }
+        main #posts-container #posts-list article header {
+          text-align: center;
+          margin-bottom: 14px; }
+          main #posts-container #posts-list article header h3 {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 4px; }
+        main #posts-container #posts-list article h5 {
+          font-weight: bold;
+          margin-bottom: 14px; }
+        main #posts-container #posts-list article p {
+          margin-bottom: 14px;
+          line-height: 20px; }
+    main #posts-container footer {
+      background: #FFBC7A;
+      padding: 14px; }
+
 /*# sourceMappingURL=styles.css.map */
