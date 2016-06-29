@@ -2,7 +2,15 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'helvetica', 'sans-serif'; }
+  font-family: 'helvetica', 'sans-serif';
+  background: #fff2e6;
+  background: -moz-linear-gradient(top, #fff2e6 0%, #fff2e6 32%, white 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #fff2e6), color-stop(32%, #fff2e6), color-stop(100%, white));
+  background: -webkit-linear-gradient(top, #fff2e6 0%, #fff2e6 32%, white 100%);
+  background: -o-linear-gradient(top, #fff2e6 0%, #fff2e6 32%, white 100%);
+  background: -ms-linear-gradient(top, #fff2e6 0%, #fff2e6 32%, white 100%);
+  background: linear-gradient(to bottom, #fff2e6 0%, #fff2e6 32%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff2e6', endColorstr='#ffffff', GradientType=0 ); }
 
 .pusher {
   height: 50px;
@@ -12,7 +20,7 @@ body {
   height: 50px;
   width: 100%;
   position: fixed;
-  background: #cc7722;
+  background: #de8c3b;
   padding: 0 20px;
   border-bottom: 1px solid #A5590F; }
   #navbar h1 {
@@ -30,7 +38,8 @@ main {
     align-items: center;
     height: 600px;
     width: 500px;
-    text-align: center; }
+    text-align: center;
+    border: 1px solid #A5590F; }
     main #ad-container .ad p {
       color: #091955; }
     main #ad-container .ad img {
@@ -39,10 +48,12 @@ main {
   main #posts-container {
     margin-left: 14px; }
     main #posts-container #posts-header {
-      background: #5F70AF;
+      background: #8895c3;
       text-align: center;
       margin-bottom: 14px;
-      padding: 20px 0; }
+      padding: 20px 0;
+      border-radius: 20px;
+      border: 1px solid #091955; }
       main #posts-container #posts-header h2 {
         font-size: 28px;
         margin-bottom: 14px; }
@@ -53,10 +64,12 @@ main {
       align-items: flex-start;
       justify-content: space-between; }
       main #posts-container #posts-list article {
-        background: #4F91A0;
+        background: #76afbc;
         width: 244px;
         padding: 15px;
-        margin-bottom: 14px; }
+        margin-bottom: 14px;
+        border: 1px solid #091955;
+        border-radius: 2px; }
         main #posts-container #posts-list article header {
           text-align: center;
           margin-bottom: 14px; }
@@ -72,6 +85,8 @@ main {
           line-height: 20px; }
     main #posts-container footer {
       background: #FFBC7A;
-      padding: 14px; }
+      padding: 14px;
+      border-radius: 20px;
+      border: 1px solid #A5590F; }
 
 /*# sourceMappingURL=styles.css.map */
