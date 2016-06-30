@@ -120,4 +120,29 @@ article {
   top: 50%;
   transform: translate(-50%, -50%); }
 
+@media screen and (max-width: 989px) {
+  article {
+    width: calc(50% - 10px); }
+    article:last-child {
+      width: 100%; }
+
+  .box {
+    margin: 5px;
+    padding: 10px; }
+
+  #site-header {
+    margin-bottom: 0; }
+
+  .articles-header,
+  .articles-footer {
+    margin: 0;
+    border-radius: 0; }
+
+  .articles {
+    float: none;
+    width: 100%; }
+
+  .ad-section {
+    display: none; } }
+
 /*# sourceMappingURL=styles.css.map */
