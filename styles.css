@@ -1,8 +1,16 @@
 body {
   font-family: Arial, sans-serif; }
 
+.flex-center-vertically {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
 nav {
   position: fixed;
+  top: 0;
   width: 100%;
   border-bottom: 1px solid #333;
   background-color: #FFE599; }
@@ -10,5 +18,30 @@ nav {
     display: inline-block;
     font-size: 18px;
     padding: 10px; }
+
+main {
+  display: block;
+  margin: 54px auto;
+  max-width: 990px; }
+  main header {
+    background-color: #B6D7A8;
+    height: 78px;
+    border: 1px solid #333;
+    border-radius: 20px; }
+    main header h1 {
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 600;
+      text-align: center; }
+    main header h2 {
+      font-size: 18px;
+      line-height: 27px;
+      font-style: italic;
+      text-align: center; }
+
+section article {
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #333; }
 
 /*# sourceMappingURL=styles.css.map */
