@@ -1,3 +1,4 @@
+/* Add and style border boxes */
 nav,
 header,
 article,
@@ -7,13 +8,19 @@ footer {
   display: block;
 }
 header,
+footer {
+  border-radius: 20px;
+}
+
+/* Style headers */
+header,
 h1,
 h2,
 h3,
 h4 {
-  text-align: center;
-  margin: 5px;
   font-weight: bold;
+  margin: 5px;
+  text-align: center;
 }
 h1 {
   font-size: 30px;
@@ -22,44 +29,43 @@ h2 {
   font-size: 22px;
 }
 h3 {
-  font-style: italic;
   font-size: 18px;
+  font-style: italic;
 }
 h4 {
   font-weight: normal;
 }
 h6 {
+  font-weight: bold;
   margin: 10px 0;
-  font-weight: bold;
-}
-header,
-footer {
-  border-radius: 20px;
-}
-nav {
-  width: 100%;
-  position: fixed;
-  background: #fc0;
-  padding: 10px;
-  font-weight: bold;
-}
-header {
-  margin: 50px 0 0 0;
-  padding: 10px 0;
-  background: #0c6;
-}
-main{
-  float: right;
-  width: 990px;
-  margin-right: 15%;
 }
 
+/* Style nav */
+nav {
+  background: #fc0;
+  font-weight: bold;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+}
+
+/* Style main content */
+main{
+  float: right;
+  margin-right: 15%;
+  width: 990px;
+}
+header {
+  background: #0c6;
+  margin: 50px 0 0 0;
+  padding: 10px 0;
+}
 article {
-  width: 299px;
+  background: #3cc;
   float: left;
   margin: 5px;
   padding: 10px;
-  background: #3cc;
+  width: 299px;
 }
 article:nth-of-type(1) {
   margin-left: 0;
@@ -68,33 +74,40 @@ article:nth-of-type(3) {
   margin-right: 0;
 }
 footer {
+  background: #69f;
   clear: both;
   margin: 10px 0;
-  padding: 10px;
-  background: #69f;
+  padding: 10px
 }
+
+/* Style ad space */
 aside {
+  background: #c9f;
   float: left;
   height: 450px;
-  width: 330px;
   margin: 50px 5px 5px 15%;
-  background: #c9f;
+  width: 330px;
+}
+aside {
+  h2,
+  img {
+    width: 85%;
+  }
 }
 aside {
   h2 {
-  padding: 100px 0 0;
-  width: 85%;
-  margin: 5px 7.5%;
-  text-align: center;
+    margin: 5px 7.5%;
+    padding: 100px 0 0;
+    text-align: center;
   }
 }
 img {
-  height: 175px;
-  width: 85%;
   background: white;
+  height: 175px;
   margin: 5px 7.5%;
 }
 
+/* Style for small screens */
 @media (max-width:990px) {
   nav,
   footer {
@@ -109,7 +122,7 @@ img {
   }
   main {
     margin-right: 0;
-    width: 100%
+    width: 100%;
   }
   article {
     width: 45%;
@@ -118,7 +131,7 @@ img {
     margin: 5px 10px;
   }
   article:nth-of-type(3) {
-    width: 95%;
     margin: 5px 10px;
+    width: 95%;
   }
 }
