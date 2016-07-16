@@ -1,5 +1,107 @@
 $fs: Tahoma, Geneva, sans-serif;
-//margin-bottom: 1%;
+
+
+
+aside {
+  display: none;
+}
+
+nav {
+  background-color: #FFE599; 
+  width: 100%;
+  display: block;
+  border-bottom: 2px solid black;
+  height: 45px;
+  line-height: 45px;
+  vertical-align: middle;  
+  position: fixed;  
+  top: 0;
+  //margin-bottom: 1%;
+
+  h1 {
+    font-size: 1.4em;
+    margin-left: 2%;
+  }
+}
+
+header { 
+  margin-top: -15px;
+    text-align: center;
+    background-color: #B6D7A8;    
+    border: 2px solid black;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.temp-wrapper {
+    display: block;
+    margin: 60px auto;
+    max-width: 980px;
+}
+
+  footer {
+    background-color: #9FC5F8;
+    border: 2px solid black;
+    width: 100%;  
+    display: inline-block;
+    padding: 1%;
+    box-sizing: border-box;
+    margin-left: 15px;
+  }
+
+article
+{
+  background-color: #A2C4C9;
+  width: 45%;
+  float: left;
+  display: inline-block;
+  border: 2px solid black;  
+  margin: 15px;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+  margin: 3%;
+  }
+
+}  
+
+main > section > article:nth-child(3) {
+  width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+  } 
+
+  h2 {
+    font-weight: bold;    
+  }
+
+  h3 {
+    text-align: center;    
+  } 
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: $fs;
+}  
+
+//
+//
+//---------------------------------------------------------------
+
+@media (min-width: 989px)
+{
 
 h1,
 h2,
@@ -138,7 +240,7 @@ article {
   }
 
 }
-
+}
 
 
 
