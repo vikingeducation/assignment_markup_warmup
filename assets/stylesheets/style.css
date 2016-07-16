@@ -1,20 +1,100 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: Tahoma, Geneva, sans-serif; }
+
+.temp-wrapper {
+  display: block;
+  margin: 54px auto;
+  max-width: 980px; }
+
 nav {
   background-color: #FFE599;
-  position: fixed; }
-
-header {
-  background-color: #B6D7A8; }
+  width: 100%;
+  display: block;
+  border-bottom: 2px solid black;
+  height: 45px;
+  line-height: 45px;
+  vertical-align: middle;
+  top: 0;
+  margin-bottom: 1%; }
+  nav h1 {
+    font-size: 1.4em;
+    margin-left: 2%; }
 
 aside {
-  background-color: #D5A6BD; }
+  background-color: #D5A6BD;
+  width: 260px;
+  height: 500px;
+  border: 2px solid black;
+  text-align: center;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px; }
+  aside section h2 {
+    font-weight: bold;
+    padding: 4%; }
+  aside section img {
+    width: 70%;
+    height: 60%; }
 
-footer {
-  background-color: #9FC5F8; }
+main {
+  display: inline-block;
+  width: 50%; }
+  main header {
+    border-radius: 15px; }
+  main h1 {
+    text-align: center;
+    font-weight: bold; }
+  main h2 {
+    font-weight: bold; }
+  main h3 {
+    text-align: center; }
+  main section {
+    -webkit-column-count: 3;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 3;
+    /* Firefox */
+    column-count: 3; }
+  main footer {
+    background-color: #9FC5F8;
+    border: 2px solid black;
+    width: 100%;
+    display: inline-block;
+    padding: 1%;
+    box-sizing: border-box;
+    border-radius: 15px; }
+  main header {
+    text-align: center;
+    background-color: #B6D7A8;
+    border: 2px solid black;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    main header h1 {
+      font-weight: bold;
+      font-size: 2em; }
+    main header h4 {
+      font-style: italic;
+      font-size: 1.2em; }
 
 article {
-  background-color: #A2C4C9; }
-
-body {
-  background-color: white; }
+  background-color: #A2C4C9;
+  display: inline-block;
+  border: 2px solid black;
+  margin: 15px 0; }
+  article h1,
+  article h2,
+  article h3,
+  article h4,
+  article h5,
+  article p {
+    margin: 3%; }
 
 /*# sourceMappingURL=style.css.map */
