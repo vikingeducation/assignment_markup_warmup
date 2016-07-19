@@ -1,9 +1,4 @@
-.container, aside, main{
-  border: 3px dashed;
-}
-article,{
-   border: 1px dotted;
- }
+
 h1 {
   font-family: monospace;
   font-size: 25px;
@@ -25,13 +20,17 @@ h3 {
 header{
   display: flex;
   height: 45px;
+  background-color: rgba(3, 3, 3, 0.79);
 
-  background-color: yellow;
   p{
+    display: block;
+    margin: auto;
     font-size: 30px;
-    color: black;
+    color: white;
     font-weight:bolder;
+
   }
+
 }
 
 .container{
@@ -46,16 +45,28 @@ aside{
   box-sizing: border-box;
   display:flex;
   width: 300px;
+  align-items: center;
+  .ad{
+  display: flex;
+  flex-flow: wrap;
+  }
+
   img{
     display: block;
-    margin:10px 50px;
-    align-self: flex-end;
+    height:300px;
+    width: 250px;
   }
 }
 
 main{
   box-sizing: border-box;
   width: 660px;
+}
+
+.title{
+  background-color: rgba(186, 186, 186, 0.65);
+  width:99%;
+  padding:15px 0;
 }
 
 section{
@@ -68,4 +79,35 @@ article{
     text-align: center;
     padding: 5px 5px;
   }
+  background-color:rgba(140, 140, 140, 0.65);
+
 }
+
+footer{
+  display: flex;
+  padding:10px 0;
+  p{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 990px) {
+  aside {
+    display: none; }
+
+  .container {
+    width: 90%; }
+
+  section {
+    flex-flow: wrap;
+    justify-content: flex-start; }
+
+  article {
+    width: 50%; } }
+@media screen and (max-width: 600px) {
+  section {
+    flex-flow: wrap;
+    justify-content: center; }
+
+  article {
+    text-align: center;
+    width: 100%; } }
