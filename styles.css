@@ -34,10 +34,10 @@ header {
 aside {
   box-sizing: border-box;
   height: 600px;
-  width: 210px;
+  width: 240px;
   display: flex;
   align-items: center;
-  margin-right: 30px; }
+  padding-right: 30px; }
   aside h1 {
     text-align: center;
     line-height: 1.5;
@@ -49,6 +49,7 @@ aside {
     box-shadow: 5px 5px 5px #2e2e2e; }
 
 main {
+  box-sizing: border-box;
   width: 720px; }
 
 .title h1 {
@@ -57,14 +58,15 @@ main {
 section {
   border: 1px solid #2e2e2e;
   border-radius: 10px;
-  padding: 10px 0;
+  padding: 15px 15px;
   display: flex;
   justify-content: center;
   margin-top: 60px; }
 
 article {
-  width: 220px;
-  margin: 0 10px; }
+  box-sizing: border-box;
+  width: 230px;
+  padding: 0 10px; }
 
 .content {
   margin-top: 30px; }
@@ -73,8 +75,30 @@ footer {
   border: 1px solid #2e2e2e;
   border-radius: 10px;
   margin-top: 30px;
-  padding: 10px 10px; }
+  padding: 10px 15px; }
   footer p {
     text-align: center; }
+
+@media screen and (max-width: 990px) {
+  aside {
+    display: none; }
+
+  .container {
+    width: 90%; }
+
+  section {
+    flex-flow: wrap;
+    justify-content: flex-start; }
+
+  article {
+    width: 50%; } }
+@media screen and (max-width: 600px) {
+  section {
+    flex-flow: wrap;
+    justify-content: center; }
+
+  article {
+    text-align: center;
+    width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */

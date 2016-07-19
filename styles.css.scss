@@ -8,9 +8,6 @@
   border-radius: 10px;
 }
 
-
-
-
 // set the value for the hsla color
 $hue:        0;
 $saturation: 0;
@@ -19,6 +16,10 @@ $alpha:      1;
 $title-font-family: monospace;
 
 
+
+
+
+// general font setting
 h1 {
   font-family: $title-font-family;
   font-size: 25px;
@@ -41,6 +42,10 @@ h3 {
 }
 
 
+
+
+
+// header part
 header {
   height: 80px;
   display: flex;
@@ -52,6 +57,11 @@ header {
   }
 }
 
+
+
+
+
+// main content including posts and ads and footer
 .container {
   box-sizing: border-box;
   width: 960px;
@@ -60,13 +70,15 @@ header {
   justify-content: center;
 }
 
+
+// ad component
 aside {
   box-sizing: border-box;
   height: 600px;
-  width: 210px;
+  width: 240px;
   display: flex;
   align-items: center;
-  margin-right: 30px;
+  padding-right: 30px;
   h1 {
     text-align: center;
     line-height: 1.5;
@@ -80,7 +92,10 @@ aside {
   }
 }
 
+
+// main content
 main {
+  box-sizing: border-box;
   width: 720px;
 }
 
@@ -92,26 +107,61 @@ main {
 
 section {
   @include border;
-  padding: 10px 0;
+  padding: 15px 15px;
   display: flex;
   justify-content: center;
   margin-top: 60px;
 }
 
 article {
-  width: 220px;
-  margin: 0 10px;
+  box-sizing: border-box;
+  width: 230px;
+  padding: 0 10px;
 }
 
 .content {
   margin-top: 30px;
 }
 
+// footer part
 footer {
   @include border;
   margin-top: 30px;
-  padding: 10px 10px;
+  padding: 10px 15px;
   p {
     text-align: center;
+  }
+}
+
+
+// for screen which the width is smaller than 990px
+@media screen and (max-width: 990px) {
+  aside {
+    display: none;
+  }
+  .container {
+    width: 90%;
+  }
+
+  section {
+    flex-flow: wrap;
+    justify-content: flex-start;
+  }
+  article {
+    width: 50%;
+  }
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+  section {
+    flex-flow: wrap;
+    justify-content: center;
+  }
+  article {
+    text-align: center;
+    width: 100%;
   }
 }
