@@ -3,6 +3,10 @@
 //   font-family: 'league-gothic';
 //   src: url('leaguegothic-regular-webfont.woff') format('woff');
 // }
+@mixin border {
+  border: 1px solid #2e2e2e;
+  border-radius: 10px;
+}
 
 
 
@@ -87,6 +91,8 @@ main {
 }
 
 section {
+  @include border;
+  padding: 10px 0;
   display: flex;
   justify-content: center;
   margin-top: 60px;
@@ -102,7 +108,9 @@ article {
 }
 
 footer {
-  padding: 30px 10px;
+  @include border;
+  margin-top: 30px;
+  padding: 10px 10px;
   p {
     text-align: center;
   }
