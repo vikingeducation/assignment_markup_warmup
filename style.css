@@ -1,0 +1,64 @@
+.container, aside, main {
+  border: 3px dashed; }
+
+article {
+  border: 1px dotted; }
+
+h1 {
+  font-family: monospace;
+  font-size: 25px;
+  text-align: center; }
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto; }
+
+h3 {
+  font-family: monospace;
+  font-size: 15px;
+  text-align: center;
+  margin: 5px auto;
+  color: #4d4d4d; }
+
+header {
+  display: flex;
+  height: 45px;
+  background-color: yellow; }
+  header p {
+    font-size: 30px;
+    color: black;
+    font-weight: bolder; }
+
+.container {
+  width: 960px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  height: auto; }
+
+aside {
+  box-sizing: border-box;
+  display: flex;
+  width: 300px; }
+  aside img {
+    display: block;
+    margin: 10px 50px;
+    align-self: flex-end; }
+
+main {
+  box-sizing: border-box;
+  width: 660px; }
+
+section {
+  display: flex;
+  flex-flow: wrap; }
+
+article {
+  width: 33%; }
+  article p {
+    text-align: center;
+    padding: 5px 5px; }
+
+/*# sourceMappingURL=style.css.map */
