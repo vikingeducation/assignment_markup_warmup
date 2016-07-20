@@ -18,7 +18,7 @@ h3 {
 
 header {
   display: flex;
-  height: 45px;
+  height: 55px;
   background-color: rgba(3, 3, 3, 0.79); }
   header p {
     display: block;
@@ -29,7 +29,7 @@ header {
 
 .container {
   width: 960px;
-  margin: 10px auto;
+  margin: 0px auto;
   display: flex;
   flex-direction: row;
   height: auto; }
@@ -52,17 +52,17 @@ main {
   width: 660px; }
 
 .title {
+  display: block;
   background-color: rgba(186, 186, 186, 0.65);
   width: 99%;
-  padding: 15px 0; }
+  height: 50px; }
 
 section {
   display: flex;
   flex-flow: wrap; }
 
 article {
-  width: 33%;
-  background-color: rgba(140, 140, 140, 0.65); }
+  width: 33%; }
   article p {
     text-align: center;
     padding: 5px 5px; }
@@ -78,9 +78,11 @@ footer {
     display: none; }
 
   .container {
+    justify-content: center;
     width: 90%; }
 
   section {
+    display: flex;
     flex-flow: wrap;
     justify-content: flex-start; }
 
