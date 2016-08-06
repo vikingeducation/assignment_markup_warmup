@@ -1,0 +1,108 @@
+/*set up globals*/
+body {
+  min-width: 1200px;
+  font-family: sans-serif; }
+
+/*Set up header properties*/
+header {
+  background-color: #f0e68c;
+  height: 80px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  border: solid 1px black; }
+
+header p {
+  font-size: 24px;
+  padding-left: 20px;
+  vertical-align: middle;
+  line-height: 80px; }
+
+/*Set up ad*/
+aside {
+  background-color: #ffb6c1;
+  display: inline;
+  float: left;
+  width: 245px;
+  height: 400px;
+  margin-left: 80px;
+  margin-top: 100px; }
+  aside img {
+    height: 125px;
+    width: 125px;
+    display: block;
+    padding-top: 135px;
+    margin: auto; }
+
+/*Set up Lorem Banner*/
+main {
+  width: 735px;
+  overflow: auto;
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-top: 100px;
+  float: left; }
+  main h1 {
+    font-size: 32px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 20px;
+    line-height: 50px; }
+  main h2 {
+    font-size: 24px;
+    text-align: center; }
+
+#lorem-banner {
+  background-color: #8fbc8f;
+  height: 120px;
+  border-radius: 8px; }
+
+/*Set up articles*/
+article {
+  background-color: #3cb371;
+  width: 237px;
+  float: left;
+  margin: 16px 2px 16px 2px;
+  border: solid 2px black; }
+  article h3 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 40px; }
+  article h4 {
+    text-align: center; }
+  article p {
+    line-height: 14px; }
+
+#post-1 {
+  height: 550px; }
+
+#post-2 {
+  height: 300px; }
+
+#post-3 {
+  height: 400px; }
+
+.thoughts {
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 12px;
+  padding-bottom: 4px; }
+
+/*set up footer*/
+footer {
+  background-color: #87cefa;
+  bottom: 0;
+  clear: both;
+  width: 735px;
+  height: 80px;
+  border-radius: 8px;
+  margin-left: 335px; }
+  footer p {
+    padding-top: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
+    line-height: 18px;
+    vertical-align: middle; }
+
+/*# sourceMappingURL=styles.css.map */
