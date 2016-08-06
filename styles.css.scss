@@ -1,0 +1,147 @@
+$post-color: #3cb371;
+$ad-color: #ffb6c1;
+$header-color: #f0e68c;
+$footer-color: #87cefa;
+$lorem-banner-color: #8fbc8f;
+
+
+/*set up globals*/
+body{
+  min-width: 1200px;
+  font-family: sans-serif;
+}
+
+/*Set up header properties*/
+header{
+  background-color: $header-color;
+  height: 80px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  border: solid 1px black;
+}
+
+header p{
+  font-size: 24px;
+  padding-left: 20px;
+  vertical-align: middle;
+  line-height: 80px;
+}
+
+
+
+
+/*Set up ad*/
+aside{
+  background-color: $ad-color;
+  display: inline;
+  float:left;
+  width: 245px;
+  height: 400px;
+  margin-left: 80px;
+  margin-top: 100px;
+  img{
+    height: 125px;
+    width: 125px;
+    display: block;
+    padding-top: 135px;
+    margin: auto;
+    //vertical-align: middle;  this didn't work for some reason
+    //line-height: 400px;      had to pad from the top :(
+  }
+}
+
+
+
+
+/*Set up Lorem Banner*/
+main{
+  width: 735px;
+  overflow: auto;
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-top: 100px;
+  float: left;
+
+  h1{
+    font-size: 32px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 20px;
+    line-height: 50px;
+  }
+  h2{
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+#lorem-banner{
+  background-color: $lorem-banner-color;
+  height: 120px;
+  border-radius: 8px;
+}
+
+
+
+
+/*Set up articles*/
+article{
+  background-color: $post-color;
+  width: 237px;
+  float:left;
+  margin: 16px 2px 16px 2px;
+  border: solid 2px black;
+  h3{
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 40px;
+  }
+  h4{
+    text-align: center;
+  }
+  p{
+    line-height: 14px;
+  }
+}
+
+#post-1{
+  height: 550px;
+}
+
+#post-2{
+  height: 300px;
+}
+
+#post-3{
+  height: 400px;
+}
+
+.thoughts{
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 12px;
+  padding-bottom: 4px;
+}
+
+
+
+
+/*set up footer*/
+footer{
+  background-color: $footer-color;
+  bottom: 0;
+  clear: both;
+  width: 735px;
+  height: 80px;
+  border-radius: 8px;
+  margin-left: 335px;
+  p{
+    padding-top: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
+    line-height: 18px;
+    vertical-align: middle;
+  }
+}

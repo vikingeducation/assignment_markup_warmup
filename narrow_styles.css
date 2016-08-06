@@ -1,0 +1,91 @@
+body {
+  font-family: sans-serif; }
+
+/*Set up header properties*/
+header {
+  background-color: #f0e68c;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  border: solid 1px black; }
+
+header p {
+  font-family: sans-serif;
+  font-size: 24px;
+  padding-left: 20px;
+  vertical-align: middle;
+  line-height: 80px; }
+
+/*Remove ad*/
+aside {
+  display: none; }
+
+/*Set up Lorem Banner*/
+main {
+  margin-top: 100px; }
+  main h1 {
+    font-size: 32px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 20px;
+    line-height: 50px; }
+  main h2 {
+    font-size: 24px;
+    text-align: center; }
+
+#lorem-banner {
+  background-color: #8fbc8f;
+  height: 120px;
+  width: 100%; }
+
+/*Set up articles*/
+article {
+  background-color: #3cb371;
+  width: 330px;
+  margin-left: 18px;
+  margin-bottom: 90px;
+  border: solid 2px black; }
+  article h3 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 40px; }
+  article h4 {
+    text-align: center; }
+  article p {
+    line-height: 14px; }
+
+#post-1 {
+  height: 450px; }
+
+#post-2 {
+  height: 270px; }
+
+#post-3 {
+  height: 220px;
+  width: 684px;
+  margin-top: -75px;
+  margin-bottom: 30px; }
+
+.thoughts {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 16px;
+  padding-bottom: 4px; }
+
+/*set up footer*/
+footer {
+  background-color: #87cefa;
+  max-width: 735px;
+  height: 80px;
+  border-radius: 0;
+  margin-left: 0; }
+  footer p {
+    padding-top: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
+    line-height: 18px;
+    vertical-align: middle; }
+
+/*# sourceMappingURL=narrow_styles.css.map */
