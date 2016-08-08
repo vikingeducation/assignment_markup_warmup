@@ -1,0 +1,37 @@
+/*
+Error: Invalid CSS after "}": expected "}", was ""
+        on line 211 of styles.scss
+
+Backtrace:
+styles.scss:211
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:658:in `block'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:409:in `media_directive'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:222:in `special_directive'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:197:in `directive'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/Users/russellthomas/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 211 of styles.scss"; }
