@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  padding-top: 6em; }
+
+.title-bar,
+article,
+footer,
+aside,
+nav {
+  border: .1em solid #333;
+  box-sizing: border-box; }
+
+nav {
+  background-color: #ffe599;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  nav section {
+    padding: 1em 1.5em; }
+    nav section ul {
+      margin: 0;
+      padding: 0; }
+    nav section li {
+      display: inline-block;
+      font-size: 2.3em;
+      padding: 0 .1em; }
+
+.main-page .main-content-container {
+  width: 98%;
+  margin: 0 auto; }
+.main-page .title-bar {
+  background-color: #b6d7a8;
+  border-radius: 1em;
+  margin-bottom: .75em;
+  padding: 1em 1.5em;
+  text-align: center; }
+  .main-page .title-bar h1 {
+    font-color: #999;
+    font-size: 4em;
+    font-weight: bold; }
+  .main-page .title-bar p {
+    font-size: 1.4em;
+    margin-top: .6em; }
+.main-page aside {
+  display: none; }
+.main-page main {
+  text-align: justify; }
+.main-page main:after {
+  content: '';
+  display: inline-block;
+  width: 100%; }
+.main-page article {
+  background-color: #a2c4c9;
+  display: inline-block;
+  margin-bottom: .75em;
+  margin-top: .75em;
+  padding: 1em 1.5em;
+  text-align: left;
+  vertical-align: top; }
+  .main-page article header {
+    margin-top: 1.5em;
+    text-align: center; }
+    .main-page article header h2 {
+      font-size: 2em;
+      font-weight: bold; }
+    .main-page article header h3 {
+      font-size: 1.8em;
+      font-weight: bold; }
+  .main-page article section {
+    margin-top: 3em; }
+    .main-page article section p {
+      font-size: 1.8em;
+      line-height: 125%; }
+    .main-page article section p:first-of-type {
+      margin-top: 1em; }
+  .main-page article section:last-child {
+    margin-bottom: 3em; }
+.main-page footer {
+  background-color: #9fc5f8;
+  border-radius: 1em;
+  padding: 1em 1.5em; }
+  .main-page footer p {
+    font-size: 1.4em;
+    line-height: 125%; }
+
+@media screen and (max-width: 990px) and (min-width: 500px) {
+  .main-content-container {
+    text-align: center; }
+    .main-content-container article {
+      max-width: 48%; }
+    .main-content-container article:last-child {
+      max-width: 100%; } }
+@media screen and (min-width: 990px) {
+  .main-page {
+    display: flex;
+    margin: 0  auto;
+    max-width: 80%; }
+    .main-page aside {
+      background-color: #d5a6bd;
+      display: flex;
+      height: 60em;
+      width: 20%; }
+      .main-page aside figure {
+        height: 20em;
+        margin: auto;
+        max-width: 20em; }
+      .main-page aside figcaption {
+        font-size: 1.4em;
+        line-height: 125%;
+        margin-bottom: 1.5em;
+        text-align: center; }
+      .main-page aside img {
+        width: 100%; }
+    .main-page .main-content-container {
+      margin-left: 1.5em;
+      width: 80%; }
+      .main-page .main-content-container article {
+        max-width: 32%; } }
+
+/*# sourceMappingURL=styles.css.map */
