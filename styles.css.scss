@@ -1,0 +1,83 @@
+/*********************
+
+		box colors
+
+*********************/
+
+body {
+	box-sizing: border-box;
+}
+
+header {
+	background-color: #FFE28F;
+}
+
+nav {
+	background-color: #D09DB6;
+}
+
+main {
+	background-color: #AED29F;
+}
+
+article {
+	background-color: #98BDC3;
+}
+
+footer {
+	background-color: #95BFF7;
+}
+
+/*********************
+
+		body
+
+*********************/
+
+header {
+	padding: 15px;
+	width: 100%;
+}
+
+.site-content {
+	max-width: 940px;
+	min-width: 80%;
+	margin: 10px 10%;
+	height: auto;
+}
+
+nav {
+	display: flex;
+	margin: 5px;
+	padding: 15px;
+	width: calc(25% - 10px);
+	height: 500px;
+	justify-content: center;
+	flex-direction: column;
+	p {
+		text-align: center;
+		font-weight: 700;
+		margin: 5px;
+	}
+	img {
+		width: 90%;
+		min-width: 200px;
+		margin: 5px 5%;
+	}
+}
+
+main {
+	margin: 5px;
+	width: calc(75% - 10px);
+}
+
+article {
+	margin: 5px;
+	width: calc(33% - 10px);
+	height: auto;
+}
+
+footer {
+	margin: 5px;
+	width: calc(75% - 10px);
+}
