@@ -1,0 +1,39 @@
+
+
+
+/********************
+
+        body
+
+********************/
+
+nav {
+  width: 100%;
+  background-color: #FFE28F;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
+.wrapper {
+  width: 990px;
+  margin: 50px auto;
+}
+
+aside {
+  background-color: #D09DB6;
+  float: left;
+}
+
+header {
+  background-color: #AED29F;
+}
+
+article {
+  background-color: #98BDC3;
+}
+
+footer {
+  background-color: #95BFF7;
+}
