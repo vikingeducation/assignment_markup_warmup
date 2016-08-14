@@ -1,6 +1,7 @@
 main {
   display: inline-block;
 }
+
 .container {
   max-width: 990px;
   margin: 75px auto;
@@ -13,45 +14,83 @@ nav {
   width: 100%;
 }
 
+
+nav li {
+  list-style-type: none;
+}
 .ads {
   background-color: #d5a6bd;
-  height: 100px;
+  height: 500px;
   width: 250px;
   float: left;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+#ad-heading {
+  border: .5px solid black;
+  max-width: 50%;
+  text-align: center;
+}
 .top-heading {
   background-color: #b6d7a8;
+  margin-right: 150px;
+  width: 651px;
+  margin-left: 260px;
+  text-align: center;
+  border-radius: 15px;
+
 }
 
 .blog-post {
   background-color: #a2c4c9;
+  padding: 7px;
 }
 
 footer {
   background-color: #94c5f8;
+  margin: 5px 81px 0 5px;
+  width: 651px;
+  float: right;
+  border-radius: 15px;
+  padding-left: 15px;
 }
 
-
+.article-container {
+  margin: -6px 30px 8px 250px;
+  padding: 0 10px;
+}
 
 .left-article {
   display: inline-block;
   vertical-align: top;
-  width: calc((100% / 3) - 10px);
-  margin-right: 17px;
+  width: 200px;
+  margin-right: 3px;
 }
 
 .center-article {
   display: inline-block;
-  width: calc((100% / 3) - 10px);
+  width: 200px;
   vertical-align: top;
-  margin-right: 6px;
+  margin-right: 3px;
 }
 
 .right-article {
   display: inline-block;
   vertical-align: top;
-  width: calc((100% / 3) - 10px);
-  margin-left: 6px;
+  width: 200px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.article-title {
+  margin-bottom: -15px;
+}
+
+.article-title, .article-timestamp {
+  text-align: center;
 }
