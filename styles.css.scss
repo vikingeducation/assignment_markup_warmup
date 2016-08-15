@@ -1,3 +1,5 @@
+
+
 main {
   display: inline-block;
 }
@@ -93,4 +95,45 @@ a {
 
 .article-title, .article-timestamp {
   text-align: center;
+}
+
+@media screen and (max-width: 989px) {
+
+  .ads {
+    display: none;
+  }
+
+  .top-heading {
+    width: 100%;
+    margin: auto;
+    border-radius: 0;
+  }
+
+  .container {
+    width: 100%;
+    margin auto;
+  }
+  footer {
+    width: 100%;
+    margin: auto;
+    border-radius: 0;
+  }
+
+  .article-container {
+    width: 100%;
+    margin-left: 3%;
+  }
+
+  .left-article {
+    width: 45.5%;
+  }
+
+  .center-article {
+    width: 45.5%;
+  }
+
+  .right-article {
+    width: 93%;
+    margin-top: 2%;
+  }
 }
