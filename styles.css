@@ -87,7 +87,7 @@ body {
 
 .main-container {
 	margin: 0 auto;
-	width: 1200px;
+	width: 990px;
 	text-align: center;
 }
 
@@ -98,7 +98,7 @@ body {
 
 .ad {
 	height: 450px;
-	width: 300px;
+	width: 160px;
 	border: 2px solid black;
 	background-color: #D5A6BD;
 	margin: 10px 10px;
@@ -111,8 +111,8 @@ body {
 }
 
 .ad img{
-	height: 300px;
-	width: 200px;
+	height: 200px;
+	width: 120px;
 }
 
 /*.blog-content{
@@ -126,7 +126,7 @@ body {
 	border: 2px solid black;
 	border-radius: 18px;
 	text-align: center;
-	width: 790px;
+	width: 780px;
 	display: inline-block;
 	margin: 10px auto;
 	vertical-align: top;
