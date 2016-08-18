@@ -127,4 +127,28 @@ footer {
   padding: 5px;
   background: #468499; }
 
+/************
+MEDIA QUERIES
+*************/
+/** less than 990px **/
+@media screen and (max-width: 989px) {
+  .ad-box {
+    display: none; }
+
+  .container {
+    width: 94%; }
+
+  .post {
+    width: 41%;
+    padding: 1% 4%; }
+
+  .post-2 {
+    margin: 0 0 0 10px; }
+
+  .post-3 {
+    margin-top: 10px;
+    clear: both;
+    width: auto;
+    padding: 1% 4%; } }
+
 /*# sourceMappingURL=styles.css.map */
