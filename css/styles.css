@@ -30,19 +30,45 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-header {
+body {
+  padding-top: 60px; }
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   font: 24px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   background: #f2f2a6;
-  height: 50px;
-  border: 1px solid black;
-  line-height: 50px;
+  height: 60px;
+  border-bottom: 1px solid black;
+  line-height: 60px;
   padding-left: 15px; }
 
+.container {
+  width: 1200px;
+  margin: 10px auto;
+  padding: 0 10px; }
+
 main {
-  width: 100%;
-  max-width: 990px;
-  margin: 10px auto; }
+  display: inline-block;
+  width: 858px;
+  margin: 10px 0;
+  padding: 0 10px; }
+
+.ad-box {
+  float: left;
+  width: 260px;
+  margin: 10px;
+  padding: 20px;
+  height: 600px;
+  border: 1px solid #000; }
+  .ad-box .ad {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px;
+    text-align: center; }
 
 .headline {
   height: 50px;
@@ -61,6 +87,7 @@ main {
     font-style: italic; }
 
 .post {
+  width: 250px;
   border: 1px solid #000;
   padding: 5px 15px;
   background: #8bebf8; }
@@ -80,16 +107,24 @@ main {
     margin-bottom: 5px; }
 
 .post-1 {
-  width: 300px;
   float: left; }
 
 .post-2 {
-  width: 294px;
   float: left;
   margin: 0px 5px 5px 5px; }
 
 .post-3 {
-  width: 288px;
   float: left; }
+
+.clear-fix {
+  clear: both; }
+
+footer {
+  margin-top: 10px;
+  border-radius: 7px;
+  border: 1px solid #000;
+  text-align: center;
+  padding: 5px;
+  background: #468499; }
 
 /*# sourceMappingURL=styles.css.map */
