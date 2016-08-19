@@ -1,0 +1,256 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+
+   CSS Reset
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+/*
+ * Variables
+ *
+ */
+$blue: #ade;
+$green: #dec;
+$yellow: #ffb;
+$border: 2px solid black;
+
+
+
+/*
+ * Globals
+ *
+ */
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+main {
+  padding: 10px;
+  max-width: 990px;
+  margin: auto;
+}
+
+aside, section, article, header, footer {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+
+/*
+ * Navbar
+ *
+ */
+nav {
+  background-color: $yellow;
+  border: $border;
+  height: 50px;
+  line-height: 50px;
+  h1 {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+}
+
+
+
+/*
+ * Aside
+ *
+ */
+aside {
+  background-color: plum;
+  border: $border;
+  width: 240px;
+  height: 400px;
+  float: left;
+  position: relative;
+  padding-right: 10px;
+  .ad {
+    text-align: center;
+    display: block;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -135px 0 0 -110px;
+    h1{
+      margin-bottom: 3px;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+/*
+ * content
+ *
+ */
+.content {
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: 10px;
+  width: 75%;
+  /* width 100% when small */
+  .blog-header {
+    background-color: $green;
+    border: $border;
+    width: 100%;
+    text-align: center;
+
+    h1 {
+      line-height: 28px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 18px;
+      font-style: italic;
+    }
+
+  }
+  .blog-post {
+    background-color: $blue;
+    border: $border;
+    width: 33%;
+    /* width 50 then 100 % hen small */
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    .title {
+      display: block;
+      text-align: center;
+      letter-spacing: .75px;
+      h1 {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 3px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    .blog-body {
+      h2 {
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  footer {
+    background-color: lightblue;
+    border: $border;
+    width: 100%;
+  }
+}
+
+.blog-post:nth-child(2) {
+  margin-left: .5%;
+  margin-right: .5%;
+}
+
+.blog-header, footer {
+  border-radius: 10px;
+}
+
+
+
+/*
+ * Media Query
+ *
+ */
+ @media (max-width: 989px) {
+
+  aside {
+    display: none;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  .content {
+    width: 100%;
+    padding: 0;
+    
+
+    .articles {
+      box-sizing: border-box;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .blog-post:first-child {
+      width: calc(50% - 5px);
+      margin-right: 5px;
+    }
+    .blog-post:nth-child(2) {
+      width: calc(50% - 5px);
+      margin-left: 5px;
+      margin-right: 0;
+    }
+    .blog-post:nth-child(3) {
+      width: 100%
+    }
+    .blog-post {
+      margin-bottom: 18px;
+    }
+  }
+
+  .blog-header, footer {
+    border-radius: 0;
+  }
+
+ }
