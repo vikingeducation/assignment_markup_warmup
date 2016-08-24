@@ -1,0 +1,44 @@
+@import 'reset';
+
+$border: 2px solid black;
+
+body {
+  box-sizing: border-box;
+}
+
+nav {
+  background: #FFE599;
+  position: fixed;
+  border: $border;
+}
+
+header.main {
+  background: #B6D7A8;
+  border-radius: 4px;
+  border: $border;
+}
+
+article {
+  background: #99BABE;
+  border: $border;
+}
+
+aside {
+  background: #D5A6BD;
+  border: $border;
+}
+
+footer {
+  background: #5359dd;
+  border-radius: 4px;
+  border: $border;
+}
+
+.advert {
+  height: 100px;
+  border: $border;
+}
+
+@media (max-width: 990px) {
+
+}
