@@ -19,7 +19,7 @@ nav {
 
 header.main {
   background: #B6D7A8;
-  border-radius: 8px;
+  border-radius: 15px;
   border: $border;
   height: 100px;
   margin: 60px 10px 10px 10px;
@@ -29,7 +29,7 @@ article {
   background: #99BABE;
   border: $border;
   display: inline-block;
-  width: 20%;
+  width: 23%;
 }
 
 article + article {
@@ -41,7 +41,18 @@ aside {
   border: $border;
   float: left;
   height: 300px;
+  width: 23%;
   position: relative;
+  margin-right: 5px;
+}
+
+.advert-container {
+  height: 170px;
+  width: 170px;
+  border: $border;
+  background: #fff;
+  position: absolute;
+  top: 30%;
 }
 
 footer {
@@ -50,19 +61,14 @@ footer {
   border: $border;
 }
 
-.advert {
-  height: 70px;
-  border: $border;
-  background: #fff;
-  position: absolute;
-}
-
-
-
 
 @media (min-width: 990px) {
 .container {
     width: 960px;
     margin: 10px auto 2px auto;
+  }
+
+  .main-foot-container {
+    width: calc(75%*960px);
   }
 }
