@@ -67,6 +67,13 @@ nav {
   margin-right:auto;
 }
 
+@media only screen and (max-width: 990px) {
+    #container {
+    max-width:990px;
+    margin-top:40px;
+    }
+}
+
 header {
   @include border-radius(10px);
   text-align: center;
@@ -76,9 +83,25 @@ header {
   border:1px solid black;
 }
 
+@media only screen and (max-width: 990px) {
+    header {
+        max-width:100%;
+        margin:0; 
+        border-radius:0;
+    }
+}
+
 main {
   float: right;
   width: 700px / 990px * 100%;
+}
+
+@media only screen and (max-width: 990px) {
+    main {
+        margin:auto;
+        float:none;
+        width:100%;
+    }
 }
 
 .posts {
@@ -86,6 +109,13 @@ main {
   justify-content:space-between;
   flex-wrap:wrap;
   align-items:flex-start;
+}
+
+@media only screen and (max-width: 990px) {
+    .posts {
+        margin: auto;
+        justify-content:space-around;
+    }
 }
 
 p {
@@ -97,6 +127,14 @@ section {
   padding:10px;
   background-color:#9cc;
   border:1px solid black;
+}
+
+@media only screen and (max-width: 990px) {
+    section {
+        flex-grow:1;
+       width: 700px / 950px * 48%;
+        margin:20px 20px 10px 20px;
+    }
 }
 
 aside {
@@ -125,6 +163,12 @@ aside {
     }
 }
 
+@media only screen and (max-width: 990px) {
+    aside {
+        display:none;
+    }
+}
+
 p.time {
     text-align: center;
     margin-top:0;
@@ -139,4 +183,11 @@ footer {
     margin-bottom:25px;
     text-align: left;
     border:1px solid black;
+}
+
+@media only screen and (max-width: 990px) {
+    footer {
+        border-radius:0;
+        width:100%;
+    }
 }

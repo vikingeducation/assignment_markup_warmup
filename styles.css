@@ -46,6 +46,10 @@ nav {
   margin-left: auto;
   margin-right: auto; }
 
+@media only screen and (max-width: 990px) {
+  #container {
+    max-width: 990px;
+    margin-top: 40px; } }
 header {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -57,16 +61,30 @@ header {
   background-color: #cc9;
   border: 1px solid black; }
 
+@media only screen and (max-width: 990px) {
+  header {
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0; } }
 main {
   float: right;
   width: 70.70707%; }
 
+@media only screen and (max-width: 990px) {
+  main {
+    margin: auto;
+    float: none;
+    width: 100%; } }
 .posts {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start; }
 
+@media only screen and (max-width: 990px) {
+  .posts {
+    margin: auto;
+    justify-content: space-around; } }
 p {
   margin-top: 10px; }
 
@@ -76,6 +94,11 @@ section {
   background-color: #9cc;
   border: 1px solid black; }
 
+@media only screen and (max-width: 990px) {
+  section {
+    flex-grow: 1;
+    width: 35.36842%;
+    margin: 20px 20px 10px 20px; } }
 aside {
   float: left;
   width: 25.25253%;
@@ -96,6 +119,9 @@ aside p {
   text-align: center;
   font-size: 1.1em; }
 
+@media only screen and (max-width: 990px) {
+  aside {
+    display: none; } }
 p.time {
   text-align: center;
   margin-top: 0; }
@@ -112,5 +138,10 @@ footer {
   margin-bottom: 25px;
   text-align: left;
   border: 1px solid black; }
+
+@media only screen and (max-width: 990px) {
+  footer {
+    border-radius: 0;
+    width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */
