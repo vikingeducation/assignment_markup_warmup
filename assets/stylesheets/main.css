@@ -63,7 +63,7 @@ ADS
 ==================
 */
 .ads {
-  margin: 10px 10px 0 100px;
+  margin: 50px 10px 0 100px;
   display: inline-block;
   border: 1px solid black;
   width: 300px;
@@ -95,7 +95,9 @@ TOPBAR
   color: #4C5760;
   font-size: 24px;
   padding-left: 10px;
-  padding-top: 5px; }
+  padding-top: 5px;
+  position: fixed;
+  z-index: 100; }
 
 /*
 ==================
