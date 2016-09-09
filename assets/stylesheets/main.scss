@@ -78,6 +78,7 @@ ADS
   height: 400px;
   background: #66635B;
   display: inline-block;
+  border-radius: 8px;
 }
 
 .ads{
@@ -138,4 +139,44 @@ MAIN BLOG
     text-align: center;
     font-size: 18px;
   }
+
+  article{
+  width: 32%;
+  border:1px solid black;
+  display: inline-block;
+  margin-left: 4px;
+  vertical-align: top;
+  background-color: #93A8AC;
+  color:#4C5760;
+  }
+
+  .articlebox{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: -10px
+  }
 }
+
+article{
+  h3{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  time{
+    color:#D7CEB2;
+    margin-bottom:10px;
+    margin-left: 250px;
+  }
+
+  h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
