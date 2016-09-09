@@ -104,7 +104,7 @@ TOPBAR
 
 .topbar{
   height: 30px;
-  width: 100%;
+  width: 1600px;
   border-bottom: 1px black solid;
   background-color: #93A8AC;
   color: #4C5760;
@@ -148,6 +148,8 @@ MAIN BLOG
   vertical-align: top;
   background-color: #93A8AC;
   color:#4C5760;
+  padding: 5px;
+  box-sizing: border-box;
   }
 
   .articlebox{
@@ -180,3 +182,12 @@ article{
   }
 }
 
+footer{
+   border:1px solid black;
+   background-color: #66635B;
+    color: #A59E8C;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    margin-top: 10px;
+  box-sizing: border-box;
+}
