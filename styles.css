@@ -17,15 +17,18 @@ body{
 
 .main{
   margin: 0px 100px 0 100px;
-  display: flex;
   top: 100px;
   height: 500px;
-  @media (max-width: 990px)
+  @media (max-width: 990px);
 }
 
-.content{
+.main-content {
   display: flex;
   justify-content: space-between;
+}
+
+.page-container{
+  display: flex;
 }
 
 .header{
@@ -69,6 +72,5 @@ footer{
   border-radius: 5px;
   border: 2px solid black;
   padding: 10px;
-  display: block;
 }
 
