@@ -1,13 +1,16 @@
 body {
   font-family: Arial, sans-serif; }
 
-.navbar {
+nav {
   background-color: #ffffb3;
   width: 99%;
   height: 30px;
   border: 2px solid black;
   padding: 15px 0 15px 15px;
   justify-content: flex-start; }
+
+main {
+  display: flex; }
 
 #mainheader {
   border-radius: 5px;
@@ -17,15 +20,16 @@ body {
   text-align: center; }
 
 article {
+  display: flex;
   border-radius: 5px;
   margin: 10px;
   border: 2px solid black;
-  background-color: #a2c4c9; }
-  article header {
-    background-color: none; }
+  background-color: #a2c4c9;
+  float: left;
+  width: 30%; }
 
 footer {
-  border-radius: 5px;
+  padding: 5px 5px;
   margin: 10px;
   border: 2px solid black;
   border-radius: 10px;
