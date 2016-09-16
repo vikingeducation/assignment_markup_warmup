@@ -11,6 +11,21 @@ header,
 footer {
   border-radius: 15px;
 }
+/*clearfix what */
+.clearfix::before,
+.clearfix::after {
+  display: table;
+  content: " ";
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.container {
+  max-width: 990px;
+  margin: 0 auto;
+}
 
 /* Style the headers */
 header,
@@ -51,9 +66,9 @@ nav {
 
 
 main{
-  float: right;
+  float: left;
   margin-right: 5%;
-  width: 990px;
+  width: 720px;
 }
 header {
   background: #b6d7a8;
@@ -65,7 +80,7 @@ article {
   float: left;
   margin: 10px;
   padding: 10px;
-  width: 290px;
+  width: 200px;
 }
 article:nth-of-type(0) {
   margin-left: 100px;
@@ -85,11 +100,11 @@ footer {
 
 /* Style vertically centered ad */
 aside {
-  background: #c9f;
+  background: #d5a6bd;
   float: left;
   height: 400px;
-  margin: 50px 5px 5px 10%;
-  width: 300px;
+  margin: 50px 5px;
+  width: 200px;
 }
 aside {
   h2,
