@@ -6,7 +6,7 @@ body{
   font-family: Arial, sans-serif;
 }
 
-nav{
+.navbar{
   background-color: #ffffb3;
   width: 100%;
   height: 30px;
@@ -19,13 +19,16 @@ nav{
   margin: 0px 100px 0 100px;
   top: 100px;
   height: 500px;
+  @media (max-width: 990px);
 }
+
+
 
 .page-container{
   display: flex;
 }
 
-header{
+.header{
   margin: 10px;
   border: 2px solid black;
   border-radius: 10px;
@@ -33,13 +36,20 @@ header{
   text-align: center;
 }
 
-header *{
+.header *{
   padding: 10px;  
 }
 
-header p{
+.header p{
   font-style: italic;
 }
+
+/* .main-content {
+  display: flex;
+  justify-content: space-between;
+} */
+
+/* Begin Added */
 
 .clearfix::before,
 .clearfix::after {
@@ -52,31 +62,18 @@ header p{
 }
 
 .left {
-  /*display: flex;*/
-   /*justify-content: center;*/
-   float: left;
+  float: left;
 }
 
-article h2{
-  font-weight: bold;
-  text-align: center;
-}
-
-article h3{
-  font-weight: bold;
-}
-article h4{
-  text-align: center;
-}
+/* End Added */
 
 .main-content article {
   background-color: #33cccc;
   border: 2px solid black;
   margin: 10px 0 10px 10px;  
   padding: 20px;
-  width: 28%; 
+  width: 30%;  /*  <<< Added */
 }
-
 
 aside{
   background-color: #ffb3da;
@@ -96,27 +93,4 @@ footer{
   border: 2px solid black;
   padding: 10px;
 }
-
-@media (max-width: 990px){
-  .main-content article{
-    width: 30%; 
-  }
-
-  .main-content{
-    width: 100%;
-  }
-
-  header, footer{
-    width: 100%;
-    margin: 0; 
-    border: none;
-    border-radius: 0;
-  }
-
-  aside{
-    display: none;
-  }
-
-}
-
 
