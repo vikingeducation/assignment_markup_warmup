@@ -1,0 +1,41 @@
+nav {
+  position: fixed;
+  top: 0;
+}
+main {
+  width: 990px;
+  margin: auto;
+  margin-top: 3em;
+}
+header {
+  border-radius: 1em;
+  margin: .5em;
+}
+.column {
+  width: 230px;
+  float: left;
+  margin: 0 5px;
+  box-sizing: border-box;
+}
+.ad-column {
+  height: 500px;
+  background: #d5a6bd;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.ad {
+  background: #673ab7;
+  height: 200px;
+  width: 200px;
+}
+.span-columns {
+  width: 710px;
+  float: left;
+}
+footer {
+  margin: 1em 0 0 245px;
+  border-radius: 1em;
+}

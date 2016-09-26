@@ -1,0 +1,14 @@
+.ad-column {
+  display: none;
+}
+.column {
+  margin: 10px;
+  box-sizing: border-box;
+}
+.column:not(:last-of-type) {
+  width: 47%;
+  float: left;
+}
+.column:last-of-type {
+  clear: both;
+}
