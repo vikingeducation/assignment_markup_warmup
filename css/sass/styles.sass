@@ -65,6 +65,11 @@ aside
   @extend .float
   height: 400px
   width: 220px
+  display: table
+
+.ad-content
+  display: table-cell
+  vertical-align: middle
 
 section
   @extend .float
@@ -72,7 +77,12 @@ section
 
 article
   @extend .float
-  width: 33%
+  width: calc(100% / 3)
 
 footer
   clear: both
+
+
+
+
+//

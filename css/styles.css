@@ -82,13 +82,18 @@ main {
 
 aside {
   height: 400px;
-  width: 220px; }
+  width: 220px;
+  display: table; }
+
+.ad-content {
+  display: table-cell;
+  vertical-align: middle; }
 
 section {
   width: 770px; }
 
 article {
-  width: 33%; }
+  width: calc(100% / 3); }
 
 footer {
   clear: both; }
