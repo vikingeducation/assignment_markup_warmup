@@ -13,6 +13,13 @@ $disclaimer: #9fc5f8
 
 
 
+// base
+*
+  box-sizing: border-box
+
+
+
+
 // background colors for element clarity
 .nav-bar
   background-color: $nav-bar
@@ -28,3 +35,44 @@ article
 
 footer
   background-color: $disclaimer
+
+
+
+
+// float and clearfix
+.float
+  float: left
+
+.clearfix:after
+  content: ""
+  display: table
+  clear: both
+
+
+
+
+// positioning styles
+.nav-bar
+  position: fixed
+  width: 100%
+
+main
+  @extend .clearfix
+  width: 990px
+  margin: 0 auto
+
+aside
+  @extend .float
+  height: 400px
+  width: 220px
+
+section
+  @extend .float
+  width: 770px
+
+article
+  @extend .float
+  width: 33%
+
+footer
+  clear: both
