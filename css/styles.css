@@ -46,4 +46,19 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.nav-bar {
+  background-color: #ffe599; }
+
+aside {
+  background-color: #d5a6bd; }
+
+.title {
+  background-color: #b6d7a8; }
+
+article {
+  background-color: #a2c4c9; }
+
+footer {
+  background-color: #9fc5f8; }
+
 /*# sourceMappingURL=styles.css.map */
