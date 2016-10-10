@@ -114,7 +114,7 @@ section
 
 article
   @extend %float
-  max-width: 250px
+  width: 250px
 
 footer
   clear: both
@@ -159,3 +159,23 @@ article
 footer
   @extend %module
   @extend %rounded
+
+
+
+
+// media queries
+
+@media only screen and (max-width: 990px)
+  aside
+    display: none
+
+  section
+    width: 970px
+
+  article
+    margin: 10px
+    width: 463px
+
+  article:last-of-type
+    clear: both
+    width: 97%
