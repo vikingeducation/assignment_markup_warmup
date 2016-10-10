@@ -64,10 +64,10 @@ article {
 footer {
   background-color: #9fc5f8; }
 
-.float, aside, section, article {
+aside, section, article {
   float: left; }
 
-.clearfix:after, main:after {
+main:after {
   content: "";
   display: table;
   clear: both; }
@@ -90,12 +90,34 @@ aside {
   vertical-align: middle; }
 
 section {
-  width: 770px; }
+  width: 762px; }
 
 article {
-  width: calc(100% / 3); }
+  max-width: 250px; }
 
 footer {
   clear: both; }
+
+.nav-bar, aside, .title, article, footer {
+  border: 1px solid #000;
+  padding: 10px; }
+
+.title, footer {
+  border-radius: 5px; }
+
+aside, article:not(:last-of-type) {
+  margin-right: 6px; }
+
+.nav-bar {
+  height: 50px; }
+
+aside {
+  margin-top: 60px; }
+
+section {
+  margin-top: 60px; }
+
+article {
+  margin: 8px 0; }
 
 /*# sourceMappingURL=styles.css.map */

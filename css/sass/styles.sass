@@ -40,10 +40,10 @@ footer
 
 
 // float and clearfix
-.float
+%float
   float: left
 
-.clearfix:after
+%clearfix:after
   content: ""
   display: table
   clear: both
@@ -57,12 +57,12 @@ footer
   width: 100%
 
 main
-  @extend .clearfix
+  @extend %clearfix
   width: 990px
   margin: 0 auto
 
 aside
-  @extend .float
+  @extend %float
   height: 400px
   width: 220px
   display: table
@@ -72,12 +72,12 @@ aside
   vertical-align: middle
 
 section
-  @extend .float
-  width: 770px
+  @extend %float
+  width: 762px
 
 article
-  @extend .float
-  width: calc(100% / 3)
+  @extend %float
+  max-width: 250px
 
 footer
   clear: both
@@ -85,4 +85,40 @@ footer
 
 
 
-//
+// element/module styling
+%module
+  border: 1px solid #000
+  padding: 10px
+
+%rounded
+  border-radius: 5px
+
+%whitespace
+  margin-right: 6px
+
+.nav-bar
+  @extend %module
+  height: 50px
+
+aside
+  @extend %module
+  @extend %whitespace
+  margin-top: 60px
+
+section
+  margin-top: 60px
+
+.title
+  @extend %module
+  @extend %rounded
+
+article
+  @extend %module
+  margin: 8px 0
+
+  &:not(:last-of-type)
+    @extend %whitespace
+
+footer
+  @extend %module
+  @extend %rounded
