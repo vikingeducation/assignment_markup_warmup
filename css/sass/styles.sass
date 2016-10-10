@@ -16,6 +16,43 @@ $disclaimer: #9fc5f8
 // base
 *
   box-sizing: border-box
+  font-family: sans-serif
+  font-size: 14px
+
+@mixin font-stuff($size: "", $weight: "", $align: "", $style: "")
+  font-size: #{$size}
+  font-weight: #{$weight}
+  text-align: #{$align}
+  font-style: #{$style}
+
+.nav-bar
+  font-family: sans-serif
+  font-size: 1.2em
+  line-height: 1.5em
+
+aside, .title
+  @include font-stuff($align: center)
+
+h1
+  @include font-stuff(2em, bold)
+
+h2
+  @include font-stuff($style: italic)
+
+h3
+  @include font-stuff(1.3em, bold, center)
+  padding: 6px 0
+
+h4
+  @include font-stuff($align: center)
+  padding-bottom: 15px
+
+h5
+  @include font-stuff($weight: bold)
+  padding-bottom: 10px
+
+p
+  padding-bottom: 18px
 
 
 
@@ -87,11 +124,11 @@ footer
 
 // element/module styling
 %module
-  border: 1px solid #000
+  border: 2px solid #000
   padding: 10px
 
 %rounded
-  border-radius: 5px
+  border-radius: 15px
 
 %whitespace
   margin-right: 6px
