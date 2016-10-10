@@ -1,3 +1,24 @@
+body {
+  font-family: sans-serif; }
 
+nav {
+  background: #FFE599;
+  border: 2px solid #000; }
+
+header {
+  background: #B6D7A8;
+  border: 2px solid #000; }
+
+.ad {
+  background: #D5A6BD;
+  border: 2px solid #000; }
+
+article {
+  background: #A2C4C9;
+  border: 2px solid #000; }
+
+footer {
+  background: #9FC5F8;
+  border: 2px solid #000; }
 
 /*# sourceMappingURL=styles.css.map */
