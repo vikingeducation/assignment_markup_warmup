@@ -2,6 +2,18 @@ $border: 2px solid #000;
 body{
 	font-family: sans-serif;
 }
+h1{
+	font: {
+		weight: bold;
+		size: 20px;
+	}
+}
+h2{
+	font-size: 16px;
+}
+h3{
+	font-size: 12px;
+}
 nav{
 	background: #FFE599;
 	border: $border;
@@ -9,16 +21,47 @@ nav{
 header{
 	background: #B6D7A8;
 	border: $border;
+	text-align: center;
+	border-radius: 15px;
 }
 .ad{
 	background: #D5A6BD;
 	border: $border;
+	text-align: center;
+	line-height: 1.25;
+	font: {
+		weight: bold;
+		size: 14px;
+	}
 }
 article{
 	background: #A2C4C9;
 	border: $border;
+	p{
+		font-size: 13px;
+		padding: 7px;
+		line-height: 1.25;
+	}
+	h2{
+		font-weight: bold;
+		text-align: center;
+		padding: 7px 0;
+	}
+	h3{
+		text-align: center;
+	}
+	h4{
+		padding: 7px;
+		font: {
+			size: 13px;
+			weight: bold;
+		}
+	}
 }
 footer{
 	background: #9FC5F8;
 	border: $border;
+	line-height: 1.25;
+	font-size: 11px;
+	border-radius: 15px;
 }

@@ -1,24 +1,57 @@
 body {
   font-family: sans-serif; }
 
+h1 {
+  font-weight: bold;
+  font-size: 20px; }
+
+h2 {
+  font-size: 16px; }
+
+h3 {
+  font-size: 12px; }
+
 nav {
   background: #FFE599;
   border: 2px solid #000; }
 
 header {
   background: #B6D7A8;
-  border: 2px solid #000; }
+  border: 2px solid #000;
+  text-align: center;
+  border-radius: 15px; }
 
 .ad {
   background: #D5A6BD;
-  border: 2px solid #000; }
+  border: 2px solid #000;
+  text-align: center;
+  line-height: 1.25;
+  font-weight: bold;
+  font-size: 14px; }
 
 article {
   background: #A2C4C9;
   border: 2px solid #000; }
+  article p {
+    font-size: 13px;
+    padding: 7px;
+    line-height: 1.25; }
+  article h2 {
+    font-weight: bold;
+    text-align: center;
+    padding: 7px 0; }
+  article h3 {
+    text-align: center; }
+  article h4 {
+    padding: 7px;
+    font-size: 13px;
+    font-weight: bold; }
 
 footer {
   background: #9FC5F8;
-  border: 2px solid #000; }
+  border: 2px solid #000;
+  line-height: 1.25;
+  font-size: 11px;
+  border-radius: 15px; }
 
 /*# sourceMappingURL=styles.css.map */
