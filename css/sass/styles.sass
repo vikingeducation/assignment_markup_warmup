@@ -10,6 +10,8 @@ $title: #b6d7a8
 $posts: #a2c4c9
 $disclaimer: #9fc5f8
 
+$breakpoint: 990px
+
 
 
 
@@ -95,18 +97,22 @@ footer
 
 main
   @extend %clearfix
-  width: 990px
+  width: $breakpoint
   margin: 0 auto
 
 aside
   @extend %float
+  position: relative
   height: 400px
   width: 220px
-  display: table
 
 .ad-content
-  display: table-cell
-  vertical-align: middle
+  position: absolute
+  left: 0
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)
 
 section
   @extend %float
@@ -165,12 +171,12 @@ footer
 
 // media queries
 
-@media only screen and (max-width: 990px)
+@media only screen and (max-width: $breakpoint)
   aside
     display: none
 
   section
-    width: 970px
+    width: calc($breakpoint - 20px)
 
   article
     margin: 10px

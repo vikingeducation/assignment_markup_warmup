@@ -115,13 +115,11 @@ main {
   margin: 0 auto; }
 
 aside {
-  position: relative;
   height: 400px;
   width: 220px; }
 
 .ad-content {
   position: absolute;
-  left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -150,10 +148,10 @@ aside, article:not(:last-of-type) {
   height: 50px; }
 
 aside {
-  margin-top: 60px; }
+  margin-top: calc($nav-height + 10px); }
 
 section {
-  margin-top: 60px; }
+  margin-top: calc($nav-height + 10px); }
 
 article {
   margin: 8px 0; }
