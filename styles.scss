@@ -1,0 +1,78 @@
+/* Colors */
+$body-color: #FFF; 
+$nav-color: #FFE599; 
+$ad-color: #D5A6BD;
+$main-header-color: #B6D7A8; 
+$blog-post-color: #A2C4C9; 
+$footer-color: #9FC5F8; 
+
+/* Sizes */
+$main-width: 990px; 
+$ad-container-width: 210px; 
+$ad-container-height: 550px;
+$blog-section-container-width: 760px;
+$nav-height: 49px;
+
+/* Note that $ad-container-width + $blog-section-container-width < $main-width */
+
+body {
+	background-color: $body-color; 
+}
+
+nav {
+	background-color: $nav-color; 
+	position: absolute; 
+	top: 0;
+	left: 0; 
+	width: 100%;
+	height: $nav-height;
+	line-height: $nav-height;
+
+	h1 {
+		margin-left: 24px;
+	} 
+}
+
+main {
+	width: $main-width;
+	margin: 0 auto;
+}
+
+.ad-container {
+	background-color: $ad-color; 
+	width: $ad-container-width; 
+	height: $ad-container-height; 
+	display: inline-block; 
+	float: left;
+	margin-top: $nav-height; 
+}
+
+.blog-section-container {
+	width: $blog-section-container-width; 
+	display: inline-block; 
+	margin: 0 auto;
+	float: right; 
+	margin-top: $nav-height; 
+
+	header {
+		background-color: $main-header-color;
+		height: 99px; 
+		margin-bottom: 10px; 
+	}
+
+	footer {
+		background-color: $footer-color; 
+		margin-top: 10px;
+	}
+}
+
+.post-container {
+	text-align: center;
+
+	article {
+		background-color: $blog-post-color; 
+		display: inline-block;
+		width: 32%;
+		vertical-align: top; /* it worked! */
+	}
+}
