@@ -1,8 +1,10 @@
 /* Colors */
 /* Sizes */
 /* Note that $ad-container-width + $blog-section-container-width < $main-width */
+/* Mixins */
 body {
-  background-color: #FFF; }
+  background-color: #FFF;
+  font-family: "Roboto", sans-serif; }
 
 nav {
   background-color: #FFE599;
@@ -13,11 +15,12 @@ nav {
   height: 49px;
   line-height: 49px; }
   nav h1 {
-    margin-left: 24px; }
+    margin-left: 49px; }
 
 main {
   width: 990px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 10px; }
 
 .ad-container {
   background-color: #D5A6BD;
@@ -25,7 +28,22 @@ main {
   height: 550px;
   display: inline-block;
   float: left;
-  margin-top: 49px; }
+  margin-top: 49px;
+  text-align: center;
+  /* horizontal centering */
+  position: relative; }
+
+.ad-content {
+  /* vertical centering */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+  .ad-content h2 {
+    font-weight: bold; }
+  .ad-content img {
+    width: 168px;
+    height: 168px;
+    border: 1px solid black; }
 
 .blog-section-container {
   width: 760px;
@@ -35,19 +53,51 @@ main {
   margin-top: 49px; }
   .blog-section-container header {
     background-color: #B6D7A8;
-    height: 99px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; }
+    .blog-section-container header h1 {
+      font-size: 24px;
+      font-weight: bold;
+      padding: 10px 0 10px 0; }
+    .blog-section-container header h2 {
+      font-size: 20px;
+      font-style: italic;
+      padding: 0 0 10px 0; }
   .blog-section-container footer {
     background-color: #9FC5F8;
-    margin-top: 10px; }
+    margin-top: 10px;
+    padding: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; }
 
 .post-container {
   text-align: center; }
   .post-container article {
     background-color: #A2C4C9;
     display: inline-block;
-    width: 32%;
+    width: 30%;
     vertical-align: top;
-    /* it worked! */ }
+    /* it worked! */
+    padding: 10px 10px 10px 10px; }
+
+.post-header h1 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 8px; }
+.post-header h2 {
+  padding-bottom: 8px; }
+
+.post-content {
+  text-align: left; }
+  .post-content h3 {
+    font-weight: bold; }
+  .post-content p {
+    padding: 8px 0; }
 
 /*# sourceMappingURL=styles.css.map */

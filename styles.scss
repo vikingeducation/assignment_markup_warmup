@@ -10,13 +10,25 @@ $footer-color: #9FC5F8;
 $main-width: 990px; 
 $ad-container-width: 210px; 
 $ad-container-height: 550px;
+$ad-width: 210px * 0.8; 
+$ad-height: $ad-width; 
 $blog-section-container-width: 760px;
 $nav-height: 49px;
 
 /* Note that $ad-container-width + $blog-section-container-width < $main-width */
 
+/* Mixins */
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius; 
+	   -moz-border-radius: $radius; 
+	    -ms-border-radius: $radius; 
+	        border-radius: $radius; 
+}
+
+
 body {
 	background-color: $body-color; 
+	font-family: "Roboto", sans-serif;
 }
 
 nav {
@@ -29,13 +41,14 @@ nav {
 	line-height: $nav-height;
 
 	h1 {
-		margin-left: 24px;
+		margin-left: 49px;
 	} 
 }
 
 main {
 	width: $main-width;
-	margin: 0 auto;
+	margin: 0 auto;	
+	margin-top: 10px; 
 }
 
 .ad-container {
@@ -45,6 +58,24 @@ main {
 	display: inline-block; 
 	float: left;
 	margin-top: $nav-height; 
+	text-align: center; /* horizontal centering */
+	position: relative; 
+}
+
+.ad-content { /* vertical centering */
+	position: absolute; 
+	top: 50%;
+	transform: translateY(-50%);
+
+	h2 {
+		font-weight: bold;
+	}
+
+	img {
+		width: $ad-width; 
+		height: $ad-height; 
+		border: 1px solid black;
+	}
 }
 
 .blog-section-container {
@@ -56,13 +87,28 @@ main {
 
 	header {
 		background-color: $main-header-color;
-		height: 99px; 
 		margin-bottom: 10px; 
+		text-align: center;
+		@include border-radius(10px); 
+
+		h1 {
+			font-size: 24px;
+			font-weight: bold; 
+			padding: 10px 0 10px 0; 
+		}
+
+		h2 {
+			font-size: 20px;
+			font-style: italic; 
+			padding: 0 0 10px 0; 
+		}
 	}
 
 	footer {
 		background-color: $footer-color; 
 		margin-top: 10px;
+		padding: 10px 10px 10px 10px; 
+		@include border-radius(10px); 
 	}
 }
 
@@ -72,7 +118,30 @@ main {
 	article {
 		background-color: $blog-post-color; 
 		display: inline-block;
-		width: 32%;
+		width: 30%;
 		vertical-align: top; /* it worked! */
+		padding: 10px 10px 10px 10px; 
+	}
+}
+
+.post-header {
+	h1 {
+		font-size: 20px; 
+		font-weight: bold; 
+		padding-bottom: 8px;
+	}
+	h2 {
+		padding-bottom: 8px; 
+	}
+}
+
+.post-content {
+	text-align: left; 
+
+	h3 {
+		font-weight: bold; 
+	}
+	p {
+		padding: 8px 0; 
 	}
 }
