@@ -1,3 +1,8 @@
+
+/*----------------------------------------------------*/
+/* VARIABLES & MIXINS */ 
+/*----------------------------------------------------*/
+
 /* Colors */
 $body-color: #FFF; 
 $nav-color: #FFE599; 
@@ -10,12 +15,10 @@ $footer-color: #9FC5F8;
 $main-width: 990px; 
 $ad-container-width: 210px; 
 $ad-container-height: 550px;
-$ad-width: 210px * 0.8; 
+$ad-width: $ad-container-width * 0.8; 
 $ad-height: $ad-width; 
 $blog-section-container-width: 760px;
 $nav-height: 49px;
-
-/* Note that $ad-container-width + $blog-section-container-width < $main-width */
 
 /* Mixins */
 @mixin border-radius($radius) {
@@ -26,14 +29,22 @@ $nav-height: 49px;
 }
 
 
+/*----------------------------------------------------*/
+/* BODY */ 
+/*----------------------------------------------------*/
+
 body {
 	background-color: $body-color; 
 	font-family: "Roboto", sans-serif;
 }
 
+/*----------------------------------------------------*/
+/* NAVBAR */ 
+/*----------------------------------------------------*/
+
 nav {
 	background-color: $nav-color; 
-	position: absolute; 
+	position: fixed; /* unlike absolute, keeps nav on top while scrolling */
 	top: 0;
 	left: 0; 
 	width: 100%;
@@ -41,15 +52,31 @@ nav {
 	line-height: $nav-height;
 
 	h1 {
+		font-size: 18px;
 		margin-left: 49px;
 	} 
 }
 
+/*----------------------------------------------------*/
+/* MAIN CONTENT (AD SPACE + BLOG POST SECTION) */ 
+/*----------------------------------------------------*/
+
 main {
 	width: $main-width;
-	margin: 0 auto;	
+	margin: 0 auto;	/* horizontally center */
 	margin-top: 10px; 
 }
+
+@media screen and (max-width: 990px) {
+	main {
+		width: 100%;
+		margin-top: 0px;
+	}
+}
+
+/*----------------------------------------------------*/
+/* AD SPACE */ 
+/*----------------------------------------------------*/
 
 .ad-container {
 	background-color: $ad-color; 
@@ -59,7 +86,14 @@ main {
 	float: left;
 	margin-top: $nav-height; 
 	text-align: center; /* horizontal centering */
-	position: relative; 
+	position: relative; /* needed to vertically center .ad-content */
+	z-index: -1; /* prevent overlapping over navbar */
+}
+
+@media screen and (max-width: 990px) {
+	.ad-container { 
+		display: none; 
+	}
 }
 
 .ad-content { /* vertical centering */
@@ -78,6 +112,10 @@ main {
 	}
 }
 
+/*----------------------------------------------------*/
+/* BLOG SECTION (INCLUDES HEAD + FOOT) */ 
+/*----------------------------------------------------*/
+
 .blog-section-container {
 	width: $blog-section-container-width; 
 	display: inline-block; 
@@ -87,14 +125,13 @@ main {
 
 	header {
 		background-color: $main-header-color;
-		margin-bottom: 10px; 
 		text-align: center;
 		@include border-radius(10px); 
 
 		h1 {
 			font-size: 24px;
 			font-weight: bold; 
-			padding: 10px 0 10px 0; 
+			padding: 10px 0; 
 		}
 
 		h2 {
@@ -106,11 +143,28 @@ main {
 
 	footer {
 		background-color: $footer-color; 
-		margin-top: 10px;
-		padding: 10px 10px 10px 10px; 
+		padding: 10px; 
 		@include border-radius(10px); 
 	}
 }
+
+@media screen and (max-width: 990px) {
+	.blog-section-container {
+		width: 100%;
+
+		header {
+			@include border-radius(0);
+		}
+
+		footer {
+			@include border-radius(0); 
+		}
+	 }	
+}
+
+/*----------------------------------------------------*/
+/* BLOG SECTION (POSTS ONLY) */
+/*----------------------------------------------------*/
 
 .post-container {
 	text-align: center;
@@ -120,7 +174,8 @@ main {
 		display: inline-block;
 		width: 30%;
 		vertical-align: top; /* it worked! */
-		padding: 10px 10px 10px 10px; 
+		margin: 10px 0; 
+		padding: 10px; 
 	}
 }
 
@@ -143,5 +198,20 @@ main {
 	}
 	p {
 		padding: 8px 0; 
+	}
+}
+
+@media screen and (max-width: 990px) {
+	#post-3 {
+		width: 45%;
+		margin-right: 5px;
+	}
+	#post-2 {
+		width: 45%;
+		margin-left: 5px; 
+	}
+	#post-1 {
+		width: 94%;
+		margin-top: 0;
 	}
 }

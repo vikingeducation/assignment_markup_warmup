@@ -1,27 +1,48 @@
+/*----------------------------------------------------*/
+/* VARIABLES & MIXINS */
+/*----------------------------------------------------*/
 /* Colors */
 /* Sizes */
-/* Note that $ad-container-width + $blog-section-container-width < $main-width */
 /* Mixins */
+/*----------------------------------------------------*/
+/* BODY */
+/*----------------------------------------------------*/
 body {
   background-color: #FFF;
   font-family: "Roboto", sans-serif; }
 
+/*----------------------------------------------------*/
+/* NAVBAR */
+/*----------------------------------------------------*/
 nav {
   background-color: #FFE599;
-  position: absolute;
+  position: fixed;
+  /* unlike absolute, keeps nav on top while scrolling */
   top: 0;
   left: 0;
   width: 100%;
   height: 49px;
   line-height: 49px; }
   nav h1 {
+    font-size: 18px;
     margin-left: 49px; }
 
+/*----------------------------------------------------*/
+/* MAIN CONTENT (AD SPACE + BLOG POST SECTION) */
+/*----------------------------------------------------*/
 main {
   width: 990px;
   margin: 0 auto;
+  /* horizontally center */
   margin-top: 10px; }
 
+@media screen and (max-width: 990px) {
+  main {
+    width: 100%;
+    margin-top: 0px; } }
+/*----------------------------------------------------*/
+/* AD SPACE */
+/*----------------------------------------------------*/
 .ad-container {
   background-color: #D5A6BD;
   width: 210px;
@@ -31,8 +52,14 @@ main {
   margin-top: 49px;
   text-align: center;
   /* horizontal centering */
-  position: relative; }
+  position: relative;
+  /* needed to vertically center .ad-content */
+  z-index: -1;
+  /* prevent overlapping over navbar */ }
 
+@media screen and (max-width: 990px) {
+  .ad-container {
+    display: none; } }
 .ad-content {
   /* vertical centering */
   position: absolute;
@@ -45,6 +72,9 @@ main {
     height: 168px;
     border: 1px solid black; }
 
+/*----------------------------------------------------*/
+/* BLOG SECTION (INCLUDES HEAD + FOOT) */
+/*----------------------------------------------------*/
 .blog-section-container {
   width: 760px;
   display: inline-block;
@@ -53,7 +83,6 @@ main {
   margin-top: 49px; }
   .blog-section-container header {
     background-color: #B6D7A8;
-    margin-bottom: 10px;
     text-align: center;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -62,20 +91,35 @@ main {
     .blog-section-container header h1 {
       font-size: 24px;
       font-weight: bold;
-      padding: 10px 0 10px 0; }
+      padding: 10px 0; }
     .blog-section-container header h2 {
       font-size: 20px;
       font-style: italic;
       padding: 0 0 10px 0; }
   .blog-section-container footer {
     background-color: #9FC5F8;
-    margin-top: 10px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px; }
 
+@media screen and (max-width: 990px) {
+  .blog-section-container {
+    width: 100%; }
+    .blog-section-container header {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0; }
+    .blog-section-container footer {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0; } }
+/*----------------------------------------------------*/
+/* BLOG SECTION (POSTS ONLY) */
+/*----------------------------------------------------*/
 .post-container {
   text-align: center; }
   .post-container article {
@@ -84,7 +128,8 @@ main {
     width: 30%;
     vertical-align: top;
     /* it worked! */
-    padding: 10px 10px 10px 10px; }
+    margin: 10px 0;
+    padding: 10px; }
 
 .post-header h1 {
   font-size: 20px;
@@ -99,5 +144,18 @@ main {
     font-weight: bold; }
   .post-content p {
     padding: 8px 0; }
+
+@media screen and (max-width: 990px) {
+  #post-3 {
+    width: 45%;
+    margin-right: 5px; }
+
+  #post-2 {
+    width: 45%;
+    margin-left: 5px; }
+
+  #post-1 {
+    width: 94%;
+    margin-top: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
