@@ -4,7 +4,8 @@ nav {
   line-height: 50px;
   font-size: 30px;
   white-space: nowrap;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  padding-left: 20px; }
 
 aside {
   float: left;
@@ -13,6 +14,9 @@ aside {
   background-color: #D5A6BD;
   border: 1px solid black;
   position: relative; }
+  aside h1 {
+    font-weight: bold;
+    margin: 2px; }
   aside img {
     width: 175px;
     margin: 5px; }
@@ -25,26 +29,63 @@ aside {
 
 main {
   width: 990px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: Helvetica, Arial, Sans-Serif; }
 
 header {
   background-color: #B6D7A8;
-  border: 1px solid black; }
+  border: 1px solid black;
+  width: 75%;
+  margin-left: 232px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px; }
+  header h1 {
+    font-size: 24px;
+    font-weight: bold; }
+  header h2 {
+    font-size: 20px;
+    margin: 5px; }
 
 .binder {
   display: flex;
   justify-content: center; }
+  .binder > :nth-child(1) {
+    height: 400px; }
+  .binder > :nth-child(2) {
+    height: 280px; }
+  .binder > :nth-child(3) {
+    height: 300px; }
 
 article {
   display: inline-block;
-  width: 225px;
-  height: 400px;
+  width: 32%;
   margin: 5px;
   background-color: #A2C4C9;
-  border: 1px solid black; }
+  border: 1px solid black;
+  overflow: hidden;
+  padding: 5px 10px 35px 10px;
+  box-sizing: border-box; }
+  article .time {
+    text-align: center; }
+  article h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0; }
+  article h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0; }
 
 footer {
+  clear: all;
+  display: block;
   background-color: #A2C4C9;
-  border: 1px solid black; }
+  border: 1px solid black;
+  width: 75%;
+  margin-left: 232px;
+  border-radius: 10px;
+  padding: 5px 10px; }
 
 /*# sourceMappingURL=styles.css.map */
