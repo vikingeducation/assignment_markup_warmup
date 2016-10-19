@@ -45,4 +45,63 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* SASS VARIABLES AND MIXINS
+====================== */
+/* MY STYLES
+====================== */
+body {
+  font: 18px arial, sans-serif;
+  margin-top: 50px; }
+
+.container {
+  width: 990px;
+  margin: 0 auto; }
+
+header {
+  background: #FFE599;
+  padding: 5px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+header h2 {
+  font-size: 23.4px; }
+
+main {
+  width: 80%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: 12px; }
+
+.title {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  background: #B6D7A8;
+  padding: 10px; }
+
+.title h1 {
+  font-size: 36px;
+  margin-bottom: 10px; }
+
+.title p {
+  font-style: italic;
+  font-size: 18px; }
+
+article {
+  background: #A2C4C9; }
+
+aside {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top; }
+
+.ad {
+  background: #D5A6BD; }
+
+footer {
+  background: #9FC5F8; }
+
 /*# sourceMappingURL=styles.css.map */

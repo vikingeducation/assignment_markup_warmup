@@ -47,3 +47,82 @@ table {
   border-spacing: 0;
 }
 
+/* SASS VARIABLES AND MIXINS
+====================== */
+$base-font-size: 18px;
+$default-font-stack: arial, sans-serif;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+/* MY STYLES
+====================== */
+body { 
+  font: $base-font-size/1 $default-font-stack; 
+  margin-top: 50px;
+}
+
+.container { 
+  width: 990px; 
+  margin: 0 auto; 
+}
+
+header { 
+  background: #FFE599;
+  padding: 5px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header h2 { font-size: $base-font-size * 1.3;}
+
+main {
+  width: 80%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: 12px;
+}
+
+.title { 
+  @include border-radius(10px);
+  background: #B6D7A8;
+  padding: 10px;
+}
+.title h1 {
+  font-size: $base-font-size * 2;
+  margin-bottom: 10px;
+}
+.title p { 
+  font-style: italic;
+  font-size: $base-font-size;
+}
+
+article { 
+  background: #A2C4C9;
+}
+article h1 { }
+article time { }
+article h2 { }
+article p { }
+
+aside { 
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+}
+.ad { 
+  background: #D5A6BD;
+}
+.ad-content { }
+.ad-content h2 { }
+.ad-content img { }
+
+footer {
+  background: #9FC5F8;
+}
+footer p { }
