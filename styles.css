@@ -171,4 +171,44 @@ footer {
   -ms-border-radius: 10px;
   border-radius: 10px; }
 
+@media (max-width: 990px) {
+  .container {
+    width: 100%; }
+
+  aside {
+    display: none; }
+
+  main {
+    width: 100%;
+    text-align: center; }
+
+  body {
+    margin-top: 33px; }
+
+  .title {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0; }
+
+  article {
+    width: calc(50% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left; }
+
+  article:first-of-type {
+    margin-right: 0; }
+
+  article:last-of-type {
+    width: calc(100% - 30px);
+    margin-left: 10px;
+    margin-right: 10px; }
+
+  footer {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0; } }
+
 /*# sourceMappingURL=styles.css.map */
