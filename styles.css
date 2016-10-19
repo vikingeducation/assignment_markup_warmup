@@ -50,7 +50,7 @@ table {
 /* MY STYLES
 ====================== */
 body {
-  font: 18px arial, sans-serif;
+  font: 14px arial, sans-serif;
   margin-top: 50px; }
 
 .container {
@@ -63,16 +63,16 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  border: 1px solid #333;
+  z-index: 100; }
 
 header h2 {
-  font-size: 23.4px; }
+  font-size: 18.2px; }
 
 main {
   width: 80%;
-  display: inline-block;
-  box-sizing: border-box;
-  padding-left: 12px; }
+  display: inline-block; }
 
 .title {
   -webkit-border-radius: 10px;
@@ -80,28 +80,95 @@ main {
   -ms-border-radius: 10px;
   border-radius: 10px;
   background: #B6D7A8;
-  padding: 10px; }
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  border: 1px solid #333; }
 
 .title h1 {
-  font-size: 36px;
-  margin-bottom: 10px; }
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px; }
 
 .title p {
   font-style: italic;
-  font-size: 18px; }
+  font-size: 14px; }
 
 article {
-  background: #A2C4C9; }
+  background: #A2C4C9;
+  padding: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 32%;
+  width: calc((100% / 3) - 7px);
+  vertical-align: top;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #333; }
+
+article:last-of-type {
+  margin-right: 0; }
+
+article h1 {
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold; }
+
+article time {
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 15px; }
+
+article h2 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px; }
+
+article p {
+  font-size: 14px;
+  margin-bottom: 15px; }
+
+article p:last-child {
+  margin-bottom: 0; }
 
 aside {
   width: 20%;
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: top;
+  padding-right: 12px;
+  box-sizing: border-box; }
 
 .ad {
-  background: #D5A6BD; }
+  background: #D5A6BD;
+  border: 1px solid #333;
+  height: 400px;
+  position: relative; }
+
+.ad-content {
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.ad-content h2 {
+  font-weight: bold;
+  font-size: 18.2px;
+  margin-bottom: 5px; }
+
+.ad-content img {
+  width: 100%;
+  height: auto; }
 
 footer {
-  background: #9FC5F8; }
+  background: #9FC5F8;
+  padding: 10px;
+  border: 1px solid #333;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
