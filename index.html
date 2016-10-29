@@ -1,59 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <title>The Lorem Micro Blog</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 </head>
 
 <body>
 
+
+<!------NAV------>
 <nav>
   <h3>The Lorem Micro Blog</h3>
 </nav>
 
-<ad>
+
+<div class="container">
+<!------AD------>
+<aside>
   <h4>Check out my vertically centered ad!</h4>
   <img src="#">
-</ad>
+</aside>
 
+
+<!------HEADER------>
 <header>
   <h1>The Lorem Micro Blog</h1>
   <h4>By Foo Bar</h4>
 </header>
 
-<section class="posts">
-  <article>
+
+<!------POSTS------>
+
+<section class="posts grid">
+  <article class="col-1-3">
     <h2>A Most Posty Post</h2>
-    <h4> Written <date>1/3/2000</date></h4>
+    <h4>Written <date>1/3/2000</date></h4>
+    <h5>First Thoughts</h5>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </article>
-  <article>
+    <h5>First Thoughts</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </article><!--
+  --><article class="col-1-3">
     <h2>Another Posty Post</h2>
     <h4> Written <date>1/3/2000</date></h4>
+   <h5>Only Thoughts</h5>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </article>
-  <article>
+  </article><!--
+  --><article class="col-1-3">
     <h2>A Posty Post</h2>
     <h4> Written <date>1/3/2000</date></h4>
+    <h5>Be It Resolved</h5>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
   </article>
 </section>
+
+
+<!------FOOTER------>
 
 <footer>
   <p>This copyrighted telecast is presented by authority of the Office of the Commissioner of Blogging. It may not be reproduced or retronsmitted in any form, and the accounts and description of this game may not be disseminated, without express written consent.</p>
 </footer>
+
+</div>
 </body>
 </html>
