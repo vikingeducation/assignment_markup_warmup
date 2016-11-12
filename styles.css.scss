@@ -37,14 +37,18 @@ aside {
   background-color: #D5A6BD;
   width: 20%;
   height: 400px;
-  position: relative;
   vertical-align: top;
-  text-align: center;
 
   .ad {
-    position: absolute;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
+    text-align: center;
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.2em;
+    }
 
     img {
       margin-top: 15px;
