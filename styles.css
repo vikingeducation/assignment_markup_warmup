@@ -1,3 +1,25 @@
+* {
+  box-sizing: border-box; }
 
+nav, aside, .main-header, article, footer {
+  border: 3px solid black;
+  padding: 50px 50px; }
+
+nav {
+  background-color: #FFE599;
+  border-radius: 10px; }
+
+aside {
+  background-color: #D5A6BD; }
+
+.main-header {
+  background-color: #B6D7A8; }
+
+article {
+  background-color: #A2C4C9; }
+
+footer {
+  background-color: #9FC5F8;
+  border-radius: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
