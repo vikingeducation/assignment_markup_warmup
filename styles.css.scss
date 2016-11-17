@@ -1,28 +1,40 @@
-header{
-	background-color: yellow; 
+$default-border: 2px solid black; 
+$default-margin: 20px;
+
+
+.page-banner{
+	background-color: #EBDD84; 
+}
+
+main{ 
+	max-width: 60%;
 }
 
 aside{
-	background-color: pink; 
+	background-color: #FC83B2; 
+	max-width: 20%;
+	border: $default-border; 
+	margin: $default-margin; 
 }
 
-main{
-	background-color: grey; 
-	max-width: 60%; 
-	
-	header{
-		background-color: #CCF7B5; 
-	}
-	
-	section{
-		background-color: #F7DCB5; 
-		article{ 
-			background-color: #619B41; 
-		}
-	}
+.blog-header{
+	background-color: #A5F7D0; 
+	border: $default-border;
+	margin: $default-margin; 
 }
 
+article{ 
+	background-color: #3AB22F; 
+	border: $default-border;
+	margin: $default-margin;
+
+	.post-date{ 
+		font-style: italic; 
+	}
+}
 
 footer{
-	background-color: blue; 
+	background-color: #8399AB; 
+	border: $default-border;
+	margin: $default-margin; 
 }

@@ -1,20 +1,30 @@
-header {
-  background-color: yellow; }
-
-aside {
-  background-color: pink; }
+.page-banner {
+  background-color: #EBDD84; }
 
 main {
-  background-color: grey;
   max-width: 60%; }
-  main header {
-    background-color: #CCF7B5; }
-  main section {
-    background-color: #F7DCB5; }
-    main section article {
-      background-color: #619B41; }
+
+aside {
+  background-color: #FC83B2;
+  max-width: 20%;
+  border: 2px solid black;
+  margin: 20px; }
+
+.blog-header {
+  background-color: #A5F7D0;
+  border: 2px solid black;
+  margin: 20px; }
+
+article {
+  background-color: #3AB22F;
+  border: 2px solid black;
+  margin: 20px; }
+  article .post-date {
+    font-style: italic; }
 
 footer {
-  background-color: blue; }
+  background-color: #8399AB;
+  border: 2px solid black;
+  margin: 20px; }
 
 /*# sourceMappingURL=styles.css.map */
