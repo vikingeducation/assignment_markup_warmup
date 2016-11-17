@@ -1,0 +1,20 @@
+header {
+  background-color: yellow; }
+
+aside {
+  background-color: pink; }
+
+main {
+  background-color: grey;
+  max-width: 60%; }
+  main header {
+    background-color: #CCF7B5; }
+  main section {
+    background-color: #F7DCB5; }
+    main section article {
+      background-color: #619B41; }
+
+footer {
+  background-color: blue; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,28 @@
+header{
+	background-color: yellow; 
+}
+
+aside{
+	background-color: pink; 
+}
+
+main{
+	background-color: grey; 
+	max-width: 60%; 
+	
+	header{
+		background-color: #CCF7B5; 
+	}
+	
+	section{
+		background-color: #F7DCB5; 
+		article{ 
+			background-color: #619B41; 
+		}
+	}
+}
+
+
+footer{
+	background-color: blue; 
+}
