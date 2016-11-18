@@ -53,4 +53,22 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+/*
+    Custom styles
+*/
+.main-header {
+  background-color: #FFE599; }
+
+.ad-bar {
+  background-color: #D5A6BD; }
+
+.content-header {
+  background-color: #B6D7A8; }
+
+.post {
+  background-color: #A2C4C9; }
+
+.content-footer {
+  background-color: #9FC5F8; }
+
 /*# sourceMappingURL=styles.css.map */
