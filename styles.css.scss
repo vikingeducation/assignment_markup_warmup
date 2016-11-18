@@ -66,20 +66,54 @@ html {
 
 .main-header {
   background-color: #FFE599;
+  position: fixed;
+  height: 3em;
+  width: 100%;
+
+  h1 {
+    padding: 0.7em 0.5em;
+    font: 1.2em Arial, Sans-Serif;
+  }
+}
+
+.page-wrapper {
+  /* clear the fixed header */
+  padding-top: 4em;
+  width: 990px;
+  margin: 0 auto;
 }
 
 .ad-bar {
   background-color: #D5A6BD;
+  height: 500px;
+  width: 33%;
+  float: left;
+}
+
+.content-wrapper {
+  width: 66%;
+  float: right;
 }
 
 .content-header {
   background-color: #B6D7A8;
+  margin-bottom: 1em;
+}
+
+.post-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .post {
   background-color: #A2C4C9;
+  width: 32.5%;
+  padding: 1em;
 }
 
 .content-footer {
   background-color: #9FC5F8;
+  margin-top: 1em;
 }
