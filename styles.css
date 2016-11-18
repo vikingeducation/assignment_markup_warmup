@@ -46,23 +46,51 @@ main {
 
 .blog-header {
   background-color: #b6d7a8;
-  border: 3px solid black; }
+  border: 3px solid black;
+  border-radius: 17px;
+  text-align: center;
+  padding: 10px;
+  line-height: 200%; }
+  .blog-header h1 {
+    font-size: larger;
+    font-weight: bold; }
+  .blog-header p {
+    font-style: italic; }
 
 article {
   background-color: #a2c4c9;
   border: 3px solid black;
-  margin: 10px;
-  width: 30%;
-  float: left; }
+  margin: 10px 3px;
+  width: 29%;
+  padding: 12px;
+  float: left;
+  font-size: small; }
   article header {
-    text-align: center; }
+    text-align: center;
+    line-height: 140%;
+    margin: 4px; }
+  article h2 {
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 1px; }
   article .post-date {
-    font-style: italic; }
+    font-size: smaller;
+    letter-spacing: -1px; }
+  article h3 {
+    font-weight: bold;
+    line-height: 160%;
+    margin: 5px auto; }
+
+p.small-content {
+  letter-spacing: .4px;
+  font-size: smaller; }
 
 footer {
   background-color: #9fc5f8;
   border: 3px solid black;
+  border-radius: 17px;
   margin: 10px;
+  padding: 5px;
   clear: left; }
 
 /*# sourceMappingURL=styles.css.map */
