@@ -7,15 +7,19 @@ body {
 
 .page-banner {
   background-color: #ffe599;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
   border: 3px solid black; }
   .page-banner p {
     padding: 15px;
     font-size: large; }
 
 .all-the-things {
-  height: 100%;
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 60px; }
 
 aside {
   position: relative;
@@ -24,7 +28,7 @@ aside {
   border: 3px solid black;
   margin: 10px;
   float: left;
-  height: 75%; }
+  height: 450px; }
   aside .advertisment {
     position: absolute;
     top: 50%;
@@ -33,7 +37,9 @@ aside {
   aside p {
     text-align: center;
     line-height: 130%;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    font-size: small;
+    font-weight: 600; }
   aside img {
     display: block;
     width: 85%;
