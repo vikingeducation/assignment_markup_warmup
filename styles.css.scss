@@ -64,6 +64,10 @@ html {
     Custom styles
 */
 
+body {
+  font-family: Arial, Sans-Serif;
+}
+
 .main-header {
   background-color: #FFE599;
   position: fixed;
@@ -72,7 +76,7 @@ html {
 
   h1 {
     padding: 0.7em 0.5em;
-    font: 1.2em Arial, Sans-Serif;
+    font-size: 1.2em;
   }
 }
 
@@ -86,9 +90,27 @@ html {
 
 .ad-bar {
   background-color: #D5A6BD;
+  display: flex;
   height: 500px;
   width: 25%;
   float: left;
+
+  .ad-wrapper {
+    margin: auto;
+    width: 80%;
+
+    .ad-copy {
+      font-size: 1.2em;
+      text-align: center;
+      padding-bottom: 0.5em;
+    }
+
+    .ad {
+      height: 200px;
+      width: 100%;
+      background-color: white;
+    }
+  }
 }
 
 .content-wrapper {
