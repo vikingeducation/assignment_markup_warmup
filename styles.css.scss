@@ -165,6 +165,8 @@ body {
 
 .content-footer {
   background-color: #9FC5F8;
+  padding: 0.5em 1em;
+  margin-bottom: 0.2em;
 }
 
 .rounded-corners {
@@ -206,6 +208,10 @@ body {
 
   .post:nth-child(3) {
     width: 100%;
+  }
+
+  .content-footer {
+    margin-bottom: 0;
   }
 
   .rounded-corners {
