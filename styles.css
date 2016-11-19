@@ -99,7 +99,7 @@ body {
 
 .content-header {
   background-color: #B6D7A8;
-  height: 100px;
+  min-height: 100px;
   text-align: center;
   padding: 2em; }
   .content-header h2 {

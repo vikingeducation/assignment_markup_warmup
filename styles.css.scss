@@ -136,7 +136,7 @@ body {
 
 .content-header {
   background-color: $content-header-bg-color;
-  height: 100px;
+  min-height: 100px;
   text-align: center;
   padding: 2em;
 
