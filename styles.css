@@ -1,0 +1,100 @@
+html {
+  height: 100%; }
+
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  height: 100%; }
+
+.page-banner {
+  background-color: #ffe599;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  border: 3px solid black; }
+  .page-banner p {
+    padding: 15px;
+    font-size: large; }
+
+.all-the-things {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 60px; }
+
+aside {
+  position: relative;
+  background-color: #d5a6bd;
+  width: 20%;
+  border: 3px solid black;
+  margin: 8px;
+  float: left;
+  height: 450px; }
+  aside .advertisment {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 5px; }
+  aside p {
+    text-align: center;
+    line-height: 130%;
+    margin-bottom: 5px;
+    font-size: small;
+    font-weight: 600; }
+  aside img {
+    display: block;
+    width: 85%;
+    margin: auto; }
+
+main {
+  width: 75%;
+  float: left;
+  margin: 8px; }
+
+.blog-header {
+  background-color: #b6d7a8;
+  border: 3px solid black;
+  border-radius: 17px;
+  text-align: center;
+  padding: 10px;
+  line-height: 200%; }
+  .blog-header h1 {
+    font-size: larger;
+    font-weight: bold; }
+  .blog-header p {
+    font-style: italic; }
+
+article {
+  background-color: #a2c4c9;
+  border: 3px solid black;
+  margin: 8px 3px;
+  width: 29%;
+  padding: 12px;
+  float: left;
+  box-sizing: border-box;
+  font-size: small; }
+  article header {
+    text-align: center;
+    line-height: 140%;
+    margin: 4px; }
+  article h2 {
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 1px; }
+  article .post-date {
+    font-size: smaller;
+    letter-spacing: -1px; }
+  article h3 {
+    font-weight: bold;
+    line-height: 160%;
+    margin: 5px auto; }
+
+footer {
+  background-color: #9fc5f8;
+  border: 3px solid black;
+  border-radius: 17px;
+  margin: 8px;
+  padding: 5px;
+  clear: left;
+  font-size: small; }
+
+/*# sourceMappingURL=styles.css.map */
