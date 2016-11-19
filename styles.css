@@ -1,7 +1,8 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/*
+ *  http://meyerweb.com/eric/tools/css/reset/
+ *  v2.0 | 20110126
+ *  License: none (public domain)
+ */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,8 +55,8 @@ html {
   box-sizing: inherit; }
 
 /*
-    Custom styles
-*/
+ *  Custom styles
+ */
 body {
   font-family: Arial, Sans-Serif; }
 
@@ -69,7 +70,6 @@ body {
     font-size: 1.2em; }
 
 .page-wrapper {
-  /* clear the fixed header */
   padding-top: 4em;
   width: 80%;
   max-width: 990px;
@@ -114,6 +114,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start; }
+  .post-grid p {
+    margin-bottom: 1em; }
 
 .post {
   background-color: #A2C4C9;
@@ -137,12 +139,9 @@ body {
 .rounded-corners {
   border-radius: 20px; }
 
-p {
-  margin-bottom: 1em; }
-
 /*
-    Responsive styles
-*/
+ *  Responsive styles
+ */
 @media screen and (max-width: 990px) {
   .page-wrapper {
     width: 100%;
