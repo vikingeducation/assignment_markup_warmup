@@ -146,6 +146,21 @@ body {
   background-color: #A2C4C9;
   width: 32.5%;
   padding: 1em;
+
+  header {
+    text-align: center;
+
+    h1 {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 0.2em;
+    }
+  }
+
+  h2 {
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+  }
 }
 
 .content-footer {
