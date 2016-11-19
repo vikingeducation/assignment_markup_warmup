@@ -25,12 +25,13 @@ body{
 
 .all-the-things{ 
 	// height: 100%;
-	width: 80%; 
-	margin: 0 auto;
-	margin-top: 60px; 
+	// width: 80%; 
+	// margin: 0 auto;
+	margin-top: 52px; 
 }
 
 aside{
+	display: none; 
 	position: relative; 
 	background-color: #d5a6bd; 
 	width: 20%;
@@ -63,15 +64,14 @@ aside{
 
 
 main  { 
-	width: 75%;
-	float: left; 
-	margin: $default-margin; 
+	// width: 75%;
+	// float: left; 
+	// margin: $default-margin; 
 }
 
 .blog-header{
 	background-color: #b6d7a8; 
 	border: $default-border;
-	border-radius: 17px; 
 	text-align: center; 
 	padding: 10px; 
 	line-height: 200%; 
@@ -88,7 +88,8 @@ article{
 	background-color: #a2c4c9; 
 	border: $default-border;
 	margin: $default-margin 3px;
-	width: 49%; 
+	width: 29%; 
+	min-width:
 	padding: 12px; 
 	float: left; 
 	box-sizing: border-box; 
@@ -121,8 +122,6 @@ article{
 footer{
 	background-color: #9fc5f8; 
 	border: $default-border;
-	border-radius: 17px;
-	margin: $default-margin; 
   padding: 5px;
 	clear: left; 
 	font-size: small; 
