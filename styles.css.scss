@@ -1,0 +1,247 @@
+/*
+ *  http://meyerweb.com/eric/tools/css/reset/
+ *  v2.0 | 20110126
+ *  License: none (public domain)
+ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* "borrowed" from https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+/*
+ *  Custom styles
+ */
+
+$main-header-bg-color: #FFE599;
+$ad-bar-bg-color: #D5A6BD;
+$content-header-bg-color: #B6D7A8;
+$post-bg-color: #A2C4C9;
+$footer-bg-color: #9FC5F8;
+
+$header-height: 3em;
+
+$large-text: 1.2em;
+
+body {
+  font-family: Arial, Sans-Serif;
+}
+
+.main-header {
+  background-color: $main-header-bg-color;
+  position: fixed;
+  height: $header-height;
+  width: 100%;
+
+  h1 {
+    padding: 0.7em 0.5em;
+    font-size: $large-text;
+  }
+}
+
+.page-wrapper {
+  padding-top: $header-height + 1em;
+  width: 80%;
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+.ad-bar {
+  background-color: $ad-bar-bg-color;
+  display: flex;
+  height: 500px;
+  width: 25%;
+  float: left;
+
+  .ad-wrapper {
+    margin: auto;
+    width: 80%;
+
+    .ad-copy {
+      font-size: $large-text;
+      text-align: center;
+      padding-bottom: 0.5em;
+    }
+
+    .ad {
+      height: 200px;
+      width: 100%;
+      background-color: white;
+    }
+  }
+}
+
+.content-wrapper {
+  width: 74%;
+  float: right;
+}
+
+.content-header {
+  background-color: $content-header-bg-color;
+  min-height: 100px;
+  text-align: center;
+  padding: 2em;
+
+  h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: $large-text;
+  }
+}
+
+.post-grid {
+  padding: 2% 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  p {
+    margin-bottom: 1em;
+  }
+}
+
+.post {
+  background-color: $post-bg-color;
+  width: 32.5%;
+  padding: 1em;
+
+  header {
+    text-align: center;
+
+    h1 {
+      font-size: $large-text;
+      font-weight: bold;
+      margin-bottom: 0.2em;
+    }
+  }
+
+  h2 {
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+  }
+}
+
+.content-footer {
+  background-color: $footer-bg-color;
+  padding: 0.5em 1em;
+  margin-bottom: 0.2em;
+}
+
+.rounded-corners {
+  border-radius: 20px;
+}
+
+
+
+/*
+ *  Responsive styles
+ */
+
+@media screen and (max-width: 990px) {
+  .page-wrapper {
+    width: 100%;
+    padding-top: $header-height;
+  }
+
+  .ad-bar {
+    display: none;
+  }
+
+  .content-wrapper {
+    width: 100%;
+    float: none;
+  }
+
+  .content-header {
+    margin-bottom: 0;
+  }
+
+  .post-grid {
+    padding: 1% 2%;
+  }
+
+  .post {
+    width: 49.5%;
+    margin-top: 10px;
+  }
+
+  .post:nth-child(3) {
+    width: 100%;
+  }
+
+  .content-footer {
+    margin-bottom: 0;
+  }
+
+  .rounded-corners {
+    border-radius: initial;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .post {
+    width: 100%;
+  }
+}
