@@ -58,7 +58,7 @@ header {
   height: 50px;
   line-height: 50px;
   border-bottom: 2px solid black;
-  margin-bottom: .8%; }
+  position: fixed; }
   header h2 {
     margin-left: 20px;
     font-size: 20px;
@@ -71,7 +71,10 @@ aside {
   float: left;
   margin-left: 8%;
   margin-right: .4%;
-  height: 45%; }
+  height: 450px;
+  margin-top: calc(50px + .8%); }
+  aside img {
+    width: 150px; }
 
 footer {
   background: #9FC5F8;
@@ -79,26 +82,57 @@ footer {
   width: 68.2%;
   margin-right: 8%;
   border: 2px solid black;
-  padding: 15px; }
+  padding: 15px;
+  margin-bottom: 3px;
+  border-radius: 20px; }
 
 main {
   width: 68.2%;
   float: right;
   margin-right: 8%;
   margin-bottom: 10px;
-  margin-left: .4%; }
+  margin-left: .4%;
+  margin-top: calc(50px + .8%); }
   main section div {
     background: #B6D7A8;
     border: 2px solid black;
-    margin-bottom: .6%; }
+    margin-bottom: .8%;
+    padding: 30px 0;
+    border-radius: 30px;
+    line-height: 40px; }
+    main section div h1 {
+      text-align: center;
+      font-weight: bold;
+      font-size: 40px; }
+    main section div h2 {
+      text-align: center;
+      font-style: italic;
+      font-size: 30px; }
   main section article {
     background: #A2C4C9;
     border: 2px solid black;
     display: inline-block;
     width: 32.8%;
     margin-right: .8%;
-    padding: 15px;
-    vertical-align: top; }
+    padding: 18px;
+    vertical-align: top;
+    line-height: 20px; }
+    main section article h1 {
+      font-size: 25px;
+      text-align: center;
+      font-weight: bold;
+      padding: 5px; }
+    main section article p:first-of-type {
+      font-size: 18px;
+      text-align: center;
+      padding: 5px; }
+    main section article h2 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      margin-top: 20px; }
+    main section article p {
+      margin-bottom: 12px; }
   main section article:nth-child(4) {
     margin-right: 0; }
 
