@@ -48,7 +48,7 @@ table {
 /* Variables */
 /* Defaults */
 body {
-  font-family: sans-serif;
+  font-family: 'Comic Sans', sans-serif;
   color: #333; }
 
 h1 {
@@ -180,5 +180,8 @@ footer {
 
   :not(:first-child) {
     margin-right: 0; } }
+@media screen and (max-width: 415px) {
+  article {
+    min-width: calc(100% - 10px); } }
 
 /*# sourceMappingURL=style.css.map */
