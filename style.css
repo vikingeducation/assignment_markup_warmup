@@ -93,6 +93,10 @@ h3 {
 .main {
   float: right;
   width: calc(100% - 30% - 20px); }
+  .main-header {
+    background-color: #b6d7a8;
+    border: 1px solid #333;
+    padding: 20px; }
 
 /* Utility Classes */
 .text-center {
