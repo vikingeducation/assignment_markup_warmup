@@ -47,14 +47,25 @@ table {
 	border-spacing: 0;
 }
 
+/* Variables */
+$base-font-size: 16px;
+
 /* Defaults */
 body {
 	font-family: sans-serif;
 	color: #333;
 }
 h1 {
-	font-weight: bold;
-	font-size: 24px;
+	font-size: 33px;
+  	line-height: 42px;
+}
+h2 {
+	 font-size: 25px;
+  line-height: 42px;
+}
+h3 {
+	 font-size: 19px;
+  line-height: 21px;
 }
 
 /* Nav bar */
@@ -76,22 +87,23 @@ h1 {
 	height:300px;
 	background-color: #D5A6BD;
 	padding: 20px;
-	width: calc(.3 * 990px);
+  width: 30%;
+  border: 1px solid #333;
+}
+
+/* Inner Wrapper */
+.inner-wrapper {
+  max-width:990px;
+  margin: 80px auto;
 }
 
 /* Main */
 .main {
-	margin:60px auto;
-	max-width: 990px;
-	overflow: hidden;
+  float: right;
+  width: calc(100% - 30% - 20px);
 }
 
-/* Main content */
-.content {
-	width: calc(.7 * 990px - 20px );
-	float:right;
-}
-
-article {
-	display:inline-block;
+/* Utility Classes */
+.text-center {
+  text-align: center;
 }
