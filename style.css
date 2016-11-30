@@ -98,6 +98,12 @@ h3 {
     border: 1px solid #333;
     padding: 20px; }
 
+/* Footer */
+footer {
+  background-color: #9FC5F8;
+  padding: 20px;
+  border: 1px solid #333; }
+
 /* Utility Classes */
 .text-center {
   text-align: center; }
