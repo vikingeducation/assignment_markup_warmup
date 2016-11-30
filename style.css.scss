@@ -92,6 +92,7 @@ h3 {
 	height:400px;
 	background-color: #D5A6BD;
   width: 250px;
+  text-align: center;
   @include box();
   position:relative;
 }
@@ -99,9 +100,10 @@ h3 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  width: 200px;
 }
 #ad {
-  background: #000;
+  background: #fff;
   width: 200px;
   height:200px;
 }
@@ -120,6 +122,7 @@ h3 {
 
   &-header {
     background-color: #b6d7a8;
+    text-align:center;
    @include box();
     border-radius: 10px;
 
@@ -204,7 +207,3 @@ footer {
 
 }
 
-/* Utility Classes */
-.text-center {
-  text-align: center;
-}
