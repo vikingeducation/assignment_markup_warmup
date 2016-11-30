@@ -70,8 +70,7 @@ h2 {
 }
 h3 {
 	 font-size: 19px;
-  line-height: 21px;
-  margin-bottom:21px;
+    line-height: 21px;
 }
 
 /* Nav bar */
@@ -90,16 +89,28 @@ h3 {
 /* Advertisement */
 .sidebar {
 	float:left;
-	height:300px;
+	height:400px;
 	background-color: #D5A6BD;
   width: 250px;
   @include box();
+  position:relative;
+}
+.sidebar-ad {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#ad {
+  background: #000;
+  width: 200px;
+  height:200px;
 }
 
 /* Inner Wrapper */
 .inner-wrapper {
   max-width:1100px;
-  margin: 80px auto;
+  margin: 70px auto;
+  padding:10px;
 }
 
 /* Main */
@@ -111,21 +122,31 @@ h3 {
     background-color: #b6d7a8;
    @include box();
     border-radius: 10px;
+
+      h3 {
+        font-style: italic;
+      }
   }
 }
 
 /* Article */
-.article-wrap::after {
+.article-wrap::after, .nav-top::after {
   clear:both;
   display:block;
   content: " ";
 }
+
 article {
   width: calc(33.333% - 20px/3);
   float: left;
   background-color: #A2C4C9;
   margin: 10px 10px 0 0;
   @include box();
+
+  h3 {
+      margin-bottom:21px;
+      margin-top:21px;
+  }
 
   &:last-of-type {
     margin-right:0;
@@ -140,7 +161,6 @@ article {
   text-align:center;
 }
 
-
 /* Footer */
 footer {
   background-color: #9FC5F8;
@@ -149,6 +169,40 @@ footer {
   border-radius: 10px;
 }
 
+/* Styles for screens < 990px wide */
+@media screen and (max-width: 990px){
+  .sidebar {
+    display: none;
+  }
+  .main {
+    width:100%;
+  }
+  .main-header {
+    width:100%; 
+    margin: 0;    
+    border-radius:0;
+    border-width:0 0 2px 0;
+  }
+  .inner-wrapper {
+    margin: 60px 0;
+    padding: 0;
+  }
+  footer {
+    width:100%;
+    border-radius: 0;
+    border-width: 2px 0;
+  }
+  article {
+    min-width: calc(50% - 10px);
+  }
+   .article-wrap {
+    margin:10px;
+   }
+   :not(:first-child){
+    margin-right:0;
+   }
+
+}
 
 /* Utility Classes */
 .text-center {
