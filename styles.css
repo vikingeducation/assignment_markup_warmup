@@ -36,7 +36,13 @@ table {
   padding: 25px 50px 25px 50px;
   margin: auto; }
 
-header .main-header {
-  background: #FFE599; }
+.main-header {
+  background-color: #FFE599;
+  height: 50px;
+  border-bottom: 5px solid black; }
+  .main-header h1 {
+    font-size: 25px;
+    line-height: 50px;
+    padding-left: 15px; }
 
 /*# sourceMappingURL=styles.css.map */
