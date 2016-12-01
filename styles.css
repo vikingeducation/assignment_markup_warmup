@@ -11,7 +11,6 @@ nav {
   width: 100%;
   position: fixed;
   top: 0;
-  left: 0;
   height: 35px;
   border-bottom: 2px solid black;
   padding-left: 10px;
@@ -21,7 +20,7 @@ nav {
 aside {
   box-sizing: border-box;
   background-color: #D5A6BD;
-  width: 22%;
+  width: 20%;
   float: left;
   z-index: -1;
   height: 400px;
@@ -47,12 +46,9 @@ main {
   margin-left: 10px;
   max-width: calc(990px - 22% - 10px); }
   main header {
-    background-color: #B6D7A8;
     text-align: center;
     box-sizing: border-box;
-    height: calc((28px + 22px + 5px) * 1.5);
     padding-top: 10px;
-    border: 2px solid black;
     margin-bottom: 10px;
     border-radius: 20px; }
     main header h1 {
@@ -62,6 +58,11 @@ main {
     main header h4 {
       font-size: 22px;
       font-style: italic; }
+
+.main-header {
+  background-color: #B6D7A8;
+  height: calc((28px + 22px + 5px) * 1.5);
+  border: 2px solid black; }
 
 article {
   border: 2px solid black;
@@ -100,5 +101,37 @@ footer {
   border-radius: 20px;
   font-size: 14px;
   padding: 7px; }
+
+@media (max-width: 990px) {
+  main {
+    max-width: 100%; }
+
+  aside {
+    display: none;
+    width: 0; }
+
+  .container {
+    padding-top: 35px; }
+
+  .main-header {
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 0;
+    margin-left: -10px; }
+
+  article {
+    max-width: calc(50% - 16px); }
+
+  article:last-child {
+    clear: both;
+    max-width: 98%; }
+
+  footer {
+    clear: both;
+    max-width: 100%;
+    margin-left: -10px;
+    border: none;
+    border-top: 2px solid black;
+    border-radius: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
