@@ -74,7 +74,6 @@ article {
   background-color: #A2C4C9; }
   article header {
     background-color: #A2C4C9;
-    border: none;
     height: 60px; }
   article h2 {
     font-size: 22px;
@@ -88,7 +87,7 @@ article {
   article p {
     padding: 7px 7px 12px 7px; }
 
-.columns:last-child {
+.columns {
   margin-right: -10px; }
 
 footer {
@@ -96,7 +95,7 @@ footer {
   box-sizing: border-box;
   max-width: calc(990px - 22% - 10px);
   float: right;
-  margin-left: 10px;
+  margin-right: 20px;
   border: 2px solid black;
   border-radius: 20px;
   font-size: 14px;
@@ -107,8 +106,7 @@ footer {
     max-width: 100%; }
 
   aside {
-    display: none;
-    width: 0; }
+    display: none; }
 
   .container {
     padding-top: 35px; }
@@ -120,7 +118,7 @@ footer {
     margin-left: -10px; }
 
   article {
-    max-width: calc(50% - 16px); }
+    max-width: calc(50% - 14px); }
 
   article:last-child {
     clear: both;
@@ -129,7 +127,7 @@ footer {
   footer {
     clear: both;
     max-width: 100%;
-    margin-left: -10px;
+    margin: 0;
     border: none;
     border-top: 2px solid black;
     border-radius: 0; } }
