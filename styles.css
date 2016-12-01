@@ -32,7 +32,7 @@ table {
   border-spacing: 0; }
 
 #wrap-container {
-  width: 860px;
+  width: 960px;
   padding: 25px 50px 25px 50px;
   margin: auto; }
 
@@ -64,7 +64,7 @@ table {
 .col-3-post {
   border: 2px solid black;
   background-color: #A2C4C9;
-  width: 200px;
+  width: 20%;
   float: left;
   margin: 25px 10px 25px 10px;
   padding: 25px; }
