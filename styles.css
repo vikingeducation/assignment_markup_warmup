@@ -47,7 +47,7 @@ table {
 
 .advertisement {
   background: #D5A6BD;
-  width: 200px;
+  width: 150px;
   float: left;
   margin: 25px 10px 25px 10px;
   padding: 25px; }
@@ -57,7 +57,7 @@ table {
     text-align: center;
     text-decoration: bold; }
   .advertisement img {
-    width: 150px;
+    width: 100px;
     height: 250px;
     padding: 25px; }
 
@@ -75,6 +75,7 @@ table {
 footer {
   border: 1px solid red;
   position: fixed;
+  clear: both;
   bottom: 0; }
 
 /*# sourceMappingURL=styles.css.map */
