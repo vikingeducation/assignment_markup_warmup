@@ -1,0 +1,156 @@
+$header-height: calc((28px + 22px + 5px) * 1.5);
+$border: 2px solid black;
+
+body {
+  font-family: Helvetica;
+}
+
+.container {
+  max-width: 990px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+nav {
+  background-color: #FFE599;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 35px;
+  border-bottom: $border;
+  padding-left: 10px;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+aside {
+  box-sizing: border-box;
+  background-color: #D5A6BD;
+  width: 20%;
+  float: left;
+  z-index: -1;
+  height: 400px;
+  border: $border;
+  position: relative;
+  h3 {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+  img {
+    width: calc(100% - 20px - 4px);
+    height: 150px;
+    border: $border;
+    margin: 0 10px;
+  }
+}
+.aside-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+main {
+  float: left;
+  margin-left: 10px;
+  max-width: calc(990px - 22% - 10px);
+  header {
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      padding-bottom: 5px;
+    }
+    h4 {
+      font-size: 22px;
+      font-style: italic;
+    }
+  }
+}
+.main-header {
+  background-color: #B6D7A8;
+  height: $header-height;
+  border: $border;
+}
+
+article {
+  border: $border;
+  box-sizing: border-box;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  max-width: calc(33.3% - 10px);
+  background-color: #A2C4C9;
+  header {
+    background-color: #A2C4C9;
+    height: 60px;
+  }
+  h2 {
+    font-size: 22px;
+    padding-bottom: 5px;
+    font-weight: bold;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  h3 {
+    font-weight: bold;
+    padding-left: 7px;
+  }
+  p {
+    padding: 7px 7px 12px 7px;
+  }
+}
+
+.columns {
+  margin-right: -10px;
+}
+footer {
+  background-color: #9FC5F8;
+  box-sizing: border-box;
+  max-width: calc(990px - 22% - 10px);
+  float: right;
+  margin-right: 20px;
+  border: $border;
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 7px;
+}
+
+
+@media (max-width: 990px) {
+  main {
+    max-width: 100%;
+  }
+  aside {
+    display: none;
+  }
+  .container {
+    padding-top: 35px;
+  }
+  .main-header {
+    border: none;
+    border-bottom: $border;
+    border-radius: 0;
+    margin-left: -10px;
+  }
+  article {
+    max-width: calc(50% - 14px);
+  }
+  article:last-child {
+    clear: both;
+    max-width: 98%;
+  }
+  footer {
+    clear: both;
+    max-width: 100%;
+    margin: 0;
+    border: none;
+    border-top: $border;
+    border-radius: 0;
+  }
+}
