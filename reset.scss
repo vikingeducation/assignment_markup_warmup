@@ -7,6 +7,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
@@ -19,24 +20,16 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after {
-  content: '';
-  content: none; }
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: none; } }
 
-q:before, q:after {
-  content: '';
-  content: none; }
+q {
+  &:before, &:after {
+    content: '';
+    content: none; } }
 
 table {
   border-collapse: collapse;
   border-spacing: 0; }
-
-#wrap-container {
-  width: 90%;
-  padding: 25px 50px 25px 50px;
-  margin: auto; }
-
-header .main-header {
-  background: #FFE599; }
-
-/*# sourceMappingURL=styles.css.map */
