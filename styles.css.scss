@@ -2,8 +2,8 @@
 
 #wrap-container {
 	padding: 25px 50px 25px 50px;
-	margin-left: 25px;
-	width: 700px;
+	margin-left: 5px;
+	width: 685px;
 	float: right;
 
 }
@@ -23,7 +23,7 @@
 
 .advertisement {
 	background: #D5A6BD;
-	width: 132px;
+	width: 130px;
 	float:left;
 	margin: 25px 0 25px 10px;
 	padding: 25px;
@@ -65,6 +65,10 @@
 		font-size: 18px;
 		margin-bottom: 10px;
 	}
+
+	@media (max-width: 990px) {
+	width: 100%;
+	}
 }
 
 .col-3-post {
@@ -78,6 +82,10 @@
 		h1 {
 			font-size: 20px;
 			font-weight: bold;
+		}
+
+		@media (max-width: 990px) {
+		width: 100%;
 		}
 }
 
