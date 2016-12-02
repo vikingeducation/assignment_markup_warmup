@@ -3,7 +3,7 @@
 #wrap-container {
 	padding: 25px 50px 25px 50px;
 	margin-left: 25px;
-	width: 688px;
+	width: 700px;
 	float: right;
 
 }
@@ -23,7 +23,7 @@
 
 .advertisement {
 	background: #D5A6BD;
-	width: 122px;
+	width: 132px;
 	float:left;
 	margin: 25px 0 25px 10px;
 	padding: 25px;
@@ -41,6 +41,10 @@
 	display: block;
 	margin: auto;
 	width: 100%;
+	}
+
+	@media (max-width: 990px) {
+	display: none;
 	}
 }
 
@@ -78,8 +82,13 @@
 }
 
 footer {
-	border: 1px solid red;
 	position: relative;
 	clear: both;
 	bottom: 0;
+	background-color: #9FC5F8;
+	border-radius: 25px;
+
+	p {
+	padding: 10px;
+	}
 }
