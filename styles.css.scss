@@ -3,21 +3,19 @@
 
 
 /* 
- * Setting up containers for main content   * and headline, with media queries for     * screens under 990px
+ * Setting up containers for main content and headline, with media queries for     * screens under 990px
  */
 
 #wrap-container {
   padding: 10px 50px 25px 50px;
   margin-left: 5px;
   width: 685px;
-  float: right;
 }
 
 #wrap-headline-container {
   padding: 25px 50px 0 50px;
   margin-left: 5px;
   width: 685px;
-  float: right;
 
   @media (max-width: 990px) {
     width: 100%;
@@ -51,13 +49,12 @@
 
 
 /*
- * Left side of screen advertisement that   * disappears under 990px.
+ * Left side of screen advertisement that disappears under 990px.
  */
 
 .advertisement {
   background: #D5A6BD;
   width: 130px;
-  float:left;
   margin: 25px 0 25px 10px;
   padding: 25px;
   height: 300px;
@@ -85,9 +82,7 @@
 
 
 /*
- * Main content consisting of a headline 
- * section at the top and three articles.  
- * Articles stacked horizontally for screens * over 990px.  Third article falls under   * first two for screens under 990px.
+ * Main content consisting of a headline section at the top and three articles.Articles stacked horizontally for screens * over 990px.  Third article falls underfirst two for screens under 990px.
  */
 
 .headline {
