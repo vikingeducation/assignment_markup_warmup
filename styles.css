@@ -105,7 +105,10 @@ table {
   padding: 25px; }
   .col-3-post h1 {
     font-size: 20px;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .col-3-post p {
+    margin-bottom: 10px; }
   @media (max-width: 990px) {
     .col-3-post {
       width: 35%; } }
@@ -119,7 +122,10 @@ table {
   padding: 25px; }
   .col-3-post-right h1 {
     font-size: 20px;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .col-3-post-right p {
+    margin-bottom: 10px; }
   @media (max-width: 990px) {
     .col-3-post-right {
       width: 95%;
