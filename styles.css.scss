@@ -3,8 +3,9 @@
 #wrap-container {
 	padding: 25px 50px 25px 50px;
 	margin-left: 25px;
-	width: 90%;
-	position: relative;
+	width: 688px;
+	float: right;
+
 }
 
 .main-header {
@@ -17,37 +18,49 @@
 	line-height: 50px;
 	padding-left: 15px;
 	}
+
 }
 
 .advertisement {
 	background: #D5A6BD;
-	width: 150px;
+	width: 122px;
 	float:left;
-	margin: 25px 10px 25px 10px;
+	margin: 25px 0 25px 10px;
 	padding: 25px;
-	position: relative;
+	height: 300px;
 
 	h1 {
 		font-size: 20px;
 		vertical-align: middle;
 		text-align: center;
 		text-decoration: bold;
+		margin-bottom: 20px;
 	}
 
 	img {
-		width: 100px;
-		height: 250px;
-		padding: 25px;
-
+	display: block;
+	margin: auto;
+	width: 100%;
 	}
-
 }
 
 .headline {
 	background-color: #B6D7A8;
 	text-align: center;
 	border-radius: 25px;
-	border: 1px solid red;
+	padding: 5px 0 5px 0;
+
+	h2 {
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+
+	p {
+		font-style: italic;
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
 }
 
 .col-3-post {
