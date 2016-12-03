@@ -64,6 +64,7 @@ body {
 .article-wrapper {
   display: flex;
   flex: 3;
+  flex-wrap: wrap;
   height: 800px;
   background-color: green; }
   @media (max-width: 989px) {
