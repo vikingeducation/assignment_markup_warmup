@@ -1,12 +1,11 @@
 @import 'reset';
 
 body {
-  background-color: #666;
   max-width: 990px;
 }
 
 .main-header {
-  background-color: red;
+  background-color: #FFE599;
   width: 100%;
   max-width: 990px;
   position: fixed;
@@ -24,7 +23,7 @@ body {
 
 .page-wrap {
   display: flex;
-  margin-top: 3em;
+  margin-top: 3.5em;
   width: 100%;
   max-width: 990px;
 }
@@ -32,7 +31,7 @@ body {
 .advertisement-wrapper {
   flex: 1;
   display: flex;
-  background-color: pink;
+  background-color: #D5A6BD;
 
   h1 {
     font-size: 1.5em;
@@ -58,7 +57,6 @@ body {
   flex: 3;
   flex-wrap: wrap;
   align-content: flex-start;
-  background-color: green;
   height: 500px;
 
   @media (max-width: 989px) {
@@ -67,13 +65,13 @@ body {
 }
 
 .blog-title {
-  background-color: yellow;
+  background-color: #B6D7A8;
   width: 100%;
   height: 2.5em;
 }
 
 .article-3-col {
-  background-color: blue;
+  background-color: #A2C4C9;
   height: 150px;
   margin: .5em;
   padding-left: .5em;
@@ -85,7 +83,7 @@ body {
 }
 
 .article-3-col-right {
-  background-color: blue;
+  background-color: #A2C4C9;
   height: 150px;
   margin: .5em;
   min-width: 30%;
@@ -99,7 +97,7 @@ body {
 
 
 footer {
-  background-color: lightcoral;
+  background-color: #9FC5F8;
   width: 100%;
   position: fixed;
   bottom: 0;
