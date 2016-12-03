@@ -65,6 +65,7 @@ body {
   display: flex;
   flex: 3;
   flex-wrap: wrap;
+  align-content: flex-start;
   height: 800px;
   background-color: green; }
   @media (max-width: 989px) {
@@ -74,14 +75,20 @@ body {
 .article-3-col {
   background-color: blue;
   height: 150px;
-  margin: 1em;
-  flex: 1; }
+  margin: .5em;
+  min-width: 30%; }
+  @media (max-width: 989px) {
+    .article-3-col {
+      min-width: 45%; } }
 
 .article-3-col-right {
   background-color: blue;
   height: 150px;
-  margin: 1em;
-  flex: 1; }
+  margin: .5em;
+  min-width: 30%; }
+  @media (max-width: 989px) {
+    .article-3-col-right {
+      min-width: 90%; } }
 
 footer {
   background-color: lightcoral;
