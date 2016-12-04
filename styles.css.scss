@@ -1,19 +1,91 @@
+*{
+	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+
+section{
+	width: 1000px;
+	margin: 0 auto;
+}
+
 nav{
 	background-color: #dfa;
+	border: 2px solid black;
+	h1{
+		font-size: 18px;
+		padding: 10px;
+	}
 }
 
 aside{
 	background-color: #f9b;
+	float: left;
+	height: 400px;
+	margin-top: 30px;
 }
 
-.page-header{
-	background-color: #8fa;
+main{
+	padding: 30px 0;
+	.articles-header{
+		background-color: #6ada98;
+		border: 3px solid black;
+		border-radius: 20px;
+		height: 100px;
+		text-align: center;
+		h1{
+			padding: 10px;
+			font-size: 30px;
+		}
+		h2{
+			font-style: italic;
+		}
+	}
 }
 
-.post-content{
+article{
+	vertical-align: top;
 	background-color: #aaa;
+	border: 3px solid black;
+	display: inline-block;
+	width: 32.3%; /* FIXME hack? */
+	padding: 10px;
+	margin-top: 10px;
+	box-sizing: border-box;
+	header{
+		font-size: 22px;
+		text-align: center;
+	}
+	time{		/* FIXME why text-align not working */
+		margin-left: 80px;
+		text-align: center;
+		font-size: 13px;
+	}
+	h2{
+		font-size: 16px;
+		font-weight: bold;
+		margin-top: 10px;
+	}
+	p{
+		padding-top: 10px;
+		font-size: 13px;
+		line-height: 20px;
+		margin-bottom: 10px;
+	}
+}
+
+#middle-article{
+	margin: 10px;
 }
 
 footer{
 	background-color: #8bf;
+	clear: both;
+	margin: 10px 0;
+	border-radius: 15px;
+	border: 3px solid black;
+	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+	font-size: 12px;
+	height: 40px;
+	padding: 10px;
+	line-height: 15px;
+	letter-spacing: 1px;
 }
