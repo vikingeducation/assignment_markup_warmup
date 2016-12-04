@@ -1,10 +1,6 @@
 * {
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; }
 
-section {
-  width: 1000px;
-  margin: 0 auto; }
-
 nav {
   background-color: #dfa;
   border: 2px solid black; }
@@ -12,14 +8,31 @@ nav {
     font-size: 18px;
     padding: 10px; }
 
+.main-page-container {
+  width: 1000px;
+  margin: 0 auto; }
+
 aside {
+  box-sizing: border-box;
   background-color: #f9b;
+  height: 450px;
+  display: inline-block;
+  width: 23%;
   float: left;
-  height: 400px;
-  margin-top: 30px; }
+  margin-top: 30px;
+  border: 3px solid black;
+  text-align: center;
+  padding-top: 120px; }
+  aside h1 {
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; }
 
 main {
-  padding: 30px 0; }
+  padding: 30px 0 5px 0;
+  width: 75%;
+  float: right; }
   main .articles-header {
     background-color: #6ada98;
     border: 3px solid black;
@@ -37,7 +50,7 @@ article {
   background-color: #aaa;
   border: 3px solid black;
   display: inline-block;
-  width: 32.3%;
+  width: 31.9%;
   /* FIXME hack? */
   padding: 10px;
   margin-top: 10px;
@@ -46,8 +59,6 @@ article {
     font-size: 22px;
     text-align: center; }
   article time {
-    /* FIXME why text-align not working */
-    margin-left: 80px;
     text-align: center;
     font-size: 13px; }
   article h2 {
@@ -57,8 +68,7 @@ article {
   article p {
     padding-top: 10px;
     font-size: 13px;
-    line-height: 20px;
-    margin-bottom: 10px; }
+    line-height: 20px; }
 
 #middle-article {
   margin: 10px; }
@@ -66,14 +76,15 @@ article {
 footer {
   background-color: #8bf;
   clear: both;
-  margin: 10px 0;
+  margin: 5px 0 0 250px;
+  /* FIXME hack? */
   border-radius: 15px;
   border: 3px solid black;
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   font-size: 12px;
   height: 40px;
-  padding: 10px;
   line-height: 15px;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  padding: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
