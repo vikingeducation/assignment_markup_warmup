@@ -67,7 +67,6 @@ body {
   flex: 3;
   flex-wrap: wrap;
   align-content: flex-start;
-  height: 500px;
   margin-left: 10px;
   margin-right: 5px;
 
@@ -81,7 +80,7 @@ body {
 .blog-title {
   background-color: #B6D7A8;
   width: 100%;
-  border-radius: 25px;
+  border-radius: 10px;
   text-align: center;
   border: 1px solid black;
 
@@ -135,7 +134,7 @@ footer {
   width: 100%;
   position: fixed;
   bottom: 0;
-  border-radius: 25px;
+  border-radius: 10px;
   text-align: center;
   border: 1px solid black;
   margin-top: 10px;
