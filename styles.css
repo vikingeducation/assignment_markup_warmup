@@ -43,15 +43,19 @@ body {
   height: 50px;
   border-bottom: 3px solid black; }
   .main-header h1 {
-    font-size: 20px;
+    font-size: 25px;
     font-decoration: bold;
-    margin-left: 5px; }
+    margin-left: 10px;
+    line-height: 50px; }
 
 .page-wrap {
   display: flex;
   margin-top: 60px;
   width: 100%;
   max-width: 990px; }
+  @media (max-width: 989px) {
+    .page-wrap {
+      margin-top: 50px; } }
 
 .advertisement-wrapper {
   flex: 1;
@@ -94,6 +98,14 @@ body {
   border-radius: 25px;
   text-align: center;
   border: 1px solid black; }
+  .blog-title h2 {
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold; }
+  .blog-title p {
+    font-decoration: italic;
+    margin-bottom: 5px; }
   @media (max-width: 989px) {
     .blog-title {
       border-radius: 0; } }
@@ -115,7 +127,7 @@ body {
   border: 1px solid black; }
   @media (max-width: 989px) {
     .article-3-col-right {
-      max-width: 92%; } }
+      flex: 1; } }
 
 footer {
   background-color: #9FC5F8;
@@ -124,7 +136,8 @@ footer {
   bottom: 0;
   border-radius: 25px;
   text-align: center;
-  border: 1px solid black; }
+  border: 1px solid black;
+  margin-top: 10px; }
   @media (max-width: 989px) {
     footer {
       border-radius: 0; } }
