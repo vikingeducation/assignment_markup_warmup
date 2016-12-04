@@ -115,6 +115,16 @@ body {
   padding-left: 10px;
   flex: 1;
   border: 1px solid black; }
+  .article-3-col h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .article-3-col h2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px; }
+  .article-3-col p {
+    margin-bottom: 10px; }
   @media (max-width: 989px) {
     .article-3-col {
       min-width: 46%; } }
@@ -124,6 +134,16 @@ body {
   margin: 5px;
   flex: 1;
   border: 1px solid black; }
+  .article-3-col-right h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .article-3-col-right h2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px; }
+  .article-3-col-right p {
+    margin-bottom: 10px; }
   @media (max-width: 989px) {
     .article-3-col-right {
       flex: 1; } }
