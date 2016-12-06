@@ -1,3 +1,4 @@
+/** WIDE SCREEN VIEW **/
 * {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -112,5 +113,31 @@ footer {
   border: 2px solid #000;
   padding: 10px;
   border-radius: 15px; }
+
+/** END WIDE SCREEN VIEW **/
+/** MOBILE VIEW **/
+@media only screen and (max-width: 990px) {
+  aside {
+    display: none; }
+
+  nav {
+    margin: 0; }
+
+  .blog-title {
+    margin: 0;
+    border-radius: 0;
+    margin: 0; }
+
+  section {
+    width: calc($breakpoint - 20px); }
+
+  article {
+    margin: 10px;
+    width: 463px; }
+
+  article:last-of-type {
+    clear: both;
+    width: 97%; } }
+/** END MOBILE VIEW **/
 
 /*# sourceMappingURL=styles.css.map */
