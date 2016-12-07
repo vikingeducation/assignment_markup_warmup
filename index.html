@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lorem Microblog</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css"> </head>
-
+  <link rel="stylesheet" href="stylesheets/reset.css">
+  <link rel="stylesheet" media="(min-width: 990px)" href="stylesheets/style.css" />
+  <link rel="stylesheet" media="(max-width: 989px)" href="stylesheets/small-styles.css">
+</head>
 <body>
   <div class="container">
     <div class="ad-space">
@@ -20,7 +21,7 @@
         <h1>The Lorem Micro Blog</h1>
         <h2>By Foo Bar</h2> </header>
       <section class="articles">
-        <article>
+        <article class="post-narrow">
           <h1>A Mighty Posty Post</h1>
           <h2>Written 1/3/2000</h2>
           <h3>First Thoughts...</h3>
@@ -31,13 +32,13 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo neque odio fuga reprehenderit consequuntur tenetur officia ut eius fugit! Ab dolores consectetur exercitationem suscipit commodi voluptatum, omnis totam molestiae accusamus!</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo neque odio fuga reprehenderit consequuntur tenetur officia ut eius fugit! Ab dolores consectetur exercitationem suscipit commodi voluptatum, omnis totam molestiae accusamus!</p>
         </article>
-        <article class="article-middle">
+        <article class="article-middle post-narrow">
           <h1>Another Posty Post</h1>
           <h2>Written 1/2/2000</h2>
           <h3>Only Thoughts...</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore non consectetur culpa ab vel ipsam tempora possimus quos tenetur! Praesentium est voluptatibus aliquam, sequi ipsa voluptatum deleniti, nemo itaque esse.</p>
         </article>
-        <article>
+        <article class="post-wide">
           <h1>A Posty Post</h1>
           <h2>Written 1/1/2000</h2>
           <h3>Be it Resolved</h3>
