@@ -44,7 +44,7 @@ body {
   border-bottom: 3px solid black; }
   .main-header h1 {
     font-size: 25px;
-    font-decoration: bold;
+    font-weight: bold;
     margin-left: 10px;
     line-height: 50px; }
 
@@ -65,8 +65,8 @@ body {
   margin-left: 10px;
   margin-bottom: 10px;
   border: 1px solid black;
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-top: 30px;
+  padding-bottom: 30px; }
   .advertisement-wrapper h1 {
     font-size: 15px;
     font-weight: bold;
@@ -93,7 +93,8 @@ body {
   @media (max-width: 989px) {
     .main-content-wrapper {
       flex: 1;
-      margin: 0; } }
+      margin: 0;
+      width: 100%; } }
 
 .blog-title {
   background-color: #B6D7A8;
@@ -107,7 +108,7 @@ body {
     margin-bottom: 5px;
     font-weight: bold; }
   .blog-title p {
-    font-decoration: italic;
+    font-style: italic;
     margin-bottom: 5px; }
   @media (max-width: 989px) {
     .blog-title {
@@ -154,13 +155,14 @@ body {
 
 footer {
   background-color: #9FC5F8;
-  width: 100%;
-  position: fixed;
+  align-self: flex-end;
   bottom: 0;
   border-radius: 10px;
   text-align: center;
   border: 1px solid black;
   margin-top: 10px; }
+  footer p {
+    padding: 2px; }
   @media (max-width: 989px) {
     footer {
       border-radius: 0; } }
