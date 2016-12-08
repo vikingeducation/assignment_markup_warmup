@@ -4,6 +4,11 @@
 
 
 
+/* 
+ * Setting up containers for main content and headline, with media queries for     * screens under 990px
+ */
+
+
 
 /*Style Main Header and Page Wrap for content*/
 
@@ -44,6 +49,11 @@ body {
 
 
 
+/*
+ * Left side of screen advertisement that disappears under 990px.
+ */
+
+
 
 /*Style left-side advertisement div that disappears under 990px*/
 
@@ -79,6 +89,11 @@ body {
 
 
 /*Style three-column articles container in Flexbox*/
+
+
+/*
+ * Main content consisting of a headline section at the top and three articles.Articles stacked horizontally for screens * over 990px.  Third article falls underfirst two for screens under 990px.
+ */
 
 
 .main-content-wrapper {
