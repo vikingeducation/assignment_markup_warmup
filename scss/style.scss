@@ -77,6 +77,7 @@ nav {
 	height: 30px;
 	width: 100%;
 	position: fixed;
+	top: 0;
 	border-bottom: 2px solid black;
 }
 
@@ -92,11 +93,12 @@ Main
 =========================
 */
 
-main #blog-width {
-	width: 990px;
+main {
+
 }
 
-div #content {
+main #blog-width {
+	width: 990px;
 }
 
 /*
@@ -112,7 +114,16 @@ aside {
 	border: 2px solid black;
 	vertical-align: center;
 	float: left;
-	margin: 50px 10px;
+	margin: 0 15px;
+	text-align: center;
+}
+
+aside h2 {
+	font-weight: bold;
+	margin-top: 140px;
+}
+
+aside img {
 
 }
 
@@ -131,8 +142,19 @@ header {
 	text-align: center;
 	height: 50px;
 	width: 760px;
-	margin: 50px 10px 20px 10px;
+	margin: 55px 10px 15px 235px;
 }
+
+header h1 {
+	font-size: 20px;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+header p {
+	margin-top: 5px;
+}
+
 
 /*
 =========================
@@ -144,9 +166,35 @@ article {
 	background: #A2C4C9;
 	padding: 10px;
 	border: 2px solid black;
-	width: 200px;
+	width: 220px;
 	height: 400px;
+	margin: 0 15px 10px 0;
+	float: left;
+	text-align: center;
+
 }
+
+article h2 time {
+	
+}
+
+article h2 {
+	font-weight: bold
+
+
+}
+
+article h3 {
+	text-align: left;
+	font-weight: bold;
+}
+
+article p {
+	text-align: left;
+}
+
+
+
 
 article .main-articles {
 	
@@ -164,4 +212,9 @@ Footer
 footer {
 	background: #9FC5F8;
 	border: 2px solid black;
+	border-radius: 10px;
+	width: 754px;
+	margin: 455px 10px 0 235px;
+	padding: 3px;
+
 }
