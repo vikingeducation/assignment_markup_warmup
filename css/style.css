@@ -81,8 +81,9 @@ nav p {
 Main
 =========================
 */
-main #blog-width {
-  width: 990px; }
+main {
+  width: 990px;
+  margin: auto; }
 
 /*
 =========================
@@ -101,7 +102,8 @@ aside {
 
 aside h2 {
   font-weight: bold;
-  margin-top: 140px; }
+  margin-top: 140px;
+  margin-bottom: 10px; }
 
 /*
 =========================
@@ -123,7 +125,8 @@ header h1 {
   font-weight: bold; }
 
 header p {
-  margin-top: 5px; }
+  margin-top: 5px;
+  font-style: italic; }
 
 /*
 =========================
@@ -140,8 +143,12 @@ article {
   float: left;
   text-align: center; }
 
+article h2 time {
+  margin-bottom: 3px; }
+
 article h2 {
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom: 3px; }
 
 article h3 {
   text-align: left;
@@ -159,7 +166,7 @@ footer {
   background: #9FC5F8;
   border: 2px solid black;
   border-radius: 10px;
-  width: 754px;
+  width: 760px;
   margin: 455px 10px 0 235px;
   padding: 3px; }
 

@@ -94,12 +94,11 @@ Main
 */
 
 main {
-
+    width: 990px;
+	margin: auto;
 }
 
-main #blog-width {
-	width: 990px;
-}
+
 
 /*
 =========================
@@ -121,6 +120,7 @@ aside {
 aside h2 {
 	font-weight: bold;
 	margin-top: 140px;
+	margin-bottom: 10px;
 }
 
 aside img {
@@ -153,6 +153,7 @@ header h1 {
 
 header p {
 	margin-top: 5px;
+	font-style: italic;
 }
 
 
@@ -175,11 +176,12 @@ article {
 }
 
 article h2 time {
-	
+	margin-bottom: 3px;
 }
 
 article h2 {
-	font-weight: bold
+	font-weight: bold;
+	margin-bottom: 3px;
 
 
 }
@@ -213,7 +215,7 @@ footer {
 	background: #9FC5F8;
 	border: 2px solid black;
 	border-radius: 10px;
-	width: 754px;
+	width: 760px;
 	margin: 455px 10px 0 235px;
 	padding: 3px;
 
