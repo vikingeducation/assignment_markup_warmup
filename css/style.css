@@ -1,0 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+=========================
+Styles
+=========================
+*/
+/*
+=========================
+Body
+=========================
+*/
+body {
+  height: 2000px;
+  font-family: helvetica; }
+
+/*
+=========================
+Nav
+=========================
+*/
+nav {
+  background: #FFE599;
+  height: 30px;
+  width: 100%;
+  position: fixed;
+  border-bottom: 2px solid black; }
+
+nav p {
+  margin: 7px auto;
+  margin-left: 10px; }
+
+/*
+=========================
+Main
+=========================
+*/
+main #blog-width {
+  width: 990px; }
+
+/*
+=========================
+Aside
+=========================
+*/
+aside {
+  background: #D5A6BD;
+  width: 200px;
+  height: 440px;
+  border: 2px solid black;
+  vertical-align: center;
+  float: left;
+  margin: 50px 10px; }
+
+/*
+=========================
+Header
+=========================
+*/
+header {
+  background: #B6D7A8;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  height: 50px;
+  width: 760px;
+  margin: 50px 10px 20px 10px; }
+
+/*
+=========================
+Article
+=========================
+*/
+article {
+  background: #A2C4C9;
+  padding: 10px;
+  border: 2px solid black;
+  width: 200px;
+  height: 400px; }
+
+/*
+=========================
+Footer
+=========================
+*/
+footer {
+  background: #9FC5F8;
+  border: 2px solid black; }
+
+/*# sourceMappingURL=style.css.map */
