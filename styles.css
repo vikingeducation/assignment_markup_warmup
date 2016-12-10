@@ -1,0 +1,183 @@
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* 
+ * Setting up containers for main content and headline, with media queries for     * screens under 990px
+ */
+/*Style Main Header and Page Wrap for content*/
+body {
+  max-width: 990px; }
+
+.main-header {
+  background-color: #FFE599;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  border-bottom: 3px solid black; }
+  .main-header h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+    line-height: 50px; }
+
+.page-wrap {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 60px;
+  width: 100%;
+  max-width: 990px; }
+  @media (max-width: 989px) {
+    .page-wrap {
+      margin-top: 50px; } }
+
+/*
+ * Left side of screen advertisement that disappears under 990px.
+ */
+/*Style left-side advertisement div that disappears under 990px*/
+.advertisement-wrapper {
+  flex: 1;
+  display: flex;
+  background-color: #D5A6BD;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .advertisement-wrapper h1 {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; }
+  @media (max-width: 989px) {
+    .advertisement-wrapper {
+      display: none; } }
+
+.ad-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+/*Style three-column articles container in Flexbox*/
+/*
+ * Main content consisting of a headline section at the top and three articles.Articles stacked horizontally for screens * over 990px.  Third article falls underfirst two for screens under 990px.
+ */
+.main-content-wrapper {
+  display: flex;
+  flex: 3;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin-left: 10px;
+  margin-right: 5px; }
+  @media (max-width: 989px) {
+    .main-content-wrapper {
+      flex: 1;
+      margin: 0;
+      width: 100%; } }
+
+.blog-title {
+  background-color: #B6D7A8;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid black; }
+  .blog-title h2 {
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold; }
+  .blog-title p {
+    font-style: italic;
+    margin-bottom: 5px; }
+  @media (max-width: 989px) {
+    .blog-title {
+      border-radius: 0; } }
+
+.article-3-col {
+  background-color: #A2C4C9;
+  margin: 5px;
+  padding-left: 10px;
+  flex: 1;
+  border: 1px solid black; }
+  .article-3-col h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .article-3-col h2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px; }
+  .article-3-col p {
+    margin-bottom: 10px; }
+  @media (max-width: 989px) {
+    .article-3-col {
+      min-width: 46%; } }
+
+.article-3-col-right {
+  background-color: #A2C4C9;
+  margin: 5px;
+  flex: 1;
+  border: 1px solid black; }
+  .article-3-col-right h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .article-3-col-right h2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px; }
+  .article-3-col-right p {
+    margin-bottom: 10px; }
+  @media (max-width: 989px) {
+    .article-3-col-right {
+      flex: 1; } }
+
+/*Footer styling under main content above 990px and full width under 990px*/
+footer {
+  background-color: #9FC5F8;
+  align-self: flex-end;
+  bottom: 0;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid black;
+  margin-top: 10px; }
+  footer p {
+    padding: 2px; }
+  @media (max-width: 989px) {
+    footer {
+      border-radius: 0; } }
+
+/*# sourceMappingURL=styles.css.map */
