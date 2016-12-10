@@ -42,7 +42,6 @@ body {
 .main-header {
   background-color: #FFE599;
   width: 100%;
-  max-width: 990px;
   position: fixed;
   top: 0;
   height: 50px;
