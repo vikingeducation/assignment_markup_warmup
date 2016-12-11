@@ -97,7 +97,7 @@ aside {
   border: 2px solid black;
   vertical-align: center;
   float: left;
-  margin: 0 15px;
+  margin-right: 5px;
   text-align: center; }
 
 aside h2 {
@@ -116,8 +116,8 @@ header {
   border-radius: 10px;
   text-align: center;
   height: 50px;
-  width: 760px;
-  margin: 55px 10px 15px 235px; }
+  width: 752px;
+  margin: 55px 10px 15px 220px; }
 
 header h1 {
   font-size: 20px;
@@ -137,22 +137,29 @@ article {
   background: #A2C4C9;
   padding: 10px;
   border: 2px solid black;
-  width: 220px;
-  height: 400px;
-  margin: 0 15px 10px 0;
+  width: 215px;
+  height: 403px;
+  margin: 0 10px 15px 10px;
   float: left;
   text-align: center; }
 
-article h2 time {
-  margin-bottom: 3px; }
+article.article2 {
+  height: 220px; }
+
+article.article3 {
+  height: 320px; }
+
+article div {
+  text-align: center; }
 
 article h2 {
   font-weight: bold;
-  margin-bottom: 3px; }
+  padding: 5px; }
 
 article h3 {
   text-align: left;
-  font-weight: bold; }
+  font-weight: bold;
+  padding: 5px 0; }
 
 article p {
   text-align: left; }
@@ -166,8 +173,8 @@ footer {
   background: #9FC5F8;
   border: 2px solid black;
   border-radius: 10px;
-  width: 760px;
-  margin: 455px 10px 0 235px;
+  width: 748px;
+  margin: 455px 10px 0 220px;
   padding: 3px; }
 
 /*# sourceMappingURL=style.css.map */
