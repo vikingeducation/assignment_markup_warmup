@@ -1,0 +1,209 @@
+/* Reset CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+/* variables, extensions */
+$base-font-size: 16px;
+
+.base-border {
+  border: 1px solid #666;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+@media (min-width: 990px) {
+  .content-container {
+    position: relative;
+    margin: 15px 100px;
+  }
+}
+@media (max-width: 989px) {
+  .content-container {
+    margin: 0;
+  }
+}
+
+
+/* Navbar CSS */
+nav {
+  background-color: #ff9;
+  @extend .base-border;
+  h1 {
+    font-size: $base-font-size + 4px;
+    margin: 10px;
+  }
+}
+
+
+
+
+/* Main CSS */
+main {
+  @media (min-width: 990px) {
+    position: absolute;
+    right: 0;
+    width: 74%;
+    .articles-container {
+      -webkit-column-count: 3; /* Chrome, Safari, Opera */
+      -moz-column-count: 3; /* Firefox */
+      column-count: 3;
+      margin: 15px 0;
+    } 
+    header {
+      border-radius: 14px;
+    }
+    article {
+      break-inside: avoid-column;
+    }
+    footer {
+      display: inline-block;
+      border-radius: 14px;
+    }
+  }
+  @media (max-width: 989px) {
+    .articles-container {
+      margin: 0;
+      padding: 15px;
+    }
+    article:first-child {
+      float: left;
+      width: 48%;
+    }
+    article:nth-child(2) {
+      float: right;
+      width: 48%;
+    }
+    article:nth-child(3) {
+      display: inline-block;
+      margin-top: 15px;
+    }
+  }
+  header {
+    background-color: #90ee90;
+    @extend .base-border;
+    text-align: center;
+    h1 {
+      font-size: $base-font-size + 10px;
+      font-weight: bold;
+      margin: 15px 0 8px;
+    }
+    h2 {
+      font-size: $base-font-size + 4px;
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+  }
+  article {
+    background-color: #96cdcd;
+    @extend .base-border;
+    h1 {
+      font-size: $base-font-size + 6px;
+      font-weight: bold;
+      text-align: center;
+      margin: 15px 0 2px;
+    }
+    h2 {
+      font-size: $base-font-size + 2px;
+      font-weight: bold;
+      margin: 10px;
+    }
+    p:first-of-type {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    p {
+      margin: 0 10px 30px;
+      line-height: $base-font-size + 2px;
+    }
+  }
+
+  footer {
+    background-color: #63b8ff;
+    @extend .base-border;
+    p {
+      font-size: $base-font-size - 2px;
+      margin: 6px 10px;
+      line-height: $base-font-size;
+    }
+  }
+}
+
+
+
+
+/* Aside CSS */
+aside {
+  @media (min-width: 990px) {
+    position: absolute;
+    width: 24%;
+    min-height: 74%;
+  }
+  @media (max-width: 989px) {
+    display: none;
+  }
+  background-color: #da70d6;
+  @extend .base-border;
+  text-align: center;
+  .ad-container {
+    margin: 140px 10px;
+  }
+  h1 {
+    margin-bottom: 10px;
+    font-size: $base-font-size + 4px;
+    font-weight: bold;
+  }
+  img {
+    width: 90%;
+  }
+}

@@ -1,0 +1,159 @@
+/* Reset CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* variables, extensions */
+.base-border, nav, main header, main article, main footer, aside {
+  border: 1px solid #666; }
+
+body {
+  font-family: Arial, sans-serif; }
+
+@media (min-width: 990px) {
+  .content-container {
+    position: relative;
+    margin: 15px 100px; } }
+@media (max-width: 989px) {
+  .content-container {
+    margin: 0; } }
+/* Navbar CSS */
+nav {
+  background-color: #ff9; }
+  nav h1 {
+    font-size: 20px;
+    margin: 10px; }
+
+/* Main CSS */
+@media (min-width: 990px) {
+  main {
+    position: absolute;
+    right: 0;
+    width: 74%; }
+    main .articles-container {
+      -webkit-column-count: 3;
+      /* Chrome, Safari, Opera */
+      -moz-column-count: 3;
+      /* Firefox */
+      column-count: 3;
+      margin: 15px 0; }
+    main header {
+      border-radius: 14px; }
+    main article {
+      break-inside: avoid-column; }
+    main footer {
+      display: inline-block;
+      border-radius: 14px; } }
+@media (max-width: 989px) {
+  main .articles-container {
+    margin: 0;
+    padding: 15px; }
+  main article:first-child {
+    float: left;
+    width: 48%; }
+  main article:nth-child(2) {
+    float: right;
+    width: 48%; }
+  main article:nth-child(3) {
+    display: inline-block;
+    margin-top: 15px; } }
+main header {
+  background-color: #90ee90;
+  text-align: center; }
+  main header h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 15px 0 8px; }
+  main header h2 {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 15px; }
+main article {
+  background-color: #96cdcd; }
+  main article h1 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0 2px; }
+  main article h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px; }
+  main article p:first-of-type {
+    text-align: center;
+    margin-bottom: 5px; }
+  main article p {
+    margin: 0 10px 30px;
+    line-height: 18px; }
+main footer {
+  background-color: #63b8ff; }
+  main footer p {
+    font-size: 14px;
+    margin: 6px 10px;
+    line-height: 16px; }
+
+/* Aside CSS */
+aside {
+  background-color: #da70d6;
+  text-align: center; }
+  @media (min-width: 990px) {
+    aside {
+      position: absolute;
+      width: 24%;
+      min-height: 74%; } }
+  @media (max-width: 989px) {
+    aside {
+      display: none; } }
+  aside .ad-container {
+    margin: 140px 10px; }
+  aside h1 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold; }
+  aside img {
+    width: 90%; }
+
+/*# sourceMappingURL=styles.css.map */
