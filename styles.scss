@@ -72,7 +72,7 @@ $border: 2px solid #000;
 
 body {
 	font-family: "Comic Sans MS", sans-serif;
-	height: 900px; 
+	height: 1500px; 
 }
 
 
@@ -91,7 +91,7 @@ nav {
 }
 
 main {
-	width: 880px;
+	width: 1000px;
 	margin: auto;
 }
 
@@ -116,12 +116,12 @@ aside {
 
 img {
 	height: 150px;
-	width: 150px;
+	width: 170px;
 }
 
 header {
 	background: #B6D7A8;
-	width: 598px;
+	width: 688px;
     height: 72px;
     border: 2px solid #000;
     float: left;
@@ -142,6 +142,53 @@ header {
 		margin-top: 8px;
 	}
 }
+
+article {
+	background: #A2C4C9;
+	padding: 10px;
+	border: $border;
+	width: 215px;
+	height: auto;
+	margin: 10px 10px 15px 10px;
+	float: left;
+	text-align: center;
+
+	h2 {
+		font-weight: bold;
+		font-size: 20px;
+		margin-bottom: 3px;
+	}
+}
+
+h3 {
+	text-align: left;
+	font-weight: bold;
+	padding: 5px 0;
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+article p {
+	text-align: left;
+	font-size: 12px;
+}
+
+footer {
+	background: #9FC5F8;
+	border: 2px solid black;
+	border-radius: 10px;
+	width: 688px;
+	margin: 599px 10px 0 250px;
+	padding: 3px;
+	position: absolute
+}
+
+
+
+
+
+
 
 
 
