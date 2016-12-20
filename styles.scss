@@ -2,7 +2,6 @@ html {
     box-sizing: border-box;
 }
 
-
 *,
 *:after,
 *:before {
@@ -83,14 +82,12 @@ main {
         border-radius: 15px;
         background: #85F29A;
 
-        h1{
-          margin: 10px auto;
-
+        h1 {
+            margin: 10px auto;
         }
 
         p {
-             font-size: 18px;
-
+            font-size: 18px;
         }
     }
 
@@ -104,15 +101,17 @@ main {
 
         h1 {
             font-size: 20px;
-            margin: 10px auto;
+            margin: 8px auto;
         }
 
         h4 {
             text-align: left;
+            margin: 25px 0 10px;
         }
 
         p {
             text-align: left;
+            margin: 10px auto;
         }
     }
 
@@ -136,5 +135,8 @@ main {
         background: #6687E8;
         border: 2px solid black;
         margin-top: 15px;
+        text-align: left;
+        font-size: 14px;
+        padding: 10px;
     }
 }
