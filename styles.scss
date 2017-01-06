@@ -16,14 +16,20 @@ body {
   }
 
   .col-1-4 {
-    width: 24.9%;
+    width: 24%;
   }
 
   .col-3-4 {
-    width: 74.9%;
+    width: 74%;
   }
 }
 
+.articles-container article {
+  width: 32%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 3px;
+}
 
 header,
 aside,
@@ -33,13 +39,21 @@ footer {
   border: 1px solid black;
 }
 
+aside,
+section,
+footer {
+  margin-top: 10px;
+}
+
 section,
 footer {
   border-radius: 5px;
+  width: 98%;
+  margin-left: 3px;
 }
 
 main {
-
+  padding-left: 10px;
 }
 
 aside {
@@ -59,6 +73,7 @@ footer {
 
 section {
   background-color: #a1cea9;
+  margin-bottom: 10px;
 }
 
 article {
