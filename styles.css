@@ -72,15 +72,15 @@ h4 {
 
 .container {
   width: 990px;
-  margin: 0 auto; }
-  .container .col-1-4,
-  .container .col-3-4 {
-    display: inline-block;
-    vertical-align: top; }
-  .container .col-1-4 {
-    width: 24%; }
-  .container .col-3-4 {
-    width: 74%; }
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: flex; }
+
+.col-1-4 {
+  width: 25%; }
+
+.col-3-4 {
+  width: 75%; }
 
 .articles-container {
   display: -webkit-flex;
@@ -122,10 +122,22 @@ footer {
   width: 100%; }
 
 main {
-  padding-left: 10px; }
+  margin-left: 10px; }
 
 aside {
-  background-color: #cea1cd; }
+  background-color: #cea1cd;
+  height: 540px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center; }
+  aside img {
+    width: 100%; }
+  aside h2 {
+    padding: 0 8px;
+    margin-top: 100px; }
 
 header {
   background-color: #fffd99;
