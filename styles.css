@@ -48,7 +48,7 @@ table {
 
 body {
   box-sizing: border-box;
-  font-family: Lato, "Open Sans", sans-serif; }
+  font: 14px/22px Lato, "Open Sans", sans-serif; }
 
 .container {
   width: 990px;
