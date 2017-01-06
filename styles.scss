@@ -52,11 +52,14 @@ h4 {
 }
 
 .articles-container {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+
   article {
-    width: 30%;
     display: inline-block;
     vertical-align: top;
-    padding: 0 9px;
+    padding: 0 12px;
 
     h2,
     h3 {
@@ -68,7 +71,7 @@ h4 {
     }
 
     h3 {
-      margin-top: 4px;
+      margin-top: 6px;
     }
 
     h4 {
@@ -80,8 +83,8 @@ h4 {
     }
   }
 
-  :nth-child(2) {
-    margin: 0 6px;
+  .middle-article {
+    margin: 0 12px;
   }
 }
 
@@ -129,7 +132,7 @@ header {
 
 footer {
   background-color: #a2c0f2;
-  padding: 6px 9px;
+  padding: 6px 12px;
 }
 
 section {

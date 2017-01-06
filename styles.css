@@ -82,24 +82,27 @@ h4 {
   .container .col-3-4 {
     width: 74%; }
 
-.articles-container article {
-  width: 30%;
-  display: inline-block;
-  vertical-align: top;
-  padding: 0 9px; }
-  .articles-container article h2,
-  .articles-container article h3 {
-    text-align: center; }
-  .articles-container article h2 {
-    margin-top: 10px; }
-  .articles-container article h3 {
-    margin-top: 4px; }
-  .articles-container article h4 {
-    margin: 10px 0; }
-  .articles-container article :last-child {
-    margin-bottom: 10px; }
-.articles-container :nth-child(2) {
-  margin: 0 6px; }
+.articles-container {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between; }
+  .articles-container article {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 12px; }
+    .articles-container article h2,
+    .articles-container article h3 {
+      text-align: center; }
+    .articles-container article h2 {
+      margin-top: 10px; }
+    .articles-container article h3 {
+      margin-top: 6px; }
+    .articles-container article h4 {
+      margin: 10px 0; }
+    .articles-container article :last-child {
+      margin-bottom: 10px; }
+  .articles-container .middle-article {
+    margin: 0 12px; }
 
 header,
 aside,
@@ -137,7 +140,7 @@ header {
 
 footer {
   background-color: #a2c0f2;
-  padding: 6px 9px; }
+  padding: 6px 12px; }
 
 section {
   background-color: #a1cea9;
