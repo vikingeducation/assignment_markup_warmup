@@ -128,6 +128,12 @@ footer {
 section {
   background-color: #a1cea9;
   margin-bottom: 10px; }
+  section h1,
+  section h3 {
+    text-align: center;
+    margin: 10px 0; }
+  section h3 {
+    font-style: italic; }
 
 article {
   background-color: #a1cecb; }

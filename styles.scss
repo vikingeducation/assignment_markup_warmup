@@ -106,6 +106,16 @@ footer {
 section {
   background-color: #a1cea9;
   margin-bottom: 10px;
+
+  h1,
+  h3 {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  h3 {
+    font-style: italic;
+  }
 }
 
 article {
