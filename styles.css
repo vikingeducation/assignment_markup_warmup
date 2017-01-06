@@ -64,6 +64,10 @@ h3 {
 h4 {
   font-weight: bold; }
 
+.spacer {
+  width: 100%;
+  height: 40px; }
+
 .container {
   width: 990px;
   margin: 0 auto; }
@@ -108,7 +112,7 @@ aside {
 
 header {
   background-color: #fffd99;
-  /*position: fixed;*/
+  position: fixed;
   width: 100%;
   height: 40px;
   border-left: 0;
