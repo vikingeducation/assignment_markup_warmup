@@ -1,1 +1,13 @@
 @import 'normalize';
+
+.container {
+  width: 990px;
+
+  .col-1-4 {
+    width: 24.9%;
+  }
+
+  .col-3-4 {
+    width: 74.9%;
+  }
+}

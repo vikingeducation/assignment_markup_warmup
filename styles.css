@@ -402,4 +402,11 @@ template {
 [hidden] {
   display: none; }
 
+.container {
+  width: 990px; }
+  .container .col-1-4 {
+    width: 24.9%; }
+  .container .col-3-4 {
+    width: 74.9%; }
+
 /*# sourceMappingURL=styles.css.map */
