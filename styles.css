@@ -97,7 +97,7 @@ h4 {
   .articles-container article :last-child {
     margin-bottom: 10px; }
 .articles-container :nth-child(2) {
-  /*margin: 0 6px;*/ }
+  margin: 0 6px; }
 
 header,
 aside,
