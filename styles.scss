@@ -1,6 +1,10 @@
 /*@import 'normalize';*/
 @import 'reset';
 
+body {
+  box-sizing: border-box;
+}
+
 .container {
   width: 990px;
   margin: 0 auto;
@@ -12,12 +16,26 @@
   }
 
   .col-1-4 {
-    width: 24.99%;
+    width: 24%;
   }
 
   .col-3-4 {
-    width: 74.99%;
+    width: 74%;
   }
+}
+
+
+header,
+aside,
+section,
+article,
+footer {
+  border: 1px solid black;
+}
+
+section,
+footer {
+  border-radius: 5px;
 }
 
 main {

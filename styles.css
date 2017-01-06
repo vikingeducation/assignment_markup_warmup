@@ -46,6 +46,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  box-sizing: border-box; }
+
 .container {
   width: 990px;
   margin: 0 auto; }
@@ -54,9 +57,20 @@ table {
     display: inline-block;
     vertical-align: top; }
   .container .col-1-4 {
-    width: 24.99%; }
+    width: 24%; }
   .container .col-3-4 {
-    width: 74.99%; }
+    width: 74%; }
+
+header,
+aside,
+section,
+article,
+footer {
+  border: 1px solid black; }
+
+section,
+footer {
+  border-radius: 5px; }
 
 aside {
   background-color: #cea1cd; }
