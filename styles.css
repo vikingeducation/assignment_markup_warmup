@@ -82,10 +82,11 @@ h4 {
 
 .articles-container article {
   width: 30%;
+  width: calc(33% - 20px);
   display: inline-block;
   vertical-align: top;
-  margin: 0 3px;
-  padding: 0 3px; }
+  margin: 0 6px;
+  padding: 0 4px; }
 
 header,
 aside,
@@ -102,8 +103,8 @@ footer {
 section,
 footer {
   border-radius: 5px;
-  width: 98%;
-  margin-left: 3px; }
+  width: 100%;
+  /*margin-left: 3px;*/ }
 
 main {
   padding-left: 10px; }
