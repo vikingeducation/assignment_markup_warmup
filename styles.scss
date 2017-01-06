@@ -1,8 +1,11 @@
 /*@import 'normalize';*/
 @import 'reset';
 
-body {
+* {
   box-sizing: border-box;
+}
+
+body {
   font: 14px/22px Lato, "Open Sans", sans-serif;
 }
 
@@ -100,7 +103,6 @@ section,
 footer {
   border-radius: 5px;
   width: 100%;
-  /*margin-left: 3px;*/
 }
 
 main {
@@ -127,6 +129,7 @@ header {
 
 footer {
   background-color: #a2c0f2;
+  padding: 6px 9px;
 }
 
 section {

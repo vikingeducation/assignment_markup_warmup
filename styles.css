@@ -46,8 +46,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+* {
+  box-sizing: border-box; }
+
 body {
-  box-sizing: border-box;
   font: 14px/22px Lato, "Open Sans", sans-serif; }
 
 h1 {
@@ -114,8 +116,7 @@ footer {
 section,
 footer {
   border-radius: 5px;
-  width: 100%;
-  /*margin-left: 3px;*/ }
+  width: 100%; }
 
 main {
   padding-left: 10px; }
@@ -135,7 +136,8 @@ header {
     margin-left: 10px; }
 
 footer {
-  background-color: #a2c0f2; }
+  background-color: #a2c0f2;
+  padding: 6px 9px; }
 
 section {
   background-color: #a1cea9;
