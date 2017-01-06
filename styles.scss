@@ -53,6 +53,7 @@ h4 {
   justify-content: space-between;
 
   article {
+    background-color: #a1cecb;
     display: inline-block;
     vertical-align: top;
     padding: 0 12px;
@@ -118,6 +119,10 @@ aside {
    -webkit-align-items: center;
    align-items: center;
 
+   @media(max-width: 989px) {
+    display: none;
+   }
+
   img {
     width: 100%;
   }
@@ -160,8 +165,4 @@ section {
   h3 {
     font-style: italic;
   }
-}
-
-article {
-  background-color: #a1cecb;
 }

@@ -87,6 +87,7 @@ h4 {
   display: flex;
   justify-content: space-between; }
   .articles-container article {
+    background-color: #a1cecb;
     display: inline-block;
     vertical-align: top;
     padding: 0 12px; }
@@ -133,6 +134,9 @@ aside {
   flex-direction: column;
   -webkit-align-items: center;
   align-items: center; }
+  @media (max-width: 989px) {
+    aside {
+      display: none; } }
   aside img {
     width: 100%; }
   aside h2 {
@@ -163,8 +167,5 @@ section {
     margin: 10px 0; }
   section h3 {
     font-style: italic; }
-
-article {
-  background-color: #a1cecb; }
 
 /*# sourceMappingURL=styles.css.map */
