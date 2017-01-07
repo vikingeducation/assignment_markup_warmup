@@ -118,10 +118,6 @@ aside {
   flex-direction: column;
   -webkit-justify-content: center;
   justify-content: center;
-  
-  @media(max-width: 989px) {
-   display: none;
-  }
 
   img {
     width: 80%;
