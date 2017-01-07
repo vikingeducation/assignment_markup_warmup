@@ -52,19 +52,19 @@ table {
 body {
   font: 14px/22px Lato, "Open Sans", sans-serif; }
 
-h1 {
-  font-size: 2em;
+h1,
+h2,
+h4 {
   font-weight: bold; }
 
+h1 {
+  font-size: 2em; }
+
 h2 {
-  font-size: 1.5em;
-  font-weight: bold; }
+  font-size: 1.5em; }
 
 h3 {
   font-size: 1.17em; }
-
-h4 {
-  font-weight: bold; }
 
 .spacer {
   width: 100%;
@@ -85,6 +85,7 @@ h4 {
 .articles-container {
   display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: space-between;
   justify-content: space-between; }
   .articles-container article {
     background-color: #a1cecb;
