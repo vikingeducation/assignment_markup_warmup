@@ -1,7 +1,3 @@
-.spacer {
-  /*display: none;*/
-  visibility: hidden; }
-
 aside {
   display: none; }
 
@@ -22,5 +18,13 @@ main {
     border-top: 1px solid black; }
   .right-panel footer {
     border-radius: 0; }
+
+.articles-container {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center; }
+  .articles-container article {
+    margin: 12px; }
 
 /*# sourceMappingURL=styles-narrow.css.map */

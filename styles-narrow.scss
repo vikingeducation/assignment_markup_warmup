@@ -1,8 +1,3 @@
-.spacer {
-  /*display: none;*/
-  visibility: hidden;
-}
-
 aside {
   display: none;
 }
@@ -33,5 +28,12 @@ main {
 }
 
 .articles-container {
-  
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+  article {
+    margin: 12px;
+  }
 }
