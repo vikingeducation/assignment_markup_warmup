@@ -43,15 +43,64 @@ table {
 }
 
 /*End CSS Reset */
+h1 {
+	font-size: 32px;
+}
 
-header {
+h2{
+	font-size: 24px;
+}
+
+nav {
   background-color: #ff9933;
+	height: 45px;
+	line-height: 45px;
+	vertical-align: middle;
+	padding-left: 50px;
+}
+
+main{
+	line-height: 1;
+	max-width: 990px;
+	font-size: 16px;
+	margin: auto;
+
+}
+
+aside {
+  background-color: #cc00cc;
+	width: 200px;
+	height: 400px;
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+	float: left;
+}
+
+header  {
+  background-color: #00994d;
+  border-radius: 15px;
+	width:777px;
+	height: 100px;
+	margin-left:  210px;
+	margin-top: 10px;
 }
 
 article {
   background-color: #28a4a4;
+	float: left;
+	width: 252px;
+	height: auto;
 }
 
+article h2, h4 {
+	text-align: center;
+	padding-top: 5px;
+}
+
+article h3, p {
+	padding: 5px;
+}
 h1 {
   font-weight: 700;
 }
@@ -62,21 +111,48 @@ h2 {
 
 footer {
   background-color: #007acc;
-  border-radius: 5px;
+  border-radius: 10px;
+	clear: both;
+	margin-left: 210px;
+	height: auto;
+	width:  777px;
+	margin-bottom: 10px;
+}
+
+footer p {
+	padding: 5px;
+}
+
+.later_articles {
+	margin-right: 10px;
+	margin-bottom: 10px;
 }
 
 #ad {
-  background-color: #cc00cc;
+	text-align: center;
+	position: relative;
+	width: 150px;
+	height: auto;
+	margin: auto;
+	vertical-align: middle;
 }
 
 #box {
+	background-color: #fff;
   border-color: #000;
   border-width: thick;
-  height: 25px;
-  width: 25px;
+  height: 150px;
+  width: 150px;
 }
 
-#title {
-  background-color: #00994d;
-  border-radius: 5px;
+#header_text {
+	text-align: center;
+	line-height: 30px;
+	vertical-align: middle;
+	padding-top: 20px;
+}
+
+#articles {
+	margin-left: 210px;
+	margin-top: 10px;
 }
