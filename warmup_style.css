@@ -1,0 +1,108 @@
+/* The begining of my own css*/
+/* media query*/
+body {
+  font-family: Chalkboard;
+  display: inline-block; }
+  body .h1 .h2 .h3 {
+    font-weight: bold; }
+
+main {
+  display: inline-block;
+  width: 60%;
+  vertical-align: top;
+
+  }
+
+.blog-post {
+  margin: auto;
+  width: 70%;
+
+}
+
+aside, footer, header, article {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px; }
+
+container {
+  display: inline-block; }
+
+section {
+  display: inline-block;
+  margin: auto;
+  margin-top: 10px;
+  padding: 5px;
+
+}
+
+aside {
+  width: 20%;
+  height: 400px;
+  margin-top: 100px;
+  margin-left: 10%;
+  padding: 50px 0;
+  background-color: #ffcce6;
+  text-align: center;
+  display: inline-block;
+  position: relative; }
+  @media screen and (max-width: 990px) {
+    aside  {
+      display: none; } }
+
+
+article {
+  background-color: #b3cccc;
+  padding: 10px;
+  width: 28%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+  font-size: 14px;
+
+}
+  @media screen and (max-width: 990px) {
+    article {
+      width: 43%;
+    }
+    #third {
+      width: 93%;
+    }
+  }
+
+header {
+  text-align: center;
+  background-color: #c6ecc6;
+  vertical-align: middle;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 100px;
+  height 20%;
+
+ }
+
+
+nav {
+  text-align: left;
+  background-color: #fff5cc;
+  position: fixed;
+  display: inline-block;
+  padding: 10px 20px;
+  width: 100%;
+  padding: 10px 20px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  z-index: 1; }
+  @media screen and (max-width: 990px) {
+    nav nav {
+      height: 50px; } }
+
+footer {
+  background-color: #99e6ff;
+  border-radius: 20px;
+  font-size: 12px
+  padding: 2px;
+}
+
+
+/*# sourceMappingURL=style.css.map */
