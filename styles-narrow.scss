@@ -18,7 +18,9 @@ h3 {
 }
 
 nav {
-    background-color: #FFE599;
+    /* For debugging purposes */
+    background-color: red;
+    /* background-color: #FFE599; */
     display: block;
     width: 100%;
     border: 2px black solid;
@@ -37,36 +39,11 @@ main {
     margin: 0 auto;
     display: block;
     position: relative;
-    top: 42px;
+    top: 44px;
 }
 
 .adverts {
-    background-color: #D5A6BD;
-    width: 240px;
-    height: 600px;
-    float: left;
-    margin: 10px 10px auto;
-    border: 2px black solid;
-    display: inline-flex;
-    text-align: center;
-}
-
-.adverts figure {
-    width: 240px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.adverts figure img {
-    display: inline-flex;
-    margin: 10px auto;
-}
-
-figcaption {
-    font-weight: bold;
-    font-size: 18px;
-    margin-left: 10px;
-    margin-right: 10px;
+    display: none;
 }
 
 .blog {
