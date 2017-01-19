@@ -14,10 +14,7 @@ h3 {
   font-weight: bold; }
 
 nav {
-  /* For debugging purposes */
-  background-color: red;
-  /* background-color: #FFE599; */
-  display: block;
+  background-color: #FFE599;
   width: 100%;
   border: 2px black solid;
   position: fixed;
@@ -30,24 +27,23 @@ nav p {
 
 main {
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   position: relative;
-  top: 44px; }
+  top: 44px;
+  display: flex;
+  flex: 1 100%;
+  flex-flow: row wrap;
+  justify-content: center; }
 
 .adverts {
-  display: none; }
-
-.blog {
-  width: 100%;
-  float: left; }
+  display: none;
+  width: 0; }
 
 .blog > header {
   background-color: #ACCB9F;
-  width: 100%;
-  display: inline-block;
-  margin: 0 auto;
   border: 2px black solid;
-  text-align: center; }
+  text-align: center;
+  flex: 1 100%; }
   .blog > header h1 {
     margin: 10px auto 5px; }
   .blog > header p {
@@ -56,25 +52,22 @@ main {
 
 .blog > footer {
   background-color: #9FC5F8;
-  width: 720px;
-  display: inline-block;
-  margin: auto;
   border: 2px black solid;
-  border-radius: 20px; }
+  flex: 1 100%; }
   .blog > footer p {
     margin: 10px; }
 
 .blog-posts-container {
-  width: 720px;
   display: flex;
-  align-items: flex-start; }
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px; }
 
 .post {
   background-color: #94B3B8;
-  width: 233.33333px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px black solid; }
+  border: 2px black solid;
+  flex: 1 auto; }
   .post header {
     text-align: center;
     margin: 10px 10px 0; }
@@ -92,9 +85,15 @@ main {
     font-size: 16px; }
 
 #left-post {
-  margin-right: 10px; }
+  width: 240px;
+  margin: 10px; }
 
 #middle-post {
-  margin-right: 10px; }
+  width: 240px;
+  margin: 10px; }
+
+#right-post {
+  flex: 2 auto;
+  margin: 10px; }
 
 /*# sourceMappingURL=styles-narrow.css.map */
