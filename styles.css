@@ -1,38 +1,42 @@
 nav {
-    background-color: #FFE599;
-}
+  background-color: #FFE599;
+  display: inline-flex;
+  width: 100%; }
 
 main {
-    max-width: 990px;
-}
+  width: 990px;
+  margin: auto; }
 
-#adverts {
-    background-color: #D5A6BD;
-    width: 240px;
-}
+.adverts {
+  background-color: #D5A6BD;
+  width: 240px;
+  float: left; }
 
-#blog {
-    width: 720px;
-}
+.blog {
+  width: 720px;
+  float: left;
+  /* For debugging */
+  background-color: red; }
 
-#blog>header {
-    background-color: #ACCB9F;
-    display: block;
-}
+.blog > header {
+  background-color: #ACCB9F;
+  width: 720px;
+  display: inline-block; }
 
-#blog>footer {
-    background-color: #9FC5F8;
-    display: block;
-}
+.blog > footer {
+  background-color: #9FC5F8;
+  width: 720px;
+  display: inline-block; }
 
-#blog-posts {
-    background-color: #94B3B8;
-    width: 233.33333px;
-}
+.blog-posts-container {
+  width: 720px;
+  display: flex;
+  justify-content: center; }
 
-footer {
-    background-color: #C1C1C1;
-}
-
+.post {
+  background-color: #94B3B8;
+  width: 233.33333px;
+  height: auto;
+  display: inline-block; }
 
 /*# sourceMappingURL=styles.css.map */
