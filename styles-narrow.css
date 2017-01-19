@@ -29,9 +29,8 @@ nav p {
   font-size: 20px; }
 
 main {
-  width: 990px;
+  width: 100%;
   margin: 0 auto;
-  display: block;
   position: relative;
   top: 44px; }
 
@@ -39,7 +38,7 @@ main {
   display: none; }
 
 .blog {
-  width: 720px;
+  width: 100%;
   float: left; }
 
 .blog > header {
