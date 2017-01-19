@@ -36,6 +36,10 @@ main {
     margin: 10px auto;
 }
 
+figcaption {
+    font-weight: bold;
+}
+
 .blog {
     width: 720px;
     float: left;
@@ -50,8 +54,13 @@ main {
     text-align: center;
     border-radius: 20px;
 
+    h1 {
+        margin: 10px auto 5px;
+    }
+
     p {
         font-style: italic;
+        margin: 0 auto 10px;
     }
 }
 
@@ -83,11 +92,28 @@ main {
 
     header {
         text-align: center;
+        margin: 10px 10px 0;
+
+        h2 {
+            margin: 0 auto 5px;
+        }
+
+        p {
+            margin: 0 auto;
+        }
     }
 }
 
 .post-content {
-    margin: 10px;
+    margin: 0 10px 10px;
+
+    h3 {
+        margin: 10px auto 5px;
+    }
+
+    p {
+        margin: 0 auto;
+    }
 }
 
 #left-post {
