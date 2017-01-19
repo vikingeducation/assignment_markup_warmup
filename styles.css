@@ -1,3 +1,22 @@
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
 nav {
     background-color: #FFE599;
     display: block;
@@ -10,7 +29,7 @@ nav {
 
 nav p {
     margin: 10px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 main {
@@ -18,7 +37,7 @@ main {
     margin: 0 auto;
     display: block;
     position: relative;
-    top: 38px;
+    top: 42px;
 }
 
 .adverts {
@@ -45,6 +64,9 @@ main {
 
 figcaption {
     font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .blog {
@@ -121,6 +143,7 @@ figcaption {
 
 .post-content p {
     margin: 0 auto;
+    font-size: 16px;
 }
 
 #left-post {
