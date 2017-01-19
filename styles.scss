@@ -1,8 +1,12 @@
 nav {
     background-color: #FFE599;
-    display: inline-flex;
+    display: inline-block;
     width: 100%;
     border: 2px black solid;
+}
+
+nav p {
+    margin-left: 10px;
 }
 
 main {
@@ -17,6 +21,19 @@ main {
     float: left;
     margin: 10px 10px auto;
     border: 2px black solid;
+    display: inline-flex;
+    text-align: center;
+}
+
+.adverts figure {
+    width: 240px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.adverts figure img {
+    display: inline-flex;
+    margin: 10px auto;
 }
 
 .blog {
@@ -30,6 +47,8 @@ main {
     display: inline-block;
     margin: 10px auto 0;
     border: 2px black solid;
+    text-align: center;
+    border-radius: 20px;
 }
 
 .blog > footer {
@@ -38,6 +57,11 @@ main {
     display: inline-block;
     margin: auto;
     border: 2px black solid;
+    border-radius: 20px;
+
+    p {
+        margin: 10px;
+    }
 }
 
 .blog-posts-container {
@@ -53,6 +77,14 @@ main {
     margin-top: 10px;
     margin-bottom: 10px;
     border: 2px black solid;
+
+    header {
+        text-align: center;
+    }
+}
+
+.post-content {
+    margin: 10px;
 }
 
 #left-post {
