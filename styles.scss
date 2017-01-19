@@ -49,6 +49,10 @@ main {
     border: 2px black solid;
     text-align: center;
     border-radius: 20px;
+
+    p {
+        font-style: italic;
+    }
 }
 
 .blog > footer {
@@ -67,13 +71,12 @@ main {
 .blog-posts-container {
     width: 720px;
     display: flex;
+    align-items: flex-start;
 }
 
 .post {
     background-color: #94B3B8;
     width: (700px/3);
-    height: auto;
-    display: inline-block;
     margin-top: 10px;
     margin-bottom: 10px;
     border: 2px black solid;
