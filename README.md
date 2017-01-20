@@ -1,5 +1,4 @@
 assignment_markup_warmup_sprint
 ===============================
 
-And 1 and 2!  And 1, and 2...!
-[An HTM5, CSS3 and SASS project from the Viking Code School](http://www.vikingcodeschool.com)
+Hello I am Andrew, this is my <a href="https://ajames20.github.io/assignment_markup_warmup/.">Responsive Blog Solution</a>
