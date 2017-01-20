@@ -1,0 +1,155 @@
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #FFE599;
+    display: block;
+    width: 100%;
+    border: 2px black solid;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 10px;
+}
+
+nav p {
+    font-size: 20px;
+}
+
+main {
+    width: 990px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 44px;
+}
+
+.adverts {
+    background-color: #D5A6BD;
+    width: 240px;
+    height: 600px;
+    float: left;
+    margin: 10px 10px auto;
+    border: 2px black solid;
+    display: inline-flex;
+    text-align: center;
+}
+
+.adverts figure {
+    width: 240px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.adverts figure img {
+    display: inline-flex;
+    margin: 10px auto;
+}
+
+figcaption {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.blog {
+    width: 720px;
+    float: left;
+}
+
+.blog > header {
+    background-color: #ACCB9F;
+    width: 100%;
+    display: inline-block;
+    margin: 10px auto 0;
+    border: 2px black solid;
+    text-align: center;
+    border-radius: 20px;
+
+    h1 {
+        margin: 10px auto 5px;
+    }
+
+    p {
+        font-style: italic;
+        margin: 0 auto 10px;
+    }
+}
+
+.blog > footer {
+    background-color: #9FC5F8;
+    width: 720px;
+    display: inline-block;
+    margin: auto;
+    border: 2px black solid;
+    border-radius: 20px;
+
+    p {
+        margin: 10px;
+    }
+}
+
+.blog-posts-container {
+    width: 720px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.post {
+    background-color: #94B3B8;
+    width: (700px/3);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px black solid;
+
+    header {
+        text-align: center;
+        margin: 10px 10px 0;
+
+        h2 {
+            margin: 0 auto 5px;
+        }
+
+        p {
+            margin: 0 auto;
+        }
+    }
+}
+
+.post-content {
+    margin: 0 10px 10px;
+
+    h3 {
+        margin: 10px auto 5px;
+    }
+
+    p {
+        margin: 0 auto;
+        font-size: 16px;
+    }
+}
+
+#left-post {
+    margin-right: 10px;
+}
+
+#middle-post {
+    margin-right: 10px;
+}
