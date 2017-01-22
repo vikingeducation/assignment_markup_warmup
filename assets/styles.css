@@ -48,26 +48,191 @@ table {
 }
 
 
+/*
+=====================
+Grid
+=====================
+*/
+
+.container{
+  width: 990px;
+  margin: 0 auto;
+}
+
+.container{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.col-1-4{
+  width: 25%;
+  display: inline-block;
+	vertical-align: top;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/*
+ ============================
+ Clearfix
+ ============================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group::after{
+  clear: both;
+}
+
+.group{
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+=====================
+Typography
+=====================
+*/
 
 body{
-  background: red;
+	font-family: 'Open Sans Condensed', sans-serif;
+	line-height: normal;
 }
 
-header{
-  background: green;
+h1{
+  font-size: 24px;
 }
 
-nav{
-  background: yellow;
+h2{
+  font-size: 22px;
+	text-align: center;
+	font-weight: 700;
 }
 
-article{
-  background: blue;
+h3{
+  font-size: 20px;
+  font-style: italic;
 }
 
-aside{
-  background: pink;
+h4{
+  font-size: 18px;
+	text-align: center;
 }
-footer{
-  background: purple;
+
+h5{
+  font-size: 16px;
+	font-weight: 700;
+	padding-bottom: 6px;
+	padding-top: 6px;
+}
+
+small{
+	font-size: 12px;
+}
+
+.main-content p{
+	padding-bottom: 6px;
+}
+/*
+=====================
+Nav bar
+=====================
+*/
+
+.main-nav{
+  background: #f5e346;
+  border-bottom: 2px solid #000;
+	height: 36px;
+	width: 100%;
+  font-size: 18px;
+	top: 0;
+	padding-top: 12px;
+  padding-left: 12px;
+  margin-bottom: 12px;
+	z-index: 1000;
+}
+
+/*
+=====================
+Header
+=====================
+*/
+
+.main-header{
+  border: 2px solid #000;
+  border-radius: 12px;
+  background: #7be875;
+  display: block;
+  text-align: center;
+  padding: 12px 0;
+	width: 855px;
+	margin-left: 360px;
+}
+
+.main-title{
+padding-bottom: 12px;
+}
+
+/*
+=====================
+Main Content
+=====================
+*/
+
+.main-content{
+	margin-top: 12px;
+	margin-bottom:12px;
+	display: block;
+	float: right;
+}
+
+.blog-post{
+	background: #98bab6;
+	display: inline-block;
+	border: 2px solid #000;
+	position: relative;
+}
+
+/*
+=====================
+Footer
+=====================
+*/
+
+.advertisment{
+	background: #e3a0a0;
+	border: 2px solid #000;
+	display: inline-block;
+	height: 500px;
+	float: left;
+	position: absolute;
+	top: 62px;
+	left: 45px;
+	width: 220px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.advertisment p{
+	vertical-align: middle;
+}
+
+
+/*
+=====================
+Footer
+=====================
+*/
+
+.main-footer{
+	background: #afdcee;
+	border: 2px solid #000;
+	border-radius: 10px;
+	display: block;
+	margin-top: 12px;
+	bottom: 12px;
 }
