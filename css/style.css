@@ -69,7 +69,7 @@ nav {
 
 aside {
   width: 18%;
-  background: #DF3EFF;
+  background: #FF4CC4;
   display: flex;
   margin-top: 1em;
   margin-right: 1em;
@@ -89,22 +89,49 @@ aside {
       align-self: center; }
 
 main {
-  width: 80%; }
+  width: 80%;
+  position: relative; }
   main > header {
     margin-top: 1em;
-    height: 10%;
+    height: 12%;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid red;
-    background: yellow; }
-    main > header h1 {
+    background: #19647E;
+    border-radius: 8px; }
+    main > header > h1 {
       align-self: center;
       margin-bottom: 0;
-      font-size: 1.4em; }
+      font-size: 1.6em; }
     main > header h3 {
       align-self: center;
       font-style: italic;
       margin-top: 0.2em;
       font-size: 0.8em; }
+
+.article_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  margin-bottom: 3em; }
+
+article {
+  width: 32%;
+  background: #119DA4; }
+  article header {
+    text-align: center; }
+    article header h1 {
+      font-size: 1.4em; }
+    article header h4 {
+      font-size: 0.95em;
+      font-style: italic; }
+
+footer {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  height: 3em;
+  bottom: 0px;
+  border-radius: 8px;
+  background: #16c9d2; }
 
 /*# sourceMappingURL=style.css.map */
