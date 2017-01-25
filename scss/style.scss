@@ -1,5 +1,29 @@
+
+
 @import "_css_reset.scss";
+@import "_variables.scss";
+
+* {
+	outline: 1px solid gray;
+}
 
 h1 + h3, h1 + h4{
 	font-weight: normal;
 }
+
+
+
+nav{
+	display: block;
+	height: 3em;
+	background: $third_color;
+	p{
+		display: inline-block;
+		position: relative;
+		top: 1.0em;
+		left: 0.6em;
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+}
+
