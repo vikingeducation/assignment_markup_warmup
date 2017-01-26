@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.375rem; }
+
+h4 {
+  font-size: 1.125rem; }
+
+h5 {
+  font-size: 1rem; }
+
+h6 {
+  font-size: 0.875rem; }
+
+p {
+  font-size: 1.125rem;
+  font-weight: 100;
+  line-height: 1.8; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.justify {
+  text-align: justify; }
+
+.hidden-sm {
+  display: none; }
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 33.75em) {
+    .container {
+      width: 80%; } }
+  @media only screen and (min-width: 60em) {
+    .container {
+      width: 75%;
+      max-width: 60rem; } }
+
+.row {
+  position: relative;
+  width: 100%; }
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem; }
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%; }
+
+.col-1-sm {
+  width: 4.33333%; }
+
+.col-2-sm {
+  width: 12.66667%; }
+
+.col-3-sm {
+  width: 21%; }
+
+.col-4-sm {
+  width: 29.33333%; }
+
+.col-5-sm {
+  width: 37.66667%; }
+
+.col-6-sm {
+  width: 46%; }
+
+.col-7-sm {
+  width: 54.33333%; }
+
+.col-8-sm {
+  width: 62.66667%; }
+
+.col-9-sm {
+  width: 71%; }
+
+.col-10-sm {
+  width: 79.33333%; }
+
+.col-11-sm {
+  width: 87.66667%; }
+
+.col-12-sm {
+  width: 96%; }
+
+@media only screen and (min-width: 45em) {
+  .col-1 {
+    width: 4.33333%; }
+
+  .col-2 {
+    width: 12.66667%; }
+
+  .col-3 {
+    width: 21%; }
+
+  .col-4 {
+    width: 29.33333%; }
+
+  .col-5 {
+    width: 37.66667%; }
+
+  .col-6 {
+    width: 46%; }
+
+  .col-7 {
+    width: 54.33333%; }
+
+  .col-8 {
+    width: 62.66667%; }
+
+  .col-9 {
+    width: 71%; }
+
+  .col-10 {
+    width: 79.33333%; }
+
+  .col-11 {
+    width: 87.66667%; }
+
+  .col-12 {
+    width: 96%; }
+
+  .hidden-sm {
+    display: block; } }
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5em;
+  color: #5C5C5C;
+  background-color: #ededed; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: "Nunito Sans", sans-serif; }
+
+header {
+  background-color: #9FC5F8;
+  color: #597EAA;
+  padding: 1.5em;
+  line-height: 2em;
+  font-size: 1.2em;
+  padding-left: 5%;
+  padding-right: 2%;
+  text-align: center; }
+  @media (min-width: 990px) {
+    header {
+      padding: 2em;
+      text-align: left; } }
+
+.header-box {
+  padding: 1.5em;
+  text-align: center;
+  line-height: 2.5em; }
+  @media (min-width: 990px) {
+    .header-box {
+      padding: 2em;
+      line-height: normal; } }
+  .header-box h3 {
+    margin-top: .5em; }
+
+.advert {
+  display: none; }
+  @media (min-width: 990px) {
+    .advert {
+      background-color: #597EAA;
+      border-radius: 5px;
+      color: #F0F2F4;
+      height: 30%;
+      margin: 80vh 1.9em;
+      position: absolute;
+      width: 17%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      align-items: center; } }
+  .advert h1 {
+    font-size: 1.25em; }
+  .advert img {
+    width: 100px;
+    height: 150px;
+    margin-top: 1.725em; }
+
+.article-container h1 {
+  color: #597EAA;
+  font-size: 1.6em;
+  text-align: center; }
+.article-container h2 {
+  font-size: 1.3em; }
+
+footer {
+  color: #F0F2F4;
+  background-color: #9FC5F8;
+  padding: .6em;
+  user-select: none; }
+  @media (min-width: 990px) {
+    footer {
+      padding: 1em;
+      user-select: none; } }
+
+.small-text {
+  font-size: .7em; }
+  @media (min-width: 990px) {
+    .small-text {
+      font-size: .9em; } }
+
+/*# sourceMappingURL=scss.css.map */
