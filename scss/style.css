@@ -75,9 +75,6 @@ aside {
   margin-right: 1em;
   height: 60%;
   text-align: center; }
-  @media (max-width: 990px) {
-    aside {
-      display: none; } }
   aside #ad_box {
     display: flex;
     flex-direction: column;
@@ -91,10 +88,9 @@ aside {
       width: 8em;
       align-self: center;
       border: 1px solid #fff;
-      background: #ec3; }
+      background: #222; }
 
 main {
-  margin: 0 auto;
   width: 80%;
   position: relative; }
   main > header {
@@ -117,23 +113,12 @@ main {
 .article_wrapper {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin-top: 1em;
-  margin-bottom: 4em; }
-  @media (max-width: 990px) {
-    .article_wrapper {
-      padding-left: 0.5em;
-      padding-right: 0.5em; } }
+  margin-bottom: 3em; }
 
 article {
-  flex: 0 0 32%;
+  width: 32%;
   background: #119DA4; }
-  @media (max-width: 990px) {
-    article {
-      flex: 1 0 45%;
-      margin-bottom: 1em;
-      margin-right: 0.5em;
-      margin-left: 0.5em; } }
   article header {
     text-align: center; }
     article header h1 {
@@ -149,6 +134,6 @@ footer {
   height: 3em;
   bottom: 0px;
   border-radius: 8px;
-  background: #60e8ee; }
+  background: #16c9d2; }
 
 /*# sourceMappingURL=style.css.map */
