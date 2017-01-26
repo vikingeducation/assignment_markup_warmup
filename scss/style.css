@@ -1,0 +1,139 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  outline: 1px solid gray; }
+
+h1 + h3, h1 + h4 {
+  font-weight: normal; }
+
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex; }
+
+nav {
+  display: block;
+  height: 3em;
+  background: #FFC857; }
+  nav p {
+    display: inline-block;
+    position: relative;
+    top: 1.0em;
+    left: 0.6em;
+    font-size: 1.2em;
+    font-weight: bold; }
+
+aside {
+  width: 18%;
+  background: #FF4CC4;
+  display: flex;
+  margin-top: 1em;
+  margin-right: 1em;
+  height: 60%;
+  text-align: center; }
+  aside #ad_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 35em; }
+    aside #ad_box h1 {
+      font-size: 1.2em; }
+    aside #ad_box figure {
+      display: flex;
+      height: 8em;
+      width: 8em;
+      align-self: center;
+      border: 1px solid #fff;
+      background: #222; }
+
+main {
+  width: 80%;
+  position: relative; }
+  main > header {
+    margin-top: 1em;
+    height: 12%;
+    display: flex;
+    flex-direction: column;
+    background: #19647E;
+    border-radius: 8px; }
+    main > header > h1 {
+      align-self: center;
+      margin-bottom: 0;
+      font-size: 1.6em; }
+    main > header h3 {
+      align-self: center;
+      font-style: italic;
+      margin-top: 0.2em;
+      font-size: 0.8em; }
+
+.article_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  margin-bottom: 3em; }
+
+article {
+  width: 32%;
+  background: #119DA4; }
+  article header {
+    text-align: center; }
+    article header h1 {
+      font-size: 1.4em; }
+    article header h4 {
+      font-size: 0.95em;
+      font-style: italic; }
+
+footer {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  height: 3em;
+  bottom: 0px;
+  border-radius: 8px;
+  background: #16c9d2; }
+
+/*# sourceMappingURL=style.css.map */
