@@ -99,5 +99,40 @@ footer {
 	margin-top: 50%
 }
 
+@media (max-width: 990px) {
+	html,body, main {
+		height: 100%;
+	}
+	.Adspace {
+		display: none;
+	}
+	.section-title {
+		width: 100%;
+		margin-top: 0px;
+		margin-left: 0px;
+		border-radius: 0px;
+		border: 0px 0px 3px 0px;
+	}
+	.article1 {
+		margin-left: 3.3%;
+		width: 45%;
+		height: 100%;
+	}
+	.article2 {
+		margin-left: 51.3%;
+		width: 45%;
+		top: 131.81px;
+	}
+	.article3 {
+		position: static;
+		margin-top: 10px;
+		margin-left: 3.3%;
+		width: 93.3%;
+	}
+	footer {
+		width: 100%;
+		margin-left: 0;
+	}
+}
 
 
