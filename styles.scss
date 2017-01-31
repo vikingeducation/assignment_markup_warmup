@@ -1,0 +1,43 @@
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.md-one-third {
+  width: 33%;
+}
+
+.md-two-thirds {
+  width: 66%;
+}
+
+.header {
+  text-align: center;
+}
+
+.post {
+  h3 {
+    text-align: center;
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+@media screen and (max-width: 990px) {
+  .sm-hidden {
+    display: none;
+  }
+
+  .sm-full-screen {
+    width: 100%;
+  }
+
+  .sm-half-screen {
+    width: 49%;
+  }
+}
