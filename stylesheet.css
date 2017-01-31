@@ -1,0 +1,30 @@
+html {
+	font-family: helvetica;
+}
+
+header {
+	padding: 0.5em;
+    color: black;
+    clear: left;
+    text-align: left;
+	font-size: 12px;
+	background-color: #e1f695;
+}
+
+#blog_name {
+	text-align: center;
+	background-color: #7FFF00;
+}
+
+.ad_space {
+	background-color: #FFB6C1;
+	float: left;
+}
+
+article {
+	background-color: #D3D3D3;
+}
+
+footer {
+	background-color: #ADD8E6;
+}
