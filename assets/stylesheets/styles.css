@@ -52,3 +52,44 @@ CSS Reset
  	border-collapse: collapse;
  	border-spacing: 0;
  }
+
+ *,
+ *:before,
+ *:after {
+     -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+ }
+
+/*
+==========================
+Mockup CSS
+==========================
+ */
+
+nav {
+    background: yellow;
+    border: 3px solid black;
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    background: lightgreen;
+    border: 3px solid black;
+}
+
+aside {
+    background: pink;
+    border: 3px solid black;
+}
+
+article {
+    background: teal;
+    border: 3px solid black;
+}
+
+footer {
+    background: lightblue;
+    border: 3px solid black;
+}
