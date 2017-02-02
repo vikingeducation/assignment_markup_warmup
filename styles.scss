@@ -54,10 +54,11 @@ table {
 }
 .page-header {
     background: #ffe599;
-    height: 30px;
-    padding: 5px;
+    height: 40px;
+    padding: 10px;
     font-weight: bold;
     vertical-align: middle;
+    border-bottom: 3px solid #000;
 
 }
 
@@ -79,7 +80,7 @@ aside {
     background: #b6d7a8;
     border: 3px solid #000;
     margin: 5px;
-    padding: 5px 0;
+    padding: 15px 0;
     border-radius: 20px;
     height: 80px;
     width: 97%;
@@ -93,7 +94,7 @@ article {
     border: 3px solid #000;
     margin: 5px;
     padding: 15px;
-    width: 30%;
+    width: 31.5%;
     float: left;
 
 }
@@ -106,7 +107,7 @@ footer {
     margin: 5px;
     padding: 10px;
     border-radius: 20px;
-    width: 96%;
+    width: 97%;
     float: left;
 
 }
@@ -180,10 +181,10 @@ aside {
 }
 .page-header {
     background: #ffe599;
-    height: 30px;
-    padding: 5px;
+    height: 40px;
+    padding: 10px;
     font-weight: bold;
-
+    border-bottom: 3px solid #000;
 
 }
 
@@ -191,7 +192,7 @@ aside {
     background: #b6d7a8;
     border: 3px solid #000;
     margin: 5px;
-    padding: 5px 0;
+    padding: 15px;
     border-radius: 20px;
     height: 80px;
     width: 99%;
@@ -279,10 +280,11 @@ aside {
 }
 .page-header {
     background: #ffe599;
-    height: 30px;
-    padding: 5px;
+    height: 40px;
+    padding: 10px;
     font-weight: bold;
     vertical-align: middle;
+    border-bottom: 1px solid #000;
 
 }
 
@@ -292,7 +294,7 @@ aside {
     margin: 5px;
     padding: 5px 0;
     border-radius: 10px;
-    height: 50px;
+    height: 60px;
     width: 98%;
     text-align: center;
 
