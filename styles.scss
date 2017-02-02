@@ -47,6 +47,10 @@ table {
 }
 
 
+
+
+/* Style for viewports larger than 989 pixels */
+
 @media screen and (min-width: 990px) {
 
 * {
@@ -171,6 +175,9 @@ h3 {
 }
 }
 
+
+/* Style for medium-sized viewports */
+
 @media screen and (min-width: 681px) and (max-width: 989px){
 * {
     box-sizing: border-box;
@@ -269,6 +276,8 @@ h3 {
 
 }
 
+
+/* Style for mobile devices */
 
 @media screen and (max-width: 680px) {
  * {
