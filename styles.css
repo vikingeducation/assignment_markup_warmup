@@ -79,7 +79,7 @@ table {
     text-align: center; }
 
   article {
-    background: #9fc5f8;
+    background: #a2c4c9;
     border: 3px solid #000;
     margin: 5px;
     padding: 15px;
@@ -162,7 +162,7 @@ table {
     text-align: center; }
 
   #article1 {
-    background: #9fc5f8;
+    background: #a2c4c9;
     border: 3px solid #000;
     margin: 5px;
     padding: 15px;
@@ -170,7 +170,7 @@ table {
     float: left; }
 
   #article2 {
-    background: #9fc5f8;
+    background: #a2c4c9;
     border: 3px solid #000;
     margin: 5px;
     padding: 15px;
@@ -178,7 +178,7 @@ table {
     float: right; }
 
   #article3 {
-    background: #9fc5f8;
+    background: #a2c4c9;
     border: 3px solid #000;
     margin: 5px;
     padding: 15px;
@@ -187,11 +187,11 @@ table {
 
   footer {
     background: #9fc5f8;
-    border: 3px solid #000;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
     margin: 5px;
-    padding: 10px;
-    border-radius: 20px;
-    width: 99%; }
+    padding: 15px;
+    width: 100%; }
 
   h1 {
     font-weight: bold;
@@ -239,7 +239,7 @@ table {
     text-align: center; }
 
   article {
-    background: #9fc5f8;
+    background: #a2c4c9;
     border: 1px solid #000;
     margin: 5px;
     padding: 15px;
@@ -247,11 +247,11 @@ table {
 
   footer {
     background: #9fc5f8;
-    border: 1px solid #000;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
     margin: 5px;
-    padding: 5px;
-    border-radius: 10px;
-    width: 98%; }
+    padding: 15px;
+    width: 100%; }
 
   h1 {
     font-weight: bold;
