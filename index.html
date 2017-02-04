@@ -1,66 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title> The Lorem Micro Blog </title>
 </head>
 <body>
-	<header>
+	<nav class="fixed-nav-bar">
 		<h1>The Lorem Micro Blog</h1>
-	</header>
-	<section id="blog_name">
-		<h2>The Lorem Micro Blog</h2>
-		<p>By Foo Bar</p>
-	</section>
-	<nav class="ad_space">
-		<p>Check out my vertically centered ad!</p>
 	</nav>
-    <section>
-    	<article>
-    		<h2>A Most Posty Post</h2>
-    			<h3>First Thoughts...</h3>
-    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    			<h3>Additional Thoughts...</h3>
-    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    	</article>
-    	<article>
-    		<h2>Another Posty Post</h2>
-    		<h3>Only Thoughts...</h3>
-    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    	</article>
-    	<article>
-    		<h2>A Posty Post</h2>
-    		<h3>Be it Resolved</h3>
-    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    		consequat. 
-    		<br>
-    		Duis aute irure dolor in reprehenderit in voluptate velit esse
-    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    	</article>
-    </section>
-    <footer>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</footer>
+	<div class="content-layout">
+		<aside class="content-left">
+			<p>Check out my vertically centered ad!<img src=""></p>
+		</aside>
+		<div class="content-right">
+			<section id="blog-title-area">
+				<h2>The Lorem Micro Blog</h2>
+				<p>By Foo Bar</p>
+			</section>
+		    <section class="blog-columns">
+		    	<article class="blog-post">
+		    		<h2>A Most Posty Post</h2>
+		    			<h3>First Thoughts...</h3>
+		    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		    			consequat.</p>
+		    			<h3>Additional Thoughts...</h3>
+		    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		    			consequat.</p>
+		    	</article>
+		    	<article class="blog-post">
+		    		<h2>Another Posty Post</h2>
+		    		<h3>Only Thoughts...</h3>
+		    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		    		consequat.</p>
+		    	</article>
+		    	<article class="blog-post">
+		    		<h2>A Posty Post</h2>
+		    		<h3>Be it Resolved</h3>
+		    		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		    		consequat. 
+		    		<br>
+		    		Duis aute irure dolor in reprehenderit in voluptate velit esse
+		    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		    	</article>
+		    </section>
+		    <footer><b>Footer</b></footer>
+		</div>
+	</div>
 </body>
 </html>
