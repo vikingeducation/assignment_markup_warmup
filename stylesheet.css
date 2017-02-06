@@ -8,6 +8,11 @@ aside{
 	border-color: black;
 	border-width: 2px;
 	border-style: solid;
+	display: flex;
+    /* Vertical align: */
+    align-items: center;
+    /* Horizontal align: */
+    justify-content: center;
 }
 
 nav {
@@ -28,6 +33,10 @@ h2 {
 	text-align: center;
 }
 
+h3, p {
+	padding: 5px;
+}
+
 footer {
 	background-color: #ADD8E6;
 	margin-top: 20px;
@@ -36,9 +45,12 @@ footer {
 
 .content-layout {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: flex-start;
 	justify-content: space-between;
 	margin-top: 70px;
+	margin-right: 50px;
+	margin-left: 50px;
 }
 
 .content-area {
@@ -68,7 +80,7 @@ footer {
 }
 
 .blog-post {
-	flex-basis: 30%;
+	flex-basis: 32%;
 	border-color: black;
 	border-style: solid;
 	border-width: 2px;
@@ -94,6 +106,21 @@ footer {
 
 	.content-right {
 		flex-basis: 100%;
+		align-content: space-between;
+
+	}
+
+	.blog-columns {
+		flex-wrap: wrap;
+		
+	}
+
+	.blog-post {
+		flex-basis: 48%;
+		margin-top: 20px;
+		flex-grow: 1;
+		margin-left: 5px;
+		margin-right: 5px;
 	}
 
 }
