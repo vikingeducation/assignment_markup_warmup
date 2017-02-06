@@ -1,0 +1,168 @@
+@import 'reset';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 14px/22px Lato, "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h4 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+.spacer {
+  width: 100%;
+  height: 40px;
+}
+
+.container {
+  width: 990px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.left-panel {
+  width: 25%;
+}
+
+.right-panel {
+  width: 75%;
+}
+
+.articles-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content:         space-between;
+
+  article {
+    background-color: #a1cecb;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 12px;
+
+    h2,
+    h3 {
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 10px;
+    }
+
+    h3 {
+      margin-top: 6px;
+    }
+
+    h4 {
+      margin: 10px 0;
+    }
+
+    :last-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  .middle-article {
+    margin: 0 12px;
+  }
+}
+
+header,
+aside,
+section,
+article,
+footer {
+  border: 1px solid black;
+}
+
+aside,
+section,
+footer {
+  margin-top: 10px;
+}
+
+section,
+footer {
+  border-radius: 5px;
+  width: 100%;
+}
+
+main {
+  margin-left: 10px;
+}
+
+aside {
+  background-color: #cea1cd;
+  height: 540px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction:         column;
+  -webkit-justify-content: center;
+  justify-content:         center;
+
+  img {
+    width: 80%;
+    display: block;
+    border: 1px solid black;
+    margin: 0 auto;
+  }
+
+  h2 {
+    padding: 0 8px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+header {
+  background-color: #fffd99;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  border-left: 0;
+  border-right: 0;
+
+  h3 {
+    padding-top: 10px;
+    margin-left: 10px;
+  }
+}
+
+footer {
+  background-color: #a2c0f2;
+  padding: 6px 12px;
+}
+
+section {
+  background-color: #a1cea9;
+  margin-bottom: 10px;
+
+  h1,
+  h3 {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  h3 {
+    font-style: italic;
+  }
+}
