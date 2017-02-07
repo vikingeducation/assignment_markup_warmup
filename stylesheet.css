@@ -40,6 +40,11 @@ h3, p {
 footer {
 	background-color: #9fc5f8;
 	margin-top: 20px;
+	border-color: black;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	padding: 5px;
 }
 
 
