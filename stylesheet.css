@@ -3,7 +3,7 @@ html {
 }
 
 aside{
-	background-color: pink;
+	background-color: #d5a6bd;
 	height: 400px;
 	border-color: black;
 	border-width: 2px;
@@ -20,13 +20,13 @@ nav {
     color: black;
     text-align: left;
 	font-size: 8px;
-	background-color: #e1f695;
+	background-color: #ffe599;
 	height: 30px;
 	border-bottom: 2px solid black;
 }
 
 article {
-	background-color: #D3D3D3;
+	background-color: #a2c4c9;
 }
 
 h2 {
@@ -38,7 +38,7 @@ h3, p {
 }
 
 footer {
-	background-color: #ADD8E6;
+	background-color: #9fc5f8;
 	margin-top: 20px;
 }
 
@@ -89,7 +89,7 @@ footer {
 }
 
 #blog-title-area {
-	background-color: green;
+	background-color: #b6d7a8;
 	text-align: center;
 	border-color: black;
 	border-width: 2px;
