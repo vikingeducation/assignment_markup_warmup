@@ -163,4 +163,24 @@ h3, p {
 	 background: #ccc;
 	 margin: auto;
 	 border: 1px solid black;
+	 flex: 0 2 auto;
    }
+
+/* for smaller screens */
+@media all and (max-width: 990px) {
+	.pink {
+		display: none;
+	}
+	.flex-container {
+		width: 100%
+	}
+	.first,
+	.second {
+		width: calc(50% - 25px);
+	}
+
+	.third,
+	.light-blue {
+		width: 100%;
+	}
+}
