@@ -21,8 +21,9 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
+	font-family: Times, sans-serif;
+	font-size: 16px;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -74,20 +75,24 @@ body {
   width: 100%;
   height: auto;
   vertical-align:bottom;
-  padding: 5px;
+  padding: 10px;
+	font-size: 18px;
 }
 
 .pink {
   background: #D5A6BD;
   height: 500px;
-  width: calc(25% - 10px);
-  float: left;
+  width: calc(25% - 20px);
+	display: flex;
+	float: left;
+	align-items: center;
+	justify-content: center;
 }
 
 .pink,
 .green,
 .blue {
-    margin-top: 30px;
+    margin-top: 50px;
     padding: 5px;
     margin-left: 5px;
     margin-right: 5px;
@@ -95,7 +100,7 @@ body {
 
 .flex-container {
   display: flex;
-  width: calc(75% - 10px);
+  width: calc(75% - 25px);
   flex-flow: row wrap;
   align-items: flex-start;
 }
@@ -103,13 +108,21 @@ body {
 .green {
   background: #B6D7A8;
   width: 100%;
+	line-height: 1.5;
+	margin-bottom: 10px;
 }
 
 .blue {
   background: #A2C4C9;
-  width: calc(33.33% - 20px);
+  width: calc(33.33% - 25px);
   margin: 5px;
   padding: 5px;
+}
+
+.post-heading {
+	font-size: 24px;
+	font-weight: 700;
+	padding-top: 10px;
 }
 
 .light-blue {
@@ -117,3 +130,37 @@ body {
   margin: 5px;
   padding: 5px;
 }
+
+.author {
+	font-size: 16px;
+	font-weight: 100;
+}
+
+.center-text {
+	text-align: center;
+	padding-bottom: 8px;
+}
+
+h3, p {
+	padding-bottom: 8px;
+}
+
+.orange,
+.green,
+.pink,
+.blue,
+.light-blue {
+	border: 2px solid black;
+}
+
+.green,
+.light-blue {
+	border-radius: 20px
+}
+ #image {
+	 height: 200px;
+	 width: 200px;
+	 background: #ccc;
+	 margin: auto;
+	 border: 1px solid black;
+   }
