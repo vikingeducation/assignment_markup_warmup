@@ -1,8 +1,119 @@
+/*CSS RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strong, sub, sup, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 /* my code */
-nav {
-  width: 100%;
-  position: fixed;
+#clearfix:before,
+#clearfix:after {
+  content: "";
+  display: table;
+}
+
+#clearfix:after {
+  clear:both;
+}
+
+body {
+  max-width: 990px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.orange {
+  z-index: 1;
   background: #FFE599;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  vertical-align:bottom;
+  padding: 5px;
+}
+
+.pink {
+  background: #D5A6BD;
+  height: 500px;
+  width: calc(25% - 10px);
+  float: left;
+}
+
+.pink,
+.green,
+.blue {
+    margin-top: 30px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.flex-container {
+  display: flex;
+  width: calc(75% - 10px);
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+.green {
+  background: #B6D7A8;
+  width: 100%;
+}
+
+.blue {
+  background: #A2C4C9;
+  width: calc(33.33% - 20px);
+  margin: 5px;
+  padding: 5px;
+}
+
+.light-blue {
+  background: #9FC5F8;
+  margin: 5px;
+  padding: 5px;
 }
