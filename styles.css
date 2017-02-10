@@ -155,6 +155,8 @@ footer, #site-header {
     width: 30%;
     height: 550px;
     order: -1;
+    box-sizing: border-box;
+    padding-right: 10px;
   }
   
   .ad-image {
