@@ -54,7 +54,7 @@ html {
 }
 
 nav {
-  height: 10vh;
+  height: 8vh;
   position: fixed;
   background-color: #E7C392;
   width: 100vw;
@@ -68,7 +68,7 @@ section {
   display:flex;
   max-width: 990px;
   margin: 0 auto;
-  padding-top:10vh;
+  padding-top:8vh;
 }
 
 main {
@@ -144,7 +144,7 @@ footer {
 
 @media (min-width: 990px) {
   section {
-      padding-top: 12vh;
+      padding-top: 10vh;
   }
   
   main > article, #article-three {
