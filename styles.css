@@ -62,7 +62,7 @@ nav {
 }
 
 main {
-  width: 70%;
+  width: 100%;
 }
 
 header {
@@ -131,6 +131,9 @@ footer {
   }
   section > article {
     width: calc((100% - 30px) / 3);
+  }
+  main {
+      width: 70%;
   }
   aside {
     display: block;
