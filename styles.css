@@ -141,10 +141,16 @@ footer {
       width: 70%;
   }
   aside {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 30%;
     height: 550px;
     order: -1;
+  }
+  
+  .ad-image {
+      width: 60%;
   }
 
 }
