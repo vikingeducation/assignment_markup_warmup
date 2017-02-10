@@ -94,8 +94,7 @@ section > article {
 
 aside {
     background-color: purple;
-    width: 30%;
-    height: 100px;
+    display:none;
 }
 
 #article-three {
@@ -130,4 +129,10 @@ footer {
   section > article {
     width: calc((100% - 30px) / 3);
   }
+  aside {
+    display: block;
+    width: 30%;
+    height: 100px;
+}
+
 }
