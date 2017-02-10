@@ -61,8 +61,14 @@ nav {
   width: 100vw;
 }
 
+section {
+  display:flex;
+}
+
 main {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header {
@@ -77,10 +83,7 @@ h1 {
 h3 {
   font-size: 1.5em;
 }
-section {
-  display:flex;
-  flex-wrap: wrap;
-}
+
 main > article {
   width: calc((100% - 20px) / 2);
   padding: 10px;
@@ -91,13 +94,13 @@ main > article {
   height: 100%;
 }
 
+#article-three {
+  width: 100%;
+}
+
 aside {
     background-color: purple;
     display:none;
-}
-
-#article-three {
-  width: 100%;
 }
 
 
@@ -126,10 +129,8 @@ footer {
 }
 
 @media (min-width: 990px) {
-  section {
-    flex-wrap: nowrap;
-  }
-  section > article {
+  
+  main > article {
     width: calc((100% - 30px) / 3);
   }
   main {
@@ -139,6 +140,6 @@ footer {
     display: block;
     width: 30%;
     height: 100px;
-}
+  }
 
 }
