@@ -68,7 +68,7 @@ section {
   display:flex;
   max-width: 990px;
   margin: 0 auto;
-  padding-top:12vh;
+  padding-top:10vh;
 }
 
 main {
@@ -118,7 +118,7 @@ footer {
   height: 10vh;
   width: 100vw;
   background-color: #2F8299;
-  margin: 5px 5px 0 5px;
+  margin-top: 5px;
 }
 
 #site-header {
@@ -128,14 +128,13 @@ footer {
     align-items: center;
     justify-content: center;
     height: 8vh;
-    margin: 0 5px 5px 5px;
-    border-radius: 10px;
+    margin-bottom: 5px;
 
 }
 
 
 .post {
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 
 .title {
@@ -144,6 +143,9 @@ footer {
 }
 
 @media (min-width: 990px) {
+  section {
+      padding-top: 12vh;
+  }
   
   main > article, #article-three {
     width: calc((100% - 30px) / 3);
@@ -162,8 +164,11 @@ footer {
     padding-right: 10px;
   }
   
-  footer {
+  
+  footer, #site-header {
       border-radius: 10px;
+      margin-left: 5px;
+      margin-right: 5px;
   }
   
   .ad-image {
