@@ -108,12 +108,6 @@ aside {
     display:none;
 }
 
-
-li {
-  margin-left: 20px;
-  list-style: disc;
-}
-
 footer {
   min-height: 10vh;
   width: 100vw;
