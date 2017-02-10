@@ -130,7 +130,7 @@ footer {
 
 @media (min-width: 990px) {
   
-  main > article {
+  main > article, #article-three {
     width: calc((100% - 30px) / 3);
   }
   main {
