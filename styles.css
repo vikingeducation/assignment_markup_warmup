@@ -92,7 +92,7 @@ main > article {
   width: calc((100% - 20px) / 2);
   padding: 10px;
   box-sizing: border-box;
-  margin: 0 5px;
+  margin: 0 5px 10px 5px;
   background-color: #627E95;
   border: 1px solid black;
   align-self: flex-start;
