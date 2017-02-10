@@ -1,0 +1,172 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126 
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS Reset End */
+
+html {
+  font-size: 16px;
+}
+
+nav {
+  height: 8vh;
+  position: fixed;
+  background-color: #E7C392;
+  width: 100vw;
+  padding-left: 20px;
+  display:flex;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+section {
+  display:flex;
+  max-width: 990px;
+  margin: 0 auto;
+  padding-top:8vh;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+}
+
+main > article {
+  width: calc((100% - 20px) / 2);
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0 5px 10px 5px;
+  background-color: #627E95;
+  border: 1px solid black;
+  align-self: flex-start;
+
+}
+
+#article-three {
+  width: 100%;
+}
+
+aside {
+    background-color: #C47B9B;
+    display:none;
+}
+
+footer {
+  min-height: 10vh;
+  width: 100vw;
+  background-color: #2F8299;
+  margin-top: 5px;
+}
+
+#site-header {
+    width:100%;
+    background-color: #639D86;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+    margin-bottom: 5px;
+
+}
+
+
+.post {
+  padding-bottom: 2em;
+}
+
+.title {
+  font-size: 1.1em;
+  margin-bottom: .5em
+}
+
+@media (min-width: 990px) {
+  section {
+      padding-top: 10vh;
+  }
+  
+  main > article, #article-three {
+    width: calc((100% - 30px) / 3);
+  }
+  main {
+      width: 70%;
+  }
+  aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 550px;
+    order: -1;
+    box-sizing: border-box;
+    padding-right: 10px;
+  }
+  
+  
+  footer, #site-header {
+      border-radius: 10px;
+      margin-left: 5px;
+      margin-right: 5px;
+  }
+  
+  .ad-image {
+      width: 60%;
+  }
+
+}
