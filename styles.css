@@ -62,7 +62,6 @@ nav {
 }
 
 main {
-  padding-top: 10vh;
   width: 70%;
 }
 
@@ -111,6 +110,10 @@ footer {
   height: 10vh;
   width: 100vw;
   background-color: blue;
+}
+
+#site-header {
+    padding-top: 10vh;
 }
 
 .post {
