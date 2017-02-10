@@ -115,7 +115,7 @@ li {
 }
 
 footer {
-  height: 10vh;
+  min-height: 10vh;
   width: 100vw;
   background-color: #2F8299;
   margin-top: 5px;
