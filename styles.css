@@ -79,7 +79,6 @@ main {
 
 header {
   text-align: center;
-  padding-bottom: 1em;
 }
 
 h1 {
@@ -119,17 +118,22 @@ footer {
   height: 10vh;
   width: 100vw;
   background-color: blue;
+  margin: 5px 5px 0 5px;
 }
 
 #site-header {
     width:100%;
     background-color: #639D86;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    margin: 0 5px 5px 5px;
 
 }
 
 footer, #site-header {
     border-radius: 10px;
-    margin: 0 5px;
 }
 
 .post {
