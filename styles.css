@@ -91,7 +91,7 @@ main > article {
   margin: 0 5px;
   background-color: #627E95;
   border: 1px solid black;
-  height: 100%;
+  height: auto;
 }
 
 #article-three {
@@ -140,6 +140,7 @@ footer {
     display: block;
     width: 30%;
     height: 100px;
+    order: -1;
   }
 
 }
