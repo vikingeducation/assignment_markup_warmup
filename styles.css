@@ -63,6 +63,7 @@ nav {
 
 main {
   padding-top: 10vh;
+  width: 70%;
 }
 
 header {
@@ -93,6 +94,8 @@ section > article {
 
 aside {
     background-color: purple;
+    width: 30%;
+    height: 100px;
 }
 
 #article-three {
