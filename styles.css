@@ -58,6 +58,10 @@ nav {
   position: fixed;
   background-color: #E7C392;
   width: 100vw;
+  padding-left: 20px;
+  display:flex;
+  align-items: center;
+  font-size: 1.5em;
 }
 
 section {
