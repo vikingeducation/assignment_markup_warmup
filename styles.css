@@ -91,7 +91,8 @@ main > article {
   margin: 0 5px;
   background-color: #627E95;
   border: 1px solid black;
-  height: auto;
+  align-self: flex-start;
+
 }
 
 #article-three {
