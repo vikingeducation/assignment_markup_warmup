@@ -129,12 +129,10 @@ footer {
     justify-content: center;
     height: 8vh;
     margin: 0 5px 5px 5px;
-
-}
-
-footer, #site-header {
     border-radius: 10px;
+
 }
+
 
 .post {
   padding-bottom: 1em;
@@ -162,6 +160,10 @@ footer, #site-header {
     order: -1;
     box-sizing: border-box;
     padding-right: 10px;
+  }
+  
+  footer {
+      border-radius: 10px;
   }
   
   .ad-image {
