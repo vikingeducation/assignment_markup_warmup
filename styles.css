@@ -85,7 +85,7 @@ section > article {
   width: 40%;
   padding: 10px;
   box-sizing: border-box;
-  margin: 0 5%;
+  margin: 0 5px;
   background-color: blue;
   border: 1px solid black;
   height: 100%;
@@ -125,6 +125,6 @@ footer {
     flex-wrap: nowrap;
   }
   section > article {
-    width: calc(70% / 3);
+    width: calc((100% - 30px) / 3);
   }
 }
