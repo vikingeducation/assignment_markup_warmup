@@ -81,8 +81,8 @@ section {
   display:flex;
   flex-wrap: wrap;
 }
-section > article {
-  width: 40%;
+main > article {
+  width: calc((100% - 20px) / 2);
   padding: 10px;
   box-sizing: border-box;
   margin: 0 5px;
