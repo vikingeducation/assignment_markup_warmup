@@ -65,6 +65,7 @@ section {
   display:flex;
   max-width: 990px;
   margin: auto 0;
+  padding-top:10vh;
 }
 
 main {
@@ -119,7 +120,6 @@ footer {
 }
 
 #site-header {
-    padding-top: 10vh;
     width:100%;
 }
 
