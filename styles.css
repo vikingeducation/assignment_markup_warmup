@@ -57,7 +57,7 @@ html {
 nav {
   height: 10vh;
   position: fixed;
-  background-color: yellow;
+  background-color: #E7C392;
   width: 100vw;
 }
 
@@ -74,7 +74,7 @@ main {
 header {
   text-align: center;
   padding-bottom: 1em;
-  background-color:green;
+  background-color: #639D86;
 }
 
 h1 {
@@ -89,7 +89,7 @@ main > article {
   padding: 10px;
   box-sizing: border-box;
   margin: 0 5px;
-  background-color: blue;
+  background-color: #627E95;
   border: 1px solid black;
   height: 100%;
 }
@@ -99,7 +99,7 @@ main > article {
 }
 
 aside {
-    background-color: purple;
+    background-color: #C47B9B;
     display:none;
 }
 
