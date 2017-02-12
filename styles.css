@@ -1,3 +1,53 @@
-h1 {
-	background: blue;
+html, body {
+	padding: 0;
+	margin: 0;
 }
+
+header {
+	background: #FFE599;
+	height: 60px;
+	border-bottom: 1px solid black;
+	margin-top: -30px;
+}
+header h4 {
+	padding: 30px 0 0 10px;
+	letter-spacing: 1px;
+}
+
+article {
+	background: #A2C4c9;
+	width: 20%;
+	margin-right: 20px;
+
+}
+
+aside {
+	background: #D5A68D;
+	width: 20%;
+
+}
+
+main {
+	padding-right:;
+} 
+
+footer {
+	background: #586D8A;
+	width: 60%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+.clearfix::after{
+	clear: both;
+}
+
