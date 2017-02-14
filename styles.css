@@ -64,7 +64,9 @@ body {
 */
 
 .banner {
-
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 .box {
 
@@ -96,11 +98,11 @@ p {
 
 .banner {
 	background-color: #ffe559;
-	margin: 1px 0px;
+	border: 1px 0px;
 }
 #title {
 	background-color: #b6d7a8;
-	margin: 1px 0px;
+	border: 1px 0px;
 }
 
 /*
@@ -109,6 +111,7 @@ p {
 
 article {
 	background-color: #a2c4c9;
+	border: 1px;
 }
 
 /*
@@ -117,7 +120,7 @@ article {
 
 footer {
 	background-color: #9fc5f8;
-	margin: 1px 0px;
+	border: 1px 0px;
 }
 
 /*
