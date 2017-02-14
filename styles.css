@@ -102,7 +102,7 @@ header {
 }
 
 /*
-	== Nav bar ==
+	== Navbar ==
 */
 
 nav {
@@ -131,3 +131,8 @@ footer {
 /*
 	== Ads ==
 */
+
+.ad {
+	background-color: #d5a6bd;
+	border: 1px;
+}
