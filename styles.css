@@ -1,0 +1,144 @@
+@import url(reset.css);
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+aside {
+	margin-left: 10px;
+	height: 427px;
+}
+
+aside h2 {
+	margin-left: 145px;
+	margin-top: 189px;
+}
+
+header {
+	background: #FFE599;
+	height: 60px;
+	border-bottom: 1px solid black;
+	margin-top: -30px;
+}
+header h4 {
+	padding: 30px 0 0 10px;
+	letter-spacing: 1px;
+}
+
+article {
+	background: #A2C4c9;
+	width: 20%;
+	margin-right: 20px;
+
+}
+article h2 {
+	margin-left: 20px;
+}
+
+article p {
+	margin-left: 20px;
+}
+
+article h4 {
+	margin-left: 20px;
+}
+
+aside {
+	background: #D5A68D;
+	width: 20%;
+	border: solid;
+	border-width: 2px;
+	border-radius: 10px;
+
+}
+
+main {
+	padding-right:;
+} 
+
+main h1 {
+	background: #B6D7A8;
+	width: 35%;
+	height: 90px;
+	margin-left: 468px;
+	padding-left: 151px
+}
+
+footer {
+	background: #586D8A;
+	width: 40%;
+	margin-top: 33px;
+	margin-right: 636px;
+	border: solid;
+	border-width: 2px;
+	border-radius: 10px;
+}
+
+footer p {
+	margin-left: 325px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+.clearfix::after{
+	clear: both;
+}
+
+#article-container {
+	width: 70%;
+	display: inline-flex;
+	margin-left: 74px;
+}
+
+main h1 {
+	border: solid;
+	border-width: 2px;
+	border-radius: 10px;
+}
+
+.article_1 {
+	border: solid;
+	border-width: 2px;
+	border-radius: 10px;
+}
+
+.article_2 {
+	border: solid;
+	border-width: 2px;
+	border-radius: 10px;
+}
+
+.article_3 {
+	border: solid;
+	border-width: 2px;
+	border-radius: 10px;
+}
+
+@media screen and (max-width: 990px) {
+
+	aside {
+		display: none;
+	}
+
+  main h1 {
+		margin-top: -1px;
+	}
+
+	}
+
+	footer {
+		float: left;
+	}
+}
+
+
+
