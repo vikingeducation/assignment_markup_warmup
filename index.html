@@ -6,44 +6,41 @@
     <title>A Web Page</title>
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   </head>
 
   <body>
     <!-- Header -->
-    <header class="top-header">
-      <h1 class="header-title">The Lorem Micro Blog</h1>
+    <header>
+      <h1 class="banner">The Lorem Micro Blog</h1>
+      <h2 class="main-title">The Lorem Micro Blog</h2>
+      <h3 class="main-subtitle">By Foo Bar</h2>
     </header>
 
     <!-- Main Content -->
-    <main>
-      <section class="header">
-        <h1 class="main-title">The Lorem Micro Blog</h1>
-        <h2 class="main-subtitle">By Foo Bar</h2>
-      </section>
+    <main class="box">
+      <article class="left">
+        <h2 class="article-title">A Most Posty Post</h2>
+        <h3 class="article-subtitle">Written <time>1/3/2000</time></h3>
+        <h4 class="article-section-title">First Thoughts...</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h4 class="article-section-title">Additional Thoughts...</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </article>
 
-      <section class="main-content">
-        <article class="left">
-          <h2 class="article-title">A Most Posty Post</h2>
-          <h3 class="article-subtitle">Written <time>1/3/2000</time></h3>
-          <h4 class="article-section-title">First Thoughts...</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <h4 class="article-section-title">Additional Thoughts...</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </article>
+      <article class="middle">
+        <h2 class="article-title">Another Posty Post</h2>
+        <h3 class="article-subtitle">Written <time>1/2/2000</time></h3>
+        <h4 class="article-section-title">Only Thoughts...</h4>
+      </h3>
 
-        <article class="middle">
-          <h2 class="article-title">Another Posty Post</h2>
-          <h3 class="article-subtitle">Written <time>1/2/2000</time></h3>
-          <h4 class="article-section-title">Only Thoughts...</h4>
-        </h3>
-
-        <article class="right">
-          <h2 class="article-title">A Posty Post</h2>
-          <h3 class="article-subtitle">Written <time>1/1/2000</time></h3>
-          <h4 class="article-section-title">Be it Resolved</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </article>
-      </section>
+      <article class="right">
+        <h2 class="article-title">A Posty Post</h2>
+        <h3 class="article-subtitle">Written <time>1/1/2000</time></h3>
+        <h4 class="article-section-title">Be it Resolved</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </article>
     </main>
 
     <!-- Footer -->
@@ -52,11 +49,9 @@
     </footer>
 
     <!-- Ad -->
-    <aside>
-      <section class="ad-container">
-        <h3>Check out my vertically centered ad!</h3>
-        <a href="ad-url-here"><img src="#" alt="#"></a>
-      </section>
+    <aside class="ad">
+      <h3>Check out my vertically centered ad!</h3>
+      <a href="ad-url-here"><img src="#" alt="#"></a>
     </aside>
   </body>
 
