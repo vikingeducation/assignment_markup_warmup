@@ -63,10 +63,10 @@ body {
 	== Positioning ==
 */
 
-.banner {
+.nav {
 	position: absolute;
 	top: 0;
-	width: 100%;
+	width: auto;
 }
 .box {
 
@@ -96,12 +96,17 @@ p {
 	== Header ==
 */
 
-.banner {
-	background-color: #ffe559;
+header {
+	background-color: #b6d7a8;
 	border: 1px 0px;
 }
-#title {
-	background-color: #b6d7a8;
+
+/*
+	== Nav bar ==
+*/
+
+nav {
+	background-color: #ffe559;
 	border: 1px 0px;
 }
 
