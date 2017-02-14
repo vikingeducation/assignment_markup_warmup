@@ -44,6 +44,9 @@ article h4 {
 aside {
 	background: #D5A68D;
 	width: 20%;
+	border: solid;
+	border-width: 2px;
+	border-radius: 10px;
 
 }
 
@@ -53,12 +56,10 @@ main {
 
 main h1 {
 	background: #B6D7A8;
-	width: 40%;
+	width: 35%;
 	height: 90px;
 	margin-left: 468px;
 	padding-left: 151px
-	border-style: solid;
-	border-width: 3px;
 }
 
 footer {
@@ -66,6 +67,9 @@ footer {
 	width: 40%;
 	margin-top: 33px;
 	margin-right: 636px;
+	border: solid;
+	border-width: 2px;
+	border-radius: 10px;
 }
 
 footer p {
@@ -89,5 +93,35 @@ footer p {
 
 #article-container {
 	width: 70%;
+	display: inline-flex;
+	margin-left: 74px;
 }
+
+main h1 {
+	border: solid;
+	border-width: 2px;
+	border-radius: 10px;
+}
+
+.article_1 {
+	border: solid;
+	border-width: 2px;
+	border-radius: 10px;
+}
+
+.article_2 {
+	border: solid;
+	border-width: 2px;
+	border-radius: 10px;
+}
+
+.article_3 {
+	border: solid;
+	border-width: 2px;
+	border-radius: 10px;
+}
+
+
+
+
 
