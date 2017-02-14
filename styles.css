@@ -49,3 +49,77 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*
+ == Base Styling ==
+*/
+
+body {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+/*
+	== Positioning ==
+*/
+
+.banner {
+
+}
+.box {
+
+}
+.left {
+
+}
+.middle {
+
+}
+.right {
+
+}
+
+/*
+	== Typography ==
+*/
+
+h1, h2, h3, h4 {
+	font-family: "Playfair Display", "Times New Roman", serif;
+}
+p {
+	font-family: "Raleway", "Arial", monospace;
+}
+
+/*
+	== Header ==
+*/
+
+.banner {
+	background-color: #ffe559;
+	margin: 1px 0px;
+}
+#title {
+	background-color: #b6d7a8;
+	margin: 1px 0px;
+}
+
+/*
+	== Main Content ==
+*/
+
+article {
+	background-color: #a2c4c9;
+}
+
+/*
+	== Footer ==
+*/
+
+footer {
+	background-color: #9fc5f8;
+	margin: 1px 0px;
+}
+
+/*
+	== Ads ==
+*/
