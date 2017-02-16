@@ -1,24 +1,32 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>A Web Page</title>
 
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- remove ad if mobile -->
+    <style>
+      @media (max-width: 989px) {
+        .ad {
+          display: none;
+        }
+      }
+    </style>
   </head>
 
   <body>
-    
     <!-- Ad -->
-    <aside class="ad box">
+    <aside class="ad">
       <h3>Check out my vertically centered ad!</h3>
       <br>
       <a href="ad-url-here"><img src="#" alt="#"></a>
     </aside>
-
+    
     <div class="container">
 
       <!-- Header -->

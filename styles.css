@@ -57,9 +57,11 @@ table {
 body {
 	color: #000000;
 	background-color: #ffffff;
-	max-width: 990px;
-	height: 100%;
+	height: auto;
+	width: auto;
 	margin: auto;
+	padding-bottom: 60px;
+	text-align: center;
 }
 
 /*
@@ -76,15 +78,15 @@ nav {
 	height: 30px;
 }
 header {
-	margin: 70px 0px 0px 0px;
+	margin: 70px 0 0 0;
 	text-align: center;
 	vertical-align: middle;
 	width: auto;
 }
-footer {
-	height: 45px;
-	vertical-align: middle;
-	width: auto;
+@media (max-width: 989px) {
+	header {
+		margin: 50px 0 0 0;
+	}
 }
 .box {
 	display: flex;
@@ -126,9 +128,20 @@ footer {
 	flex: 1;
 }
 .container {
+	height: inerit;
+	max-width: 990px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer {
 	height: auto;
-	width: auto;
-	margin: 15px;
+	width: inherit;
+	vertical-align: middle;
+	max-width: inherit;
+	position: fixed;
+	bottom: 0;
 }
 
 /*
@@ -187,6 +200,11 @@ header {
 	border-radius: 10px;
 	padding: 15px 0;
 }
+@media (max-width: 989px) {
+	header {
+		border-radius: 0;
+	}
+}
 
 /*
 	== Navbar ==
@@ -211,6 +229,9 @@ article {
 p {
 	padding-bottom: 10px;
 }
+.article-section-title {
+	padding-bottom: 5px;
+}
 
 /*
 	== Footer ==
@@ -221,6 +242,11 @@ footer {
 	border: 1px solid #000;
 	border-radius: 10px;
 	padding: 5px;
+}
+@media (max-width: 989px) {
+	footer {
+		border-radius: 0;
+	}
 }
 
 /*
