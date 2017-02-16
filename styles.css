@@ -57,39 +57,124 @@ table {
 body {
 	color: #000000;
 	background-color: #ffffff;
+	max-width: 990px;
+	height: 100%;
+	margin: auto;
 }
 
 /*
 	== Positioning ==
 */
 
-.nav {
-	position: absolute;
+nav {
+	display: flex;
+	align-items: center;
+	position: fixed;
 	top: 0;
+	left: 0;
+	width: 100%;
+	height: 30px;
+}
+header {
+	margin: 70px 0px 0px 0px;
+	text-align: center;
+	vertical-align: middle;
+	width: auto;
+}
+footer {
+	height: 45px;
+	vertical-align: middle;
 	width: auto;
 }
 .box {
-
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
 }
 .left {
-
+	height: auto;
+	order: 1;
+	flex: 1 1;
+	margin: 15px 15px 15px 0;
 }
 .middle {
-
+	height: auto;
+	order: 2;
+	flex: 1 1;
+	margin: 15px 15px 15px 0;
 }
 .right {
+	height: auto;
+	order: 3;
+	flex: 1 1;
+	margin: 15px 0;
+}
+.ad {
+	height: 250px;
+	width: 150px;
+	float: left;
+	margin-right: 15px;
+}
+.main-title {
+	order: 1;
+	flex-basis: 100%;
+}
+.main-subtitle {
+	order: 2;
+	flex: 1;
+}
+.container {
+	height: auto;
+	width: auto;
+	margin: 15px;
+}
 
+/*
+	== Clearfix ==
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
 }
 
 /*
 	== Typography ==
 */
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, nav {
 	font-family: "Playfair Display", "Times New Roman", serif;
+	line-height: 1.5em;
+}
+p, footer {
+	font-family: "Raleway", "Arial", monospace;
+}
+footer {
+	font-size: small;
+}
+aside h3 {
+	text-align: center;
+}
+.main-title {
+	font-size: 32px;
+	line-height: normal;
+}
+.main-subtitle {
+	font-size: 24px;
+	line-height: normal;
 }
 p {
-	font-family: "Raleway", "Arial", monospace;
+	line-height: normal;
 }
 
 /*
@@ -98,7 +183,9 @@ p {
 
 header {
 	background-color: #b6d7a8;
-	border: 1px 0px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	padding: 15px 0;
 }
 
 /*
@@ -107,7 +194,9 @@ header {
 
 nav {
 	background-color: #ffe559;
-	border: 1px 0px;
+	border: solid #000;
+	border-width: 1px 0px;
+	padding: 10px 0 10px 10px;
 }
 
 /*
@@ -116,7 +205,11 @@ nav {
 
 article {
 	background-color: #a2c4c9;
-	border: 1px;
+	border: 1px solid #000;
+	padding: 15px;
+}
+p {
+	padding-bottom: 10px;
 }
 
 /*
@@ -125,7 +218,9 @@ article {
 
 footer {
 	background-color: #9fc5f8;
-	border: 1px 0px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	padding: 5px;
 }
 
 /*
@@ -134,5 +229,7 @@ footer {
 
 .ad {
 	background-color: #d5a6bd;
-	border: 1px;
+	border: 1px solid #000;
+	height: 300px;
+	vertical-align: middle;
 }
