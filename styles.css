@@ -26,6 +26,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -77,17 +78,20 @@ nav {
 	width: 100%;
 	height: 30px;
 }
+
 header {
 	margin: 70px 0 0 0;
 	text-align: center;
 	vertical-align: middle;
 	width: auto;
 }
+
 @media (max-width: 989px) {
 	header {
 		margin: 50px 0 0 0;
 	}
 }
+
 .box {
 	display: flex;
 	flex-flow: row wrap;
@@ -95,38 +99,45 @@ header {
 	align-content: center;
 	align-items: center;
 }
+
 .left {
 	height: auto;
 	order: 1;
 	flex: 1 1;
 	margin: 15px 15px 15px 0;
 }
+
 .middle {
 	height: auto;
 	order: 2;
 	flex: 1 1;
 	margin: 15px 15px 15px 0;
 }
+
 .right {
 	height: auto;
 	order: 3;
 	flex: 1 1;
 	margin: 15px 0;
 }
+
 .ad {
 	height: 250px;
 	width: 150px;
 	float: left;
-	margin-right: 15px;
+	margin: 0 15px;
 }
+
 .main-title {
 	order: 1;
 	flex-basis: 100%;
 }
+
 .main-subtitle {
 	order: 2;
 	flex: 1;
 }
+
 .container {
 	height: inerit;
 	max-width: 990px;
@@ -135,6 +146,7 @@ header {
 	margin-left: auto;
 	margin-right: auto;
 }
+
 footer {
 	height: auto;
 	width: inherit;
@@ -153,9 +165,11 @@ footer {
   content: "";
   display: table;
 }
+
 .group:after {
   clear: both;
 }
+
 .group {
   clear: both;
   *zoom: 1;
@@ -169,23 +183,29 @@ h1, h2, h3, h4, nav {
 	font-family: "Playfair Display", "Times New Roman", serif;
 	line-height: 1.5em;
 }
+
 p, footer {
 	font-family: "Raleway", "Arial", monospace;
 }
+
 footer {
 	font-size: small;
 }
+
 aside h3 {
 	text-align: center;
 }
+
 .main-title {
 	font-size: 32px;
 	line-height: normal;
 }
+
 .main-subtitle {
 	font-size: 24px;
 	line-height: normal;
 }
+
 p {
 	line-height: normal;
 }
@@ -200,6 +220,7 @@ header {
 	border-radius: 10px;
 	padding: 15px 0;
 }
+
 @media (max-width: 989px) {
 	header {
 		border-radius: 0;
@@ -226,9 +247,11 @@ article {
 	border: 1px solid #000;
 	padding: 15px;
 }
+
 p {
 	padding-bottom: 10px;
 }
+
 .article-section-title {
 	padding-bottom: 5px;
 }
@@ -243,6 +266,7 @@ footer {
 	border-radius: 10px;
 	padding: 5px;
 }
+
 @media (max-width: 989px) {
 	footer {
 		border-radius: 0;
