@@ -1,0 +1,71 @@
+@media screen and (min-width: 990px) {
+   
+   body {
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       margin: 0;
+   }
+
+   header {
+        background-color: #FFE599;
+        padding: 5px;
+        font-weight: bold;
+        border: 1px solid black;
+    }
+
+    aside {
+        background-color: #D5A6BD;
+        float: left;
+        height: 500px;
+        font-weight: bold;
+        border: 1px solid black;
+    }
+
+    section {
+        background-color:  #B6D7A8;
+        border: 1px solid black;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    article {
+        background-color: #A2C4C9;
+        float: left;
+        
+    }
+
+
+    footer {
+        clear: both;
+        background-color: #9FC5F8;
+    }
+
+    section {
+        border-radius: 15px;
+    }
+
+    section h2 {
+        text-align: center;
+    }
+
+    section p {
+        text-align: center;
+    }
+
+    article {
+        border: 1px solid black;
+    }
+
+    footer {
+        border: 1px solid black;
+    } 
+}
+
+@media screen and (max-width: 989px) {
+    aside {
+        display: none;
+    }
+}
+
+
