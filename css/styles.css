@@ -84,10 +84,17 @@ header h5 {
 	
 	float: right;
 	margin: 15px 10px 0 0;
-	display: inline-block;
 
 	background-color: red;
 	border: 2px solid black;
+}
+
+.posts {
+	display: flex;
+	flex-flow: row wrap;
+	width: 740px;
+
+	justify-content: center;
 }
 
 .headline {
@@ -146,7 +153,7 @@ aside {
 }
 
 @media screen and (max-width: 991px){
-	main {
+	main {	
 		width: 100%;
 	}
 
@@ -168,17 +175,26 @@ aside {
 		display: none;
 	}
 
+	.posts {
+		margin: 0 auto;
+		justify-content: none;
+	}
+
 	.left {
-		width: 35%;
+		width: 30%;
+		background-color: green;
 	}
 
 	.middle {
+		background-color: yellow;
 		width: 60%;
 	}
 
-	.right {
-		width: 35%;
+	.right{
+		height: 225px;
+		width: 90%;
 	}
+
 
 	aside {
 		width: 100%;
