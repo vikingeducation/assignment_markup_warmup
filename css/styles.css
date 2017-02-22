@@ -19,9 +19,9 @@ nav li {
 }
 
 main {
-	margin: 10px auto;
+	margin: 10px auto 0 auto;
 
-	height: 600px;
+	height: 650px;
 	width: 990px;
 }
 
@@ -81,16 +81,17 @@ header h5 {
 .post { 
 	height: 455px;
 	width: calc(670px / 3);
-	margin: 15px 10px 0 0;
-	background-color: red;
-	display: inline-block;
+	
 	float: right;
+	margin: 15px 10px 0 0;
+	display: inline-block;
 
+	background-color: red;
 	border: 2px solid black;
 }
 
 .headline {
-	font-size: 25px;
+	font-size: 23px;
 	font-family: cursive;
 }
 
@@ -112,15 +113,34 @@ header h5 {
 }
 
 .blogpost {
-	padding-left: 10px;
+	padding: 0 5px 5px 10px;
 	font-family: cursive;
 	font-size: 12px;
 	line-height: 18px;
 }
 .left {
-	height: 400px;
+	height: 415px;
 }
 
 .middle {
 	height: 250px;
+}
+
+.right {
+	height: 325px;
+}
+
+aside {
+	height: 100px;
+	width: 700px;
+	position: relative;
+	top: 40px;
+	background-color: red;
+	float: right;
+	border: 2px solid black;
+	border-radius: 30px;
+}
+
+.aside p {
+	padding-top: 10px;
 }
