@@ -11,10 +11,62 @@ nav {
 nav li {
 	display: inline-block;
 	padding: 25px 0  0 25px;
+
 	font-size: 25px;
 	font-family: sans-serif;
 }
 
-.advertisement {
+main {
+	margin: 10px auto;
 
+	height: 600px;
+	width: 990px;
+}
+
+header {
+	float: right;
+
+	height: 75px;
+	width: 700px;
+
+	text-align: center;
+	background-color: #5a964b;
+	border-radius: 25px;
+
+}
+
+header h1 {
+	padding-top: 10px;
+
+	font-size: 25px;
+	font-family: sans-serif;
+}
+
+
+header h5 {
+	padding-top: 10px;
+	font-style: oblique;
+}
+
+.advertisement {
+	height: 500px;
+	width: 250px;
+
+	background-color: #874b96;
+}
+
+.advertisement h1 {
+	font-size: 20px;
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+	padding-top: 120px;
+}
+
+.web-advertisment {
+	height: 200px;
+	width: 200px;
+
+	background-color: white;
+	margin: 5px auto;
 }
