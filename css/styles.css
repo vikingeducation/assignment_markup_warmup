@@ -1,6 +1,7 @@
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 nav {
@@ -10,7 +11,7 @@ nav {
 
 nav li {
 	display: inline-block;
-	padding: 25px 0  0 25px;
+	padding: 33px;
 
 	font-size: 25px;
 	font-family: sans-serif;
@@ -32,7 +33,7 @@ header {
 	text-align: center;
 	background-color: #5a964b;
 	border-radius: 25px;
-
+	border: 2px solid black;
 }
 
 header h1 {
@@ -53,6 +54,9 @@ header h5 {
 	width: 250px;
 
 	background-color: #874b96;
+	float: left;
+
+	border: 2px solid black;
 }
 
 .advertisement h1 {
@@ -61,6 +65,7 @@ header h5 {
 	font-family: sans-serif;
 	font-weight: bold;
 	padding-top: 120px;
+
 }
 
 .web-advertisment {
@@ -69,4 +74,50 @@ header h5 {
 
 	background-color: white;
 	margin: 5px auto;
+
+	border: 2px solid black;
+}
+
+.post { 
+	height: 455px;
+	width: calc(670px / 3);
+	margin: 15px 10px 0 0;
+	background-color: red;
+	display: inline-block;
+	float: right;
+
+	border: 2px solid black;
+}
+
+.headline {
+	font-size: 25px;
+	font-family: cursive;
+}
+
+.date {
+	font-family: cursive;
+	padding-top: 10px;
+	font-size: 15px;
+}
+
+.starting-sentence {
+	font-family: 20px;
+	font-weight: bolder;
+	padding: 15px 10px;
+	font-family: cursive;
+}
+
+.headline, .date {
+	text-align: center;
+}
+
+.blogpost {
+	padding-left: 10px;
+	font-family: cursive;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.middle {
+	height: 250px;
 }
