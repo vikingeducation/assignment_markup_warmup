@@ -144,3 +144,27 @@ aside {
 .aside p {
 	padding-top: 10px;
 }
+
+@media screen and (max-width: 991px){
+	main {
+		width: 100%;
+	}
+
+	nav {
+		height: 40px;
+	}
+
+	nav li {
+		padding: 10px 10px;
+		font-size: 20px;
+	}
+
+	header {
+		width: 100%;
+		border-radius: 0;
+	}
+
+	.advertisement {
+		display: none;
+	}
+}
