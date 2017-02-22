@@ -167,4 +167,21 @@ aside {
 	.advertisement {
 		display: none;
 	}
+
+	.left {
+		width: 35%;
+	}
+
+	.middle {
+		width: 60%;
+	}
+
+	.right {
+		width: 35%;
+	}
+
+	aside {
+		width: 100%;
+		border-radius: 0;
+	}
 }
