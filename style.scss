@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0px;
+}
+
+nav {
+  background-color: yellow;
+  width: 1500px;
+  height: 50px;
+  padding: 0;
+  border: 2px solid black;
+}
+
+aside {
+  background-color: pink;
+  float: left;
+  height: 400px;
+  margin-left: 100px;
+  margin-top: 20px;
+  padding: 10px;
+  width: 200px;
+}
+
+.ad {
+  padding-top: 175px;
+  padding-bottom: 250px;
+  text-align: center;
+}
+
+.blog-layout {
+  width: 990px;
+  margin-left: 350px;
+  margin-top: 20px;
+  height: 100%;
+}
+
+.blog-title {
+  background-color: green;
+  border-radius: 10px;
+  height: 100px;
+  width: 950px;
+}
+
+.text-box {
+  text-align: center;
+  padding-top: 15px;
+  word-spacing: 5px;
+}
+
+.post-1 {
+  position: absolute;
+  float: left;
+  background-color: lightblue;
+  width: 300px;
+  height: 410px;
+  border: 2px solid black;
+  margin-top: 10px;
+}
+
+.posty {
+  position: relative;
+}
+
+.posty h3 {
+  padding-top: 20px;
+  padding-left: 40px;
+  word-spacing: 5px;
+}
+
+.written {
+  display: inline;
+  padding-left: 55px;
+}
+
+.first-thought {
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.posty-content {
+  font-size: 13px;
+  width: 200px;
+  padding-left: 10px;
+}
+
+.additional-thought {
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.posty-content-2 {
+  font-size: 15px;
+  width: 200px;
+  padding-left: 10px;
+}
+
+
+.post-2 {
+  position: absolute;
+  float: left;
+  background-color: lightblue;
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  margin-top: 10px;
+  margin-left: 325px;
+}
+
+.another-posty { 
+  position: relative;
+}
+
+.another-posty h3 {
+  padding-top: 20px;
+  padding-left: 40px;
+  word-spacing: 5px;
+}
+
+.written-2 {
+  display: inline;
+  padding-left: 55px;
+}
+
+.only-thought {
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.another-posty-content {
+  font-size: 15px;
+  width: 200px;
+  padding-left: 10px;
+}
+
+.post-3 {
+  position: absolute;
+  float: left;
+  background-color: lightblue;
+  width: 300px;
+  height: 350px;
+  border: 2px solid black;
+  margin-top: 10px;
+  margin-left: 650px; }
+
+.a-posty-post {
+  position: relative;
+}
+
+.a-posty-post h3 {
+  text-align: center;
+  padding-top: 20px;
+  word-spacing: 5px; }
+
+.written-3 {
+  display: inline;
+  text-align: center;
+  padding-left: 95px; }
+
+.be-it-resolved {
+  margin-top: 20px;
+  padding-left: 10px; }
+
+.posty-post-content {
+  font-size: 15px;
+  width: 200px;
+  padding-left: 10px; }
+
+  footer {
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 450px;
+    height: 65px;
+    width: 950px;
+    border: 1px solid black;
+  }
+
+  footer p {
+    font-size: 15px;
+    word-space: 2px;
+    text-align: center;
+    padding-top: 5px;
+  }
+
+
+/*# sourceMappingURL=style.css.map */
