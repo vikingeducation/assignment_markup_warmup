@@ -51,6 +51,7 @@ html{
   font-family: "Helvetica Neue" Arial serif;
   max-width: 990px;
   margin: auto;
+  height: auto;
 
 
 
@@ -59,15 +60,13 @@ html{
 .title{
   background-color: #B6D7A8;
   text-align: center;
-  border: 1px solid #000;
+  border: 2px solid #000;
   border-radius: 15px;
   font-size: 2em;
-  margin: 15px;
+  margin-top: 40px;
+  margin-bottom: 5px;
 
 }
-
-
-
 
 
 #tag{
@@ -125,16 +124,38 @@ html{
 aside{
   float: left;
   background-color: #D5A6BD;
-  max-width: 10%;
+  max-width: 21%;
+  margin-top: 40px;
+  text-align: center;
+  border: 3px solid #000;
+  padding: 200px 0px 200px 0px;
 
+}
 
+.aside{
+  height: auto;
 }
 
 div{
   float: right;
-  max-width: 90%;
+  max-width: 78%;
 }
 
 footer{
   clear: both;
+}
+
+.nav{
+  background-color: #FFE599;
+  font-weight: bold;
+  padding: 10px 0px 10px 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+}
+
+#nav{
+
 }
