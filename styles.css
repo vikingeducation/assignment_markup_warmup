@@ -8,3 +8,20 @@
   z-index: 9999;
   border-bottom: 3px solid black;
 }
+
+main {
+  width:990px;
+  margin: 0 auto 0 auto;
+}
+
+.adbox {
+  background-color: #d5a6bd;
+}
+
+header {
+  background-color: #b6d7a8;
+}
+
+.article-left, .article-center, .article-right, footer {
+  background-color: #a2c4c9;
+}
