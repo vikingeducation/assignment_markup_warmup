@@ -52,6 +52,8 @@ html{
   max-width: 990px;
   margin: auto;
 
+
+
 }
 
 .title{
@@ -60,8 +62,13 @@ html{
   border: 1px solid #000;
   border-radius: 15px;
   font-size: 2em;
+  margin: 15px;
 
 }
+
+
+
+
 
 #tag{
   font-size: .5em;
@@ -74,6 +81,7 @@ html{
   border: 3px solid #000;
   margin: 5px;
   flex: 0 1 33%;
+
 }
 
 .footer{
@@ -103,11 +111,30 @@ html{
 }
 
 #article-header,
-.post{
+.post,
+#aside{
   margin: 10px;
 }
 
 .articles{
   display: flex;
   align-items: flex-start;
+}
+
+
+aside{
+  float: left;
+  background-color: #D5A6BD;
+  max-width: 10%;
+
+
+}
+
+div{
+  float: right;
+  max-width: 90%;
+}
+
+footer{
+  clear: both;
 }
