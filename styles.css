@@ -1,0 +1,184 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*CSS Reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Setting font, max width (excluding navigation) and centering content */
+
+html{
+  font-family: "Helvetica Neue" Arial serif;
+  max-width: 990px;
+  margin: auto;
+  height: auto;
+}
+
+/*Navigation Design to remain at top of the window*/
+
+.nav{
+  background-color: #FFE599;
+  padding: 10px 0px 10px 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/*Container so the damn advertisment will inhabit it's own space on the left*/
+div{
+  float: right;
+  max-width: 78%;
+}
+
+/*Basic design for the advertisment space*/
+
+aside{
+  float: left;
+  background-color: #D5A6BD;
+  max-width: 21%;
+  margin-top: 40px;
+  border: 3px solid #000;
+  padding: 200px 0px 200px 0px;
+}
+
+/*Styling the Header element*/
+
+.title{
+  background-color: #B6D7A8;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 15px;
+  font-size: 2em;
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
+#tag{
+  font-size: .5em;
+  font-style: italic;
+}
+
+
+/*Turning the posts into flex children of the article-template*/
+
+.articles{
+  display: flex;
+  align-items: flex-start;
+}
+
+/*Basic styling for the posts and footer*/
+
+.article-template{
+  flex: 0 1 33%;
+}
+
+.footer{
+  border-radius: 25px;
+}
+
+.article-title{
+  font-size: 1.5em;
+}
+
+
+#article-header{
+  font-size: 1.05em;
+}
+
+/*Redundant style code good for multiple elements*/
+
+.article-template,
+.footer{
+  background-color: #A2C4C9;
+  border: 3px solid #000;
+  margin: 5px;
+}
+
+.article-title,
+#article-header,
+.nav{
+  font-weight: bold;
+}
+
+.article-template,
+#article-header{
+  text-align: left;
+}
+
+aside,
+.article-title,
+.footer,
+.article-date{
+  text-align: center;
+}
+
+#tag,
+.article-title,
+#article-header,
+.post,
+#aside{
+  margin: 10px;
+}
+
+/*Responsive conditions for smaller viewports*/
+
+
+@media (max-width: 990px) {
+  aside{
+    display: none;
+  }
+  div{
+    max-width: 100%;
+  }
+  .articles{
+    flex-wrap: wrap;
+  }
+  .article-template{
+    flex: 1 0 33%;
+  }
+}
