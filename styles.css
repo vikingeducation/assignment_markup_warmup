@@ -80,7 +80,6 @@ html{
   border: 3px solid #000;
   margin: 5px;
   flex: 0 1 33%;
-
 }
 
 .footer{
@@ -156,6 +155,17 @@ footer{
 
 }
 
-#nav{
-
+@media (max-width: 990px) {
+  aside{
+    display: none;
+  }
+  div{
+    max-width: 100%;
+  }
+  .articles{
+    flex-wrap: wrap;
+  }
+  .article-template{
+    flex: 1 0 33%;
+  }
 }
