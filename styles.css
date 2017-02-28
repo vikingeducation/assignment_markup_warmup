@@ -62,7 +62,7 @@ table {
 }
 main {
   margin: 0 auto;
-  width: 990px;
+  /*width: 990px;*/
 }
 /*main {
   padding-left: 30px;
@@ -164,8 +164,9 @@ Flex container
 
   main {
     display: flex;
-    flex: 1;
+    flex: 3;
     flex-flow: row;
+    /*width: 100%;*/
   }
 
   header    { flex-basis: 100%; }
@@ -175,14 +176,48 @@ Flex container
   }*/
 
 
-/*@media all and (min-width: 990px) {
+@media all and (max-width: 989px) {
 
-  .ad { order: 0; }
-  .article1 { order: 2; }
-  .article2    { order: 3; }
-  .article3 { order: 4; }
-  footer  { order: 5; }
-}*/
+  .ad {
+    /*flex: none;
+    height: 0;
+    width: 0;*/
+    display: none;
+  }
+
+  .flex-container {
+    /*flex-flow: column wrap;*/
+    position: relative;left:0;
+  }
+
+  .flex-subcontainer {
+    /*flex: 1 1 auto;*/
+    position: absolute;left:0;
+    justify-content: space-around;
+  }
+
+  /*main {
+    flex-flow: row wrap;
+  }*/
+
+  /*.article {
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: row wrap;
+    /*justify-content: space-around;*/
+    /*flex-basis: auto;*/
+    /*flex-direction: column wrap;*/
+
+
+  /*.ad { order: 0; }*/
+  /*header { order: 0; }
+  .article1 { order: 1; }
+  .article2    { order: 2; }
+  .article3 { order: 3; }
+  footer  { order: 4; }*/
+}
+
+
 
 /*
   ========================================
@@ -212,7 +247,11 @@ Flex container
   }
 
   #adtext {
-        transform: translateY(100%);
+        transform: translateY(50%);
+        align-self: center;
+        align-content: center;
+        margin: auto;
+        text-align: center;
   }
 
   /*
