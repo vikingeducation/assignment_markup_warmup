@@ -62,26 +62,88 @@ nav{
 }
 .container{
   width: 990px;
+  margin:auto;
 }
 
 .content-container{
   width: calc(75% - 10px);
   padding: 50px 5px 10px 5px;
+  float:right;
 }
 
 header{
   background: #b6d7a8;
-  width: calc(100% - 4px);
+  width: calc(100% - 8px);
   height: 125px;
   border: 2px solid black;
-  border-radius: 15px;
+  border-radius: 25px;
   text-align: center;
+  margin: 0px 2px 0 2px;
 }
 header > h1{
   font-size: 54px;
   line-height: 150%;
 }
-
+.clearfix::before,
+.clearfix::after{
+  display: table;
+  content: " ";
+}
+.clearfix::after{
+  clear: both;
+}
+section{
+  background: #a2c4c9;
+  width: calc(33% - 26px);
+  margin: 5px 2px 5px 2px;
+  padding: 10px;
+  border: 2px solid black;
+  float:left;
+}
+p{
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 21px;
+  padding-bottom: 10px;
+}
+h6{
+  text-align: center;
+  padding-bottom: 15px;
+}
+h4{
+  font-weight: bold;
+}
+footer{
+  background: #9fc5f8;
+  width: calc(100% - 4);
+  height: 55px;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin: 0px 2px 0 2px;
+  padding: 3px 10px 0px 10px;
+  float:left;
+}
+.sidebar{
+  background: #d5a6bd;
+  margin-top: 50px;
+  width: calc(25% - 8px);
+  height: 500px;
+  border: 2px solid black;
+  float: right;
+}
+.sidebar > h4{
+  padding-top:150px;
+  text-align: center;
+}
+img{
+  border: 2px solid black;
+  margin: 10px;
+  width: calc(100% - 24px);
+}
 
 
 
