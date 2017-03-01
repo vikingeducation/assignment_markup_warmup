@@ -1,0 +1,113 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*this is where the custom css begins*/
+html{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+nav{
+  position: fixed;
+  background: #ffe599;
+  width: 100%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  height: 35px;
+  line-height: 200%;
+}
+.container{
+  width: 990px;
+}
+
+.content-container{
+  width: calc(75% - 10px);
+  padding: 50px 5px 10px 5px;
+}
+
+header{
+  background: #b6d7a8;
+  width: calc(100% - 4px);
+  height: 125px;
+  border: 2px solid black;
+  border-radius: 15px;
+  text-align: center;
+}
+header > h1{
+  font-size: 54px;
+  line-height: 150%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*hold for length*/
