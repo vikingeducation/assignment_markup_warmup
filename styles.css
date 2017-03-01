@@ -46,3 +46,29 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*
+  ===========================
+  Custom Styles
+  ===========================
+*/
+
+.yellow {
+  background-color: yellow;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.lightgreen {
+  background-color: lightgreen;
+}
+
+.aqua {
+  background-color: aqua;
+}
+
+.lightblue {
+  background-color: lightblue;
+}
