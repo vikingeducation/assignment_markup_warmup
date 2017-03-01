@@ -146,9 +146,48 @@ img{
 }
 
 
+/*For screen sizes smaller than 990px*/
 
+@media screen and (max-width: 989px) {
+     .sidebar{
+       display: none;
+     }
+     .container{
+       width: 550px;
+     }
+     .content-container{
+       width: 100%;
+     }
+     header{
+       position:fixed;
+       padding: -10px;
+       margin-top:-12px;
+       margin-left: -225px;
+       width: 989px;
+       border-radius: none;
+     }
+     section:first-of-type,
+     section:nth-of-type(2){
+       margin-top: 125px;
+     }
+     section:last-of-type{
+       margin-bottom: 65px;
+       width: calc(100% - 26px);
+     }
+     .share{
+       width: calc(50% - 29px);
+     }
+     footer{
+       position:fixed;
+       left:0px;
+       bottom:0px;
+       height:60px;
+       width: 100%;
+       border-radius: 0;
+       border-left: none;
+     }
 
-
+}
 
 
 
