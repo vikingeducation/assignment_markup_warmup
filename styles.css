@@ -1,0 +1,319 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+main {
+  margin: 0 auto;
+  /*width: 990px;*/
+}
+/*main {
+  padding-left: 30px;
+  padding-right: 30px;
+}*/
+/*.article{
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+}*/
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+strong {
+  font-weight: 700;
+}
+
+p {
+  margin-top: 22px;
+}
+
+aside {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+/*
+========================================
+Flex container
+========================================
+*/
+
+.flex-container {
+  display: flex;
+
+  flex-flow: row nowrap;
+
+  text-align: center;
+
+  padding: 10px;
+  position: relative;top:40px;left:80px;
+}
+
+
+.flex-subcontainer {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 3;
+  position: relative;left:40px;
+}
+ .ad {
+  flex: 1;
+  /*position: relative;top:40px;left:80px;*/
+  height: 480px;
+  width: auto;
+}
+
+  main {
+    display: flex;
+    flex: 3;
+    flex-flow: row;
+    /*width: 100%;*/
+  }
+
+  header    { flex-basis: 100%; }
+
+  /*.article {
+    flex: 1;
+  }*/
+
+
+@media all and (max-width: 989px) {
+
+  .ad {
+    /*flex: none;
+    height: 0;
+    width: 0;*/
+    display: none;
+  }
+
+  .flex-container {
+    /*flex-flow: column wrap;*/
+    position: relative;left:0;
+  }
+
+  .flex-subcontainer {
+    /*flex: 1 1 auto;*/
+    position: absolute;left:0;
+    justify-content: space-around;
+  }
+
+  /*main {
+    flex-flow: row wrap;
+  }*/
+
+  /*.article {
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: row wrap;
+    /*justify-content: space-around;*/
+    /*flex-basis: auto;*/
+    /*flex-direction: column wrap;*/
+
+
+  /*.ad { order: 0; }*/
+  /*header { order: 0; }
+  .article1 { order: 1; }
+  .article2    { order: 2; }
+  .article3 { order: 3; }
+  footer  { order: 4; }*/
+}
+
+
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+  header {
+    background: lightgreen;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 20px;
+  }
+
+
+  /*
+    ========================================
+    Advertisement
+    ========================================
+  */
+
+  .ad {
+    background: lightpink;
+    border-style: solid;
+    border-width: thin;
+    position: relative;
+  }
+
+  #adtext {
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        /*align-self: center;
+        align-content: center;
+        margin: auto;
+        text-align: center;*/
+  }
+
+  /*
+    ========================================
+    Main body
+    ========================================
+  */
+
+  .article {
+    background: lightcyan;
+    /*padding: 0 20px 0 20px;*/
+    /*flex: 1 1 auto;*/
+    border-style: solid;
+    border-width: thin;
+  }
+
+  .article1 {
+    padding-left: 40px;
+  }
+
+  .article3 {
+    padding-right: 40px;
+  }
+
+  .article2 {
+    margin: 0 20px 0 20px;
+  }
+
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+  footer {
+    background: lightblue;
+    margin-top: 20px;
+    /*flex: 3 1 auto;*/
+    border-style: solid;
+    border-width: thin;
+    border-radius: 20px;
+  }
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+nav {
+  position:fixed;left:0;right:0;top:0;
+  height: 30px;
+  width:auto;
+  background: #E3D865;
+  border-style: solid;
+  border-width: thin;
+}
+
+.banner {
+  position:relative;top:auto;left:10px;
+}
