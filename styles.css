@@ -53,7 +53,11 @@ table {
   z-index: 9999;
   border-bottom: 3px solid black;
 }
-
+.nav-bar-title {
+  margin-top: 16px;
+  margin-bottom: 18px;
+  margin-left: 15px;
+}
 main {
   height:auto;
   width:990px;
@@ -73,6 +77,9 @@ main {
 header {
   background-color: #b6d7a8;
   width:740px;
+  border-radius: 10px;
+  text-align: center;
+  height:75px;
 
 }
 
@@ -90,4 +97,12 @@ header {
 
 .article-left, .article-center {
   margin-right:10px;
+}
+
+.article-title {
+  font-weight: bold;
+  font-size:20px
+}
+.title-header {
+  text-align: center;
 }
