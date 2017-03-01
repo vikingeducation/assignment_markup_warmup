@@ -80,7 +80,18 @@ header {
   border-radius: 10px;
   text-align: center;
   height:75px;
+  margin-bottom: 12px;
+}
 
+h1 {
+  font-size:28px;
+  font-weight: bold;
+  padding-top:12px;
+  margin-bottom:5px;
+}
+
+#author {
+  font-style: italic;
 }
 
 .adbox, .article-left, .article-center, .article-right {
