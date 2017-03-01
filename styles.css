@@ -244,14 +244,17 @@ Flex container
     background: lightpink;
     border-style: solid;
     border-width: thin;
+    position: relative;
   }
 
   #adtext {
-        transform: translateY(50%);
-        align-self: center;
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        /*align-self: center;
         align-content: center;
         margin: auto;
-        text-align: center;
+        text-align: center;*/
   }
 
   /*
