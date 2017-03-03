@@ -79,38 +79,51 @@ table {
   =============================
 */
 
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5em;
   font-weight: bold;
+  padding-bottom: 15px;
 }
 
 h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 2.25em;
+  font-size: 2em;
   font-weight: bold;
+  padding: 5px 5px 10px 5px;
+}
+
+.navbar h2 {
+  padding: 5px;
 }
 
 h3 {
   font-family: "Montserrat", sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   font-style: italic;
 }
 
 h4 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.75em;
+  font-size: 1.5em;
+  padding: 5px;
 }
 
 h5 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: bold;
+  padding: 5px;
 }
 
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
+  padding: 5px;
 }
 
 /*
@@ -122,7 +135,7 @@ p {
 .navbar {
   width: 100%;
   padding: 20px;
-  margin: 0;
+  margin: 0 0 10px 0;
   border-bottom: 3px solid black;
 }
 
@@ -132,7 +145,57 @@ p {
   ===============================
 */
 
+div {
+  box-sizing: border-box;
+}
+
 .container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
   width: 990px;
   margin: 0 auto;
+  padding: 0;
+}
+
+.ad {
+  width: 210px;
+  height: 400px;
+  margin: 0;
+  text-align: center;
+  padding-top: 100px;
+  border: 3px solid black;
+}
+
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 780px;
+  margin: 0;
+  padding: 0;
+}
+
+.post {
+  width: 240px;
+  margin: 0 10px 10px 10px;
+  border: 3px solid black;
+  padding: 5px;
+}
+
+img {
+  margin: 10px;
+}
+
+.title {
+  width: 100%;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 10px 10px 10px;
+}
+
+.footer {
+  border: 3px solid black;
+  border-radius: 10px;
 }
