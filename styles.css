@@ -94,11 +94,6 @@ h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 2em;
   font-weight: bold;
-  padding: 5px 5px 10px 5px;
-}
-
-.navbar h2 {
-  padding: 5px;
 }
 
 h3 {
@@ -109,7 +104,7 @@ h3 {
 
 h4 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
   padding: 5px;
 }
 
@@ -137,6 +132,10 @@ p {
   padding: 20px;
   margin: 0 0 10px 0;
   border-bottom: 3px solid black;
+}
+
+.navbar h2 {
+		text-align: left;
 }
 
 /*
@@ -183,6 +182,10 @@ div {
   padding: 5px;
 }
 
+.post h2 {
+	padding-bottom: 5px;
+}
+
 img {
   margin: 10px;
 }
@@ -190,13 +193,13 @@ img {
 .title {
   width: 100%;
   border: 3px solid black;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 20px;
   margin: 0 10px 10px 10px;
 }
 
 .footer {
   border: 3px solid black;
-  border-radius: 10px;
+  border-radius: 15px;
 	margin: 0 10px 10px 10px;
 }
