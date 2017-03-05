@@ -1,0 +1,54 @@
+
+ html {
+   font-family: Helvetica, "Times New Roman", sans-serif;
+ }
+ .header {
+   background-color: yellow;
+   position:fixed;
+   width: 100%;
+   top:0;
+ }
+
+ h1,h3,h4 {
+   text-align: center;
+ }
+ cite {
+   text-align:center;
+ }
+
+ .header-cite{
+   font-size: larger;
+ }
+ .art-cite {
+   font-style: normal;
+ }
+
+ .wrapper {
+   display: flex;
+   flex-flow: row wrap;
+   margin-top: 48px;
+   justify-content: center;
+ }
+ .main-wrapper {
+   display: flex;
+   flex-flow: row wrap;
+   background-color: darkblue;
+   max-width: 990px;
+ }
+.main-header {
+  flex: 1 100%;
+  background-color: lightgreen;
+}
+.article {
+  flex: 1 0px;
+  order: 2;
+  background-color: lightblue;
+}
+.main-footer {
+  flex: 1 100%;
+  order: 5;
+  background-color: lightgreen;
+}
+ .aside {
+   background-color: magenta;
+ }
