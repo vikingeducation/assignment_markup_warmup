@@ -168,3 +168,52 @@ footer {
   padding:10px;
 
 }
+
+@media (max-width:990px) {
+
+  .fixed-nav-bar {
+    width:100%;
+  }
+
+  main {
+    width:100%;
+    margin: 50px auto 0 auto;
+  }
+  .content {
+    width: 100%;
+  }
+  header {
+    width:100%;
+    border-radius: 0px;
+  }
+  .adbox {
+    display: none;
+  }
+
+  .articles {
+    width:94%;
+    margin:auto;
+  }
+
+  .article-left, .article-center {
+    width: 44%;
+  }
+
+  .article-left {
+    margin-right: 4%;
+  }
+
+  .article-right {
+    margin-top: 15px;
+    width:100%;
+  }
+
+  footer {
+    width:100%;
+    border-radius: 0px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
