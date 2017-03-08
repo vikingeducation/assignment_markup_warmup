@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  width: 100%;
+  font-family: sans-serif;
 }
 
 #banner {
@@ -13,13 +15,35 @@ padding-left: 4px;
 padding-top: 4px;
 font-size: 24px;
 position: fixed;
+z-index: 1;
+}
+
+@media all and (max-width: 990px) {
+  .advert {display: none}
+  #main-content {
+    width:100%;
+    margin: none;
+  }
+  .title-element{
+    margin: 0;
+    border-radius: none;
+    width: 100%;
+  }
 }
 
 #main-content {
-  background-color: hotpink;
   padding-top: 40px;
   margin: 0;
-  width: 1320px;
+  margin-right: 10%;
+  margin-left: 10%;
+  /* Flexbox */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 #main-content:after {
@@ -33,18 +57,23 @@ position: fixed;
   background-color: pink;
   border-style: solid;
   border-color: black;
-  width: auto;
   height: 600px;
   margin: 4px;
   float: left;
-  width: 25% - 8px;
+  width: calc(25% - 8px);
+}
 
+.advert-ad {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 8px;
 }
 
 #blog-posts {
   float: left;
-  width: 75%;
-  background-color: white;
+  width: calc(75% - 8px);
 }
 
 #blog-posts:after {
@@ -62,17 +91,18 @@ border-style: solid;
 border-color: black;
 margin: 4px;
 text-align: center;
-
 }
 
 .post {
   border-style: solid;
   border-color: black;
+  border-width: 4px;
   background-color: lightskyblue;
   padding: 10px;
   margin: 4px;
   float: left;
-  width: 20%;
+  width: calc(33% - 34px);
+
 }
 
 .copyright {
