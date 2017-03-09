@@ -1,0 +1,76 @@
+h1 {
+    font-weight: bold;
+    font-size: 150%;
+}
+
+#container {
+    font-size: 100%;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+#gora {}
+
+#srodek {
+    margin: auto;
+}
+
+nav {
+    background: #FFE599;
+    margin-bottom: 1em;
+}
+
+nav p {
+    border: 2px solid black;
+    padding: 1em;
+    font-weight: bold;
+}
+
+#reklama {
+    box-sizing: border-box;
+    background: #D5A6BD;
+    display: flex;
+    float: left;
+    width: 20%;
+    height: 400px;
+    align-items: center;
+    padding: 1em;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid black;
+    margin-left: 1em;
+    font-weight: bold;
+}
+
+#reklama p {
+    text-align: center;
+    padding: 2px;
+}
+
+.bialy {
+    height: 40%;
+    width: 98%;
+    background-color: white;
+    border: 2px solid black;
+}
+
+#header {
+    box-sizing: border-box;
+    background: #B6D7A8;
+    border: 2px solid black;
+    border-radius: 12px;
+    width: 50%;
+    height: 100px;
+    float: left;
+}
+
+/*              CLEARFIX             */
+.clearfix::before,
+.clearfix::after {
+  display: table;
+  content: " ";
+}
+.clearfix::after {
+  clear: both;
+}
