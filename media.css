@@ -1,0 +1,81 @@
+.clearfix::before, .clearfix::after {
+    display: table;
+    content: " ";
+}
+
+.clearfix::after {
+    clear: both;
+}
+#container {
+    font-size: 100%;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: auto;
+}
+header {
+    background: #FFE599;
+}
+
+header p {
+    border: 2px solid black;
+    padding: 1em;
+    font-weight: bold;
+    padding-left: 0.5em;
+}
+nav {
+  display: none;
+}
+#header {
+    text-align: center;
+    background: #B6D7A8;
+    border: 2px solid black;
+    border-top: none;
+}
+#header h1 {
+    font-weight: bold;
+    font-size: 170%;
+    padding: 0.5em;
+}
+#header h2 {
+    font-size: 120%;
+    padding-bottom: 0.5em;
+}
+article {
+  margin: 0 1em 0 0;
+  box-sizing: border-box;
+  padding: 1em;
+  margin:1em;
+  background: #A2C4C9;
+  border: 2px solid black;
+  float: left;
+}
+#blue {
+  display: block;
+}
+#blue h2 {
+    font-weight: bold;
+    font-size: 140%;
+    text-align: center;
+    padding-bottom: 5px;
+}
+#blue h3 {
+    font-size: 110%;
+    text-align: center;
+    padding-bottom: 12px;
+}
+#blue h4 {
+  font-weight: bold;
+  padding-bottom: 7px;
+}
+#blue p {
+  padding-bottom: 12px;
+}
+#blue article:nth-child(-n+2) {
+  width: 40%;
+  height: auto;
+}
+footer {
+  background: #9FC5F8;
+    border: 2px solid black;
+    padding:0.6em;
+}
