@@ -1,3 +1,6 @@
+/* I'm done with this, but creating font-size class names
+would reduce some more duplication. Same approach to margins. */
+
 html {
     font-size: 16px;
 }
@@ -7,9 +10,15 @@ body {
     margin: auto;
 }
 
+article,
+footer,
+nav, #blog-title,
+#sing-for-dinner {
+    border: 2px solid black;
+}
+
 article {
     display: inline-block;
-    border: 2px solid black;
     width: calc(33% - 45px);
     background: #a2c4c9;
     margin: 10px 5px 10px 0px;
@@ -18,7 +27,6 @@ article {
 
 footer {
     background: #9fc5f8;
-    border: 2px solid black;
     border-radius: 25px;
     margin: 0px;
     padding: 0px 20px 20px 20px;
@@ -26,10 +34,6 @@ footer {
 
 p {
     margin-top: 10px;
-}
-
-nav, #blog-title {
-    border: solid 2px black;
 }
 
 nav {
@@ -68,11 +72,11 @@ nav {
     float: left;
 
     background: #d5a6bd;
-    border: 2px solid black;
     height: 600px;
-    width: calc(25% - 24px);
+    width: calc(25% - 34px);
 
     margin-top: 65px;
+    margin-left: 10px;
     padding: 0px 10px;
 }
 
@@ -87,8 +91,10 @@ nav {
     background: linear-gradient(to bottom right, teal, white);
 }
 
-.last-article {
-    margin-right: 0px;
+.last-article,
+#blog-title,
+footer {
+    margin-right: 5px;
 }
 
 .section-heading {
@@ -123,8 +129,9 @@ nav {
         flex: 1 auto;
     }
 
-    footer {
+    footer, #blog-title {
         border-radius: 0px;
+        margin-right: 0px;
     }
 
     #articles {
@@ -134,7 +141,6 @@ nav {
     }
 
     #blog-title {
-        border-radius: 0px;
         margin-top: 54px;
     }
 
