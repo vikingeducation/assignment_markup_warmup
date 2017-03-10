@@ -17,18 +17,23 @@ article {
 
 footer {
     background: #9fc5f8;
+    margin: 0px;
+    padding: 0px 20px 20px 20px;
 }
-
 
 p {
     margin-top: 10px;
 }
 
-#banner, #blog-title {
+nav, #blog-title {
     border: solid 2px black;
 }
 
-#banner {
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
     background: #ffe599;
     font-size: 1.25em;
     padding-left: 10px;
@@ -38,11 +43,7 @@ p {
 
 #blog-title {
     background: #b6d7a8;
-    margin: 0px;
-}
-
-#footer {
-    margin: 0px;
+    margin-top: 54px;
 }
 
 .section-heading {
@@ -64,6 +65,20 @@ p {
 
 .tagline {
     font-size: 1.25em;
+}
+
+article {
+    width: 397px;
+    margin: 15px;
+    padding: 0px 20px 20px 20px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
 }
 
 @media screen and (max-width: 989px) {
