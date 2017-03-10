@@ -1,0 +1,72 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
+article, footer {
+    border: 2px solid black;
+    background: #a2c4c9;
+}
+
+p {
+    margin-top: 10px;
+}
+
+#banner, #blog-title {
+    border: solid 2px black;
+}
+
+#banner {
+    background: #ffe599;
+    font-size: 1.25em;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#blog-title {
+    background: #b6d7a8;
+    margin: 0px;
+}
+
+.section-heading {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.title-text, .tagline {
+    text-align: center;
+    margin: 10px;
+}
+
+.title-text {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 1.25em;
+}
+
+@media screen and (max-width: 989px) {
+    section#sing-for-dinner {
+        display: none;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .flex-item {
+        flex: 0 1 50%;
+        margin: 15px;
+        padding: 0px 20px 20px 20px;
+    }
+}
