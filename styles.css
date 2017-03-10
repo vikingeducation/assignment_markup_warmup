@@ -7,16 +7,19 @@ body {
     margin: auto;
 }
 
-main > * {
-    border: 2px solid black;
-}
-
 article {
+    display: inline-block;
+    border: 2px solid black;
+    width: calc(33% - 45px);
     background: #a2c4c9;
+    margin: 5px 5px 5px 0px;
+    padding: 0px 20px 20px 20px;
 }
 
 footer {
     background: #9fc5f8;
+    border: 2px solid black;
+    border-radius: 25px;
     margin: 0px;
     padding: 0px 20px 20px 20px;
 }
@@ -41,9 +44,49 @@ nav {
     padding-bottom: 15px;
 }
 
+#articles {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#content {
+    width: 74%;
+    float: right;
+}
+
 #blog-title {
     background: #b6d7a8;
-    margin-top: 54px;
+    margin-top: 65px;
+    border-radius: 25px;
+}
+
+#sing-for-dinner {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    float: left;
+    background: #d5a6bd;
+    border: 2px solid black;
+    height: 600px;
+    width: calc(25% - 24px);
+    margin-top: 65px;
+    padding: 0px 10px;
+}
+
+.ad-text {
+    font-size: 1.25em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.ad-content {
+    width: 100%;
+    min-height: 300px;
+    background: linear-gradient(to bottom right, teal, white);
+}
+
+.last-article {
+    margin-right: 0px;
 }
 
 .section-heading {
@@ -65,12 +108,6 @@ nav {
 
 .tagline {
     font-size: 1.25em;
-}
-
-article {
-    width: 397px;
-    margin: 15px;
-    padding: 0px 20px 20px 20px;
 }
 
 .left {
