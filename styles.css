@@ -12,7 +12,7 @@ article {
     border: 2px solid black;
     width: calc(33% - 45px);
     background: #a2c4c9;
-    margin: 5px 5px 5px 0px;
+    margin: 10px 5px 10px 0px;
     padding: 0px 20px 20px 20px;
 }
 
@@ -48,6 +48,7 @@ nav {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 #content {
