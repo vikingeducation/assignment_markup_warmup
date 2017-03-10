@@ -7,10 +7,18 @@ body {
     margin: auto;
 }
 
-article, footer {
+main > * {
     border: 2px solid black;
+}
+
+article {
     background: #a2c4c9;
 }
+
+footer {
+    background: #9fc5f8;
+}
+
 
 p {
     margin-top: 10px;
@@ -30,6 +38,10 @@ p {
 
 #blog-title {
     background: #b6d7a8;
+    margin: 0px;
+}
+
+#footer {
     margin: 0px;
 }
 
@@ -59,14 +71,5 @@ p {
         display: none;
     }
 
-    .flex-container {
-        display: flex;
-        flex-flow: row wrap;
-    }
 
-    .flex-item {
-        flex: 0 1 50%;
-        margin: 15px;
-        padding: 0px 20px 20px 20px;
-    }
 }
