@@ -48,3 +48,151 @@ table {
 }
 
 /* End reset */
+main {
+	margin-left: 250px;
+	padding-top: 55px;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+.fixed-width {
+	width:990px;
+	margin:0 auto;
+}
+
+.resize-within {
+	display: inline-block;
+  position: relative;
+  margin-left: -50%;
+  left: 50%;
+}
+
+.top-header {
+	position: fixed;
+	height: 40px;
+	width:100%;
+	background-color: lightyellow;
+	text-align: left;
+	border: 2px solid black;
+	border-left: none;
+	border-right: none;
+	z-index: 1;
+}
+
+.site-title {
+	padding-left: 10px;
+	padding-top: 12px;
+
+}
+
+.interior-title {
+	background-color: lightgreen;
+	height:60px;
+	text-align:center;
+	padding-bottom: 10px;
+	border: 2px solid black;
+	border-radius: 15px;
+}
+
+.main-header {
+	padding-top: 16px;
+	padding-bottom: 5px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.author {
+	font-size: 16px;
+	font-style: italic;
+}
+.content-container{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	width: auto;
+}
+
+.article-container{
+	padding: 5px;
+  width:220px;
+	height: 100%;
+  margin-top: 10px;
+  margin-left:5px;
+  margin-right:5px;
+  flex-grow: 1;
+	background-color: rgb(156, 202, 206);
+	border: 2px solid black;
+
+}
+
+.post-title {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.post-date {
+	font-size: 15px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.post-header {
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-bottom: 8px;
+}
+
+.post-text {
+	font-size: 14px;
+	line-height: 16px;
+	padding: 5px;
+	padding-bottom: 20px;
+}
+
+.ad-container{
+	position:absolute;
+	height: 400px;
+	top:55px;
+	margin-left: 10px;
+	width: 230px;
+	background-color: pink;
+	border:2px solid black;
+}
+
+.ad-contents{
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+	text-align: center;
+}
+.ad-title {
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+footer {
+	width:990px;
+}
+.footer-container{
+	width:750px;
+	position: relative;
+	background-color: skyblue;
+	border: 2px solid black;
+	border-radius: 15px;
+	font-size: 12px;
+}
+
+.footer-container p {
+	padding:7px;
+}
