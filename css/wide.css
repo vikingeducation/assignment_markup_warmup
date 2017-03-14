@@ -1,0 +1,32 @@
+body {
+  font: 16px/22px 'Open Sans', Arial, sans-serif;
+  color: #3d3d3d;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2,
+h3 {
+  font-size: 1.5em;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+nav {
+  position: fixed;
+  background-color: #FFE599;
+  padding: 15px 0 15px 15px;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
