@@ -1,0 +1,136 @@
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+h1{
+  font-size: 2em;
+  line-height: 1.5em;
+  font-weight:700;
+}
+
+h2{
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.top-bar {
+  background-color: #FFE599;
+  height: 50px;
+  margin-bottom: 10px;
+  position: relative;
+  h1 {
+    padding-left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.content-container {
+  clear: both;
+  *zoom: 1;
+  width: auto;
+  margin: 0 20px;
+  &::before {
+    content: "";
+    display: table;
+  }
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .side-bar {
+    background-color: #D5A6BD;
+    float: left;
+    margin: 0;
+    width: calc(30%);
+  }
+  .post-container {
+    float: left;
+    margin: 0 0 10px 10px;
+    width: calc(70% - 10px);
+    .post-container__top {
+      background-color: #B6D7A8;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      padding: 10px;
+      h1,h2 {
+        text-align: center;
+      }
+    }
+    .post-container__content {
+      height: 400px;
+      .post-container__item {
+        background-color: #A2C4C9;
+        display: inline-block;
+        width: calc((100% - 20px) / 3);
+        padding: 10px;
+        box-sizing: border-box;
+        margin-right:10px;
+        height: 100%;
+        vertical-align: top;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+    .post-container__bottom {
+      background-color: #9FC5F8;
+      margin-top: 10px;
+      border-radius: 5px;
+      padding: 10px;
+    }
+  }
+}
