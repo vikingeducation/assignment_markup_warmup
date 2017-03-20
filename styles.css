@@ -46,28 +46,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/***********************************************************/
-/*.container:before,
-.container:after {
-  content: "";
-  display: table;
-} 
-.container:after {
-  clear: both;
-}
-.nav:before,
-.nav:after {
-  content: "";
-  display: table;
-} 
-.nav:after {
-  clear: both;
-}*/
-/**********************************************************/
+
 
 body {
   font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .flex {
@@ -79,21 +62,18 @@ body {
   justify-content: space-around;
 }
 
-.flex-column {
-  flex-flow: column wrap;
-  justify-content: space-around;
+.center-text {
+  text-align: center;
 }
 
-.art-flex-item article {
-  flex: 0 1 auto;
-  width: 33%;
-  align-items: stretch;
-  align-content: space-around;
-}
-
-aside {
-  flex: 1 20%;
+.flex-left-main {
+  flex: 0 1 20%;
   margin: 0 8px;
+}
+
+.flex-right-main
+{
+  flex: 3 80%
 }
 
 .main-left-bg {
@@ -146,22 +126,6 @@ nav::after{
   margin-bottom: 8px;
 }
 
-/*aside
-{
-  display:flex;
-	align-items: center;
-  justify-content: center;
-  background-color:lightpink;
-  width:30%;
-  margin: 1em;
-  box-sizing:border-box;
-  height:500px;
-}*/
-.flex-right-main
-{
-  flex: 3 80%
-}
-
 .vc_ads
 {
   background: #D5A6BD;
@@ -177,6 +141,12 @@ nav::after{
   line-height:normal;
 }
 
+.art-flex-item article {
+  flex: 0 1 33%;
+  align-items: stretch;
+  align-content: space-around;
+}
+
 .art-flex-item article:nth-child(2) {
   margin: 0 3px;
 }
@@ -189,15 +159,11 @@ p
 {
   padding:1em;
 }
-h1, h2, h3, time
+
+h1, h2, h3 
 {
-  padding:1em;
-  font-weight:bold;
-}
-time
-{
-  font-weight: normal;
-  font-style: italic;
+  padding: 1em;
+  font-weight: bold;
 }
 
 .footer
@@ -207,39 +173,41 @@ time
   border-radius: 1em;
 }
 
-.wrapper {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-/* We tell all items to be 100% width */
-/*.header, .main, .nav, .aside, .footer {
-  flex: 1 990px;
-}*/
-
-/* We rely on source order for mobile-first approach
- * in this case:
- * 1. header
- * 2. nav
- * 3. main
- * 4. aside
- * 5. footer
- */
-
 /* Medium screens */
 @media all and (max-width: 990px) {
+  .main-header {
+    border-radius: 0;
+  }
+  .main-content {
+    margin-top: 58px;
+  }
   /* We tell both sidebars to share a row */
-  .aside { flex: 1 auto; }
-}
+  .flex-left-main {
+    display: none;
+  }
 
-/* Large screens */
-@media all and (min-width: 990px) {
-  /* We invert order of first sidebar and main
-   * And tell the main element to take twice as much width as the other two sidebars 
-   */
-  .main { flex: 2 0px; }
-  
-  .aside   { order: 0; }
-  .main    { order: 1; }
-  .footer  { order: 3; }
+  .art-flex-item article {
+    flex: 0 1 49%;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: space-around;
+    margin: 0 4px;
+  }
+
+  .art-flex-item article:nth-child(2) {
+    flex: 0 1 49%;
+    align-items: stretch;
+    align-content: space-around;
+  }
+
+  .art-flex-item article:nth-child(3) {
+    flex: 0 1 99%;
+    align-items: stretch;
+    align-content: space-around;
+    margin: 6px 4px 0 4px;
+  }
+
+  .footer {
+    border-radius: 0;
+  }
 }
