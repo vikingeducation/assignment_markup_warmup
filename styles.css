@@ -2,28 +2,100 @@
 /* CSS Document */
 body{
 	font-family:"Comic Sans MS", Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin:0;
 }
 header{
 	width:100%;
-	background-color:yellow;
+	background-color:#ffef9d;
+	margin:0;
+	border:solid #000 1px;
+}
+header h2{
+	margin-left:20px;
 }
 aside{
-	width:25%;
+	width:20%;
+	height:100vh;
 	float:left;
-	background-color: pink;
+	background-color:#dcb0ca;
+	max-width:200px;
+	border:solid #000 1px;
+}
+aside p{
+	margin-top:50%;
+	text-align:center;
+}
+aside img{
+	height:300px;
+	width:90%;
 }
 main{
 /*	display:flex;*/
-	width:75%;
+	width:100%;
+	max-width:1000px;
+	margin:10px auto;
 }
 main header{
-	background-color:green;
-	width:100%;
+	background-color:#c0d9c0;
+	margin:0 0 10px 21%;
+	border-radius:10px;
+	width: auto;
+}
+main header h1{
+	text-align: center;
+}
+main header p{
+	font-style: italic;
+	text-align: center;
 }
 article{
-	background-color:gray;
+	background-color:#bed5dc;
+	margin:0 0 10px 1%;
+	float:left;
+	width:25%;
+	padding:0 1px;
+	border:solid #000 1px;
+}
+article h2, article p.date{
+	text-align:center;
+	margin:5px;
+}
+article h3, article p{
+	margin:10px 5px 5px 5px;
 }
 footer{
-	width:100%;
-	background-color:blue;
+	background-color:#9bcdff;
+	border-radius:10px;
+	margin-left:21%;
+	clear:both;
+	border:solid #000 1px;
+	padding:5px;
+}
+footer p{
+	margin:0;
+	padding:0;
+}
+@media only screen and (max-width:990px){
+	aside{
+		display:none;
+	}
+	main{
+		margin: 0;
+	}
+	main header{
+		margin:0;
+		border-radius:0;
+	}
+	article{
+		width:45%;
+		margin:2%;
+	}
+	article:last-of-type{
+		width:94%;
+		clear: both;
+	}
+	footer{
+		margin:0;
+		border-radius:0;
+	}
 }
