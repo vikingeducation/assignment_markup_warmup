@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: #FFE599;
+}
+
+#main-header {
+  background: #B6D7A8;
+}
+
+.post {
+  background: #A2C4C9;
+}
+
+#main-footer {
+  background: #9FC5F8;
+}
+
+#sidebar {
+  background: #D5A6BD;
+}
