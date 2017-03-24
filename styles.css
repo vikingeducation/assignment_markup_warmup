@@ -1,0 +1,71 @@
+/*
+ * Global styles
+ */
+
+html {
+  font-family: 'Open Sans', sans-serif;
+
+  background-color: white;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*
+ * Header styles
+ */
+
+header nav {
+  background-color: #FFE599;
+  width: 100%;
+}
+
+header nav h1 {
+  margin: 0px;
+  padding: 2% 0% 2% 2%;
+}
+
+/*
+ * Main styles
+ */
+
+#title-banner {
+  background-color: #B6D7A8;
+}
+
+#title-banner h1 {
+  margin: 0px;
+}
+
+aside {
+  display: inline-block;
+  width: 33.33%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #D5A6BD;
+}
+
+section.blog-posts {
+  display: inline-block;
+  width: 66.67%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #A2C4C9;
+}
+
+/*
+ * Footer styles
+ */
+
+ footer {
+   background-color: #9FC5F8;
+ }
+
+ footer p {
+   margin: 0px;
+ }
