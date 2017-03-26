@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#banner {
+  background-color: #ffe599;
+  border: medium solid #000;
+  width: 100%;
+  height: 30px;
+  padding: 10px 10px 0 10px;
+  font-size: 18px;
+  position: fixed;
+  z-index: 1;
+}
+
+#main-content {
+  margin: 0 10% 0 10%;
+  padding-top: 70px;
+  font-size: 15px;
+}
+
+#main-content #content {
+  /* Flexbox */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+#main-content:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.ads {
+  background-color: #d5a6bd;
+  height: 600px;
+  margin: 4px;
+  float: left;
+  width: calc(25% - 8px);
+}
+
+.ad {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 8px;
+}
+
+.ads, .post, .title, .copyright {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+#content {
+  float: left;
+  width: calc(75% - 8px);
+}
+
+#content:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+#author {
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.title, .post, .copyright {
+  margin: 6px;
+}
+
+.title {
+  background-color: #b6d7a8;
+  border-radius: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.post {
+  background-color: #a2c4c9;
+  padding: 10px;
+  float: left;
+  width: calc(33% - 34px);
+}
+
+.post-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.post-date {
+  font-size: 15px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.copyright {
+  clear: both;
+  background-color: #9fc5f8;
+  border-radius: 15px;
+  padding: 10px 0 10px 10px;
+
+}
+
+@media all and (max-width: 990px){
+  .ads {display: none;}
+  .title {flex-grow: 2;}
+  #main-content {
+    margin: 0;
+  }
+  #content {width: 100%;   }
+   .title {
+     border-radius: 0;
+   }
+  .post {
+    width: 42%;
+    flex-grow: 1;
+  }
+}
