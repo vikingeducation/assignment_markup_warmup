@@ -4,10 +4,9 @@ footer {
 
   p {
     box-sizing: border-box;
-    border: 4px solid black;
-    border-radius: 25px;
+    @include section-border(25px);
     padding: 8px 8px;
     background-color: $footer-bg-color;
-    margin: 0px;
+    @include margin-reset();
   }
 }

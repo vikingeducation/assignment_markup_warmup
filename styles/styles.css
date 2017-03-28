@@ -2,6 +2,7 @@ header {
   position: fixed;
   background-color: #FFE599;
   border: solid 4px black;
+  border-radius: 0px;
   width: calc(100% - 8px);
   margin-bottom: 20px; }
   header nav {
@@ -9,9 +10,9 @@ header {
     width: 100%;
     margin: 0px; }
   header h1 {
-    font-size: 1.3em;
     margin: 0px;
-    padding: 10px 0% 10px 2%; }
+    padding: 10px 0% 10px 2%;
+    font-size: 1.3em; }
 
 main {
   width: 90%;
@@ -19,7 +20,7 @@ main {
 
 #title-banner {
   background-color: #B6D7A8;
-  border: 4px solid black;
+  border: solid 4px black;
   border-radius: 25px;
   margin-bottom: 20px;
   text-align: center;
@@ -43,6 +44,7 @@ aside {
     margin-right: 20px;
     margin-left: -28px;
     border: solid 4px black;
+    border-radius: 0px;
     text-align: center;
     font-size: 1.2em;
     background-color: #D5A6BD; }
@@ -56,7 +58,8 @@ section article {
   margin: 0px 2px;
   padding: 0px 3px;
   background-color: #A2C4C9;
-  border: solid 4px black; }
+  border: solid 4px black;
+  border-radius: 0px; }
   section article h3,
   section article h4 {
     text-align: center;
@@ -79,7 +82,7 @@ footer {
   margin-bottom: 10px; }
   footer p {
     box-sizing: border-box;
-    border: 4px solid black;
+    border: solid 4px black;
     border-radius: 25px;
     padding: 8px 8px;
     background-color: #9FC5F8;
