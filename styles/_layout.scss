@@ -1,0 +1,16 @@
+@mixin margin-reset() {
+  margin: 0px;
+}
+
+@mixin padding-reset() {
+  padding: 0px;
+}
+
+@mixin section-border($radius) {
+  border: solid 4px black;
+  border-radius: $radius;
+}
+
+@mixin img-border() {
+  border: solid 3px black; 
+}

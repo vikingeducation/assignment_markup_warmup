@@ -1,0 +1,19 @@
+header {
+  position: fixed;
+  background-color: $header-bg-color;
+  @include section-border(0px);
+  width: calc(100% - 8px);
+  margin-bottom: 20px;
+
+  nav {
+    box-sizing: border-box;
+    width: 100%;
+    @include margin-reset();
+  }
+
+  h1 {
+    @include margin-reset();
+    padding: 10px 0% 10px 2%;
+    font-size: 1.3em;
+  }
+}
