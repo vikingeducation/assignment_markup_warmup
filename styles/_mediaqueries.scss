@@ -1,0 +1,58 @@
+@media (max-width: 989px) {
+  header {
+    height: 50px;
+    margin-bottom: 0px;
+
+    nav {
+      margin: 0px;
+    }
+  }
+
+  
+  #title-banner {
+    margin-top: 50px;
+    border-top: none;
+    border-radius: 0px;
+  }
+
+  aside.col-1-3, 
+  aside .ad, 
+  footer>div.col-1-3 {
+    display: none;
+  }
+
+  main, section.col-2-3 {
+    width: 100%;
+  }
+
+  
+  .flex-container {
+    flex-wrap: wrap;
+    align-content: stretch;
+  }
+
+  section article {
+    margin: 10px 15px;
+    width: calc(50% - 30px);
+    flex-grow: 2;
+
+    h3 {
+      font-size: 1.5em;
+    }
+  }
+
+
+  footer {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 10px;
+
+    p {
+      border-radius: 0px;
+    }
+    
+    div.col-2-3 {
+      width: 100%;
+    }
+  }
+}
