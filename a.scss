@@ -1,6 +1,17 @@
-/* @import url('https://fonts.googleapis.com/css?family=Nova+Oval');*/
+@import url('https://fonts.googleapis.com/css?family=Nova+Oval');
+
+$common-border: solid #333 thin;
+
+$white-space-canon: 1em;
+
+@mixin header-footer {
+	border-radius: $white-space-canon; 
+	border: none; margin-right:2em; 
+	margin-left: 2em;
+}
+
 body {
-	font-size: 1.2 em;
+	font-size: 110%;
 	font-family: 'Nova Oval', cursive;
 	margin: 0;
 }
@@ -12,9 +23,9 @@ header {
 #title-header {
 	background-color: DarkSeaGreen;
 	text-align: center;
-	padding: 1em;
-	border-bottom: solid black thin;
-	margin-bottom: 1em;
+	padding: $white-space-canon;
+	border-bottom: $common-border;
+	margin-bottom: $white-space-canon;
 }
 
 #title-header p {
@@ -22,7 +33,7 @@ header {
 }
 
 main {
-	padding: 0 1em;
+	padding: 0 $white-space-canon;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -31,7 +42,7 @@ main {
 
 article {
 	background: 	#66CDAA;
-	border: solid black thin;
+	border: $common-border;
 	padding: 2em;
 	flex-basis: 35%;
 	margin: 1%;
@@ -48,17 +59,17 @@ h1, h2{
 }
 
 #why-do-we-have-this {
-	padding: 1em 0.3em;
+	padding: $white-space-canon 0.3em;
 	background-color: yellow;
-	border-bottom: solid black thin;
+	border-bottom: $common-border;
 }
 
 footer p {
 	font-size: .8rem;
-	padding: 1em;
+	padding: $white-space-canon;
 	background: cyan;
-	border-top: solid black thin;
-	border-bottom: solid black thin;
+	border-top: $common-border;
+	border-bottom: $common-border;
 	flex-grow:1;
 }
 
@@ -78,14 +89,14 @@ footer p {
 
 	#why-do-we-have-this {
 		width: 100%;
-		margin-bottom: 1em;
+		margin-bottom: $white-space-canon;
 	}
 
 	#my-ad {
 		display: block; flex-basis:33%; 
-		border: solid black thin; 
-		padding: 10em 1em; 
-		margin:0 1em;
+		border: $common-border; 
+		padding: 10em $white-space-canon; 
+		margin:0 $white-space-canon;
 		background-color: #E9967A;}
 
 	.container-outer {
@@ -96,6 +107,6 @@ footer p {
 
 	footer { width: 100%; margin-left: 333px; }
 
-	#title-header, footer p {border-radius: 1em; border: none; margin-right:2em; margin-left: 2em;}
+	#title-header, footer p { @include header-footer;}
 
 }
