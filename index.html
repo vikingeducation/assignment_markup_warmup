@@ -17,66 +17,78 @@
     </div>
     <!-- end nav container -->
 
-    <div class="container">
-        <div class="heading">
-            <h1>The Lorem Micro Blog</h1>
-            <br>
-            <h3>By Foo bar</h3>
-        </div>
-    </div>
-    <!-- end title container -->
+    <!-- Sidebar only visible on larger screens -->
 
-    <div class="container">
-        <!-- begin flex container for columns and sidebar -->
-
-
-        <div class="main">
-            <div class="item one">
-                <strong><h1>A Most Posty Post</h1></strong>
-                <br>
-                <strong><h3>First Thoughts...</h1></strong>
-                  <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <br><br>
-                <strong><h3>Additional Thoughts...</h1></strong>
-                  <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-
-            <div class="item two">
-                <strong><h1>Another Posty Post</h1></strong>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div>
-
-        <div class="item three">
-            <strong><h1>A Posty Post</h1></strong>
-            <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-
-        <!-- comment out item four
-
+    <div class="overall-container">
+        <!--parent container to hold sidebar div and small-screen div together and enable sidebar to work-->
         <div class="item four">
-            <h1>Sidebar</h1>
+
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                 irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-      -->
+        <!-- end sidebar div -->
 
+        <div class="small-screen">
+            <!--container for markup visible on smaller screens only-->
+
+            <div class="container">
+                <div class="heading">
+                    <h1>The Lorem Micro Blog</h1>
+                    <br>
+                    <h3>By Foo bar</h3>
+                </div>
+            </div>
+            <!-- end title container -->
+
+            <div class="container">
+                <!-- begin flex container for columns and sidebar -->
+
+
+                <div class="posts">
+                    <div class="item one">
+                        <strong><h1>A Most Posty Post</h1></strong>
+                        <br>
+                        <strong><h3>First Thoughts...</h1></strong>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <br><br>
+                        <strong><h3>Additional Thoughts...</h1></strong>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+
+                    <div class="item two">
+                        <strong><h1>Another Posty Post</h1></strong>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+
+                <div class="item three">
+                    <strong><h1>A Posty Post</h1></strong>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+
+            </div>
+            <!-- end posts container -->
+
+        </div>
+        <!--end small-screen div-->
     </div>
-    <!-- end posts and sidebar container -->
+    <!-- end overall-container div -->
 
-        <div class="footer-container">
+    <div class="footer-container">
         <footer class="footer">
             <h3>Footer</h3>
         </footer>
-      </div>
+    </div>
+    <!-- end footer container-->
 
 
 
