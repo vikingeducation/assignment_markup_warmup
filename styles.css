@@ -1,0 +1,108 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+}
+
+.posts {
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.nav {
+    background: orange;
+    height: 2em;
+    padding: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.nav h1 {
+    text-align: left;
+}
+
+.heading {
+    background: lightgreen;
+    height: 4em;
+    padding: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.heading h1 {
+    font-size: 1.5em;
+}
+
+.heading h3 {
+    text-align: center;
+    font-style: italic;
+    font-size: 1em;
+}
+
+.item {
+    background: lightblue;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    justify-content: space-around;
+    border: 2px solid black;
+}
+
+.three {
+    height: 200px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background: green;
+    height: 2em;
+    padding: 10px;
+    margin-top: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.overall-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+@media (max-width: 990px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-height: 100%;
+    }
+    .four {
+        display: none;
+    }
+    .four p {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        max-height: 100%;
+    }
+    .four {
+        display: flex;
+        flex: 1 25%;
+    }
+}
