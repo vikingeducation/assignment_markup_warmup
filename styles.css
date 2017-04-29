@@ -1,9 +1,11 @@
 body {
 	background-color: white;
 	color: black;
-	width: 80%;
+	width: 78%;
 	clear: right;
+	padding: 10px;
 }
+
  nav {
  	background-color: #E0BD1E;
  	color: black;
@@ -30,17 +32,26 @@ section {
 	background-color: #4E91B0;
 	color: black;
 	padding: 30px;
+	width: auto;
+	height: auto;
+	border: 1px solid black;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
 }
 
 aside {
 	background-color: #D67FFF;
 	color: black;
 	width: 20%;
+	position: absolute;
 	height: 80%;
-	clear: left;
+	clear: right;
 	top: 50px;
-	left: 0;
+	right: 0;
 	vertical-align: center;
+	text-align: center;
 }
 
 footer {
