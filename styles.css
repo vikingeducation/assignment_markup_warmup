@@ -80,3 +80,36 @@ footer {
 h3,h1 {
 	text-align: center;
 }
+
+@media screen and (max-width: 990px) {
+	body {
+		width: 100%;
+	}
+	nav {
+		font-size: 30px;
+	}
+
+	section {
+		width: 100%;
+	}
+
+	header {
+		width: 100%;
+		font-size: 30px;
+	}
+
+	aside {
+		display: none;
+	}
+	.flex-grow {
+		width: 100%;
+		flex-grow: 2;
+		margin-top: 20px;
+
+	}
+
+	footer {
+		width: 100%;
+		height: auto;
+	}
+}
