@@ -1,0 +1,115 @@
+body {
+	background-color: white;
+	color: black;
+	width: 78%;
+	clear: right;
+	padding: 10px;
+}
+
+ nav {
+ 	background-color: #E0BD1E;
+ 	color: black;
+ 	position: fixed;
+ 	width: 100%;
+ 	height: 30px;
+ 	padding: 5px;
+ 	top: 0;
+ 	border: 2px solid black;
+ }
+
+header {
+	background-color: #639B72;
+	color: black;
+	text-align: center;
+	border-radius: 10px;
+	width: 80%;
+	height: 80px;
+	margin-top: 50px;
+	padding: 20px;
+	margin-bottom: 20px;
+	border: 2px solid black;
+}
+
+section {
+	background-color: white;
+	color: black;
+	padding: 30px;
+	width: 80%;
+	height: auto;
+	border: none;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.section-content {
+	width: 200px;
+	height: 100%;
+	background-color: #5F7F9F;
+	border: 2px solid black;
+	margin-right: 10px;
+}
+
+aside {
+	background-color: #D67FFF;
+	color: black;
+	width: 20%;
+	position: absolute;
+	height: 80%;
+	clear: right;
+	top: 50px;
+	right: 40px;
+	vertical-align: center;
+	text-align: center;
+	border: 2px solid black;
+}
+
+footer {
+	background-color: #4E91B0;
+	color: black;
+	width: 80%;
+	height: 50px;
+	border-radius: 10px;
+	border: 2px solid black;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+h3,h1 {
+	text-align: center;
+}
+
+@media screen and (max-width: 990px) {
+	body {
+		width: 100%;
+	}
+	nav {
+		font-size: 30px;
+	}
+
+	section {
+		width: 100%;
+	}
+
+	header {
+		width: 100%;
+		font-size: 30px;
+	}
+
+	aside {
+		display: none;
+	}
+	.flex-grow {
+		width: 100%;
+		flex-grow: 2;
+		margin-top: 20px;
+
+	}
+
+	footer {
+		width: 100%;
+		height: auto;
+	}
+}
