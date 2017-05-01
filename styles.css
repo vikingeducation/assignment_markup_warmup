@@ -46,26 +46,7 @@ footer {
 	overflow: scroll;
 }
 
-/**
- * Ads 
- */
 
-.sidebar {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 19%;
-	height: 72%;
-	background-color: #d5a6bd;
-}
-
-.ads-block {
-	height: 50%;
-	width: 90%;
-	background: url(./img/mays.jpg) 
-              no-repeat 
-              center / cover;
-}
 
 /**
  * Blog body
@@ -135,6 +116,27 @@ footer {
 	margin-top: 1%;
 	background-color: #a2c4c9;
 	display: table;
+}
+
+/**
+ * Ads 
+ */
+
+html .sidebar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 19%;
+	height: 72%;
+	background-color: #d5a6bd;
+}
+
+html .ads-block {
+	height: 50%;
+	width: 90%;
+	background: url(./img/mays.jpg) 
+              no-repeat 
+              center / cover;
 }
 
 /**
