@@ -122,7 +122,7 @@ footer {
  * Ads 
  */
 
-html .sidebar {
+.sidebar {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -131,7 +131,7 @@ html .sidebar {
 	background-color: #d5a6bd;
 }
 
-html .ads-block {
+.ads-block {
 	height: 50%;
 	width: 90%;
 	background: url(./img/mays.jpg) 
