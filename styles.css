@@ -14,22 +14,30 @@
 .clearfix::after {
   clear: both;
 }
+.center {
+  margin: auto;
+}
+h2 {
+  text-align: center;
+}
+img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
 div {
   margin: 0px;
   padding: 0px;
 }
- html {
-   width: 990px;
- }
 article {
   display: inline;
   float:left;
-  width: 440px;
+  width: 50%;
 
 }
 header {
   background: yellow;
-  width: 990px
+  width: 100%;
 }
 .border {
   border: 1px solid black;
@@ -40,15 +48,16 @@ header {
 }
 
 .header {
+  text-align: center;
   background: green;
-  width: 493px;
+  width: 100%;
   margin: 5px 0px 0px 0px;
   border-radius: 10px;
 }
 
 .post {
   background: darkgreen;
-  width: 159px;
+  width: calc(33.3% - 6px);
   height: auto;
   float: left;
 }
@@ -58,19 +67,20 @@ header {
 .footer {
   display: inline-block;
   background: blue;
-  width: 493px;
+  width: 100%;
   margin: 0px;
   border-radius: 10px;
 }
 .container {
   display: inline-block;
-  width: 990px;
+  width: 100%;
 }
 
 aside {
+  text-align: center;
   display: inline;
   float:left;
-  width: 159px;
+  width: 25%;
   background: pink;
-  margin: 5px 5px 5px 159px;
+  margin: 5px 5px 5px 12%;
 }
