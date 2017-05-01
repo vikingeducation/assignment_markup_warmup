@@ -155,3 +155,25 @@ aside {
   background: pink;
   margin: 87px 5px 5px 12%;
 }
+
+@media screen and (max-width: 900px) {
+  aside {
+    visibility: collapse;
+    width: 0%;
+    height: 0%;
+    margin: 0px;
+    display: none;
+  }
+  article {
+    width: 100%;
+  }
+  .header {
+    border-radius: 0%;
+  }
+  .footer {
+    border-radius: 0%;
+  }
+  div {
+    display:flex;
+  }
+}
