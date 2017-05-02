@@ -67,13 +67,15 @@ nav {
   height: 30px;
   width: 100%;
   position: fixed;
+  padding-top: 15px;
+  font-weight: bold;
 }
 
 .blog-body {
   display: flex;
   flex-wrap: nowrap;
   width: 90%;
-  padding-top: 30px;
+  padding-top: 45px;
 }
 
 .child1{
@@ -85,10 +87,12 @@ nav {
 }
 
 .child2 {
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header {
+  flex-grow: 1;
   text-align: center;
   padding-top: 40px;
   margin: 5px;
@@ -100,19 +104,26 @@ header {
 .posts {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin: 5px;
-  min-height: 200px;
+}
+
+.post p {
+  padding-bottom: 15px;
+}
+
+.post h3 {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 15px;
 }
 
 .post {
-  width: 33%;
-  min-height: 50px;
   margin: 0 5px;
   padding: 5px 10px;
   background-color: rgb(120, 170, 168);
 
 }
-
 
 .ad {
   display: flex;
@@ -125,4 +136,27 @@ header {
   border-radius: 15px;
   padding: 5px;
   background-color: rgb(123, 155, 198);
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media all and (max-width: 990px) {
+  .blog-body {
+    /* On small screens, we are no longer using
+    row direction but column */
+    flex-direction: column;
+  }
+  .child1 {
+    visibility: hidden;
+    height: 0px;
+  }
+  .posts {
+    flex-wrap: wrap;
+  }
+  .post {
+    margin-bottom: 5px;
+  }
 }
