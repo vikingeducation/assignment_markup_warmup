@@ -6,4 +6,4 @@ And 1 and 2!  And 1, and 2...!
 
 Kerry Benton
 
-http://Xend21.github.io/LoremBlog
+http://Xend21.github.io/assignment_markup_warmup/
