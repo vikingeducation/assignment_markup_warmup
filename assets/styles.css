@@ -1,0 +1,206 @@
+
+/* =============
+RESET
+===============*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Lato', Arial , sans-serif;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-------------*/
+
+nav, header, .aside, .post, footer {
+	border: medium solid black;
+
+}
+header, footer {
+	border-radius: 10px;
+}
+h1, h2 {
+	text-align: center;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: bold;
+	margin: .5em;
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: bold;
+	margin: .5em;
+}
+
+h3 {
+	font-weight: bold;
+}
+
+nav {
+    background-color: #ffe599;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+}
+.main {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.aside {
+	float: left;
+	margin: .5%;
+    background-color: #d5a6bd;
+	margin-top: 3%;
+	width: 15%;
+	height: 500px;
+	position: relative;
+}
+.vert {
+	position: absolute;
+   	top: 50%;
+	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+}
+
+.aside h1 {
+	margin: 0 0 0.5em 0;
+}
+
+img {
+	max-width: 90%;
+	display: block;
+	position: relative;
+	margin: auto;
+}
+
+header {
+    background-color: #adcda0;
+	float: left;
+	position: relative;
+	width: 60%;
+	margin-top: 3%;
+	height: auto;
+	text-align: center;
+}
+
+.post {
+    background-color: #a2c4c9;
+	margin-top: .5%;
+	padding: .5em;
+	margin: .5%;
+	width: 33%;
+}
+
+.post-container {
+	width: 60%;
+	display: flex;
+	flex: 0 1 auto;
+	flex-flow: row;
+	float:left;
+}
+
+footer {
+    background-color: #a1c8fb;
+	margin-top: .5%;
+	float: left;
+	position: relative;
+	left: 16.5%;
+	height: auto;
+	width: 58%;
+	padding: .5em;
+}
+
+@media screen and (max-width: 990px) {
+
+	.main {
+		width: 100%;
+
+	}
+
+	.header {
+		background-color: #adcda0;
+		width: 100%;
+		position: static;
+	}
+
+	.post-container {
+		width: 100%;
+		display: block;
+	}
+
+	.post {
+	    background-color: #a2c4c9;
+		min-width: 220px;
+		margin: 1% 0.5% 1% 0.5%;
+		float: left;
+		width: 46%;
+	}
+
+	.clear {
+		clear: left;
+		width: auto;
+	}
+
+	.footer {
+		background-color: #a1c8fb;
+		margin-top: .5%;
+		position: static;
+		width: 100%;
+		}
+
+	.aside {
+		display: none;
+		}
+
+	header, footer {
+			border-radius: 0px;
+		}
+	}
