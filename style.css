@@ -1,0 +1,186 @@
+/* Color Scheme */
+:root {
+  --color-background: #fcfeff;
+  --color-foreground: #333;
+  --color-foreground-on-dark: #fcfeef;
+  --color-border-dark: #333;
+  --color-border-light: var(--color-secondary-1-1);
+  --color-link: var(--color-secondary-1-4);
+  --color-link-hover: var(--color-primary-1);
+  --color-box-shadow: rgba(0, 0, 0, .25);
+
+  --color-primary-0: #365D8A;	/* Main Primary color */
+  --color-primary-1: #819FC1;
+  --color-primary-2: #5277A0;
+  --color-primary-3: #204976;
+  --color-primary-4: #0F345D;
+
+  --color-secondary-1-0: #2D7781;	/* Main Secondary color (1) */
+  --color-secondary-1-1: #78B2BA;
+  --color-secondary-1-2: #488C96;
+  --color-secondary-1-3: #19646F;
+  --color-secondary-1-4: #094E58;
+
+  --color-secondary-2-0: #3C4C8F;	/* Main Secondary color (2) */
+  --color-secondary-2-1: #8794C6;
+  --color-secondary-2-2: #5968A7;
+  --color-secondary-2-3: #26377B;
+  --color-secondary-2-4: #132361;
+
+  --color-complement-0: #D39C47;	/* Main Complement color */
+  --color-complement-1: #FFDBA3;
+  --color-complement-2: #F5C273;
+  --color-complement-3: #B57D26;
+  --color-complement-4: #8F5C0D;
+}
+
+/* Import normalize */
+@import url('normalize.css');
+
+/* Import fonts from google */
+@import url('https://fonts.googleapis.com/css?family=Roboto|Ubuntu');
+
+/* Default font families */
+html {
+  color: var(--color-primary);
+  font-family: 'Ubuntu', 'Roboto', Helvetica, sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+  color: var(--color-secondary);
+  font-family: 'Roboto', Helvetica, sans-serif;
+}
+p {
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/* Header style */
+header#main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: var(--color-foreground-on-dark);
+  background-color: var(--color-primary-0);
+  border-bottom: 2px solid var(--color-border-dark);
+  box-shadow: 0 2px 4px var(--color-box-shadow);
+  padding: 1em;
+}
+header#main-header h2 {
+  margin: 0;
+}
+
+/* Main style */
+main {
+  margin-top: 4.5em;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  padding: 0 8% 0 8%;
+}
+section {
+  margin: .5em;
+}
+
+/* Centered ad style */
+section#centered-ad {
+  margin-top: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid var(--color-border-light);
+  width: 45%;
+  min-height: 600px;
+}
+section#centered-ad img#the-ad {
+  max-width: 80%;
+}
+
+/* Main section content styles */
+section#main-content {
+  max-width: 75%;
+  flex-grow: 1;
+  margin: 0;
+}
+section#main-content h2 {
+  font-size: .75em;
+  margin-top: .5em;
+  color: var(--color-foreground-on-dark);
+  background-color: var(--color-primary-4);
+  border: 1px solid var(--color-border-dark);
+  border-radius: 1em;
+  box-shadow: 0 2px 4px var(--color-box-shadow);
+  padding: .5em;
+}
+section#main-content h2:first-of-type {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  color: var(--color-foreground-on-dark);
+  background-color: var(--color-secondary-1-0);
+}
+section#main-content section#main-content-articles {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Main section article style */
+section#main-content-articles article {
+  margin: .5em .5em 0 0;
+  color: var(--color-foreground);
+  background-color: var(--color-secondary-1-1);
+  border: 1px solid var(--color-border-dark);
+  border-radius: .15em;
+  box-shadow: 0 2px 4px var(--color-box-shadow);
+  padding: .5em;
+}
+@media (min-width: 990px) {
+  section#main-content-articles article {
+    flex-grow: 1;
+    max-width: 33%;
+  }
+  section#main-content-articles article:last-child {
+    margin-right: 0;
+  }
+}
+@media (max-width: 990px) {
+  section#main-content section#main-content-articles {
+    flex-wrap: wrap;
+  }
+  section#main-content-articles article {
+    display: inline-block;
+    max-width: 45%;
+    max-width: calc(50% - 1.5em);
+  }
+  section#main-content-articles article:nth-child(2) {
+    margin-right: 0;
+  }
+  section#main-content-articles article:last-child {
+    margin-right: 0;
+    max-width: 100%;
+  }
+}
+@media (max-width: 712px) {
+  section#main-content-articles article {
+    display: inline-block;
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+section#main-content-articles article h3 {
+  margin-top: 0;
+  text-align: center;
+}
+section#main-content-articles article h4 {
+  margin: 0;
+}
