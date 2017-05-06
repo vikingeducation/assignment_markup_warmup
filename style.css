@@ -1,0 +1,77 @@
+
+body {
+    font-family: sans-serif;
+    color: #555;
+}
+
+.main-container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    position: fixed;
+    background-color: khaki;
+    height: 50px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    margin-top: -15px;
+}
+
+header {
+    background-color: lawngreen;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    /*margin-top: 65px;  This brings down the nav too for some reason?*/
+}
+
+/*.clearfix::before, .clearfix::after {*/
+    /*display: table;*/
+    /*content: " ";*/
+/*}*/
+
+/*.clearfix::after {*/
+    /*clear: both;*/
+    /*display: table;*/
+    /*content: " ";*/
+/*}*/
+
+
+
+.flex-container {
+    display: flex;
+    /*flex-direction: row;*/
+    flex-flow: row wrap;
+    max-width: 960px;
+    width: 80%;
+    margin: auto;
+    /*flex-wrap: wrap;*/
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.flex-children {
+    width: 30%;
+    /*height: auto;   This was the one messing things up. It auto-centered the boxes*/
+    /*margin: auto;*/
+    background-color: lightseagreen;
+    align-self: flex-start;
+}
+
+.ad_area {
+    background-color: indianred;
+    width: 500px;
+    height: 600px;
+}
+
+
+footer {
+    background-color: cornflowerblue;
+    height: auto;
+}
