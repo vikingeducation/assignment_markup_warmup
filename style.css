@@ -1,7 +1,7 @@
 
 body {
     font-family: sans-serif;
-    color: #555;
+    color: #000;
 }
 
 .main-container {
@@ -12,7 +12,7 @@ body {
 
 nav {
     position: fixed;
-    background-color: khaki;
+    background-color: palegoldenrod;
     height: 50px;
     width: 100%;
     margin-left: auto;
@@ -23,25 +23,29 @@ nav {
 }
 
 header {
-    background-color: lawngreen;
+    background-color: darkseagreen;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     max-width: 960px;
     padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: auto;
+
     /*margin-top: 65px;  This brings down the nav too for some reason?*/
 }
 
-/*.clearfix::before, .clearfix::after {*/
-    /*display: table;*/
-    /*content: " ";*/
-/*}*/
+.clearfix::before, .clearfix::after {
+    display: table;
+    content: " ";
+}
 
-/*.clearfix::after {*/
-    /*clear: both;*/
-    /*display: table;*/
-    /*content: " ";*/
-/*}*/
+.clearfix::after {
+    clear: both;
+    display: table;
+    content: " ";
+}
 
 
 
@@ -60,24 +64,31 @@ header {
 
 .flex-children {
     width: 27%;
-    /*height: auto;   This was the one messing things up. It auto-centered the boxes*/
-    /*margin: auto;*/
-    background-color: lightseagreen;
+    background-color: cornflowerblue;
     align-self: flex-start;
     padding: 20px;
+    border-radius: 10px;
 }
 
-section .ad_area {
-    background-color: red;
-    width: 500px;
-    height: 600px;
-    /*display: block;*/
-    /*float: left;*/
+article h1, article h3 {
+    text-align: center;
+}
+
+.revenue-area {
+    background-color: rgba(228, 30, 32, 0.4);
+    padding: 20px;
+    float: left;
+}
+
+.revenue-area img {
+    width: 100px;
+    height: auto;
 }
 
 
 footer {
-    background-color: cornflowerblue;
+    background-color: royalblue;
     height: auto;
     padding: 20px;
+    border-radius: 5px;
 }
