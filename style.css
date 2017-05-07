@@ -1,0 +1,81 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+:root {
+  font-family: "Lato", Georgia, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #FFE599;
+  border-bottom: 2px solid black;
+  box-shadow: 0 2px 4px black;
+  padding: 1em;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-flow: row;
+  text-align: center;
+  margin-top: 5em;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  padding: 0 8% 0 8%;
+}
+
+.advert {
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-height: 600px;
+  width: 45%;
+}
+.advert img {
+  max-width: 80%;
+}
+.advert, .titleBar, article, footer {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+}
+
+article {
+  background-color: #A2C4C9;
+}
+
+p, h4 {
+  text-align: left;
+  font-size: 16px;
+}
+#date {
+  text-align: center;
+}
+h3 {
+  font-size: 22px;
+}
+h4, h3 {
+  font-weight: bold;
+}
+
+main {
+  max-width: 75%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+.titleBar {
+  font-size: 30px;
+  background-color: #B6D7A8;
+}
+footer {
+  background-color: #9FC5F8;
+}
