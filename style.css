@@ -20,61 +20,75 @@ header {
 main {
   display: flex;
   flex-flow: row;
-  text-align: center;
-  margin-top: 5em;
   justify-content: flex-start;
   align-content: flex-start;
   align-items: flex-start;
-  padding: 0 8% 0 8%;
+  text-align: center;
+  margin-top: 5em;
+  padding: 0 15% 0 15%;
 }
 
 .advert {
+  display: flex;
   flex-flow: column;
   justify-content: center;
   align-content: center;
   align-items: center;
   min-height: 600px;
-  width: 45%;
 }
-.advert img {
+.main-block {
   max-width: 80%;
 }
-.advert, .titleBar, article, footer {
-  border: 2px solid black;
-  border-radius: 15px;
-  padding: 10px;
-  margin: 10px;
-}
 
-article {
-  background-color: #A2C4C9;
-}
-
-p, h4 {
-  text-align: left;
-  font-size: 16px;
-}
-#date {
-  text-align: center;
-}
-h3 {
-  font-size: 22px;
-}
-h4, h3 {
-  font-weight: bold;
-}
-
-main {
-  max-width: 75%;
-  flex-grow: 1;
+.articles {
   display: flex;
   justify-content: flex-start;
   align-content: flex-start;
   align-items: flex-start;
 }
+
+
+.advert img {
+  max-width: 80%;
+}
+.advert, .titleBar, article, footer {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+.titleBar, footer {
+  border-radius: 15px;
+}
+article {
+  background-color: #A2C4C9;
+}
+p, h4 {
+  text-align: left;
+  font-size: 16px;
+}
+#adText {
+  text-align: center;
+}
+#date {
+  text-align: center;
+}
+h4, h3 {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
 .titleBar {
   font-size: 30px;
+  font-weight: bold;
   background-color: #B6D7A8;
+  padding: 20px;
+}
+h3 {
+  font-size: 22px;
+}
+#byLine {
+  font-weight: normal;
+  font-style: italic;
+  margin-top: 10px;
 }
 footer {
   background-color: #9FC5F8;
