@@ -1,8 +1,56 @@
 
 body {
-    font-family: sans-serif;
+    font-family: "Arial", sans-serif;
     color: #000;
+    padding-top: 60px; /*Use this + nav: top to push the initial screen under the fixed nav bar.  */
 }
+
+
+#top-nav {
+    position: fixed;
+    background-color: palegoldenrod;
+    height: 50px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /*max-width: 960px;*/
+    margin-top: -15px;
+    padding: 10px;
+    border-radius: 3px;
+    /*clear: both;*/
+    top: 20px; /* This was the solution to the nav overlap */
+}
+
+
+/*Clearfixes appeared to have no affect on clearing a fixed nav*/
+
+/*.clearfix::before, .clearfix::after {*/
+    /*display: table;*/
+    /*content: " ";*/
+/*}*/
+
+
+/*.clearfix::after {*/
+    /*clear: both;*/
+    /*display: table;*/
+    /*content: " ";*/
+/*}*/
+
+
+.green-header {
+    background-color: darkseagreen;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    /*padding: 20px;*/
+    border-radius: 8px;
+    text-align: center;
+
+    margin-bottom: 20px;
+    /*This brings down the nav too for some reason*/
+}
+
 
 .main-container {
     max-width: 960px;
@@ -10,51 +58,13 @@ body {
     margin-right: auto;
 }
 
-nav {
-    position: fixed;
-    background-color: palegoldenrod;
-    height: 50px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 960px;
-    margin-top: -15px;
-    padding: 20px;
-}
-
-header {
-    background-color: darkseagreen;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 960px;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    margin-top: auto;
-
-    /*margin-top: 65px;  This brings down the nav too for some reason?*/
-}
-
-.clearfix::before, .clearfix::after {
-    display: table;
-    content: " ";
-}
-
-.clearfix::after {
-    clear: both;
-    display: table;
-    content: " ";
-}
-
-
 
 .flex-container {
     display: flex;
-    /*flex-direction: row;*/
+    flex-direction: row;
     flex-flow: row wrap;
     max-width: 960px;
-    width: 80%;
+    /*width: 80%;  Once I fixed the ad area this created a wonky artificial margin*/
     margin: auto;
     /*flex-wrap: wrap;*/
     justify-content: space-around;
@@ -62,33 +72,65 @@ header {
     align-content: flex-start;
 }
 
+
 .flex-children {
-    width: 27%;
+    width: auto;
     background-color: cornflowerblue;
     align-self: flex-start;
+    max-width: 27%;
     padding: 20px;
+    margin-top: 5px;
     border-radius: 10px;
 }
+
 
 article h1, article h3 {
     text-align: center;
 }
 
+
+article h3 {
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 200;
+}
+
 .revenue-area {
     background-color: rgba(228, 30, 32, 0.4);
-    padding: 20px;
+    border-radius: 3px;
+    max-width: 215px;
+    min-height: 550px;
+    padding: 8px;
     float: left;
+    text-align: center; /*Text-align is apparently the default property that anything inline without a float defaults to.*/
+    vertical-align: middle;
+
 }
 
 .revenue-area img {
-    width: 100px;
-    height: auto;
+    width: 200px;
+    height: 350px;
 }
 
+.revenue-area * /*targeting all children of this parent*/ {
+    position: relative;
+    /*top: 50%;  didn't do anything*/
+    transform: translateY(15%); /*look into the explanation for the percent later */
+}
 
 footer {
     background-color: royalblue;
     height: auto;
     padding: 20px;
     border-radius: 5px;
+    margin-top: 15px;
+}
+
+@media all and (max-width: 960px) {
+    .revenue-area {
+        display: none;
+    }
+    .flex-children {
+        max-width: 40%; /*This is how you fix divs that get too small when there are suddenly less of them on screen */
+    }
 }
