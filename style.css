@@ -1,10 +1,22 @@
+/* general */
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 36px
+}
 
 nav {
   width: 100%;
   background-color: #FF8250;
   position: fixed;
   height: 50px;
-  margin-top: 10px;
   top: 0;
 }
 
@@ -19,40 +31,34 @@ nav {
   font-size: 18px;
 }
 
+#main-title {
+  font-size: 72px;
+}
 
 #main-content {
+  background-color: red;
+  border: solid thin black;
+  max-width: 990px;
+  margin: 65px auto 0;
   display: flex;
-  width: 990px;
-  margin: 70px auto 0;
-  background-color: lime;
+  flex-flow: wrap;
+
 }
 
 header {
-  display: flex;
-  width: 990px;
-  background-color: blue;
-  border: solid black;
-  margin-top: 70px;
+  background-color: orange;
+  border: solid thin black;
 }
 
 .post {
-  display: flex;
   background-color: purple;
-  border: black solid;
+  border: solid thing black;
+  width: 33%;
+  margin: 1px auto;
+  padding: 5px;
 }
 
 
 
-
-
-
-
-
-
-
-.adbox {
-  float: left;
-  background-color: orange;
-}
 
 
