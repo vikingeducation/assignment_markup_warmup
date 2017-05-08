@@ -1,0 +1,58 @@
+
+nav {
+  width: 100%;
+  background-color: #FF8250;
+  position: fixed;
+  height: 50px;
+  margin-top: 10px;
+  top: 0;
+}
+
+#nav-list {
+  list-style: none;
+  display: inline-flex;
+}
+
+#nav-list li {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+}
+
+
+#main-content {
+  display: flex;
+  width: 990px;
+  margin: 70px auto 0;
+  background-color: lime;
+}
+
+header {
+  display: flex;
+  width: 990px;
+  background-color: blue;
+  border: solid black;
+  margin-top: 70px;
+}
+
+.post {
+  display: flex;
+  background-color: purple;
+  border: black solid;
+}
+
+
+
+
+
+
+
+
+
+
+.adbox {
+  float: left;
+  background-color: orange;
+}
+
+
