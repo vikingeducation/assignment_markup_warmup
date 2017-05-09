@@ -77,7 +77,7 @@ Blog and footer
 ===========================
 */
 
-.blog-and-footer {
+.header-blog-footer {
 	width: 75%;
 	float: left;
 	margin-top: 5px;
@@ -92,15 +92,21 @@ Blog and footer
 	font-size: .75em;
 }
 
-.first-two-posts {
+.blog-posts-container {
+	width: 100%;
+}
+
+.first-post,
+.second-post {
 	margin-right: 1.5%;
 }
 
-.post {
+.all-posts {
 	width: 32.33%;
 	float: left;
 	margin-top: 1.5%;
 	margin-bottom: 1.5%;
+	padding: 10px;
 	font-size: .75em;
 	background-color: #738c9e;
 }
@@ -111,11 +117,6 @@ Blog and footer
 
 .blog-text {
 	font-size: .75em;
-	padding: 0 1em;
-}
-
-.blog-text h2 {
-	padding: 1em 0 .5em 0;
 }
 
 .footer {
@@ -123,4 +124,43 @@ Blog and footer
 	background-color: #16639a;
 	border-radius: 1em;
 	padding-left: 20px;
+}
+
+/*
+=========================================
+Media queries
+=========================================
+*/
+
+@media all and (max-width: 990px) {
+	.main-header,
+	.footer {
+    width: 100%;
+		border-radius: 0;
+	}
+	.header-blog-footer {
+		margin-top: 0;
+	}
+	.blog-posts-container {
+		width: 95%;
+		margin: 0 auto;
+	}
+	.all-posts {
+		width: 49.25%;
+	}
+	.second-post {
+		float: right;
+		margin-right: 0;
+	}
+	.third-post,
+	.blog-and-footer {
+    width: 100%;
+		margin-top: 0;
+	}
+	.third-post {
+		margin-top: 0;
+	}
+	.sidebar {
+		display: none;
+	}
 }
