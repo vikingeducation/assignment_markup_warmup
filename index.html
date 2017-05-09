@@ -1,117 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment Markup Warmup</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Short+Stack" rel="stylesheet">
   </head>
   <body>
-
 
     <nav class="navbar">
       <h1>Micro Blog</h1>
     </nav>
 
-    <div class="grid">
-      <div class="col-1-10">
-        <!-- left margin -->
-        &nbsp;
-      </div>
-      <div class="col-2-10">
-        <aside class="sidebar">
-          <p>This is a vertically centred ad!</p>
-          <section class="ad">
+    <div class="container">
+       <aside class="sidebar">
+         <p class="sidebar-text">This is a vertically centred ad!</p>
+         <section class="ad">
+         </section>
+       </aside>
 
-          </section>
-        </aside>
-      </div>
-      <div class="col-2-10">
-        <article class="post">
-          <header>
-            <h1>May Update
-            </h1>
-            <time datetime="2017-05-01" pubdate="pubdate">May 1, 2017</time>
-          </header>
-          <div>
-            <h2>First Thoughts
-            </h2>
-            <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
-            </p>
-            <h2>Additional Thoughts
-            </h2>
-            <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
-            </p>
-            <h2>Final Thoughts
-            </h2>
-            <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
-            </p>
-          </div>
-        </article>
-      </div>
-      <div class="col-2-10">
-        <article class="post">
-          <header>
-            <h1>April Update
-            </h1>
-            <time datetime="2017-04-01" pubdate="pubdate">April 1, 2017</time>
-          </header>
-          <div>
-            <h2>First Thoughts
-            </h2>
-            <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
-            </p>
-            <h2>Additional Thoughts
-            </h2>
-            <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
-            </p>
-            <h2>Final Thoughts
-            </h2>
-            <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
-            </p>
-          </div>
-        </article>
-      </div>
-      <div class="col-2-10">
-        <article class="post">
-          <header>
-            <h1>March Update
-            </h1>
-            <time datetime="2017-03-01" pubdate="pubdate">March 1, 2017</time>
-          </header>
-          <div>
-            <h2>First Thoughts
-            </h2>
-            <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
-            </p>
-            <h2>Additional Thoughts
-            </h2>
-            <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
-            </p>
-            <h2>Final Thoughts
-            </h2>
-            <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
-            </p>
-          </div>
-        </article>
-      </div>
-    </div>
-
-    <div class="col-1-10">
-    </div>
-
-
-
-    <div class="col-6-10">
-      <section class="main-section">
-        <main>
-          <header class="main-header">
-            <h1>Micro Blog</h1>
-            <h2>By Author</h2>
+       <div class="blog-and-footer">
+         <header class="main-header">
+           <h1>Micro Blog</h1>
+           <h2>By Author</h2>
         </header>
-      </section>
+
+          <div class="blog-posts">
+            <article class="post first-two-posts">
+              <header class="title-and-time">
+                <h1>May Update
+                </h1>
+                <time datetime="2017-05-01" pubdate="pubdate">May 1, 2017</time>
+              </header>
+              <div class="blog-text">
+                <h2>First Thoughts
+                </h2>
+                <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog</p>
+                <h2>Additional Thoughts
+                </h2>
+                <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
+                </p>
+                <h2>Final Thoughts
+                </h2>
+                <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
+                </p>
+              </div>
+            </article>
+
+            <article class="post first-two-posts">
+              <header class="title-and-time">
+                <h1 class="post-title">April Update
+                </h1>
+                <time datetime="2017-04-01" pubdate="pubdate">April 1, 2017</time>
+              </header>
+              <div class="blog-text">
+                <h2>First Thoughts
+                </h2>
+                <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
+                </p>
+                <h2>Additional Thoughts
+                </h2>
+                <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
+                </p>
+                <h2>Final Thoughts
+                </h2>
+                <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
+                </p>
+            </div>
+          </article>
+
+          <article class="post">
+            <header class="title-and-time">
+              <h1 class="post-title">March Update
+              </h1>
+              <time datetime="2017-03-01" pubdate="pubdate">March 1, 2017</time>
+            </header>
+            <div class="blog-text">
+              <h2>First Thoughts
+              </h2>
+              <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
+              </p>
+              <h2>Additional Thoughts
+              </h2>
+              <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
+              </p>
+              <h2>Final Thoughts
+              </h2>
+              <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <footer class="footer">
+          <small>Copyright information</small>
+        </footer>
+      </div>
     </div>
 
   </body>
-
 </html>
