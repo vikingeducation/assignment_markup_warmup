@@ -120,11 +120,30 @@ Blog and footer
 }
 
 .footer {
-  clear: both;
 	background-color: #16639a;
 	border-radius: 1em;
 	padding-left: 20px;
 }
+
+/*
+=========================================
+Clearfix
+=========================================
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
 
 /*
 =========================================
