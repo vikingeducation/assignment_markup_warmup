@@ -29,54 +29,30 @@ nav {
     align-items: flex-start;
     justify-content: flex-start;
     align-content: flex-start;
+    padding-left: 5%;
+    padding-right: 5%
 }
 
 #main-body {
-    /*width: 66%;*/
-    /*padding: 1em 5% 1em 10%;*/
     order: 2;
 }
 
 #main-body header, #main-body footer {
     display: block;
     margin: 4px;
-    /*padding: 5px;*/
-    /*min-height: 100px;*/
-    /*padding: 1em 5% 1em 10%;*/
 }
 
 #main-header {
     text-align: center;
     background: #B6D7A8;
     border-radius: 0.5rem;
-    /*background-attachment: scroll;
-    background-size: cover;*/
 }
-
-/*header h1, header h2 {*/
-    /*padding: 0 10%;*/
-    /*margin: 0;*/
-    /*font-weight:normal;*/
-/*}*/
 
 #main-header h1 {
     font-size:35px;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
 }
-
-/*header h1::before {
-    display: inline-block;
-    position: relative;
-    top: 20px;
-    content: "";
-    width: 80px;
-    height: 80px;
-    margin: -20px 20px 0 0;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    opacity: 0.6;
-}*/
 
 #main-header h2 {
     /*padding-top: 5px;*/
@@ -88,26 +64,10 @@ nav {
     font-style: italic;
 }
 
-/*header h2::before {
-    content: " ";
-    padding: 50px;
-}*/
-
-/*
-body h2 {
-    font-size:25px;
-    font-weight:normal;
-}
-*/
-
 main {
-    /*width: 66%;*/
     display: flex;
     flex-flow: row;
-    /*align-content: flex-start;*/
-    /*justify-content: flex-start;*/
     align-items: baseline;
-    /*padding: 1em 5% 1em 10%;*/
 }
 
 article {
@@ -115,13 +75,13 @@ article {
     flex: 0 1 auto;
     align-self: auto;
     min-width: 0;
-    /*min-height: auto;*/
     padding: 5px;
     margin: 4px;
 }
 
 article header {
     text-align: center;
+    padding-bottom: 10px;
 }
 
 article h2 {
@@ -135,18 +95,10 @@ section h2 {
 }
 
 aside {
-    /*position: absolute;*/
-    /*top: 190px;*/
-    /*right: 30px;*/
-    /*width: 290px;*/
-    /*padding: 0 0 20px 20px;*/
-    /*margin: 0;*/
-    /*overflow: visible;*/
     margin: 4px;
     background-color: #D5A6BD;
     padding: 5px;
     flex: 0 1 30%;
-    /*display: inline-block;*/
     text-align: center;
     order: 1;
     min-width: 150px;
@@ -154,7 +106,6 @@ aside {
 }
 
 aside h2 {
-    /*-webkit-margin-after: 0;*/
     font-size: 15px;
     font-style: normal;
 
@@ -166,8 +117,6 @@ aside .ad {
     width: 75px;
     height: 75px;
     display: inline-block;
-/*    height: 30%;
-    width: 80%;*/
 }
 
 footer {
