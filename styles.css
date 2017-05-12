@@ -1,0 +1,139 @@
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    font-size:20px;
+    color: black;
+}
+
+nav {
+    width: 100%;
+    background: #FFE599;
+    height: 40px;
+    border-color: black;
+    border-style: solid;
+}
+
+#main-body {
+    width: 66%;
+    padding: 1em 5% 1em 10%;
+}
+
+header, footer {
+    display: block;
+    margin: 4px;
+    padding: 5px;
+    min-height: 100px;
+    border: solid black;
+}
+header {
+    text-align: center;
+    background: #B6D7A8;
+    border-radius: 0.5rem;
+    /*background-attachment: scroll;
+    background-size: cover;*/
+}
+
+/*header h1, header h2 {*/
+    /*padding: 0 10%;*/
+    /*margin: 0;*/
+    /*font-weight:normal;*/
+/*}*/
+
+header h1 {
+    /*-webkit-margin-after: 0;*/
+    font-size:35px;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+/*header h1::before {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    content: "";
+    width: 80px;
+    height: 80px;
+    margin: -20px 20px 0 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.6;
+}*/
+
+header h2 {
+    display: block;
+    /*padding-top: 5px;*/
+    /*padding-bottom: 30px;*/
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    font-size:25px;
+    font-weight:normal;
+    font-style: italic;
+}
+
+/*header h2::before {
+    content: " ";
+    padding: 50px;
+}*/
+
+body h2 {
+    font-size:25px;
+    font-weight:normal;
+}
+
+main {
+    /*width: 66%;*/
+    display: flex;
+    flex-flow: row;
+    padding: 1em 5% 1em 10%;
+}
+
+article {
+    border-style: solid;
+    background-color: #A2C4C9;
+    flex: 0 1 auto;
+    align-self: auto;
+    min-width: 0;
+    /*min-height: auto;*/
+    padding: 5px;
+}
+
+
+
+aside {
+    /*position: absolute;*/
+    /*top: 190px;*/
+    /*right: 30px;*/
+    /*width: 290px;*/
+    /*padding: 0 0 20px 20px;*/
+    /*margin: 0;*/
+    /*overflow: visible;*/
+    margin: 4px;
+    background-color: #D5A6BD;
+    border: solid black;
+    padding: 5px;
+    flex: 1 6 20%
+}
+
+aside .ad {
+    background-color: white;
+    height: 30%;
+    width: 80%;
+    border-style: solid;
+}
+
+footer {
+    background-color: #9FC5F8;
+    font-size:15px;
+}
+
+
