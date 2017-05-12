@@ -21,6 +21,9 @@ nav {
     height: 40px;
     padding: 5px;
     font-size: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 #main {
@@ -30,7 +33,9 @@ nav {
     justify-content: flex-start;
     align-content: flex-start;
     padding-left: 5%;
-    padding-right: 5%
+    padding-right: 5%;
+    position: relative;
+    top: 44px;
 }
 
 #main-body {
