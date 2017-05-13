@@ -1,0 +1,227 @@
+/*
+=============================
+Reset / html styles
+=============================
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  font-family: 'Short Stack', cursive;
+	line-height: 1.75;
+}
+
+/*
+=========================================
+Navbar (top)
+=========================================
+*/
+
+.nav-container {
+	display: flex;
+	justify-content: center;
+	background-color: #ebd064;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+}
+
+.navbar {
+  width: 95%;
+	font-size: .75em;
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+
+/*
+=========================================
+Container for everything below navbar
+=========================================
+*/
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+}
+
+.page-container {
+	width: 100%;
+	padding-top: 50px;
+	margin-top: 5px;
+	display: flex;
+}
+
+/*
+===================================
+sidebar
+===================================
+*/
+
+.flex-sidebar {
+	flex: 1;
+}
+
+.flex-h-b-f {
+	flex: 3;
+}
+
+.sidebar {
+  display: flex;
+	align-items: center;
+  justify-content: center;
+	height: 500px;
+	margin-right: 5px;
+	background-color: #b06e7c;
+}
+
+.ad {
+	width: 150px;
+	height: 150px;
+	background-color: white;
+}
+
+.sidebar-text {
+	font-size: .75em;
+}
+
+/*
+==================================
+Main header
+==================================
+*/
+
+.main-header {
+	margin-bottom: 5px;
+	border-radius: 10px;
+	background-color: green;
+	text-align: center;
+	font-size: .5em;
+	padding: 10px;
+}
+
+/*
+==================================
+Blog-posts 
+==================================
+*/
+
+.blog-text {
+	background-color: #738c9e;
+}
+
+.blogs {
+	background-color: #738c9e;
+	font-size: .75em;
+	width: 32.66%;
+	float: left;
+	margin-bottom: 5px;
+	padding: 20px;
+}
+
+.blog-one,
+.blog-two {
+	margin-right: 1%;
+}
+
+.blog-three {
+	margin-right: none;
+}
+
+.blogs h1 {
+	font-size: 1.25em;
+}
+
+.blogs h2, .time {
+	font-size: 1em;
+}
+
+.blogs h2 {
+	font-weight: bold;
+	padding-top: 5px;
+}
+
+.heading-date {
+	text-align: center;
+}
+
+.blog-three {
+	margin-right: 0;
+}
+
+.blogs p {
+	font-size: .9em;
+}
+
+/*
+================================
+Clearfix
+================================
+*/
+
+.clearfix:before,
+ .clearfix:after {
+   content: "";
+   display: table;
+ }
+ .clearfix:after {
+   clear: both;
+ }
+ .clearfix {
+   clear: both;
+   *zoom: 1;
+ }
+
+/*
+================================
+footer
+================================
+*/
+
+.footer {
+	background-color: #16639a;
+	border-radius: 1em;
+	padding-left: 20px;
+}
+
+
+/*
+=========================================
+Media queries
+=========================================
+*/
+
+@media all and (max-width: 990px) {
+	.main-header,
+	.footer {
+		border-radius: 0;
+	}
+	.sidebar,
+	.ad {
+		display: none;
+	}
+	.flex-h-b-f {
+		flex: 1;
+	}
+	.flex-sidebar {
+		flex: 0;
+	}
+	.page-container {
+		margin-top: 0;
+	}
+	.blogs {
+		width: 49.5%;
+	}
+	.blog-two {
+		margin-right: 0;
+	}
+	.blog-posts {
+		width: 95%;
+		justify-content: center;
+		margin: auto;
+	}
+	.blog-three {
+		clear: both;
+	}
+}
