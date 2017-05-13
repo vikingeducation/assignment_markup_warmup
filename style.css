@@ -18,14 +18,21 @@ Navbar (top)
 =========================================
 */
 
-.navbar {
-  background-color: #ebd064;
-  width: 100%;
+.nav-container {
+	display: flex;
+	justify-content: center;
+	background-color: #ebd064;
+	width: 100%;
 	height: 50px;
-	line-height: 50px;
 	position: fixed;
-	padding: 10px 0 0 20px;
+}
+
+.navbar {
+  width: 95%;
 	font-size: .75em;
+	height: 50px;
+	display: flex;
+	align-items: center;
 }
 
 /*
@@ -34,114 +41,148 @@ Container for everything below navbar
 =========================================
 */
 
-.container {
-	width: 990px;
-	margin: 0 auto;
+.flex-container {
+	display: flex;
+	justify-content: center;
+}
+
+.page-container {
+	width: 100%;
 	padding-top: 50px;
+	margin-top: 5px;
+	display: flex;
 }
 
 /*
-==============================
-Sidebar
-==============================
+===================================
+sidebar
+===================================
 */
 
+.flex-sidebar {
+	flex: 1;
+}
+
+.flex-h-b-f {
+	flex: 3;
+}
+
 .sidebar {
-	float: left;
-	width: 24%;
+  display: flex;
+	align-items: center;
+  justify-content: center;
 	height: 500px;
-	margin-top: 5px;
-	margin-right: 1%;
-	border-radius: 1em;
+	margin-right: 5px;
 	background-color: #b06e7c;
 }
 
 .ad {
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	background-color: white;
-	margin: 0 auto;
-	margin-top: 5px;
 }
 
 .sidebar-text {
-  padding-top: 139.5px;
 	font-size: .75em;
-	margin: 0 auto;
-	text-align: center;
 }
 
 /*
-===========================
-Blog and footer
-===========================
+==================================
+Main header
+==================================
 */
 
-.header-blog-footer {
-	width: 75%;
-	float: left;
-	margin-top: 5px;
-}
-
 .main-header {
-	height: 100px;
+	margin-bottom: 5px;
+	border-radius: 10px;
+	background-color: green;
 	text-align: center;
-	padding-top: 1em;
-	border-radius: 1em;
-	background-color: #7eb291;
-	font-size: .75em;
-}
-
-.blog-posts-container {
-	width: 100%;
-}
-
-.first-post,
-.second-post {
-	margin-right: 1.5%;
-}
-
-.all-posts {
-	width: 32.33%;
-	float: left;
-	margin-top: 1.5%;
-	margin-bottom: 1.5%;
+	font-size: .5em;
 	padding: 10px;
-	font-size: .75em;
+}
+
+/*
+==================================
+Blog-posts 
+==================================
+*/
+
+.blog-text {
 	background-color: #738c9e;
 }
 
-.title-and-time {
+.blogs {
+	background-color: #738c9e;
+	font-size: .75em;
+	width: 32.66%;
+	float: left;
+	margin-bottom: 5px;
+	padding: 20px;
+}
+
+.blog-one,
+.blog-two {
+	margin-right: 1%;
+}
+
+.blog-three {
+	margin-right: none;
+}
+
+.blogs h1 {
+	font-size: 1.25em;
+}
+
+.blogs h2, .time {
+	font-size: 1em;
+}
+
+.blogs h2 {
+	font-weight: bold;
+	padding-top: 5px;
+}
+
+.heading-date {
 	text-align: center;
 }
 
-.blog-text {
-	font-size: .75em;
+.blog-three {
+	margin-right: 0;
 }
+
+.blogs p {
+	font-size: .9em;
+}
+
+/*
+================================
+Clearfix
+================================
+*/
+
+.clearfix:before,
+ .clearfix:after {
+   content: "";
+   display: table;
+ }
+ .clearfix:after {
+   clear: both;
+ }
+ .clearfix {
+   clear: both;
+   *zoom: 1;
+ }
+
+/*
+================================
+footer
+================================
+*/
 
 .footer {
 	background-color: #16639a;
 	border-radius: 1em;
 	padding-left: 20px;
-}
-
-/*
-=========================================
-Clearfix
-=========================================
-*/
-
-.clearfix:before,
-.clearfix:after {
-  content: "";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-.clearfix {
-  clear: both;
-  *zoom: 1;
 }
 
 
@@ -154,32 +195,33 @@ Media queries
 @media all and (max-width: 990px) {
 	.main-header,
 	.footer {
-    width: 100%;
 		border-radius: 0;
 	}
-	.header-blog-footer {
+	.sidebar,
+	.ad {
+		display: none;
+	}
+	.flex-h-b-f {
+		flex: 1;
+	}
+	.flex-sidebar {
+		flex: 0;
+	}
+	.page-container {
 		margin-top: 0;
 	}
-	.blog-posts-container {
-		width: 95%;
-		margin: 0 auto;
+	.blogs {
+		width: 49.5%;
 	}
-	.all-posts {
-		width: 49.25%;
-	}
-	.second-post {
-		float: right;
+	.blog-two {
 		margin-right: 0;
 	}
-	.third-post,
-	.blog-and-footer {
-    width: 100%;
-		margin-top: 0;
+	.blog-posts {
+		width: 95%;
+		justify-content: center;
+		margin: auto;
 	}
-	.third-post {
-		margin-top: 0;
-	}
-	.sidebar {
-		display: none;
+	.blog-three {
+		clear: both;
 	}
 }

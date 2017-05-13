@@ -9,98 +9,81 @@
   </head>
   <body>
 
-    <nav class="navbar">
-      <h1>Micro Blog</h1>
-    </nav>
+    <div class="nav-container">
+      <nav class="navbar"> <!-- yellow -->
+        <h1>Micro Blog</h1>
+      </nav>
+    </div>
 
-    <div class="container">
-       <aside class="sidebar">
-         <p class="sidebar-text">This is a vertically centred ad!</p>
-         <section class="ad">
-         </section>
-       </aside>
+    <div class="flex-container"> <!-- flex for everything but nav -->
+      <div class="page-container"> <!-- everything but nav -->
 
-       <div class="header-blog-footer">
-       <header class="main-header">
-           <h1>Micro Blog</h1>
-           <h2>By Author</h2>
-        </header>
+        <div class="flex-sidebar"> <!-- left-hand section (sidebar containing ad) -->
+          <aside class="sidebar">
+            <section class="ad">
+            </section>
+          </aside>
+        </div> <!--flex-sidebar -->
 
-          <section class="blog-posts-container clearfix">
-            <div class="posts-one-and-two">
-              <article class="all-posts first-post first-two-posts">
-                <header class="title-and-time">
-                  <h1>May Update
-                  </h1>
-                  <time datetime="2017-05-01" pubdate="pubdate">May 1, 2017</time>
-                </header>
-                <div class="blog-text">
-                  <h2>First Thoughts
-                  </h2>
-                  <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog</p>
-                  <h2>Additional Thoughts
-                  </h2>
-                  <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
-                  </p>
-                  <h2>Final Thoughts
-                  </h2>
-                  <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
-                  </p>
-                </div>
-              </article>
+        <div class="flex-h-b-f"> <!-- right-hand section (header, blog, footer) -->
 
-              <article class="second-post first-two-posts all-posts">
-                <header class="title-and-time">
-                  <h1 class="post-title">April Update
-                  </h1>
-                  <time datetime="2017-04-01" pubdate="pubdate">April 1, 2017</time>
-                </header>
-                <div class="blog-text">
-                  <h2>First Thoughts
-                  </h2>
-                  <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
-                  </p>
-                  <h2>Additional Thoughts
-                  </h2>
-                  <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
-                  </p>
-                  <h2>Final Thoughts
-                  </h2>
-                  <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
-                  </p>
-                </div>
-              </article>
-            </div>
+          <header class="main-header"> <!-- green -->
+            <h1>Micro Blog</h1>
+            <h2>By Author</h2>
+          </header>
 
-          <article class="third-post all-posts">
-            <header class="title-and-time">
-              <h1 class="post-title">March Update
-              </h1>
-              <time datetime="2017-03-01" pubdate="pubdate">March 1, 2017</time>
-            </header>
-            <div class="blog-text">
-              <h2>First Thoughts
-              </h2>
-              <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
-              </p>
-              <h2>Additional Thoughts
-              </h2>
-              <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
-              </p>
-              <h2>Final Thoughts
-              </h2>
-              <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
-              </p>
-            </div>
-          </article>
-        </section>
+          <section class="blog-posts clearfix">
+            <article class="blogs blog-one">
+              <div class="heading-date">
+                <h1>May Update</h1>
+                <time datetime="2017-05-01" pubdate="pubdate">May 1, 2017</time>
+              </div> <!-- heading-date -->
+              <h2>First Thoughts</h2>
+              <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog</p>
+              <h2>Additional Thoughts</h2>
+              <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.</p>
+            <h2>Final Thoughts</h2>
+            <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.</p>
+           </article>
+
+           <article class="blogs blog-two">
+             <div class="heading-date">
+               <h1 class="post-title">April Update</h1>
+               <time datetime="2017-04-01" pubdate="pubdate">April 1, 2017</time>
+             </div> <!-- heading-date -->
+             <h2>First Thoughts</h2>
+             <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.</p>
+             <h2>Additional Thoughts</h2>
+             <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.</p>
+             <h2>Final Thoughts</h2>
+             <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.</p>
+           </article>
+
+           <article class="blogs blog-three">
+             <div class="heading-date">
+               <h1 class="post-title">March Update</h1>
+               <time datetime="2017-03-01" pubdate="pubdate">March 1, 2017</time>
+             </div>
+             <h2>First Thoughts</h2>
+             <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.</p>
+             <h2>Additional Thoughts</h2>
+             <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
+             </p>
+             <h2>Final Thoughts
+             </h2>
+             <p>Blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog blog.
+             </p>
+           </article>
+        </section> <!-- blog-posts clearfix -->
 
         <footer class="footer">
           <small>Copyright information</small>
         </footer>
-      </div>
-    </div>
-  </div>
+
+        </div> <!-- flex-h-b-f -->
+
+      </div> <!-- page container -->
+    </div> <!-- flex container -->
 
   </body>
 </html>
