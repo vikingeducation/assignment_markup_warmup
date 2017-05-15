@@ -51,7 +51,7 @@ body {
 }
 
 .group {
-	max-width: 990px;
+	width: 990px;
 	margin: 0 auto;
 	position: relative;
 	top: 50px;
@@ -125,4 +125,29 @@ aside {
 	height: 400px;
 	padding: 20px;
 	box-sizing: border-box;
+}
+
+@media screen and (max-width: 990px) {
+	aside {
+		display: none;
+	}
+
+	.group {
+		width: 100%;
+	}
+
+	main {
+		float: none;
+		width: 100%;
+		margin: 0px;
+	}
+
+	article {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	article:last-of-type {
+		margin-right: 10px;
+	}
 }
