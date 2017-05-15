@@ -1,0 +1,153 @@
+body {
+	font-family: Helvetica, sans-serif;
+}
+
+#topbar {
+	background-color: #FFE17B;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	font-size: 30px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+}
+
+#topbar h1 {
+	margin: 0;
+}
+
+#blogheader {
+	background-color: #9FD392;
+	height: 75px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#blogheader h1 {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin: 0;
+}
+
+#blogheader h3 {
+	font-size: 15px;
+	text-align: center;
+	font-style: italic;
+	margin: 0;
+}
+
+.group:before, .group:after {
+	content: " ";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	width: 990px;
+	margin: 0 auto;
+	position: relative;
+	top: 50px;
+	z-index: -1;
+}
+
+main {
+	float: right;
+	width: calc(70% - 40px);
+	margin: 20px;
+}
+
+section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin-bottom: 15px;
+	align-items: flex-start;
+}
+
+article {
+	background-color: #88BABF;
+	width: 200px;
+	margin-right: 15px;
+	margin-top: 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	flex: 1 1 auto;
+}
+
+article:last-of-type {
+	margin-right: 0px;
+}
+
+article h5 {
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+article p {
+	margin-bottom: 20px;
+}
+
+.posttitle {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.postdate {
+	font-size: 15px;
+	text-align: center;
+}
+
+footer {
+	background-color: #85B7FC;
+	height: 50px;
+	padding: 10px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+}
+
+aside {
+	background-color: #D58FB1;
+	float: left;
+	width: 30%;
+	margin-top: 20px;
+	height: 400px;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 990px) {
+	aside {
+		display: none;
+	}
+
+	.group {
+		width: 100%;
+	}
+
+	main {
+		float: none;
+		width: 100%;
+		margin: 0px;
+	}
+
+	article {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	article:last-of-type {
+		margin-right: 10px;
+	}
+}
