@@ -67,6 +67,13 @@ table {
 
 body {
   width: 990px;
+
+
+}
+
+.container {
+	position: relative;
+
 }
 
 /*
@@ -75,9 +82,36 @@ body {
   ========================================
 */
 
+h1 {
+  font-size: 36px;
+  line-height: 150%;
+	color: black;
+	text-align: center;
+}
 
+h2 {
+  font-size: 30px;
+  line-height: 150%;
+	color: black;
+	text-align: center;
+}
 
+h3 {
+  font-size: 20px;
+  line-height: 150%;
+	color: black;
+}
 
+header h3 {
+	font-style: italic;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 150%;
+	color: black;
+	font-weight: bold;
+}
 
 /*
   ========================================
@@ -86,9 +120,82 @@ body {
 */
 
 .top-navbar {
-  overflow: hidden;
   background-color: #FFE599;
   position: fixed; /* sets navbar to fixed position */
   top: 0; /* position the navbar at the top of the page */
   width: 100%;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-bottom: 2px solid black;
+	border-top: 2px solid black;
+}
+
+
+header {
+	margin-top: 50px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	padding: 10px 100px;
+	background-color: #B6D7A8;
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 30px;
+	display: block;
+
+}
+
+.posts {
+	display: inline-block;
+	margin-left: 10px;
+
+}
+
+.posty-post {
+	border: 2px solid black;
+	display: inline-block;
+	margin: 5px 3px;
+	background-color: #A2C4C9;
+	width: 30%;
+	float: left;
+	padding: 10px;
+}
+
+.tagline {
+	margin-bottom: 10px;
+	text-align: center;
+
+}
+
+.posty-post h4 {
+	margin-bottom: 2px;
+	margin-top: 10px;
+}
+
+.posty-post p {
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+footer {
+	margin-left: 10px;
+	background-color: #9FC5F8;
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 15px;
+}
+
+
+#nav {
+
+	background-color: #D5A6BD;
+	border: 2px solid black;
+	margin-right: 10px;
+	margin-left: 15px;
+	width: 28%;
+	height: 500px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+
+
 }
