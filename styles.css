@@ -1,0 +1,19 @@
+header {
+  background: yellow;
+}
+
+.advertisement {
+  background: red;
+}
+
+.header-title {
+  background: green;
+}
+
+.article {
+  background: darkgreen;
+}
+
+footer {
+  background: blue;
+}
