@@ -61,7 +61,7 @@
 }
 #mainheader{
   padding: 2em 0 2em 0;
-  border-radius: 5%;
+  border-radius: 15%;
 }
 .add{
   width:50%;
@@ -71,4 +71,13 @@
 }
 .blog-post{
   margin-top: 2%;
+}
+.fixed{
+  position: fixed;
+}
+.footer{
+  margin-left: 32%;
+  margin-top: 3%;
+  padding: 1.5em .5em 1.5em .5em;
+  border-radius: 10%;
 }

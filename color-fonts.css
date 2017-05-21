@@ -25,20 +25,26 @@
   text-align: center;
 }
 .border{
-  border: 1px solid black;
+  border: 3px solid black;
 }
 .vertcent{
   margin-top:30%;
 }
+.clear{
+  margin-top: 10%;
+}
 .font{
   font-family: 'Baloo'
+}
+.font1{
+  font-family: 'Droid Sans', sans-serif;
 }
 .flex{
   display:flex;
   flex-direction: column;
 }
 .space{
-  margin-top:3%;
+  margin-top:6%;
 }
 .Rspace{
   margin-right: 2%;
