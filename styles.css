@@ -1,0 +1,198 @@
+/* ----------------------------------- *
+ * CSS Reset
+ * ----------------------------------- */
+
+ /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*:,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1 {
+  font-size: 36px;
+  line-height: 150%;
+	color: black;
+	text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 150%;
+	color: black;
+	text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 150%;
+	color: black;
+}
+
+header h3 {
+	font-style: italic;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 150%;
+	color: black;
+	font-weight: bold;
+}
+
+/*
+  ========================================
+  Navbar
+  ========================================
+*/
+
+.top-navbar{
+  background-color: #FFE599;
+  position: fixed; /* sets navbar to fixed position */
+  top: 0; /* position the navbar at the top of the page */
+  width: 100%;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-bottom: 2px solid black;
+	border-top: 2px solid black;
+
+}
+
+body {
+  max-width: 990px;
+	height: 100vh;
+ 	margin: 0 auto;
+	margin-top: 50px;
+}
+
+header {
+	max-width: 990px;
+	margin: 0 auto;
+	padding: 10px 100px;
+	background-color: #B6D7A8;
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 30px;
+	display: block;
+
+}
+
+.posts {
+	display: inline-block;
+	margin-left: 10px;
+
+}
+
+.posty-post {
+	border: 2px solid black;
+	display: inline-block;
+	margin: 5px 3px;
+	background-color: #A2C4C9;
+	width: 30%;
+	float: left;
+	padding: 10px;
+}
+
+.tagline {
+	margin-bottom: 10px;
+	text-align: center;
+
+}
+
+.posty-post h4 {
+	margin-bottom: 2px;
+	margin-top: 10px;
+}
+
+.posty-post p {
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+footer {
+	margin-left: 10px;
+	background-color: #9FC5F8;
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 15px;
+}
+
+
+#nav {
+	background-color: #D5A6BD;
+	border: 2px solid black;
+	margin-left: 15px;
+	padding: 0 10px;
+	max-width: 30%;
+	height: 500px;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+ 	-ms-transform: translateY(-50%);
+ 	transform: translateY(-129%);
+	float: left;
+
+}
