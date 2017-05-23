@@ -179,6 +179,7 @@ footer {
 	border-radius: 15px;
 }
 
+
 #nav {
 	background-color: #D5A6BD;
 	border: 2px solid black;
@@ -189,7 +190,9 @@ footer {
 	text-align: center;
 	position: fixed;
 	left: 0;
-	transform: translateY(-129%);
+	-webkit-transform: translateY(-50%);
+ 	-ms-transform: translateY(-50%);
+ 	transform: translateY(-129%);
 	float: left;
 
 }
