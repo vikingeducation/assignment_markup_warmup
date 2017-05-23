@@ -17,7 +17,7 @@
 
 .ad-content{
   margin-left: 20px;
-  width: 325px;
+  width: 220px;
   padding: 150px 0px;
   font-size: 16px;
   font-weight: bold;
@@ -26,6 +26,7 @@
   float: left;
   border: 2px solid black;
   margin-top: 80px;
+  box-sizing: border-box;
 }
 
 .header-content{
@@ -36,14 +37,14 @@
   border-radius: 20px;
   border: 2px solid black;
   box-sizing: border-box;
-  width: 780px;
+  display: flex;
 }
 
 .main-content{
   float: left;
   margin-left: 0px;
   margin-top: 80px;
-  max-width: 800px;
+  max-width: 750px;
 }
 
 footer{
@@ -52,10 +53,12 @@ footer{
   border: 2px solid black;
   border-radius: 20px;
   box-sizing: border-box;
-  width: 780px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-top: 20px;
   margin-left: 20px;
   clear: left;
+  display: flex;
 }
 
 .post-main{
@@ -79,4 +82,9 @@ footer{
 .post-content{
   display: flex;
   clear: left;
+  align-items: flex-start;
+}
+
+.post-subtitle{
+  font-weight: bold;
 }
