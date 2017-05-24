@@ -1,22 +1,31 @@
+body{
+  margin: 0px;
+}
+
 #nav-bar{
   width: 100%;
   position: fixed;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   height: 60px;
   background: #FFE599;
+  border: 2px solid black;
+  box-sizing: border-box;
 }
 
 #nav-bar-title{
   font-size: 24px;
-  padding: 20px 20px;
   background-color: inherit;
   font-weight: normal;
   float: left;
+  display: block;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin: 0px;
 }
 
 .ad-content{
-  margin-left: 20px;
+  margin-left: 100px;
   width: 220px;
   padding: 150px 0px;
   font-size: 16px;
@@ -29,22 +38,33 @@
   box-sizing: border-box;
 }
 
+
 .header-content{
-  text-align: center;
   background-color: #B6D7A8;
   float: left;
-  margin-left: 20px;
   border-radius: 20px;
   border: 2px solid black;
   box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
+  width: 100%
+}
+
+
+.header-text{
+  text-align: center;
+  padding: 5px;
+  margin: 0px;
+  width: 100%;
 }
 
 .main-content{
   float: left;
-  margin-left: 0px;
+  margin: 20px;
   margin-top: 80px;
-  max-width: 750px;
+  margin-right: 100px;
+  box-sizing: border-box;
+  max-width: calc(100% - 120px - 320px);
 }
 
 footer{
@@ -56,7 +76,8 @@ footer{
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-left: 0px;
   clear: left;
   display: flex;
 }
@@ -69,6 +90,10 @@ footer{
   margin-top: 10px;
   float: left;
   flex: 1;
+}
+
+#post-first{
+  margin-left: 0px;
 }
 
 .post-title{
@@ -87,4 +112,14 @@ footer{
 
 .post-subtitle{
   font-weight: bold;
+}
+
+
+
+@media screen and (max-width:989px){
+  .add-content{
+    display: none;
+  }
+
+
 }
