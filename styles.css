@@ -104,22 +104,81 @@ footer{
   text-align: center;
 }
 
+
 .post-content{
   display: flex;
   clear: left;
   align-items: flex-start;
 }
 
+
 .post-subtitle{
   font-weight: bold;
 }
 
 
+/*
+DOES ALL THE PREVIOUS INFO GET SKIPPED IF THE
+SCREEN INITIAL WIDTH IS LESS THAN 990px???
+cus this would suck
 
-@media screen and (max-width:989px){
-  .add-content{
+^remember to look this up or at least test drive
+*/
+
+@media screen and (max-width: 989px){
+  .ad-content{
     display: none;
   }
 
+  .main-content{
+    float: left;
+    margin: 0px;
+    margin-top: 60px;
+    max-width: 100%;
+    width:100%
+  }
+
+  .header-content{
+    background-color: #B6D7A8;
+    float: left;
+    border-radius: 0px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: 100%
+  }
+
+  .post-content{
+    display: inline-block;
+    clear: left;
+  }
+
+  #post-first, #post-second{
+    box-sizing: border-box;
+    margin: 10px;
+    display: inline-block;
+    float: left;
+    width: calc(50% - 20px);
+  }
+
+  #post-third{
+    box-sizing: border-box;
+    display: block;
+    margin: 10px;
+    clear: left;
+    width: calc(100% - 20px);
+  }
+
+  footer{
+    clear: left;
+    background-color: #9FC5F8;
+    border: 2px solid black;
+    border-radius: 0px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0px;
+    clear: left;
+    width: 100%;
+  }
 
 }
