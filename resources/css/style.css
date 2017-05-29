@@ -1,0 +1,68 @@
+body {
+  /*font-family: 'Gloria Hallelujah', cursive;*/
+  font-size: 16px;
+}
+
+#content {
+  width:900px;
+  margin: auto;
+}
+
+nav {
+  width: auto;
+  background-color: #FFE599;
+  text-align: left;
+  padding: 20px 0 20px 10px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-size: 1.5em;
+}
+
+#vertical-ad {
+  width: 24%;
+  border: 2px solid #000;
+  background-color: #D5A6BD;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  line-height: 20px;
+  float: left;
+  margin-top: 20px;
+}
+
+#vertical-ad img {
+  padding-top: 5px;
+}
+
+#contet {
+  padding-top: 15px;
+}
+
+#main {
+  width: 74%;
+  padding: 0 0 0 5px;
+  margin-top: 20px;
+  float: right;
+}
+
+header {
+  border: 2px solid #000;
+  background-color: #B6D7A8;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px 0 20px 0;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 2em;
+  padding-bottom: 20px;
+}
+
+article {
+  background-color: #A2C4C9;
+  border: 2px solid #000;
+  width: 30%;
+  padding: 0 5px 0 5px;
+  float: left;
+}
