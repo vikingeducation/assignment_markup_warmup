@@ -1,8 +1,18 @@
+#meta-header {
+	float: top;
+	background-color: #F7E08C;
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+	padding: 10px;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
 #main-header {
 	display: block;
 	background-color: #c4edc0;
 	width: 1000px;
-	border-width: 2px;
 	border-color: black;
 	border-style: solid;
 	border-radius: 25px;
@@ -22,8 +32,9 @@
 	border-color: black;
 	border-style: solid;
 	margin-left: 100px;
-	text-align: center;
-
+	display: table-cell; 
+  vertical-align: middle; 
+  text-align: center;
 }
 
 section {
