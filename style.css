@@ -1,0 +1,22 @@
+#main-header {
+	float: right;
+	display: block;
+	background-color: #c4edc0;
+	border-style: line;
+	border-color: black;
+	align-items: center;
+}
+
+.advertisement {
+	background-color: #e99dea;
+}
+
+section {
+	background-color: #accee0;
+}
+
+footer {
+	background-color: #5ebef2;
+}
+
+
