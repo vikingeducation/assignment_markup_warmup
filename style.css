@@ -58,7 +58,8 @@
 		display: none;
 	}
 }
-  	.img-responsive {
+
+.img-responsive {
 	width: 100%;
 	height: auto;
   	border-width: 2px;
