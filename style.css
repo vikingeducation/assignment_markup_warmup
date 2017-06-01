@@ -1,12 +1,15 @@
-#meta-header {
+#nav-bar {
 	float: top;
 	background-color: #F7E08C;
+	width: 100%;
 	border-width: 2px;
 	border-color: black;
 	border-style: solid;
 	padding: 10px;
 	text-align: left;
 	margin-bottom: 10px;
+	position: fixed;
+
 }
 
 #main-header {
@@ -19,8 +22,8 @@
 	text-align: center;
 	float: right;
 	margin-right: 10px;
+	margin-top: 50px;
 }
-
 
 .advertisement {
 	background-color: #e99dea;
@@ -32,9 +35,21 @@
 	border-color: black;
 	border-style: solid;
 	margin-left: 100px;
+	margin-top: 50px;
 	display: table-cell; 
-  vertical-align: middle; 
-  text-align: center;
+  	vertical-align: middle; 
+  	text-align: center;
+
+
+}
+  	.img-responsive {
+	width: 100%;
+	height: auto;
+  	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+	margin: 5px;
+	max-width: 275px;
 }
 
 section {
