@@ -68,7 +68,7 @@
 	max-width: 275px;
 }
 
-section {
+article {
 	background-color: #accee0;
 	display: block;
 	float: right;
@@ -78,21 +78,25 @@ section {
 	width: 320px;
 	margin: 10px;
 	max-height: 450px;
-	overflow: auto;
+  overflow: auto;
+}
+
+@media (max-width: 990px){
+	article {
+	
+	}
 }
 
 footer {
+  clear: both;
 	background-color: #5ebef2;
-	display: block;
-	float: bottom;
 	border-width: 2px;
 	border-color: black;
 	border-style: solid;
-	width: 1000px;
-	margin-right: 10px;
 	padding: 10px;
 	border-radius: 25px;
-	position: absolute;
+	width: 1000px;
+	float: right;
 }
 
 @media (max-width: 990px) {
@@ -100,10 +104,9 @@ footer {
 		border-radius: 0px;
 		border-left: none;
 		border-right: none;
-		width: 100%;
-		max-width: 990px;
-    	height: 100%;
-    	margin: auto;
+		width: 98%;
+		padding-left: 10px;
     
 }
 }
+
