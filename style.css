@@ -9,6 +9,8 @@
 	text-align: left;
 	margin-bottom: 10px;
 	position: fixed;
+	margin-left: 0px;
+	border-left: none;
 
 }
 
@@ -25,6 +27,16 @@
 	margin-top: 50px;
 }
 
+@media (max-width: 990px) {
+	#main-header {
+		display: inline-block;
+		width: 100%;
+		border-radius: 0px;
+		border-left: none;
+		border-right: none;
+		margin-right: 0px;
+	}
+}
 .advertisement {
 	background-color: #e99dea;
 	display: block;
@@ -39,8 +51,12 @@
 	display: table-cell; 
   	vertical-align: middle; 
   	text-align: center;
+}
 
-
+@media (max-width: 990px) {
+	.advertisement {
+		display: none;
+	}
 }
   	.img-responsive {
 	width: 100%;
@@ -79,4 +95,15 @@ footer {
 	position: absolute;
 }
 
-
+@media (max-width: 990px) {
+	footer {
+		border-radius: 0px;
+		border-left: none;
+		border-right: none;
+		width: 100%;
+		max-width: 990px;
+    	height: 100%;
+    	margin: auto;
+    
+}
+}
