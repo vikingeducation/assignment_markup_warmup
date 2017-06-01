@@ -19,31 +19,59 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-header {
+html {
+  font-family: "Open Sans", Verdana, sans-serif;
+}
+
+nav {
   background-color: lightyellow;
   position: fixed;
   width: 100%;
 }
 
+nav p {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+main {
+  padding-top: 50px;
+  max-width: 990px;
+  margin: auto;
+  display: flexbox;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
 main header {
   background-color: lightgreen;
-  position: static;
 }
 
 main article {
   background-color: lightblue;
+  width: 24%;
+  display: inline-block;
 }
 
 main aside {
-  background-color: lavender;
+  background-color: #CCBBFF;
+  height: 200px;
+  width: 24%;
+  display: inline-block;
+  order: -1;
 }
 
 footer {
   background-color: skyblue;
 }
 
-h3 {
-  font-size: 18px;
+h1 {
+  font-size: 48px;
   font-weight: bold;
-  padding: 10px;
+}
+
+main aside img {
+  height: 200px;
+  width: 200px;
 }
