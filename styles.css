@@ -1,0 +1,134 @@
+:root {
+	font-size: 16px;
+}
+/* Main Classes */
+.green {
+	background: #b6d7a8;
+}
+.teal {
+	background: #a2c4c9;
+}
+.blue {
+	background: #9fc5f8;
+}
+.red {
+	background: #d5a6bd;
+}
+.border {
+	border: 3px solid black;
+}
+.rounded {
+	border-radius: 20px;
+}
+.center {
+	text-align: center;
+}
+.art-p {
+	margin: .5rem auto 1.25rem auto;
+}
+
+/* End Main Classes */
+
+
+/* Reset Corrections */
+h1 {font-size: 2.25rem; font-weight: 900}
+h2 {font-size: 1.75rem; font-weight: 900}
+h3 {font-size: 1.25rem; font-weight: 900}
+h4 {font-size: 1rem; font-weight: 900}
+h5 {font-size: .75rem; font-weight: 900}
+h6 {font-size: .5rem; font-weight: 900}
+p {margin: 1rem auto;}
+/* End Reset Corrections */
+
+body {
+	max-width: 990px;
+	width: 80%;
+	margin: auto;
+	padding-top: 1rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+
+
+/* Aside Content */
+aside {
+	width: 22.5%;
+	min-width: 200px;
+	height: 80vh;
+	overflow: hidden;
+}
+#ad-content {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+#ad-content p {
+	height: auto;
+	margin: 0;
+	padding: .5rem;
+	font-weight: bold;
+}
+#ad-img {
+	width: 200px;
+	height: 200px;
+	background-color: white;
+	margin: 0 auto;
+	padding: 0;
+}
+/* End Aside Content */
+
+
+
+/* Main Content */
+main {
+	width: 77.5%;
+	margin-left: 1rem;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+#main-header {
+	padding: .75rem;
+}
+#articles {
+	margin: 1rem -.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+article {
+	margin: 0 .5rem;
+	padding: 1rem;
+	max-height: 475px;
+	overflow: hidden;
+}
+.art-pad {
+	padding: 0px .5rem 1rem .5rem;
+}
+/* End Main Content */
+
+/* Footer */
+footer p {
+	margin: 1rem;
+}
+/* End Footer*/
+
+
+@media screen and (min-width: 990px) {
+
+}
+
+
+@media screen and (max-width: 989px) {
+
+}
