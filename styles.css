@@ -1,0 +1,167 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+main header, article, aside, footer {
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 5px;
+}
+
+main header, aside, footer {
+  border-radius: 10px;
+}
+
+html {
+  font-family: "Open Sans", Verdana, sans-serif;
+}
+
+nav {
+  background-color: #FFFFAA;
+  position: fixed;
+  width: 100%;
+}
+
+nav p {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0;
+}
+
+.flex {
+  display: flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  padding-top: 50px;
+  max-width: 990px;
+  margin: auto;
+  margin-bottom: 20px;
+  align-items: stretch;
+}
+
+main {
+  margin: 5px;
+  width: calc(75% - 10px);
+  align-items: flex-start;
+
+}
+
+main header {
+  background-color: lightgreen;
+  width: calc(100% - 10px);
+  margin-top: 0;
+}
+
+main article {
+  background-color: lightblue;
+  width: calc(33% - 10px);
+}
+
+aside {
+  background-color: #CCBBFF;
+  align-items: stretch;
+  width: calc(25% - 10px);
+}
+
+main footer {
+  background-color: skyblue;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3, p {
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+p {
+  margin-top: 10px;
+} 
+
+.tagline, .date {
+  margin-top: -3;
+  text-align: center;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 16px;
+}
+
+.img-responsive {
+  width: 100%;
+  margin: auto;
+  align-items: stretch;
+}
+
+img {
+  width: 100%;
+  vertical-align: center;
+}
+
+@media (max-width: 990px) {
+  aside.flex {
+    display: none;
+  }
+
+  main.flex, main header, main footer {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .container {
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    padding-top: 40px;
+  }
+
+  main article {
+    margin: 10px;
+    min-width: calc(50% - 20px);
+    flex-grow: 1;
+  }
+}
