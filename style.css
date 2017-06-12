@@ -1,0 +1,119 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+:root {
+  font-family: "Lato", Georgia, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #FFE599;
+  border-bottom: 2px solid black;
+  box-shadow: 0 2px 4px black;
+  padding: 1em;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  text-align: center;
+  margin-top: 5em;
+  padding: 0 10% 0 10%;
+  max-width: 80%;
+}
+
+.advert, .titleBar, article, footer {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+/*advert styling */
+.advert {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-height: 550px;
+}
+#adText {
+  text-align: center;
+}
+.advert img {
+  max-width: 80%;
+}
+
+/* main-block content */
+.main-block {
+  max-width: 75%;
+}
+.titleBar, footer {
+  border-radius: 15px;
+}
+h4, h3 {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.titleBar {
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #B6D7A8;
+  padding: 20px;
+}
+.articles {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+article {
+  background-color: #A2C4C9;
+}
+p, h4 {
+  text-align: left;
+  font-size: 16px;
+}
+h3 {
+  font-size: 22px;
+}
+#date {
+  text-align: center;
+}
+#byLine {
+  font-weight: normal;
+  font-style: italic;
+  margin-top: 10px;
+}
+footer {
+  background-color: #9FC5F8;
+}
+
+/*responsive settings*/
+@media screen and (max-width: 990px) {
+  .articles {
+    flex-wrap: wrap;
+  }
+  main {
+    padding: 0 5% 0 5%;
+    max-width: 100%;
+  }
+  .advert {
+    display: none;
+  }
+  .main-block {
+    max-width: 100%;
+  }
+  .advert, .titleBar, article, footer {
+    border: 2px solid black;
+    padding: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
+  }
+}
