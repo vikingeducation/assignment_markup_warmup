@@ -1,0 +1,50 @@
+.sub-header{
+  font-size: 2em;
+  font-family: 'Baloo';
+}
+.blueBack{
+  background-color: #88c3ff
+}
+.greenBack{
+  background-color: #82de8c;
+}
+.pinkBack{
+  background-color: #ffa8fc;
+}
+.yellowBack{
+  background-color: #bfbf7f;
+}
+.darkblueBack{
+  background-color: #61b3ec
+}
+.center{
+  text-align: center;
+}
+.border{
+  border: 3px solid black;
+}
+.vertcent{
+  margin-top:30%;
+}
+.clear{
+  margin-top: 10%;
+}
+.font{
+  font-family: 'Baloo'
+}
+.font1{
+  font-family: 'Droid Sans', sans-serif;
+}
+.flex{
+  display:flex;
+  flex-direction: column;
+}
+.space{
+  margin-top:6%;
+}
+.Rspace{
+  margin-right: 2%;
+}
+#center{
+  margin-left: 2%;
+}
