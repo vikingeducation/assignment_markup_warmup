@@ -32,7 +32,7 @@ nav {
 aside {
   background-color: #D5A6BD;
   height: 500px;
-  flex-basis: 20%;
+  flex-basis: 25%;
   margin-top: 10px;
   text-align: center;
 
@@ -53,7 +53,7 @@ aside {
 }
 
 main {
-  flex-basis: 70%;
+  flex-basis: 75%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -111,4 +111,12 @@ h3 {
 
 h4 {
   font-style: italic;
+}
+
+@media only screen and (max-width: 960px) {
+  aside {
+    display: none;
+  }
+
+
 }
