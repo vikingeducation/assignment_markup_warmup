@@ -34,7 +34,6 @@ aside {
   height: 500px;
   flex-basis: 25%;
   margin-top: 10px;
-  text-align: center;
 
   display: flex;
 }
@@ -57,14 +56,12 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  padding: 10px;
 }
 
 header {
   background-color: #B6D7A8;
   width: 98%;
   margin-bottom: 10px;
-  text-align: center;
 }
 
 article {
@@ -74,7 +71,7 @@ article {
   margin-bottom: auto;
 }
 
-article, header, footer {
+main, article, header, footer {
   padding: 10px;
 }
 
@@ -82,7 +79,7 @@ header, article > * {
   padding-bottom: 10px;
 }
 
-article > h3, h5 {
+aside, header, article > h3, h5 {
   text-align: center;
 }
 
