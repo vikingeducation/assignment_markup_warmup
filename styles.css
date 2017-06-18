@@ -19,14 +19,23 @@ aside {
 
 main {
   flex-basis: 70%;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 header {
   background-color: #B6D7A8;
 }
 
+section {
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
 article {
   background-color: #A2C4C9;
+  max-width: 30%; 
 }
 
 footer {
