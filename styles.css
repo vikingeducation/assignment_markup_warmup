@@ -114,6 +114,17 @@ h4 {
 }
 
 @media only screen and (max-width: 960px) {
+
+  * {
+    border-radius: none;
+  }
+
+  header, footer {
+    width: 100%;
+  }
+
+
+
   aside {
     display: none;
   }
