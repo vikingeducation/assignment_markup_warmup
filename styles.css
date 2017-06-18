@@ -15,6 +15,7 @@ aside {
   background-color: #D5A6BD;
   height: 500px;
   flex-basis: 20%;
+  margin-top: 10px;
 }
 
 main {
@@ -22,23 +23,26 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  padding: 10px;
 }
 
 header {
   background-color: #B6D7A8;
   width: 98%;
+  margin-bottom: 10px;
 }
 
 article {
   background-color: #A2C4C9;
   width: calc(33% - 10px);
-  margin: auto;
   align-items: flex-start;
+  margin-bottom: auto;
 }
 
 footer {
   background-color: #9FC5F8;
-  width: 98%
+  width: 98%;
+  margin-top: 10px;
 }
 
 #ad-container {
