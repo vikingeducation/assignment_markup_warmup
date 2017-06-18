@@ -2,6 +2,14 @@ html {
   font-size: 14px;
 }
 
+nav, aside, main > * {
+  border: 2px solid black;
+}
+
+header, footer {
+  border-radius: 14px;
+}
+
 /*Main Elements Spacing*/
 
 .container {
@@ -15,8 +23,9 @@ html {
 nav {
   background-color: #FFE599;
   position: fixed 0 0;
-  height: 45px;
-  vertical-align: center;
+  height: 50px;
+  padding-left: 15px;
+  padding-top: 15px;
 }
 
 aside {
@@ -49,7 +58,7 @@ article {
   margin-bottom: auto;
 }
 
-article, header, nav, footer {
+article, header, footer {
   padding: 10px;
 }
 
