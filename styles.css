@@ -18,14 +18,14 @@ CSS Reset
   border: 1px solid black;
   background: yellow;
   width: 100%;
-  min-width: 940px;
   height: 40px;
   line-height: 40px;
   text-indent: 20px;
 }
 
 #main-content {
-
+  float: right;
+  width: 66%;
 }
 
 #page-header {
@@ -61,11 +61,12 @@ body {
 }
 
 #ad-content {
-
+  float: left;
+  width: 33%;
 }
 
 footer {
-
+  width: 100%;
 }
 
 #copyright {
