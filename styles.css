@@ -1,3 +1,9 @@
+html {
+  font-size: 14px;
+}
+
+/*Main Elements Spacing*/
+
 .container {
   max-width: 990px;
   margin: auto;
@@ -9,6 +15,8 @@
 nav {
   background-color: #FFE599;
   position: fixed 0 0;
+  height: 45px;
+  vertical-align: center;
 }
 
 aside {
@@ -16,6 +24,7 @@ aside {
   height: 500px;
   flex-basis: 20%;
   margin-top: 10px;
+  text-align: center;
 }
 
 main {
@@ -30,21 +39,26 @@ header {
   background-color: #B6D7A8;
   width: 98%;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 article {
-
   background-color: #A2C4C9;
   width: calc(33% - 10px);
   align-items: flex-start;
   margin-bottom: auto;
 }
 
-article, footer {
+article, header, nav, footer {
   padding: 10px;
 }
+
 header, article > * {
   padding-bottom: 10px;
+}
+
+article > h3, h5 {
+  text-align: center;
 }
 
 footer {
@@ -52,6 +66,14 @@ footer {
   width: 98%;
   margin-top: 10px;
 }
+
+/* Text Styling */
+
+h1 {
+  font-weight: 600;
+  font-size
+}
+
 
 #ad-container {
 }
