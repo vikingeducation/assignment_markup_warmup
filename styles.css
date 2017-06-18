@@ -1,3 +1,8 @@
+.container {
+  max-width: 990px;
+  flex: row wrap;
+}
+
 nav {
   background-color: #FFE599;
   position: fixed 0 0;
@@ -5,6 +10,7 @@ nav {
 
 aside {
   background-color: #D5A6BD;
+  height: 500px;
 }
 
 header {
@@ -17,4 +23,11 @@ article {
 
 footer {
   background-color: #9FC5F8;
+}
+
+#ad-container {
+}
+
+#ad-content {
+  background-color: #ffffff;
 }
