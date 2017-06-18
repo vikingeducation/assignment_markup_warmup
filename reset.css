@@ -41,3 +41,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*Sets Box Sizing to border box but will allow inherit behavior by plugins*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* End Box Sizing Reset*/
