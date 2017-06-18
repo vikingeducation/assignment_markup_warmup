@@ -1,5 +1,6 @@
 html {
   font-size: 14px;
+  font-family: sans-serif;
 }
 
 nav, aside, main > * {
@@ -25,7 +26,7 @@ nav {
   position: fixed 0 0;
   height: 50px;
   padding-left: 15px;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 aside {
@@ -79,12 +80,27 @@ footer {
 /* Text Styling */
 
 h1 {
-  font-weight: 600;
-  font-size
+  font-weight: 700;
+  font-size: 1.75rem;
 }
 
+h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.15;
+}
+
+h4 {
+  font-style: italic;
+}
 
 #ad-container {
+  text-align: center;
+  align-items: center;
 }
 
 #ad-content {
