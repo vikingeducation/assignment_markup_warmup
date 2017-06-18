@@ -6,10 +6,6 @@
   flex-flow: row wrap;
 }
 
-aside, header, section, footer {
-  margin-top: 20px;
-}
-
 nav {
   background-color: #FFE599;
   position: fixed 0 0;
@@ -24,17 +20,13 @@ aside {
 main {
   flex-basis: 70%;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 header {
   background-color: #B6D7A8;
-}
-
-section {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  width: 100%;
 }
 
 article {
@@ -46,6 +38,7 @@ article {
 
 footer {
   background-color: #9FC5F8;
+  width: 100%
 }
 
 #ad-container {
