@@ -24,7 +24,7 @@ CSS Reset
 }
 
 #main-content {
-  float: right;
+  flex-flow: row-reverse
   width: 66%;
 }
 
@@ -61,11 +61,12 @@ body {
 }
 
 #ad-content {
-  float: left;
-  width: 33%;
+
 }
 
 footer {
+  background: blue;
+  height: 60px;
   width: 100%;
 }
 
