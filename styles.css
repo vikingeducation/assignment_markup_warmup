@@ -117,13 +117,11 @@ h4 {
 
 @media only screen and (max-width: 960px) {
 
-  * {
-    margin: 0px;
-  }
 
   header, footer {
     width: 100%;
-    border-radius: 0px;;
+    border-radius: 0px;
+    margin: 0;
   }
 
   main {
