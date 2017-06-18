@@ -10,10 +10,6 @@ aside, header, section, footer {
   margin-top: 20px;
 }
 
-header, article {
-  margin-left: 15px;
-}
-
 nav {
   background-color: #FFE599;
   position: fixed 0 0;
@@ -38,12 +34,14 @@ header {
 section {
   display: flex;
   flex-flow: row wrap;
-
+  justify-content: space-around;
 }
 
 article {
   background-color: #A2C4C9;
-  max-width: 30%;
+  width: calc(33% - 10px);
+  margin: auto;
+
 }
 
 footer {
