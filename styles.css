@@ -35,6 +35,21 @@ aside {
   flex-basis: 20%;
   margin-top: 10px;
   text-align: center;
+
+  display: flex;
+}
+
+#ad-container {
+
+  height: 175px;
+  width: 160px;
+  margin: auto;
+}
+
+#ad-content {
+  background-color: #ffffff;
+  height: calc(100% - 15px);
+  width: 100%;
 }
 
 main {
@@ -96,13 +111,4 @@ h3 {
 
 h4 {
   font-style: italic;
-}
-
-#ad-container {
-  text-align: center;
-  align-items: center;
-}
-
-#ad-content {
-  background-color: #ffffff;
 }
