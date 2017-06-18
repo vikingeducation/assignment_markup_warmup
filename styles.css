@@ -26,19 +26,19 @@ main {
 
 header {
   background-color: #B6D7A8;
-  width: 100%;
+  width: 98%;
 }
 
 article {
   background-color: #A2C4C9;
   width: calc(33% - 10px);
   margin: auto;
-
+  align-items: flex-start;
 }
 
 footer {
   background-color: #9FC5F8;
-  width: 100%
+  width: 98%
 }
 
 #ad-container {
