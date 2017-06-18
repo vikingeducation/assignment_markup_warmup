@@ -134,5 +134,18 @@ h4 {
     display: none;
   }
 
+  .container {
+    flex-flow: column nowrap;
+  }
+
+  article {
+    background-color: #A2C4C9;
+    margin-bottom: auto;
+    justify-content: space-around;
+    flex: 2 1 calc(50% - 20px);
+    margin: 10px;
+
+  }
+
 
 }
