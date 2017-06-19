@@ -23,13 +23,37 @@ CSS Reset
   text-indent: 20px;
 }
 
+#page-layout {
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+#ad-container {
+  background: pink;
+  width: 240px;
+  height: 400px;
+}
+
+#ad-content {
+
+}
+
+#right-side-content {
+  background: red;
+  height: 500px;
+  width: 750px;
+}
+
 #main-content {
-  flex-flow: row-reverse
-  width: 66%;
+
 }
 
 #page-header {
-
+  width: 750px;
+  text-align: center;
 }
 
 #page-header-byline {
@@ -60,14 +84,10 @@ body {
 
 }
 
-#ad-content {
-
-}
-
 footer {
   background: blue;
   height: 60px;
-  width: 100%;
+  width: 200px;
 }
 
 #copyright {
