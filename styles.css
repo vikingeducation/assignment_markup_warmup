@@ -1,7 +1,8 @@
 
-/*-------------
-CSS Reset
---------------*/
+/*--Google font "Pangolin"--*/
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
+
+/*--CSS Reset--*/
 * {
         margin: 0;
         padding: 0;
@@ -11,28 +12,31 @@ CSS Reset
         vertical-align: baseline;
         background: transparent;
         text-decoration: none;
-        font-family: Helvetica, sans-serif;
+        font-family: "Pangolin", Helvetica, sans-serif;
         font-weight: normal;
 }
 
+/*--Header--*/
 #site-header {
   position: fixed;
   top: 0;
   border: 2px solid black;
-  background: yellow;
+  background: #FFE399;
   width: 100%;
-  height: 40px;
+  height: auto;
   line-height: 40px;
   text-indent: 20px;
 }
 
+/*--Page Layout / All content except site-header is in flex box--*/
 #page-layout {
   margin: 40px 0;
   display: flex;
   flex-flow: column wrap;
-  height: 1000px;
+  height: 500px;
 }
 
+/*--Responsive Design--*/
 @media all and (max-width: 989px) {
   #page-layout {
     min-width: 100%;
@@ -52,8 +56,6 @@ CSS Reset
   }
   #page-header {
     min-width: 110%;
-    margin: 0;
-    border-radius: 0px;
   }
   #blog-post-1 {
     width: 45%;
@@ -76,6 +78,7 @@ CSS Reset
   }
 }
 
+/*--full-size styling--*/
 #ad-container {
   margin: 10px auto;
   border: 2px solid black;
@@ -102,7 +105,7 @@ CSS Reset
 }
 
 #page-header {
-  background: green;
+  background: #D9FD98;
   width: 100%;
   height: 80px;
   border-radius: 22px;
@@ -156,9 +159,10 @@ CSS Reset
 footer {
   border: 2px solid black;
   border-radius: 22px;
-  background: lightblue;
+  background: #80D6FB;
   height: auto;
   width: 100%;
+  margin: 0 0 5px 0;
 }
 
 #copyright {
