@@ -122,21 +122,7 @@ CSS Reset
   font-weight: normal;
 }
 
-#blog-post-1 {
-  width: 30%;
-  background: lightblue;
-  border: 2px solid black;
-  margin: 10px;
-}
-
-#blog-post-2 {
-  width: 30%;
-  background: lightblue;
-  border: 2px solid black;
-  margin: 10px;
-}
-
-#blog-post-3 {
+.blog-post {
   width: 30%;
   background: lightblue;
   border: 2px solid black;
@@ -144,21 +130,27 @@ CSS Reset
 }
 
 .blog-post-title h4 {
+  text-align: center;
+  margin: 10px 10px 0 10px;
   font-weight: bold;
   font-size: 18px;
 }
 
 .blog-post-timestamp h5 {
+  margin: 0 0 10px 0;
+  text-align: center;
   font-size; 16px;
 }
 
 .blog-post-subtitle h6 {
+  margin: 0 20px;
   font-size: 16px;
   font-weight: bold;
 }
 
 .blog-post-content {
-
+  font-size: 14px;
+  margin: 20px;
 }
 
 footer {
@@ -170,6 +162,6 @@ footer {
 }
 
 #copyright {
-  font-size: 15px;
+  font-size: 13px;
   margin: 3px 10px;
 }
