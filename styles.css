@@ -16,6 +16,8 @@ CSS Reset
 }
 
 #site-header {
+  position: fixed;
+  top: 0;
   border: 2px solid black;
   background: yellow;
   width: 100%;
@@ -25,15 +27,57 @@ CSS Reset
 }
 
 #page-layout {
-  justify-content: center;
-  margin: auto;
+  margin: 40px 0;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
+  flex-flow: column wrap;
+  height: 1000px;
+}
+
+@media all and (max-width: 989px) {
+  #page-layout {
+    min-width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  #ad-container {
+    order: 2;
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+  }
+  #right-side-content {
+    min-width: 100%;
+    margin: 0;
+  }
+  #page-header {
+    min-width: 110%;
+    margin: 0;
+    border-radius: 0px;
+  }
+  #blog-post-1 {
+    width: 45%;
+    flex-grow: 1;
+  }
+  #blog-post-2 {
+    width: 45%;
+    flex-grow: 1;
+  }
+  #blog-post-3 {
+    width: 100%;
+    flex-grow: 1;
+  }
+  footer {
+    min-width: 110%;
+    height: auto;
+  }
+  footer #copyright {
+    margin: 0 50px;
+  }
 }
 
 #ad-container {
-  margin: 10px;
+  margin: 10px auto;
   border: 2px solid black;
   display: flex;
   flex-flow: column;
@@ -50,27 +94,20 @@ CSS Reset
 }
 
 #right-side-content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
-  margin: 0 10px;
-  background: transparent;
-  height: 1200px;
-  min-width: 750px;
   max-width: 750px;
-}
-
-#main-content {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
 }
 
 #page-header {
   background: green;
+  width: 100%;
   height: 80px;
   border-radius: 22px;
   border: 2px solid black;
-  margin: 10px 0;
-  min-width: 750px;
+  margin: 10px auto;
   text-align: center;
 }
 
@@ -82,19 +119,25 @@ CSS Reset
 
 #page-header-byline {
   font-style: italic;
-  font-weight: ;
+  font-weight: normal;
 }
 
-#all-blog-posts {
-  display: flex;
-  flex-direction: row;          /*????????????*/
-  flex-wrap: wrap;
-  justify-content: center;
+#blog-post-1 {
+  width: 30%;
+  background: lightblue;
+  border: 2px solid black;
+  margin: 10px;
 }
 
-.blog-post {
-  width: 33%;
-  flex-grow: 1;
+#blog-post-2 {
+  width: 30%;
+  background: lightblue;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+#blog-post-3 {
+  width: 30%;
   background: lightblue;
   border: 2px solid black;
   margin: 10px;
@@ -122,8 +165,8 @@ footer {
   border: 2px solid black;
   border-radius: 22px;
   background: lightblue;
-  height: 60px;
-  min-width: 750px;
+  height: auto;
+  width: 100%;
 }
 
 #copyright {
