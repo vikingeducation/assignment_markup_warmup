@@ -10,25 +10,22 @@
   </head>
   <body>
 
-    <!-- Nav -->
+    <!-- FIRST TRY******************************
+
     <nav id="main-nav">The Lorem Micro Blog</nav>
 
-    <!-- Flex Container -->
     <div class="flex-container">
 
-    <!-- Ad Sidebar -->
     <aside class="sidebar">
       <div id="ad-text">Check out my vertically centered ad!</div>
       <img src="ad.png" id="ad-img">
     </aside>
 
-    <!-- Main header -->
     <header id="main-header">
       <h1 class="site-title">The Lorem Micro Blog</h1>
       <h2 class="tagline">By Foo Bar</h2>
     </header>
 
-    <!-- Main Content -->
     <main id="main-content" class="flex-container">
       <section class="main-content-section">
         <h2 class="section-title">A Most Posty Post</h2>
@@ -70,6 +67,55 @@
     </footer>
 
     </div>
+
+END OF FIRST TRY ******************************* -->
+
+    <nav id="main-nav">The Lorem Micro Blog</nav>
+
+    <main class="flex-container">
+
+      <div id="ad" class="flex-container-ad">
+        <div id="ad-text">Check out my vertically centered ad!</div>
+        <img src="ad.png" width="150px" height="150px" style="margin: 0 auto;text-align: center;">
+      </div>
+
+      <div id="main-content">
+
+        <header>
+          <h1 class="site-title">The Lorem Micro Blog</h1>
+          <h2 class="tagline">By Foo Bar</h2>
+        </header>
+
+        <div id="articles" class="flex-container">
+
+          <article class="post">
+            <h2>A Most Posty Post</h2>
+            <p class="time">Written 1/3/2000</p>
+            <h3>First Thoughts...</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h3>Additional Thoughts...</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </article>
+
+          <article class="post">
+            <h2>Another Posty Post</h2>
+            <p class="time">Written 1/2/2000</p>
+            <h3>Only Thoughts...</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </article>
+
+          <article class="post">
+            <h2>A Posty Post</h2>
+            <p class="time">Written 1/1/2000</p>
+            <h3>Be it Resolved</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </article>
+
+        </div>
+        <footer>This copyrighted telecase is presented by authority of the Office of the Commissioner of Blogging. It may not be reproduced or retransmitted in any form, and the accounts and descriptions of this game may not be disseminated without express written consent.</footer>
+      </div>
+    </main>
 
   </body>
 </html>
