@@ -141,10 +141,12 @@ h2 {
   font-size: 22px;
   padding-bottom: 8px;
   text-align: center;
+  font-weight: bold;
 }
 h3 {
   font-size: 18px;
   padding-bottom: 8px;
+  font-weight: bold;
 }
 p {
   font-size: 15px;
@@ -180,6 +182,7 @@ footer {
 .tagline {
   font-style: italic;
   text-align: center;
+  font-weight: normal;
 }
 
 #main-nav {
@@ -190,6 +193,7 @@ footer {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 20px;
 }
 
 #ad {
@@ -207,6 +211,14 @@ footer {
 }
 
 .flex-container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container-post {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -235,4 +247,58 @@ footer {
 .time {
   text-align: center;
   padding-bottom: 8px;
+}
+
+@media all and (max-width: 990px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-container-post {
+    flex-flow: row wrap;
+  }
+  header {
+    margin: 0px;
+    margin-top: -10px;
+    padding: 0px;
+    width: 100%;
+    background-color: #b6d7a8;
+    height: 80px;
+    border-radius: 0px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 0px;
+    border-right: 0px;
+  }
+  footer {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 5px;
+  }
+  #ad {
+    display: none;
+  }
+  .post {
+    width: 40%;
+    margin-top: 15px;
+  }
+  #post3 {
+    width: 86%;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .post {
+    width: 86%;
+    margin-top: 15px;
+  }
+  #post3 {
+    width: 86%;
+  }
 }
