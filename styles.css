@@ -10,7 +10,11 @@ clearfix::before,
     clear: both;
 }
 
-nav, #main-header, .post, #main-footer, #ad-pane {
+header, .advertisement {
+    text-align: center;
+}
+
+#top-banner, #main-header, .post, #main-footer, #ad-pane {
     border: 2px solid black;
 }
 
@@ -78,10 +82,6 @@ nav, #main-header, .post, #main-footer, #ad-pane {
     background-color: white;
 }
 
-header, .advertisement {
-    text-align: center;
-}
-
 #content-pane {
     width: 740px;
     margin-left: 2.5px;
@@ -94,4 +94,34 @@ header, .advertisement {
 
 #main-header, #main-footer {
     border-radius: 20px;
+}
+
+@media (max-width: 990px) {
+    #top-banner{
+        position: static;
+    }
+    #container {
+        margin: 0;
+    }
+    #main-header, #main-footer {
+        border-radius: 0;
+    }
+    
+    #ad-pane {
+        display: none;
+    }
+
+    #content-pane {
+        width: 100%;
+    }
+
+    .post, .post:nth-of-type(2) {
+        width: 48%;
+        margin: 1%;
+    }
+
+    .post:last-of-type {
+        clear: both;
+        width: 98%;
+    }
 }
