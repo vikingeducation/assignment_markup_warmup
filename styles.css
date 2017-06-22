@@ -92,3 +92,6 @@ header, .advertisement {
     width: 100%;
 }
 
+#main-header, #main-footer {
+    border-radius: 20px;
+}
