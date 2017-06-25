@@ -1,0 +1,98 @@
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: #e6e439;
+  padding: 0 0 5px 5px;
+  border-bottom: 2px solid #333; }
+
+.title-bar {
+  background-color: #79c829;
+  border: 2px solid #333; }
+  .title-bar h1, .title-bar p {
+    text-align: center; }
+
+article {
+  background-color: #3b81d2;
+  border: 2px solid #333; }
+
+footer {
+  background-color: #1d96ba;
+  border: 2px solid #333; }
+
+@media (min-width: 900px) {
+  main {
+    position: relative;
+    top: 50px;
+    margin: 25px 100px; }
+
+  aside {
+    float: left;
+    height: 500px;
+    width: 225px;
+    background-color: #ad3cdb;
+    border: 2px solid #333;
+    position: relative;
+    margin-right: 25px; }
+    aside div.ad-sidebar {
+      text-align: center;
+      transform: translateY(40%); }
+
+  .title-bar {
+    float: left;
+    width: 900px;
+    border-radius: 10px; }
+
+  .article-container {
+    float: left; }
+    .article-container article {
+      float: left;
+      width: 225px;
+      padding: 0 10px;
+      margin: 10px 33px 10px 10px; }
+
+  footer {
+    clear: left;
+    position: relative;
+    top: 50px;
+    margin: 0 100px 10px 100px;
+    left: 225px;
+    width: 900px;
+    padding: 10px; } }
+@media (max-width: 899px) {
+  aside {
+    display: none; }
+
+  .title-bar {
+    margin: 0;
+    position: relative;
+    top: 48px;
+    width: 100%; }
+
+  .article-container {
+    position: relative;
+    top: 50px; }
+
+  footer {
+    position: relative;
+    top: 50px;
+    clear: both; }
+
+  article#post-1 {
+    width: 300px;
+    float: left;
+    margin: 0 10px 25px 0; }
+
+  article#post-2 {
+    float: left;
+    width: 300px; }
+
+  article#post-3 {
+    clear: both;
+    margin-bottom: 25px; } }
+
+/*# sourceMappingURL=main.css.map */
