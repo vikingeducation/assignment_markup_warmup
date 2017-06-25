@@ -1,0 +1,110 @@
+$margin-main: 10%;
+$border-box: 10px;
+
+main{
+  margin-top: 50px;
+}
+
+header{
+  margin: 5px;
+}
+
+.main-header{
+  border-radius: $border-box;
+  border-style: solid;
+  border-width: 1px;
+  margin: 5px;
+  background-color: green;
+  text-align: center;
+}
+
+
+
+body{
+  margin: 2px;
+}
+
+footer{
+  clear: both;
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-color: lightblue;
+}
+
+article{
+  border-style: solid;
+  border-width: 1px;
+  background-color: blue;
+  margin: 3px;
+}
+
+nav{
+  border-width: 1px;
+  width: 100% ;
+  border-style: solid;
+  background-color: yellow;
+  position: fixed;
+  top: 0;
+}
+
+p {
+  margin: 10px;
+}
+
+
+
+
+/*
+ * If the screen size is greater equal to 990px.
+ */
+@media screen and (min-width: 990px) {
+  main{
+    margin-left: $margin-main;
+    margin-right: $margin-main;
+  }
+
+  aside{
+    width: 200px;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+    background-color: pink;
+    margin: 5px;
+    height: 700px;
+
+    figure{
+      padding: 330px 0;
+    }
+  }
+
+  article{
+    width: 32%;
+    float: left;
+  }
+
+  section{
+    float: left;
+    width: 80%;
+  }
+
+}
+
+/*
+ * If the screen size is less than equal to 990px.
+ */
+@media screen and (max-width: 989px) {
+
+aside{
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+article{
+  width: 48%;
+  float: left;
+}
+
+}
