@@ -1,0 +1,179 @@
+@media (min-width: 990px) {
+  
+  nav { 
+    background-color: yellow;
+
+    line-height: 50px;
+  }
+
+  header {
+    background-color: lightgreen;
+    width: 60%;
+    margin-right: 10%;
+    float: right;
+    text-align: center;
+    border-radius: 15px;
+  }
+
+  #ad-container {
+    width: 20%;
+    margin-right: 5px;
+    margin-left: 9%;
+    background-color: pink;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px;
+    height: 400px;
+
+    img {
+      height: 100px;
+      width: 100px;
+      margin-bottom: -80px;
+    }
+
+    p {
+      margin-top: 80px;
+    }
+  }
+
+  article {
+    display: inline-block;
+    width: 30%;
+    background-color: lightblue;
+    border-radius: 2px;
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+  #articles-container {
+    
+    width: 60%;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+  }
+  
+  footer {
+    width: 60%;
+    float: right;
+    margin-right: 10%;
+    background-color: skyblue;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+}
+
+
+@media (max-width: 989px) {
+
+  html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+  #ad-container {
+    display: none;
+  }
+
+  nav { 
+    background-color: yellow;
+
+    line-height: 50px;
+
+    h1 {
+      font-size: 25px;
+    }
+  }
+
+  header {
+    background-color: lightgreen;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+
+    h1 {
+      font-size: 35px;
+    }
+
+    p {
+      font-size: 22px;
+    }
+  }
+
+  article {
+    background-color: lightblue;
+    text-align: center;
+    vertical-align: top;
+    h1 {
+      font-size: 25px;
+    }
+  }
+
+  #articles-container {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  #one, #two {
+    width: 45%;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  
+
+  
+  #three {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+
+  footer {
+    line-height: 30px;
+    width: 100%;
+    background-color: skyblue;
+  }
+}
