@@ -1,0 +1,118 @@
+@import url(reset.css);
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", helvetica, sans-serif;
+  font-size: 14px; }
+
+h1 {
+  font-size: 26px; }
+
+h2 {
+  font-size: 22px; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-weight: 700; }
+
+.top-bar {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+  border-bottom: 2px solid #000;
+  background: #FFAA63; }
+
+.main-container {
+  position: relative;
+  top: 50px; }
+
+.container {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #000; }
+
+article {
+  vertical-align: top; }
+  article .container {
+    background: #FFCB63; }
+  article h3, article time {
+    display: block;
+    text-align: center;
+    padding-bottom: 5px; }
+  article h4 {
+    padding-top: 15px; }
+  article p {
+    padding-top: 10px; }
+
+.main-heading .container {
+  background: #FF7400;
+  text-align: center; }
+.main-heading h2 {
+  font-style: italic; }
+
+footer .container {
+  background: #FFAA63; }
+
+@media screen and (max-width: 990px) {
+  .main-container {
+    top: 40px; }
+
+  aside {
+    display: none; }
+
+  .main-heading .container {
+    margin: 0;
+    border: 0;
+    border-bottom: 2px solid #000; }
+
+  main {
+    width: 100%; }
+
+  main article:nth-child(-n+3) {
+    display: inline-block;
+    width: 50%; }
+
+  footer .container {
+    margin: 0;
+    border: 0;
+    border-top: 2px solid #000; } }
+@media screen and (min-width: 990px) {
+  .main-container {
+    width: 990px;
+    margin: 0 auto; }
+
+  .container {
+    border-radius: 10px; }
+
+  aside, article, main {
+    display: inline-block; }
+
+  aside {
+    float: left;
+    width: 25%; }
+    aside .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+      background: #5777C0; }
+    aside img {
+      width: 200px;
+      margin-top: 5px;
+      border: 1px solid #ddd; }
+    aside .ad-container {
+      text-align: center; }
+
+  main {
+    width: 75%; }
+
+  article {
+    width: 33%; } }
+
+/*# sourceMappingURL=styles.css.map */
