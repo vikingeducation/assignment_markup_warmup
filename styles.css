@@ -1,0 +1,213 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: "Lato", Helvetica; }
+
+.container {
+  width: 1000px;
+  margin: 0 auto; }
+
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  clear: both;
+  *zoom: 1; }
+
+header {
+  background-color: #FFE599;
+  width: 100%;
+  height: 50px; }
+  header h2 {
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px 0 0 15px; }
+
+.vertical-ad {
+  display: inline-block;
+  text-align: center;
+  background-color: #D5A6BD;
+  margin-top: 15px;
+  width: 22%;
+  height: 600px;
+  border: 2px solid #000; }
+  .vertical-ad .center-ad {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+  .vertical-ad img {
+    display: block;
+    margin: 15px auto 0 auto;
+    width: 200px;
+    height: 200px; }
+
+.container2 {
+  width: 76%;
+  margin: 15px 0 0 12px;
+  display: inline-block;
+  vertical-align: top; }
+
+.page-title {
+  text-align: center;
+  background-color: #B6D7A8;
+  width: 100%;
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: top;
+  border: 2px solid #000;
+  border-radius: 10px;
+  height: 70px; }
+  .page-title h1,
+  .page-title h2 {
+    display: block; }
+  .page-title h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px; }
+  .page-title h2 {
+    font-style: italic;
+    margin-top: 7px; }
+
+.content h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px; }
+.content h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px; }
+.content h3 {
+  font-size: 16px; }
+.content p {
+  font-size: 14px;
+  margin: 15px 0; }
+.content h1, .content h3 {
+  text-align: center; }
+
+.post-left,
+.post-center,
+.post-right {
+  width: 28%;
+  background-color: #A2C4C9;
+  border: 2px solid #000;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 15px;
+  line-height: 20px;
+  padding: 0 15px;
+  letter-spacing: 0.5px; }
+
+.post-center {
+  margin: 15px 9px 0 9px; }
+
+footer {
+  float: right;
+  width: 73%;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #9EC4F8;
+  margin-top: 20px;
+  padding: 10px 15px;
+  line-height: 18px; }
+
+@media (max-width: 990px) {
+  header {
+    width: 800px;
+    margin: 0 auto; }
+
+  .container {
+    width: 800px; }
+
+  .vertical-ad {
+    display: none; }
+
+  .container2 {
+    width: 800px;
+    margin: 0; }
+
+  .page-title {
+    width: 800px;
+    border-radius: 0;
+    margin-top: 0;
+    margin-left: 0; }
+
+  .content {
+    width: 800px; }
+
+  .post-left,
+  .post-center {
+    width: 48%; }
+
+  .post-center {
+    float: right;
+    margin: 15px 0 0 0; }
+
+  .post-right {
+    width: 800px; }
+
+  footer {
+    width: 800px;
+    border-radius: 0;
+    float: none; }
+
+  header,
+  .container,
+  .vertical-ad,
+  .container2,
+  .page-title,
+  .content,
+  .post-left,
+  .post-center,
+  .post-right,
+  footer {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; } }
+
+/*# sourceMappingURL=styles.css.map */
