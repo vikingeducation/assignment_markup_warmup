@@ -1,0 +1,155 @@
+/* I'm done with this, but creating font-size class names
+would reduce some more duplication. Same approach to margins. */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
+article,
+footer,
+nav, #blog-title,
+#sing-for-dinner {
+    border: 2px solid black;
+}
+
+article {
+    display: inline-block;
+    width: calc(33% - 45px);
+    background: #a2c4c9;
+    margin: 10px 5px 10px 0px;
+    padding: 0px 20px 20px 20px;
+}
+
+footer {
+    background: #9fc5f8;
+    border-radius: 25px;
+    margin: 0px;
+    padding: 0px 20px 20px 20px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    background: #ffe599;
+    font-size: 1.25em;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#articles {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#blog-title {
+    background: #b6d7a8;
+    border-radius: 25px;
+    margin-top: 65px;
+}
+#content {
+    width: 74%;
+    float: right;
+}
+
+#sing-for-dinner {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    float: left;
+
+    background: #d5a6bd;
+    height: 600px;
+    width: calc(25% - 34px);
+
+    margin-top: 65px;
+    margin-left: 10px;
+    padding: 0px 10px;
+}
+
+.ad-text {
+    font-size: 1.25em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.ad-content {
+    width: 100%;
+    min-height: 300px;
+    background: linear-gradient(to bottom right, teal, white);
+}
+
+.last-article,
+#blog-title,
+footer {
+    margin-right: 5px;
+}
+
+.section-heading {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.title-text, .tagline {
+    text-align: center;
+    margin: 10px;
+}
+
+.title-text {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 1.25em;
+}
+
+@media screen and (max-width: 989px) {
+    section#sing-for-dinner {
+        display: none;
+    }
+
+    article {
+        margin-left: 10px;
+        width: 43%;
+        flex: 1 auto;
+    }
+
+    footer, #blog-title {
+        border-radius: 0px;
+        margin-right: 0px;
+    }
+
+    #articles {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    #blog-title {
+        margin-top: 54px;
+    }
+
+    #content {
+        float: none;
+        width: 100%;
+    }
+
+    .last-article {
+        margin: 2px 5px 15px 10px;
+    }
+}
