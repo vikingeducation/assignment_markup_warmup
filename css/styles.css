@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav {
+    height: 75px;
+    background-color: #ff9966;
+    border-bottom: 2px solid black;
+}
+nav li {
+    display: inline-block;
+    padding: 33px;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+main {
+    margin: 10px auto 0 auto;
+    height: 650px;
+    width: 990px;
+}
+header {
+    float: right;
+    height: 75px;
+    width: 700px;
+    text-align: center;
+    background-color: #5a964b;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+header h1 {
+    padding-top: 10px;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+header h5 {
+    padding-top: 10px;
+    font-style: oblique;
+}
+.advertisement {
+    height: 500px;
+    width: 250px;
+    background-color: #874b96;
+    float: left;
+    border: 2px solid black;
+}
+.advertisement h1 {
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-top: 120px;
+}
+.web-advertisment {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    margin: 5px auto;
+    border: 2px solid black;
+}
+.post {
+    height: 455px;
+    width: calc(670px / 3);
+    float: right;
+    margin: 15px 10px 0 0;
+    background-color: red;
+    border: 2px solid black;
+}
+.posts {
+    display: flex;
+    flex-flow: row wrap;
+    width: 740px;
+    justify-content: center;
+}
+.headline {
+    font-size: 23px;
+    font-family: cursive;
+}
+.date {
+    font-family: cursive;
+    padding-top: 10px;
+    font-size: 15px;
+}
+.starting-sentence {
+    font-family: 20px;
+    font-weight: bolder;
+    padding: 15px 10px;
+    font-family: cursive;
+}
+.headline,
+.date {
+    text-align: center;
+}
+.blogpost {
+    padding: 0 5px 5px 10px;
+    font-family: cursive;
+    font-size: 12px;
+    line-height: 18px;
+}
+.left {
+    height: 415px;
+}
+.middle {
+    height: 250px;
+}
+.right {
+    height: 325px;
+}
+aside {
+    height: 100px;
+    width: 700px;
+    position: relative;
+    top: 40px;
+    background-color: red;
+    float: right;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+.aside p {
+    padding-top: 10px;
+}
+@media screen and (max-width: 991px) {
+    main {
+        width: 100%;
+    }
+    nav {
+        height: 40px;
+    }
+    nav li {
+        padding: 10px 10px;
+        font-size: 20px;
+    }
+    header {
+        width: 100%;
+        border-radius: 0;
+    }
+    .advertisement {
+        display: none;
+    }
+    .posts {
+        margin: 0 auto;
+        justify-content: none;
+    }
+    .left {
+        width: 30%;
+        background-color: green;
+    }
+    .middle {
+        background-color: yellow;
+        width: 60%;
+    }
+    .right {
+        height: 225px;
+        width: 90%;
+    }
+    aside {
+        width: 100%;
+        border-radius: 0;
+    }
+}
