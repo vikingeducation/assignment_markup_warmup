@@ -1,0 +1,71 @@
+@import "compass";
+@import "zen";
+
+$zen-column-count: 10; 
+$zen-gutter-width: 10px; 
+
+.container {
+ @include zen-grid-container; 
+}
+
+.top-nav {
+ @include zen-grid-item(10, 1); 
+ background-color: #FFFF00;
+}
+
+
+.post-header {
+ @include zen-clear();
+ @include zen-grid-item(6, 4); 
+ background-color: #00FF00;
+ border-radius: 25px;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ margin-left: 30%;
+}
+
+.aside-left {
+	@include zen-clear();
+	@include zen-grid-item(2, 2);
+	background-color: #ff33CC;
+	height: 500px;
+	margin-right: -31%;
+	margin-left: 8%;
+	p {
+		position: relative;
+		top: 20%;
+		height: 500px;
+	text-align: center;
+	}
+}
+
+.article-left {
+ @include zen-grid-item(2, 4); 
+ background-color: #66CCFF;
+ margin-right: -48.5%;
+ width: 19%;
+}
+
+.article-center {
+ @include zen-grid-item(2, 6); 
+ background-color: #66CCFF;
+ margin-left: 50%;
+ margin-right: -69%;
+ width: 19%;
+}
+
+.article-right {
+ @include zen-grid-item(2, 8); 
+ background-color: #66CCFF;
+ margin-left: 70.5%;
+ width: 19%;
+}
+
+.footer {
+	
+	 @include zen-clear();
+ @include zen-grid-item(6, 4); 
+ background-color: #6666FF;
+  border-radius: 25px;
+  margin-top: 10px;
+}

@@ -1,0 +1,150 @@
+/* line 7, ../sass/small_styles.scss */
+.container {
+  *position: relative;
+  *zoom: 1;
+}
+/* line 45, ../../../.rvm/gems/ruby-2.2.1/gems/zen-grids-1.5/stylesheets/zen/_grids.scss */
+.container:before, .container:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../../../.rvm/gems/ruby-2.2.1/gems/zen-grids-1.5/stylesheets/zen/_grids.scss */
+.container:after {
+  clear: both;
+}
+
+/* line 11, ../sass/small_styles.scss */
+.top-nav {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  background-color: #FFFF00;
+}
+
+/* line 17, ../sass/small_styles.scss */
+.post-header {
+  clear: left;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  background-color: #00FF00;
+}
+
+/* line 24, ../sass/small_styles.scss */
+.article-left {
+  clear: left;
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  background-color: #66CCFF;
+  margin-top: 10px;
+  width: 46%;
+  margin-right: -49%;
+  margin-left: 1%;
+}
+
+/* line 34, ../sass/small_styles.scss */
+.article-center {
+  margin-top: 10px;
+  float: left;
+  width: 50%;
+  margin-left: 50%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  background-color: #66CCFF;
+  width: 46%;
+  margin-left: 51%;
+  margin-right: -99%;
+}
+
+/* line 43, ../sass/small_styles.scss */
+.article-right {
+  margin-top: 10px;
+  clear: left;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  background-color: #66CCFF;
+  width: 98%;
+  margin-left: 1%;
+  margin-right: -99%;
+}
+
+/* line 53, ../sass/small_styles.scss */
+.footer {
+  clear: left;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  background-color: #6666FF;
+  margin-top: 10px;
+}
+
+/* line 61, ../sass/small_styles.scss */
+.aside-left {
+  display: none;
+}

@@ -1,0 +1,173 @@
+/* line 7, ../sass/styles.scss */
+.container {
+  *position: relative;
+  *zoom: 1;
+}
+/* line 45, ../../../.rvm/gems/ruby-2.2.1/gems/zen-grids-1.5/stylesheets/zen/_grids.scss */
+.container:before, .container:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../../../.rvm/gems/ruby-2.2.1/gems/zen-grids-1.5/stylesheets/zen/_grids.scss */
+.container:after {
+  clear: both;
+}
+
+/* line 11, ../sass/styles.scss */
+.top-nav {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  background-color: #FFFF00;
+}
+
+/* line 17, ../sass/styles.scss */
+.post-header {
+  clear: left;
+  float: left;
+  width: 60%;
+  margin-left: 30%;
+  margin-right: -90%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  background-color: #00FF00;
+  border-radius: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 30%;
+}
+
+/* line 27, ../sass/styles.scss */
+.aside-left {
+  clear: left;
+  float: left;
+  width: 20%;
+  margin-left: 10%;
+  margin-right: -30%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  background-color: #ff33CC;
+  height: 500px;
+  margin-right: -31%;
+  margin-left: 8%;
+}
+/* line 34, ../sass/styles.scss */
+.aside-left p {
+  position: relative;
+  top: 20%;
+  height: 500px;
+  text-align: center;
+}
+
+/* line 42, ../sass/styles.scss */
+.article-left {
+  float: left;
+  width: 20%;
+  margin-left: 30%;
+  margin-right: -50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  background-color: #66CCFF;
+  margin-right: -48.5%;
+  width: 19%;
+}
+
+/* line 49, ../sass/styles.scss */
+.article-center {
+  float: left;
+  width: 20%;
+  margin-left: 50%;
+  margin-right: -70%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  background-color: #66CCFF;
+  margin-left: 50%;
+  margin-right: -69%;
+  width: 19%;
+}
+
+/* line 57, ../sass/styles.scss */
+.article-right {
+  float: left;
+  width: 20%;
+  margin-left: 70%;
+  margin-right: -90%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  background-color: #66CCFF;
+  margin-left: 70.5%;
+  width: 19%;
+}
+
+/* line 64, ../sass/styles.scss */
+.footer {
+  clear: left;
+  float: left;
+  width: 60%;
+  margin-left: 30%;
+  margin-right: -90%;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  background-color: #6666FF;
+  border-radius: 25px;
+  margin-top: 10px;
+}
