@@ -1,0 +1,210 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}/*End of CSS reset*/
+
+/*navbar on top of screen*/
+nav {
+	width: 100%;
+	height: 3rem;
+	background-color: #FFE2A9; 
+	position: fixed;
+	top: 0;
+	border-top: solid black;
+	border-bottom: solid black;
+}
+nav h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	padding-top: .7rem;
+	padding-bottom: .7rem; 
+	padding-left: 1rem; 
+}
+/*End of navbar contents*/
+
+/*main flex container -- contains everything below navbar*/
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+}
+/*flex container for vertical advertising aside*/
+.flex-container-aside {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-family: 'Open Sans', sans-serif; 
+	background-color: #CF89B1; 
+	width: 20%;
+	height: 33rem;
+	margin-top: 4.3rem; 	
+	margin-right: 1rem; 
+	border: solid black;
+}
+aside {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#ad-text {
+	width: 85%;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 8rem;
+	margin-bottom: 1rem; 
+}
+#advert {
+	height: 11rem;
+	width: 85%;
+	background-color: white; 
+	margin-bottom: 11rem;	
+}
+/*end of aside flex container*/
+
+/*flex container for header, posts, and footer*/
+.flex-container-primary {
+	min-height: 100%;
+	margin-top: 4.3rem; 
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;		
+	justify-content: space-between;
+	align-items: flex-start;
+}
+#main-header {	
+	background-color: #B3E295;
+	width: 100%;
+	border-radius: 15px; 
+	height: 6rem; 
+	border: solid black;
+} 
+#header-title {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 22px; 
+	font-weight: 800;  
+	text-align: center;
+	padding-top: 1.5rem; 
+}
+#header-tagline {
+	text-align: center;
+	font-size: 19px;
+	font-style: italic;
+	padding-top: .5rem; 
+}
+.post-1, .post-2, .post-3 {
+	background-color: #78B1BF;
+	width: 27%;	
+	padding: 1rem;
+	margin-top: 1rem; 
+	font-family: 'Open Sans', sans-serif;
+	border: solid black;
+}
+.post-1 header, .post-2 header, .post-3 header {
+	text-align: center;
+	padding-bottom: 1rem; 
+}
+.post-1 h1, .post-2 h1, .post-3 h1 {
+	font-size: 19px;
+	font-weight: 700;
+	padding-bottom: .5rem; 
+}
+.post-1 h2, .post-2 h2, .post-3 h2 {
+	font-size: 18px;
+	font-weight: 700;
+	padding-bottom: 1rem; 
+}
+.post-1 p, .post-2 p, .post-3 p {
+	padding-bottom: 1rem; 
+}
+footer {
+	display: flex;		
+	width: 100%;
+	background-color: #72A7E7;
+	border-radius: 15px;
+	height: 3rem; 
+	padding: 1rem;
+	margin-top: 1rem; 
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	border: solid black;
+}
+/*end of main flex container*/
+
+/*Narrow screen version*/
+@media only screen and (max-width: 990px) {
+	nav {
+	border-right: none;
+	border-left: none;
+	}
+	.flex-container-aside {
+	display: none; 
+	}
+	.flex-container-primary {
+	width: 100%;	
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 3rem;  
+	justify-content: space-around;
+	}
+	#main-header {	
+	border-radius: 0; 
+	border-right: none;
+	border-left: none;
+	} 
+	.post-1, .post-2, .post-3 {	
+	width: 40%;		
+	margin: 1rem; 
+	flex-grow: 1;
+	}
+	footer {
+	border-radius: 0;
+	height: auto;
+	border-right: none;
+	border-left: none;
+	}
+}
