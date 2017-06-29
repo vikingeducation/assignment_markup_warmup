@@ -85,13 +85,13 @@ main {
 .post, .post-header {
   min-width: 30%;
   min-height: 80px;
+  padding: 6px;
 }
 .post-header h1,h3,h5 {
   font-size: 1em;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
 
 .post-header {
   background-color: #9c9;
@@ -115,4 +115,16 @@ footer p {
   font-size: 12px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+@media (max-width: 990px) {
+  .ad-content {
+    display: none;
+  }
+  main {
+    width: 100%;
+    position: static;
+    float: none;
+    clear: both;
+  }
 }
