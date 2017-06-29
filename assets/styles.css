@@ -13,8 +13,17 @@
   background-color: #ff9;
   display: block;
   width: 100%;
-  position: fixed;
+  position: relative;
   top: 0;
+}
+
+main {
+  display: block;
+  float: right;
+  max-width: 990px;
+  box-sizing: border-box;
+  width: 70%;
+  padding: 10px;
 }
 
 
@@ -29,36 +38,27 @@
 
 
 .ad-content {
-  width: 300px;
-  height: 30%;
-
-  background-color: #c9c;
+  box-sizing: border-box;
+  width: 20%;
+  height: 250px;
+  left: 10%;
+  top: 20px;
   float: left;
+  position: relative;
+  background-color: #c9c;
 }
 
 /* responsive images */
 .img-container {
   max-width: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: inline-flex;
+  align-items: center;
 }
 .img-responsive {
-  display: block;
+  /*display: block;*/
   width: 100%;
   height: auto;
 }
-
-
-.ad-content img {
-
-
-}
-
-.container {
-  width: 66%;
-}
-
 .flex-container {
   display: flex;
   flex-flow: row wrap;
