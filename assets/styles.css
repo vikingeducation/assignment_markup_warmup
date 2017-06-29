@@ -20,6 +20,8 @@
 main {
   display: block;
   float: right;
+  position: relative;
+  right: 8%;
   max-width: 990px;
   box-sizing: border-box;
   width: 70%;
@@ -41,7 +43,7 @@ main {
   box-sizing: border-box;
   width: 20%;
   height: 250px;
-  left: 10%;
+  left: 8%;
   top: 20px;
   float: left;
   position: relative;
@@ -55,36 +57,34 @@ main {
   align-items: center;
 }
 .img-responsive {
-  /*display: block;*/
   width: 100%;
   height: auto;
 }
 .flex-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
 }
 
 .post, .post-header {
-
+  min-width: 30%;
 }
 
 .post-header {
   background-color: #9c9;
-  border-radius: 3px;
-
+  border-radius: 15px;
+  padding: 3px;
 }
 
 .post {
   background-color: #9CC;
   border: 2px solid black;
   margin: 3px;
-  flex: 1;
 }
 
-
-
-/*
-ad color #c9c
-head color #9c9
-foot color #9cf
-*/
+footer p {
+  font-size: 10px;
+  background-color: skyblue; /*#C8A2C8;*/
+  padding: 4px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
