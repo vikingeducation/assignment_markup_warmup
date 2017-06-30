@@ -79,7 +79,12 @@ main {
 }
 .flex-container {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+#post1, #post2, #post3 {
+  flex: 1 30%;
+  order: 1;
 }
 
 .post, .post-header {
@@ -124,7 +129,23 @@ footer p {
   main {
     width: 100%;
     position: static;
+    right: 0;
+    left: 0;
+    padding: 0;
     float: none;
     clear: both;
+    border-radius: 0;
+    border: 0 0 2px 0 solid black;
+  }
+  .rounded {
+    border-radius: 0px;
+  }
+  #post1, #post2 {
+    flex: 1 40%;
+    order: 1;
+  }
+  #post3 {
+    flex: 1 100%;
+    order: 3;
   }
 }
