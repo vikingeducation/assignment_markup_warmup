@@ -1,0 +1,122 @@
+#greeting {
+  float: right;
+}
+html,body
+{
+margin: 2px;
+
+    padding: 0px;
+overflow-x: hidden;
+}
+.site-title {
+  position: fixed;;;; /* or absolute */
+  top: 0.5%;
+  width: 100%;
+  margin-left: 0;
+  background-color:powderblue;
+  outline: #000000 solid thick;
+}
+.site-footer {
+
+  position: relative;;;;; /* or absolute */
+  float: bottom;
+  width: 100%;
+  margin-left: 0;
+  background-color:powderblue;
+  outline: #000000 solid thick;
+}
+.blankTop{
+width: 100%;
+height: 15%;
+
+}
+p {
+    text-indent: 5%;
+}
+.ad{
+background-color:powderblue;
+margin-top: 2%;
+margin-left: 5%;
+height: -webkit-fit-content;
+overflow: hidden;
+border-radius: 10px ;
+    border: 3px solid #0043ff ;
+  }
+
+@media screen and (min-width: 890px) {
+.column-center{ margin-bottom: 1%;display: inline-block; width: 65%;}
+.blogPosts .parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column-left{margin-bottom: 1%;margin-right: 5%;float: left; width: 15%; }
+.column-right{ margin-bottom: 1%; float: right; width: 15%;}
+}@media screen and (max-width: 890px) {.column-center{ margin-bottom: 1%; width: 100%;}
+.blogPosts .parent {
+  display: flex;
+  flex-wrap: wrap;
+}.column-left{margin-bottom: 1%;margin-right: 0%;float: left; width: 0%; display: none;}
+.column-right{ margin-bottom: 1%; float: right; width: 0%; display: none;}
+}
+
+.blogPosts .blogPost {
+margin-top: 2%;
+margin-right: 2%;
+margin-right: 2%;
+width: 30%;
+height: -webkit-fit-content;
+max-height: 500px;
+background-color:yellow;
+overflow: hidden;
+border-radius: 10px ;
+    border: 3px solid #000000 ;
+
+
+
+}
+.sidebar{
+  background-color:violet;
+margin-top: 2%;
+margin-left: 5%;
+margin-right: 5%;
+height: -webkit-fit-content;
+overflow: hidden;
+border-radius: 10px ;
+    border: 3px solid #962000 ;
+
+}
+
+.animated {
+  height: 200px;
+  width:200px;
+  content:url("pixelDirt.png").
+  position: relative;
+}
+
+.animated:active {
+content:url("pixelFlower.png").
+background-image: url("pixelFlower.png");
+}
+
+.hiddenText{
+  position: absolute;;; /* or absolute */
+  top: 100%;
+  left: 100%;
+  height: 0px;
+  line-height: 0px;
+overflow: hidden;
+
+}
+
+.wheel{
+  position: absolute;
+     top: 50%;
+     left: 50%;
+
+
+}
+.wheel:active{
+  transform: rotate(270deg);
+
+transform-origin: 50%;
+}
