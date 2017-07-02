@@ -1,0 +1,201 @@
+/* CSS reset */
+html, html * {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+ }
+/* End of CSS reset */
+body {
+	font-family: sans-serif;
+}
+/* ... Wide ... */
+#wide {
+	max-width: 990px;
+	margin: auto;
+}
+/* ...Top banner... */
+#banner {
+	height: 50px;
+	background-color: #ffe066;
+	border: 2px solid darkgrey;
+	display: fixed;
+	margin-bottom: 15px;
+}
+
+#banner p {
+	padding-left: 15px;
+	font-size: 22px;
+	line-height: 50px;
+}
+
+/* ...Aside Ad... */
+#aside_wide {
+	height: 400px;
+	width: 212px;
+	background-color: #ff99c2;
+	border: 2px solid darkgrey;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#aside_sec p {
+	padding: 0 5px 0px;
+	text-align: center;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+
+#aside_adspace {
+	width: 185px;
+	height: 185px;
+	background-color: white;
+	margin: auto;
+}
+
+/* ...Header... */
+#prime_header {
+	width: 760px;
+	height: 75px;
+	background-color: #85e085;
+	border: 2px solid darkgrey;
+	float: right;
+	margin-bottom: 15px;
+	border-radius: 15px;
+	position: relative;
+}
+
+#ph_container {
+	height: 100%;
+	width: 100%;
+	padding-top: 5px;
+	background-color: none;
+	position: relative;
+}
+
+#prime_header h1 {
+	font-weight: 700;
+	font-size: 28px;
+	width: 100%;
+	left: 0;
+	text-align: center;
+	bottom: 50%;
+	position: absolute;
+	line-height: 1.25em;
+}
+
+#prime_header p {
+	font-style: italic;
+	font-size: 20px;
+    width: 100%;
+	left: 0;
+	text-align: center;
+	top: 50%;
+	position: absolute;
+	line-height: 1.25em;
+} 
+
+/* ...Main Articles section... */
+.art_wide {
+	width: 244px;
+	height: auto;
+	border: 2px solid darkgrey;
+	background-color: #b3ccff;
+	float: left;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.art_wide h2 {
+	font-weight: 700;
+	font-size: 22px;
+	text-align: center;
+	padding: 15px 0px 5px;
+}
+
+.art_wide h4 {
+	font-size: 14px;
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+.art_wide h3 {
+	font-size: 16px;
+	font-weight: 600;
+	padding-left: 10px;
+	padding-bottom: 1em;
+}
+
+.art_wide p {
+	font-size: 14px;
+	padding: 0 10px 2.0em;
+	line-height: 1.4em;
+}
+
+/* ...Footer... */
+#foot_wide {
+	clear: both;
+	width: 760px;
+	height: auto;
+	background-color: #809fff;
+	border-radius: 15px;
+	border: 2px solid darkgrey;
+	float: right;
+}
+
+#foot_wide p {
+	font-size: 14px;
+	padding: 10px;
+	line-height: 1.4em;
+}
+
+/* ...Media Query... */
+@media screen and (max-width: 990px) {
+	#aside_wide {
+		display: none;
+	}
+	#prime_header {
+		width: 100%;
+		border-radius: initial;
+	}
+	.art_wide:last-child {
+		float: none;
+		clear: both; 
+		width: auto;
+		margin-right: 10px;
+}
+	
+	#foot_wide {
+		float: left;
+		width: 100%;
+		border-radius: initial;
+	}
+}
