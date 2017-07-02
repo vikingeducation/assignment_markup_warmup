@@ -62,14 +62,13 @@ body {
 	background-color: #ff99c2;
 	border: 2px solid darkgrey;
 	float: left;
-	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 #aside_sec p {
-	padding: 0 5px 0 5px;
+	padding: 0 5px 0px;
 	text-align: center;
 	margin-bottom: 5px;
 	font-size: 16px;
@@ -126,21 +125,20 @@ body {
 
 /* ...Main Articles section... */
 .art_wide {
-	width: 224px;
+	width: 244px;
 	height: auto;
 	border: 2px solid darkgrey;
 	background-color: #b3ccff;
 	float: left;
 	margin-left: 10px;
 	margin-bottom: 10px;
-	padding: 0px 10px 0px; 
 }
 
 .art_wide h2 {
 	font-weight: 700;
 	font-size: 22px;
 	text-align: center;
-	padding: 15px 0 5px 0;
+	padding: 15px 0px 5px;
 }
 
 .art_wide h4 {
@@ -152,12 +150,14 @@ body {
 .art_wide h3 {
 	font-size: 16px;
 	font-weight: 600;
+	padding-left: 10px;
 	padding-bottom: 1em;
 }
 
 .art_wide p {
 	font-size: 14px;
-	padding-bottom: 2.0em;
+	padding: 0 10px 2.0em;
+	line-height: 1.4em;
 }
 
 /* ...Footer... */
@@ -174,5 +174,28 @@ body {
 #foot_wide p {
 	font-size: 14px;
 	padding: 10px;
+	line-height: 1.4em;
+}
+
+/* ...Media Query... */
+@media screen and (max-width: 990px) {
+	#aside_wide {
+		display: none;
+	}
+	#prime_header {
+		width: 100%;
+		border-radius: initial;
+	}
+	.art_wide:last-child {
+		float: none;
+		clear: both; 
+		width: auto;
+		margin-right: 10px;
+}
 	
+	#foot_wide {
+		float: left;
+		width: 100%;
+		border-radius: initial;
+	}
 }
