@@ -1,0 +1,100 @@
+.page-header {
+	background: #FFE599;
+	padding: 10px;
+	font-size: 20px;
+	border-bottom:  2px solid black;
+	font-family: Helvetica, monospace, serif;
+}
+
+section {
+	font-family: monospace;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: row-reverse;
+
+}
+
+article {
+	border: 2px solid black;
+	padding: 10px;
+	background: #A2C4C9;
+}
+
+
+
+
+.sec-head {
+	width: 700px;
+	height: 80px;
+	border: 1px solid black;
+	border-radius: 20px;
+	margin:10px auto;
+	background: #B6D7A8;
+	
+
+}
+
+.sec-head h1 {
+	font-size: 24px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.sec-head p {
+	font-size: 15px;
+	font-weight: 300;
+	margin-top: 10px;
+
+}
+
+.post1 {
+	width: 200px;
+	height: 500px;
+	flex-direction: column;
+}
+
+
+.post2 {
+	width: 200px;
+	height: 250px;
+}
+
+.post3 {
+	width: 200px;
+	height: 350px;
+}
+
+.post1 h2,
+.post2 h2,
+.post3 h2 {
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.post1 p,
+.post2 p,
+.post3 p {
+	font-weight: 400;
+}
+
+.thoughts h3 {
+	font-weight: bold;
+	font-size: 15px;
+	text-align: left;
+	padding-top: 25px;
+
+}
+
+.thoughts p {
+	text-align: left;
+	padding-top: 15px;
+}
+
+
+aside {
+	width: 200px;
+	height: 400px;
+	border: 1px solid black;
+
+}
