@@ -1,3 +1,5 @@
+
+
 .page-header {
 	background: #FFE599;
 	padding: 10px;
@@ -44,7 +46,7 @@ section {
 
 .sec-head h1 {
 	font-size: 24px;
-	margin-top: 10px;
+	margin-top: 20px;
 	font-weight: bold;
 }
 
@@ -52,6 +54,7 @@ section {
 	font-size: 15px;
 	font-weight: 300;
 	margin-top: 10px;
+
 
 }
 
@@ -147,4 +150,119 @@ footer {
 	font-weight: 500;
 }
 
+
+
+
+
+/* Media Query for Responsiveness */
+
+@media (max-width: 990px)  {
+
+	.page-header {
+		position: fixed;
+		width: 100%;
+	}
+	aside {
+		display: none;
+	}
+
+	section {
+		margin-top: 0;
+	}
+
+	 section .sec-head {
+		float: none;
+		width: 100%;
+		text-align: center;
+		border: none;
+		border-radius: 0;
+		height: auto;
+		
+	}
+	
+	.sec-head h1 {
+		margin-top: 0px;
+		padding-top: 50px;
+	}
+
+	.sec-head p {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.space {
+		margin-left: 10px;
+		margin-right: 8px;
+	}
+
+	.post1 {
+		margin-top: 14px;
+		height: auto; 
+		font-size: 10px;
+		width: 60%;
+
+	}
+
+	.post2 {
+		margin-top: 14px;
+		height: auto; 
+		font-size: 10px;
+		float: left;
+		width: 25%;
+
+	}
+	.post3 {
+		clear: both;
+		width: auto;
+		height: auto;
+		margin-top: 15px;
+		
+	}
+
+	footer {
+		width: 100%;
+		height: auto;
+		float: none;
+		border-radius: 0;
+		border: none;
+		font-size: 11px;
+		padding-right: 0;
+		overflow: hidden;
+		
+			}
+
+}
+
+@media (max-width: 767px) {
+	
+
+	
+	
+	.post1 {
+		margin-top: 14px;
+		height: auto; 
+		font-size: 10px;
+		float: none;
+		width: auto;
+
+	}
+
+	.post2 {
+		margin-top: 14px;
+		height: auto; 
+		font-size: 10px;
+		float: none;
+		width: auto;
+
+	}
+	.post3 {
+		clear: both;
+		width: auto;
+		height: auto;
+		margin-top: 15px;
+		
+	}
+
+	
+}
 
