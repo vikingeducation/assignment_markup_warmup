@@ -1,0 +1,268 @@
+
+
+.page-header {
+	background: #FFE599;
+	padding: 10px;
+	font-size: 20px;
+	border-bottom:  1px solid black;
+	font-family: Helvetica, monospace, serif;
+	
+}
+
+section {
+	font-family: monospace;
+	text-align: center;
+	
+	margin-top: 30px;
+	
+	
+}
+
+
+
+.clear-fix {
+	clear: right;
+}
+
+.clear-fix2 {
+	clear: both;
+}
+
+
+
+/*------------*/
+
+.sec-head {
+	width: 900px;
+	height: 80px;
+	border: 1px solid black;
+	border-radius: 20px;
+	float: right;
+	background: #B6D7A8;
+	margin-right: 100px;
+	
+
+}
+
+.sec-head h1 {
+	font-size: 24px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+.sec-head p {
+	font-size: 15px;
+	font-weight: 300;
+	margin-top: 10px;
+
+
+}
+
+aside {
+	width: 200px;
+	height: 400px;
+	border: 1px solid black;
+	margin-left: 80px;
+	float: left;
+	background: #D5A6BD;
+	font-weight: bolder;
+
+}
+
+aside p {
+	margin-top: 100px;
+}
+
+/* -----------------------*/
+
+.space {
+	margin-left: 87px;
+	padding: 15px;
+
+}
+
+
+article {
+	border: 1px solid black;
+	padding: 10px;
+	background: #A2C4C9;
+}
+
+.post1 {
+	width: 200px;
+	height: 430px;
+	float: left;
+	
+}
+
+
+.post2 {
+	width: 200px;
+	height: 250px;
+	float: left;
+}
+
+.post3 {
+	width: 210px;
+	height: 350px;
+	float: left;
+}
+
+.post1 h2,
+.post2 h2,
+.post3 h2 {
+	font-size: 17px;
+	font-weight: bold;
+
+}
+
+.post1 p,
+.post2 p,
+.post3 p {
+	font-weight: 400;
+	padding-top: 5px;
+}
+
+.thoughts h3 {
+	font-weight: bold;
+	font-size: 15px;
+	text-align: left;
+	padding-top: 25px;
+
+}
+
+.thoughts p {
+	text-align: left;
+	padding-top: 15px;
+}
+
+footer {
+	width: 870px;
+	height: 50px;
+	text-align: left;
+	padding: 12px 7px;
+	border: 1px solid black;
+	border-radius: 20px;
+	float: right;
+	background: #A2C4C9;
+	margin-right: 100px;
+	margin-top: 20px;
+	font-weight: 500;
+}
+
+
+
+
+
+/* Media Query for Responsiveness */
+
+@media (max-width: 990px)  {
+
+	.page-header {
+		position: fixed;
+		width: 100%;
+	}
+	aside {
+		display: none;
+	}
+
+	section {
+		margin-top: 0;
+	}
+
+	 section .sec-head {
+		float: none;
+		width: 100%;
+		text-align: center;
+		border: none;
+		border-radius: 0;
+		height: auto;
+		
+	}
+	
+	.sec-head h1 {
+		margin-top: 0px;
+		padding-top: 50px;
+	}
+
+	.sec-head p {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.space {
+		margin-left: 10px;
+		margin-right: 8px;
+	}
+
+	.post1 {
+		margin-top: 14px;
+		height: auto; 
+		font-size: 10px;
+		width: 60%;
+
+	}
+
+	.post2 {
+		margin-top: 14px;
+		height: auto; 
+		font-size: 10px;
+		float: left;
+		width: 25%;
+
+	}
+	.post3 {
+		clear: both;
+		width: auto;
+		height: auto;
+		margin-top: 15px;
+		
+	}
+
+	footer {
+		width: 100%;
+		height: auto;
+		float: none;
+		border-radius: 0;
+		border: none;
+		font-size: 11px;
+		padding-right: 0;
+		overflow: hidden;
+		
+			}
+
+}
+
+@media (max-width: 767px) {
+	
+
+	
+	
+	.post1 {
+		margin-top: 14px;
+		height: auto; 
+		font-size: 10px;
+		float: none;
+		width: auto;
+
+	}
+
+	.post2 {
+		margin-top: 14px;
+		height: auto; 
+		font-size: 10px;
+		float: none;
+		width: auto;
+
+	}
+	.post3 {
+		clear: both;
+		width: auto;
+		height: auto;
+		margin-top: 15px;
+		
+	}
+
+	
+}
+
