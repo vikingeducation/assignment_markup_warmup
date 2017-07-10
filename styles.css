@@ -20,7 +20,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -51,7 +51,8 @@ table {
 
 /*END OF RESET*/
 
-/*colors*/
+/*kindergarten colors*/
+
 nav {
   background-color: #FFE599;
 }
@@ -66,4 +67,124 @@ article {
 }
 footer {
   background-color: #9FC5F8;
+}
+
+/*Positioning gone wild*/
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: helvetica, sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding:10px;
+  border-bottom-style: solid;
+  font-size: 20px;
+}
+
+.spacer1 {
+  width: 100%;
+  height: 65px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+.articles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.adpagewid {
+  display: flex;
+  flex-direction: row;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  height: 500px;
+  text-align: center;
+}
+
+/*fun with sizes and styling*/
+
+header, footer, article, aside {
+  margin: 5px;
+  padding: 15px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+aside h3{
+  vertical-align: middle;
+}
+
+header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+header h2 {
+  font-weight: normal;
+  font-size: 25px;
+  font-style: italic;
+  padding: 10px;
+}
+
+h3, h2 {
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 17px;
+  text-align: left;
+  padding: 10px;
+  padding-left: 0px;
+  font-weight: bold;
+}
+
+.date {
+  text-align: center;
+  font-style: italic;
+}
+
+footer {
+  border-radius: 20px;
+}
+
+/*media inquries*/
+
+@media screen and (max-width: 990px) {
+  .articles {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .first, .second {
+    width: 45%;
+  }
+
+  .ad {
+    display: none;
+  }
+
 }
