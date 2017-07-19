@@ -183,7 +183,7 @@ footer {
 .container {
     order: 2;
     flex-wrap: wrap;
-    margin: 10% 0;
+    margin: 100px 0;
 }
 
 .main-container {
@@ -195,7 +195,7 @@ footer {
 /* fixed header */
 
 .fixed-header {
-    padding: 30px;
+    padding: 20px;
     width: 100vw;
 }
 
@@ -265,7 +265,6 @@ footer {
 
 .post-content {
     font-size: 1.5rem;
-    /*margin: 10px;*/
     padding: 20px 20px;
     line-height: 1.2;
 }
