@@ -102,14 +102,83 @@ nav {
 
 header {
   margin-top: 40px;
+	margin-bottom: 10px;
+	margin-left: calc(20% + 15px);
+	width: 75%;
 }
 
 aside {
-  width: 25%;
+  width: 20%;
   height: 300px;
   margin-top: 40px;
 }
 
 article {
   width: 25%;
+}
+
+/*
+===============================
+Alignment and Margins
+===============================
+*/
+
+.vertical-ad {
+
+}
+
+.vertical-ad p {
+	text-align: center;
+}
+
+aside {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.ad-container {
+	display: flex;
+	align-items: center;
+
+}
+
+header {
+	text-align: center;
+}
+
+article {
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+
+footer {
+	margin-left: calc(20% + 15px);
+}
+/*
+==============================
+Borders
+==============================
+*/
+nav {
+	border-bottom: black solid 2px;
+}
+
+header,
+aside,
+article,
+footer {
+	border: black solid 2px;
+}
+
+/*
+==============================
+Text
+==============================
+*/
+aside {
+
+}
+
+.vertical-ad p {
+padding: 10px;
 }
