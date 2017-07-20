@@ -218,7 +218,7 @@ footer {
     /* align vertical */
     order: 1;
     width: 300px;
-    margin: 10% 0;
+    margin: 100px 0;
 }
 
 .sidebar img {
@@ -280,4 +280,41 @@ footer p {
     font-size: 1.5rem;
     padding: 20px 20px;
     line-height: 1.2;
+}
+
+
+/* narrow layout */
+
+@media only screen and (max-width: 990px) {
+    .sidebar-container {
+        display: none;
+    }
+    .main-container {
+        margin-left: 0;
+        
+    }
+    .main-title {
+        border-radius: 0;
+        width: 100vw;
+        margin-top: -15px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .container,
+    .blog {
+        display: flex;
+        align-items: ;
+    }
+    .container {
+        flex-flow: row wrap;
+        order: 2;
+    }
+    .post-1, .post-2, .post-3 {
+        flex-flow: row wrap;
+    }
+    footer {
+        border-radius: 0;
+        width: 100vw;
+        margin: 0;
+    }
 }
