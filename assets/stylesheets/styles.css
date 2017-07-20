@@ -234,3 +234,47 @@ p {
 footer {
 	padding: 5px;
 }
+
+/*
+==============================
+Narrow Screen
+==============================
+*/
+
+@media screen and (max-width: 989px) {
+	.ad-container {
+		display: none;
+	}
+
+ 	header {
+	margin: 30px 0 0 0;
+	border-radius: 0px;
+	background: #B6D7A8;
+	width: 100%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: black solid 2px;
+
+}
+
+article {
+	margin-top: 10px;
+	width: calc(50% - 40px);
+	background-color: lightblue;
+}
+
+.first {
+	margin-left: 20px;
+}
+
+.last {
+	clear: left;
+	margin: 0 auto;
+	width: 90%;
+	margin-left: 20px;
+  margin-right: 20px;
+  width: calc(100% - 50px);
+}
+
+}
