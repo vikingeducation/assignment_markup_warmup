@@ -1,0 +1,292 @@
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+==================================
+Background colors
+==================================
+*/
+nav {
+  background-color: #FFE599
+}
+
+aside {
+  background-color: #D5A6BD
+}
+
+header {
+  background-color: #B6D7A8;
+}
+
+article {
+  background-color: #A2C4C9;
+}
+
+footer {
+  background-color: lightblue;
+}
+
+/*
+====================================
+Grid
+====================================
+*/
+
+/* Clearfix */
+.clearfix::before,
+.clearfix::after {
+  display: table;
+  content: " ";
+}
+.clearfix::after {
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.body-container {
+  max-width: 990px;
+	margin: 0 auto;
+}
+
+nav {
+  position: fixed;
+  max-width: none;
+  width: 100%;
+  height: 30px;
+}
+
+header {
+  margin-top: 40px;
+	margin-bottom: 10px;
+	margin-left: calc(20% + 15px);
+	width: 75%;
+}
+
+aside {
+  width: 20%;
+  height: 300px;
+  margin-top: 40px;
+}
+
+article {
+  width: calc(25% - 15px);
+}
+
+/*
+===============================
+Alignment and Margins
+===============================
+*/
+
+.vertical-ad p {
+	text-align: center;
+}
+
+aside {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.ad-container {
+	display: flex;
+	align-items: center;
+
+}
+
+header {
+	text-align: center;
+}
+
+article {
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+
+footer {
+	margin-left: calc(20% + 15px);
+	margin-right: 20px;
+}
+
+/*
+==============================
+Borders
+==============================
+*/
+nav {
+	border-bottom: black solid 2px;
+}
+
+header,
+aside,
+article,
+footer {
+	border: black solid 2px;
+}
+
+header, footer {
+	border-radius: 10px;
+}
+
+/*
+==============================
+Text
+==============================
+*/
+
+html {
+	font-family: sans-serif;
+}
+
+.vertical-ad p {
+	padding: 10px;
+	font-weight: bold;
+}
+
+h1 {
+	padding: 5px 0px 5px 0px;
+	font-weight: bold;
+	font-size: 26px;
+}
+
+h2 {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+
+h3 {
+	padding-bottom: 5px;
+	font-style: italic;
+}
+
+h4 {
+	padding-bottom: 5px;
+	text-align: center;
+	font-size: 14px;
+}
+
+h5 {
+	padding: 5px 0px 5px 0px;
+	font-weight: bold;
+}
+
+nav h2 {
+	padding-top: 5px;
+	padding-left: 5px;
+	font-weight: bold;
+	text-align: left;
+}
+
+article {
+	padding: 5px;
+}
+
+p {
+	margin-bottom: 5px;
+}
+
+footer {
+	padding: 5px;
+}
+
+/*
+==============================
+Narrow Screen
+==============================
+*/
+
+@media screen and (max-width: 989px) {
+	.ad-container {
+		display: none;
+	}
+
+ 	header {
+	margin: 30px 0 0 0;
+	border-radius: 0px;
+	background: #B6D7A8;
+	width: 100%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: black solid 2px;
+
+}
+
+article {
+	margin-top: 10px;
+	width: calc(50% - 40px);
+	background-color: lightblue;
+}
+
+.first {
+	margin-left: 20px;
+}
+
+.last {
+	clear: left;
+	margin: 0 auto;
+	width: 90%;
+	margin-left: 20px;
+  margin-right: 20px;
+  width: calc(100% - 50px);
+}
+
+.middle {
+	margin-left: 10px;
+}
+
+footer {
+	width: 100%;
+	margin: 10px 0 0 0;
+	border-radius: 0;
+	background-color: #9FC5F8;
+}
+
+}
