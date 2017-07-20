@@ -58,11 +58,11 @@ aside {
 }
 
 header {
-  background-color: #A2C4C9
+  background-color: #B6D7A8;
 }
 
 article {
-  background-color: teal;
+  background-color: #A2C4C9;
 }
 
 footer {
@@ -203,6 +203,7 @@ h2 {
 
 h3 {
 	padding-bottom: 5px;
+	font-style: italic;
 }
 
 h4 {
@@ -275,6 +276,17 @@ article {
 	margin-left: 20px;
   margin-right: 20px;
   width: calc(100% - 50px);
+}
+
+.middle {
+	margin-left: 10px;
+}
+
+footer {
+	width: 100%;
+	margin: 10px 0 0 0;
+	border-radius: 0;
+	background-color: #9FC5F8;
 }
 
 }
