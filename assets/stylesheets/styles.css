@@ -43,3 +43,28 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*
+==================================
+Background colors
+==================================
+*/
+nav {
+  background-color: #FFE599
+}
+
+aside {
+  background-color: #D5A6BD
+}
+
+header {
+  background-color: #A2C4C9
+}
+
+article {
+  background-color: teal;
+}
+
+footer {
+  background-color: lightblue;
+}
