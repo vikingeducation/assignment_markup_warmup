@@ -1,0 +1,320 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* set universal default font size to 10px to use with REM*/
+
+html {
+    font-size: 10px;
+}
+
+
+/* box colors, simple margins */
+
+.post-1,
+.post-2,
+.post-3,
+footer {
+    background-color: #79ADDC;
+    margin: 10px;
+}
+
+.main-title {
+    background-color: #ADF7B6;
+    margin: 10px;
+    width: 100%;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.fixed-header {
+    background-color: #FFEE93;
+    position: fixed;
+    display: block;
+}
+
+.sidebar {
+    background-color: #FFC09F;
+}
+
+
+/* flex box */
+
+.container,
+.blog {
+    display: flex;
+}
+
+.container {
+    order: 2;
+    flex-wrap: wrap;
+    margin: 100px 0;
+}
+
+.main-container {
+    display: flex;
+    margin: 0 8%
+}
+
+
+/* fixed header */
+
+.fixed-header {
+    padding: 20px;
+    width: 100vw;
+}
+
+.fixed-header h3 {
+    font-size: 2.8rem;
+    padding: 10px;
+}
+
+
+/* sidebar */
+
+.sidebar-container,
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    /* align horizontal */
+    align-items: center;
+    /* align vertical */
+    order: 1;
+    width: 300px;
+    margin: 100px 0;
+}
+
+.sidebar img {
+    width: 90%;
+    padding: 0 20px;
+}
+
+.sidebar h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+    font-weight: bold;
+}
+
+
+/* main title */
+
+.main-title h1 {
+    font-size: 3rem;
+    padding: 20px 10px 10px 10px;
+    font-weight: bold;
+}
+
+.main-title h3 {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+}
+
+
+/* blog posts */
+
+.post-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 20px 10px 20px;
+}
+
+.post-subtitle {
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.post-content {
+    font-size: 1.5rem;
+    padding: 20px 20px;
+    line-height: 1.2;
+}
+
+
+/* footer */
+
+footer {
+    border-radius: 30px;
+}
+
+footer p {
+    font-size: 1.5rem;
+    padding: 20px 20px;
+    line-height: 1.2;
+}
+
+
+/* narrow layout */
+
+@media only screen and (max-width: 990px) {
+    .sidebar-container {
+        display: none;
+    }
+    .main-container {
+        margin-left: 0;
+        
+    }
+    .main-title {
+        border-radius: 0;
+        width: 100vw;
+        margin-top: -15px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .container,
+    .blog {
+        display: flex;
+        align-items: ;
+    }
+    .container {
+        flex-flow: row wrap;
+        order: 2;
+    }
+    .post-1, .post-2, .post-3 {
+        flex-flow: row wrap;
+    }
+    footer {
+        border-radius: 0;
+        width: 100vw;
+        margin: 0;
+    }
+}
