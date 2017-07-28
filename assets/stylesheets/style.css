@@ -1,0 +1,168 @@
+*{
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ font: inherit;
+ font-family: "Roboto Condensed"
+ color:#333333;
+ vertical-align: baseline;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 1vw;
+  margin-right: 1vw;
+
+}
+
+#main-header {
+
+  width:100%;
+  padding: 10px;
+}
+
+header {
+  background-color:#FFE599;
+  border: 3px solid #000000;
+  width:100%;
+
+}
+
+#main-content {
+  margin:auto;
+  width:80%;
+  order: 2;
+
+}
+
+#main-content-title {
+  background-color: #B6D7A8;
+  border: 3px solid #000000;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#main-content-title h2 {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+section {
+  background-color:#A2C4C9;
+  border: 3px solid #000000;
+
+}
+
+
+
+.post-articles {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.post-articles section{
+  justify-content:space-between;
+  margin: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width:20%;
+  height: 50%;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.post-articles h3{
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.post-articles .main-date{
+  text-align: center;
+}
+
+.post-articles h4 {
+  font-weight: 800;
+}
+
+.post-articles p {
+  padding: 10px;
+  text-indent: 16px;
+}
+
+.post-articles section:first-child {
+  margin-left: 0px;
+}
+
+.post-articles section:nth-child(3) {
+  margin-right:0px;
+}
+
+#main-footer {
+order:4;
+width:=100%;
+}
+
+footer {
+  background-color: #9FC5F8;
+  border: 3px solid #000000;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+#main-adv {
+  order: 1;
+    height: 300px;
+    width:15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.adv {
+  background-color: #D5A6BD;
+  border: 3px solid #000000;
+  text-align: center;
+}
+
+@media only screen and (max-width: 990px) {
+*{
+    flex-grow: 1;
+}
+
+  .wrapper {
+    margin: 0px;
+  }
+
+#main-content-title{
+  border-radius: 0px;
+
+}
+
+.post-articles section:nth-child(3) {
+  width:100%;
+}
+
+
+.post-articles section {
+  width: 40%;
+
+}
+
+#main-footer {
+  border-radius: 0px;
+}
+
+  #main-adv {
+    display:none;
+  }
+
+}
