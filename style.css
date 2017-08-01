@@ -44,7 +44,21 @@ nav {
 
 aside {
     background-color: #e38f8f;
+    height: 400px;
+    position: relative;
 }
+
+.aside-content img {
+    width: 100%;
+}
+
+aside.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 header {
     background-color: #9fe5b7;
