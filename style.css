@@ -155,3 +155,11 @@ header p {
 .corners {
     border-radius: 10px;
 }
+
+
+@media only screen and (max-width : 989px) {
+    header, 
+    .footer {
+        width: 100%;
+    }
+}
