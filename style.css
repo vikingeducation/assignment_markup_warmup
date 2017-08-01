@@ -29,17 +29,19 @@ p {
 nav,
 aside, 
 header,
-section,
+.post,
 footer {
     border: 1px solid #000;
 }
 
 nav {
     background-color: #f3f79e;
-    /*overflow: hidden;*/
+    height: 25px;
+    overflow: hidden;
     position: fixed; 
     top: 0; 
     width: 100%; 
+    z-index: 1;
 }
 
 aside {
@@ -55,16 +57,31 @@ aside {
     width: 100%;
 }
 
-aside.flex-container {
+.flex-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.clearfix::before,
+.clearfix::after {
+  display: table;
+  content: " ";
+}
 
+.clearfix::after {
+  clear: both;
+}
 
 header {
     background-color: #9fe5b7;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 75px;
+}
+
+header p {
+    font-style:italic;
 }
 
 section {
