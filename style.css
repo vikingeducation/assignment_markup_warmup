@@ -31,3 +31,23 @@ header,
 section {
     border: 1px solid #000;
 }
+
+nav {
+    background-color: #f3f79e;
+}
+
+aside {
+    background-color: #e38f8f;
+}
+
+header {
+    background-color: #9fe5b7;
+}
+
+section {
+    background-color: #8cbabc;
+}
+
+.footer {
+    background-color: #7fa5e3;
+}
