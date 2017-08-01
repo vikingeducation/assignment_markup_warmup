@@ -60,12 +60,21 @@ header,
 
 nav {
     background-color: #f3f79e;
-    height: 25px;
+    height: 28px;
     overflow: hidden;
     position: fixed; 
     top: 0; 
     width: 100%; 
     z-index: 1;
+}
+
+.flex-container-nav{
+    display: flex;
+    align-items: baseline;
+}
+
+nav h3 {
+    padding: 5px 0 0 5px;
 }
 
 aside {
@@ -142,5 +151,5 @@ header p {
 }
 
 main {
-    margin-top: 30px;
+    margin-top: 35px;
 }
