@@ -173,6 +173,9 @@ header p {
     
     .footer {
         float: none;
+    }
+    
+    .footer h6 {
         padding-right: 15px;
     }
     
