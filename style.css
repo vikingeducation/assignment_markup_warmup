@@ -151,3 +151,7 @@ header p {
     width: 736px;
     float: right;
 }
+
+.corners {
+    border-radius: 10px;
+}
