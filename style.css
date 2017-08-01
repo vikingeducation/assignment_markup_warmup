@@ -10,12 +10,13 @@ h1 {
 }
 
 h2 {
-    font-size: 150%;
-    font-weight: 700;
+    font-size: 140%;
+    font-weight: bold;
 }
 
 h3 {
-    font-size: 125%;
+    font-size: 120%;
+    font-weight: bold;
 }
 
 h6 {
@@ -30,6 +31,14 @@ h2,
 h3, 
 p {
     padding-bottom: 5px;
+}
+
+.bold {
+    font-weight: bold; 
+}
+
+.center {
+    text-align: center;
 }
 
 nav,
