@@ -1,6 +1,7 @@
 html {
     font-family: Helvetica, sans-serif;
     font-size: 16px;
+    max-width: 990px;
 }
 
 h1 {
@@ -25,16 +26,20 @@ p {
     font-size: 100%;
 }
 
-
 nav,
 aside, 
 header,
-section {
+section,
+footer {
     border: 1px solid #000;
 }
 
 nav {
     background-color: #f3f79e;
+    /*overflow: hidden;*/
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
 }
 
 aside {
@@ -49,6 +54,10 @@ section {
     background-color: #8cbabc;
 }
 
-.footer {
+footer {
     background-color: #7fa5e3;
+}
+
+main {
+    margin-top: 30px;
 }
