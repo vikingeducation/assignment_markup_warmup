@@ -158,9 +158,17 @@ header p {
 
 
 @media only screen and (max-width : 989px) {
+    .ad-box {
+        display: none;
+    }
+    
     header, 
     .footer {
         width: 100%;
+    }
+    
+    .corners {
+        border-radius: 0px;
     }
     
     .footer {
