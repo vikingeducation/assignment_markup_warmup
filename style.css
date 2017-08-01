@@ -42,12 +42,12 @@ h2 {
     padding-top: 5px;
 }
 
-.bold {
-    font-weight: bold; 
-}
-
 .center {
     text-align: center;
+}
+
+main {
+    margin-top: 35px;
 }
 
 nav,
@@ -148,8 +148,6 @@ header p {
 .footer {
     background-color: #7fa5e3;
     padding: 3px 10px 10px 10px;
-}
-
-main {
-    margin-top: 35px;
+    width: 736px;
+    float: right;
 }
