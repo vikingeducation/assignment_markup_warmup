@@ -162,4 +162,11 @@ header p {
     .footer {
         width: 100%;
     }
+    
+    .footer {
+        float: none;
+        padding-right: 15px;
+    }
+    
+    
 }
