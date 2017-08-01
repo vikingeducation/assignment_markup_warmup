@@ -122,6 +122,10 @@ header p {
     margin-right: 0;
 }
 
+.post-title {
+    text-align: center;
+}
+
 footer {
     background-color: #7fa5e3;
 }
