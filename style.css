@@ -167,6 +167,10 @@ header p {
         width: 100%;
     }
     
+    main{
+        margin-top:28px;
+    }
+    
     .corners {
         border-radius: 0px;
     }
@@ -177,6 +181,18 @@ header p {
     
     .footer h6 {
         padding-right: 15px;
+    }
+    
+    .flex-container-body {
+        flex-wrap: wrap;
+    }
+    
+    .post {
+        margin: 5px 5px 10px 10px; 
+    }
+    
+    .post:first-child {
+        margin-left: 10px;
     }
     
     
