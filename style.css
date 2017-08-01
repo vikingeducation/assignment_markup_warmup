@@ -54,7 +54,7 @@ nav,
 aside, 
 header,
 .post,
-footer {
+.footer {
     border: 1px solid #000;
 }
 
@@ -136,8 +136,9 @@ header p {
     text-align: center;
 }
 
-footer {
+.footer {
     background-color: #7fa5e3;
+    padding: 3px 10px 10px 10px;
 }
 
 main {
