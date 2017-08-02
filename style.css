@@ -188,11 +188,16 @@ header p {
     }
     
     .post {
-        margin: 5px 5px 10px 10px; 
+        margin: 5px 10px 10px 15px; 
+        flex-grow: 1;
     }
     
     .post:first-child {
-        margin-left: 10px;
+        margin-left: 15px;
+    }
+    
+    .post:last-child {
+        margin-right: 25px;
     }
     
     
