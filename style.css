@@ -1,0 +1,212 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    max-width: 990px;
+}
+
+h1 {
+    font-size: 200%;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 140%;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 90%;
+}
+
+p {
+    font-size: 100%;
+}
+
+h1 {
+    padding-bottom: 5px;
+}
+
+h2, 
+h3, 
+p {
+    padding-bottom: 10px;
+}
+
+h1, 
+h2 {
+    padding-top: 5px;
+}
+
+.center {
+    text-align: center;
+}
+
+main {
+    margin-top: 35px;
+}
+
+nav,
+aside, 
+header,
+.post,
+.footer {
+    border: 1px solid #000;
+}
+
+nav {
+    background-color: #f3f79e;
+    height: 28px;
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1;
+}
+
+.flex-container-nav{
+    display: flex;
+    align-items: baseline;
+}
+
+nav h3 {
+    padding: 5px 0 0 5px;
+}
+
+aside {
+    background-color: #e38f8f;
+    width: 200px;
+    height: 400px;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.aside-content img {
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clearfix::before,
+.clearfix::after {
+  display: table;
+  content: " ";
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+header {
+    background-color: #9fe5b7;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 75px;
+}
+
+header p {
+    font-style:italic;
+}
+
+.post {
+}
+
+.flex-container-body {
+    display: flex;
+    flex: row;
+}
+
+.post {
+    background-color: #8cbabc;
+    padding: 10px;
+    margin: 0 5px 10px 5px;
+    flex-basis: 30%;
+}
+
+.post:first-child {
+    margin-left: 0;
+}
+
+.post:last-child {
+    margin-right: 0;
+}
+
+.post-title {
+    text-align: center;
+}
+
+.footer {
+    background-color: #7fa5e3;
+    padding: 3px 10px 10px 10px;
+    width: 736px;
+    float: right;
+}
+
+.corners {
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width : 989px) {
+    .ad-box {
+        display: none;
+    }
+    
+    header, 
+    .footer {
+        width: 100%;
+    }
+    
+    main{
+        margin-top:28px;
+    }
+    
+    .corners {
+        border-radius: 0px;
+    }
+    
+    .foooter {
+        width: 100%;
+    }
+    
+    .footer {
+        float: none;
+    }
+    
+    .footer h6 {
+        padding-right: 15px;
+    }
+    
+    .flex-container-body {
+        flex-wrap: wrap;
+    }
+    
+    .post {
+        margin: 5px 10px 10px 15px; 
+        flex-grow: 1;
+    }
+    
+    .post:first-child {
+        margin-left: 15px;
+    }
+    
+    .post:nth-child(even) {
+        margin-left: 5px;
+    }
+    
+    .post:last-child {
+        margin-right: 25px;
+    }
+    
+    
+}
