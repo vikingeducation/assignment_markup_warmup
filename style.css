@@ -175,6 +175,10 @@ header p {
         border-radius: 0px;
     }
     
+    .foooter {
+        width: 100%;
+    }
+    
     .footer {
         float: none;
     }
@@ -194,6 +198,10 @@ header p {
     
     .post:first-child {
         margin-left: 15px;
+    }
+    
+    .post:nth-child(even) {
+        margin-left: 5px;
     }
     
     .post:last-child {
