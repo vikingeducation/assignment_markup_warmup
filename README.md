@@ -6,6 +6,13 @@ And 1 and 2!  And 1, and 2...!
 
 Melissa Manousos
 
+Project - create sample blog page, including responsive options.
+Full width = 990px
+Mockup: https://s3.amazonaws.com/viking_education/web_development/web_app_eng/blog_mockup_wide.png
+
+resized width < 990px.
+Mockup: https://s3.amazonaws.com/viking_education/web_development/web_app_eng/blog_mockup_narrow.png
+
 Responsiveness:
 Having an unexpected issue with footer pushing off screen to the left.
   *float: none;*
@@ -21,4 +28,4 @@ Need to resize footer to only be as wide as the screen. Currently width is exten
 
 Need to get posts to fill row.
   *flex-grow: 1;*
-  pushed posts fill their respective rows. 
+  pushed posts fill their respective rows.
