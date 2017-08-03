@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+* {
+  overflow: auto;
+}
+
+html {
+  font-family: Quicksand, Helvetica, sans-serif;
+}
+
+p {
+  line-height: 1.3;
+}
+
+.ad, .blog-post, .headline, footer {
+  border: 2px solid #000;
+}
+
+.main-header {
+  position: fixed;
+  top:0;
+  height: 3em;
+  background-color: #FEE68D;
+  width: 100%;
+  border-bottom: 2px solid #000;
+}
+
+.main-header h1 {
+  font-size: 1em;
+  line-height: 3em;
+  margin:0;
+  padding:0;
+  padding-left: 1em;
+}
+
+main {
+  max-width: 990px;
+  margin: 4em auto 0 auto;
+}
+
+.ad, .blog-post {
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.ad {
+  background-color:#D3A6BF;
+}
+
+.ad-content {
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  text-align: center;
+  padding: 0;
+}
+
+.ad-content img {
+  width: 100%;
+}
+
+aside {
+  width: 25%;
+}
+
+aside, figure {
+  float:left;
+  height: 500px;
+}
+
+figcaption {
+  font-weight: bold;
+}
+
+.blog-container {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.blog-post {
+  display:inline-block;
+  vertical-align: top;
+}
+
+.headline {
+  background-color: #B8D7A2;
+  width:100%;
+  padding:1em;
+  margin-bottom: 1em;
+  text-align:center;
+}
+
+.headline h2 {
+  margin: 0;
+}
+
+.blog-post {
+  background-color: #A4C4CA;
+  width:calc((100% - 2em) /3);
+  padding-left:1em;
+  padding-right: 1em;
+  text-align:center;
+}
+
+.blog-post:last-of-type {
+  margin-right:0;
+}
+
+.blog-post h4, .blog-post p {
+  text-align: left;
+}
+
+
+footer {
+  background-color: #A1C4FD;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+footer, .headline {
+  border-radius:1em;
+}
+
+@media (max-width:989px) {
+
+  main {
+    margin-top: 3em;
+  }
+
+  .ad {
+    display: none;
+  }
+
+  .headline, footer {
+    border-radius: 0;
+    border-left:0;
+    border-right:0;
+  }
+
+  .headline {
+    border-top: 0;
+  }
+
+  .blog-post {
+    margin: 0 0 1em 1em;
+    width: calc(50% - 1.5em);
+  }
+
+  .blog-post:last-child {
+    width: calc(100% - 2em);
+  }
+
+
+}
