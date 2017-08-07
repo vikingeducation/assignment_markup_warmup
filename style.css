@@ -6,23 +6,32 @@ html {
 #top-bar {
   background-color: orange;
   border: 1px solid black;
-  height: 50px;
+  height: 40px;
 }
 
 #top-bar h2.top-title {
   font-size: 80%;
+  padding: 10px;
 }
 
 /*LOREM BANNER LOREM BANNER*/
 #title {
   border: 1px solid black;
-  border-radisu: 5%;
+  border-radius: 5px;
   width: 500px;
   height: 150px;
-  background-color: green;
+  background-color: palegreen;
 }
 
 #title div.title-box {
   padding: 10px;
   text-align: center;
+}
+
+/*MAIN CONTENT MAIN CONTENT*/
+#main-content section.main-content-section{
+  width: 30%;
+  text-align: center;
+  border: 1px solid black;
+  background-color: lightblue;
 }
