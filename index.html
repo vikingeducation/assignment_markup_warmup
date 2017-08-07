@@ -6,30 +6,46 @@
 
     <title>A Web Page</title>
 
+    <!-- stylesheets used-->
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
+    
+    <!-- font-->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
   </head>
+
+  <!-- Body contains the navbar, ad-section, blog-section-->
   <body>
+    <!-- Navbar fixed to top of screen-->
   	<div class="navbar">
   		<h3>The Lorem Micro Blog</h3>
   	</div>
 
+    <!-- Container div contains ad-section, blog-section-->
   	<div class="container">
+
+      <!-- Ad-section has the text and square box-->
   		<div class="ad-section">
   			  <p><b>Check out my vertically centered ad!</b></p>
           <div id="square"><span id="x">X</span></div>
         
   		</div>	
+
+      <!-- Blog section contains the header, posts and footer-->
   		<div class="blog-section">
+
+        <!-- blog-header-->
   			<section class="blog-header">
     				<h2>The Lorem Micro Blog</h2>
     				<h4><i>By Foo Bar</i></h4>
   			</section>
 
+        <!--blog posts section contains three posts-->
   			<section class="blog-post-section">
-  				<section class="post-1">
+
+          <!-- post1-->
+  				<section class="post" id="post1">
   					<div class="post-header">
 	  					<h2>A Most Posty Post<h2>
 	  					<h4>Written 1/3/2000</h4>
@@ -44,8 +60,9 @@
 	  					<p>Aenean eleifend ultricies maximus. Donec at faucibus nibh, placerat pretium tellus. Curabitur dignissim dolor risus, quis convallis ipsum molestie ac. </p>
 	  				</article>
   				</section>
-  					
-  				<section class="post-2">
+  				
+          <!-- post2-->	
+  				<section class="post" id="post2">
   					<div class="post-header">
 	  					<h2>Another Posty Post<h2>
 	  					<h4>Written 1/2/2000</h4>
@@ -55,7 +72,9 @@
 	  					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus nunc a metus laoreet congue. Nam eget sapien id tortor tempor tempor. Fusce vel elit libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
 	  				</article>
   				</section>
-  				<section class="post-3">
+
+          <!-- post3-->
+  				<section class="post" id="post3">
   					<div class="post-header">
 	  					<h2>A Posty Post<h2>
 	  					<h4>Written 1/1/2000</h4>
@@ -68,11 +87,12 @@
   				</section>
   			</section>
 
+        <!-- blog footer-->
   			<section class="blog-footer">
   			 <p>The copyrighted telecast is presented by authority of the Office of the Commissioner of Blogging. It may not be reproduced or retransmitted in any form, and the accounts and descriptions of this game may not be disseminated, without express written consent.</p>	
   			</section>
 
-  		</div>
-  	</div>
+  		</div> <!-- end of container div-->
+  	</div> <!-- end of navbar-->
   </body>
 </html>  
