@@ -7,6 +7,7 @@ html {
   background-color: orange;
   border: 1px solid black;
   height: 40px;
+  position: fixed;
 }
 
 #top-bar h2.top-title {
@@ -17,7 +18,7 @@ html {
 /*LOREM BANNER LOREM BANNER*/
 #title {
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 20px;
   width: 500px;
   height: 100px;
   background-color: palegreen;
@@ -29,6 +30,10 @@ html {
 }
 
 /*MAIN CONTENT MAIN CONTENT*/
+#main content: {
+  width: 70%;
+}
+
 #main-content section.main-content-section{
   width: 30%;
   text-align: center;
@@ -41,4 +46,16 @@ html {
 
 p {
   text-align: justify;
+}
+
+/*FOOTER FOOTER FOOTER FOOTER*/
+#copyright {
+  width: 70%;
+  border: 1px solid black;
+  border-radius: 40px;
+  background-color: lightblue;
+}
+
+summary {
+  font-size: 9px;
 }
