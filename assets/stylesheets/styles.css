@@ -61,6 +61,89 @@ clearfix
  	clear: both;
 }
 
+/*
+responsive design
+*/
+
+@media screen and (max-width:989px) {
+    #adbox {
+			display: none;
+		 }
+		 .title,
+	 	footer {
+	 		width: 100%;
+	 	}
+		.break {
+			height: 56px;
+			width: 100%;
+		}
+		.articles {
+			width: calc(100% - 10px);
+			margin-right: 10px;
+			display: flex;
+			align-items: baseline;
+			flex-wrap: wrap;
+		}
+
+		#article1,
+		#article2 {
+			width: calc(50% - 16px);
+		}
+
+		#article3 {
+			margin-top: 10px;
+		}
+}
+
+@media screen and (min-width:990px) {
+		.title,
+		footer {
+			width: calc(990px - 224px - 10px - 12px);
+			margin-left: 10px;
+			border-radius: 20px;
+		}
+		.break {
+			height: 66px;
+			width: 100%;
+		}
+		.articles {
+			max-width: calc(990px - 224px - 6px);
+			display: flex;
+			align-items: baseline;
+		}
+		article {
+			width: calc(33% -10px);
+		}
+}
+
+	.container {
+	max-width: 990px;
+	margin: auto;
+}
+
+/*
+borders and text alignment
+*/
+
+nav,
+aside,
+img,
+article,
+.title,
+footer {
+	border: 3px solid black;
+}
+
+.title h2,
+article h2,
+h3 {
+	text-align: center;
+}
+
+/*
+nav bar
+*/
+
 nav {
   background-color: rgb(255,229,153);
 	position: fixed;
@@ -70,10 +153,9 @@ nav {
 	font-size: 20px;
 }
 
-.container {
-	max-width: 990px;
-	margin: auto;
-}
+/*
+adbox
+*/
 
 aside {
 	height: 400px;
@@ -82,20 +164,6 @@ aside {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-}
-
-.break {
-	height: 66px;
-	width: 100%;
-}
-
-nav,
-aside,
-img,
-article,
-.title,
-footer {
-	border: 3px solid black;
 }
 
 img {
@@ -109,12 +177,13 @@ aside p {
 	-webkit-font-smoothing: antialiased;
 }
 
+/*
+title and footer
+*/
+
 .title,
 footer {
-	margin-left: 10px;
-	width: calc(990px - 224px - 10px - 12px);
 	margin-bottom: 10px;
-	border-radius: 20px;
 }
 
 .title {
@@ -135,11 +204,6 @@ small {
 	padding: 5px 25px 5px 10px;
 }
 
-.articles {
-	width: calc(990px - 224px - 6px);
-	display: flex;
-	align-items: baseline;
-}
 
 .title h1 {
 	font-size: 28px;
@@ -152,7 +216,6 @@ small {
 .title h2 {
 	font-size: 20px;
 	font-style: italic;
-	text-align: center;
 	padding-bottom: 10px;
 }
 
@@ -160,9 +223,12 @@ small {
 	float: left;
 }
 
+/*
+blog post
+*/
+
 article {
 	margin-left: 10px;
-	width: calc(33% -10px);
 	background-color: rgb(160,194,199);
 }
 
@@ -172,11 +238,6 @@ article p {
 	margin-bottom: 20px;
 	padding-left: 10px;
 	padding-right: 10px;
-}
-
-article h2,
-h3 {
-	text-align: center;
 }
 
 h4 {
@@ -195,7 +256,6 @@ h3 {
 article h2 {
 	font-size: 20px;
 	font-weight: 900;
-	text-align: center;
 	-webkit-font-smoothing: antialiased;
 	padding: 10px;
 }

@@ -6,9 +6,10 @@
 
     <title>The Lorem Micro Blog</title>
 
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/assets/stylesheets/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
+<!--fixed position nav bar -->
   </head>
   <body>
       <header>
@@ -17,15 +18,17 @@
 
       <div class="break"></div>
 
+<!--set container max width -->
       <div class="container">
 
+<!--ad for wide screen-->
         <div class="clearfix">
-          <aside class="float">
+          <aside id="adbox" class="float">
             <p>Check out my vertically centered ad!</p>
-            <img src="/ad.png" alt="Ad image" height="150px" width="200px">
+            <img src="/assets/images/ad.png" alt="Ad image" height="150px" width="200px">
           </aside>
 
-
+<!--Blog title-->
 
           <div class="float">
             <header class="title">
@@ -33,8 +36,9 @@
               <h2>By Foo Bar</h2>
             </header>
 
-            <div class="articles" "clearfix">
-              <article>
+<!--Articles set in flexbox -->
+            <div class="articles">
+              <article id="article1">
                 <h2>A Most Posty Post</h2>
                 <h3>Written 1/3/2000</h3>
 
@@ -44,14 +48,14 @@
                 <h4>Additional Thoughts...</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<p>
               </article>
-              <article>
+              <article id="article2">
                 <h2>Another Posty Post</h2>
                 <h3>Written 1/2/2000</h3>
 
                 <h4>Only Thoughts...</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </article>
-              <article>
+              <article id="article3">
                 <h2>A Posty Post</h2>
                 <h3>Written 1/1/2000</h3>
 
@@ -68,12 +72,6 @@
             </footer>
           </div>
         </div>
-
-
-
-
-
-
 
       </div>
   </body>
