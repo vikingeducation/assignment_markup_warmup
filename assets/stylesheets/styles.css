@@ -72,6 +72,7 @@ responsive design
 		 .title,
 	 	footer {
 	 		width: 100%;
+			box-sizing: border-box;
 	 	}
 		.break {
 			height: 56px;
@@ -85,14 +86,13 @@ responsive design
 			flex-wrap: wrap;
 		}
 
-		#article1,
-		#article2 {
+		article {
 			width: calc(50% - 16px);
 		}
 
-		#article3 {
-			margin-top: 10px;
-		}
+		 article:last-child:nth-child(odd) {
+			 width: auto;
+		 }
 }
 
 @media screen and (min-width:990px) {
@@ -192,7 +192,6 @@ footer {
 
 footer {
 	background-color: rgb(159,197,248);
-	margin-top: 10px;
 }
 
 small {
@@ -224,12 +223,13 @@ small {
 }
 
 /*
-blog post
+blog posts
 */
 
 article {
 	margin-left: 10px;
 	background-color: rgb(160,194,199);
+	margin-bottom: 10px;
 }
 
 article p {
