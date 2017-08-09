@@ -9,7 +9,8 @@ html {
   background-color: orange;
   border: 1px solid black;
   height: 40px;
-  position: static;
+  width: 900px;
+  position: fixed;
 }
 
 #top-bar h2.top-title {
@@ -33,7 +34,6 @@ html {
 
 /*MAIN CONTENT MAIN CONTENT*/
 #main content: {
-  width: 70%;
 }
 
 #main-content section.main-content-section{
@@ -68,6 +68,6 @@ summary {
   width: 20%;
   float: left;
   position: absolute;
-  border: 1 px solid;
+  border: 1px solid black;
   height: 500px;
 }
