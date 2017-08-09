@@ -35,7 +35,8 @@ html {
 }
 
 #main-content section.main-content-section{
-  width: 30%;
+  width: 20%;
+  height: 200px;
   text-align: center;
   border: 1px solid black;
   background-color: lightblue;
@@ -46,16 +47,17 @@ html {
 
 p {
   text-align: justify;
+  font-size: 12px;
 }
 
 /*FOOTER FOOTER FOOTER FOOTER*/
 #copyright {
-  width: 70%;
+  width: 75%;
   border: 1px solid black;
   border-radius: 40px;
   background-color: lightblue;
 }
 
 summary {
-  font-size: 9px;
+  font-size: 10px;
 }
