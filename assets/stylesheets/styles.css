@@ -90,7 +90,7 @@ responsive design
 			width: calc(50% - 16px);
 		}
 
-		 article:last-child:nth-child(odd) {
+		 article:last-of-type:nth-of-type(odd) {
 			 width: auto;
 		 }
 }

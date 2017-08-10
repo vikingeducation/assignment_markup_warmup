@@ -1,0 +1,25 @@
+$color-nav: rgb(255,229,153);
+$color-aside: rgb(207,161,184);
+$color-title: rgb(182,215,168);
+$color-footer: rgb(159,197,248);
+$color-article: rgb(160,194,199);
+
+nav {
+  background-color: $color-nav;
+}
+
+aside {
+  background-color: $color-aside;
+}
+
+.title {
+	background-color: $color-title;
+}
+
+footer {
+	background-color: $color-footer;
+}
+
+article {
+  background-color: $color-article;
+}
