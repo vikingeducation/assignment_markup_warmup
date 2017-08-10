@@ -38,7 +38,7 @@ html {
   text-align: center;
   background-color: lightblue;
   padding: 10px;
-  margin: 20px 5px;
+  margin: 20px
   display: inline-block;
   border: 1px solid black;
 }
@@ -61,8 +61,12 @@ summary {
   font-size: 12px;
 }
 
-#navbar {
+#sidebar {
   width: 25%;
   border: 1px solid black;
   height: 500px;
+}
+
+body {
+  display: flex;
 }
