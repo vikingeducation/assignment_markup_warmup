@@ -9,6 +9,9 @@ html {
   border: 1px solid black;
   height: 40px;
   position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 #top-bar h2.top-title {
