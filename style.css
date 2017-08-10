@@ -1,6 +1,7 @@
 html {
   background-color: white;
   max-width: 960px;
+  margin: auto;
 }
 
 #top-bar {
@@ -31,6 +32,9 @@ html {
 /*MAIN CONTENT MAIN CONTENT*/
 #main-content {
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 10px 0;
 }
 
 
@@ -41,6 +45,8 @@ html {
   margin: 20px
   display: inline-block;
   border: 1px solid black;
+  flex-basis: 30%;
+
 }
 
 p {
@@ -65,6 +71,11 @@ summary {
   width: 25%;
   border: 1px solid black;
   height: 500px;
+  margin-right: 5px;
+}
+
+#sidebar div.side-box {
+ margin: 200px auto 0 auto;
 }
 
 body {
