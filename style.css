@@ -83,4 +83,5 @@ summary {
 
 body {
   display: flex;
+  padding-top: 50px;
 }
