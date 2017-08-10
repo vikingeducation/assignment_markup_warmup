@@ -4,6 +4,12 @@ html {
   margin: auto;
 }
 
+
+body {
+  display: flex;
+  padding-top: 40px;
+}
+
 #top-bar {
   background-color: orange;
   border: 1px solid black;
@@ -17,6 +23,26 @@ html {
 #top-bar h2.top-title {
   font-size: 80%;
   margin: 15px;
+}
+
+#sidebar {
+  width: 25%;
+  border: 1px solid black;
+  height: 500px;
+  margin-right: 5px;
+  padding: 10px;
+}
+
+#sidebar div.side-box {
+ margin: 200px auto 0 auto;
+ text-align: center;
+ font-size: 12px;
+}
+
+#sidebar div.ad-box {
+  width: 170px;
+  height: 170px;
+  border: 1px solid black;
 }
 
 /*LOREM BANNER LOREM BANNER*/
@@ -68,20 +94,4 @@ p {
 
 summary {
   font-size: 12px;
-}
-
-#sidebar {
-  width: 25%;
-  border: 1px solid black;
-  height: 500px;
-  margin-right: 5px;
-}
-
-#sidebar div.side-box {
- margin: 200px auto 0 auto;
-}
-
-body {
-  display: flex;
-  padding-top: 40px;
 }
