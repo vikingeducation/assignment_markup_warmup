@@ -11,7 +11,7 @@ body {
 }
 
 #top-bar {
-  background-color: orange;
+  background-color: #ffdbaf;
   border: 1px solid black;
   height: 40px;
   position: fixed;
@@ -31,6 +31,7 @@ body {
   height: 500px;
   margin-right: 5px;
   padding: 10px;
+  background-color: #d7afff;
 }
 
 #sidebar div.side-box {
@@ -52,7 +53,7 @@ body {
   border: 1px solid black;
   border-radius: 20px;
   height: 100px;
-  background-color: palegreen;
+  background-color: #d0ffaf;
 }
 
 #title div.title-box {
@@ -71,7 +72,7 @@ body {
 
 #main-content section.main-content-section {
   text-align: center;
-  background-color: lightblue;
+  background-color: #afd9ff;
   padding: 10px;
   margin: 20px
   display: inline-block;
@@ -89,7 +90,7 @@ p {
 #copyright {
   border: 1px solid black;
   border-radius: 20px;
-  background-color: lightblue;
+  background-color: #afd9ff;
   padding: 10px;
 }
 
