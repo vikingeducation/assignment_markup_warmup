@@ -1,0 +1,148 @@
+/* The page has the following sections:
+1. The fixed nav bar (div)at the top - stretches the whole length of screen
+2. The container div which contains:
+	a. The ad section
+	b. The blog section -
+		i. The blog header
+		ii. The blog posts section (3 posts)
+		iii. The blog footer
+*/
+
+/* Deafult font family used in the body of web page, block style display and no margins */
+body {
+	display: block;
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+.navbar {
+	background-color: gold;
+	position: fixed; /* Set the navbar to fixed position */
+    top: 0; 		/* Position the navbar at the top of the page */
+    width: 100%; 	/* Full width */
+	height: 50px;
+	border: 1px solid black;
+}
+
+.navbar h3 {
+	padding-left: 10px;
+	line-height: 3px;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	margin-top: 55px;
+}
+
+.ad-section, .blog-header, .blog-footer, .post {
+	border: 2px solid black;
+	margin: 0.5%;
+}
+
+.ad-section {
+	background-color: palevioletred;	
+	float: left;
+	width: 20%;
+	height: 350px;
+}
+
+.ad-section p{
+	text-align: center;
+}
+
+/* the white square with the x in the ad-setion */
+#square {
+	background-image: url("https://www.landinst.com/images/placeholder-100x100.png");
+	height: 100px;
+	width: 100px;
+}
+
+.blog-section{
+	float: left;
+	border-style: none;
+}
+
+.blog-header {
+	background-color: darkseagreen;
+	border-radius: 20px;
+	width: 100%;
+	text-align: center;
+	line-height: 1px;
+}
+
+.blog-post-section {
+	width: 100%;	
+}
+
+.post{
+	background-color: skyblue;
+	font-size: 12px;
+	display: inline-block;
+	vertical-align: top;
+}	
+
+.post-header {
+	text-align: center;
+	line-height: 2px;
+}
+
+/* all the articles have text from the font-familt Arial */
+article {
+	font-family: 'Arial', 'Helvetica', sans-serif;
+	padding: 5px;
+}
+
+.blog-footer {
+	background-color: dodgerblue;
+	width: 100%;
+	border-radius: 20px;
+	font-size: 12px;
+}
+
+/* For screens smaller than the 990px, the ad section disappears
+and the 3rd blog post goes to a second row and stretches to cover 
+the whole second row, while the first two share the first row of 
+the blog section
+*/
+@media only screen and (max-width: 990px)  {
+	.ad-section {
+		display: none;
+	}
+
+	.blog-section {
+		width: 100%;
+	}
+	
+	.blog-post-section #post1, #post2{
+		width: calc(48%);
+	}
+
+	.blog-post-section #post3 {
+		width: calc(96%);
+	}
+
+}
+
+@media only screen and (min-width: 990px)  {
+
+	/* Using the flex box for the ad-section 
+	to vertically center the text and box */
+	.ad-section {
+		display: flex;
+		flex-direction: column;
+	  	justify-content: center;
+	  	align-items: center; 
+	  	align-content: center;
+	}
+
+	.blog-section {
+		display: block;
+		width: 75%;
+	}
+
+	.blog-post-section .post {
+		width: 31%;
+	}	
+}

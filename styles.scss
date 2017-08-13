@@ -1,0 +1,155 @@
+@import "colors";
+
+//variable declarations
+$min-screen-width: 990px;
+$square-url: url("https://www.landinst.com/images/placeholder-100x100.png");
+
+//mixins
+@mixin thin-border {
+	border: 1px solid black;
+}
+
+@mixin medium-border {
+	border: 2px solid black;
+	margin: 0.5%;	
+}
+
+//page level declarations
+body {
+	display: block;
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+article {
+	font-family: 'Arial', 'Helvetica', sans-serif;
+	padding: 5px;
+}
+
+h3 {
+	padding-left: 10px;
+	line-height: 3px;
+}
+
+//navbar declarations
+//Set the navbar to fixed position
+//Position navbar to the top of the page
+.navbar {
+	@include thin-border;
+	background-color: $navbar;
+	position: fixed; 
+    top: 0; 		
+    width: 100%; 	
+	height: 50px;
+}
+
+//container declartions
+.container {
+	width: 80%;
+	margin: auto;
+	margin-top: 55px;
+}
+
+//ad-section declarations
+.ad-section {
+	@include medium-border;
+	background-color: $ad-section;	
+	float: left;
+	width: 20%;
+	height: 350px;
+
+	p {
+		text-align: center;
+	}
+
+	// the white square with the x in the ad-setion */
+	#square {
+		background-image: $square-url;
+		height: 100px;
+		width: 100px;
+	}
+
+	@media only screen and (min-width: $min-screen-width)  {
+		display: flex;
+		flex-direction: column;
+	  	justify-content: center;
+	  	align-items: center; 
+	  	align-content: center;
+	}
+
+	@media only screen and (max-width: $min-screen-width)  {
+		display: none;
+	}	
+	
+}
+
+//blog-section declaration
+.blog-section {
+	float: left;
+	border-style: none;
+
+	@media only screen and (min-width: $min-screen-width)  {
+		display: block;
+		width: 75%;
+	}
+
+	@media only screen and (max-width: $min-screen-width)  {
+		width: 100%;
+	}
+}
+
+//blog-header declarations
+.blog-header {
+	@include medium-border;
+	background-color: $blog-header;
+	border-radius: 20px;
+	width: 100%;
+	text-align: center;
+	line-height: 1px;
+}
+
+//blog-post-section declarations
+.blog-post-section {
+	width: 100%;
+
+	.post-header {
+		text-align: center;
+		line-height: 2px;
+	}
+
+	.post {
+		@include medium-border;
+		background-color: $post;
+		display: inline-block;
+		vertical-align: top;
+		font-size: 12px;
+	
+
+		@media only screen and (min-width: $min-screen-width)  {
+			width: 31%;
+		}	
+
+		#post1, #post2 {
+			@media only screen and (min-width: $min-screen-width)  {
+				width: calc(48%);
+			}
+		}
+
+		#post3 {
+			@media only screen and (min-width: $min-screen-width)  {
+				width: calc(96%);
+			}
+		}
+
+	}	
+}
+
+//blog-footer declarations
+.blog-footer {
+	@include medium-border;
+	background-color: $blog-footer;
+	width: 100%;
+	border-radius: 20px;
+	font-size: 12px;
+}
+
