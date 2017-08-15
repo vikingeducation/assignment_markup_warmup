@@ -99,9 +99,14 @@ summary {
   font-size: 12px;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 700px) {
   #main-content {
     display: flex;
     justify-content: space-between;
   }
+}
+
+@media (max-width: 700px) {
+  #ad {
+    display: none;
 }
