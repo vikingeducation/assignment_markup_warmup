@@ -4,12 +4,12 @@ html {
   margin: auto;
 }
 
-
 body {
   display: flex;
   padding-top: 40px;
 }
 
+/*banner*/
 #top-bar {
   background-color: #ffdbaf;
   border: 1px solid black;
@@ -25,7 +25,8 @@ body {
   margin: 15px;
 }
 
-#sidebar {
+/*advertisement*/
+#ad {
   width: 25%;
   border: 1px solid black;
   height: 500px;
@@ -34,13 +35,13 @@ body {
   background-color: #d7afff;
 }
 
-#sidebar div.side-box {
+#ad div.ad-content {
  margin: 200px auto 0 auto;
  text-align: center;
  font-size: 12px;
 }
 
-#sidebar div.ad-box {
+#ad div.ad-box {
   width: 170px;
   height: 170px;
   background-color: #fff5f5;
@@ -48,7 +49,7 @@ body {
   margin: auto;
 }
 
-/*LOREM BANNER LOREM BANNER*/
+/*banner*/
 #title {
   border: 1px solid black;
   border-radius: 20px;
@@ -61,14 +62,13 @@ body {
   text-align: center;
 }
 
-/*MAIN CONTENT MAIN CONTENT*/
+/*main content w 3 posts*/
 #main-content {
   align-items: flex-start;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
-
-#main-content section.main-content-section {
+#main-content section.post {
   text-align: center;
   background-color: #afd9ff;
   padding: 10px;
@@ -78,20 +78,13 @@ body {
   flex-basis: 30%;
 }
 
-@media (min-width: 990px) {
-  #main-content {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
 p {
   text-align: justify;
   font-size: 12px;
 }
 
 
-/*FOOTER FOOTER FOOTER FOOTER*/
+/*footer*/
 #copyright {
   border: 1px solid black;
   border-radius: 20px;
@@ -101,4 +94,11 @@ p {
 
 summary {
   font-size: 12px;
+}
+
+@media (min-width: 990px) {
+  #main-content {
+    display: flex;
+    justify-content: space-between;
+  }
 }
