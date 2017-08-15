@@ -108,5 +108,14 @@ summary {
 
 @media (max-width: 700px) {
   #ad {
-    display: none;
+    display: none
+  }
+
+  #title {
+    border-radius: 0px;
+  }
+
+  #copyright {
+    border-radius: 0px;
+  }
 }
