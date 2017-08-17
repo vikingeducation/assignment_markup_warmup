@@ -118,4 +118,8 @@ summary {
   #copyright {
     border-radius: 0px;
   }
+  
+  #main-content section.post {
+    margin: 5px 0;
+  }
 }
