@@ -92,4 +92,19 @@ aside {
 
 .flex {
 	display: flex;
+	flex-wrap: wrap;
+}
+
+.main-section-middle {
+	width: 100%;
+}
+
+/* added in the articles */
+article {
+	max-width: 99%;
+	min-width: 400px;
+	min-height: 400px;
+	margin: 0 auto;
+	background-color: blue;
+	flex-grow: 2;
 }
