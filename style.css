@@ -62,4 +62,6 @@ section {
   height: 500px;
 }
 
-/* 2.2.1 trying to keep the main section off of the add side */
+.main-section-bottom {
+  height: 50px;
+}
