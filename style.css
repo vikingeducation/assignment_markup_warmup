@@ -15,7 +15,7 @@ header {
 /* 2. making the main that has a huge margin and clearfixing it*/
 
 main {
-  max-width: 990px;
+  max-width: 1200px;
   margin: 0 auto;
   clear: both;
 }
@@ -47,7 +47,19 @@ div {
   background-color: green;
 }
 
+section {
+    width: 80%;
+    float: right;
+}
+
 .main-section-top {
   background-color: green;
   height: 130px;
 }
+
+.main-section-middle {
+  background-color: blue;
+  height: 500px;
+}
+
+/* 2.2.1 trying to keep the main section off of the add side */
