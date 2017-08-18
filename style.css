@@ -171,3 +171,12 @@ p {
 aside {
   margin-top: 10px;
 }
+
+/* fixed the title section padding being too large */
+
+.rcorners2 {
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 0px;
+    margin: 10px;
+}
