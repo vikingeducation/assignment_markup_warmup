@@ -118,7 +118,6 @@ section {
 }
 
 .main-section-bottom {
-  height: 50px;
 }
 
 /* 2.2.1 created the main section middle articles */
@@ -149,4 +148,11 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/* main section bottom text */
+
+p {
+  padding: 0;
+  margin: 10px;
 }
