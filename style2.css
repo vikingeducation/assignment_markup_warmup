@@ -122,3 +122,14 @@ article p {
 	background-color: blue;
 	height: 400px;
 }
+
+/* setup the copyright section */
+
+.main-section-bottom {
+	background-color: blue;
+	margin-top: 5px;
+}
+
+.main-section-bottom p {
+	padding: 10px;
+}
