@@ -15,10 +15,13 @@ header {
 /* 2. making the main that has a huge margin and clearfixing it*/
 
 main {
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 10px;
+  max-width: 990px;
+  margin: 0 auto;
   clear: both;
+}
+
+main{
+  margin-top: 10px;
 }
 
 /* 2.1 making the aside, ... aside*/
@@ -38,6 +41,13 @@ aside {
   clear: both;
 }
 
+/* 2.2 this is the "main block" without the aside */
+
 div {
   background-color: green;
+}
+
+.main-section-top {
+  background-color: green;
+
 }
