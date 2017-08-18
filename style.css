@@ -12,7 +12,13 @@ header {
   height: 45px;
 }
 
+/* 1. making the main that has a huge margin*/
 
+main {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px
+}
 aside {
   background-color: red;
 }
