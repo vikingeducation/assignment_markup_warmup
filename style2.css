@@ -87,3 +87,9 @@ aside {
 	font-size: 20px;
 	padding: 10px;
 }
+
+/* fixed the flex of the posts section */
+
+.flex {
+	display: flex;
+}
