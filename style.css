@@ -1,6 +1,16 @@
-header {
-  background-color: blue;
+/*setting up the browser*/
+
+body {
+  margin: 0px 0px 0px 0px;
 }
+
+/* 1. making the header that sticks up top */
+header {
+  background-color: yellow;
+  margin: 0;
+  width: 10000px;
+}
+
 
 aside {
   background-color: red;
