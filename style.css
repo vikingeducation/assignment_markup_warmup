@@ -154,7 +154,7 @@ article {
 
 p {
   padding: 0;
-  margin: 1px;
+  margin: 0px;
 }
 
 /* rounded cornerss */
@@ -162,6 +162,12 @@ p {
 .rcorners1 {
     border-radius: 25px;
     background: #73AD21;
-    padding: 20px;
+    padding: 10px;
     margin: 10px;
+}
+
+/* fixed the addy stuff being too high lol */
+
+aside {
+  margin-top: 10px;
 }
