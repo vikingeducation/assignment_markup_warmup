@@ -58,10 +58,23 @@ section {
 }
 
 .main-section-middle {
-  background-color: blue;
+  background-color: white;
   height: 500px;
 }
 
 .main-section-bottom {
   height: 50px;
+}
+
+/* 2.2.1 created the main section middle articles */
+
+.flex {
+  display: flex;
+}
+
+article {
+  min-height: 100px;
+  width: 32%;
+  margin: 10px;
+  background-color: blue;
 }
