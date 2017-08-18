@@ -67,3 +67,23 @@ header {
 aside {
 	display: none;
 }
+
+/* fixed the title */
+
+.main-section-top {
+	background-color: green;
+	text-align: center;
+}
+
+.title {
+	font-size: 30px;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+.tagline {
+	font-size: 20px;
+	padding: 10px;
+}
