@@ -12,15 +12,30 @@ header {
   height: 45px;
 }
 
-/* 1. making the main that has a huge margin*/
+/* 2. making the main that has a huge margin and clearfixing it*/
 
 main {
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 10px
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 10px;
+  clear: both;
 }
+
+/* 2.1 making the aside, ... aside*/
+
 aside {
   background-color: red;
+  float: left;
+  width: 20%;
+  height: 500px;
+}
+
+/* 2.1.1 clearfixing the main */
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 div {
