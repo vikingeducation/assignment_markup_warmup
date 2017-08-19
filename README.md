@@ -6,4 +6,4 @@ And 1 and 2!  And 1, and 2...!
 
 Steven Li
 
-To see this site deployed: www.steven4354.github.io/assignment_markup_warmup
+To see this site deployed: https://steven4354.github.io/assignment_markup_warmup/
