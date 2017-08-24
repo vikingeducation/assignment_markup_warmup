@@ -50,6 +50,10 @@ table {
 /* Main Styles
 /*===============*/
 
+body {
+  font-family: helvetica;
+}
+
 nav {
   height: 45px;
   width: 100%;
@@ -62,8 +66,9 @@ nav {
   align-items: center;
 }
 aside {
-  height: 450px;
+  height: 500px;
   width: 250px;
+  max-width: 990px;
   border: 2px solid;
   background: #D5A6BD;
   margin: 60px 0 0 100px;
@@ -71,6 +76,7 @@ aside {
   float: left;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
 #image {
@@ -84,36 +90,87 @@ main {
   float: left;
   margin: 60px 0 0 20px;
   width: 75%;
-  height: 700px;
-  background: grey;
+  height: 800px;
 }
 
 #banner {
   height: 100px;
-  width: 60%;
+  width: 90%;
   background: #B6D7A8;
   border: 2px solid;
+  border-radius: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#page-title{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#banner h3 {
+  font-style: italic;
 }
 
 #posts {
-  width: 75%;
-  height: 50%;
-  background: lightblue;
+  width: 90%;
+  height: 70%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  line-height: 1.5em;
+  font-size: 14px;
 }
+
+.post-title, .post-subtitle {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.post-subtitle {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.post-date, article p {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
 
 article {
   width: 33%;
+  max-width: 990px;
   background: #A2C4C9;
   border: 2px solid;
   margin: 10px 10px;
 }
 
+#post1 {
+  margin-left: 0;
+}
+
+#post3 {
+  margin-right: 0;
+}
+
+article h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
 footer {
-  height: 100px;
-  width: 60%;
+  height: 90px;
+  width: 90%;
   background: #9FC5F8;
   border: 2px solid;
+  border-radius: 25px;
+  line-height: 1.25em;
+  box-sizing: border-box;
+  padding: 10px;
+
 }
