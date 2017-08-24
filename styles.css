@@ -52,6 +52,7 @@ table {
 
 body {
   font-family: helvetica;
+  display: flex;
 }
 
 nav {
@@ -173,4 +174,10 @@ footer {
   box-sizing: border-box;
   padding: 10px;
 
+}
+
+@media only screen and (max-width: 990px) {
+  aside, footer {
+    display: none;
+  }
 }
