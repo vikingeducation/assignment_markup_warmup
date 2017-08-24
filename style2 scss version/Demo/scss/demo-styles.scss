@@ -1,0 +1,56 @@
+@import "reset.scss", "fullspan-header.scss", "full-width-body.scss";
+
+aside {
+	display: none;
+}
+
+.main-section-top {
+	background-color: green;
+	text-align: center;
+}
+
+.title {
+	font-size: 30px;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+.tagline {
+	font-size: 20px;
+	padding: 10px;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.main-section-middle {
+	width: 100%;
+}
+
+article {
+	max-width: 99%;
+	min-width: 400px;
+	min-height: 400px;
+	margin: 0 auto;
+	background-color: white;
+	flex-grow: 2.3;
+  p {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: blue;
+    height: 400px;
+  }
+}
+
+.main-section-bottom {
+	background-color: blue;
+	margin-top: 5px;
+  p {
+    padding: 10px;
+  }
+}
