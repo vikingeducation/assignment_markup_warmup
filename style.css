@@ -1,0 +1,182 @@
+/* css reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*setting up the browser*/
+
+body {
+  margin: 0px 0px 0px 0px;
+}
+
+/* 1. making the header that sticks up top */
+header {
+  background-color: yellow;
+  margin: 0;
+  width: 100%;
+  height: 45px;
+}
+
+/* 2. making the main that has a huge margin and clearfixing it*/
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  clear: both;
+}
+
+main{
+  margin-top: 10px;
+}
+
+/* 2.1 making the aside, ... aside*/
+
+aside {
+  background-color: red;
+  float: left;
+  width: 20%;
+  height: 500px;
+}
+
+/* 2.1.1 clearfixing the main */
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 2.2 this is the "main block" without the aside */
+
+div .main-section-top {
+  background-color: green;
+}
+
+.main-section-bottom {
+  background-color: green;
+}
+
+section {
+    width: 80%;
+    float: right;
+}
+
+.main-section-top {
+  background-color: green;
+  height: 130px;
+}
+
+.main-section-middle {
+  background-color: white;
+  height: 500px;
+}
+
+.main-section-bottom {
+}
+
+/* 2.2.1 created the main section middle articles */
+
+.flex {
+  display: flex;
+}
+
+article {
+  min-height: 100px;
+  width: 32%;
+  margin: 10px;
+  background-color: blue;
+}
+
+/* title and tagline css */
+.title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 20px;
+  text-align: center;
+}
+
+.align-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* main section bottom text */
+
+p {
+  padding: 0;
+  margin: 0px;
+}
+
+/* rounded cornerss */
+
+.rcorners1 {
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* fixed the addy stuff being too high lol */
+
+aside {
+  margin-top: 10px;
+}
+
+/* fixed the title section padding being too large */
+
+.rcorners2 {
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 0px;
+    margin: 10px;
+}
