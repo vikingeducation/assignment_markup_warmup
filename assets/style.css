@@ -39,4 +39,5 @@ main{
 
 .flexsection{
 	display: flex;
+	flex-direction: row;
 }
