@@ -40,4 +40,26 @@ main{
 .flexsection{
 	display: flex;
 	flex-direction: row;
+	align-items: flex-start;
+}
+
+.flexsection .inside-article{
+	border: 4px solid;
+	padding: 10px;
+	margin: 10px 5px;
+	background: rgba(149, 167, 246, 0.76);
+}
+
+.inside-article .body-article p{
+	line-height: 1.05;
+}
+
+/*Footer*/
+
+footer{
+	border: 3px solid;
+	border-radius: 20px;
+	padding: 7px;
+	line-height: 1;
+	background: rgba(149, 167, 246, 0.87);
 }
