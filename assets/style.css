@@ -1,0 +1,42 @@
+*{
+    font-family: 'Baloo Tammudu', cursive;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+nav{
+	position: fixed;
+	background: #f7f71d;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+main{
+	max-width: 990px;
+	margin: 50px auto;
+}
+
+#headertitle{
+	border: 2px solid;
+	border-radius: 20px;
+	background: rgba(33, 208, 39, 0.6);
+	text-align: center;
+	padding: 5px 0;
+}
+
+#headertitle h1{
+	font-size: 1.35rem;
+}
+
+#headertitle h2{
+	font-size: 1.05rem;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 1;
+}
+
+.flexsection{
+	display: flex;
+}
