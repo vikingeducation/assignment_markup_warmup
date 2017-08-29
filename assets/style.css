@@ -18,6 +18,28 @@ main{
 	margin: 50px auto;
 }
 
+aside{
+	width: 11%;
+	height: 390px;
+	padding: 20px;
+	border: 2px solid;
+	text-align: center;
+	position: absolute;
+	left: 10px;
+	z-index: -1;
+	background: pink;
+}
+
+aside p{
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+aside img{
+	width: 90%;
+	margin: 30px auto;
+}
+
 #headertitle{
 	border: 2px solid;
 	border-radius: 20px;
