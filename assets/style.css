@@ -27,7 +27,7 @@ aside{
 	position: absolute;
 	left: 10px;
 	z-index: -1;
-	background: pink;
+	background: rgb(245, 175, 187);
 }
 
 aside p{
@@ -38,6 +38,11 @@ aside p{
 aside img{
 	width: 90%;
 	margin: 30px auto;
+}
+
+section{
+	width: 75%;
+	margin: 0 auto;
 }
 
 #headertitle{
