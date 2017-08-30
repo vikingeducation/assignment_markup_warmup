@@ -79,13 +79,19 @@ table {
     align-items: stretch;
     justify-content: space-around;
 }
+
+
+#main-content {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+}
 .entries {
     background-color: rgba(50, 50, 200, .5);
 }
 
 #ad-div {
     background-color: rgba(255, 10, 10, .5);
-    float: left;
 }
 
 #disclaimer {
