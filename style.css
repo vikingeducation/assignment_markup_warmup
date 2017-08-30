@@ -67,6 +67,22 @@ table {
 
 #nav-bar {
     padding-left: .5%;
-    background-color: rgba(0, 100, 100, .75);
+    background-color: rgba(200, 200, 0, .5);
 }
 
+#main-header {
+    background-color: rgba(50, 200, 50, .5);
+}
+
+.entries {
+    background-color: rgba(50, 50, 200, .5);
+}
+
+#ad-div {
+    background-color: rgba(255, 10, 10, .5);
+    float: left;
+}
+
+#disclaimer {
+    background-color: rgba(0, 200, 200, .5);
+}
