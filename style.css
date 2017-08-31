@@ -65,8 +65,11 @@ table {
 body {
     display: flex;
     justify-content: center;
+    padding-top: 50px;
 }
 
+
+/*Nav-Bar*/
 #nav-bar {
     background-color: rgba(255, 255, 0, 1);
     height: 50px;
@@ -82,20 +85,24 @@ body {
     padding-left: 5px;
 }
 
+
+/*Rest of Page*/
 #whole-page {
     width: 1000px;
 }
 
+
+/*Dept. of Revenue*/
 #ad-div {
     height: 100px;
     background-color: rgba(255, 10, 10, .5);
     float: left;
 }
 
+/*Main Content*/
 #main-header {
     float: right;
     background-color: rgba(50, 200, 50, .5);
-    margin-top: 50px;
 }
 
 #blog-entries {
@@ -111,6 +118,7 @@ body {
     background-color: rgba(50, 50, 200, .5);
 }
 
+/*Footer*/
 #disclaimer {
     background-color: rgba(0, 200, 200, .5);
 }
