@@ -105,6 +105,7 @@ body {
     background-color: rgba(50, 200, 50, .5);
 }
 
+/*Blog Entries*/
 #blog-entries {
     clear: right;
     display: flex;
