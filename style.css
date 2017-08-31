@@ -62,8 +62,10 @@ table {
 
 
 
-
-
+body {
+    display: flex;
+    justify-content: center;
+}
 
 #nav-bar {
     background-color: rgba(255, 255, 0, 1);
@@ -76,34 +78,37 @@ table {
 }
 
 #site-title {
-    font-family: ;
     font-size: 25px;
     padding-left: 5px;
 }
 
+#whole-page {
+    width: 1000px;
+}
+
+#ad-div {
+    height: 100px;
+    background-color: rgba(255, 10, 10, .5);
+    float: left;
+}
+
 #main-header {
+    float: right;
     background-color: rgba(50, 200, 50, .5);
     margin-top: 50px;
 }
 
 #blog-entries {
+    clear: right;
     display: flex;
+    justify-content: space-evenly;
     align-items: stretch;
-    justify-content: space-around;
+    height: 200px;
+    margin: 10px;
 }
 
-
-#main-content {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-around;
-}
 .entries {
     background-color: rgba(50, 50, 200, .5);
-}
-
-#ad-div {
-    background-color: rgba(255, 10, 10, .5);
 }
 
 #disclaimer {
