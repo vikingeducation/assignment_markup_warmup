@@ -45,6 +45,7 @@ section{
 	margin: 0 auto;
 }
 
+
 #headertitle{
 	border: 2px solid;
 	border-radius: 20px;
@@ -89,4 +90,32 @@ footer{
 	padding: 7px;
 	line-height: 1;
 	background: rgba(149, 167, 246, 0.87);
+}
+
+
+
+@media only screen and (max-width: 900px){
+	nav{
+		border: 1px solid;
+	}
+
+	aside{
+		display: none;
+	}
+
+	main{
+		margin: 38px auto;
+	}
+
+	section{
+		width: 100%;
+	}
+
+	#headertitle{
+		border-radius: 0;
+	}
+
+	footer{
+		border-radius: 0;
+	}
 }
