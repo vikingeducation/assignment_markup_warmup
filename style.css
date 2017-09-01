@@ -89,37 +89,54 @@ body {
 /*Rest of Page*/
 #whole-page {
     width: 1000px;
+    display: flex;
+    margin: 20px;
 }
 
 
 /*Dept. of Revenue*/
 #ad-div {
-    height: 100px;
+    margin: 10px;
+    height: 500px;
     background-color: rgba(255, 10, 10, .5);
     float: left;
 }
 
+
 /*Main Content*/
-#main-header {
+main {
+    margin: 10px;
     float: right;
+}
+
+/*Main-header*/
+#main-header {
     background-color: rgba(50, 200, 50, .5);
+    width: 100%;
+    height: 100px;
 }
 
 /*Blog Entries*/
 #blog-entries {
-    clear: right;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: stretch;
     height: 200px;
-    margin: 10px;
 }
 
 .entries {
     background-color: rgba(50, 50, 200, .5);
+    margin: 5px;
+    width: calc(33% - 10px);
 }
 
 /*Footer*/
 #disclaimer {
     background-color: rgba(0, 200, 200, .5);
+}
+
+/*let's try some more general classes?*/
+
+.rounded-corners {
+    border-radius: 20px;
 }
