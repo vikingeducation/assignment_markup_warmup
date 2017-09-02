@@ -78,6 +78,8 @@ body {
     align-items: center;
     position: fixed;
     top: 0;
+    font-family: sans-serif;
+    padding-left: 10px;
 }
 
 #site-title {
@@ -90,7 +92,6 @@ body {
 #whole-page {
     width: 1000px;
     display: flex;
-    margin: 20px;
 }
 
 
@@ -98,11 +99,20 @@ body {
 #ad-div {
     margin: 10px;
     height: 500px;
+    padding: 20px 10px;
     background-color: #d5a6bd;
     float: left;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
+
+#ad {
+    margin-top: 15px;
+}
+
+
 
 
 /*Main Content*/
@@ -122,30 +132,87 @@ main {
     text-align: center;
 }
 
+
+
 /*Blog Entries*/
 #blog-entries {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: stretch;
-    height: 200px;
+    margin: 10px 0px;
 }
 
 .entries {
     background-color: #a2c4c9;
-    margin: 5px;
-    width: calc(33% - 10px);
+    width: calc(33% - 25px);
+    padding: 10px;
 }
+
+.entry-title {
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.entry-date {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.paragraph-title {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.entry-text {
+    margin-bottom: 20px;
+}
+
 
 /*Footer*/
 #disclaimer {
     background-color: #9fc5f8;
     text-align: justify;
     padding: 5px 15px 5px 15px;
-    font-size: 15px;
-}
+ }
 
 /*let's try some more general classes?*/
 
 .rounded-corners {
     border-radius: 20px;
+}
+
+.big-cabin {
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+}
+
+.medium-cabin {
+    font-family:  'Cabin', sans-serif;
+    font-size: 25px;
+}
+
+.small-cabin {
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+}
+
+.italic-raleway {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.medium-raleway {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.small-raleway {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+.fine-print {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
 }
