@@ -1,0 +1,23 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: White;
+  background-image: url(Images/BlogBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.site-title {
+  font-weight: ;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.creator {
+  font-size: 14px;
+  font-weight: 300;
+  padding-bottom: 40px;
+}
