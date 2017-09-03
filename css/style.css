@@ -32,11 +32,44 @@ nav p {
 	font-weight: bold;
 }
 
+aside {
+	float: left;
+	background-color: var(--pink);
+	text-align: center; /* horiz centers text */
+	display: flex;
+	justify-content: center; /* centers items vertically */
+	flex-direction: column; /* arranges items vertically, as opposed to horizontally */
+	align-items: center; /* horiz centers image */
+	height: 400px;
+	margin: 15px 10px 0px 0px;
+	width: 24%;
+}
+
+aside p {
+	font-size: small;
+	font-weight: bold;
+	margin: 0px 0px 15px 0px;
+	padding: 0px 10px;
+}
+
+aside #ad {
+	/* content:url('https://openclipart.org/image/800px/svg_to_png/191347/Chick.png'); */
+	background-image:url('/images/duck-thumb.jpg');
+	width: 150px;
+	height: 133px;
+}
+
+main {
+	width: 74%;
+	float: right;
+}
+
 header {
 	background-color: var(--green);
 	border-radius: 15px;
 	text-align: center;
 	margin: 15px 0px;
+	clear: left;
 }
 
 header h1 {
@@ -50,14 +83,42 @@ header .author {
 	margin: 0px 0px 16px 0px;
 }
 
+footer {
+	background-color: var(--blue);
+	clear: both;
+	border-radius: 15px;
+	padding: 5px 15px;
+	margin: 15px 0px;
+}
+
+footer small {
+	font-size: small;
+}
+
 article {
 	background-color: var(--grey);
-	padding: 0px 20px;
+	float: left;	
+	width: 30%;
+	margin: 10px;
 }
+
+/*
+article:nth-of-type(3n + 1) {
+	margin: 0px 0px 10px 0px;	
+}
+
+article:nth-of-type(3n + 2) {
+	margin: 0px 10px 10px 10px;	
+}
+
+article:nth-of-type(3n + 3) {
+	margin: 0px 0px 10px 0px;	
+}
+*/
 
 article h2 {
 	text-align: center;
-	margin: 16px 16px 10px 16px;
+	margin: 16px 16px 0px 16px;
 	font-size: large;
 	font-weight: bold;
 }
@@ -70,115 +131,47 @@ article .date {
 article h3 {
 	font-size: medium;
 	font-weight: bold;
-	margin: 15px 0px;
+	padding-left: 15px;
 }
 
 article p {
 	margin-bottom: 15px;
-}
-
-footer {
-	background-color: var(--blue);
-	border-radius: 15px;
-	padding: 5px 15px;
-	margin: 15px 0px;
-}
-
-footer small {
-	font-size: small;
-}
-
-aside {
-	background-color: var(--pink);
-	text-align: center; /* horiz centers text */
-	display: flex;
-	justify-content: center; /* centers items vertically */
-	flex-direction: column; /* arranges items vertically, as opposed to horizontally */
-	align-items: center; /* horiz centers image */
-}
-
-aside p {
-	font-size: small;
-	font-weight: bold;
-	margin: 0px 0px 15px 0px;
-}
-
-aside #ad {
-	/* content:url('https://openclipart.org/image/800px/svg_to_png/191347/Chick.png'); */
-	background-image:url('/images/duck-thumb.jpg');
-	width: 150px;
-	height: 133px;
-}
-
-/* contains all but nav and aside */
-.flex-container {
-	width: 990px;
-	display: flex;
-	flex-direction: row;
-	margin: 60px auto 0 auto;
-}	
-
-/* not currently used */
-.flex-item {
-}
-
-.posts {
-	display: flex;
-	flex-direction: row;
-}
-
-.posts > article {
-	width: 33%;		
-	margin: 0px 5px;
-}
-	
-.posts > article:first-child {
-	margin: 0px 5px 0px 0px;
-}	
-
-.posts > article:last-child {
-	margin: 0px 0px 0px 5px;
-}
-
-/* is a flex-item */
-aside {
-	height: 400px;
-	margin: 15px 15px 0px 0px;
+	padding: 15px;
 }
 
 /* */
 /* Media Queries */
 /* */
 
-/* screen < 989px */
-@media screen and (max-width: 989px) {
-	.flex-container {
-		width: 100%;
-		margin-top: 55px;
-	}
-
-	.posts {
-		display: flex;
-		flex-flow: row wrap;
-	}
-
-	.posts article:first-child {
-		width: 40%;
-		margin: 15px 5px 0px 15px;
+/* wide screen: >= 990px */
+@media screen and (min-width: 890px) {
+	.container {
+		max-width: 990px;
+		margin: 60px auto 50px auto;
 	}	
+}	
 
-	.posts article:nth-child(2) {
-		width: 40%;
-		margin: 15px 15px 0px 5px;
-	}
-
-	.posts article:last-child {
+/* narrow screen: < 990px*/
+@media screen and (max-width: 989px) {
+	.container {
 		width: 100%;
-		margin: 15px;
+		margin: 55px 0px 0px 0px;
 	}
 
 	aside {
 		display: none;
+	}
+
+	main {
+		width: 100%;
+	}
+
+	article {
+		width: 41%;
+	}
+
+	article:nth-of-type(3n + 3) {
+		width: 97%;
 	}
 
 	header {
@@ -196,3 +189,4 @@ aside {
 		border-right: 0px;
 	}	
 }
+
