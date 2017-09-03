@@ -114,6 +114,20 @@ footer{
 	#headertitle{
 		border-radius: 0;
 	}
+	
+	.flexsection{
+		flex-flow: row wrap;
+		align-items: flex-start;
+		margin: 0 10px;
+	}
+	
+	.flexsection .inside-article{
+		width: 48%;
+	}
+	
+	.flexsection .inside-article:nth-child(3){
+		flex-grow: 1;
+	}
 
 	footer{
 		border-radius: 0;
