@@ -123,8 +123,13 @@ body {
 
 /*Main Content*/
 main {
-    margin: 10px;
     float: right;
+}
+
+@media (min-width: 990px){
+    main {
+        margin: 10px;
+    }
 }
 
 /*Main-header*/
@@ -183,8 +188,10 @@ main {
 
 /*let's try some more general classes?*/
 
-.rounded-corners {
-    border-radius: 20px;
+@media (min-with 990px) {
+    .rounded-corners {
+        border-radius: 20px;
+    }
 }
 
 .big-cabin {
