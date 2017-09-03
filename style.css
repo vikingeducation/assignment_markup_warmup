@@ -108,6 +108,12 @@ body {
     text-align: center;
 }
 
+@media (max-width: 989px) {
+    #ad-div {
+        display: none;
+    }
+}
+
 #ad {
     margin-top: 15px;
 }
