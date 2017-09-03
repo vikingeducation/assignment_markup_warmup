@@ -90,7 +90,7 @@ body {
 
 /*Rest of Page*/
 #whole-page {
-    width: 1000px;
+    width: 990px;
     display: flex;
 }
 
@@ -149,14 +149,40 @@ main {
 #blog-entries {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
     margin: 10px 0px;
+}
+
+@media (max-width: 989px){
+    #blog-entries {
+        flex-wrap: wrap;
+        padding: 10px;
+        align-items: stretch;
+    }
 }
 
 .entries {
     background-color: #a2c4c9;
-    width: calc(33% - 25px);
     padding: 10px;
+    height: 100%;
+}
+
+@media (min-width: 990px){
+    .entries {
+        width: calc(33% - 25px);
+    }
+}
+
+@media (max-width: 989px){
+    .entries {
+        width: calc(50% - 45px);
+        margin: 10px;
+    }
+}
+
+@media (max-width: 989px){
+    #third-entry {
+        flex-grow: 1;
+    }
 }
 
 .entry-title {
