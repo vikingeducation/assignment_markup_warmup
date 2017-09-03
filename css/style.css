@@ -1,0 +1,198 @@
+:root {
+	--pink: #d5a6bd;
+	--green: #b6d7a8;
+	--yellow: #ffe599;
+	--grey: #a2c4c9;
+	--blue: #9fc5f8;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+header, article, footer, aside {
+	border: 2px solid black;
+}
+
+nav {
+	width: 100%;
+	position: fixed;
+	height: 55px;
+	top: 0px;
+	background-color: var(--yellow);
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	margin: 0px;
+	padding-left: 30px;
+}
+
+nav p {
+	line-height: 55px;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+header {
+	background-color: var(--green);
+	border-radius: 15px;
+	text-align: center;
+	margin: 15px 0px;
+}
+
+header h1 {
+	margin: 21px 15px 5px 0px;
+	font-size: x-large;
+	font-weight: bold;
+}
+
+header .author {
+	font-style: italic;	
+	margin: 0px 0px 16px 0px;
+}
+
+article {
+	background-color: var(--grey);
+	padding: 0px 20px;
+}
+
+article h2 {
+	text-align: center;
+	margin: 16px 16px 10px 16px;
+	font-size: large;
+	font-weight: bold;
+}
+
+article .date {
+	text-align: center;
+	margin: 0px 0px 10px 0px;
+}
+
+article h3 {
+	font-size: medium;
+	font-weight: bold;
+	margin: 15px 0px;
+}
+
+article p {
+	margin-bottom: 15px;
+}
+
+footer {
+	background-color: var(--blue);
+	border-radius: 15px;
+	padding: 5px 15px;
+	margin: 15px 0px;
+}
+
+footer small {
+	font-size: small;
+}
+
+aside {
+	background-color: var(--pink);
+	text-align: center; /* horiz centers text */
+	display: flex;
+	justify-content: center; /* centers items vertically */
+	flex-direction: column; /* arranges items vertically, as opposed to horizontally */
+	align-items: center; /* horiz centers image */
+}
+
+aside p {
+	font-size: small;
+	font-weight: bold;
+	margin: 0px 0px 15px 0px;
+}
+
+aside #ad {
+	/* content:url('https://openclipart.org/image/800px/svg_to_png/191347/Chick.png'); */
+	background-image:url('/images/duck-thumb.jpg');
+	width: 150px;
+	height: 133px;
+}
+
+/* contains all but nav and aside */
+.flex-container {
+	width: 990px;
+	display: flex;
+	flex-direction: row;
+	margin: 60px auto 0 auto;
+}	
+
+/* not currently used */
+.flex-item {
+}
+
+.posts {
+	display: flex;
+	flex-direction: row;
+}
+
+.posts > article {
+	width: 33%;		
+	margin: 0px 5px;
+}
+	
+.posts > article:first-child {
+	margin: 0px 5px 0px 0px;
+}	
+
+.posts > article:last-child {
+	margin: 0px 0px 0px 5px;
+}
+
+/* is a flex-item */
+aside {
+	height: 400px;
+	margin: 15px 15px 0px 0px;
+}
+
+/* */
+/* Media Queries */
+/* */
+
+/* screen < 989px */
+@media screen and (max-width: 989px) {
+	.flex-container {
+		width: 100%;
+		margin-top: 55px;
+	}
+
+	.posts {
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	.posts article:first-child {
+		width: 40%;
+		margin: 15px 5px 0px 15px;
+	}	
+
+	.posts article:nth-child(2) {
+		width: 40%;
+		margin: 15px 15px 0px 5px;
+	}
+
+	.posts article:last-child {
+		width: 100%;
+		margin: 15px;
+	}
+
+	aside {
+		display: none;
+	}
+
+	header {
+		border-radius: 0px;
+		margin: 0px;
+		width: 100%;
+		border-left: 0px;
+		border-right: 0px;
+	}
+
+	footer {
+		border-radius: 0px;
+		margin: 0px;
+		border-left: 0px;
+		border-right: 0px;
+	}	
+}
