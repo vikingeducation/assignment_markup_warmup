@@ -1,0 +1,263 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	  margin: 0;
+	  padding: 0;
+	  border: 0;
+	  font-size: 100%;
+	  font: inherit;
+	  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	  display: block;
+}
+body {
+	  line-height: 1;
+}
+ol, ul {
+	  list-style: none;
+}
+blockquote, q {
+	  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	  content: '';
+	  content: none;
+}
+table {
+	  border-collapse: collapse;
+	  border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*actually my code after this point--------------
+------------------------------------------------
+-------------------------------------------------*/
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+
+/*Nav-Bar*/
+#nav-bar {
+    background-color: #ffe599;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    font-family: sans-serif;
+    padding-left: 10px;
+}
+
+#site-title {
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+
+/*Rest of Page*/
+#whole-page {
+    width: 990px;
+    display: flex;
+}
+
+
+/*Dept. of Revenue*/
+
+@media (min-width: 990px){
+    #ad-div {
+        margin: 10px;
+        height: 500px;
+        padding: 20px 10px;
+        background-color: #d5a6bd;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #ad {
+        margin: 0px;
+        padding: 0px;
+    }
+}
+@media (max-width: 989px) {
+    #ad-div {
+        display: none;
+    }
+}
+
+
+/*Main Content*/
+main {
+    float: right;
+}
+
+@media (min-width: 990px){
+    main {
+        margin: 10px;
+    }
+}
+
+/*Main-header*/
+#main-header {
+    background-color: #b6d7a8;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+/*Blog Entries*/
+#blog-entries {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+@media (max-width: 989px){
+    #blog-entries {
+        flex-wrap: wrap;
+        padding: 10px;
+        align-items: stretch;
+    }
+}
+
+.entries {
+    background-color: #a2c4c9;
+    padding: 10px;
+    height: 100%;
+}
+
+@media (min-width: 990px){
+    .entries {
+        width: calc(33% - 25px);
+    }
+}
+
+@media (max-width: 989px){
+    .entries {
+        width: calc(50% - 45px);
+        margin: 10px;
+    }
+}
+
+@media (max-width: 989px){
+    #third-entry {
+        flex-grow: 1;
+    }
+}
+
+.entry-title {
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.entry-date {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.paragraph-title {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.entry-text {
+    margin-bottom: 20px;
+}
+
+
+/*Footer*/
+#disclaimer {
+    background-color: #9fc5f8;
+    text-align: justify;
+    padding: 5px 15px 5px 15px;
+}
+
+/*let's try some more general classes?*/
+
+@media (min-width: 990px) {
+    .rounded-corners {
+        border-radius: 20px;
+    }
+}
+
+.big-cabin {
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+}
+
+.medium-cabin {
+    font-family:  'Cabin', sans-serif;
+    font-size: 25px;
+}
+
+.small-cabin {
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+}
+
+.italic-raleway {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.medium-raleway {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.small-raleway {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+.fine-print {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+}
+
+.borders {
+    border: solid;
+    border-width: 1px;
+}
