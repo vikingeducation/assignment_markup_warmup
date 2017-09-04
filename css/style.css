@@ -28,21 +28,19 @@ nav {
 
 nav p {
 	line-height: 55px;
-	vertical-align: middle;
 	font-weight: bold;
 }
 
-aside {
-	float: left;
+.flex-aside {
+	display: flex;
 	background-color: var(--pink);
 	text-align: center; /* horiz centers text */
-	display: flex;
 	justify-content: center; /* centers items vertically */
 	flex-direction: column; /* arranges items vertically, as opposed to horizontally */
 	align-items: center; /* horiz centers image */
 	height: 400px;
 	margin: 15px 10px 0px 0px;
-	width: 24%;
+	width: 200px;
 }
 
 aside p {
@@ -61,7 +59,6 @@ aside #ad {
 
 main {
 	width: 74%;
-	float: right;
 }
 
 header {
@@ -69,7 +66,7 @@ header {
 	border-radius: 15px;
 	text-align: center;
 	margin: 15px 0px;
-	clear: left;
+	box-sizing: border-box;
 }
 
 header h1 {
@@ -85,36 +82,28 @@ header .author {
 
 footer {
 	background-color: var(--blue);
-	clear: both;
 	border-radius: 15px;
 	padding: 5px 15px;
 	margin: 15px 0px;
+	box-sizing: border-box;
 }
 
 footer small {
 	font-size: small;
 }
 
+.flex-articles {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
 article {
+	flex: 1 1 33%;
 	background-color: var(--grey);
-	float: left;	
 	width: 30%;
 	margin: 10px;
+	box-sizing: border-box;
 }
-
-/*
-article:nth-of-type(3n + 1) {
-	margin: 0px 0px 10px 0px;	
-}
-
-article:nth-of-type(3n + 2) {
-	margin: 0px 10px 10px 10px;	
-}
-
-article:nth-of-type(3n + 3) {
-	margin: 0px 0px 10px 0px;	
-}
-*/
 
 article h2 {
 	text-align: center;
@@ -145,20 +134,33 @@ article p {
 
 /* wide screen: >= 990px */
 @media screen and (min-width: 890px) {
-	.container {
+	.flex-container {
+		display: flex;
 		max-width: 990px;
 		margin: 60px auto 50px auto;
+		flex-flow: row nowrap;
 	}	
+	.flex-articles {
+		display: flex;
+		flex-flow: row nowrap;
+	}
 }	
 
 /* narrow screen: < 990px*/
 @media screen and (max-width: 989px) {
-	.container {
+	.flex-container {
+		display: flex;
 		width: 100%;
-		margin: 55px 0px 0px 0px;
+		margin: 53px 0px 0px 0px;
+		flex-flow: row nowrap;
 	}
 
-	aside {
+	.flex-articles {
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	.flex-aside {
 		display: none;
 	}
 
@@ -167,11 +169,15 @@ article p {
 	}
 
 	article {
-		width: 41%;
+		width: 43%;
 	}
 
-	article:nth-of-type(3n + 3) {
-		width: 97%;
+	article:nth-child(1), article:nth-child(2) {
+		flex: 1 1 40%;
+	}
+
+	article:nth-child(3) {
+		flex: 1 1 100%;
 	}
 
 	header {
