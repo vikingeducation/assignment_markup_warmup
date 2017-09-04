@@ -1,0 +1,198 @@
+:root {
+	--pink: #d5a6bd;
+	--green: #b6d7a8;
+	--yellow: #ffe599;
+	--grey: #a2c4c9;
+	--blue: #9fc5f8;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+header, article, footer, aside {
+	border: 2px solid black;
+}
+
+nav {
+	width: 100%;
+	position: fixed;
+	height: 55px;
+	top: 0px;
+	background-color: var(--yellow);
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	margin: 0px;
+	padding-left: 30px;
+}
+
+nav p {
+	line-height: 55px;
+	font-weight: bold;
+}
+
+.flex-aside {
+	display: flex;
+	background-color: var(--pink);
+	text-align: center; /* horiz centers text */
+	justify-content: center; /* centers items vertically */
+	flex-direction: column; /* arranges items vertically, as opposed to horizontally */
+	align-items: center; /* horiz centers image */
+	height: 400px;
+	margin: 15px 10px 0px 0px;
+	width: 200px;
+}
+
+aside p {
+	font-size: small;
+	font-weight: bold;
+	margin: 0px 0px 15px 0px;
+	padding: 0px 10px;
+}
+
+aside #ad {
+	/* content:url('https://openclipart.org/image/800px/svg_to_png/191347/Chick.png'); */
+	background-image:url('/images/duck-thumb.jpg');
+	width: 150px;
+	height: 133px;
+}
+
+main {
+	width: 74%;
+}
+
+header {
+	background-color: var(--green);
+	border-radius: 15px;
+	text-align: center;
+	margin: 15px 0px;
+	box-sizing: border-box;
+}
+
+header h1 {
+	margin: 21px 15px 5px 0px;
+	font-size: x-large;
+	font-weight: bold;
+}
+
+header .author {
+	font-style: italic;	
+	margin: 0px 0px 16px 0px;
+}
+
+footer {
+	background-color: var(--blue);
+	border-radius: 15px;
+	padding: 5px 15px;
+	margin: 15px 0px;
+	box-sizing: border-box;
+}
+
+footer small {
+	font-size: small;
+}
+
+.flex-articles {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+article {
+	flex: 1 1 33%;
+	background-color: var(--grey);
+	width: 30%;
+	margin: 10px;
+	box-sizing: border-box;
+}
+
+article h2 {
+	text-align: center;
+	margin: 16px 16px 0px 16px;
+	font-size: large;
+	font-weight: bold;
+}
+
+article .date {
+	text-align: center;
+	margin: 0px 0px 10px 0px;
+}
+
+article h3 {
+	font-size: medium;
+	font-weight: bold;
+	padding-left: 15px;
+}
+
+article p {
+	margin-bottom: 15px;
+	padding: 15px;
+}
+
+/* */
+/* Media Queries */
+/* */
+
+/* wide screen: >= 990px */
+@media screen and (min-width: 890px) {
+	.flex-container {
+		display: flex;
+		max-width: 990px;
+		margin: 60px auto 50px auto;
+		flex-flow: row nowrap;
+	}	
+	.flex-articles {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+}	
+
+/* narrow screen: < 990px*/
+@media screen and (max-width: 989px) {
+	.flex-container {
+		display: flex;
+		width: 100%;
+		margin: 53px 0px 0px 0px;
+		flex-flow: row nowrap;
+	}
+
+	.flex-articles {
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	.flex-aside {
+		display: none;
+	}
+
+	main {
+		width: 100%;
+	}
+
+	article {
+		width: 43%;
+	}
+
+	article:nth-child(1), article:nth-child(2) {
+		flex: 1 1 40%;
+	}
+
+	article:nth-child(3) {
+		flex: 1 1 100%;
+	}
+
+	header {
+		border-radius: 0px;
+		margin: 0px;
+		width: 100%;
+		border-left: 0px;
+		border-right: 0px;
+	}
+
+	footer {
+		border-radius: 0px;
+		margin: 0px;
+		border-left: 0px;
+		border-right: 0px;
+	}	
+}
+
