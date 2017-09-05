@@ -1,66 +1,48 @@
 nav {
   background-color: #FFEFAA;
-  position: fixed;
   width: 100%;
-  margin-bottom: 10px;
   padding: 8px;
   border: solid 2px black;
 }
 
-main {
-  width: 990px;
-  position: absolute;
-    top:60px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
 aside {
-  float: left;
-  width:24%;
-  height: 600px;
-  background-color: #FFAAAA;
-  text-align: center;
-  position: relative;
+  display:none;
 }
 
-#ad {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-   transform: translate(-50%, -50%);
-}
-
-.content {
-  width: 72%;
-  float:right;
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header {
   background-color: #A0C562;
-  border-radius: 10px;
+  border: 2px solid black;
 }
 
 article {
   background-color: #41817F;
   float: left;
-  width: 29%;
+  width: 45%;
+  height: auto;
 }
 
 footer {
   background-color: #4F608F;
   clear:both;
-  border-radius: 10px;
 }
 
-aside, header, article, footer {
+article, footer {
   padding: 8px;
   margin: 5px;
   border: 2px solid black;
 }
 
+
+.last-article {
+  clear:both;
+  width: auto;
+  margin: 5px;
+}
 
 h1 {
   font-size: 25px;
