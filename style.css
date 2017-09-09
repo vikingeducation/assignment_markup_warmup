@@ -24,9 +24,12 @@ time, mark, audio, video {
  vertical-align: baseline;
 }
 
-.navbar-sticky{
+
+
+.navbar-sticky {
   background-color: yellow;
   position: fixed;
+  z-index: 10;
   top: 0;
   width: 100%;
   height: 20px;
@@ -37,19 +40,20 @@ time, mark, audio, video {
 
 body {
   background-color: grey;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+
 
 }
 
 .main-header {
-  margin-top: 70px;
+  margin-top: 50px;
   background-color: green;
   height: 110px;
   width: 70%;
   left: 0;
   float: right;
-
+border-radius: 5px;
 
 
 }
@@ -60,28 +64,30 @@ body {
   width: 50%;
   padding: 10px;
 
-
-
-
 }
 
 .sidebar {
-  text-align: center;
-  margin-top: 70px;
-  width: 25%;
+  position: relative;
+  margin-top: 50px;
+  width: 390px;
   float: left;
   height: 800px;
   background-color: maroon;
-
+  overflow: auto;
+  resize: both;
 
 }
 
-.sidebar p {
-  text-align: center;
-  margin: auto;
-  width: 50%;
-  padding-top: 150px;
+.ad {
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
 }
+
 
 .posts {
   display: table;
@@ -90,6 +96,7 @@ body {
   padding-top: 70px;
   margin: auto;
   float: right;
+  margin-top: 25px;
 
 }
 
@@ -98,4 +105,10 @@ body {
   width: 20%;
   padding-left: 50px;
   padding-right: 50px;
+}
+
+@media only screen and (max-width : 990px) {
+  .sidebar{
+    display: none;
+  }
 }
