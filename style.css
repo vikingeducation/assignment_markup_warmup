@@ -1,0 +1,123 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+
+line-height: 1;
+font-family: Verdana,"Times New Roman", Times, serif;
+//width:990px;/*if u fix this then flex doen't work*/
+
+}
+header,section,aside,footer{
+border:1px solid black;
+}
+h1 {
+    font-size: 1.5em;/*16 pixels 1 em...general size of txt*/
+ }
+
+h2 {
+    font-size: 1.2em;
+}
+h3{
+font-size: 1em;
+}
+header{
+background-color:rgba(255, 193, 7, 0.59);
+position:fixed;
+width:100%;
+}
+.content{
+display:flex;
+flex-direction:row-reverse;
+align-self:flex-end;
+width:90%;
+margin:auto;
+}
+main{
+display:flex;
+flex-direction:column;
+margin-top:30px;
+width:70%;
+}
+aside{
+background-color:#f3a7b5;
+width:20%;
+height:75%;
+margin-top:30px;
+margin-right:10px;
+}
+
+#title{
+display:flex;
+flex-direction:column;
+align-items: center;
+justify-content:center;
+flex-wrap:wrap;
+background-color:#49bb95;
+border-radius: 15px;
+}
+#posts{
+display:flex;
+flex-direction:row;
+margin-top:10px;
+}
+section{
+display:flex;
+flex-direction:column;
+background-color:rgba(30, 199, 199, 0.93);
+align-items:center;
+margin:5px;
+min-width:0;
+}
+article{
+padding:5px;
+align-text:left;
+}
+
+footer{
+background-color:rgb(110, 194, 232);
+align-items:center;
+border-radius: 15px;
+}
+
+@media (max-width: 989px) {
+   .content{
+   	flex-direction:column;
+   	width:100%;
+   }
+   section{
+   	//flex-direction:column;
+   }
+    #posts{
+   
+    flex-direction:column;
+    //flex-wrap:wrap;
+    }
+}
