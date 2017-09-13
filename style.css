@@ -1,0 +1,165 @@
+
+body {
+	color: #333;
+}
+
+h1 {
+	font-size: 48px;
+	margin-bottom: 24px;
+}
+
+h2 {
+	font-size: 24px;
+	margin-bottom: 12px;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+p {
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 24px;
+}
+
+article p:last-of-type {
+	margin-bottom: 24px;
+}
+
+nav {
+	width: 100%;
+	background: tomato;
+}
+
+nav h1 {
+	font-size: 32px;
+	padding: 8px 0px;
+}
+
+header, footer {
+	border-radius: 15px;
+}
+
+main > header {
+	margin-bottom: 24px;
+	text-align: center;
+	background: lightgreen;
+	padding: 24px 20px;
+}
+
+aside {
+	width:20%;
+	margin-right: 40px;
+	background: lightpink;
+	display: flex;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+}
+
+aside p {
+	text-align: center;
+	background: #eee;
+	padding: 50px 20px;
+	width: 70%;
+}
+
+.flex-container {
+	display: flex;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+main {
+	width: 60%;
+}
+
+main .flex-container {
+	justify-content: space-between;
+	margin-bottom: 24px;
+}
+
+main section {
+	width: 30%;
+	padding: 24px 20px;
+	margin-right: 20px;
+	background: lightblue;
+}
+
+main section:last-of-type {
+	margin-right: 0px;
+}
+
+main section header {
+	text-align: center;
+}
+
+time {
+	font-size: 16px;
+	margin-bottom: 36px;
+	position: relative;
+	display: block;
+}
+
+footer{
+	background: violet;
+	padding: 24px 20px;
+	margin-bottom: 24px;
+}
+
+
+@media only screen and (max-width: 990px) {
+	aside {
+		display: none;
+	}
+
+	nav h1 {
+		margin-bottom: 0px;
+	}
+
+	header, footer {
+		border-radius: 0px;
+		margin-bottom: 0px;
+	}
+
+	main {
+		width: 100%;
+	}
+
+	main .flex-container {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	main section {
+		margin-right: 0px;
+		width: 40%;
+	}
+
+	main section:first-of-type {
+		margin-right: 20px;
+	}
+
+	main section:last-of-type {
+		margin-top: 20px;
+		width: 85%;
+	}
+}
+
+
+
+
+
+
+
+
