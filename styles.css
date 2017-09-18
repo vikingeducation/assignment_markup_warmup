@@ -1,0 +1,50 @@
+html {
+  font-family: cursive;
+}
+
+nav {
+  position: fixed;
+  background-color: rgba(255, 235, 59, 0.6);
+  width: 100%;
+  top: 0;
+  padding: 10px;
+  border-bottom: 2px solid black;
+}
+
+header {
+  background-color: rgba(127, 255, 132, 0.78);
+  text-align: center;
+  margin-top: 36px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 44px 5px 5px 5px;
+}
+
+main {
+  clear: both;
+}
+
+article {
+  background-color: cadetblue;
+  float: left;
+  width: 31%;
+  margin: 5px;
+  border: 2px solid black;
+}
+
+section {
+  float: right;
+  width: 66%;
+}
+
+aside {
+  background-color: blueviolet;
+  float: left;
+  width: 33%;
+  margin-top: 36px;
+}
+
+footer {
+  background-color: cornflowerblue;
+  clear: both;
+}
