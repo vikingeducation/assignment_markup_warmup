@@ -3,12 +3,6 @@ html {
   font-size: 16px;
 }
 
-h1, h2, h3 {font-weight: 600}
-
-h1 {font-size: 2em}
-h2 {font-size: 1.5em}
-h3 {font-size: 1em}
-
 nav {
   position: fixed;
   background-color: rgba(255, 235, 59, 0.6);
@@ -18,60 +12,45 @@ nav {
   border-bottom: 2px solid black;
 }
 
-header {
-  background-color: rgba(127, 255, 132, 0.78);
-  text-align: center;
-  border-radius: 25px;
-  border: 2px solid black;
-  padding: 10px;
-  margin: 44px 5px 5px 5px;
-}
-
-main {
-  float: right;
-  width: 66%;
-}
-
-article {
-  background-color: cadetblue;
-  float: left;
-  width: 29%;
-  margin: 5px;
-  padding: 10px 10px 20px 10px;
-  border: 2px solid black;
-}
-
-article header {
-  background-color: cadetblue;
-  margin: 0px;
-  padding: 0px;
-  border-radius: 0px;
-  border: none;
-}
-
-article time {
-  font-style: italic;
-  
+.container {
+  padding-top: 30px;
+  width: 990px;
+  margin: auto;
+  clear: both;
 }
 
 aside {
   background-color: blueviolet;
   float: left;
-  width: 30%;
-  border: 2px solid black;
-  padding: 10px;
-  margin: 44px 5px 5px 5px;
+  width: 24%;
   height: 300px;
-  text-align: center
+  text-align: center;
+}
+
+main {
+  float: right;
+  width: 75%;
+  margin-left: 1%;
+}
+
+header {
+  background-color: rgba(127, 255, 132, 0.78);
+  text-align: center;
+  width: 100%;
+  border-radius: 25px;
+}
+
+article {
+  background-color: cadetblue;
+  float: left;
+  width: 33.33%;
 }
 
 footer {
   background-color: cornflowerblue;
-  clear: both;
   float: right;
-  width: 64%;
-  padding: 10px;
-  margin: 5px;
+  clear: both;
+  width: 75%;
+  text-align: left;
   border-radius: 25px;
-  border: 2px solid black;
 }
