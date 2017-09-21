@@ -3,9 +3,20 @@ html {
   font-size: 16px;
 }
 
+h1 {padding: 8px; font-size: 1.5em;}
+h2 {padding: 8px; font-size: 1.2em;}
+h3 {padding-left: 8px; font-size: 1em;}
+p {padding: 0 8px 20px 8px;}
+
 h1, h2, h3 {font-weight: bold;}
 
 h1, h2 {text-align: center;}
+
+a {
+  font-style: italic;
+  text-decoration: none;
+  color: black;
+}
 
 nav {
   position: fixed;
@@ -28,8 +39,8 @@ nav {
 aside {
   background-color: blueviolet;
   float: left;
-  width: 23%;
-  height: 300px;
+  width: 24%;
+  height: 400px;
   font-weight: bold;
   text-align: center;
   border: 2px solid black;
@@ -75,3 +86,5 @@ footer {
   border: 2px solid black;
   border-radius: 25px;
 }
+
+.center {text-align: center;}
