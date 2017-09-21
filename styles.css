@@ -3,6 +3,10 @@ html {
   font-size: 16px;
 }
 
+h1, h2, h3 {font-weight: bold;}
+
+h1, h2 {text-align: center;}
+
 nav {
   position: fixed;
   background-color: rgba(255, 235, 59, 0.6);
@@ -13,18 +17,26 @@ nav {
 }
 
 .container {
-  padding-top: 30px;
+  padding-top: 38px;
   width: 990px;
-  margin: auto;
+  margin-top: .5%;
+  margin-left: auto;
+  margin-right: auto;
   clear: both;
 }
 
 aside {
   background-color: blueviolet;
   float: left;
-  width: 24%;
+  width: 23%;
   height: 300px;
+  font-weight: bold;
   text-align: center;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 main {
@@ -38,12 +50,15 @@ header {
   text-align: center;
   width: 100%;
   border-radius: 25px;
+  border: 2px solid black;
 }
 
 article {
   background-color: cadetblue;
   float: left;
-  width: 33.33%;
+  width: 32.6%;
+  margin-top: 1%;
+  border: 2px solid black;
 }
 
 footer {
@@ -52,5 +67,6 @@ footer {
   clear: both;
   width: 75%;
   text-align: left;
+  border: 2px solid black;
   border-radius: 25px;
 }
