@@ -46,18 +46,45 @@ table {
 
 /*************************************************************************************/
 
-div {
-  border: 1px solid black;
-  width: 15%;
-  float: right;
+nav {
+	height: 60px;
 }
 
+nav h1 {
+	margin: 15px;
+}
 
-footer {
+div {
+  border: 1px solid black;
+  /*width: 15%;
+  float: right;*/
+}
+
+section {
+  display: flex;
+}
+
+.A {
+	order: 1;
+}
+
+.B {
+	order: 2;
+}
+
+.C {
+	order: 3;
+}
+
+.D {
+	order: 4;
+}
+
+/*footer {
   clear: both;
 }
 
 header {
   text-align: center;
   width: 45%;
-}
+}*/
