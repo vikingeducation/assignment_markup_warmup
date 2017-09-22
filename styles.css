@@ -1,0 +1,93 @@
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 1.5;
+}
+
+header {
+	width: 100%;
+	padding: 10px;
+	font-size: 15px;
+	font-weight: 400;
+	background: #FFE497;
+	border-bottom: 1px solid #939393;
+}
+
+.intro {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	background: #B4D6A6;
+}
+/* horizontally & vertically centers an element */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+}
+
+#distraction{display: none;} /* Ad not present in mobile view */
+
+/* ------------ TYPOGGAPHY ------------- */
+#logo {
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: capitalize;
+}
+/* Intro */
+h1 {
+	font-size: 1.75em; /* 28px */
+	font-weight: 700;
+}
+
+.center h4 {font-style: italic;}
+/* Main Content */
+.post-title,
+.post-date {text-align: center;}
+
+.post-title,
+.topic {
+	font-weight: 400;
+	text-transform: capitalize;
+}
+
+.post-title {font-size: 1.375em} /* 22px */
+.topic {font-size: 1.125em;} /* 18px */
+/* -------------- MAIN CONTENT LAYOUT -------------- */
+#main-content {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.blog-post {
+	margin: 10px 0;
+	padding: 6px;
+	font-size: 1em;
+	font-weight: 300;
+	text-align: justify;
+	background: #A0C3C8;
+	border: 1px solid #000;
+	border-radius: 4px;
+}
+
+.topic:nth-of-type(2) {margin-top: 8px;} /* Second topic in first blog post */
+/* ------------- FOOTER -------------- */
+footer {
+	width: 100%;
+	padding: 8px;
+	font-size: 14px;
+	font-weight: 300;
+	text-align: justify;
+	background: #9DC4F8;
+}
