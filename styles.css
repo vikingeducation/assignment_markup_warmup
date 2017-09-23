@@ -44,6 +44,7 @@ table {
 	border-spacing: 0;
 }
 
+
 /*************************************************************************************/
 
 /******************************
@@ -60,8 +61,7 @@ main {
 }
 
 section {
-	width: 70%;
-	border: 1px solid black;
+	width: 792px;
 	float: right;
 }
 
@@ -80,6 +80,8 @@ nav {
 
 nav h1 {
 	margin: 15px;
+	font-weight: 600;
+	font-size: 1.1em;
 }
 
 .fixed {
@@ -93,9 +95,8 @@ Advertisment
 ******************************/
 
 .ad {
-	height: 400px;
-	width: 25%;
-	/*padding: 15px;*/
+	height: 440px;
+	width: 190px;
 	background: pink;
 	border: 2px solid black;
 	text-align: center;
@@ -109,7 +110,7 @@ img {
 }
 
 .vertical-align {
-	width: 80%;
+	width: 90%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -117,54 +118,72 @@ img {
 }
 
 /******************************
-FOOTER
-******************************/
-
-footer {
-	background-color: lightblue;
-	padding: 1% 2%;
-	border-radius: 5px;
-	border: 2px solid black;
-	margin-top: 1%;
-	width: 95%;
-}
-
-/******************************
 HEADER
 ******************************/
 
 header {
-	width: 95%;
+	width: 768px;
+	padding: 10px;
+	margin-bottom: 7px;
 	background-color: lightgreen;
-	text-align: center;
 	border: 2px solid black;
-	border-radius: 5px;
-	margin-bottom: 1%;
-	padding: 1.5%;
+	border-radius: 15px;
+	text-align: center;
 }
 
+header h1 {
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+header h6 {
+	font-style: italic;
+}
+
+/******************************
+FOOTER
+******************************/
+
+footer {
+	width: 768px;
+	padding: 5px 10px;
+	margin-top: 1%;
+	background-color: lightblue;
+	border: 2px solid black;
+	border-radius: 23px;
+}
+
+/******************************
+POSTS
+******************************/
 
 .A, .B, .C {
-	padding: 3%;
-	margin: 1%;
-	width: 23%;
-	height: 250px;
+	width: 232.6px;
+	height: auto;
+	padding: 10px;
 	background-color: lightblue;
 	border: 2px solid black;
 	overflow: hidden;
+	vertical-align: top;
+}
+
+.post-margin {
+	margin: 0 7px;
 }
 
 h2, h6 {
 	text-align: center;
-	margin: 3px 0;
+	/*margin: 3px 0;*/
 }
 
 h2 {
+	margin-bottom: 5px;
 	font-size: 1.15em;
 	font-weight: bold;
 }
 
 h3 {
-	margin: 20px 0;
+	margin: 20px 0 15px;
 	font-weight: bold;
 }
