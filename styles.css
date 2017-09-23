@@ -61,7 +61,7 @@ main {
 }
 
 section {
-	width: 792px;
+	width: 80%;
 	float: right;
 }
 
@@ -96,7 +96,7 @@ Advertisment
 
 .ad {
 	height: 440px;
-	width: 190px;
+	width: 19%;
 	background: pink;
 	border: 2px solid black;
 	text-align: center;
@@ -122,7 +122,7 @@ HEADER
 ******************************/
 
 header {
-	width: 768px;
+	width: 97%;
 	padding: 10px;
 	margin-bottom: 7px;
 	background-color: lightgreen;
@@ -146,9 +146,9 @@ FOOTER
 ******************************/
 
 footer {
-	width: 768px;
+	width: 97%;
 	padding: 5px 10px;
-	margin-top: 1%;
+	margin-top: 7px;
 	background-color: lightblue;
 	border: 2px solid black;
 	border-radius: 23px;
@@ -159,7 +159,7 @@ POSTS
 ******************************/
 
 .A, .B, .C {
-	width: 232.6px;
+	width: 29%;
 	height: auto;
 	padding: 10px;
 	background-color: lightblue;
@@ -174,7 +174,6 @@ POSTS
 
 h2, h6 {
 	text-align: center;
-	/*margin: 3px 0;*/
 }
 
 h2 {
