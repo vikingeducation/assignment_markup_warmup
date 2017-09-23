@@ -94,8 +94,8 @@ Advertisment
 
 .ad {
 	height: 400px;
-	width: 20%;
-	padding: 15px;
+	width: 25%;
+	/*padding: 15px;*/
 	background: pink;
 	border: 2px solid black;
 	text-align: center;
@@ -103,12 +103,13 @@ Advertisment
 }
 
 img {
-	height: 40%;
-	width: 80%;
+	height: 60%;
+	width: 90%;
 	margin-top: 20px;
 }
 
 .vertical-align {
+	width: 80%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
