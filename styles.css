@@ -48,43 +48,57 @@ table {
 
 nav {
 	height: 60px;
+	width: 100%;
+	border: 1px solid black;
+	background-color: yellow;
 }
 
 nav h1 {
 	margin: 15px;
 }
 
-div {
-  border: 1px solid black;
-  /*width: 15%;
-  float: right;*/
-}
-
-section {
-  display: flex;
-}
-
-.A {
-	order: 1;
-}
-
-.B {
-	order: 2;
-}
-
-.C {
-	order: 3;
-}
-
-.D {
-	order: 4;
-}
-
-/*footer {
-  clear: both;
+.fixed {
+	height: 60px;
+	margin: 5px;
 }
 
 header {
-  text-align: center;
-  width: 45%;
-}*/
+	width: 60%;
+	background-color: lightgreen;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+section {
+	width: 60%;
+
+}
+
+div {
+	overflow: hidden;
+}
+
+.A, .B, .C {
+	width: 25%;
+	height: 300px;
+	background-color: lightblue;
+	margin: 15px;
+	padding: 20px;
+	border: 2px solid black;
+}
+
+h2, h6 {
+	text-align: center;
+	margin: 3px 0;
+}
+
+h3 {
+	margin: 20px 0;
+	font-weight: bold;
+}
+
+.post-two {
+	padding: 5px;
+}
