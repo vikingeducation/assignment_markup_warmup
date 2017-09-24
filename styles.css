@@ -33,15 +33,15 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 80%;
   transform: translate(-50%, -50%);
+  width: 80%;
 }
 
 #distraction{display: none;} /* Ad not present in mobile view */
 
 /* ------------ TYPOGGAPHY ------------- */
 #logo {
-	font-size: 18px;
+	font-size: 1.125em; /* 18px */
 	font-weight: 400;
 	text-transform: capitalize;
 }
@@ -72,7 +72,7 @@ h1 {
 
 .blog-post {
 	margin: 10px 0;
-	padding: 6px;
+	padding: 8px;
 	font-size: 1em;
 	font-weight: 300;
 	text-align: justify;
@@ -82,12 +82,39 @@ h1 {
 }
 
 .topic:nth-of-type(2) {margin-top: 8px;} /* Second topic in first blog post */
+
+/* Tablets */
+@media (min-width: 720px)  {
+	#main-content {
+		/*border: 10px solid #000;*/
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+
+	.blog-post {margin: 2%;}
+
+	.blog-post:nth-of-type(1) {
+		flex-basis: 35%;
+		flex-grow: 1; 
+	}
+
+	.blog-post:nth-of-type(2) {
+		flex-basis: 45%;
+		max-height: 320px;
+	}
+}
+
 /* ------------- FOOTER -------------- */
 footer {
-	width: 100%;
+	/*width: 100%;*/
 	padding: 8px;
 	font-size: 14px;
 	font-weight: 300;
 	text-align: justify;
 	background: #9DC4F8;
 }
+
+
+
