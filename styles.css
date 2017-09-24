@@ -44,8 +44,8 @@ table {
 	border-spacing: 0;
 }
 
-
-/*************************************************************************************/
+/*************************************************************************************
+*************************************************************************************/
 
 /******************************
 POSITIONING
@@ -89,6 +89,30 @@ nav h1 {
 	margin: 5px;
 }
 
+/******************************
+HEADER
+******************************/
+
+header {
+	width: 97%;
+	padding: 10px;
+	margin-bottom: 7px;
+	background-color: lightgreen;
+	border: 2px solid black;
+	border-radius: 15px;
+	text-align: center;
+}
+
+header h1 {
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+header h6 {
+	font-style: italic;
+}
+
 
 /******************************
 Advertisment
@@ -115,43 +139,6 @@ img {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-}
-
-/******************************
-HEADER
-******************************/
-
-header {
-	width: 97%;
-	padding: 10px;
-	margin-bottom: 7px;
-	background-color: lightgreen;
-	border: 2px solid black;
-	border-radius: 15px;
-	text-align: center;
-}
-
-header h1 {
-	margin-bottom: 10px;
-	font-size: 1.2em;
-	font-weight: bold;
-}
-
-header h6 {
-	font-style: italic;
-}
-
-/******************************
-FOOTER
-******************************/
-
-footer {
-	width: 97%;
-	padding: 5px 10px;
-	margin-top: 7px;
-	background-color: lightblue;
-	border: 2px solid black;
-	border-radius: 23px;
 }
 
 /******************************
@@ -185,4 +172,85 @@ h2 {
 h3 {
 	margin: 20px 0 15px;
 	font-weight: bold;
+}
+
+/******************************
+FOOTER
+******************************/
+
+footer {
+	width: 97%;
+	padding: 5px 10px;
+	margin-top: 7px;
+	background-color: lightblue;
+	border: 2px solid black;
+	border-radius: 23px;
+}
+
+
+/******************************
+MEDIA QUERIES
+******************************/
+@media (max-width: 990px) {
+		body {
+			background-color: red;
+		}
+
+		main {
+			max-width: 720px;
+			margin: 0 auto;
+		}
+
+		/**************************
+		HEADER / NAV QUERIES
+		**************************/
+
+		header {
+			width: 100%;
+			border-radius: 0;
+		}
+
+		.fixed {
+			height: 51px;
+			margin: 0;
+		}
+
+		.ad, header, .A, .B, .C {
+			display: block;
+		}
+
+		.ad {
+			display: none;
+		}
+
+		section {
+			float: none;
+			width: auto;
+		}
+
+		/******************************
+		POST QUERIES
+		******************************/
+
+		.B, .C {
+			/*width: 44%;*/
+			/*margin: 0 5px;*/
+			display: inline-block;
+		}
+
+		.A {
+			width: 100%;
+			margin: 15px auto;
+		}
+
+		/******************************
+		FOOTER QUERIES
+		******************************/
+
+		footer {
+			width: 100%;
+			margin: 0 auto;
+			border-radius: 0;
+		}
+
 }
