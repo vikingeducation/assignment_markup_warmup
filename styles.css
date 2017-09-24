@@ -192,9 +192,6 @@ footer {
 MEDIA QUERIES
 ******************************/
 @media (max-width: 990px) {
-		body {
-			background-color: red;
-		}
 
 		main {
 			max-width: 720px;
@@ -233,23 +230,20 @@ MEDIA QUERIES
 		******************************/
 
 		.B, .C {
-			width: 45%;
-			/*margin: 0 5px;*/
+			width: 40%;
 			display: inline-block;
+			margin-left: 5px;
+		}
+
+		.B {
+			position: relative;
+			left: 90px;
 		}
 
 		.A {
 			width: 100%;
 			margin: 15px auto;
 		}
-
-		/***
-		My 2 primary issues are evenly centering posts B and C in the section. I need to use very specific widths to get them to dislpay somewhat evenly. When I do that it very quickly becomes too wide as the screen becomes thinner. Post B moves to below post C because it is too wide.
-
-		This problem occurs if I use floats or if I use inline-block display. I put the max-width at 720px because that is what the mockup given seems to be at.
-
-		I think flex-box will solve this, although there may be a problem going from the 3 column layout to the 2 column layout.
-		*/
 
 		/******************************
 		FOOTER QUERIES
