@@ -144,6 +144,10 @@ img {
 /******************************
 POSTS
 ******************************/
+.flex-query {
+	display: inline-block;
+	border: 1px solid black;
+}
 
 .A, .B, .C {
 	width: 29%;
@@ -194,7 +198,6 @@ MEDIA QUERIES
 @media (max-width: 990px) {
 
 		main {
-			max-width: 720px;
 			margin: 0 auto;
 		}
 
@@ -229,15 +232,18 @@ MEDIA QUERIES
 		POST QUERIES
 		******************************/
 
-		.B, .C {
-			width: 40%;
-			display: inline-block;
-			margin-left: 5px;
+		.flex-query {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
 		}
 
-		.B {
-			position: relative;
-			left: 90px;
+		.B, .C {
+			height: auto;
+			max-width: 45%;
+			display: inline-block;
+			flex-grow: 1;
+			flex-basis: auto;
 		}
 
 		.A {
