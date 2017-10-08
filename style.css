@@ -1,0 +1,260 @@
+/* Start of CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of CSS Reset */
+
+.blue {
+	background-color: rgb(133, 198, 238);
+}
+
+.absolute {
+	position: absolute;
+}
+
+.bordery {
+	border: medium solid black;
+}
+
+.curved {
+	border-radius: 12px;
+}
+
+.boldy {
+	font-weight: bold;
+}
+
+.third {
+	width: 230px;
+}
+
+.wordy {
+	line-height: 110%;
+}
+
+.fonty24px {
+	font-size: 24px;
+}
+
+.fonty18px {
+	font-size: 18px;
+}
+
+.postparamargin {
+	margin: 6px 14px -9px;
+}
+
+header {
+	background-color: rgb(246, 248, 124);
+	position: fixed;
+	width: 100%;
+	padding: 12px 0px 12px 12px;
+	z-index: 99;
+	font-size: 22px;
+}
+
+.purplecanvas {
+	background-color: rgb(238, 133, 234);
+	height: 500px;
+	top: 50%;
+  transform: translate(-50%, -50%);
+  left: 125px;
+	z-index: 100;
+}
+
+.message {
+	margin-top: 50%;
+	text-align: center;
+}
+
+.box {
+	height: 185px;
+	width: 185px;
+	background-color: white;
+	border: medium solid black;
+	margin: 71% 50% 50% 8.4%;
+  position: relative;
+}
+
+.box::after {
+  content: "\d7";
+  color: black;
+  display:flex;
+	justify-content:center;
+	align-items:center;
+	width: 100%;
+	height: 100%;
+	font-size: 480px;
+}
+
+h1 {
+	background-color: rgb(168, 243, 134);
+	width: 716px;
+	height: 95px;
+	margin: 58.3px 250px 1020px;
+	text-align: center;
+  font-size: 22px;
+	font-style: italic;
+	display: table;
+}
+
+.title {
+	display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+	line-height: 140%;
+}
+
+.title::first-line {
+	font-size: 30px;
+	font-weight: bold;
+	font-style: normal;
+}
+
+h2 {
+	text-align: center;
+	margin: 12px 0px 8px;
+}
+
+h4 {
+	text-align: center;
+}
+
+h3 {
+	margin: 18px 0px 10px 14px;
+}
+
+.NewestPost {
+	margin: 165px 250px 140px;
+	height: 415px;
+	overflow: hidden;
+}
+
+.MiddlePost {
+	margin: 165px 493px 180px;
+ 	height: 270px;
+}
+
+.OldestPost {
+	margin: 165px 736px 130px;
+ 	height: 345px;
+	overflow: hidden;
+}
+
+footer {
+	margin: 592px 250px 100px;
+	width: 714px;
+	height: 61px;
+	font-size: 16px;
+	padding: 6px 6px 0px;
+}
+
+@media screen and (max-width: 989px) {
+
+.curved {
+	border-radius: 0;
+}
+
+.purplecanvas {
+	display: none;
+}
+
+header {
+	width: 98%;
+}
+
+h1 {
+	margin: 50px 0px 0px;
+	padding: 0px;
+	width: 99%;
+}
+
+.NewestPost {
+	height: 330px;
+	width: 308px;
+	margin: 170px 20px 0px;
+	font-size: 14px;
+}
+
+.MiddlePost{
+	height: 200px;
+	width: 308px;
+	margin: 170px 365px 0px;
+	font-size: 14px;
+}
+
+.OldestPost {
+  height: 195px;
+  width: 630px;
+  margin: 525px 30px 0px;
+	font-size: 14px;
+}
+
+footer{
+	margin: 770px 0px 0px;
+  width: 98%;
+	font-size: 18px;
+	height: 60px;
+	font-size: 14px;
+}
+
+h2 {
+  margin: 10px 0px 2px;
+	font-size: 18px;
+}
+
+h4 {
+	font-size: 17px;
+}
+
+h3 {
+	margin: 8px 0px 6px 16px;
+	font-size: 16px;
+}
+
+.postparamargin {
+	margin: 4px 16px 8px;
+}
+
+}
