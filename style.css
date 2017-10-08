@@ -30,7 +30,6 @@ main {
 
 aside {
 	background-color: #D5A6BD;
-	display: inline-block !important;
 	width: 27%;
 	height: 50vh;
 	border: 1px solid black !important;
@@ -65,7 +64,7 @@ aside img {
 header{ 
 	background-color: #B6D7A8;
 	border: 1px solid black !important;
-	border-radius: 50px;
+	border-radius: 10px;
 	padding: 10px !important;
 }
 
@@ -73,7 +72,7 @@ header{
 	display: flex !important;
 	flex-flow: row;
 
-justify-content: space-around;
+justify-content: space-between;
 align-content: center;
 align-items: baseline;
 
@@ -114,8 +113,21 @@ footer {
 	background-color: #A2C4C9;
 	color: #0000AA;
 	border: 1px solid black !important;
-	border-radius: 50px;
+	border-radius: 10px;
 	padding: 5px !important;
+}
+
+h1 {
+	font-size: 2em !important;
+}
+
+h2 {
+	font-size: 1.5em !important;
+}
+
+h3 {
+	font-size: 1.2em !important;
+	padding-left: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -129,4 +141,55 @@ p {
 
 h1, h2, h4 {
 	text-align: center !important;
+}
+
+@media only screen and (max-width: 989px) {
+	aside {
+		display: none !important;
+	}
+
+	main {
+		width: 100%;
+		margin: 0px auto;
+	}
+
+	#content {
+		width: 100%;
+	}
+
+	#posts {
+		display: block !important;
+	}
+
+	article:nth-child(1) {
+		display: inline-block !important;
+		width: 48%;
+		margin: auto;
+		float: left;
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
+
+	article:nth-child(2) {
+		display: inline-block !important;
+		width: 48%;
+		margin: auto;
+		float: right;
+		margin-right: 10px;
+	}
+
+	article:nth-child(3) {
+		display: grid;
+		width: 97.5%;
+		margin: auto;
+	}
+
+	header {
+		border-radius: 0px;
+	}
+
+	footer {
+		border-radius: 0px;
+	}
+
 }
