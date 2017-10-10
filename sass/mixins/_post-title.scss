@@ -1,0 +1,10 @@
+@import "variables/_text";
+
+@mixin post-title {
+  .post-title {
+    font-size: 1.375em;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: $text-center;
+  }
+}
