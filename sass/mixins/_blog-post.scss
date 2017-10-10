@@ -1,0 +1,15 @@
+@import "variables/_colors";
+
+@mixin blog-post {
+  .blog-post {
+    @include post-title;
+  	margin: 10px 0;
+  	padding: 8px;
+  	font-size: 1em;
+  	font-weight: 300;
+  	text-align: justify;
+  	background: $blog-bkg;
+  	border: 1px solid $black; 
+  	border-radius: 4px;
+  }
+}

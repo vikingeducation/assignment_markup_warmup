@@ -1,0 +1,23 @@
+@mixin tab {
+  @media (min-width: 720px)  {
+  	#main-content {
+  		width: 100%;
+  		display: flex;
+  		flex-flow: row wrap;
+
+      .blog-post {
+        margin: 2%;
+
+        &:nth-of-type(1) {
+      		flex-grow: 1;
+      		flex-basis: 35%;
+      	}
+
+      	&:nth-of-type(2) {
+      		flex-basis: 45%;
+      		height: 250px;
+      	}
+      }
+  	} // end main-content
+  } // end query
+}

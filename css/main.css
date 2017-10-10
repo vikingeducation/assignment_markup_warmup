@@ -1,0 +1,223 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  font-size: 1.125em;
+  font-weight: 400;
+  text-transform: capitalize;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  background: #FFE497;
+  border-bottom: 1px solid #939393;
+}
+
+.intro {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background: #B4D6A6;
+}
+  .intro .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+  .intro h1 {
+    font-size: 1.75em;
+    font-weight: 700;
+  }
+  .intro h4 {
+    font-style: italic;
+  }
+
+/* -------------- MAIN CONTENT LAYOUT -------------- */
+#main-content {
+  width: 90%;
+  margin: 0 auto;
+}
+  #main-content .blog-post {
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 1em;
+    font-weight: 300;
+    text-align: justify;
+    background: #A0C3C8;
+    border: 1px solid #000;
+    border-radius: 4px;
+  }
+    #main-content .blog-post .post-title {
+      font-size: 1.375em;
+      font-weight: 400;
+      text-transform: capitalize;
+      text-align: center;
+    }
+  #main-content .post-date {
+    text-align: center;
+   }
+  #main-content .topic {
+    font-size: 1.125em;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+    #main-content .topic:nth-of-type(2) {
+      margin-top: 8px;
+    }
+
+/* Tablets */
+@media (min-width: 720px) and (min-width: 720px) {
+  #main-content {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+    #main-content .blog-post {
+      margin: 2%;
+    }
+      #main-content .blog-post:nth-of-type(1) {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -webkit-flex-basis: 35%;
+        -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+      }
+      #main-content .blog-post:nth-of-type(2) {
+        -webkit-flex-basis: 45%;
+        -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+        height: 250px;
+        }
+      }
+
+/* Desktops */
+@media (min-width: 991px) and (min-width: 991px) {
+  #main-content {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    }
+    #main-content .distraction {
+      display: block;
+      margin: 13px 1%;
+      height: 500px;
+      border-radius: 4px;
+    }
+    #main-content .blog-post {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 32%;
+      -ms-flex: 0 1 32%;
+      flex: 0 1 32%;
+      margin: 13px 1%;
+    }
+      #main-content .blog-post:nth-of-type(1) {
+        min-height: 450px;
+      }
+      #main-content .blog-post:nth-of-type(2) {
+        height: 270px;
+      }
+      #main-content .blog-post:nth-of-type(3) {
+        max-height: 480px;
+        }
+      }
+
+/* Ad not present in mobile view */
+.distraction {
+  padding-top: 8%;
+  display: none;
+  font-size: 1.375em;
+  text-align: center;
+  background: #d4a5bc;
+}
+  .distraction img {
+    max-width: 80%;
+    margin-top: 1%;
+  }
+
+/* ------------- FOOTER -------------- */
+footer {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: justify;
+  background: #9DC4F8;
+}

@@ -1,0 +1,23 @@
+@mixin desk {
+  @media (min-width: 991px) {
+  	#main-content {
+      flex-wrap: nowrap; /* mixin or variable */
+
+      .distraction {
+    		display: block;
+        margin: 13px 1%;
+    		height: 500px;
+    		border-radius: 4px;
+    	}
+
+      .blog-post {
+        flex: 0 1 32%;
+        margin: 13px 1%;
+
+        &:nth-of-type(1) {min-height: 450px;}
+        &:nth-of-type(2) {height: 270px;}
+        &:nth-of-type(3) {max-height: 480px;}
+      } // end blog-post
+    } // end main-content
+  } // end of query
+}
