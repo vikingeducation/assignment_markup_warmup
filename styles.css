@@ -115,3 +115,27 @@ a:active {
  padding: 5px 15px;
  border-radius: 15px;
 }
+
+@media (max-width: 990px) {
+  .page-header {
+    margin: 0px;
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 1px solid black;
+  }
+
+  .footer {
+    margin: 0px;
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 1px solid black;
+  }
+
+  .main-article {
+    flex: 1 33%;
+  }
+
+  .ad-content {
+    display: none;
+  }
+}
