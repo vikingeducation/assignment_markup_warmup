@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  padding: 30px;
+}
+.header{
+  background: #aac6a1;
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.posts {
+  background: #a1c6c6;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+.post-section{
+  display: flex;
+}
+
+#blogs {
+  flex: 2;
+}
+
+#aside {
+  flex: 1;
+  background: #d1a3aa;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+#foot {
+  background: #8eb0d1;
+  border: 2px solid black;
+  border-radius: 30px;
+  text-align: center;
+}
