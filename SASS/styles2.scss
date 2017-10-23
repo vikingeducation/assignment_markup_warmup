@@ -1,0 +1,107 @@
+@import 'colors';
+
+@mixin border-general {
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+@mixin margin-general {
+  margin: 10px;
+}
+
+@mixin flex-general {
+  display: flex;
+  align-items: flex-start;
+}
+
+
+.main {
+  @include flex-general;
+  padding: 50px;
+}
+
+.header {
+  background: $head-color;
+  @include border-general;
+  @include margin-general;
+  border-radius: 20px;
+  text-align: center;
+  h1 {
+    &
+    caption {
+      vertical-align: top;
+    }
+  }
+}
+
+.post-section {
+  @include flex-general;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.posts {
+  background: $post-color;
+  @include border-general;
+  @include margin-general;
+  padding: 10px;
+  flex-basis: 300px;
+  min-width: 300px;
+  box-sizing: border-box;
+  flex: 1;
+  h2 {
+      text-align: center;
+  }
+  .date {
+    text-align: center;
+  }
+}
+
+#blogs {
+  flex: 3;
+  order: 2;
+}
+
+#foot {
+  @include border-general;
+  @include margin-general;
+  background: $foot-color;
+  border-radius: 30px;
+  text-align: center;
+}
+
+#aside {
+  background: $ad-color;
+  @include border-general;
+  @include margin-general;
+  @include flex-general;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+  flex: 1;
+  order: 1;
+  padding: 10px;
+  min-height: 500px;
+}
+
+#image {
+  margin: auto;
+  background: white;
+  width: 200px;
+  height: 200px;
+}
+
+.ad {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px){
+  #aside {
+    display: none;
+  }
+}

@@ -1,0 +1,82 @@
+.main {
+  display: flex;
+  align-items: flex-start;
+  padding: 50px; }
+
+.header {
+  background: #aac6a1;
+  border: 2px solid black;
+  border-radius: 2px;
+  margin: 10px;
+  border-radius: 20px;
+  text-align: center; }
+  .header h1
+  caption {
+    vertical-align: top; }
+
+.post-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.posts {
+  background: #a1c6c6;
+  border: 2px solid black;
+  border-radius: 2px;
+  margin: 10px;
+  padding: 10px;
+  flex-basis: 300px;
+  min-width: 300px;
+  box-sizing: border-box;
+  flex: 1; }
+  .posts h2 {
+    text-align: center; }
+  .posts .date {
+    text-align: center; }
+
+#blogs {
+  flex: 3;
+  order: 2; }
+
+#foot {
+  border: 2px solid black;
+  border-radius: 2px;
+  margin: 10px;
+  background: #8eb0d1;
+  border-radius: 30px;
+  text-align: center; }
+
+#aside {
+  background: #d1a3aa;
+  border: 2px solid black;
+  border-radius: 2px;
+  margin: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+  flex: 1;
+  order: 1;
+  padding: 10px;
+  min-height: 500px; }
+
+#image {
+  margin: auto;
+  background: white;
+  width: 200px;
+  height: 200px; }
+
+.ad {
+  display: flex;
+  flex-direction: column;
+  margin: auto; }
+  .ad p {
+    text-align: center; }
+
+@media (max-width: 900px) {
+  #aside {
+    display: none; } }
+
+/*# sourceMappingURL=styles2.css.map */
