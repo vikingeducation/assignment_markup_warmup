@@ -1,0 +1,49 @@
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+nav {
+	background-color: rgb(255, 232, 148);
+	position: fixed;
+	width: 100%;
+}
+
+header {
+	background-color: rgb(170, 220, 168);
+	text-align: center;
+}
+
+article {
+	background-color: rgb(153, 198, 202);
+	margin: 1px 1px;
+}
+
+footer {
+	background-color: rgb(153, 194, 250);
+}
+
+aside {
+	align-self: center;
+	background-color: rgb(223, 160, 188);
+	height: 220px;
+
+}
+
+main {
+	padding-top: 1em;
+	max-width: 990px;
+	display: flex;
+	flex-direction: column;
+}
+
+section {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+h1, h2, h3 {
+	font-weight: bold;
+}
