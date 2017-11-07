@@ -6,4 +6,6 @@ And 1 and 2!  And 1, and 2...!
 
 Brennan Fulmer
 
+Click this link to view the current production version as an actual web page:
+
 https://brennanfulmer.github.io/Public_Responsive_Blog_From_Mockup/
