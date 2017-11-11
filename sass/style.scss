@@ -1,0 +1,181 @@
+@import "colors.scss";
+
+$border: 3px solid black;
+
+@mixin border-and-left {
+	border: $border;
+	float: left;
+}
+
+.majorelements {
+	border: $border;
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: $liteyellow;
+	position: fixed;
+	padding: 12px;
+	z-index: 99;
+
+	font: {
+		size: 22px;
+		weight: bold;
+	}
+
+	margin-top: -60px;
+	@extend .majorelements;
+}
+
+.container {
+	margin: 60px 0px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+aside {
+	background-color: $litepurple;
+	width: 25%;
+	min-height: 500px;
+	z-index: 100;
+	position: relative;
+  text-align: center;
+	@include border-and-left;
+}
+
+p {
+	margin: 6px 14px 20px;
+	line-height: 120%;
+}
+
+.BoxCaption {
+	line-height: 110%;
+	font-size: 18px;
+	margin: 120px 0px;
+}
+
+aside > div {
+    width: 100%;
+		border: $border;
+}
+
+.box {
+	position: absolute;
+	background-color: $orange;
+	width: 150px;
+  min-height: 150px;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main {
+	width: 73%;
+  float: right;
+}
+
+h1 {
+	background-color: $litegreen;
+	text-align: center;
+
+	font: {
+		size: 18px;
+		style: italic;
+	}
+
+	display: table;
+	border-radius: 12px;
+	padding: 8px;
+	@extend .majorelements;
+}
+
+.title {
+	display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.title::first-line {
+	font: {
+		size: 24px;
+		weight: bold;
+		style: normal;
+	}
+}
+
+h2 {
+	text-align: center;
+	margin: 8px 0px 8px;
+
+	font: {
+		weight: bold;
+		size: 20px;
+	}
+
+}
+
+h4 {
+	text-align: center;
+}
+
+h3 {
+	margin: 14px 0px 14px 14px;
+
+	font: {
+		weight: bold;
+		font-size: 17px;
+	}
+
+}
+
+.BoxCaption {
+	line-height: 110%;
+	font-size: 18px;
+	margin: 120px 0px;
+}
+
+article {
+	background-color: $blue;
+	width: 30%;
+	margin: 1%;
+	@include border-and-left;
+}
+
+footer {
+	font-size: 16px;
+	padding: 14px;
+	background-color: $blue;
+  border-radius: 12px;
+	line-height: 110%;
+	@extend .majorelements;
+}
+
+@media screen and (max-width: 989px) {
+
+aside {
+	display: none;
+}
+
+header {
+	margin-top: -60px;
+}
+
+h1, footer {
+	border-radius: 0;
+}
+
+main {
+	width: 100%;
+}
+
+article {
+	width: 46%;
+}
+
+.OldestPost {
+ 	width: 98%;
+}
+
+}
