@@ -1,0 +1,174 @@
+/* Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Borders */
+header,
+aside,
+section,
+article {
+  border: 2px solid black;
+}
+
+.main-heading,
+.copyright {
+  border-radius: 20px;
+}
+
+/* Typography */
+h1, h2, h3, h4,
+p, section {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Nav */
+.nav {
+  background: #FEE49D;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+/* Containers */
+.container {
+  display: flex;
+}
+
+.top {
+  margin-top: 60px;
+  padding: 0 10%;
+}
+
+.cols {
+  flex-direction: column;
+}
+
+/* Ad */
+.ad {
+  background: #D4A7BD;
+  font-weight: bold;
+  justify-content: center;
+  height: 500px;
+  margin-right: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.ad p {
+  margin-bottom: 10px;
+}
+
+/* Main Heading */
+.main-heading {
+  background: #B7D6AA;
+  padding: 15px;
+  text-align: center;
+}
+
+.main-heading h1 {
+  margin-bottom: 5px;
+}
+
+.main-heading h3 {
+  font-style: italic;
+}
+
+/* Articles */
+article {
+  background: #A3C4C9;
+  height: fit-content;
+  margin: 5px;
+  padding: 15px;
+}
+
+article h2,
+article p:first-of-type {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+article h4,
+article p {
+  margin-bottom: 10px;
+}
+
+article h4:first-of-type {
+  margin-top: 15px;
+}
+
+/* Footer */
+.copyright {
+  background: #A0C6F6; 
+  padding: 10px;
+}
+
+
+
+
