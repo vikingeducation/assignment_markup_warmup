@@ -170,5 +170,34 @@ article h4:first-of-type {
 }
 
 
+/* Media Queries */
+@media only screen and (max-width: 990px){
+  /* Top */
+  .top {
+    margin-top: 40px;
+    padding: 0;
+  }
+
+  /* Ad */
+  .ad {
+    display: none;
+  }
+
+  /* Border Radius */
+  .main-heading,
+  .copyright {
+    border-radius: 0;
+  }
+
+  /* Container */
+  .container {
+    flex-wrap: wrap;
+  }
+
+  /* Articles */
+  article {
+    width: 45%;
+  }
+}
 
 
