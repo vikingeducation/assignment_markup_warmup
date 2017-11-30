@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+}
+
+.nav-item {
+  padding-left: 20px;
+  text-decoration: line-through;
+}
+
+.main-container {
+  display: flex;
+  
+}
+
+.side-area {
+  flex: 1;
+}
+
+.container {
+  flex-direction: column;
+  flex: 3;
+  
+}
+
+.post-item {
+  border: 1px dashed;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
