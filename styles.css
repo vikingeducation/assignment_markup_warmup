@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe,
+/* html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -17,25 +17,24 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
   vertical-align: baseline;
-}
+} */
 
 body {
-  display: flex;
-  flex-direction: column;
-
+  margin: 0;
+	padding: 0;
+	border: 0;
 }
 
 section {
   border: 1px solid;
   border-radius: 5px;
   padding: 10px;
-  margin: 10px;
 }
 
 .wrapper {
-  max-width: 990vw;
   display: flex;
-  
+  flex-direction: column;
+
 }
 
 h1 {
@@ -44,64 +43,56 @@ h1 {
 
 .nav-parent {
   position: relative;
-  
-  
-}
+} 
 
 .nav-container {
   position: fixed;
-  width: 100%;
+  width: 100%; 
   
-  
-}
+} 
 
 .nav-items {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   list-style: none;
-  
-
 }
 
 .nav-item {
-  padding-left: 20px;
-  
+  margin-right: 15px;
 }
 
 .main-container {
+  width: 990px;
   display: flex;
   flex-direction: row;
-  padding-top: 60px;
-  justify-content: center;
-  
+  padding-top: 85px;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .side-area {
   flex: 1;
-  height: 50vh;
+  height: 40vh;
   align-self: center;
+  margin-right: 20px;
 }
-
-
 
 .container {
   flex-direction: column;
   flex: 3;
-  
 }
 
 .post-item {
   border: 1px dashed;
   border-radius: 5px;
-  width: 27%;
-  margin: 10px;
+  width: 29%;
+  margin: 15px 0 15px 0px;
   padding: 10px;
-
-
 }
 
 .post-item h2, h3 {
   text-align: center;
+  
 }
 
 .posts-container {
@@ -109,20 +100,28 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
 }
+
 
 @media all and (max-width:990px) {
   .side-area {
     display: none;
+  }
+  .posts-container  {
+    justify-content: space-around;
   }
   .post-item {
     width: 45%;
   }
 
   .posts-container :last-child {
-    flex: 1;
+    flex: .97;
+    margin-top: 0;
+  }
+
+  .main-container {
+    padding-top: 70px;
+    width: 100vw;
   }
 
 }
-
