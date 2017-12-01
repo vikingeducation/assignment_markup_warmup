@@ -1,6 +1,28 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+}
+
 body {
   display: flex;
   flex-direction: column;
+
 }
 
 section {
@@ -10,26 +32,57 @@ section {
   margin: 10px;
 }
 
+.wrapper {
+  max-width: 990vw;
+  display: flex;
+  
+}
+
+h1 {
+  text-align: center;
+}
+
+.nav-parent {
+  position: relative;
+  
+  
+}
+
+.nav-container {
+  position: fixed;
+  width: 100%;
+  
+  
+}
+
 .nav-items {
   display: flex;
   justify-content: center;
   list-style: none;
+  
 
 }
 
 .nav-item {
   padding-left: 20px;
-  text-decoration: line-through;
+  
 }
 
 .main-container {
   display: flex;
+  flex-direction: row;
+  padding-top: 60px;
+  justify-content: center;
   
 }
 
 .side-area {
   flex: 1;
+  height: 50vh;
+  align-self: center;
 }
+
+
 
 .container {
   flex-direction: column;
@@ -39,12 +92,37 @@ section {
 
 .post-item {
   border: 1px dashed;
+  border-radius: 5px;
+  width: 27%;
+  margin: 10px;
+  padding: 10px;
+
+
+}
+
+.post-item h2, h3 {
+  text-align: center;
 }
 
 .posts-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 10px;
+  align-items: flex-start;
+}
+
+@media all and (max-width:990px) {
+  .side-area {
+    display: none;
+  }
+  .post-item {
+    width: 45%;
+  }
+
+  .posts-container :last-child {
+    flex: 1;
+  }
+
 }
 
