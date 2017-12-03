@@ -47,7 +47,27 @@ table {
 
 .title {
   background-color: green;
-	flex-grow: 3;
+}
+
+.ad {
+  background-color: pink;
+}
+
+.article-1 {
+  background-color: #C0C0C0;
+}
+
+.article-2 {
+  background-color: #808080;
+}
+
+.article-3 {
+  background-color: #A9A9A9;
+}
+
+.footer {
+  background-color: aqua;
+	padding: 1em;
 }
 
 nav {
@@ -67,7 +87,6 @@ nav p {
   z-index: 3;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  background-color: green;
 }
 
 .sticky {
@@ -84,10 +103,6 @@ aside {
 	height: 75%;
 }
 
-.ad {
-  background-color: pink;
-}
-
 article {
   align-self:flex-start;
 	width: 300px;
@@ -97,23 +112,6 @@ article {
 article h2{
   margin: 0;
 	padding: 0;
-}
-
-.article-1 {
-  background-color: #C0C0C0;
-}
-
-.article-2 {
-  background-color: #808080;
-}
-
-.article-3 {
-  background-color: #A9A9A9;
-}
-
-.footer {
-  background-color: blue;
-	padding: 1em;
 }
 
 .box {
