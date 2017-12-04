@@ -45,8 +45,10 @@ table {
 	border-spacing: 0;
 }
 
+/*--------------------CSS for assignment--------------------*/
 .title {
   background-color: green;
+	order: 3;
 }
 
 .ad {
@@ -55,19 +57,23 @@ table {
 
 .article-1 {
   background-color: #C0C0C0;
+	order: 5;
 }
 
 .article-2 {
   background-color: #808080;
+	order: 6;
 }
 
 .article-3 {
   background-color: #A9A9A9;
+	order: 7;
 }
 
 .footer {
   background-color: aqua;
 	padding: 1em;
+	order: 8;
 }
 
 nav {
@@ -84,9 +90,10 @@ nav p {
   margin: 0;
 	margin-bottom: 10px;
   padding: 0;
-  z-index: 3;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
+	order: 0;
+
 }
 
 .sticky {
@@ -98,14 +105,13 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 10% 1em;
 	height: 75%;
 }
 
 article {
-  align-self:flex-start;
-	width: 300px;
+  align-self: flex-start;
+	width: 33%;
 	padding: 1em;
 }
 
@@ -116,16 +122,16 @@ article h2{
 
 .box {
   border: 2px solid black;
-  padding: auto;
-  margin: 2px;
+  margin: 5px;
+	align-items: center;
 }
 
 .container {
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: space-around;
-	width: 990px;
+	justify-content: center;
 	margin: auto;
+	order: 1;
 }
 
 .content-container {
@@ -136,16 +142,14 @@ article h2{
 .main-container {
   display: flex;
   flex-flow: row nowrap;
-  font-style: italic;
+	order: 4;
 }
 
 .ad-image {
   width: 200px;
   height: 200px;
   background-color: white;
-  border: 1px dashed black;
-  display: flex;
-  justify-content: center;
+  border: 2px dashed black;
 	margin-top: 1em;
 }
 
@@ -155,4 +159,40 @@ article h2{
 
 .text-center {
   text-align: center;
+}
+
+@media only screen and (max-width: 990px) {
+	.header {
+		padding: 0;
+		margin-bottom: 0;
+		border-top: 2px solid black;
+	}
+
+@media only screen and (max-width: 990px) {
+	.ad {display: none;}
+	.title {
+		order: 0;
+		margin: auto 0 0 0;
+		border-radius: 0;
+		border: none;
+		border-bottom: 2px solid black;
+	}
+	.main-container {
+		flex-flow: row wrap;
+		justify-content: space-between;
+		order: 1;
+	}
+	.article-1 {order: 1;}
+	.article-2 {order: 1;}
+	.article-3 {order: 2;}
+	.footer {
+		order: 2;
+		margin: auto 0 0 0;
+		border-radius: 0;
+		border-left: none;
+		border-right: none;
+	}
+	article:nth-child(3) {
+		flex-basis: 100%
+	}
 }
