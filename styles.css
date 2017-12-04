@@ -1,0 +1,198 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, canvas, details, embed,
+figure, figcaption, hgroup,
+menu, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*--------------------CSS for assignment--------------------*/
+.title {
+  background-color: green;
+	order: 3;
+}
+
+.ad {
+  background-color: pink;
+}
+
+.article-1 {
+  background-color: #C0C0C0;
+	order: 5;
+}
+
+.article-2 {
+  background-color: #808080;
+	order: 6;
+}
+
+.article-3 {
+  background-color: #A9A9A9;
+	order: 7;
+}
+
+.footer {
+  background-color: aqua;
+	padding: 1em;
+	order: 8;
+}
+
+nav {
+  background-color: yellow;
+}
+
+nav p {
+  margin: 0;
+  padding: 10px;
+}
+
+.header {
+  width:100%;
+  margin: 0;
+	margin-bottom: 10px;
+  padding: 0;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+	order: 0;
+
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10% 1em;
+	height: 75%;
+}
+
+article {
+  align-self: flex-start;
+	width: 33%;
+	padding: 1em;
+}
+
+article h2{
+  margin: 0;
+	padding: 0;
+}
+
+.box {
+  border: 2px solid black;
+  margin: 5px;
+	align-items: center;
+}
+
+.container {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	margin: auto;
+	order: 1;
+}
+
+.content-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+  flex-flow: row nowrap;
+	order: 4;
+}
+
+.ad-image {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border: 2px dashed black;
+	margin-top: 1em;
+}
+
+.corners {
+  border-radius: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media only screen and (max-width: 990px) {
+	.header {
+		padding: 0;
+		margin-bottom: 0;
+		border-top: 2px solid black;
+	}
+
+@media only screen and (max-width: 990px) {
+	.ad {display: none;}
+	.title {
+		order: 0;
+		margin: auto 0 0 0;
+		border-radius: 0;
+		border: none;
+		border-bottom: 2px solid black;
+	}
+	.main-container {
+		flex-flow: row wrap;
+		justify-content: space-between;
+		order: 1;
+	}
+	.article-1 {order: 1;}
+	.article-2 {order: 1;}
+	.article-3 {order: 2;}
+	.footer {
+		order: 2;
+		margin: auto 0 0 0;
+		border-radius: 0;
+		border-left: none;
+		border-right: none;
+	}
+	article:nth-child(3) {
+		flex-basis: 100%
+	}
+}
