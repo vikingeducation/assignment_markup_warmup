@@ -1,0 +1,66 @@
+/*
+small screen
+*/
+
+$width: 100%;
+$margin: 10px;
+
+@media screen and (max-width:989px) {
+    #adbox {
+			display: none;
+		 }
+		 .title,
+	 	footer {
+	 		width: $width;
+			box-sizing: border-box;
+	 	}
+		.break {
+			width: $width;
+			height: 56px;
+		}
+		.articles {
+			width: calc($width - $margin);
+			margin-right: $margin;
+			display: flex;
+			align-items: baseline;
+			flex-wrap: wrap;
+		}
+
+		article {
+			width: calc(50% - 16px);
+		}
+
+		 article:last-of-type:nth-of-type(odd) {
+			 width: auto;
+		 }
+}
+
+/*
+large screen
+*/
+
+@media screen and (min-width:990px) {
+		.title,
+		footer {
+			margin-left: $margin;
+			width: calc(990px - 224px - 10px - 12px);
+			border-radius: 20px;
+		}
+		.break {
+			width: $width;
+			height: 66px;
+		}
+		.articles {
+			max-width: calc(990px - 224px - 6px);
+			display: flex;
+			align-items: baseline;
+		}
+		article {
+			width: calc(33% - $margin);
+		}
+}
+
+	.container {
+	max-width: 990px;
+	margin: auto;
+}

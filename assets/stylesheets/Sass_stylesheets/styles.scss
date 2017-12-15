@@ -1,0 +1,153 @@
+@import "reset.scss";
+@import "_colors.scss";
+@import "responsive_design.scss";
+
+/*
+clearfix
+*/
+
+.clearfix::before,
+.clearfix::after {
+  display: table;
+  content: " ";
+}
+.clearfix::after {
+ 	clear: both;
+}
+
+/* mixin and variables */
+
+@mixin border {
+	border: 3px solid black;
+}
+
+@mixin center-align {
+	text-align: center;
+}
+
+@mixin bold {
+	font-weight: 900;
+	-webkit-font-smoothing: antialiased;
+}
+
+$margin: 10px;
+$padding: 10px;
+$width: 100%;
+
+/* font size */
+
+$large: 20px;
+$medium: 14px;
+$small: 13px;
+
+
+/*
+nav bar
+*/
+
+nav {
+	@include border;
+	width: $width;
+	font-size: $large;
+	position: fixed;
+	padding: 15px;
+	font-weight: bold;
+}
+
+/*
+adbox
+*/
+
+aside {
+	@include border;
+	height: 400px;
+	width: 224px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	p {
+		@include center-align;
+		@include bold;
+		font-size: 16px;
+	}
+}
+
+
+img {
+	@include border;
+	margin: $margin;
+}
+
+
+
+/*
+title and footer
+*/
+
+
+footer, .title {
+	@include border;
+	margin-bottom: $margin;
+}
+
+.title {
+	h1 {
+		@include center-align;
+		@include bold;
+		padding: $padding;
+		font-size: 28px;
+	}
+	h2 {
+		@include center-align;
+		font-size: $large;
+		padding-bottom: $padding;
+		font-style: italic;
+	}
+}
+
+small {
+	font-size: $small;
+	line-height: 18px;
+}
+
+.small-container {
+	padding: 5px 25px 5px 10px;
+}
+
+.float{
+	float: left;
+}
+
+/*
+blog posts
+*/
+
+article {
+	@include border;
+	margin-left: $margin;
+	margin-bottom: $margin;
+	p {
+		font-size: $small;
+		padding-left: $padding;
+		padding-right: $padding;
+		line-height: 18px;
+		margin-bottom: 20px;
+	}
+	h2 {
+		@include bold;
+		@include center-align;
+		font-size: $large;
+		padding: $padding;
+	}
+	h3 {
+		@include center-align;
+		font-size: $medium;
+		margin-bottom: 15px;
+	}
+	h4 {
+		@include bold;
+		margin-bottom: $margin;
+		font-size: $medium;
+		padding-left: $padding;
+	}
+}
