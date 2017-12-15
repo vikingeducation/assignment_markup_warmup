@@ -5,4 +5,4 @@ And 1 and 2!  And 1, and 2...!
 [An HTM5 and CSS3 project from the Viking Code School](http://www.vikingcodeschool.com)
 
 Holly Erickson
-Project deployed [here](military-can.surge.sh)
+Project deployed [here](http://www.military-can.surge.sh)
