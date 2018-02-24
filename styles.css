@@ -22,3 +22,24 @@
 .main {
   margin-top: 80px;
 }
+
+/* Blog title */
+.blog-title {
+  background-color: #B7D6AA;
+  text-align: center;
+}
+
+/* Advert */
+.advert {
+  background-color: #D4A7BD;
+}
+
+/* Blog posts */
+.blog-post {
+  background-color: #A3C4C9;
+}
+
+/* Copyright */
+.copyright {
+  background-color: #A0C6F6;
+}
