@@ -1,0 +1,24 @@
+/* Navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #FEE49D;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Main content */
+.main {
+  margin-top: 80px;
+}
