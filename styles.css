@@ -1,0 +1,227 @@
+/* CSS reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+*/
+/* HTML5 display-role reset for older browsers */
+/*article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*/
+
+
+/* CSS styling */
+
+body {
+  background-color: #FFF;
+  font-family: "Comic Sans MS", Arial, sans-serif;
+}
+
+/* Header line-height */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+/* Navigation bar */
+.navbar {
+  background-color: #FEE49D;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+  float: left;
+}
+
+/* Content below navbar */
+.mainContent {
+  margin-top: 75px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* Advert positioning */
+.advert {
+  background-color: #D4A7BD;
+  border: 2px solid #000;
+  padding: 100px 10px;
+  align-items: center;
+  float: left;
+  margin: 0 .5%;
+  text-align: center;
+}
+
+/* Content to right of advert */
+.contentMinusAd {
+  float: right;
+  margin: 0 .5%;
+}
+
+/* Blog title */
+.blogTitle {
+  background-color: #B7D6AA;
+  border: 2px solid #000;
+  border-radius: 25px;
+  text-align: center;
+}
+
+/* Byline */
+#byline {
+  font-style: italic;
+}
+
+/* Blog posts container*/
+.blogPosts {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* Individual posts */
+#postOne, #postTwo, #postThree {
+  background-color: #A3C4C9;
+  border: 2px solid #000;
+  padding: 0px 10px;
+  margin: 4px;
+  float: left;
+  width: 33.3%;
+}
+
+/* Blog post headings */
+.postTitle {
+  text-align: center;
+}
+
+/* Blog date written */
+.dateWritten {
+  font-weight: normal;
+  text-align: center;
+}
+
+/* Footer copyright */
+.copyright {
+  background-color: #A0C6F6;
+  border: 2px solid #000;
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  clear: both;
+  margin-bottom: 0;
+}
+
+
+/* Responsive */
+@media (max-width: 989px) {
+  .mainContent {
+    margin-top: 55px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .advert {
+    display: none;
+  }
+
+  .contentMinusAd{
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .blogTitle {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .blogPosts {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .postsOneAndTwo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    }
+
+  #postOne, #postTwo {
+    float: right;
+    width: 45%;
+  }
+
+  #postThree {
+    width: auto;
+  }
+
+  .copyright {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 0 10px;
+    clear: both;
+    margin-bottom: 0;
+  }
+
+}
+
