@@ -97,6 +97,7 @@ h2, h3, h4 {
 /* Responsive */
 @media all and (max-width: 989px) {
   .mainContent {
+    margin-top: 55px;
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
@@ -111,6 +112,7 @@ h2, h3, h4 {
   }
 
   .contentMinusAd{
+    width: 100%;
     margin: 0 0;
   }
 
@@ -127,21 +129,18 @@ h2, h3, h4 {
     justify-content: space-between;
   }
 
+  .postsOneAndTwo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    }
+
   #postOne, #postTwo {
-    background-color: #A3C4C9;
-    border: 2px solid #000;
-    padding: 0px 10px;
-    margin: 4px;
-    float: left;
-    width: 45.5%;
+    float: right;
+    width: 50%;
   }
 
   #postThree {
-    background-color: #A3C4C9;
-    border: 2px solid #000;
-    padding: 0px 10px;
-    margin: 4px;
-    float: left;
     width: auto;
   }
 
