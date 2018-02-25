@@ -3,6 +3,11 @@ body {
   font-family: "Comic Sans MS", Arial, sans-serif;
 }
 
+/* Header line-height */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
 /* Navigation bar */
 .navbar {
   background-color: #FEE49D;
@@ -43,6 +48,7 @@ body {
   align-items: center;
   float: left;
   margin: 0 .5%;
+  text-align: center;
 }
 
 /* Content to right of advert */
@@ -59,6 +65,7 @@ body {
   text-align: center;
 }
 
+/* Byline */
 #byline {
   font-style: italic;
 }
@@ -81,15 +88,23 @@ body {
 }
 
 /* Blog post headings */
-h2, h3, h4 {
+.postTitle {
   text-align: center;
 }
 
+/* Blog date written */
+.dateWritten {
+  font-weight: normal;
+  text-align: center;
+}
+
+/* Footer copyright */
 .copyright {
   background-color: #A0C6F6;
   border: 2px solid #000;
   border-radius: 25px;
-  padding: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
   clear: both;
   margin-bottom: 0;
 }
