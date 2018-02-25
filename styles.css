@@ -3,11 +3,6 @@ body {
   font-family: "Comic Sans MS", Arial, sans-serif;
 }
 
-/* Header line-height */
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-}
-
 /* Navigation bar */
 .navbar {
   background-color: #FEE49D;
@@ -34,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 .mainContent {
   margin-top: 75px;
   display: flex;
-  align-items: flex-start;
+  flex-direction: row;
   justify-content: space-evenly;
   margin-left: 10%;
   margin-right: 10%;
@@ -44,11 +39,10 @@ h1, h2, h3, h4, h5, h6 {
 .advert {
   background-color: #D4A7BD;
   border: 2px solid #000;
-  padding: 100px 10px;
+  padding: 5px 10px;
   align-items: center;
   float: left;
   margin: 0 .5%;
-  text-align: center;
 }
 
 /* Content to right of advert */
@@ -65,7 +59,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-/* Byline */
 #byline {
   font-style: italic;
 }
@@ -73,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Blog posts container*/
 .blogPosts {
   display: flex;
-  align-items: flex-start;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -88,23 +81,77 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Blog post headings */
-.postTitle {
+h2, h3, h4 {
   text-align: center;
 }
 
-/* Blog date written */
-.dateWritten {
-  font-weight: normal;
-  text-align: center;
-}
-
-/* Footer copyright */
 .copyright {
   background-color: #A0C6F6;
   border: 2px solid #000;
   border-radius: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 1px;
   clear: both;
   margin-bottom: 0;
+}
+
+/* Responsive */
+@media all and (max-width: 989px) {
+  .mainContent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    }
+  }
+
+  .advert {
+    display: none;
+  }
+
+  .contentMinusAd{
+    margin: 0 0;
+  }
+
+  .blogTitle {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .blogPosts {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #postOne, #postTwo {
+    background-color: #A3C4C9;
+    border: 2px solid #000;
+    padding: 0px 10px;
+    margin: 4px;
+    float: left;
+    width: 45.5%;
+  }
+
+  #postThree {
+    background-color: #A3C4C9;
+    border: 2px solid #000;
+    padding: 0px 10px;
+    margin: 4px;
+    float: left;
+    width: auto;
+  }
+
+  .copyright {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 0 10px;
+    clear: both;
+    margin-bottom: 0;
+  }
+
 }
