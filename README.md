@@ -1,5 +1,10 @@
 assignment_markup_warmup_sprint
 ===============================
 
-And 1 and 2!  And 1, and 2...!
-[An HTM5 and CSS3 project from the Viking Code School](http://www.vikingcodeschool.com)
+Gregory Alford
+
+This is a dinky html page from my first steps with html and css
+
+View my Blog HERE:
+
+https://coelacanth7.github.io/assignment_markup_warmup/
