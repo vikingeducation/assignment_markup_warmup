@@ -72,7 +72,9 @@ img{
 }
 
 #adText{
-   display: flex;    
+   display: flex;  
+   margin-left: -70px;
+   margin-right: -70px;
 }
 
 /* Content to right of advert */
