@@ -115,4 +115,11 @@ h1 {
   padding-right: 10px;
   clear: both;
   margin-bottom: 0;
+  margin-top: 10px;
+  text-align: justify;
+  height: 60px;    
+}
+
+#disclaimer{
+    margin-top: 10px;
 }
