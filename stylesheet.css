@@ -53,6 +53,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+img{
+    width: 20px;
+    height: 40px;
+}
+
 /* Content to right of advert */
 .contentNoAd {
   float: right;
@@ -76,6 +81,7 @@ h1 {
 /* Author */
 #author {
   font-style: italic;
+    margin-top: 5px;
 }
 
 /* Blog posts container*/
