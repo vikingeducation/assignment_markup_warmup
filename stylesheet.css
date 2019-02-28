@@ -89,6 +89,7 @@ img{
   border-radius: 25px;
   text-align: center;
   height: 80px;
+    width: 700px;
 }
 
 /* Author */
@@ -144,4 +145,5 @@ img{
 
 #disclaimer{
     margin-top: 5px;
+    font-size: small;
 }
