@@ -1,0 +1,209 @@
+/* Main body styling */
+
+body {
+  background-color: #FFF;
+  font-family: "Comic Sans MS", Arial, sans-serif;
+}
+
+/* Header line-height */
+ h2, h3, h4 {
+  line-height: 1;
+}
+
+/* Navigation bar */
+.navbar {
+  background-color: #FEE49D;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  color: #000;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+  float: left;
+}
+
+/* Content below navbar */
+.mainContent {
+  margin-top: 75px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+h4{
+    font-size: 15px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+/* Advertise positioning */
+.advertise {
+  background-color: #D4A7BD;
+  border: 2px solid #000;
+  padding: 100px 60px;
+  align-items: center;
+  float: left;
+  margin: 0 .5%;
+  text-align: center;
+}
+/* Ad image-size */
+img{
+    width: 100px;
+}
+
+#adText{
+   display: flex;  
+   margin-left: -70px;
+   margin-right: -70px;
+}
+
+/* Content to right of advert */
+.contentNoAd {
+  float: right;
+  margin: 0 .5%;
+}
+
+/* Blog title */
+.pageTitle {
+  background-color: #B7D6AA;
+  border: 2px solid #000;
+  border-radius: 25px;
+  text-align: center;
+  height: 80px;
+    width: 700px;
+}
+
+/* Author */
+#author {
+  font-style: italic;
+    margin-top: 5px;
+}
+
+/* Blog posts container*/
+.blogPosts {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* Individual posts */
+#postOne, #postTwo, #postThree {
+  background-color: #A3C4C9;
+  border: 2px solid #000;
+  padding: 0px 10px 15px;
+  margin: 4px;
+  float: left;
+  width: 33%;
+}
+
+/* Blog post headings */
+.postTitle {
+  text-align: center;
+}
+
+/* Blog date */
+.postDate {
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: -2px;
+  font-size: 12px;
+}
+
+/* Footer copyright */
+.copyright {
+  background-color: #A0C6F6;
+  border: 2px solid #000;
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  clear: both;
+  margin-bottom: 0;
+  margin-top: 10px;
+  text-align: justify;
+  height: 60px;    
+}
+
+#disclaimer{
+    margin-top: 5px;
+    font-size: small;
+}
+
+/* Responsive */
+@media (max-width: 989px) {
+  .mainContent {
+    margin-top: 55px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .advertise {
+    display: none;
+  }
+
+  .contentNoAd{
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .pageTitle {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .blogPosts {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .postsOneAndTwo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    }
+
+  #postOne, #postTwo {
+    float: right;
+    width: 45%;
+  }
+
+  #postThree {
+    width: auto;
+  }
+
+  .copyright {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 0 10px;
+    clear: both;
+    margin-bottom: 0;
+  }
+
+}
