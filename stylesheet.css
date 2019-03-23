@@ -147,3 +147,63 @@ img{
     margin-top: 5px;
     font-size: small;
 }
+
+/* Responsive */
+@media (max-width: 989px) {
+  .mainContent {
+    margin-top: 55px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .advertise {
+    display: none;
+  }
+
+  .contentNoAd{
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .pageTitle {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .blogPosts {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .postsOneAndTwo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    }
+
+  #postOne, #postTwo {
+    float: right;
+    width: 45%;
+  }
+
+  #postThree {
+    width: auto;
+  }
+
+  .copyright {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 0 10px;
+    clear: both;
+    margin-bottom: 0;
+  }
+
+}
